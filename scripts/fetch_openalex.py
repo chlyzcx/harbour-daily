@@ -12,6 +12,7 @@ from config import (
     MAX_AGE_DAYS,
 )
 from models import Paper, Source
+from fetch_covers import ensure_journal_cover
 
 
 def normalize_journal_name(name: str) -> str:

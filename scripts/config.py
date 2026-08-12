@@ -55,7 +55,7 @@ TOP_JOURNALS = {
     "ocean engineering": 85,
 }
 
-# Journal cover images mapping
+# Journal cover images mapping (local cache)
 JOURNAL_COVERS = {
     "journal of the acoustical society of america": "/journal-covers/jasa.png",
     "jasa": "/journal-covers/jasa.png",
@@ -69,8 +69,26 @@ JOURNAL_COVERS = {
     "ocean engineering": "/journal-covers/ocean-engineering.png",
 }
 
+# Journal homepage URLs for automatic cover fetching
+JOURNAL_HOMEPAGES = {
+    "journal of the acoustical society of america": "https://pubs.aip.org/jasa",
+    "jasa": "https://pubs.aip.org/jasa",
+    "jasa express letters": "https://pubs.aip.org/jel",
+    "jasa-el": "https://pubs.aip.org/jel",
+    "ieee journal of oceanic engineering": "https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=48",
+    "ieee transactions on signal processing": "https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=78",
+    "ieee transactions on communications": "https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=26",
+    "ieee transactions on aerospace and electronic systems": "https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=7",
+    "applied acoustics": "https://www.sciencedirect.com/journal/applied-acoustics",
+    "ocean engineering": "https://www.sciencedirect.com/journal/ocean-engineering",
+}
+
 # Default cover for other journals
 DEFAULT_COVER = "/journal-covers/default.png"
+
+# Cover fetch settings
+COVER_FETCH_TIMEOUT = 10
+COVER_CACHE_DIR = "docs/public/journal-covers"
 
 # API endpoints
 OPENALEX_API = "https://api.openalex.org/works"

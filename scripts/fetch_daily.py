@@ -9,6 +9,7 @@ from config import DAILY_TARGET, MIN_SCORE
 from models import DailySelection, Paper
 from fetch_openalex import fetch_openalex_papers
 from fetch_arxiv import fetch_arxiv_papers
+from fetch_covers import prefetch_all_covers
 
 
 def deduplicate_papers(papers: list[Paper]) -> list[Paper]:
@@ -103,6 +104,9 @@ def main():
     # Determine project root
     script_dir = Path(__file__).parent
     project_root = script_dir.parent
+
+    # Prefetch journal covers
+    prefetch_all_covers(project_root)
 
     # Fetch papers
     selection = fetch_daily_papers(target_date, project_root)
