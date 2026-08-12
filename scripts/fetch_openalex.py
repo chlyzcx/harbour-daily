@@ -125,7 +125,7 @@ def fetch_openalex_papers(target_date: date, max_results: int = 50) -> list[Pape
         "filter": f"from_publication_date:{target_date - timedelta(days=MAX_AGE_DAYS)},to_publication_date:{target_date}",
         "sort": "publication_date:desc",
         "per_page": max_results,
-        "mailto": "your-email@example.com",  # OpenAlex requires polite pool
+        "mailto": "2770820299@qq.com",  # OpenAlex requires polite pool
     }
 
     try:
