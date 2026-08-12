@@ -87,8 +87,9 @@ function requiredDate(value: unknown, path: string): string {
 function optionalPreviewImage(value: unknown, path: string): string | undefined {
   if (value === undefined || value === null) return undefined
   const image = requiredString(value, 'previewImage', path)
-  if (!image.startsWith('/daily/') || image.includes('..')) {
-    throw new Error(`${path}: front matter "previewImage" must be null or a local /daily/ path`)
+  const isValid = (image.startsWith('/daily/') || image.startsWith('/journal-covers/')) && !image.includes('..')
+  if (!isValid) {
+    throw new Error(`${path}: front matter "previewImage" must be null or a local /daily/ or /journal-covers/ path`)
   }
   return image
 }
