@@ -1,0 +1,40 @@
+name: Daily Paper Fetch
+
+on:
+  schedule:
+    # Run daily at 02:00 UTC (10:00 Beijing time)
+    - cron: '0 2 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  fetch:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v7
+
+      - name: Setup Python
+        uses: actions/setup-python@v6
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        run: |
+          cd scripts
+          pip install -r requirements.txt
+
+      - name: Fetch daily papers
+        run: |
+          cd scripts
+          python fetch_daily.py
+
+      - name: Commit and push changes
+        run: |
+          git config --local user.email "github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "github-actions[bot]"
+          git add docs/daily/
+          git diff --staged --quiet || git commit -m "Daily update: $(date +%Y-%m-%d)"
+          git push
