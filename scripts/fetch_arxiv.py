@@ -14,14 +14,21 @@ def fetch_arxiv_papers(target_date: date, max_results: int = 50) -> list[Paper]:
     """Fetch recent papers from arXiv related to underwater acoustics."""
     papers = []
 
-    # arXiv search query
-    all_keywords = []
-    for keywords in RESEARCH_DIRECTIONS.values():
-        all_keywords.extend(keywords)
+    # Use broader search terms for arXiv (fewer underwater acoustic papers)
+    broad_keywords = [
+        "underwater acoustic",
+        "ocean acoustic",
+        "sonar signal",
+        "marine acoustic",
+        "hydroacoustic",
+        "underwater communication",
+        "underwater channel",
+        "bioacoustic",
+    ]
 
-    # Build arXiv query
+    # Build arXiv query with broader terms
     query_terms = []
-    for kw in all_keywords[:10]:  # Limit query length
+    for kw in broad_keywords:
         query_terms.append(f'all:"{kw}"')
     query = " OR ".join(query_terms)
 

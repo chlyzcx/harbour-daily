@@ -19,62 +19,11 @@ def is_underwater_acoustic_related(text: str) -> bool:
 
 def fetch_policy_info(target_date: date) -> list[Paper]:
     """Fetch policy information from government websites."""
-    policy_items = []
-
-    for source_key, source_info in POLICY_SOURCES.items():
-        print(f"Fetching policy from {source_info['name']}...")
-
-        try:
-            headers = {
-                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36"
-            }
-            response = requests.get(
-                source_info["url"],
-                headers=headers,
-                timeout=15
-            )
-            response.raise_for_status()
-
-            # Simple pattern matching for policy titles and links
-            pattern = r'<a[^>]+href=["\']([^"\']+)["\'][^>]*>([^<]{10,100})</a>'
-            matches = re.findall(pattern, response.text)
-
-            for url, title in matches[:20]:  # Limit to 20 per source
-                title = title.strip()
-                if not is_underwater_acoustic_related(title):
-                    continue
-
-                # Make URL absolute
-                if url.startswith("/"):
-                    base_url = source_info["url"].rstrip("/")
-                    url = f"{base_url}{url}"
-                elif not url.startswith("http"):
-                    continue
-
-                # Create policy item
-                policy = Paper(
-                    candidate_id=f"policy--{source_key}--{hash(url) % 100000:05d}",
-                    title=title,
-                    authors=[source_info["name"]],
-                    summary=f"来自{source_info['name']}的政策信息：{title}",
-                    keywords=["政策动态", source_info["name"]],
-                    research_directions=["水声通信"],  # Default direction
-                    score=60.0,  # Policy get base score
-                    sources=[Source(name=source_info["name"], url=url)],
-                    category="Policy",
-                    journal=source_info["name"],
-                    publisher=source_info["name"],
-                    publication_year=target_date.year,
-                    publication_date=target_date,
-                    preview_image="/journal-covers/default.png",
-                )
-                policy_items.append(policy)
-
-        except requests.RequestException as e:
-            print(f"  Error fetching from {source_info['name']}: {e}")
-
-    print(f"  Found {len(policy_items)} policy items")
-    return policy_items
+    # TODO: Policy URLs need manual configuration
+    # Government websites often have access restrictions and changing URLs
+    # For now, return empty list - you can manually add policy or configure specific URLs
+    print("  Policy fetching is disabled (URLs need manual configuration)")
+    return []
 
 
 if __name__ == "__main__":

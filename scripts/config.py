@@ -204,7 +204,7 @@ ARXIV_API = "http://export.arxiv.org/api/query"
 # Fetch parameters
 DAILY_TARGET = 15  # Daily target number of papers (upper limit)
 MAX_AGE_DAYS = 7  # Maximum age for fallback
-MIN_SCORE = 60  # Minimum score threshold
+MIN_SCORE = 50  # Minimum score threshold
 
 # Score weights
 SCORE_WEIGHTS = {

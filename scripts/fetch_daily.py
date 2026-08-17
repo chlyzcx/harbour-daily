@@ -132,8 +132,10 @@ def main():
         selection = fetch_daily_papers(target_date, project_root)
 
     if not selection.papers:
-        print("No papers found. Exiting.")
-        sys.exit(1)
+        print("No papers found. Skipping today's update.")
+        # Exit with code 0 (success) to avoid failing the GitHub Actions workflow
+        # This allows the workflow to continue and deploy existing content
+        sys.exit(0)
 
     # Generate markdown files
     generate_markdown_files(selection, project_root)

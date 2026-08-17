@@ -94,25 +94,29 @@ def calculate_score(
         if days_old <= 1:
             recency_score = 100
         elif days_old <= 3:
-            recency_score = 90
+            recency_score = 95
         elif days_old <= 7:
-            recency_score = 80
+            recency_score = 90
         elif days_old <= 30:
-            recency_score = 60
+            recency_score = 70
         else:
-            recency_score = 40
+            recency_score = 50
     recency_component = recency_score * weights["recency"]
 
     # Direction match score (0-100)
-    direction_score = min(direction_match * 30, 100)
+    direction_score = min(direction_match * 40, 100)
     direction_component = direction_score * weights["direction"]
 
-    # Citation score (0-100)
-    citation_score = min(citation_count * 5, 100)
+    # Citation score (0-100) - for new papers, use recency as proxy
+    if citation_count > 0:
+        citation_score = min(citation_count * 5, 100)
+    else:
+        # New papers get bonus based on recency
+        citation_score = recency_score * 0.8  # 80% of recency score
     citation_component = citation_score * weights["citation"]
 
     # Open access bonus (0 or 100)
-    oa_score = 100 if is_oa else 0
+    oa_score = 100 if is_oa else 50  # Give some points even if not OA
     oa_component = oa_score * weights["open_access"]
 
     total = journal_component + recency_component + direction_component + citation_component + oa_component
