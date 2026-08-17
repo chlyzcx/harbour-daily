@@ -45,10 +45,14 @@ class Paper:
         ]
         for author in self.authors:
             lines.append(f'  - "{author}"')
+        if not self.authors:
+            lines[-1] = "authors: []"
 
         lines.append("research_direction:")
         for direction in self.research_directions:
             lines.append(f'  - "{direction}"')
+        if not self.research_directions:
+            lines[-1] = "research_direction: []"
 
         if self.journal:
             lines.append(f'journal: "{self.journal}"')
@@ -64,6 +68,8 @@ class Paper:
         lines.append("keywords:")
         for kw in self.keywords:
             lines.append(f'  - "{kw}"')
+        if not self.keywords:
+            lines[-1] = "keywords: []"
 
         lines.append(f"score: {self.score}")
 
@@ -71,6 +77,8 @@ class Paper:
         for source in self.sources:
             lines.append(f'  - name: "{source.name}"')
             lines.append(f'    url: "{source.url}"')
+        if not self.sources:
+            lines[-1] = "sources: []"
 
         if self.preview_image:
             lines.append(f'previewImage: "{self.preview_image}"')

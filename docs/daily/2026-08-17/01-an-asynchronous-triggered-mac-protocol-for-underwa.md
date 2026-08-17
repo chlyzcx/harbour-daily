@@ -16,7 +16,7 @@ journal: "arXiv preprint"
 publisher: "arXiv"
 publication_year: 2026
 summary: "Time Division Multiple Access (TDMA)-based Medium Access Control (MAC) protocols have proven their practicality through extensive field trials in Underwater Acoustic Networks (UANs), attributable to their hardware-agnostic and easily implementable properties. Most existing protocols rely on a synchronized and fixed-length slot paradigm to mitigate channel contention and facilitate orderly transmissions. However, this paradigm imposes significant clock synchronization overhead in UANs with low an..."
-keywords:
+keywords: []
 score: 70.0
 sources:
   - name: "arXiv"
