@@ -19,15 +19,18 @@ class Paper:
     summary: str
     keywords: list[str]
     research_directions: list[str]
-    score: int
+    score: float
     sources: list[Source]
+    category: str = "Paper"
     journal: Optional[str] = None
     publisher: Optional[str] = None
     doi: Optional[str] = None
     publication_year: Optional[int] = None
     publication_date: Optional[date] = None
     preview_image: Optional[str] = None
-    category: str = "Paper"
+    core_content: str = ""
+    key_tech: str = ""
+    results: str = ""
 
     def to_markdown(self, date_str: str, rank: int) -> str:
         """Convert paper to Markdown with front matter."""
@@ -74,20 +77,22 @@ class Paper:
 
         lines.append("---")
         lines.append("")
-        lines.append(f"# {self.title}")
+        lines.append("## 核心内容")
         lines.append("")
-        lines.append("## 摘要")
+        lines.append(self.core_content if self.core_content else self.summary)
         lines.append("")
-        lines.append(self.summary)
+        lines.append("## 关键技术与数据")
         lines.append("")
-        lines.append("## 关键词")
+        lines.append(self.key_tech if self.key_tech else "（详细技术分析待补充）")
         lines.append("")
-        lines.append("、".join(self.keywords))
+        lines.append("## 结果与结论")
         lines.append("")
-        lines.append("## 来源")
+        lines.append(self.results if self.results else "（实验结果与结论待补充）")
+        lines.append("")
+        lines.append("## 来源链接")
         lines.append("")
         for source in self.sources:
-            lines.append(f"- [{source.name}]({source.url})")
+            lines.append(f"- {source.name}：{source.url}")
 
         return "\n".join(lines)
 
@@ -101,4 +106,40 @@ class DailySelection:
         self.papers.append(paper)
 
     def sort_by_score(self) -> None:
+        """Sort papers by score descending and assign ranks."""
         self.papers.sort(key=lambda p: p.score, reverse=True)
+        for i, paper in enumerate(self.papers, start=1):
+            paper.rank = i
+
+    def to_manifest(self) -> dict:
+        """Generate managed-manifest.json content."""
+        return {
+            "schema_version": 2,
+            "cycle_id": f"daily-{self.date}",
+            "display_date": self.date,
+            "articles": [
+                {
+                    "candidate_id": p.candidate_id,
+                    "category": p.category,
+                    "rank": p.rank,
+                    "path": f"docs/daily/{self.date}/{p.rank:02d}-{self._slugify(p.title)}.md"
+                }
+                for p in self.papers
+            ],
+            "assets": [
+                {
+                    "candidate_id": p.candidate_id,
+                    "path": f"docs/public{p.preview_image}" if p.preview_image else ""
+                }
+                for p in self.papers
+                if p.preview_image
+            ]
+        }
+
+    @staticmethod
+    def _slugify(title: str) -> str:
+        """Generate URL-safe slug from title."""
+        slug = title.lower()
+        slug = "".join(c if c.isalnum() or c in " -" else "" for c in slug)
+        slug = slug.replace(" ", "-")[:50]
+        return slug

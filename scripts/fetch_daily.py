@@ -1,6 +1,6 @@
 """Main daily fetch script - orchestrates all data sources."""
 
-import os
+import json
 import sys
 from datetime import date, timedelta
 from pathlib import Path
@@ -9,6 +9,8 @@ from config import DAILY_TARGET, MIN_SCORE
 from models import DailySelection, Paper
 from fetch_openalex import fetch_openalex_papers
 from fetch_arxiv import fetch_arxiv_papers
+from fetch_news import fetch_university_news
+from fetch_policy import fetch_policy_info
 from fetch_covers import prefetch_all_covers
 
 
@@ -40,9 +42,7 @@ def generate_markdown_files(selection: DailySelection, output_dir: Path) -> None
 
     for rank, paper in enumerate(selection.papers, start=1):
         # Generate slug from title
-        slug = paper.title.lower()
-        slug = "".join(c if c.isalnum() or c in " -" else "" for c in slug)
-        slug = slug.replace(" ", "-")[:50]
+        slug = DailySelection._slugify(paper.title)
 
         filename = f"{rank:02d}-{slug}.md"
         filepath = daily_dir / filename
@@ -50,6 +50,12 @@ def generate_markdown_files(selection: DailySelection, output_dir: Path) -> None
         markdown = paper.to_markdown(date_str, rank)
         filepath.write_text(markdown, encoding="utf-8")
         print(f"Generated: {filepath}")
+
+    # Generate managed-manifest.json
+    manifest = selection.to_manifest()
+    manifest_path = daily_dir / ".managed-manifest.json"
+    manifest_path.write_text(json.dumps(manifest, indent=2, ensure_ascii=False), encoding="utf-8")
+    print(f"Generated: {manifest_path}")
 
 
 def fetch_daily_papers(target_date: date, project_root: Path) -> DailySelection:
@@ -69,6 +75,16 @@ def fetch_daily_papers(target_date: date, project_root: Path) -> DailySelection:
     print(f"  Found {len(arxiv_papers)} papers")
     all_papers.extend(arxiv_papers)
 
+    print("Fetching university news...")
+    news_items = fetch_university_news(target_date)
+    print(f"  Found {len(news_items)} news items")
+    all_papers.extend(news_items)
+
+    print("Fetching policy information...")
+    policy_items = fetch_policy_info(target_date)
+    print(f"  Found {len(policy_items)} policy items")
+    all_papers.extend(policy_items)
+
     # Deduplicate
     print("Deduplicating...")
     unique_papers = deduplicate_papers(all_papers)
@@ -78,10 +94,10 @@ def fetch_daily_papers(target_date: date, project_root: Path) -> DailySelection:
     filtered = [p for p in unique_papers if p.score >= MIN_SCORE]
     print(f"  {len(filtered)} papers above minimum score ({MIN_SCORE})")
 
-    # Sort by score descending
+    # Sort by score descending and assign ranks
     filtered.sort(key=lambda p: p.score, reverse=True)
 
-    # Select top N
+    # Select top N (up to DAILY_TARGET)
     selected = filtered[:DAILY_TARGET]
     print(f"Selected {len(selected)} papers for {target_date}")
 
@@ -89,6 +105,9 @@ def fetch_daily_papers(target_date: date, project_root: Path) -> DailySelection:
     selection = DailySelection(date=target_date.isoformat())
     for paper in selected:
         selection.add_paper(paper)
+
+    # Sort by score and assign ranks
+    selection.sort_by_score()
 
     return selection
 

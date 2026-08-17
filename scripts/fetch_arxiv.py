@@ -10,7 +10,7 @@ from models import Paper, Source
 from fetch_openalex import match_research_directions, extract_keywords
 
 
-def fetch_arxiv_papers(target_date: date, max_results: int = 20) -> list[Paper]:
+def fetch_arxiv_papers(target_date: date, max_results: int = 50) -> list[Paper]:
     """Fetch recent papers from arXiv related to underwater acoustics."""
     papers = []
 
@@ -21,7 +21,7 @@ def fetch_arxiv_papers(target_date: date, max_results: int = 20) -> list[Paper]:
 
     # Build arXiv query
     query_terms = []
-    for kw in all_keywords[:8]:  # Limit query length
+    for kw in all_keywords[:10]:  # Limit query length
         query_terms.append(f'all:"{kw}"')
     query = " OR ".join(query_terms)
 
@@ -88,7 +88,7 @@ def fetch_arxiv_papers(target_date: date, max_results: int = 20) -> list[Paper]:
             keywords = extract_keywords(title, abstract, directions)
 
             # arXiv papers get moderate score (preprints)
-            score = 70
+            score = 70.0
 
             # Sources
             sources = [Source(name="arXiv", url=arxiv_url)]

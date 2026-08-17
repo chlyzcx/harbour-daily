@@ -2,42 +2,148 @@
 
 # Research directions and their search keywords
 RESEARCH_DIRECTIONS = {
-    "水声通信信道": [
-        "underwater acoustic channel",
-        "underwater acoustic communication channel",
-        "ocean acoustic channel",
-        "underwater channel estimation",
+    # 水声通信信道
+    "信道建模": [
+        "underwater acoustic channel model",
+        "ocean acoustic channel model",
         "underwater channel modeling",
+        "acoustic propagation model",
+    ],
+    "信道估计": [
+        "underwater acoustic channel estimation",
+        "channel estimation underwater",
+        "underwater channel estimation",
+    ],
+    "信道均衡": [
+        "underwater acoustic channel equalization",
+        "channel equalization underwater",
+        "underwater equalizer",
+    ],
+    "时变特性": [
         "time-varying underwater channel",
-        "underwater acoustic propagation",
+        "underwater channel time variation",
+        "non-stationary underwater channel",
     ],
-    "水声通信": [
-        "underwater acoustic communication",
-        "underwater wireless communication",
-        "underwater acoustic modem",
+    "多径效应": [
+        "underwater multipath",
+        "multipath propagation underwater",
+        "underwater acoustic multipath",
+    ],
+    "多普勒效应": [
+        "underwater doppler effect",
+        "doppler shift underwater",
+        "underwater acoustic doppler",
+    ],
+    # 水声通信
+    "OFDM": [
         "underwater acoustic OFDM",
+        "underwater OFDM communication",
+        "OFDM underwater acoustic",
+    ],
+    "扩频通信": [
+        "underwater spread spectrum",
+        "spread spectrum underwater acoustic",
+        "underwater DSSS",
+    ],
+    "MIMO": [
+        "underwater acoustic MIMO",
+        "MIMO underwater communication",
+        "underwater MIMO system",
+    ],
+    "调制解调": [
+        "underwater acoustic modulation",
+        "underwater acoustic demodulation",
+        "underwater acoustic modem",
+    ],
+    "网络协议": [
+        "underwater acoustic network protocol",
+        "underwater MAC protocol",
         "underwater acoustic networking",
-        "underwater acoustic telemetry",
-        "underwater acoustic signal processing",
     ],
-    "水声侦察": [
-        "underwater acoustic reconnaissance",
-        "underwater acoustic surveillance",
-        "passive acoustic monitoring",
+    "中继通信": [
+        "underwater acoustic relay",
+        "underwater relay communication",
+        "underwater acoustic repeater",
+    ],
+    "水声调制解调器": [
+        "underwater acoustic modem",
+        "underwater modem design",
+        "acoustic modem underwater",
+    ],
+    # 水声侦察
+    "目标检测": [
         "underwater target detection",
-        "underwater acoustic signal classification",
-        "underwater acoustic localization",
-        "underwater acoustic array processing",
+        "underwater acoustic target detection",
+        "underwater object detection",
     ],
-    "海洋生物声学信号处理": [
-        "marine bioacoustics",
-        "marine mammal acoustics",
-        "underwater bioacoustic signal",
+    "被动定位": [
+        "passive underwater localization",
+        "underwater passive positioning",
+        "passive acoustic localization",
+    ],
+    "信号识别": [
+        "underwater acoustic signal recognition",
+        "underwater signal classification",
+        "underwater acoustic signal identification",
+    ],
+    "特征提取": [
+        "underwater acoustic feature extraction",
+        "underwater signal feature",
+        "acoustic feature extraction underwater",
+    ],
+    "阵列处理": [
+        "underwater acoustic array processing",
+        "hydrophone array processing",
+        "underwater array signal processing",
+    ],
+    "声呐信号处理": [
+        "sonar signal processing",
+        "underwater sonar signal",
+        "sonar array processing",
+    ],
+    "主动声呐": [
+        "active sonar",
+        "active underwater acoustic",
+        "active sonar signal",
+    ],
+    "被动声呐": [
+        "passive sonar",
+        "passive underwater acoustic",
+        "passive sonar signal",
+    ],
+    # 海洋生物声学信号处理
+    "鲸豚叫声检测": [
         "whale call detection",
-        "dolphin whistle classification",
+        "dolphin whistle detection",
+        "cetacean vocalization detection",
+        "marine mammal call detection",
+    ],
+    "鱼类声学": [
         "fish acoustic signal",
-        "ocean biological acoustics",
-        "marine animal acoustic",
+        "fish sound detection",
+        "fish vocalization",
+        "fish bioacoustics",
+    ],
+    "生物声呐": [
+        "biosonar",
+        "biological sonar",
+        "echolocation",
+        "bat echolocation underwater",
+    ],
+    "海洋哺乳动物声学": [
+        "marine mammal acoustics",
+        "marine mammal vocalization",
+        "cetacean acoustics",
+    ],
+    "生物声学信号分类": [
+        "bioacoustic signal classification",
+        "marine bioacoustic classification",
+        "underwater bioacoustic signal",
+    ],
+    "海洋环境噪声": [
+        "ocean ambient noise",
+        "underwater ambient noise",
+        "marine environmental noise",
     ],
 }
 
@@ -96,6 +202,64 @@ SEMANTIC_SCHOLAR_API = "https://api.semanticscholar.org/graph/v1/paper"
 ARXIV_API = "http://export.arxiv.org/api/query"
 
 # Fetch parameters
-DAILY_TARGET = 2  # Daily target number of papers
+DAILY_TARGET = 15  # Daily target number of papers (upper limit)
 MAX_AGE_DAYS = 7  # Maximum age for fallback
 MIN_SCORE = 60  # Minimum score threshold
+
+# Score weights
+SCORE_WEIGHTS = {
+    "journal": 0.40,      # Journal quality
+    "recency": 0.20,      # Publication recency
+    "direction": 0.20,    # Research direction match
+    "citation": 0.10,     # Citation count
+    "open_access": 0.10,  # Open access bonus
+}
+
+# University news sources (RSS or webpage)
+UNIVERSITY_NEWS_SOURCES = {
+    "哈尔滨工程大学": {
+        "name": "哈尔滨工程大学",
+        "url": "https://www.hrbeu.edu.cn/",
+        "news_url": "https://www.hrbeu.edu.cn/xyxw.htm",
+        "type": "webpage",
+    },
+    "西北工业大学": {
+        "name": "西北工业大学",
+        "url": "https://www.nwpu.edu.cn/",
+        "news_url": "https://www.nwpu.edu.cn/xwzx.htm",
+        "type": "webpage",
+    },
+    "上海交通大学": {
+        "name": "上海交通大学",
+        "url": "https://www.sjtu.edu.cn/",
+        "news_url": "https://www.sjtu.edu.cn/xwzx.htm",
+        "type": "webpage",
+    },
+    "中科院声学所": {
+        "name": "中科院声学所",
+        "url": "http://www.ioa.ac.cn/",
+        "news_url": "http://www.ioa.ac.cn/xwzx.htm",
+        "type": "webpage",
+    },
+}
+
+# Policy sources
+POLICY_SOURCES = {
+    "国家海洋局": {
+        "name": "国家海洋局",
+        "url": "https://www.mnr.gov.cn/",
+        "type": "webpage",
+    },
+    "自然科学基金委": {
+        "name": "国家自然科学基金委员会",
+        "url": "https://www.nsfc.gov.cn/",
+        "type": "webpage",
+    },
+}
+
+# Keywords for filtering news/policy related to underwater acoustics
+UNDERWATER_ACOUSTIC_KEYWORDS = [
+    "水声", "水下声学", "海洋声学", "声呐", "水声工程",
+    "underwater acoustic", "ocean acoustic", "sonar",
+    "marine acoustic", "hydroacoustic",
+]

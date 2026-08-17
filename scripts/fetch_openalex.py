@@ -10,9 +10,9 @@ from config import (
     DEFAULT_COVER,
     OPENALEX_API,
     MAX_AGE_DAYS,
+    SCORE_WEIGHTS,
 )
 from models import Paper, Source
-from fetch_covers import ensure_journal_cover
 
 
 def normalize_journal_name(name: str) -> str:
@@ -80,35 +80,46 @@ def calculate_score(
     citation_count: int,
     is_oa: bool,
     direction_match: int,
-) -> int:
-    """Calculate overall paper score (0-100)."""
-    score = journal_score
+) -> float:
+    """Calculate overall paper score (0-100) using weighted formula."""
+    weights = SCORE_WEIGHTS
 
-    # Recency bonus (newer is better)
+    # Journal score (0-100)
+    journal_component = journal_score * weights["journal"]
+
+    # Recency score (0-100)
+    recency_score = 0
     if publication_date:
         days_old = (date.today() - publication_date).days
         if days_old <= 1:
-            score += 20
+            recency_score = 100
+        elif days_old <= 3:
+            recency_score = 90
         elif days_old <= 7:
-            score += 10
+            recency_score = 80
         elif days_old <= 30:
-            score += 5
+            recency_score = 60
+        else:
+            recency_score = 40
+    recency_component = recency_score * weights["recency"]
 
-    # Citation bonus (for slightly older papers)
-    if citation_count > 0:
-        score += min(citation_count * 2, 20)
+    # Direction match score (0-100)
+    direction_score = min(direction_match * 30, 100)
+    direction_component = direction_score * weights["direction"]
 
-    # Open access bonus
-    if is_oa:
-        score += 5
+    # Citation score (0-100)
+    citation_score = min(citation_count * 5, 100)
+    citation_component = citation_score * weights["citation"]
 
-    # Direction match bonus
-    score += direction_match * 5
+    # Open access bonus (0 or 100)
+    oa_score = 100 if is_oa else 0
+    oa_component = oa_score * weights["open_access"]
 
-    return min(score, 100)
+    total = journal_component + recency_component + direction_component + citation_component + oa_component
+    return round(total, 1)
 
 
-def fetch_openalex_papers(target_date: date, max_results: int = 50) -> list[Paper]:
+def fetch_openalex_papers(target_date: date, max_results: int = 100) -> list[Paper]:
     """Fetch papers from OpenAlex for a given date."""
     papers = []
 
@@ -118,14 +129,14 @@ def fetch_openalex_papers(target_date: date, max_results: int = 50) -> list[Pape
         all_keywords.extend(keywords)
 
     # OpenAlex search query
-    query = " OR ".join([f'"{kw}"' for kw in all_keywords[:10]])  # Limit query length
+    query = " OR ".join([f'"{kw}"' for kw in all_keywords[:15]])
 
     params = {
         "search": query,
         "filter": f"from_publication_date:{target_date - timedelta(days=MAX_AGE_DAYS)},to_publication_date:{target_date}",
         "sort": "publication_date:desc",
         "per_page": max_results,
-        "mailto": "2770820299@qq.com",  # OpenAlex requires polite pool
+        "mailto": "2770820299@qq.com",
     }
 
     try:
@@ -207,14 +218,12 @@ def fetch_openalex_papers(target_date: date, max_results: int = 50) -> list[Pape
                 sources.append(Source(name="OpenAlex", url=openalex_id))
             if doi:
                 sources.append(Source(name="DOI", url=f"https://doi.org/{doi}"))
-            if pub_year and journal_name:
-                sources.append(Source(name="Publisher", url=f"https://doi.org/{doi}" if doi else "#"))
 
             # Create paper
             paper = Paper(
                 candidate_id=f"openalex--{work.get('id', '').split('/')[-1]}",
                 title=title,
-                authors=authors[:10],  # Limit authors
+                authors=authors[:10],
                 summary=abstract[:500] + "..." if len(abstract) > 500 else abstract,
                 keywords=keywords,
                 research_directions=directions,
