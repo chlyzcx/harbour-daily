@@ -26,7 +26,6 @@ sources:
     url: "https://openalex.org/works/W987654321"
   - name: "DOI"
     url: "https://doi.org/10.1121/10.0001234"
-previewImage: "/journal-covers/jasa.png"
 ---
 
 ## 核心内容

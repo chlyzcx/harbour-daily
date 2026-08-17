@@ -108,7 +108,7 @@ def fetch_arxiv_papers(target_date: date, max_results: int = 50) -> list[Paper]:
                 publisher="arXiv",
                 publication_year=pub_year,
                 publication_date=pub_date,
-                preview_image="/journal-covers/arxiv.png",
+                preview_image=None,  # Use pseudo-cover instead of journal cover
             )
             papers.append(paper)
 

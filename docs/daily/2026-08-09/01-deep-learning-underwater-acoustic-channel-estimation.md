@@ -27,7 +27,6 @@ sources:
     url: "https://openalex.org/works/W123456789"
   - name: "DOI"
     url: "https://doi.org/10.1109/JOE.2026.123456"
-previewImage: "/journal-covers/ieee-joe.png"
 ---
 
 ## 核心内容

@@ -234,7 +234,7 @@ def fetch_openalex_papers(target_date: date, max_results: int = 100) -> list[Pap
                 doi=doi,
                 publication_year=pub_year,
                 publication_date=pub_date,
-                preview_image=get_journal_cover(journal_name),
+                preview_image=None,  # Use pseudo-cover instead of journal cover
             )
             papers.append(paper)
 
