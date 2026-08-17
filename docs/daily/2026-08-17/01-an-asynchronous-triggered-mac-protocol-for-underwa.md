@@ -11,7 +11,7 @@ authors:
   - "Nan Sun"
   - "Jun Liu"
 research_direction:
-  - "水声通信"
+  - "网络协议"
 journal: "arXiv preprint"
 publisher: "arXiv"
 publication_year: 2026

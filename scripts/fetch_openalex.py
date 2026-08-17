@@ -45,7 +45,7 @@ def match_research_directions(text: str) -> list[str]:
             if keyword.lower() in text_lower:
                 matched.append(direction)
                 break
-    return matched if matched else ["水声通信"]  # Default fallback
+    return matched  # Return empty list if no match
 
 
 def extract_keywords(title: str, abstract: str, directions: list[str]) -> list[str]:
