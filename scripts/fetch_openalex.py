@@ -171,8 +171,8 @@ def fetch_openalex_papers(target_date: date, max_results: int = 100) -> list[Pap
                     authors.append(name)
 
             # Journal info
-            primary_location = work.get("primary_location", {})
-            source = primary_location.get("source", {})
+            primary_location = work.get("primary_location") or {}
+            source = primary_location.get("source") or {}
             journal_name = source.get("display_name", "")
             publisher = source.get("host_organization_name", "")
 
