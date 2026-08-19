@@ -13,7 +13,7 @@ authors:
   - "Sarah M. Zala"
   - "Nicki Holighaus"
 research_direction:
-  - "水声通信"
+  - "生物声学信号分类"
 journal: "arXiv preprint"
 publisher: "arXiv"
 publication_year: 2026
