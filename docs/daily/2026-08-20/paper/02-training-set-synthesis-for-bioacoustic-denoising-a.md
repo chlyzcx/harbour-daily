@@ -27,7 +27,7 @@ sources:
     url: "http://arxiv.org/abs/2608.10054v1"
   - name: "PDF"
     url: "http://arxiv.org/pdf/2608.10054v1"
-previewImage: "/daily/2026-08-20/assets/arxiv--2608.10054-1/preview.svg"
+previewImage: "/daily/2026-08-20/assets/arxiv--2608.10054-1/preview.png"
 ---
 
 ## 核心内容
