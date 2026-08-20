@@ -14,6 +14,7 @@ from fetch_crossref import fetch_crossref_papers
 from fetch_news import fetch_university_news
 from fetch_policy import fetch_policy_info
 from generate_previews import generate_all_previews
+from generate_analysis import generate_all_analyses
 
 
 def deduplicate_papers(papers: list[Paper]) -> list[Paper]:
@@ -138,6 +139,9 @@ def fetch_daily_papers(target_date: date, project_root: Path) -> DailySelection:
 
     # Sort by score and assign ranks
     selection.sort_by_score()
+
+    # Generate Chinese analyses using DeepSeek
+    generate_all_analyses(selection.papers)
 
     # Generate preview images
     generate_all_previews(selection.papers, target_date.isoformat(), project_root)
