@@ -52,5 +52,38 @@
       "path": "docs/daily/2026-08-20/08-development-of-efficient-wavelet-scheme-in-dwt-fft.md"
     }
   ],
-  "assets": []
+  "assets": [
+    {
+      "candidate_id": "arxiv--2608.10533-2",
+      "path": "docs/public/daily/2026-08-20/assets/arxiv--2608.10533-2/preview.svg"
+    },
+    {
+      "candidate_id": "arxiv--2608.10054-1",
+      "path": "docs/public/daily/2026-08-20/assets/arxiv--2608.10054-1/preview.svg"
+    },
+    {
+      "candidate_id": "openalex--W7201857758",
+      "path": "docs/public/daily/2026-08-20/assets/openalex--W7201857758/preview.svg"
+    },
+    {
+      "candidate_id": "openalex--W7197029990",
+      "path": "docs/public/daily/2026-08-20/assets/openalex--W7197029990/preview.svg"
+    },
+    {
+      "candidate_id": "crossref--10.3389-fmars.2026.1797307",
+      "path": "docs/public/daily/2026-08-20/assets/crossref--10.3389-fmars.2026.1797307/preview.svg"
+    },
+    {
+      "candidate_id": "crossref--10.3389-fmars.2026.1883695",
+      "path": "docs/public/daily/2026-08-20/assets/crossref--10.3389-fmars.2026.1883695/preview.svg"
+    },
+    {
+      "candidate_id": "openalex--W7202207427",
+      "path": "docs/public/daily/2026-08-20/assets/openalex--W7202207427/preview.svg"
+    },
+    {
+      "candidate_id": "openalex--W7202033045",
+      "path": "docs/public/daily/2026-08-20/assets/openalex--W7202033045/preview.svg"
+    }
+  ]
 }

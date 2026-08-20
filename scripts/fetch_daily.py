@@ -13,6 +13,7 @@ from fetch_semantic_scholar import fetch_semantic_scholar_papers
 from fetch_crossref import fetch_crossref_papers
 from fetch_news import fetch_university_news
 from fetch_policy import fetch_policy_info
+from generate_previews import generate_all_previews
 
 
 def deduplicate_papers(papers: list[Paper]) -> list[Paper]:
@@ -135,6 +136,9 @@ def fetch_daily_papers(target_date: date, project_root: Path) -> DailySelection:
 
     # Sort by score and assign ranks
     selection.sort_by_score()
+
+    # Generate preview images
+    generate_all_previews(selection.papers, target_date.isoformat(), project_root)
 
     return selection
 

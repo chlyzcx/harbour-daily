@@ -25,6 +25,7 @@ sources:
     url: "https://openalex.org/W7197029990"
   - name: "DOI"
     url: "https://doi.org/10.1038/s41598-026-62308-6"
+previewImage: "/daily/2026-08-20/assets/openalex--W7197029990/preview.svg"
 ---
 
 ## 核心内容

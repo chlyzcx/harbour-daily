@@ -20,6 +20,7 @@ sources:
     url: "https://openalex.org/W7202033045"
   - name: "DOI"
     url: "https://doi.org/10.59543/jidmis.v3.1387"
+previewImage: "/daily/2026-08-20/assets/openalex--W7202033045/preview.svg"
 ---
 
 ## 核心内容

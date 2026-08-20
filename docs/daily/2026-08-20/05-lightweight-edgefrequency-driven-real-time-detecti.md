@@ -25,6 +25,7 @@ score: 55.0
 sources:
   - name: "DOI"
     url: "https://doi.org/10.3389/fmars.2026.1797307"
+previewImage: "/daily/2026-08-20/assets/crossref--10.3389-fmars.2026.1797307/preview.svg"
 ---
 
 ## 核心内容

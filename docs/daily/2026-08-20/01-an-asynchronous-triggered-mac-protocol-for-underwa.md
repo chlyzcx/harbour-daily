@@ -23,6 +23,7 @@ sources:
     url: "http://arxiv.org/abs/2608.10533v2"
   - name: "PDF"
     url: "http://arxiv.org/pdf/2608.10533v2"
+previewImage: "/daily/2026-08-20/assets/arxiv--2608.10533-2/preview.svg"
 ---
 
 ## 核心内容
