@@ -2,7 +2,7 @@
 candidateId: "crossref--10.3389-fmars.2026.1797307"
 category: "Paper"
 date: "2026-08-20"
-rank: 3
+rank: 5
 title: "Lightweight Edge–Frequency Driven Real-Time Detection Transformer for side-scan sonar target detection"
 authors:
   - "Feihu Zhang"

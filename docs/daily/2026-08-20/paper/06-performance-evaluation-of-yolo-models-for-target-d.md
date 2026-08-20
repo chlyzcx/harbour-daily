@@ -2,7 +2,7 @@
 candidateId: "crossref--10.3389-fmars.2026.1883695"
 category: "Paper"
 date: "2026-08-20"
-rank: 4
+rank: 6
 title: "Performance evaluation of YOLO models for target detection from ocean sidescan sonar imagery"
 authors:
   - "Dandan Liu"
