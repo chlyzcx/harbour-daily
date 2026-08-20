@@ -60,7 +60,7 @@ def generate_analysis(title: str, abstract: str, max_retries: int = 3) -> tuple[
 
             # Handle rate limiting (429)
             if response.status_code == 429:
-                wait_time = (2 ** attempt) * 5  # 5, 10, 20 seconds
+                wait_time = (2 ** attempt) * 30  # 30, 60, 120 seconds
                 print(f"    Rate limited (429), waiting {wait_time}s before retry {attempt + 1}/{max_retries}...")
                 time.sleep(wait_time)
                 continue
@@ -122,9 +122,11 @@ def generate_all_analyses(papers: list) -> None:
             paper.results = results
 
         # Add delay between requests to avoid rate limiting
-        # DeepSeek allows ~60 requests/minute, so we wait 2 seconds between calls
+        # DeepSeek has strict rate limits (~4-5 requests/minute for free tier)
+        # We wait 15 seconds between calls to stay well under the limit
         if i < len(papers):
-            time.sleep(2)
+            print(f"    Waiting 15 seconds before next request...")
+            time.sleep(15)
 
     print("Analysis generation completed!")
 
