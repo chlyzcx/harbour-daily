@@ -13,7 +13,7 @@ from fetch_semantic_scholar import fetch_semantic_scholar_papers
 from fetch_crossref import fetch_crossref_papers
 from fetch_news import fetch_university_news
 from fetch_policy import fetch_policy_info
-from generate_previews import generate_all_previews
+from generate_previews_unified import generate_all_previews_unified
 from generate_analysis import generate_all_analyses
 
 
@@ -144,7 +144,7 @@ def fetch_daily_papers(target_date: date, project_root: Path) -> DailySelection:
     generate_all_analyses(selection.papers)
 
     # Generate preview images
-    generate_all_previews(selection.papers, target_date.isoformat(), project_root)
+    generate_all_previews_unified(selection.papers, target_date.isoformat(), project_root)
 
     return selection
 

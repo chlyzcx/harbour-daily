@@ -31,6 +31,9 @@ class Paper:
     core_content: str = ""
     key_tech: str = ""
     results: str = ""
+    # Additional fields for preview generation
+    is_oa: bool = False  # Open access flag
+    oa_url: Optional[str] = None  # Open access PDF URL
 
     def to_markdown(self, date_str: str, rank: int) -> str:
         """Convert paper to Markdown with front matter."""

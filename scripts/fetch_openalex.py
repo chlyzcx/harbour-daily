@@ -239,6 +239,8 @@ def fetch_openalex_papers(target_date: date, max_results: int = 100) -> list[Pap
                 publication_year=pub_year,
                 publication_date=pub_date,
                 preview_image=None,  # Use pseudo-cover instead of journal cover
+                is_oa=is_oa,  # Pass open access flag for preview generation
+                oa_url=work.get("open_access", {}).get("oa_url"),  # Open access PDF URL
             )
             papers.append(paper)
 

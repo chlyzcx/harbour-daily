@@ -98,8 +98,10 @@ def fetch_semantic_scholar_papers(target_date: date, max_results: int = 100) -> 
                     ))
 
                 # Add open access PDF if available
+                oa_pdf_url = None
                 if item.get("openAccessPdf") and item["openAccessPdf"].get("url"):
-                    sources.append(Source(name="PDF", url=item["openAccessPdf"]["url"]))
+                    oa_pdf_url = item["openAccessPdf"]["url"]
+                    sources.append(Source(name="PDF", url=oa_pdf_url))
 
                 if not sources:
                     continue
@@ -122,6 +124,8 @@ def fetch_semantic_scholar_papers(target_date: date, max_results: int = 100) -> 
                     publication_year=pub_year,
                     publication_date=pub_date,
                     preview_image=None,
+                    is_oa=bool(oa_pdf_url),  # Has open access PDF
+                    oa_url=oa_pdf_url,  # Open access PDF URL for preview generation
                 )
                 papers.append(paper)
 
