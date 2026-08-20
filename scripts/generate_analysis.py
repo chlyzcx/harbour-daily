@@ -10,7 +10,7 @@ DEEPSEEK_API = "https://api.deepseek.com/v1/chat/completions"
 
 KIMI_API_KEY = os.environ.get("KIMI_API_KEY", "")
 DEEPSEEK_API_KEY = os.environ.get("DEEPSEEK_API_KEY", "")
-KIMI_MODEL = os.environ.get("KIMI_MODEL", "kimi-k2-0711-preview")
+KIMI_MODEL = os.environ.get("KIMI_MODEL", "kimi-k2.5")
 
 
 def _get_llm_config() -> tuple[str, str, str, str]:
@@ -78,7 +78,14 @@ def generate_analysis(title: str, abstract: str, max_retries: int = 3) -> tuple[
                 time.sleep(wait_time)
                 continue
 
-            response.raise_for_status()
+            # Log detailed error info for other HTTP errors (e.g. invalid model, auth failure)
+            if response.status_code != 200:
+                print(f"    {provider} API error {response.status_code}: {response.text[:300]}")
+                if attempt < max_retries - 1:
+                    time.sleep(5)
+                    continue
+                return "", ""
+
             result = response.json()
 
             content = result["choices"][0]["message"]["content"]
@@ -118,12 +125,12 @@ def generate_analysis(title: str, abstract: str, max_retries: int = 3) -> tuple[
 
 def generate_all_analyses(papers: list) -> None:
     """Generate analyses for all papers."""
-    provider, _, api_key, _ = _get_llm_config()
+    provider, _, api_key, model = _get_llm_config()
     if not api_key:
         print("Warning: No LLM API key set (KIMI_API_KEY / DEEPSEEK_API_KEY), skipping all analyses")
         return
 
-    print(f"Generating Chinese analyses for {len(papers)} papers using {provider}...")
+    print(f"Generating Chinese analyses for {len(papers)} papers using {provider} (model: {model})...")
 
     for i, paper in enumerate(papers, start=1):
         print(f"  [{i}/{len(papers)}] Analyzing: {paper.title[:50]}...")
