@@ -1,22 +1,35 @@
-"""Generate Chinese analysis using DeepSeek API."""
+"""Generate Chinese analysis using LLM API (Kimi preferred, DeepSeek fallback)."""
 
 import os
 import time
 import requests
-from typing import Optional
 
 
+KIMI_API = "https://api.moonshot.cn/v1/chat/completions"
 DEEPSEEK_API = "https://api.deepseek.com/v1/chat/completions"
+
+KIMI_API_KEY = os.environ.get("KIMI_API_KEY", "")
 DEEPSEEK_API_KEY = os.environ.get("DEEPSEEK_API_KEY", "")
+KIMI_MODEL = os.environ.get("KIMI_MODEL", "kimi-k2-0711-preview")
+
+
+def _get_llm_config() -> tuple[str, str, str, str]:
+    """Return (provider_name, api_url, api_key, model) for the first available provider."""
+    if KIMI_API_KEY:
+        return "Kimi", KIMI_API, KIMI_API_KEY, KIMI_MODEL
+    if DEEPSEEK_API_KEY:
+        return "DeepSeek", DEEPSEEK_API, DEEPSEEK_API_KEY, "deepseek-chat"
+    return "", "", "", ""
 
 
 def generate_analysis(title: str, abstract: str, max_retries: int = 3) -> tuple[str, str]:
     """
-    Generate key_technology and results_conclusion using DeepSeek API.
+    Generate key_technology and results_conclusion using LLM API.
     Returns (key_tech, results) as Chinese text.
     """
-    if not DEEPSEEK_API_KEY:
-        print("Warning: DEEPSEEK_API_KEY not set, skipping analysis generation")
+    provider, api_url, api_key, model = _get_llm_config()
+    if not api_key:
+        print("Warning: No LLM API key set (KIMI_API_KEY / DEEPSEEK_API_KEY), skipping analysis generation")
         return "", ""
 
     prompt = f"""请分析以下水声工程领域的学术论文，生成两部分中文内容：
@@ -40,12 +53,12 @@ def generate_analysis(title: str, abstract: str, max_retries: int = 3) -> tuple[
 """
 
     headers = {
-        "Authorization": f"Bearer {DEEPSEEK_API_KEY}",
+        "Authorization": f"Bearer {api_key}",
         "Content-Type": "application/json"
     }
 
     data = {
-        "model": "deepseek-chat",
+        "model": model,
         "messages": [
             {"role": "user", "content": prompt}
         ],
@@ -56,7 +69,7 @@ def generate_analysis(title: str, abstract: str, max_retries: int = 3) -> tuple[
     # Retry logic with exponential backoff
     for attempt in range(max_retries):
         try:
-            response = requests.post(DEEPSEEK_API, headers=headers, json=data, timeout=60)
+            response = requests.post(api_url, headers=headers, json=data, timeout=60)
 
             # Handle rate limiting (429)
             if response.status_code == 429:
@@ -94,10 +107,10 @@ def generate_analysis(title: str, abstract: str, max_retries: int = 3) -> tuple[
                 print(f"    Error: {e}, retrying in {wait_time}s...")
                 time.sleep(wait_time)
             else:
-                print(f"    Error calling DeepSeek API after {max_retries} attempts: {e}")
+                print(f"    Error calling {provider} API after {max_retries} attempts: {e}")
                 return "", ""
         except (KeyError, IndexError) as e:
-            print(f"    Error parsing DeepSeek response: {e}")
+            print(f"    Error parsing {provider} response: {e}")
             return "", ""
 
     return "", ""
@@ -105,11 +118,12 @@ def generate_analysis(title: str, abstract: str, max_retries: int = 3) -> tuple[
 
 def generate_all_analyses(papers: list) -> None:
     """Generate analyses for all papers."""
-    if not DEEPSEEK_API_KEY:
-        print("Warning: DEEPSEEK_API_KEY not set, skipping all analyses")
+    provider, _, api_key, _ = _get_llm_config()
+    if not api_key:
+        print("Warning: No LLM API key set (KIMI_API_KEY / DEEPSEEK_API_KEY), skipping all analyses")
         return
 
-    print(f"Generating Chinese analyses for {len(papers)} papers using DeepSeek...")
+    print(f"Generating Chinese analyses for {len(papers)} papers using {provider}...")
 
     for i, paper in enumerate(papers, start=1):
         print(f"  [{i}/{len(papers)}] Analyzing: {paper.title[:50]}...")
@@ -122,8 +136,6 @@ def generate_all_analyses(papers: list) -> None:
             paper.results = results
 
         # Add delay between requests to avoid rate limiting
-        # DeepSeek has strict rate limits (~4-5 requests/minute for free tier)
-        # We wait 15 seconds between calls to stay well under the limit
         if i < len(papers):
             print(f"    Waiting 15 seconds before next request...")
             time.sleep(15)

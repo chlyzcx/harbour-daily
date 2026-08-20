@@ -62,6 +62,68 @@ def extract_arxiv_html_image(arxiv_url: str, output_path: Path) -> bool:
         return False
 
 
+def extract_pdf_figure(pdf_url: str, output_path: Path, max_pages: int = 6) -> bool:
+    """Extract the largest embedded figure image from a PDF.
+
+    Scans the first few pages for embedded raster images and picks the
+    largest one (most likely a figure, not an icon or logo).
+    """
+    try:
+        import fitz  # PyMuPDF
+    except ImportError:
+        print("    PyMuPDF not installed, skipping figure extraction")
+        return False
+
+    temp_pdf = output_path.parent / "temp_fig.pdf"
+    try:
+        print(f"    Downloading PDF for figure extraction: {pdf_url}")
+        response = requests.get(pdf_url, timeout=60)
+        response.raise_for_status()
+
+        temp_pdf.parent.mkdir(parents=True, exist_ok=True)
+        temp_pdf.write_bytes(response.content)
+
+        doc = fitz.open(temp_pdf)
+        best = None  # (area, image_bytes)
+        for page_num in range(min(len(doc), max_pages)):
+            for img in doc[page_num].get_images(full=True):
+                xref = img[0]
+                try:
+                    info = doc.extract_image(xref)
+                except Exception:
+                    continue
+                w, h = info.get("width", 0), info.get("height", 0)
+                # Skip small images (icons, logos, ornaments)
+                if w < 250 or h < 150:
+                    continue
+                area = w * h
+                if best is None or area > best[0]:
+                    best = (area, info["image"])
+        doc.close()
+
+        if not best:
+            print("    No embedded figure found in PDF")
+            return False
+
+        # Normalize to PNG via Pillow
+        from io import BytesIO
+        from PIL import Image
+        img = Image.open(BytesIO(best[1]))
+        if img.mode in ("RGBA", "P", "CMYK", "LA"):
+            img = img.convert("RGB")
+        output_path.parent.mkdir(parents=True, exist_ok=True)
+        img.save(output_path, "PNG")
+        print(f"    Extracted embedded figure ({img.size[0]}x{img.size[1]})")
+        return True
+
+    except Exception as e:
+        print(f"    Error extracting PDF figure: {e}")
+        return False
+    finally:
+        if temp_pdf.exists():
+            temp_pdf.unlink()
+
+
 def extract_pdf_page(pdf_url: str, output_path: Path, page: int = 1) -> bool:
     """Extract specific page from PDF as image."""
     try:
@@ -108,15 +170,19 @@ def generate_arxiv_preview(paper: Paper, output_path: Path) -> bool:
     if not arxiv_url:
         return False
 
-    # Try HTML first
+    # Try HTML figure first
     if extract_arxiv_html_image(arxiv_url, output_path):
         return True
 
-    # Fallback to PDF page 2 (usually has Figure 1)
     pdf_url = arxiv_url.replace("/abs/", "/pdf/")
     if not pdf_url.endswith(".pdf"):
         pdf_url += ".pdf"
 
+    # Try embedded figure from PDF
+    if extract_pdf_figure(pdf_url, output_path):
+        return True
+
+    # Fallback to PDF page 2 (usually has Figure 1)
     if extract_pdf_page(pdf_url, output_path, page=2):
         return True
 
@@ -134,7 +200,10 @@ def generate_openalex_preview(paper: Paper, output_path: Path) -> bool:
     # Check if it's open access and has PDF URL
     if paper.is_oa and paper.oa_url:
         print(f"    Open access paper, trying PDF: {paper.oa_url}")
-        # Try to extract from PDF (page 2 usually has Figure 1)
+        # Try embedded figure first
+        if extract_pdf_figure(paper.oa_url, output_path):
+            return True
+        # Fallback to page 2 (usually has Figure 1)
         if extract_pdf_page(paper.oa_url, output_path, page=2):
             return True
         # Fallback to page 1
@@ -153,7 +222,10 @@ def generate_semantic_scholar_preview(paper: Paper, output_path: Path) -> bool:
     # Check if paper has open access PDF URL
     if paper.oa_url:
         print(f"    Has open access PDF, trying: {paper.oa_url}")
-        # Try to extract from PDF (page 2 usually has Figure 1)
+        # Try embedded figure first
+        if extract_pdf_figure(paper.oa_url, output_path):
+            return True
+        # Fallback to page 2 (usually has Figure 1)
         if extract_pdf_page(paper.oa_url, output_path, page=2):
             return True
         # Fallback to page 1

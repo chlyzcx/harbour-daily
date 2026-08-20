@@ -1,6 +1,7 @@
 """Main daily fetch script - orchestrates all data sources."""
 
 import json
+import re
 import shutil
 import sys
 from datetime import date, timedelta
@@ -16,6 +17,17 @@ from fetch_news import fetch_university_news
 from fetch_policy import fetch_policy_info
 from generate_previews_unified import generate_all_previews_unified
 from generate_analysis import generate_all_analyses
+
+
+def clean_text(text: str) -> str:
+    """Strip XML/JATS tags and normalize whitespace in abstract text."""
+    if not text:
+        return text
+    # Remove XML tags like <jats:p>, <jats:italic>, etc.
+    text = re.sub(r"<[^>]+>", " ", text)
+    # Normalize whitespace
+    text = re.sub(r"\s+", " ", text).strip()
+    return text
 
 
 def deduplicate_papers(papers: list[Paper]) -> list[Paper]:
@@ -125,6 +137,11 @@ def fetch_daily_papers(target_date: date, project_root: Path) -> DailySelection:
     print("Deduplicating...")
     unique_papers = deduplicate_papers(all_papers)
     print(f"  {len(unique_papers)} unique papers")
+
+    # Clean XML/JATS tags from summaries (some sources embed markup)
+    for paper in unique_papers:
+        paper.summary = clean_text(paper.summary)
+        paper.title = clean_text(paper.title)
 
     # Filter by minimum score
     filtered = [p for p in unique_papers if p.score >= MIN_SCORE]

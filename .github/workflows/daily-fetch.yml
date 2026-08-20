@@ -33,6 +33,7 @@ jobs:
 
       - name: Fetch daily papers
         env:
+          KIMI_API_KEY: ${{ secrets.KIMI_API_KEY }}
           DEEPSEEK_API_KEY: ${{ secrets.DEEPSEEK_API_KEY }}
         run: |
           cd scripts
