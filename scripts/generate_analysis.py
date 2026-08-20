@@ -12,27 +12,11 @@ KIMI_API_KEY = os.environ.get("KIMI_API_KEY", "")
 DEEPSEEK_API_KEY = os.environ.get("DEEPSEEK_API_KEY", "")
 KIMI_MODEL = os.environ.get("KIMI_MODEL", "kimi-k2.5")
 
+# Delay between papers. Moonshot free tier is ~3 requests/minute,
+# so 25s keeps us safely under the limit.
+REQUEST_INTERVAL = 25
 
-def _get_llm_config() -> tuple[str, str, str, str]:
-    """Return (provider_name, api_url, api_key, model) for the first available provider."""
-    if KIMI_API_KEY:
-        return "Kimi", KIMI_API, KIMI_API_KEY, KIMI_MODEL
-    if DEEPSEEK_API_KEY:
-        return "DeepSeek", DEEPSEEK_API, DEEPSEEK_API_KEY, "deepseek-chat"
-    return "", "", "", ""
-
-
-def generate_analysis(title: str, abstract: str, max_retries: int = 3) -> tuple[str, str]:
-    """
-    Generate key_technology and results_conclusion using LLM API.
-    Returns (key_tech, results) as Chinese text.
-    """
-    provider, api_url, api_key, model = _get_llm_config()
-    if not api_key:
-        print("Warning: No LLM API key set (KIMI_API_KEY / DEEPSEEK_API_KEY), skipping analysis generation")
-        return "", ""
-
-    prompt = f"""请分析以下水声工程领域的学术论文，生成两部分中文内容：
+PROMPT_TEMPLATE = """请分析以下水声工程领域的学术论文，生成两部分中文内容：
 
 论文标题：{title}
 
@@ -52,85 +36,128 @@ def generate_analysis(title: str, abstract: str, max_retries: int = 3) -> tuple[
 3. 不要添加任何额外的标记或说明
 """
 
+
+def _get_providers() -> list[tuple[str, str, str, str]]:
+    """Return available providers as (name, api_url, api_key, model)."""
+    providers = []
+    if KIMI_API_KEY:
+        providers.append(("Kimi", KIMI_API, KIMI_API_KEY, KIMI_MODEL))
+    if DEEPSEEK_API_KEY:
+        providers.append(("DeepSeek", DEEPSEEK_API, DEEPSEEK_API_KEY, "deepseek-chat"))
+    return providers
+
+
+def _is_quota_error(body: str) -> bool:
+    """Detect quota/balance exhaustion (as opposed to transient rate limiting)."""
+    lower = body.lower()
+    return ("quota" in lower or "balance" in lower or "insufficient" in lower
+            or "余额" in body or "欠费" in body)
+
+
+def _call_llm(api_url: str, api_key: str, model: str, prompt: str,
+              provider: str, max_retries: int = 3) -> tuple[str, bool]:
+    """
+    Call one LLM provider with retries.
+    Returns (content, fatal_error). fatal_error=True means retrying this
+    provider is pointless (quota exhausted / auth failed) — move on.
+    """
     headers = {
         "Authorization": f"Bearer {api_key}",
         "Content-Type": "application/json"
     }
-
     data = {
         "model": model,
-        "messages": [
-            {"role": "user", "content": prompt}
-        ],
+        "messages": [{"role": "user", "content": prompt}],
         "temperature": 0.3,
         "max_tokens": 500
     }
 
-    # Retry logic with exponential backoff
     for attempt in range(max_retries):
         try:
             response = requests.post(api_url, headers=headers, json=data, timeout=60)
 
-            # Handle rate limiting (429)
             if response.status_code == 429:
-                wait_time = (2 ** attempt) * 30  # 30, 60, 120 seconds
-                print(f"    Rate limited (429), waiting {wait_time}s before retry {attempt + 1}/{max_retries}...")
+                body = response.text[:300]
+                print(f"    {provider} 429 (attempt {attempt + 1}/{max_retries}): {body}")
+                if _is_quota_error(body):
+                    print(f"    {provider} quota/balance exhausted, giving up on this provider")
+                    return "", True
+                wait_time = (2 ** attempt) * 60  # 60, 120, 240 seconds
+                print(f"    Rate limited, waiting {wait_time}s...")
                 time.sleep(wait_time)
                 continue
 
-            # Log detailed error info for other HTTP errors (e.g. invalid model, auth failure)
+            if response.status_code in (401, 403):
+                print(f"    {provider} auth error {response.status_code}: {response.text[:300]}")
+                return "", True
+
             if response.status_code != 200:
                 print(f"    {provider} API error {response.status_code}: {response.text[:300]}")
                 if attempt < max_retries - 1:
-                    time.sleep(5)
+                    time.sleep(10)
                     continue
-                return "", ""
+                return "", False
 
             result = response.json()
-
-            content = result["choices"][0]["message"]["content"]
-
-            # Parse the response
-            key_tech = ""
-            results = ""
-
-            if "【关键技术与数据】" in content and "【结果与结论】" in content:
-                parts = content.split("【结果与结论】")
-                key_tech_part = parts[0].replace("【关键技术与数据】", "").strip()
-                results_part = parts[1].strip()
-
-                key_tech = key_tech_part
-                results = results_part
-            else:
-                # Fallback: use the whole content as key_tech
-                key_tech = content[:200]
-                results = "（详见原文）"
-
-            return key_tech, results
+            return result["choices"][0]["message"]["content"], False
 
         except requests.RequestException as e:
             if attempt < max_retries - 1:
                 wait_time = (2 ** attempt) * 5
-                print(f"    Error: {e}, retrying in {wait_time}s...")
+                print(f"    {provider} request error: {e}, retrying in {wait_time}s...")
                 time.sleep(wait_time)
             else:
-                print(f"    Error calling {provider} API after {max_retries} attempts: {e}")
-                return "", ""
+                print(f"    {provider} request failed after {max_retries} attempts: {e}")
+                return "", False
         except (KeyError, IndexError) as e:
-            print(f"    Error parsing {provider} response: {e}")
-            return "", ""
+            print(f"    {provider} response parse error: {e}")
+            return "", False
+
+    return "", False
+
+
+def _parse_content(content: str) -> tuple[str, str]:
+    """Parse LLM output into (key_tech, results)."""
+    if "【关键技术与数据】" in content and "【结果与结论】" in content:
+        parts = content.split("【结果与结论】")
+        key_tech = parts[0].replace("【关键技术与数据】", "").strip()
+        results = parts[1].strip()
+        return key_tech, results
+    # Fallback: use the whole content as key_tech
+    return content[:200], "（详见原文）"
+
+
+def generate_analysis(title: str, abstract: str, max_retries: int = 3) -> tuple[str, str]:
+    """
+    Generate key_technology and results_conclusion using LLM API.
+    Tries each configured provider in order (Kimi, then DeepSeek).
+    Returns (key_tech, results) as Chinese text.
+    """
+    providers = _get_providers()
+    if not providers:
+        print("Warning: No LLM API key set (KIMI_API_KEY / DEEPSEEK_API_KEY), skipping analysis generation")
+        return "", ""
+
+    prompt = PROMPT_TEMPLATE.format(title=title, abstract=abstract)
+
+    for provider, api_url, api_key, model in providers:
+        content, _fatal = _call_llm(api_url, api_key, model, prompt, provider, max_retries)
+        if content:
+            return _parse_content(content)
+        # Any failure on this provider -> try the next one
 
     return "", ""
 
 
 def generate_all_analyses(papers: list) -> None:
     """Generate analyses for all papers."""
-    provider, _, api_key, model = _get_llm_config()
-    if not api_key:
+    providers = _get_providers()
+    if not providers:
         print("Warning: No LLM API key set (KIMI_API_KEY / DEEPSEEK_API_KEY), skipping all analyses")
         return
 
-    print(f"Generating Chinese analyses for {len(papers)} papers using {provider} (model: {model})...")
+    provider_names = ", ".join(f"{name}({model})" for name, _, _, model in providers)
+    print(f"Generating Chinese analyses for {len(papers)} papers, providers: {provider_names}")
 
     for i, paper in enumerate(papers, start=1):
         print(f"  [{i}/{len(papers)}] Analyzing: {paper.title[:50]}...")
@@ -142,10 +169,10 @@ def generate_all_analyses(papers: list) -> None:
         if results:
             paper.results = results
 
-        # Add delay between requests to avoid rate limiting
+        # Delay between requests to stay under rate limits
         if i < len(papers):
-            print(f"    Waiting 15 seconds before next request...")
-            time.sleep(15)
+            print(f"    Waiting {REQUEST_INTERVAL}s before next request...")
+            time.sleep(REQUEST_INTERVAL)
 
     print("Analysis generation completed!")
 
