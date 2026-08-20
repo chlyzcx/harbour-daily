@@ -1,6 +1,7 @@
 """Fetch papers from Semantic Scholar API."""
 
 import requests
+import time
 from datetime import date, timedelta
 from typing import Optional
 from config import RESEARCH_DIRECTIONS, MAX_AGE_DAYS
@@ -37,6 +38,9 @@ def fetch_semantic_scholar_papers(target_date: date, max_results: int = 100) -> 
         }
 
         try:
+            # Add delay to avoid rate limiting (429 errors)
+            time.sleep(3)  # Wait 3 seconds between requests
+
             response = requests.get(S2_API, params=params, timeout=30)
             response.raise_for_status()
             data = response.json()
