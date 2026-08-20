@@ -51,19 +51,21 @@ def deduplicate_papers(papers: list[Paper]) -> list[Paper]:
 
 
 def generate_markdown_files(selection: DailySelection, output_dir: Path) -> None:
-    """Generate Markdown files for selected papers."""
+    """Generate Markdown files for selected papers, organized by category."""
     date_str = selection.date
     daily_dir = output_dir / "docs" / "daily" / date_str
-    assets_dir = daily_dir / "assets"
     daily_dir.mkdir(parents=True, exist_ok=True)
-    assets_dir.mkdir(exist_ok=True)
 
     for rank, paper in enumerate(selection.papers, start=1):
         # Generate slug from title
         slug = DailySelection._slugify(paper.title)
 
+        # Create category subdirectory
+        category_dir = daily_dir / paper.category.lower()
+        category_dir.mkdir(exist_ok=True)
+
         filename = f"{rank:02d}-{slug}.md"
-        filepath = daily_dir / filename
+        filepath = category_dir / filename
 
         markdown = paper.to_markdown(date_str, rank)
         filepath.write_text(markdown, encoding="utf-8")

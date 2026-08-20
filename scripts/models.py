@@ -130,7 +130,7 @@ class DailySelection:
                     "candidate_id": p.candidate_id,
                     "category": p.category,
                     "rank": p.rank,
-                    "path": f"docs/daily/{self.date}/{p.rank:02d}-{self._slugify(p.title)}.md"
+                    "path": f"docs/daily/{self.date}/{p.category.lower()}/{p.rank:02d}-{self._slugify(p.title)}.md"
                 }
                 for p in self.papers
             ],

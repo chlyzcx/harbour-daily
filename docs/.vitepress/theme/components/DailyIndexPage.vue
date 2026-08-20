@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { computed, ref, watch } from 'vue'
+import { computed, onMounted, ref, watch } from 'vue'
 import { withBase } from 'vitepress'
 import type { ArticleCategory, DailyArchive, DailyArticle, ResearchDirection } from '../../data/daily.data'
 
@@ -10,6 +10,29 @@ const selectedCategory = ref<ArticleCategory | 'all'>('all')
 const selectedDirection = ref<ResearchDirection | 'all'>('all')
 const selectedKeyword = ref('全部')
 const selectedSort = ref('rank')
+
+// URL parameter support
+onMounted(() => {
+  if (typeof window === 'undefined') return
+  const params = new URLSearchParams(window.location.search)
+  const dateParam = params.get('date')
+  if (dateParam && props.archive.dates.some((group) => group.date === dateParam)) {
+    selectedDate.value = dateParam
+  }
+})
+
+watch(selectedDate, (newDate) => {
+  selectedCategory.value = 'all'
+  selectedDirection.value = 'all'
+  selectedKeyword.value = '全部'
+
+  // Sync to URL
+  if (typeof window !== 'undefined') {
+    const url = new URL(window.location.href)
+    url.searchParams.set('date', newDate)
+    window.history.replaceState(window.history.state, '', url)
+  }
+})
 
 const currentGroup = computed(() =>
   props.archive.dates.find((group) => group.date === selectedDate.value)
@@ -49,12 +72,6 @@ const matchingArticles = computed(() => {
 })
 
 const visibleArticles = computed(() => matchingArticles.value.slice(0, 15))
-
-watch(selectedDate, () => {
-  selectedCategory.value = 'all'
-  selectedDirection.value = 'all'
-  selectedKeyword.value = '全部'
-})
 
 function imageUrl(article: DailyArticle) {
   if (!article.previewImage) return ''
@@ -161,8 +178,8 @@ function imageUrl(article: DailyArticle) {
     <section v-if="visibleArticles.length" class="article-grid" aria-label="每日文章列表">
       <article v-for="article in visibleArticles" :key="article.candidateId" class="article-card">
         <div class="article-card__topline">
-          <span class="article-card__rank" :class="{ 'article-card__rank--top': article.rank <= 5 }">
-            <span v-if="article.rank <= 5" class="article-card__rank-arrow" aria-hidden="true">↑</span>
+          <span class="article-card__rank" :class="{ 'article-card__rank--top': article.rank <= 3 }">
+            <span v-if="article.rank <= 3" class="article-card__rank-arrow" aria-hidden="true">↑</span>
             NO. {{ String(article.rank).padStart(2, '0') }}
           </span>
           <span class="article-card__score" :aria-label="`综合分 ${article.score}`">{{ article.score.toFixed(1) }}</span>

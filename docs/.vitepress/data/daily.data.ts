@@ -255,7 +255,7 @@ function aggregate(items: DailyArticle[], values: (article: DailyArticle) => str
     .map(([name, count]) => ({ name, count }))
 }
 
-export default createContentLoader('daily/*/*.md', {
+export default createContentLoader('daily/*/*/*.md', {
   transform(pages): DailyArchive {
     const articles = pages.map(({ url, frontmatter }) => {
       const article: DailyArticle = {
