@@ -1,6 +1,7 @@
 """Generate Chinese analysis using DeepSeek API."""
 
 import os
+import time
 import requests
 from typing import Optional
 
@@ -9,7 +10,7 @@ DEEPSEEK_API = "https://api.deepseek.com/v1/chat/completions"
 DEEPSEEK_API_KEY = os.environ.get("DEEPSEEK_API_KEY", "")
 
 
-def generate_analysis(title: str, abstract: str) -> tuple[str, str]:
+def generate_analysis(title: str, abstract: str, max_retries: int = 3) -> tuple[str, str]:
     """
     Generate key_technology and results_conclusion using DeepSeek API.
     Returns (key_tech, results) as Chinese text.
@@ -52,37 +53,54 @@ def generate_analysis(title: str, abstract: str) -> tuple[str, str]:
         "max_tokens": 500
     }
 
-    try:
-        response = requests.post(DEEPSEEK_API, headers=headers, json=data, timeout=60)
-        response.raise_for_status()
-        result = response.json()
+    # Retry logic with exponential backoff
+    for attempt in range(max_retries):
+        try:
+            response = requests.post(DEEPSEEK_API, headers=headers, json=data, timeout=60)
 
-        content = result["choices"][0]["message"]["content"]
+            # Handle rate limiting (429)
+            if response.status_code == 429:
+                wait_time = (2 ** attempt) * 5  # 5, 10, 20 seconds
+                print(f"    Rate limited (429), waiting {wait_time}s before retry {attempt + 1}/{max_retries}...")
+                time.sleep(wait_time)
+                continue
 
-        # Parse the response
-        key_tech = ""
-        results = ""
+            response.raise_for_status()
+            result = response.json()
 
-        if "【关键技术与数据】" in content and "【结果与结论】" in content:
-            parts = content.split("【结果与结论】")
-            key_tech_part = parts[0].replace("【关键技术与数据】", "").strip()
-            results_part = parts[1].strip()
+            content = result["choices"][0]["message"]["content"]
 
-            key_tech = key_tech_part
-            results = results_part
-        else:
-            # Fallback: use the whole content as key_tech
-            key_tech = content[:200]
-            results = "（详见原文）"
+            # Parse the response
+            key_tech = ""
+            results = ""
 
-        return key_tech, results
+            if "【关键技术与数据】" in content and "【结果与结论】" in content:
+                parts = content.split("【结果与结论】")
+                key_tech_part = parts[0].replace("【关键技术与数据】", "").strip()
+                results_part = parts[1].strip()
 
-    except requests.RequestException as e:
-        print(f"Error calling DeepSeek API: {e}")
-        return "", ""
-    except (KeyError, IndexError) as e:
-        print(f"Error parsing DeepSeek response: {e}")
-        return "", ""
+                key_tech = key_tech_part
+                results = results_part
+            else:
+                # Fallback: use the whole content as key_tech
+                key_tech = content[:200]
+                results = "（详见原文）"
+
+            return key_tech, results
+
+        except requests.RequestException as e:
+            if attempt < max_retries - 1:
+                wait_time = (2 ** attempt) * 5
+                print(f"    Error: {e}, retrying in {wait_time}s...")
+                time.sleep(wait_time)
+            else:
+                print(f"    Error calling DeepSeek API after {max_retries} attempts: {e}")
+                return "", ""
+        except (KeyError, IndexError) as e:
+            print(f"    Error parsing DeepSeek response: {e}")
+            return "", ""
+
+    return "", ""
 
 
 def generate_all_analyses(papers: list) -> None:
@@ -102,6 +120,11 @@ def generate_all_analyses(papers: list) -> None:
             paper.key_tech = key_tech
         if results:
             paper.results = results
+
+        # Add delay between requests to avoid rate limiting
+        # DeepSeek allows ~60 requests/minute, so we wait 2 seconds between calls
+        if i < len(papers):
+            time.sleep(2)
 
     print("Analysis generation completed!")
 

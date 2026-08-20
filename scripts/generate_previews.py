@@ -100,7 +100,7 @@ def generate_svg_cover(paper: Paper, date_str: str) -> str:
 
 
 def generate_preview_image(paper: Paper, date_str: str, output_dir: Path) -> str:
-    """Generate preview image for a paper and return the public URL path."""
+    """Generate SVG preview image for a paper and return the public URL path."""
     # Create assets directory
     assets_dir = output_dir / "docs" / "public" / "daily" / date_str / "assets" / paper.candidate_id
     assets_dir.mkdir(parents=True, exist_ok=True)
@@ -117,10 +117,32 @@ def generate_preview_image(paper: Paper, date_str: str, output_dir: Path) -> str
 
 
 def generate_all_previews(papers: list[Paper], date_str: str, project_root: Path) -> None:
-    """Generate preview images for all papers."""
+    """
+    Generate preview images for all papers.
+    For arXiv papers, try PDF extraction first; fallback to SVG.
+    For other papers, use SVG.
+    """
+    from generate_pdf_previews import generate_preview_from_pdf
+
     print(f"Generating preview images for {len(papers)} papers...")
 
     for paper in papers:
-        preview_path = generate_preview_image(paper, date_str, project_root)
-        paper.preview_image = preview_path
-        print(f"  Generated: {preview_path}")
+        # Check if it's an arXiv paper
+        has_arxiv = any("arxiv.org" in source.url for source in paper.sources)
+
+        if has_arxiv:
+            # Try PDF extraction first
+            print(f"  Trying PDF extraction for: {paper.title[:50]}...")
+            pdf_preview = generate_preview_from_pdf(paper, date_str, project_root)
+
+            if pdf_preview:
+                paper.preview_image = pdf_preview
+                print(f"    Generated PDF preview: {pdf_preview}")
+            else:
+                # Fallback to SVG
+                print(f"    PDF extraction failed, using SVG fallback")
+                paper.preview_image = generate_preview_image(paper, date_str, project_root)
+        else:
+            # Use SVG for non-arXiv papers
+            paper.preview_image = generate_preview_image(paper, date_str, project_root)
+            print(f"  Generated SVG preview: {paper.preview_image}")
