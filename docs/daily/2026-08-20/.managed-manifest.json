@@ -28,16 +28,28 @@
       "path": "docs/daily/2026-08-20/paper/04-joint-signal-processing-and-coding-for-underwater-.md"
     },
     {
-      "candidate_id": "openalex--W7202207427",
+      "candidate_id": "crossref--10.3389-fmars.2026.1797307",
       "category": "Paper",
       "rank": 5,
-      "path": "docs/daily/2026-08-20/paper/05-physics-informed-learning-for-robust-acoustic-loca.md"
+      "path": "docs/daily/2026-08-20/paper/05-lightweight-edgefrequency-driven-real-time-detecti.md"
+    },
+    {
+      "candidate_id": "crossref--10.3389-fmars.2026.1883695",
+      "category": "Paper",
+      "rank": 6,
+      "path": "docs/daily/2026-08-20/paper/06-performance-evaluation-of-yolo-models-for-target-d.md"
+    },
+    {
+      "candidate_id": "openalex--W7202207427",
+      "category": "Paper",
+      "rank": 7,
+      "path": "docs/daily/2026-08-20/paper/07-physics-informed-learning-for-robust-acoustic-loca.md"
     },
     {
       "candidate_id": "openalex--W7202033045",
       "category": "Paper",
-      "rank": 6,
-      "path": "docs/daily/2026-08-20/paper/06-development-of-efficient-wavelet-scheme-in-dwt-fft.md"
+      "rank": 8,
+      "path": "docs/daily/2026-08-20/paper/08-development-of-efficient-wavelet-scheme-in-dwt-fft.md"
     }
   ],
   "assets": [
@@ -56,6 +68,14 @@
     {
       "candidate_id": "openalex--W7197029990",
       "path": "docs/public/daily/2026-08-20/assets/openalex--W7197029990/preview.png"
+    },
+    {
+      "candidate_id": "crossref--10.3389-fmars.2026.1797307",
+      "path": "docs/public/daily/2026-08-20/assets/crossref--10.3389-fmars.2026.1797307/preview.svg"
+    },
+    {
+      "candidate_id": "crossref--10.3389-fmars.2026.1883695",
+      "path": "docs/public/daily/2026-08-20/assets/crossref--10.3389-fmars.2026.1883695/preview.svg"
     },
     {
       "candidate_id": "openalex--W7202207427",
