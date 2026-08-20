@@ -1,6 +1,7 @@
 """Main daily fetch script - orchestrates all data sources."""
 
 import json
+import shutil
 import sys
 from datetime import date, timedelta
 from pathlib import Path
@@ -55,6 +56,10 @@ def generate_markdown_files(selection: DailySelection, output_dir: Path) -> None
     """Generate Markdown files for selected papers, organized by category."""
     date_str = selection.date
     daily_dir = output_dir / "docs" / "daily" / date_str
+
+    # Clean stale files from previous runs to avoid duplicate ranks
+    if daily_dir.exists():
+        shutil.rmtree(daily_dir)
     daily_dir.mkdir(parents=True, exist_ok=True)
 
     for rank, paper in enumerate(selection.papers, start=1):
