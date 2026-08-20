@@ -22,22 +22,34 @@
       "path": "docs/daily/2026-08-20/paper/03-physics-informed-hybrid-marine-predator-and-harris.md"
     },
     {
-      "candidate_id": "openalex--W7197029990",
+      "candidate_id": "s2--0b8abe046e81470e09b7bb0c649da6736e04bd78",
       "category": "Paper",
       "rank": 4,
-      "path": "docs/daily/2026-08-20/paper/04-joint-signal-processing-and-coding-for-underwater-.md"
+      "path": "docs/daily/2026-08-20/paper/04-physics-guided-neural-radiance-fields-for-forward-.md"
+    },
+    {
+      "candidate_id": "s2--983a3863d35f4abb070a0c19fd3869e5ed0424c7",
+      "category": "Paper",
+      "rank": 5,
+      "path": "docs/daily/2026-08-20/paper/05-a-fully-complex-valued-underwater-acoustic-signal-.md"
+    },
+    {
+      "candidate_id": "openalex--W7197029990",
+      "category": "Paper",
+      "rank": 6,
+      "path": "docs/daily/2026-08-20/paper/06-joint-signal-processing-and-coding-for-underwater-.md"
     },
     {
       "candidate_id": "openalex--W7202207427",
       "category": "Paper",
-      "rank": 5,
-      "path": "docs/daily/2026-08-20/paper/05-physics-informed-learning-for-robust-acoustic-loca.md"
+      "rank": 7,
+      "path": "docs/daily/2026-08-20/paper/07-physics-informed-learning-for-robust-acoustic-loca.md"
     },
     {
       "candidate_id": "openalex--W7202033045",
       "category": "Paper",
-      "rank": 6,
-      "path": "docs/daily/2026-08-20/paper/06-development-of-efficient-wavelet-scheme-in-dwt-fft.md"
+      "rank": 8,
+      "path": "docs/daily/2026-08-20/paper/08-development-of-efficient-wavelet-scheme-in-dwt-fft.md"
     }
   ],
   "assets": [
@@ -51,19 +63,27 @@
     },
     {
       "candidate_id": "openalex--W7201857758",
-      "path": "docs/public/daily/2026-08-20/assets/openalex--W7201857758/preview.svg"
+      "path": "docs/public/daily/2026-08-20/assets/openalex--W7201857758/preview.png"
+    },
+    {
+      "candidate_id": "s2--0b8abe046e81470e09b7bb0c649da6736e04bd78",
+      "path": "docs/public/daily/2026-08-20/assets/s2--0b8abe046e81470e09b7bb0c649da6736e04bd78/preview.svg"
+    },
+    {
+      "candidate_id": "s2--983a3863d35f4abb070a0c19fd3869e5ed0424c7",
+      "path": "docs/public/daily/2026-08-20/assets/s2--983a3863d35f4abb070a0c19fd3869e5ed0424c7/preview.svg"
     },
     {
       "candidate_id": "openalex--W7197029990",
-      "path": "docs/public/daily/2026-08-20/assets/openalex--W7197029990/preview.svg"
+      "path": "docs/public/daily/2026-08-20/assets/openalex--W7197029990/preview.png"
     },
     {
       "candidate_id": "openalex--W7202207427",
-      "path": "docs/public/daily/2026-08-20/assets/openalex--W7202207427/preview.svg"
+      "path": "docs/public/daily/2026-08-20/assets/openalex--W7202207427/preview.png"
     },
     {
       "candidate_id": "openalex--W7202033045",
-      "path": "docs/public/daily/2026-08-20/assets/openalex--W7202033045/preview.svg"
+      "path": "docs/public/daily/2026-08-20/assets/openalex--W7202033045/preview.png"
     }
   ]
 }
