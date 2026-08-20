@@ -1,0 +1,79 @@
+{
+  "schema_version": 2,
+  "cycle_id": "daily-2026-08-20",
+  "display_date": "2026-08-20",
+  "articles": [
+    {
+      "candidate_id": "arxiv--2608.10533-2",
+      "category": "Paper",
+      "rank": 1,
+      "path": "docs/daily/2026-08-20/paper/01-an-asynchronous-triggered-mac-protocol-for-underwa.md"
+    },
+    {
+      "candidate_id": "arxiv--2608.10054-1",
+      "category": "Paper",
+      "rank": 2,
+      "path": "docs/daily/2026-08-20/paper/02-training-set-synthesis-for-bioacoustic-denoising-a.md"
+    },
+    {
+      "candidate_id": "openalex--W7201857758",
+      "category": "Paper",
+      "rank": 3,
+      "path": "docs/daily/2026-08-20/paper/03-physics-informed-hybrid-marine-predator-and-harris.md"
+    },
+    {
+      "candidate_id": "s2--712696bb4f5b138d333828bc46fb85853d832144",
+      "category": "Paper",
+      "rank": 4,
+      "path": "docs/daily/2026-08-20/paper/04-a-novel-integrated-underwater-communication-and-po.md"
+    },
+    {
+      "candidate_id": "openalex--W7197029990",
+      "category": "Paper",
+      "rank": 5,
+      "path": "docs/daily/2026-08-20/paper/05-joint-signal-processing-and-coding-for-underwater-.md"
+    },
+    {
+      "candidate_id": "openalex--W7202207427",
+      "category": "Paper",
+      "rank": 6,
+      "path": "docs/daily/2026-08-20/paper/06-physics-informed-learning-for-robust-acoustic-loca.md"
+    },
+    {
+      "candidate_id": "openalex--W7202033045",
+      "category": "Paper",
+      "rank": 7,
+      "path": "docs/daily/2026-08-20/paper/07-development-of-efficient-wavelet-scheme-in-dwt-fft.md"
+    }
+  ],
+  "assets": [
+    {
+      "candidate_id": "arxiv--2608.10533-2",
+      "path": "docs/public/daily/2026-08-20/assets/arxiv--2608.10533-2/preview.svg"
+    },
+    {
+      "candidate_id": "arxiv--2608.10054-1",
+      "path": "docs/public/daily/2026-08-20/assets/arxiv--2608.10054-1/preview.svg"
+    },
+    {
+      "candidate_id": "openalex--W7201857758",
+      "path": "docs/public/daily/2026-08-20/assets/openalex--W7201857758/preview.svg"
+    },
+    {
+      "candidate_id": "s2--712696bb4f5b138d333828bc46fb85853d832144",
+      "path": "docs/public/daily/2026-08-20/assets/s2--712696bb4f5b138d333828bc46fb85853d832144/preview.svg"
+    },
+    {
+      "candidate_id": "openalex--W7197029990",
+      "path": "docs/public/daily/2026-08-20/assets/openalex--W7197029990/preview.svg"
+    },
+    {
+      "candidate_id": "openalex--W7202207427",
+      "path": "docs/public/daily/2026-08-20/assets/openalex--W7202207427/preview.svg"
+    },
+    {
+      "candidate_id": "openalex--W7202033045",
+      "path": "docs/public/daily/2026-08-20/assets/openalex--W7202033045/preview.svg"
+    }
+  ]
+}
