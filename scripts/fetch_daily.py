@@ -9,24 +9,42 @@ from config import DAILY_TARGET, MIN_SCORE
 from models import DailySelection, Paper
 from fetch_openalex import fetch_openalex_papers
 from fetch_arxiv import fetch_arxiv_papers
+from fetch_semantic_scholar import fetch_semantic_scholar_papers
+from fetch_crossref import fetch_crossref_papers
 from fetch_news import fetch_university_news
 from fetch_policy import fetch_policy_info
 
 
 def deduplicate_papers(papers: list[Paper]) -> list[Paper]:
-    """Remove duplicate papers based on title similarity."""
+    """Remove duplicate papers based on DOI and title similarity."""
+    seen_dois = set()
     seen_titles = set()
     unique_papers = []
 
     for paper in papers:
+        # Check DOI first (most reliable)
+        doi = None
+        for source in paper.sources:
+            if source.name == "DOI" and "doi.org/" in source.url:
+                doi = source.url.split("doi.org/")[-1].lower()
+                break
+
+        if doi and doi in seen_dois:
+            continue
+
         # Normalize title for comparison
         normalized = paper.title.lower().strip()
         # Remove common punctuation
         normalized = normalized.replace(":", "").replace("-", " ").replace("  ", " ")
 
-        if normalized not in seen_titles:
-            seen_titles.add(normalized)
-            unique_papers.append(paper)
+        if normalized in seen_titles:
+            continue
+
+        # Add to unique list
+        if doi:
+            seen_dois.add(doi)
+        seen_titles.add(normalized)
+        unique_papers.append(paper)
 
     return unique_papers
 
@@ -73,6 +91,16 @@ def fetch_daily_papers(target_date: date, project_root: Path) -> DailySelection:
     arxiv_papers = fetch_arxiv_papers(target_date)
     print(f"  Found {len(arxiv_papers)} papers")
     all_papers.extend(arxiv_papers)
+
+    print("Fetching from Semantic Scholar...")
+    s2_papers = fetch_semantic_scholar_papers(target_date)
+    print(f"  Found {len(s2_papers)} papers")
+    all_papers.extend(s2_papers)
+
+    print("Fetching from CrossRef...")
+    crossref_papers = fetch_crossref_papers(target_date)
+    print(f"  Found {len(crossref_papers)} papers")
+    all_papers.extend(crossref_papers)
 
     print("Fetching university news...")
     news_items = fetch_university_news(target_date)
