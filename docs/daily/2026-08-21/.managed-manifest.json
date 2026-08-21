@@ -22,22 +22,28 @@
       "path": "docs/daily/2026-08-21/paper/03-physics-informed-hybrid-marine-predator-and-harris.md"
     },
     {
-      "candidate_id": "crossref--10.3390-rs18162832",
+      "candidate_id": "crossref--10.21956-openreseurope.26352.r77868",
       "category": "Paper",
       "rank": 4,
-      "path": "docs/daily/2026-08-21/paper/04-multi-source-geophysical-data-integration-for-unde.md"
+      "path": "docs/daily/2026-08-21/paper/04-peer-review-report-for-an-open-reproducible-framew.md"
+    },
+    {
+      "candidate_id": "crossref--10.3390-rs18162832",
+      "category": "Paper",
+      "rank": 5,
+      "path": "docs/daily/2026-08-21/paper/05-multi-source-geophysical-data-integration-for-unde.md"
     },
     {
       "candidate_id": "openalex--W7202207427",
       "category": "Paper",
-      "rank": 5,
-      "path": "docs/daily/2026-08-21/paper/05-physics-informed-learning-for-robust-acoustic-loca.md"
+      "rank": 6,
+      "path": "docs/daily/2026-08-21/paper/06-physics-informed-learning-for-robust-acoustic-loca.md"
     },
     {
       "candidate_id": "openalex--W7202033045",
       "category": "Paper",
-      "rank": 6,
-      "path": "docs/daily/2026-08-21/paper/06-development-of-efficient-wavelet-scheme-in-dwt-fft.md"
+      "rank": 7,
+      "path": "docs/daily/2026-08-21/paper/07-development-of-efficient-wavelet-scheme-in-dwt-fft.md"
     }
   ],
   "assets": [
@@ -52,6 +58,10 @@
     {
       "candidate_id": "openalex--W7201857758",
       "path": "docs/public/daily/2026-08-21/assets/openalex--W7201857758/preview.png"
+    },
+    {
+      "candidate_id": "crossref--10.21956-openreseurope.26352.r77868",
+      "path": "docs/public/daily/2026-08-21/assets/crossref--10.21956-openreseurope.26352.r77868/preview.svg"
     },
     {
       "candidate_id": "crossref--10.3390-rs18162832",

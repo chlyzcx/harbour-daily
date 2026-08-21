@@ -2,7 +2,7 @@
 candidateId: "crossref--10.3390-rs18162832"
 category: "Paper"
 date: "2026-08-21"
-rank: 4
+rank: 5
 title: "Multi-Source Geophysical Data Integration for Underwater Target Detection in Complex Seabed Environments: A Case Study of the Nan’ao I Shipwreck, China"
 authors:
   - "Yonghang Li"
