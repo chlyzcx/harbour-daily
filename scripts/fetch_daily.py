@@ -73,6 +73,20 @@ def generate_markdown_files(selection: DailySelection, news_items: list[NewsItem
     date_str = selection.date
     daily_dir = output_dir / "docs" / "daily" / date_str
 
+    # A same-day re-run finds no *new* news (the seen-store blocks
+    # re-selecting what an earlier run published), so without preservation
+    # the rewrite below would erase today's news section. Keep the existing
+    # news files when this run found nothing new.
+    preserved_news: list[tuple[str, str]] = []  # (filename, content)
+    news_dir = daily_dir / "news"
+    if not news_items and news_dir.exists():
+        preserved_news = [
+            (p.name, p.read_text(encoding="utf-8"))
+            for p in sorted(news_dir.glob("*.md"))
+        ]
+        if preserved_news:
+            print(f"Preserving {len(preserved_news)} news items from an earlier run today")
+
     # Clean stale files from previous runs to avoid duplicate ranks
     if daily_dir.exists():
         shutil.rmtree(daily_dir)
@@ -93,6 +107,12 @@ def generate_markdown_files(selection: DailySelection, news_items: list[NewsItem
     for i, item in enumerate(news_items, start=1):
         write_article(item, paper_count + i)
 
+    # Restore preserved news from an earlier same-day run
+    for name, content in preserved_news:
+        news_dir.mkdir(exist_ok=True)
+        (news_dir / name).write_text(content, encoding="utf-8")
+        print(f"Preserved: {news_dir / name}")
+
     # Generate managed-manifest.json (papers + news)
     manifest = selection.to_manifest()
     for i, item in enumerate(news_items, start=1):
@@ -109,6 +129,26 @@ def generate_markdown_files(selection: DailySelection, news_items: list[NewsItem
                 "path": f"docs/public{item.preview_image}"
             })
     manifest_path = daily_dir / ".managed-manifest.json"
+
+    # Manifest entries for preserved news (parsed from their front matter)
+    for name, content in preserved_news:
+        cid_m = re.search(r'candidateId: "(.+?)"', content)
+        rank_m = re.search(r'rank: (\d+)', content)
+        if not (cid_m and rank_m):
+            continue
+        manifest["articles"].append({
+            "candidate_id": cid_m.group(1),
+            "category": "News",
+            "rank": int(rank_m.group(1)),
+            "path": f"docs/daily/{date_str}/news/{name}",
+        })
+        img_m = re.search(r'previewImage: "(.+?)"', content)
+        if img_m:
+            manifest["assets"].append({
+                "candidate_id": cid_m.group(1),
+                "path": f"docs/public{img_m.group(1)}",
+            })
+
     manifest_path.write_text(json.dumps(manifest, indent=2, ensure_ascii=False), encoding="utf-8")
     print(f"Generated: {manifest_path}")
 
