@@ -309,6 +309,13 @@ PAPER_TARGET = 10  # Papers are capped to leave room for up to 5 news items
 MAX_AGE_DAYS = 14  # Maximum age for fallback (increased from 7 to 14 days)
 MIN_SCORE = 45  # Minimum score threshold (lowered from 50 to 45)
 
+# Dataset repositories: records with these DOI prefixes are datasets, not
+# papers — no abstract, no figures, machine-generated titles ("Dive
+# 20210916_152707_turbot_ros_dense images and metadata"). Filtered at fetch
+# time: they waste paper slots and can never produce a real preview image.
+# (10.5281=Zenodo, 10.17632=Mendeley Data, 10.6084=Figshare, 10.7910=Dataverse)
+DATASET_DOI_PREFIXES = ("10.5281/", "10.17632/", "10.6084/", "10.7910/")
+
 # Score weights
 SCORE_WEIGHTS = {
     "journal": 0.40,      # Journal quality

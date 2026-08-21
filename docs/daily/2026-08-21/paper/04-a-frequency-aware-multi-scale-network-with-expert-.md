@@ -23,7 +23,7 @@ sources:
     url: "https://openalex.org/W7203610389"
   - name: "DOI"
     url: "https://doi.org/10.1016/j.oceaneng.2026.127542"
-previewImage: "/daily/2026-08-21/assets/openalex--W7203610389/preview.svg"
+previewImage: "/daily/2026-08-21/assets/openalex--W7203610389/preview.png"
 ---
 
 ## 核心内容

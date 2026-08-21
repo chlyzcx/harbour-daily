@@ -172,7 +172,29 @@ def extract_pdf_figure(pdf_data: bytes, output_path: Path, max_pages: int = 6) -
 
 
 def extract_pdf_page(pdf_data: bytes, output_path: Path, page: int = 1) -> bool:
-    """Render a specific page of PDF bytes as an image."""
+    """Render a specific page of PDF bytes as an image.
+
+    PyMuPDF first (pure Python, no system dependency); pdf2image/poppler
+    as backup.
+    """
+    try:
+        import fitz  # PyMuPDF
+        doc = fitz.open(stream=pdf_data, filetype="pdf")
+        if page <= len(doc):
+            pix = doc[page - 1].get_pixmap(dpi=150)
+            output_path.parent.mkdir(parents=True, exist_ok=True)
+            pix.save(output_path)
+            doc.close()
+            print(f"    Rendered page {page} with PyMuPDF")
+            return True
+        doc.close()
+        print(f"    No page {page} found in PDF")
+        return False
+    except ImportError:
+        pass
+    except Exception as e:
+        print(f"    PyMuPDF render failed: {e}")
+
     try:
         from pdf2image import convert_from_bytes
         print(f"    Rendering page {page} from PDF...")
@@ -189,6 +211,89 @@ def extract_pdf_page(pdf_data: bytes, output_path: Path, page: int = 1) -> bool:
     except Exception as e:
         print(f"    Error rendering PDF page: {e}")
         return False
+
+
+# ==================== 出版商 CDN 图片 ====================
+
+def _resolve_doi(doi: str) -> Optional[str]:
+    """Follow a DOI's redirect chain and return the final URL.
+
+    The publisher page itself may block us (Elsevier 403s bots), but the
+    redirect chain still reveals the target URL — e.g. doi.org sends
+    Elsevier DOIs to linkinghub.elsevier.com/retrieve/pii/<PII>, and the
+    PII is all we need to build figure URLs on the (unblocked) CDN.
+    """
+    try:
+        response = requests.get(f"https://doi.org/{doi}", timeout=30,
+                                headers=_UA, allow_redirects=True)
+        return response.url
+    except requests.RequestException as e:
+        print(f"    DOI resolution failed: {e}")
+        return None
+
+
+def extract_publisher_figure(doi: str, output_path: Path) -> bool:
+    """Download a figure straight from the publisher's image CDN.
+
+    Covers the two publisher families that dominate our journal list and
+    block their article pages to bots:
+    - MDPI (J. Mar. Sci. Eng., Sensors, ...): page 403s, but figures on
+      mdpi-res.com are open and their URLs derive from the DOI itself.
+    - Elsevier (Ocean Engineering, Applied Acoustics, ...): page 403s,
+      but figures on ars.els-cdn.com are open once the PII is known
+      (recovered from the DOI redirect chain).
+    """
+    # --- MDPI: DOI suffix = <journal><vol2><issue2><article4> ---
+    # File naming on the CDN drops the issue and zero-pads the article
+    # number to 5 digits: 10.3390/jmse14161511 -> jmse-14-01511-g001.png.
+    # A few journals use a different path acronym than the DOI one.
+    m = re.match(r"10\.3390/([a-z]+)(\d{2})(\d{2})(\d{4})$", doi)
+    if m:
+        MDPI_PATH_ALIASES = {"s": "sensors", "rs": "remotesensing"}
+        acr, vol, _issue, art = m.groups()
+        path_acrs = dict.fromkeys([MDPI_PATH_ALIASES.get(acr, acr), acr])
+        for path_acr in path_acrs:
+            stem = f"{path_acr}-{vol}-{int(art):05d}"
+            base = (f"https://mdpi-res.com/d_attachment/{path_acr}/{stem}/"
+                    f"article_deploy/html/images/{stem}")
+            for n in range(1, 9):
+                found_200 = False
+                for ext in ("png", "jpg", "jpeg"):
+                    url = f"{base}-g{n:03d}.{ext}"
+                    try:
+                        r = requests.get(url, timeout=20, headers=_UA)
+                    except requests.RequestException:
+                        continue
+                    if r.status_code != 200:
+                        continue
+                    found_200 = True
+                    if _save_image_bytes(r.content, output_path):
+                        print(f"    MDPI figure: {url}")
+                        return True
+                    break  # 200 but too small; try next figure number
+                if not found_200:
+                    break  # no figure N at all -> no point trying N+1
+        return False
+
+    # --- Elsevier: resolve DOI -> PII -> ars.els-cdn.com figure ---
+    final_url = _resolve_doi(doi)
+    if final_url and ("elsevier" in final_url or "sciencedirect" in final_url):
+        pii_m = re.search(r"/pii/([A-Za-z0-9]+)", final_url)
+        if pii_m:
+            pii = pii_m.group(1)
+            base = f"https://ars.els-cdn.com/content/image/1-s2.0-{pii}"
+            # ga1 = graphical abstract, grN = figure N; _lrg = high-res
+            candidates = ([f"-ga1_lrg.jpg", "-ga1.jpg"]
+                          + [f"-gr{n}{v}.jpg" for n in (1, 2, 3) for v in ("_lrg", "")])
+            for suffix in candidates:
+                try:
+                    r = requests.get(base + suffix, timeout=20, headers=_UA)
+                except requests.RequestException:
+                    continue
+                if r.status_code == 200 and _save_image_bytes(r.content, output_path):
+                    print(f"    Elsevier figure: {base}{suffix}")
+                    return True
+    return False
 
 
 # ==================== 出版商页面 og:image ====================
@@ -222,8 +327,12 @@ def extract_og_image(page_url: str, output_path: Path) -> bool:
 
 # ==================== Unpaywall 开放获取 PDF ====================
 
-def find_oa_pdf_url(doi: str) -> Optional[str]:
-    """Query Unpaywall for a legal open-access PDF of this DOI."""
+def find_oa_pdf_urls(doi: str) -> list[str]:
+    """Query Unpaywall for legal open-access PDFs of this DOI.
+
+    Returns URLs from ALL OA locations (best first) — repository copies
+    often have a PDF even when the primary location doesn't.
+    """
     try:
         response = requests.get(
             f"https://api.unpaywall.org/v2/{doi}",
@@ -231,12 +340,21 @@ def find_oa_pdf_url(doi: str) -> Optional[str]:
             timeout=20,
         )
         if response.status_code != 200:
-            return None
-        location = response.json().get("best_oa_location") or {}
-        return location.get("url_for_pdf") or location.get("url")
+            return []
+        data = response.json()
+        urls = []
+        best = data.get("best_oa_location")
+        locations = ([best] if best else []) + data.get("oa_locations", [])
+        for loc in locations:
+            if not loc:
+                continue
+            pdf = loc.get("url_for_pdf")
+            if pdf and pdf not in urls:
+                urls.append(pdf)
+        return urls
     except Exception as e:
         print(f"    Unpaywall lookup failed: {e}")
-        return None
+        return []
 
 
 # ==================== 统一预览图生成 ====================
@@ -245,10 +363,12 @@ def try_real_preview(paper: Paper, output_path: Path) -> bool:
     """Try every real-image source for a paper, best quality first:
 
     1. arXiv HTML first figure (cheapest, best quality)
-    2. Largest embedded figure from any available PDF
-       (arXiv PDF, known OA URL, Unpaywall-discovered OA PDF)
-    3. Publisher landing page og:image
-    4. Full-page render of the PDF (page 2, then page 1) — last resort
+    2. Publisher CDN figure (MDPI / Elsevier) — single small request,
+       works even when the article page itself blocks bots
+    3. Largest embedded figure from any available PDF
+       (arXiv PDF, known OA URL, Unpaywall-discovered OA PDFs)
+    4. Publisher landing page og:image
+    5. Full-page render of the PDF (page 2, then page 1) — last resort
     """
     pdf_urls: list[str] = []
 
@@ -261,14 +381,15 @@ def try_real_preview(paper: Paper, output_path: Path) -> bool:
             pdf_url += ".pdf"
         pdf_urls.append(pdf_url)
 
+    doi = _paper_doi(paper)
+    if doi and extract_publisher_figure(doi, output_path):
+        return True
+
     if paper.oa_url:
         pdf_urls.append(paper.oa_url)
 
-    doi = _paper_doi(paper)
     if doi:
-        oa_pdf = find_oa_pdf_url(doi)
-        if oa_pdf:
-            pdf_urls.append(oa_pdf)
+        pdf_urls.extend(find_oa_pdf_urls(doi))
 
     # Deduplicate, preserving priority order
     seen = set()

@@ -3,7 +3,7 @@
 import requests
 from datetime import date, timedelta
 from typing import Optional
-from config import RESEARCH_DIRECTIONS, MAX_AGE_DAYS
+from config import RESEARCH_DIRECTIONS, MAX_AGE_DAYS, DATASET_DOI_PREFIXES
 from models import Paper, Source
 from fetch_openalex import match_research_directions, extract_keywords
 
@@ -42,6 +42,10 @@ def fetch_crossref_papers(target_date: date, max_results: int = 100) -> list[Pap
             data = response.json()
 
             for item in data.get("message", {}).get("items", []):
+                # Skip dataset-repository records (not papers)
+                if item.get("DOI", "").startswith(DATASET_DOI_PREFIXES):
+                    continue
+
                 # Skip if no title
                 if not item.get("title") or not item["title"]:
                     continue

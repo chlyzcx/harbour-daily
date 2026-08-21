@@ -12,6 +12,7 @@ from config import (
     OPENALEX_API,
     MAX_AGE_DAYS,
     SCORE_WEIGHTS,
+    DATASET_DOI_PREFIXES,
 )
 from models import Paper, Source
 
@@ -154,6 +155,12 @@ def fetch_openalex_papers(target_date: date, max_results: int = 100) -> list[Pap
         data = response.json()
 
         for work in data.get("results", []):
+            # Skip datasets and other non-article record types (Zenodo /
+            # Mendeley Data records surface as OpenAlex "dataset" works)
+            work_type = work.get("type")
+            if work_type and work_type not in ("article", "preprint", "review"):
+                continue
+
             # Extract basic info
             title = work.get("title", "")
             if not title:
@@ -189,6 +196,8 @@ def fetch_openalex_papers(target_date: date, max_results: int = 100) -> list[Pap
             doi = work.get("doi", "")
             if doi:
                 doi = doi.replace("https://doi.org/", "")
+            if doi and doi.startswith(DATASET_DOI_PREFIXES):
+                continue
 
             # Publication date
             pub_date_str = work.get("publication_date")
