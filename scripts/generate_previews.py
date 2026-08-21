@@ -57,11 +57,14 @@ def generate_svg_cover(paper: Paper, date_str: str) -> str:
     """
     keyword = paper.keywords[0] if paper.keywords else "Research"
 
+    # News items expose display_title (Chinese) in addition to title
+    raw_title = getattr(paper, "display_title", None) or paper.title
+
     # Theme by research direction (falls back to keyword)
     direction = paper.research_directions[0] if paper.research_directions else keyword
     bg1, bg2, accent = _THEMES[_stable_seed(direction) % len(_THEMES)]
 
-    title = paper.title
+    title = raw_title
     if len(title) > 60:
         title = title[:57] + "..."
 

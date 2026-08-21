@@ -202,7 +202,8 @@ SEMANTIC_SCHOLAR_API = "https://api.semanticscholar.org/graph/v1/paper"
 ARXIV_API = "http://export.arxiv.org/api/query"
 
 # Fetch parameters
-DAILY_TARGET = 15  # Daily target number of papers (upper limit)
+DAILY_TARGET = 15  # Site limit: at most 15 articles per day (papers + news)
+PAPER_TARGET = 10  # Papers are capped to leave room for up to 5 news items
 MAX_AGE_DAYS = 14  # Maximum age for fallback (increased from 7 to 14 days)
 MIN_SCORE = 45  # Minimum score threshold (lowered from 50 to 45)
 
@@ -213,6 +214,79 @@ SCORE_WEIGHTS = {
     "direction": 0.20,    # Research direction match
     "citation": 0.10,     # Citation count
     "open_access": 0.10,  # Open access bonus
+}
+
+# News sources, in three tiers:
+# - official: societies / institutions (highest authority)
+# - media: industry media with RSS feeds (verified reachable from CI)
+# - company: company newsrooms
+# - university: Chinese university news pages (webpage scraping, keyword-filtered)
+# Feeds behind Cloudflare anti-bot (oceannews, sonardyne, UST, kongsberg) are
+# excluded — they return 403 to plain HTTP clients.
+NEWS_RSS_SOURCES = {
+    "Acoustical Society of America": {
+        "url": "https://acousticalsociety.org/feed/",
+        "tier": "official",
+    },
+    "Marine Technology News": {
+        "url": "https://www.marinetechnologynews.com/rss/",
+        "tier": "media",
+    },
+    "Naval News": {
+        "url": "https://www.navalnews.com/feed/",
+        "tier": "media",
+    },
+    "Offshore Energy": {
+        "url": "https://www.offshore-energy.biz/feed/",
+        "tier": "media",
+    },
+}
+
+# Webpage sources (no RSS available); links are keyword-filtered.
+# NOTE: previously configured URLs (hrbeu.edu.cn/xyxw.htm, nwpu.edu.cn/xwzx.htm)
+# returned 404 as of 2026-08-21; these are the working ones.
+NEWS_WEBPAGE_SOURCES = {
+    "哈尔滨工程大学新闻网": {
+        "url": "https://news.hrbeu.edu.cn/",
+        "tier": "university",
+    },
+}
+
+# Extra English keywords for news relevance filtering, on top of
+# UNDERWATER_ACOUSTIC_KEYWORDS (which is mostly Chinese + a few English).
+# Keywords for news relevance filtering (self-contained; the older
+# UNDERWATER_ACOUSTIC_KEYWORDS below is defined later in this file).
+NEWS_RELEVANCE_KEYWORDS = [
+    # English
+    "underwater acoustic", "ocean acoustic", "marine acoustic", "hydroacoustic",
+    "sonar", "hydrophone",
+    "uuv", "auv", "unmanned underwater", "underwater vehicle",
+    "anti-submarine", "asw", "subsea acoustic",
+    "marine mammal", "bioacoustic", "ocean observing",
+    "whale call", "whale song", "dolphin whistle", "cetacean",
+    # 中文
+    "水声", "水下声学", "海洋声学", "声呐", "水声工程", "声学", "水下",
+]
+
+# Negative keywords: terms that indicate offshore oil & gas / shipping news
+# that frequently false-positive on relevance keywords (e.g. "Dolphin
+# Drilling" matching "dolphin"). Checked before the positive filter.
+NEWS_NEGATIVE_KEYWORDS = [
+    "drilling", "oil rig", "gas field", "fpso", "lng",
+    "offshore wind", "wind farm", "oil and gas", "fpso",
+]
+
+# News selection parameters
+NEWS_TARGET = 5         # hard site limit: News + Policy <= 5 per day
+NEWS_MIN_SCORE = 62     # tier base 65 + anything => passes; media without recency bonus fails
+NEWS_MAX_AGE_DAYS = 14
+
+# News scoring
+NEWS_TIER_SCORES = {
+    "official": 75,
+    "university": 70,
+    "company": 70,
+    "media": 65,
 }
 
 # University news sources (RSS or webpage)

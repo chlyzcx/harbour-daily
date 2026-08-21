@@ -117,6 +117,111 @@ class Paper:
 
 
 @dataclass
+class NewsItem:
+    """A news article (category "News"), structured differently from papers:
+    Chinese title + 事件概述/已确认事实与证据/影响与后续观察."""
+    candidate_id: str          # "news--" + url hash; dedup via seen-store
+    title: str                 # original title (English for intl sources)
+    url: str
+    source_name: str           # display name of the source site
+    tier: str                  # official | media | company | university
+    score: float
+    published: Optional[date] = None
+    snippet: str = ""          # raw summary text from the feed/page
+    category: str = "News"
+    rank: int = 0
+    # LLM-generated Chinese content
+    title_zh: str = ""
+    overview: str = ""         # 事件概述
+    facts: str = ""            # 已确认事实与证据
+    impact: str = ""           # 影响与后续观察
+    keywords: list[str] = field(default_factory=list)           # 中文主题标签
+    research_directions: list[str] = field(default_factory=list)
+    preview_image: Optional[str] = None
+
+    @property
+    def display_title(self) -> str:
+        return self.title_zh.strip() or self.title
+
+    @property
+    def summary(self) -> str:
+        """Front-matter summary: the Chinese overview, else the raw snippet."""
+        return self.overview.strip() or self.snippet.strip() \
+            or f"（来自 {self.source_name} 的一则新闻，详情见原文链接。）"
+
+    # Attribute aliases so NewsItem can reuse the Paper-oriented helpers
+    # (SVG cover generator, preview pipeline, manifest builder).
+    @property
+    def authors(self) -> list[str]:
+        return [self.source_name]
+
+    @property
+    def journal(self) -> str:
+        return self.source_name
+
+    def to_markdown(self, date_str: str, rank: int) -> str:
+        """Convert news item to Markdown with front matter."""
+        title_yaml = self.display_title.replace("\\", "\\\\").replace('"', '\\"')
+        summary_yaml = self.summary.replace("\\", "\\\\").replace('"', '\\"')
+
+        lines = [
+            "---",
+            f'candidateId: "{self.candidate_id}"',
+            f'category: "{self.category}"',
+            f'date: "{date_str}"',
+            f'rank: {rank}',
+            f'title: "{title_yaml}"',
+            "authors:",
+            f'  - "{self.source_name}"',
+        ]
+
+        lines.append("research_direction:")
+        for direction in self.research_directions:
+            lines.append(f'  - "{direction}"')
+        if not self.research_directions:
+            lines[-1] = "research_direction: []"
+
+        lines.append(f'summary: "{summary_yaml}"')
+
+        lines.append("keywords:")
+        for kw in self.keywords:
+            lines.append(f'  - "{kw}"')
+        if not self.keywords:
+            lines[-1] = "keywords: []"
+
+        lines.append(f"score: {self.score}")
+
+        lines.append("sources:")
+        lines.append(f'  - name: "{self.source_name}"')
+        lines.append(f'    url: "{self.url}"')
+
+        if self.preview_image:
+            lines.append(f'previewImage: "{self.preview_image}"')
+
+        lines.append("---")
+        lines.append("")
+        lines.append(f"# {self.display_title}")
+        lines.append("")
+        lines.append("## 事件概述")
+        lines.append("")
+        lines.append(self.overview or self.summary)
+        lines.append("")
+        lines.append("## 已确认事实与证据")
+        lines.append("")
+        lines.append(self.facts or "（详见原文）")
+        lines.append("")
+        lines.append("## 影响与后续观察")
+        lines.append("")
+        lines.append(self.impact or "（详见原文）")
+        lines.append("")
+        lines.append("## 来源链接")
+        lines.append("")
+        lines.append(f"- [{self.source_name}]({self.url})")
+
+        return "\n".join(lines)
+
+
+@dataclass
 class DailySelection:
     date: str
     papers: list[Paper] = field(default_factory=list)

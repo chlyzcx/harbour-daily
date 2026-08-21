@@ -325,6 +325,107 @@ def generate_all_analyses(papers: list) -> None:
     print(f"Analysis generation completed! ({applied}/{len(papers)} papers analyzed)")
 
 
+# ==================== 新闻分析 ====================
+
+NEWS_BATCH_PROMPT_TEMPLATE = """请将以下 {n} 条水声工程/海洋科技领域的新闻改写为结构化中文新闻稿，为每条生成四部分内容：
+
+{news_block}
+
+请严格按以下格式逐条输出，不要输出任何其它内容：
+
+【新闻1】
+【中文标题】
+（一句通顺的中文标题，不超过30字）
+【事件概述】
+（概括事件主体、时间、核心内容，80-120字）
+【事实与证据】
+（列出新闻中明确提到的事实、数据、引语，不添加推测，80-150字）
+【影响与观察】
+（分析该事件对水声工程/海洋技术领域的意义和值得关注的后续进展，60-100字）
+
+【新闻2】
+……
+
+要求：
+1. 使用专业术语，事实部分不得虚构原文没有的内容
+2. 如果输入信息不足，事实与证据部分简短说明即可，不要编造
+3. 每条都必须有【新闻N】编号，编号与输入顺序一致
+"""
+
+
+def _parse_news_content(content: str) -> tuple[str, str, str, str]:
+    """Parse one news item's LLM output into (title_zh, overview, facts, impact)."""
+    sections = {}
+    rest = content
+    for marker, key in [("【中文标题】", "title"), ("【事件概述】", "overview"),
+                        ("【事实与证据】", "facts"), ("【影响与观察】", "impact")]:
+        if marker in rest:
+            before, rest = rest.split(marker, 1)
+            if sections:
+                sections[list(sections)[-1]] = before
+            sections[key] = ""
+    if sections:
+        sections[list(sections)[-1]] = rest
+    return (
+        sections.get("title", "").strip(),
+        sections.get("overview", "").strip(),
+        sections.get("facts", "").strip(),
+        sections.get("impact", "").strip(),
+    )
+
+
+def _parse_news_batch(content: str, n: int) -> dict[int, tuple[str, str, str, str]]:
+    """Parse batched news LLM output into {index: (title_zh, overview, facts, impact)}."""
+    parsed = {}
+    parts = re.split(r"【\s*新闻\s*(\d+)\s*】", content)
+    for i in range(1, len(parts) - 1, 2):
+        idx = int(parts[i]) - 1
+        if 0 <= idx < n:
+            parsed[idx] = _parse_news_content(parts[i + 1])
+    return parsed
+
+
+def generate_all_news_analyses(news_items: list) -> None:
+    """Rewrite all news items into structured Chinese articles in ONE request."""
+    if not news_items:
+        return
+    providers = _get_providers()
+    if not providers:
+        print("Warning: No LLM API key set, news will use original titles/snippets")
+        return
+
+    news_block = "\n\n".join(
+        f"新闻{i}标题：{item.title}\n新闻{i}来源：{item.source_name}\n"
+        f"新闻{i}摘要：{item.snippet or '（无摘要，请仅根据标题概括，并在事实部分注明信息有限）'}"
+        for i, item in enumerate(news_items, start=1)
+    )
+    prompt = NEWS_BATCH_PROMPT_TEMPLATE.format(n=len(news_items), news_block=news_block)
+    batch_max_tokens = max(4096, len(news_items) * 800)
+
+    parsed = {}
+    for provider, api_url, api_key, model in providers:
+        content, _fatal = _call_llm(api_url, api_key, model, prompt, provider,
+                                    max_tokens=batch_max_tokens)
+        if content:
+            parsed = _parse_news_batch(content, len(news_items))
+            if parsed:
+                print(f"  News rewriting succeeded via {provider}: "
+                      f"{len(parsed)}/{len(news_items)} items parsed")
+                break
+            print(f"  {provider} news output could not be parsed, trying next provider")
+
+    for i, item in enumerate(news_items):
+        title_zh, overview, facts, impact = parsed.get(i, ("", "", "", ""))
+        if title_zh:
+            item.title_zh = title_zh
+        if overview:
+            item.overview = overview
+        if facts:
+            item.facts = facts
+        if impact:
+            item.impact = impact
+
+
 if __name__ == "__main__":
     # Test
     title = "An Asynchronous Triggered MAC Protocol for Underwater Acoustic Networks"

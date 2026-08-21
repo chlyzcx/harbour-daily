@@ -43,6 +43,6 @@ jobs:
         run: |
           git config --local user.email "github-actions[bot]@users.noreply.github.com"
           git config --local user.name "github-actions[bot]"
-          git add docs/daily/ docs/public/
+          git add docs/daily/ docs/public/ scripts/data/
           git diff --staged --quiet || git commit -m "Daily update: $(date +%Y-%m-%d)"
           git push

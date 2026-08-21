@@ -7,16 +7,16 @@ import sys
 from datetime import date, timedelta
 from pathlib import Path
 
-from config import DAILY_TARGET, MIN_SCORE
-from models import DailySelection, Paper
+from config import MIN_SCORE, PAPER_TARGET, NEWS_TARGET
+from models import DailySelection, NewsItem, Paper
 from fetch_openalex import fetch_openalex_papers
 from fetch_arxiv import fetch_arxiv_papers
 from fetch_semantic_scholar import fetch_semantic_scholar_papers
 from fetch_crossref import fetch_crossref_papers
-from fetch_news import fetch_university_news
-from fetch_policy import fetch_policy_info
-from generate_previews_unified import generate_all_previews_unified
-from generate_analysis import generate_all_analyses
+from fetch_news import fetch_daily_news
+from generate_previews_unified import generate_all_previews_unified, extract_og_image
+from generate_previews import generate_preview_image
+from generate_analysis import generate_all_analyses, generate_all_news_analyses
 
 
 def clean_text(text: str) -> str:
@@ -64,8 +64,9 @@ def deduplicate_papers(papers: list[Paper]) -> list[Paper]:
     return unique_papers
 
 
-def generate_markdown_files(selection: DailySelection, output_dir: Path) -> None:
-    """Generate Markdown files for selected papers, organized by category."""
+def generate_markdown_files(selection: DailySelection, news_items: list[NewsItem],
+                            output_dir: Path) -> None:
+    """Generate Markdown files for selected papers and news, organized by category."""
     date_str = selection.date
     daily_dir = output_dir / "docs" / "daily" / date_str
 
@@ -74,23 +75,36 @@ def generate_markdown_files(selection: DailySelection, output_dir: Path) -> None
         shutil.rmtree(daily_dir)
     daily_dir.mkdir(parents=True, exist_ok=True)
 
-    for rank, paper in enumerate(selection.papers, start=1):
-        # Generate slug from title
-        slug = DailySelection._slugify(paper.title)
-
-        # Create category subdirectory
-        category_dir = daily_dir / paper.category.lower()
+    def write_article(article, rank: int) -> None:
+        slug = DailySelection._slugify(article.title) or article.candidate_id
+        category_dir = daily_dir / article.category.lower()
         category_dir.mkdir(exist_ok=True)
-
-        filename = f"{rank:02d}-{slug}.md"
-        filepath = category_dir / filename
-
-        markdown = paper.to_markdown(date_str, rank)
-        filepath.write_text(markdown, encoding="utf-8")
+        filepath = category_dir / f"{rank:02d}-{slug}.md"
+        filepath.write_text(article.to_markdown(date_str, rank), encoding="utf-8")
         print(f"Generated: {filepath}")
 
-    # Generate managed-manifest.json
+    for rank, paper in enumerate(selection.papers, start=1):
+        write_article(paper, rank)
+
+    paper_count = len(selection.papers)
+    for i, item in enumerate(news_items, start=1):
+        write_article(item, paper_count + i)
+
+    # Generate managed-manifest.json (papers + news)
     manifest = selection.to_manifest()
+    for i, item in enumerate(news_items, start=1):
+        manifest["articles"].append({
+            "candidate_id": item.candidate_id,
+            "category": item.category,
+            "rank": paper_count + i,
+            "path": f"docs/daily/{date_str}/news/"
+                    f"{paper_count + i:02d}-{DailySelection._slugify(item.title) or item.candidate_id}.md"
+        })
+        if item.preview_image:
+            manifest["assets"].append({
+                "candidate_id": item.candidate_id,
+                "path": f"docs/public{item.preview_image}"
+            })
     manifest_path = daily_dir / ".managed-manifest.json"
     manifest_path.write_text(json.dumps(manifest, indent=2, ensure_ascii=False), encoding="utf-8")
     print(f"Generated: {manifest_path}")
@@ -123,16 +137,6 @@ def fetch_daily_papers(target_date: date, project_root: Path) -> DailySelection:
     print(f"  Found {len(crossref_papers)} papers")
     all_papers.extend(crossref_papers)
 
-    print("Fetching university news...")
-    news_items = fetch_university_news(target_date)
-    print(f"  Found {len(news_items)} news items")
-    all_papers.extend(news_items)
-
-    print("Fetching policy information...")
-    policy_items = fetch_policy_info(target_date)
-    print(f"  Found {len(policy_items)} policy items")
-    all_papers.extend(policy_items)
-
     # Deduplicate
     print("Deduplicating...")
     unique_papers = deduplicate_papers(all_papers)
@@ -150,8 +154,8 @@ def fetch_daily_papers(target_date: date, project_root: Path) -> DailySelection:
     # Sort by score descending and assign ranks
     filtered.sort(key=lambda p: p.score, reverse=True)
 
-    # Select top N (up to DAILY_TARGET)
-    selected = filtered[:DAILY_TARGET]
+    # Select top N (leave room for news: site limit is 15 articles/day total)
+    selected = filtered[:PAPER_TARGET]
     print(f"Selected {len(selected)} papers for {target_date}")
 
     # Create selection
@@ -169,6 +173,40 @@ def fetch_daily_papers(target_date: date, project_root: Path) -> DailySelection:
     generate_all_previews_unified(selection.papers, target_date.isoformat(), project_root)
 
     return selection
+
+
+def fetch_daily_news_section(target_date: date, project_root: Path,
+                             paper_count: int) -> list[NewsItem]:
+    """Fetch, rewrite and illustrate today's news items."""
+    print("Fetching news...")
+    # Site limit: News + Policy <= 5, and 15 articles total per day
+    room = min(NEWS_TARGET, 15 - paper_count)
+    if room <= 0:
+        print("  No room left for news today")
+        return []
+
+    news_items = fetch_daily_news(target_date)[:room]
+    if not news_items:
+        print("  No relevant news found today")
+        return []
+
+    # Rewrite into structured Chinese articles (one batched LLM request)
+    generate_all_news_analyses(news_items)
+
+    # Preview images: og:image from the article page, themed SVG as fallback
+    date_str = target_date.isoformat()
+    for i, item in enumerate(news_items, start=1):
+        item.rank = paper_count + i
+        assets_dir = (project_root / "docs" / "public" / "daily"
+                      / date_str / "assets" / item.candidate_id)
+        preview_path = assets_dir / "preview.png"
+        print(f"  News preview: {item.display_title[:40]}...")
+        if extract_og_image(item.url, preview_path):
+            item.preview_image = f"/daily/{date_str}/assets/{item.candidate_id}/preview.png"
+        else:
+            item.preview_image = generate_preview_image(item, date_str, project_root)
+
+    return news_items
 
 
 def main():
@@ -197,9 +235,13 @@ def main():
         # This allows the workflow to continue and deploy existing content
         sys.exit(0)
 
+    # Fetch news (ranks continue after the papers)
+    news_items = fetch_daily_news_section(target_date, project_root, len(selection.papers))
+
     # Generate markdown files
-    generate_markdown_files(selection, project_root)
-    print(f"Successfully generated {len(selection.papers)} papers for {selection.date}")
+    generate_markdown_files(selection, news_items, project_root)
+    print(f"Successfully generated {len(selection.papers)} papers and "
+          f"{len(news_items)} news items for {selection.date}")
 
 
 if __name__ == "__main__":
