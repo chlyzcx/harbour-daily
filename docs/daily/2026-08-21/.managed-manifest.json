@@ -34,16 +34,28 @@
       "path": "docs/daily/2026-08-21/paper/05-multi-source-geophysical-data-integration-for-unde.md"
     },
     {
-      "candidate_id": "openalex--W7202207427",
+      "candidate_id": "crossref--10.3389-fmars.2026.1797307",
       "category": "Paper",
       "rank": 6,
-      "path": "docs/daily/2026-08-21/paper/06-physics-informed-learning-for-robust-acoustic-loca.md"
+      "path": "docs/daily/2026-08-21/paper/06-lightweight-edgefrequency-driven-real-time-detecti.md"
+    },
+    {
+      "candidate_id": "crossref--10.3389-fmars.2026.1883695",
+      "category": "Paper",
+      "rank": 7,
+      "path": "docs/daily/2026-08-21/paper/07-performance-evaluation-of-yolo-models-for-target-d.md"
+    },
+    {
+      "candidate_id": "openalex--W7202207427",
+      "category": "Paper",
+      "rank": 8,
+      "path": "docs/daily/2026-08-21/paper/08-physics-informed-learning-for-robust-acoustic-loca.md"
     },
     {
       "candidate_id": "openalex--W7202033045",
       "category": "Paper",
-      "rank": 7,
-      "path": "docs/daily/2026-08-21/paper/07-development-of-efficient-wavelet-scheme-in-dwt-fft.md"
+      "rank": 9,
+      "path": "docs/daily/2026-08-21/paper/09-development-of-efficient-wavelet-scheme-in-dwt-fft.md"
     }
   ],
   "assets": [
@@ -68,12 +80,20 @@
       "path": "docs/public/daily/2026-08-21/assets/crossref--10.3390-rs18162832/preview.svg"
     },
     {
+      "candidate_id": "crossref--10.3389-fmars.2026.1797307",
+      "path": "docs/public/daily/2026-08-21/assets/crossref--10.3389-fmars.2026.1797307/preview.svg"
+    },
+    {
+      "candidate_id": "crossref--10.3389-fmars.2026.1883695",
+      "path": "docs/public/daily/2026-08-21/assets/crossref--10.3389-fmars.2026.1883695/preview.svg"
+    },
+    {
       "candidate_id": "openalex--W7202207427",
       "path": "docs/public/daily/2026-08-21/assets/openalex--W7202207427/preview.png"
     },
     {
       "candidate_id": "openalex--W7202033045",
-      "path": "docs/public/daily/2026-08-21/assets/openalex--W7202033045/preview.png"
+      "path": "docs/public/daily/2026-08-21/assets/openalex--W7202033045/preview.svg"
     }
   ]
 }

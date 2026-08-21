@@ -10,7 +10,7 @@ research_direction:
 journal: "Unknown"
 publisher: "F1000 Research Ltd"
 publication_year: 2026
-summary: "This is an open peer review report for the article 'An open reproducible framework for CNN-based cetacean vocalization detection in passive acoustic monitoring' (version 1), in which the reviewer approved the article with reservations and provided comments on the proposed CNN-based framework for detecting cetacean vocalizations in passive acoustic monitoring data. The original CrossRef record does not include an abstract for this item."
+summary: "(No abstract was provided by the source for this item.)"
 keywords:
   - "cetacean vocalization detection"
   - "detection"
@@ -23,7 +23,7 @@ previewImage: "/daily/2026-08-21/assets/crossref--10.21956-openreseurope.26352.r
 
 ## 核心内容
 
-
+(No abstract was provided by the source for this item.)
 
 ## 关键技术与数据
 

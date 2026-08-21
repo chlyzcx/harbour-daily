@@ -2,7 +2,7 @@
 candidateId: "openalex--W7202033045"
 category: "Paper"
 date: "2026-08-21"
-rank: 7
+rank: 9
 title: "Development of Efficient Wavelet Scheme in DWT, FFT &amp; DTCWT based OFDM Model for Underwater Communication"
 authors:
   - "Chetan Naik J"
@@ -20,7 +20,7 @@ sources:
     url: "https://openalex.org/W7202033045"
   - name: "DOI"
     url: "https://doi.org/10.59543/jidmis.v3.1387"
-previewImage: "/daily/2026-08-21/assets/openalex--W7202033045/preview.png"
+previewImage: "/daily/2026-08-21/assets/openalex--W7202033045/preview.svg"
 ---
 
 ## 核心内容

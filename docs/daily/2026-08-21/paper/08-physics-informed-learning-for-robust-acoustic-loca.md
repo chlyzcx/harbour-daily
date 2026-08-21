@@ -2,7 +2,7 @@
 candidateId: "openalex--W7202207427"
 category: "Paper"
 date: "2026-08-21"
-rank: 6
+rank: 8
 title: "Physics-Informed Learning for Robust Acoustic Localization with Calibrated Uncertainty"
 authors:
   - "Jennifer N. Kampe"
