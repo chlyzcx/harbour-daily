@@ -9,11 +9,32 @@ import requests
 KIMI_API = "https://api.moonshot.cn/v1/chat/completions"
 DEEPSEEK_API = "https://api.deepseek.com/v1/chat/completions"
 
-# .strip() is essential: API keys pasted into GitHub Secrets often carry a
-# trailing \r\n, which makes the HTTP client reject the Authorization header
-# before the request is ever sent.
-KIMI_API_KEY = os.environ.get("KIMI_API_KEY", "").strip()
-DEEPSEEK_API_KEY = os.environ.get("DEEPSEEK_API_KEY", "").strip()
+def _clean_api_key(raw: str) -> str:
+    """
+    Remove characters that are illegal in HTTP headers — embedded newlines,
+    tabs, spaces, control characters and quotes, commonly introduced when
+    a key is copy-pasted into a GitHub secret (e.g. wrapped across lines).
+    Real API keys contain none of these, so removing them is always safe.
+    """
+    return re.sub(r"[\s\x00-\x1f\x7f\"'`]", "", raw)
+
+
+def _load_api_key(env_name: str) -> str:
+    """Load an API key from the environment, sanitized for header use."""
+    raw = os.environ.get(env_name, "")
+    key = _clean_api_key(raw)
+    if raw and key != raw:
+        print(f"Warning: {env_name} contained hidden/invalid characters "
+              f"(copy-paste artifact in the secret); sanitized automatically. "
+              f"Please re-save the secret cleanly.")
+    if key and not (key.isascii() and key.isprintable()):
+        print(f"Warning: {env_name} contains non-ASCII characters and is unusable; ignoring it.")
+        return ""
+    return key
+
+
+KIMI_API_KEY = _load_api_key("KIMI_API_KEY")
+DEEPSEEK_API_KEY = _load_api_key("DEEPSEEK_API_KEY")
 KIMI_MODEL = os.environ.get("KIMI_MODEL", "kimi-k2.5").strip()
 
 # Delay between papers, only used by the per-paper fallback path.
@@ -65,12 +86,17 @@ BATCH_PROMPT_TEMPLATE = """请分析以下水声工程领域的 {n} 篇学术论
 """
 
 
+# Providers that failed fatally (bad key / auth error / quota exhausted).
+# There is no point retrying them for every remaining paper.
+_DEAD_PROVIDERS: set[str] = set()
+
+
 def _get_providers() -> list[tuple[str, str, str, str]]:
     """Return available providers as (name, api_url, api_key, model)."""
     providers = []
-    if KIMI_API_KEY:
+    if KIMI_API_KEY and "Kimi" not in _DEAD_PROVIDERS:
         providers.append(("Kimi", KIMI_API, KIMI_API_KEY, KIMI_MODEL))
-    if DEEPSEEK_API_KEY:
+    if DEEPSEEK_API_KEY and "DeepSeek" not in _DEAD_PROVIDERS:
         providers.append(("DeepSeek", DEEPSEEK_API, DEEPSEEK_API_KEY, "deepseek-chat"))
     return providers
 
@@ -110,6 +136,7 @@ def _call_llm(api_url: str, api_key: str, model: str, prompt: str,
                 print(f"    {provider} 429 (attempt {attempt + 1}/{max_retries}): {body}")
                 if _is_quota_error(body):
                     print(f"    {provider} quota/balance exhausted, giving up on this provider")
+                    _DEAD_PROVIDERS.add(provider)
                     return "", True
                 wait_time = (2 ** attempt) * 60  # 60, 120, 240 seconds
                 print(f"    Rate limited, waiting {wait_time}s...")
@@ -118,6 +145,7 @@ def _call_llm(api_url: str, api_key: str, model: str, prompt: str,
 
             if response.status_code in (401, 403):
                 print(f"    {provider} auth error {response.status_code}: {response.text[:300]}")
+                _DEAD_PROVIDERS.add(provider)
                 return "", True
 
             if response.status_code != 200:
@@ -135,6 +163,7 @@ def _call_llm(api_url: str, api_key: str, model: str, prompt: str,
             # was never sent, retrying is pointless.
             print(f"    {provider} invalid API key format: {e}")
             print(f"    -> Check the {provider.upper()} secret for stray spaces/newlines")
+            _DEAD_PROVIDERS.add(provider)
             return "", True
         except requests.RequestException as e:
             if attempt < max_retries - 1:
@@ -249,6 +278,9 @@ def generate_all_analyses(papers: list) -> None:
     # Slow path: per-paper calls for anything the batch missed
     missing = [i for i in range(len(papers)) if i not in results]
     for count, i in enumerate(missing, start=1):
+        if not _get_providers():
+            print("  All LLM providers are unavailable, skipping remaining analyses")
+            break
         paper = papers[i]
         print(f"  [fallback {count}/{len(missing)}] Analyzing: {paper.title[:50]}...")
         results[i] = generate_analysis(paper.title, paper.summary)
