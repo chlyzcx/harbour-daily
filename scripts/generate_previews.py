@@ -1,6 +1,9 @@
 """Generate preview images for papers."""
 
+import hashlib
+import math
 import re
+from html import escape
 from pathlib import Path
 from models import Paper
 
@@ -14,27 +17,77 @@ def sanitize_filename(text: str) -> str:
     return text.lower()
 
 
+# Color themes: (gradient_start, gradient_end, accent). One theme is picked
+# deterministically per paper based on its research direction, so cards in
+# the same topic share a color and different topics are distinguishable.
+_THEMES = [
+    ("#0f172a", "#1e3a8a", "#60a5fa"),  # 深海蓝（默认）
+    ("#042f2e", "#115e59", "#2dd4bf"),  # 声学青
+    ("#2e1065", "#5b21b6", "#a78bfa"),  # 信号紫
+    ("#431407", "#9a3412", "#fb923c"),  # 探测橙
+    ("#052e16", "#166534", "#4ade80"),  # 生物绿
+]
+
+
+def _stable_seed(text: str) -> int:
+    """Deterministic hash — Python's built-in hash() varies between runs."""
+    return int(hashlib.md5(text.encode("utf-8")).hexdigest()[:8], 16)
+
+
+def _wave_points(seed: int, y_base: float, amp: float, width: int = 400) -> str:
+    """Generate a deterministic waveform (two superimposed sines) as an SVG
+    polyline point list, seeded by the paper title so every card differs."""
+    freq1 = 0.018 + (seed % 5) * 0.004
+    phase1 = (seed % 628) / 100.0
+    freq2 = 0.050 + ((seed >> 4) % 3) * 0.012
+    phase2 = ((seed >> 8) % 628) / 100.0
+    points = []
+    for x in range(0, width + 1, 8):
+        y = y_base + amp * math.sin(freq1 * x + phase1) \
+                  + (amp * 0.4) * math.sin(freq2 * x + phase2)
+        points.append(f"{x},{y:.1f}")
+    return " ".join(points)
+
+
 def generate_svg_cover(paper: Paper, date_str: str) -> str:
-    """Generate SVG cover for a paper."""
-    # Extract first keyword or use default
+    """Generate a themed SVG cover for a paper.
+
+    The color theme comes from the research direction and the waveform
+    decoration from the title, so fallback cards no longer look identical.
+    """
     keyword = paper.keywords[0] if paper.keywords else "Research"
 
-    # Truncate title if too long
+    # Theme by research direction (falls back to keyword)
+    direction = paper.research_directions[0] if paper.research_directions else keyword
+    bg1, bg2, accent = _THEMES[_stable_seed(direction) % len(_THEMES)]
+
     title = paper.title
     if len(title) > 60:
         title = title[:57] + "..."
 
-    # Get first author
     first_author = paper.authors[0] if paper.authors else "Unknown"
     if len(first_author) > 30:
         first_author = first_author[:27] + "..."
 
-    # Generate SVG
+    journal = paper.journal or ""
+
+    # Three waveform layers seeded by the title (sonar-echo feel)
+    wave_seed = _stable_seed(paper.title)
+    waves = []
+    for i, (y_base, amp, opacity) in enumerate([(205, 14, 0.35), (232, 18, 0.22), (262, 22, 0.13)]):
+        points = _wave_points(wave_seed + i * 7919, y_base, amp)
+        waves.append(
+            f'  <polyline points="{points}" fill="none" stroke="{accent}" '
+            f'stroke-width="1.5" opacity="{opacity}"/>'
+        )
+    waves_svg = "\n".join(waves)
+
+    # Generate SVG (all interpolated text is XML-escaped)
     svg = f'''<svg width="400" height="300" xmlns="http://www.w3.org/2000/svg">
   <defs>
     <linearGradient id="grad" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" style="stop-color:#1e293b;stop-opacity:1" />
-      <stop offset="100%" style="stop-color:#0f172a;stop-opacity:1" />
+      <stop offset="0%" style="stop-color:{bg1};stop-opacity:1" />
+      <stop offset="100%" style="stop-color:{bg2};stop-opacity:1" />
     </linearGradient>
   </defs>
 
@@ -43,23 +96,28 @@ def generate_svg_cover(paper: Paper, date_str: str) -> str:
 
   <!-- Grid pattern -->
   <g opacity="0.1">
-    <line x1="0" y1="75" x2="400" y2="75" stroke="#60a5fa" stroke-width="1"/>
-    <line x1="0" y1="150" x2="400" y2="150" stroke="#60a5fa" stroke-width="1"/>
-    <line x1="0" y1="225" x2="400" y2="225" stroke="#60a5fa" stroke-width="1"/>
-    <line x1="100" y1="0" x2="100" y2="300" stroke="#60a5fa" stroke-width="1"/>
-    <line x1="200" y1="0" x2="200" y2="300" stroke="#60a5fa" stroke-width="1"/>
-    <line x1="300" y1="0" x2="300" y2="300" stroke="#60a5fa" stroke-width="1"/>
+    <line x1="0" y1="75" x2="400" y2="75" stroke="{accent}" stroke-width="1"/>
+    <line x1="0" y1="150" x2="400" y2="150" stroke="{accent}" stroke-width="1"/>
+    <line x1="0" y1="225" x2="400" y2="225" stroke="{accent}" stroke-width="1"/>
+    <line x1="100" y1="0" x2="100" y2="300" stroke="{accent}" stroke-width="1"/>
+    <line x1="200" y1="0" x2="200" y2="300" stroke="{accent}" stroke-width="1"/>
+    <line x1="300" y1="0" x2="300" y2="300" stroke="{accent}" stroke-width="1"/>
+  </g>
+
+  <!-- Waveform decoration (deterministic per title) -->
+  <g>
+{waves_svg}
   </g>
 
   <!-- Header -->
-  <text x="20" y="40" font-family="Inter, sans-serif" font-size="14" fill="#60a5fa" font-weight="600">
+  <text x="20" y="40" font-family="Inter, sans-serif" font-size="14" fill="{accent}" font-weight="600">
     UWA / {date_str[5:]}
   </text>
 
   <!-- Keyword badge -->
-  <rect x="20" y="60" width="{len(keyword) * 8 + 20}" height="28" rx="14" fill="#3b82f6" opacity="0.2"/>
-  <text x="30" y="79" font-family="Inter, sans-serif" font-size="13" fill="#60a5fa" font-weight="500">
-    {keyword}
+  <rect x="20" y="60" width="{len(keyword) * 8 + 20}" height="28" rx="14" fill="{accent}" opacity="0.2"/>
+  <text x="30" y="79" font-family="Inter, sans-serif" font-size="13" fill="{accent}" font-weight="500">
+    {escape(keyword)}
   </text>
 
   <!-- Title -->
@@ -75,23 +133,23 @@ def generate_svg_cover(paper: Paper, date_str: str) -> str:
       -webkit-line-clamp: 4;
       -webkit-box-orient: vertical;
     ">
-      {title}
+      {escape(title)}
     </div>
   </foreignObject>
 
   <!-- Author -->
   <text x="20" y="250" font-family="Inter, sans-serif" font-size="13" fill="#94a3b8">
-    {first_author}
+    {escape(first_author)}
   </text>
 
   <!-- Footer -->
   <text x="20" y="275" font-family="Inter, sans-serif" font-size="11" fill="#64748b">
-    {paper.journal}
+    {escape(journal)}
   </text>
 
   <!-- Score badge -->
-  <circle cx="360" cy="40" r="24" fill="#3b82f6" opacity="0.2"/>
-  <text x="360" y="46" font-family="Inter, sans-serif" font-size="14" fill="#60a5fa" font-weight="700" text-anchor="middle">
+  <circle cx="360" cy="40" r="24" fill="{accent}" opacity="0.2"/>
+  <text x="360" y="46" font-family="Inter, sans-serif" font-size="14" fill="{accent}" font-weight="700" text-anchor="middle">
     {int(paper.score)}
   </text>
 </svg>'''

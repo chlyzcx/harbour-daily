@@ -1,13 +1,21 @@
 """Unified preview image generation for all data sources."""
 
+import os
 import re
 import requests
+from io import BytesIO
 from pathlib import Path
 from typing import Optional
 from urllib.parse import urljoin
 from bs4 import BeautifulSoup
-from pdf2image import convert_from_path
 from models import Paper
+
+
+# Unpaywall requires an email address; reuse the OpenAlex contact.
+UNPAYWALL_EMAIL = os.environ.get("UNPAYWALL_EMAIL", "2770820299@qq.com")
+
+# A polite User-Agent helps with publisher sites that block default agents.
+_UA = {"User-Agent": f"harbour-daily/1.0 (mailto:{UNPAYWALL_EMAIL})"}
 
 
 def sanitize_filename(text: str) -> str:
@@ -17,7 +25,39 @@ def sanitize_filename(text: str) -> str:
     return text.lower()
 
 
-# ==================== arXiv 预览图 ====================
+def _paper_doi(paper: Paper) -> Optional[str]:
+    """Extract the DOI string from the paper, if any."""
+    if paper.doi:
+        return paper.doi
+    for source in paper.sources:
+        if source.name == "DOI" and "doi.org/" in source.url:
+            return source.url.split("doi.org/")[-1]
+    return None
+
+
+def _save_image_bytes(data: bytes, output_path: Path,
+                      min_w: int = 250, min_h: int = 150) -> bool:
+    """Validate image bytes with PIL and save as PNG.
+
+    Rejects tiny images (site logos, icons, tracking pixels).
+    """
+    try:
+        from PIL import Image
+        img = Image.open(BytesIO(data))
+        if img.width < min_w or img.height < min_h:
+            print(f"    Image too small ({img.width}x{img.height}), skipping")
+            return False
+        if img.mode in ("RGBA", "P", "CMYK", "LA"):
+            img = img.convert("RGB")
+        output_path.parent.mkdir(parents=True, exist_ok=True)
+        img.save(output_path, "PNG")
+        return True
+    except Exception as e:
+        print(f"    Image decode failed: {e}")
+        return False
+
+
+# ==================== arXiv HTML 首图 ====================
 
 def extract_arxiv_html_image(arxiv_url: str, output_path: Path) -> bool:
     """Extract first image from arXiv HTML page."""
@@ -31,7 +71,7 @@ def extract_arxiv_html_image(arxiv_url: str, output_path: Path) -> bool:
         html_url = f"https://arxiv.org/html/{arxiv_id}"
 
         print(f"    Trying arXiv HTML: {html_url}")
-        response = requests.get(html_url, timeout=30)
+        response = requests.get(html_url, timeout=30, headers=_UA)
 
         if response.status_code != 200:
             print(f"    HTML version not available (status {response.status_code})")
@@ -52,20 +92,40 @@ def extract_arxiv_html_image(arxiv_url: str, output_path: Path) -> bool:
 
         # Download image
         print(f"    Downloading image: {img_url}")
-        img_response = requests.get(img_url, timeout=30)
+        img_response = requests.get(img_url, timeout=30, headers=_UA)
         img_response.raise_for_status()
-
-        output_path.parent.mkdir(parents=True, exist_ok=True)
-        output_path.write_bytes(img_response.content)
-        return True
+        return _save_image_bytes(img_response.content, output_path)
 
     except Exception as e:
         print(f"    Error extracting arXiv HTML image: {e}")
         return False
 
 
-def extract_pdf_figure(pdf_url: str, output_path: Path, max_pages: int = 6) -> bool:
-    """Extract the largest embedded figure image from a PDF.
+# ==================== PDF 处理 ====================
+
+def _download_pdf(pdf_url: str) -> Optional[bytes]:
+    """Download a URL and return its bytes only if it is really a PDF.
+
+    Some journals serve an HTML page at the "PDF" link (e.g. jidmis.org),
+    which previously got fed into the PDF parsers and spammed hundreds of
+    syntax-error lines. The %PDF- magic number is more reliable than the
+    Content-Type header, which misconfigured servers often get wrong.
+    """
+    try:
+        print(f"    Downloading PDF: {pdf_url}")
+        response = requests.get(pdf_url, timeout=60, headers=_UA)
+        response.raise_for_status()
+        if not response.content[:5] == b"%PDF-":
+            print(f"    Not a real PDF (server returned HTML/other), skipping")
+            return None
+        return response.content
+    except requests.RequestException as e:
+        print(f"    PDF download failed: {e}")
+        return None
+
+
+def extract_pdf_figure(pdf_data: bytes, output_path: Path, max_pages: int = 6) -> bool:
+    """Extract the largest embedded figure image from PDF bytes.
 
     Scans the first few pages for embedded raster images and picks the
     largest one (most likely a figure, not an icon or logo).
@@ -76,16 +136,8 @@ def extract_pdf_figure(pdf_url: str, output_path: Path, max_pages: int = 6) -> b
         print("    PyMuPDF not installed, skipping figure extraction")
         return False
 
-    temp_pdf = output_path.parent / "temp_fig.pdf"
     try:
-        print(f"    Downloading PDF for figure extraction: {pdf_url}")
-        response = requests.get(pdf_url, timeout=60)
-        response.raise_for_status()
-
-        temp_pdf.parent.mkdir(parents=True, exist_ok=True)
-        temp_pdf.write_bytes(response.content)
-
-        doc = fitz.open(temp_pdf)
+        doc = fitz.open(stream=pdf_data, filetype="pdf")
         best = None  # (area, image_bytes)
         for page_num in range(min(len(doc), max_pages)):
             for img in doc[page_num].get_images(full=True):
@@ -107,207 +159,178 @@ def extract_pdf_figure(pdf_url: str, output_path: Path, max_pages: int = 6) -> b
             print("    No embedded figure found in PDF")
             return False
 
-        # Normalize to PNG via Pillow
-        from io import BytesIO
-        from PIL import Image
-        img = Image.open(BytesIO(best[1]))
-        if img.mode in ("RGBA", "P", "CMYK", "LA"):
-            img = img.convert("RGB")
-        output_path.parent.mkdir(parents=True, exist_ok=True)
-        img.save(output_path, "PNG")
-        print(f"    Extracted embedded figure ({img.size[0]}x{img.size[1]})")
-        return True
+        ok = _save_image_bytes(best[1], output_path)
+        if ok:
+            from PIL import Image
+            img = Image.open(BytesIO(best[1]))
+            print(f"    Extracted embedded figure ({img.size[0]}x{img.size[1]})")
+        return ok
 
     except Exception as e:
         print(f"    Error extracting PDF figure: {e}")
         return False
-    finally:
-        if temp_pdf.exists():
-            temp_pdf.unlink()
 
 
-def extract_pdf_page(pdf_url: str, output_path: Path, page: int = 1) -> bool:
-    """Extract specific page from PDF as image."""
+def extract_pdf_page(pdf_data: bytes, output_path: Path, page: int = 1) -> bool:
+    """Render a specific page of PDF bytes as an image."""
     try:
-        print(f"    Downloading PDF: {pdf_url}")
-        response = requests.get(pdf_url, timeout=60)
-        response.raise_for_status()
-
-        # Save PDF temporarily
-        temp_pdf = output_path.parent / "temp.pdf"
-        temp_pdf.parent.mkdir(parents=True, exist_ok=True)
-        temp_pdf.write_bytes(response.content)
-
-        # Convert page to image
-        print(f"    Extracting page {page} from PDF...")
-        images = convert_from_path(temp_pdf, dpi=150, first_page=page, last_page=page)
+        from pdf2image import convert_from_bytes
+        print(f"    Rendering page {page} from PDF...")
+        images = convert_from_bytes(pdf_data, dpi=150, first_page=page, last_page=page)
 
         if not images:
             print(f"    No page {page} found in PDF")
-            temp_pdf.unlink()
             return False
 
-        # Save image
         output_path.parent.mkdir(parents=True, exist_ok=True)
         images[0].save(output_path, "PNG")
-
-        # Clean up
-        temp_pdf.unlink()
         return True
 
     except Exception as e:
-        print(f"    Error extracting PDF page: {e}")
+        print(f"    Error rendering PDF page: {e}")
         return False
 
 
-def generate_arxiv_preview(paper: Paper, output_path: Path) -> bool:
-    """Generate preview for arXiv paper."""
-    # Find arXiv URL
-    arxiv_url = None
-    for source in paper.sources:
-        if "arxiv.org" in source.url:
-            arxiv_url = source.url
-            break
+# ==================== 出版商页面 og:image ====================
 
-    if not arxiv_url:
+def extract_og_image(page_url: str, output_path: Path) -> bool:
+    """Fetch a landing page (e.g. DOI redirect to the publisher) and grab
+    its og:image / twitter:image, which is often the article's key figure
+    or graphical abstract."""
+    try:
+        response = requests.get(page_url, timeout=30, headers=_UA, allow_redirects=True)
+        if response.status_code != 200:
+            return False
+
+        soup = BeautifulSoup(response.content, 'lxml')
+        tag = (soup.find("meta", property="og:image")
+               or soup.find("meta", attrs={"name": "twitter:image"}))
+        if not tag or not tag.get("content"):
+            print("    No og:image on landing page")
+            return False
+
+        img_url = urljoin(response.url, tag["content"])
+        print(f"    Downloading og:image: {img_url}")
+        img_response = requests.get(img_url, timeout=30, headers=_UA)
+        img_response.raise_for_status()
+        return _save_image_bytes(img_response.content, output_path)
+
+    except Exception as e:
+        print(f"    og:image extraction failed: {e}")
         return False
 
-    # Try HTML figure first
-    if extract_arxiv_html_image(arxiv_url, output_path):
-        return True
 
-    pdf_url = arxiv_url.replace("/abs/", "/pdf/")
-    if not pdf_url.endswith(".pdf"):
-        pdf_url += ".pdf"
+# ==================== Unpaywall 开放获取 PDF ====================
 
-    # Try embedded figure from PDF
-    if extract_pdf_figure(pdf_url, output_path):
-        return True
-
-    # Fallback to PDF page 2 (usually has Figure 1)
-    if extract_pdf_page(pdf_url, output_path, page=2):
-        return True
-
-    # Fallback to PDF page 1
-    if extract_pdf_page(pdf_url, output_path, page=1):
-        return True
-
-    return False
-
-
-# ==================== OpenAlex 预览图 ====================
-
-def generate_openalex_preview(paper: Paper, output_path: Path) -> bool:
-    """Generate preview for OpenAlex paper."""
-    # Check if it's open access and has PDF URL
-    if paper.is_oa and paper.oa_url:
-        print(f"    Open access paper, trying PDF: {paper.oa_url}")
-        # Try embedded figure first
-        if extract_pdf_figure(paper.oa_url, output_path):
-            return True
-        # Fallback to page 2 (usually has Figure 1)
-        if extract_pdf_page(paper.oa_url, output_path, page=2):
-            return True
-        # Fallback to page 1
-        if extract_pdf_page(paper.oa_url, output_path, page=1):
-            return True
-
-    # Not open access or PDF extraction failed
-    # Return False to use SVG fallback
-    return False
-
-
-# ==================== Semantic Scholar 预览图 ====================
-
-def generate_semantic_scholar_preview(paper: Paper, output_path: Path) -> bool:
-    """Generate preview for Semantic Scholar paper."""
-    # Check if paper has open access PDF URL
-    if paper.oa_url:
-        print(f"    Has open access PDF, trying: {paper.oa_url}")
-        # Try embedded figure first
-        if extract_pdf_figure(paper.oa_url, output_path):
-            return True
-        # Fallback to page 2 (usually has Figure 1)
-        if extract_pdf_page(paper.oa_url, output_path, page=2):
-            return True
-        # Fallback to page 1
-        if extract_pdf_page(paper.oa_url, output_path, page=1):
-            return True
-
-    # No OA PDF or extraction failed
-    # Return False to use SVG fallback
-    return False
+def find_oa_pdf_url(doi: str) -> Optional[str]:
+    """Query Unpaywall for a legal open-access PDF of this DOI."""
+    try:
+        response = requests.get(
+            f"https://api.unpaywall.org/v2/{doi}",
+            params={"email": UNPAYWALL_EMAIL},
+            timeout=20,
+        )
+        if response.status_code != 200:
+            return None
+        location = response.json().get("best_oa_location") or {}
+        return location.get("url_for_pdf") or location.get("url")
+    except Exception as e:
+        print(f"    Unpaywall lookup failed: {e}")
+        return None
 
 
 # ==================== 统一预览图生成 ====================
+
+def try_real_preview(paper: Paper, output_path: Path) -> bool:
+    """Try every real-image source for a paper, best quality first:
+
+    1. arXiv HTML first figure (cheapest, best quality)
+    2. Largest embedded figure from any available PDF
+       (arXiv PDF, known OA URL, Unpaywall-discovered OA PDF)
+    3. Publisher landing page og:image
+    4. Full-page render of the PDF (page 2, then page 1) — last resort
+    """
+    pdf_urls: list[str] = []
+
+    arxiv_url = next((s.url for s in paper.sources if "arxiv.org" in s.url), None)
+    if arxiv_url:
+        if extract_arxiv_html_image(arxiv_url, output_path):
+            return True
+        pdf_url = arxiv_url.replace("/abs/", "/pdf/")
+        if not pdf_url.endswith(".pdf"):
+            pdf_url += ".pdf"
+        pdf_urls.append(pdf_url)
+
+    if paper.oa_url:
+        pdf_urls.append(paper.oa_url)
+
+    doi = _paper_doi(paper)
+    if doi:
+        oa_pdf = find_oa_pdf_url(doi)
+        if oa_pdf:
+            pdf_urls.append(oa_pdf)
+
+    # Deduplicate, preserving priority order
+    seen = set()
+    pdf_urls = [u for u in pdf_urls if not (u in seen or seen.add(u))]
+
+    # Download each candidate at most once (previously the same PDF was
+    # downloaded up to 3 times: figure attempt, page 2, page 1)
+    first_pdf: Optional[bytes] = None
+    for url in pdf_urls:
+        data = _download_pdf(url)
+        if not data:
+            continue
+        if first_pdf is None:
+            first_pdf = data
+        if extract_pdf_figure(data, output_path):
+            return True
+
+    if doi and extract_og_image(f"https://doi.org/{doi}", output_path):
+        return True
+
+    # Ugliest fallback among the real sources: a full page render
+    if first_pdf:
+        if extract_pdf_page(first_pdf, output_path, page=2):
+            return True
+        if extract_pdf_page(first_pdf, output_path, page=1):
+            return True
+
+    return False
+
 
 def generate_preview_unified(paper: Paper, date_str: str, project_root: Path) -> str:
     """
     Generate preview image for a paper from any data source.
     Returns the public URL path to the preview image.
     """
-    # Create output directory
     assets_dir = project_root / "docs" / "public" / "daily" / date_str / "assets" / paper.candidate_id
     preview_path = assets_dir / "preview.png"
 
-    # Determine source type
-    is_arxiv = any("arxiv.org" in source.url for source in paper.sources)
-    is_openalex = "openalex" in paper.candidate_id.lower()
-    is_semantic_scholar = "s2--" in paper.candidate_id or "semanticscholar" in paper.candidate_id.lower()
+    print(f"  Generating preview for: {paper.title[:50]}...")
+    if try_real_preview(paper, preview_path):
+        return f"/daily/{date_str}/assets/{paper.candidate_id}/preview.png"
 
-    success = False
-
-    # Try to generate real preview based on source
-    if is_arxiv:
-        print(f"  [arXiv] Generating preview for: {paper.title[:50]}...")
-        success = generate_arxiv_preview(paper, preview_path)
-
-    elif is_openalex:
-        print(f"  [OpenAlex] Generating preview for: {paper.title[:50]}...")
-        success = generate_openalex_preview(paper, preview_path)
-
-    elif is_semantic_scholar:
-        print(f"  [Semantic Scholar] Generating preview for: {paper.title[:50]}...")
-        success = generate_semantic_scholar_preview(paper, preview_path)
-
-    else:
-        print(f"  [Other] Using SVG for: {paper.title[:50]}...")
-
-    # If real preview failed, use SVG fallback
-    if not success:
-        from generate_previews import generate_preview_image
-        return generate_preview_image(paper, date_str, project_root)
-
-    # Return public URL
-    return f"/daily/{date_str}/assets/{paper.candidate_id}/preview.png"
+    # Fall back to the themed SVG cover
+    from generate_previews import generate_preview_image
+    return generate_preview_image(paper, date_str, project_root)
 
 
 def generate_all_previews_unified(papers: list[Paper], date_str: str, project_root: Path) -> None:
-    """Generate preview images for all papers using unified approach."""
+    """Generate preview images for all papers using the unified approach."""
     print(f"Generating unified preview images for {len(papers)} papers...")
 
-    arxiv_count = 0
-    openalex_count = 0
-    s2_count = 0
+    real_count = 0
     svg_count = 0
 
     for paper in papers:
         preview_url = generate_preview_unified(paper, date_str, project_root)
         paper.preview_image = preview_url
-
-        # Count by type
-        if "preview.png" in preview_url:
-            if "arxiv" in paper.candidate_id:
-                arxiv_count += 1
-            elif "openalex" in paper.candidate_id:
-                openalex_count += 1
-            elif "s2" in paper.candidate_id:
-                s2_count += 1
+        if preview_url.endswith("preview.png"):
+            real_count += 1
         else:
             svg_count += 1
 
     print(f"\nPreview generation summary:")
-    print(f"  - arXiv real images: {arxiv_count}")
-    print(f"  - OpenAlex real images: {openalex_count}")
-    print(f"  - Semantic Scholar real images: {s2_count}")
+    print(f"  - Real images: {real_count}")
     print(f"  - SVG fallback: {svg_count}")
