@@ -5,6 +5,7 @@ from datetime import date, timedelta
 from typing import Optional
 from config import (
     RESEARCH_DIRECTIONS,
+    OPENALEX_SEARCH_TERMS,
     TOP_JOURNALS,
     JOURNAL_COVERS,
     DEFAULT_COVER,
@@ -37,7 +38,12 @@ def get_journal_cover(journal_name: Optional[str]) -> str:
 
 
 def match_research_directions(text: str) -> list[str]:
-    """Match research directions based on text content."""
+    """Match research directions based on text content.
+
+    Capped at 3: with the finer-grained taxonomy, overlapping keywords can
+    match many directions on one paper; the first matches in dict order are
+    the most specific (specific directions are listed before broad ones).
+    """
     text_lower = text.lower()
     matched = []
     for direction, keywords in RESEARCH_DIRECTIONS.items():
@@ -45,6 +51,8 @@ def match_research_directions(text: str) -> list[str]:
             if keyword.lower() in text_lower:
                 matched.append(direction)
                 break
+        if len(matched) >= 3:
+            break
     return matched  # Return empty list if no match
 
 
@@ -127,13 +135,10 @@ def fetch_openalex_papers(target_date: date, max_results: int = 100) -> list[Pap
     """Fetch papers from OpenAlex for a given date."""
     papers = []
 
-    # Build search query from all direction keywords
-    all_keywords = []
-    for keywords in RESEARCH_DIRECTIONS.values():
-        all_keywords.extend(keywords)
-
-    # OpenAlex search query
-    query = " OR ".join([f'"{kw}"' for kw in all_keywords[:15]])
+    # OpenAlex OR-query built from umbrella terms that cover every direction
+    # group. (Previously this used the first 15 direction keywords, which were
+    # all channel-related, so other directions were never discovered here.)
+    query = " OR ".join(f'"{term}"' for term in OPENALEX_SEARCH_TERMS)
 
     params = {
         "search": query,
