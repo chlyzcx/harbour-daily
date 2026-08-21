@@ -22,58 +22,46 @@
       "path": "docs/daily/2026-08-21/paper/03-audio-world-spatial-assistive-navigation.md"
     },
     {
-      "candidate_id": "openalex--W7203682825",
+      "candidate_id": "openalex--W7203610389",
       "category": "Paper",
       "rank": 4,
-      "path": "docs/daily/2026-08-21/paper/04-dive-20210916152707turbotrosdense-images-and-metad.md"
+      "path": "docs/daily/2026-08-21/paper/04-a-frequency-aware-multi-scale-network-with-expert-.md"
     },
     {
-      "candidate_id": "openalex--W7203716345",
+      "candidate_id": "openalex--W7203462286",
       "category": "Paper",
       "rank": 5,
-      "path": "docs/daily/2026-08-21/paper/05-dive-20210920084153turbotrossparse-images-and-meta.md"
+      "path": "docs/daily/2026-08-21/paper/05-robust-aoa-based-localization-for-distributed-unde.md"
     },
     {
-      "candidate_id": "openalex--W7203690948",
+      "candidate_id": "openalex--W7203636981",
       "category": "Paper",
       "rank": 6,
-      "path": "docs/daily/2026-08-21/paper/06-dive-201808040934042018080414325820180805123456201.md"
+      "path": "docs/daily/2026-08-21/paper/06-automatic-lofar-line-spectrum-extraction-with-hybr.md"
     },
     {
-      "candidate_id": "openalex--W7203725408",
+      "candidate_id": "openalex--W7203485578",
       "category": "Paper",
       "rank": 7,
-      "path": "docs/daily/2026-08-21/paper/07-dive-20210709085440sparus2posidonia3-images-and-me.md"
+      "path": "docs/daily/2026-08-21/paper/07-echo--and-image-domain-fusion-for-micro-leak-detec.md"
     },
     {
-      "candidate_id": "openalex--W7203714711",
+      "candidate_id": "openalex--W7202399338",
       "category": "Paper",
       "rank": 8,
-      "path": "docs/daily/2026-08-21/paper/08-performance-analysis-of-a-three-hop-heterogeneous-.md"
+      "path": "docs/daily/2026-08-21/paper/08-lightweight-edgefrequency-driven-real-time-detecti.md"
     },
     {
-      "candidate_id": "openalex--W7203661525",
+      "candidate_id": "s2--6722bde176ba954ba0a34e7429dc573b0a29b6af",
       "category": "Paper",
       "rank": 9,
-      "path": "docs/daily/2026-08-21/paper/09-dive-20210917092839turbotrosdense-images-and-metad.md"
+      "path": "docs/daily/2026-08-21/paper/09-demonstrating-the-feasibility-of-a-mirror-ocean-ac.md"
     },
     {
-      "candidate_id": "openalex--W7203660612",
+      "candidate_id": "openalex--W7203663553",
       "category": "Paper",
       "rank": 10,
-      "path": "docs/daily/2026-08-21/paper/10-dive-20180803065749ae2000fsx3-images-and-metadata.md"
-    },
-    {
-      "candidate_id": "news--b20a55eaf643",
-      "category": "News",
-      "rank": 11,
-      "path": "docs/daily/2026-08-21/news/11-中国声学学会水声学分会2026年度学术交流会在哈工程举行.md"
-    },
-    {
-      "candidate_id": "news--1cbb44728c06",
-      "category": "News",
-      "rank": 12,
-      "path": "docs/daily/2026-08-21/news/12-中国声学学会水声学分会8月7日召开.md"
+      "path": "docs/daily/2026-08-21/paper/10-pragmatic-task-battery-llm-responses-and-rubric-sc.md"
     }
   ],
   "assets": [
@@ -90,40 +78,32 @@
       "path": "docs/public/daily/2026-08-21/assets/openalex--W7203724307/preview.svg"
     },
     {
-      "candidate_id": "openalex--W7203682825",
-      "path": "docs/public/daily/2026-08-21/assets/openalex--W7203682825/preview.svg"
+      "candidate_id": "openalex--W7203610389",
+      "path": "docs/public/daily/2026-08-21/assets/openalex--W7203610389/preview.svg"
     },
     {
-      "candidate_id": "openalex--W7203716345",
-      "path": "docs/public/daily/2026-08-21/assets/openalex--W7203716345/preview.svg"
+      "candidate_id": "openalex--W7203462286",
+      "path": "docs/public/daily/2026-08-21/assets/openalex--W7203462286/preview.svg"
     },
     {
-      "candidate_id": "openalex--W7203690948",
-      "path": "docs/public/daily/2026-08-21/assets/openalex--W7203690948/preview.svg"
+      "candidate_id": "openalex--W7203636981",
+      "path": "docs/public/daily/2026-08-21/assets/openalex--W7203636981/preview.svg"
     },
     {
-      "candidate_id": "openalex--W7203725408",
-      "path": "docs/public/daily/2026-08-21/assets/openalex--W7203725408/preview.svg"
+      "candidate_id": "openalex--W7203485578",
+      "path": "docs/public/daily/2026-08-21/assets/openalex--W7203485578/preview.svg"
     },
     {
-      "candidate_id": "openalex--W7203714711",
-      "path": "docs/public/daily/2026-08-21/assets/openalex--W7203714711/preview.svg"
+      "candidate_id": "openalex--W7202399338",
+      "path": "docs/public/daily/2026-08-21/assets/openalex--W7202399338/preview.png"
     },
     {
-      "candidate_id": "openalex--W7203661525",
-      "path": "docs/public/daily/2026-08-21/assets/openalex--W7203661525/preview.svg"
+      "candidate_id": "s2--6722bde176ba954ba0a34e7429dc573b0a29b6af",
+      "path": "docs/public/daily/2026-08-21/assets/s2--6722bde176ba954ba0a34e7429dc573b0a29b6af/preview.svg"
     },
     {
-      "candidate_id": "openalex--W7203660612",
-      "path": "docs/public/daily/2026-08-21/assets/openalex--W7203660612/preview.svg"
-    },
-    {
-      "candidate_id": "news--b20a55eaf643",
-      "path": "docs/public/daily/2026-08-21/assets/news--b20a55eaf643/preview.svg"
-    },
-    {
-      "candidate_id": "news--1cbb44728c06",
-      "path": "docs/public/daily/2026-08-21/assets/news--1cbb44728c06/preview.svg"
+      "candidate_id": "openalex--W7203663553",
+      "path": "docs/public/daily/2026-08-21/assets/openalex--W7203663553/preview.svg"
     }
   ]
 }
