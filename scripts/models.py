@@ -37,6 +37,9 @@ class Paper:
 
     def to_markdown(self, date_str: str, rank: int) -> str:
         """Convert paper to Markdown with front matter."""
+        # Front matter requires a non-empty summary; fall back to a placeholder
+        # when the source (e.g. CrossRef peer review reports) has no abstract.
+        summary = self.summary.strip() or "(No abstract was provided by the source for this item.)"
         lines = [
             "---",
             f'candidateId: "{self.candidate_id}"',
@@ -66,7 +69,7 @@ class Paper:
         if self.publication_year:
             lines.append(f'publication_year: {self.publication_year}')
 
-        lines.append(f'summary: "{self.summary}"')
+        lines.append(f'summary: "{summary}"')
 
         lines.append("keywords:")
         for kw in self.keywords:
@@ -90,7 +93,7 @@ class Paper:
         lines.append("")
         lines.append("## 核心内容")
         lines.append("")
-        lines.append(self.core_content if self.core_content else self.summary)
+        lines.append(self.core_content if self.core_content else summary)
         lines.append("")
         lines.append("## 关键技术与数据")
         lines.append("")
