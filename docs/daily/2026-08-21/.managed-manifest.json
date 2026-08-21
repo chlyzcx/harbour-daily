@@ -62,6 +62,18 @@
       "category": "Paper",
       "rank": 10,
       "path": "docs/daily/2026-08-21/paper/10-relative-localization-of-a-floating-recovery-targe.md"
+    },
+    {
+      "candidate_id": "news--b20a55eaf643",
+      "category": "News",
+      "rank": 11,
+      "path": "docs/daily/2026-08-21/news/11-中国声学学会水声学分会2026年度学术交流会在哈工程举行.md"
+    },
+    {
+      "candidate_id": "news--1cbb44728c06",
+      "category": "News",
+      "rank": 12,
+      "path": "docs/daily/2026-08-21/news/12-中国声学学会水声学分会8月7日召开.md"
     }
   ],
   "assets": [
@@ -104,6 +116,14 @@
     {
       "candidate_id": "openalex--W7203600357",
       "path": "docs/public/daily/2026-08-21/assets/openalex--W7203600357/preview.png"
+    },
+    {
+      "candidate_id": "news--b20a55eaf643",
+      "path": "docs/public/daily/2026-08-21/assets/news--b20a55eaf643/preview.svg"
+    },
+    {
+      "candidate_id": "news--1cbb44728c06",
+      "path": "docs/public/daily/2026-08-21/assets/news--1cbb44728c06/preview.svg"
     }
   ]
 }

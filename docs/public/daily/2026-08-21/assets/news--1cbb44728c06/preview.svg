@@ -1,0 +1,72 @@
+<svg width="400" height="300" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#042f2e;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#115e59;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="400" height="300" fill="url(#grad)"/>
+
+  <!-- Grid pattern -->
+  <g opacity="0.1">
+    <line x1="0" y1="75" x2="400" y2="75" stroke="#2dd4bf" stroke-width="1"/>
+    <line x1="0" y1="150" x2="400" y2="150" stroke="#2dd4bf" stroke-width="1"/>
+    <line x1="0" y1="225" x2="400" y2="225" stroke="#2dd4bf" stroke-width="1"/>
+    <line x1="100" y1="0" x2="100" y2="300" stroke="#2dd4bf" stroke-width="1"/>
+    <line x1="200" y1="0" x2="200" y2="300" stroke="#2dd4bf" stroke-width="1"/>
+    <line x1="300" y1="0" x2="300" y2="300" stroke="#2dd4bf" stroke-width="1"/>
+  </g>
+
+  <!-- Waveform decoration (deterministic per title) -->
+  <g>
+  <polyline points="0,205.2 8,203.7 16,201.6 24,198.8 32,195.6 40,192.3 48,189.4 56,187.1 64,185.7 72,185.5 80,186.4 88,188.4 96,191.3 104,194.6 112,198.1 120,201.4 128,204.1 136,206.1 144,207.3 152,207.8 160,207.8 168,207.6 176,207.4 184,207.6 192,208.4 200,209.8 208,211.9 216,214.5 224,217.3 232,220.0 240,222.3 248,223.7 256,224.1 264,223.3 272,221.4 280,218.5 288,215.0 296,211.2 304,207.5 312,204.2 320,201.6 328,199.8 336,198.9 344,198.7 352,198.9 360,199.4 368,199.7 376,199.5 384,198.8 392,197.5 400,195.6" fill="none" stroke="#2dd4bf" stroke-width="1.5" opacity="0.35"/>
+  <polyline points="0,254.9 8,256.3 16,255.4 24,252.2 32,247.4 40,241.4 48,234.9 56,228.6 64,223.1 72,218.9 80,216.2 88,215.1 96,215.5 104,217.0 112,219.5 120,222.4 128,225.4 136,228.3 144,231.0 152,233.3 160,235.3 168,237.2 176,238.9 184,240.6 192,242.2 200,243.7 208,244.9 216,245.4 224,245.2 232,243.9 240,241.4 248,237.8 256,233.1 264,227.8 272,222.2 280,217.0 288,212.8 296,210.1 304,209.4 312,210.8 320,214.4 328,219.9 336,226.8 344,234.3 352,241.8 360,248.4 368,253.4 376,256.4 384,256.9 392,255.0 400,251.0" fill="none" stroke="#2dd4bf" stroke-width="1.5" opacity="0.22"/>
+  <polyline points="0,248.9 8,249.0 16,249.1 24,249.5 32,250.5 40,252.4 48,255.4 56,259.5 64,264.6 72,270.5 80,276.5 88,282.1 96,286.7 104,289.5 112,290.2 120,288.5 128,284.4 136,278.1 144,270.3 152,261.7 160,253.0 168,245.2 176,239.0 184,234.9 192,233.2 200,234.0 208,237.0 216,241.8 224,247.7 232,254.1 240,260.2 248,265.6 256,270.0 264,273.0 272,274.9 280,275.8 288,275.9 296,275.7 304,275.4 312,275.1 320,275.0 328,274.9 336,274.6 344,273.8 352,272.2 360,269.6 368,265.7 376,260.9 384,255.2 392,249.1 400,243.3" fill="none" stroke="#2dd4bf" stroke-width="1.5" opacity="0.13"/>
+  </g>
+
+  <!-- Header -->
+  <text x="20" y="40" font-family="Inter, sans-serif" font-size="14" fill="#2dd4bf" font-weight="600">
+    UWA / 08-21
+  </text>
+
+  <!-- Keyword badge -->
+  <rect x="20" y="60" width="84" height="28" rx="14" fill="#2dd4bf" opacity="0.2"/>
+  <text x="30" y="79" font-family="Inter, sans-serif" font-size="13" fill="#2dd4bf" font-weight="500">
+    Research
+  </text>
+
+  <!-- Title -->
+  <foreignObject x="20" y="110" width="360" height="120">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="
+      font-family: Inter, sans-serif;
+      font-size: 18px;
+      font-weight: 600;
+      color: #e2e8f0;
+      line-height: 1.4;
+      overflow: hidden;
+      display: -webkit-box;
+      -webkit-line-clamp: 4;
+      -webkit-box-orient: vertical;
+    ">
+      中国声学学会水声学分会会议于8月7日召开
+    </div>
+  </foreignObject>
+
+  <!-- Author -->
+  <text x="20" y="250" font-family="Inter, sans-serif" font-size="13" fill="#94a3b8">
+    哈尔滨工程大学新闻网
+  </text>
+
+  <!-- Footer -->
+  <text x="20" y="275" font-family="Inter, sans-serif" font-size="11" fill="#64748b">
+    哈尔滨工程大学新闻网
+  </text>
+
+  <!-- Score badge -->
+  <circle cx="360" cy="40" r="24" fill="#2dd4bf" opacity="0.2"/>
+  <text x="360" y="46" font-family="Inter, sans-serif" font-size="14" fill="#2dd4bf" font-weight="700" text-anchor="middle">
+    70
+  </text>
+</svg>
