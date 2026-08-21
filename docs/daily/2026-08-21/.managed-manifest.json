@@ -1,0 +1,69 @@
+{
+  "schema_version": 2,
+  "cycle_id": "daily-2026-08-21",
+  "display_date": "2026-08-21",
+  "articles": [
+    {
+      "candidate_id": "arxiv--2608.10533-2",
+      "category": "Paper",
+      "rank": 1,
+      "path": "docs/daily/2026-08-21/paper/01-an-asynchronous-triggered-mac-protocol-for-underwa.md"
+    },
+    {
+      "candidate_id": "arxiv--2608.10054-1",
+      "category": "Paper",
+      "rank": 2,
+      "path": "docs/daily/2026-08-21/paper/02-training-set-synthesis-for-bioacoustic-denoising-a.md"
+    },
+    {
+      "candidate_id": "openalex--W7201857758",
+      "category": "Paper",
+      "rank": 3,
+      "path": "docs/daily/2026-08-21/paper/03-physics-informed-hybrid-marine-predator-and-harris.md"
+    },
+    {
+      "candidate_id": "crossref--10.3390-rs18162832",
+      "category": "Paper",
+      "rank": 4,
+      "path": "docs/daily/2026-08-21/paper/04-multi-source-geophysical-data-integration-for-unde.md"
+    },
+    {
+      "candidate_id": "openalex--W7202207427",
+      "category": "Paper",
+      "rank": 5,
+      "path": "docs/daily/2026-08-21/paper/05-physics-informed-learning-for-robust-acoustic-loca.md"
+    },
+    {
+      "candidate_id": "openalex--W7202033045",
+      "category": "Paper",
+      "rank": 6,
+      "path": "docs/daily/2026-08-21/paper/06-development-of-efficient-wavelet-scheme-in-dwt-fft.md"
+    }
+  ],
+  "assets": [
+    {
+      "candidate_id": "arxiv--2608.10533-2",
+      "path": "docs/public/daily/2026-08-21/assets/arxiv--2608.10533-2/preview.png"
+    },
+    {
+      "candidate_id": "arxiv--2608.10054-1",
+      "path": "docs/public/daily/2026-08-21/assets/arxiv--2608.10054-1/preview.png"
+    },
+    {
+      "candidate_id": "openalex--W7201857758",
+      "path": "docs/public/daily/2026-08-21/assets/openalex--W7201857758/preview.png"
+    },
+    {
+      "candidate_id": "crossref--10.3390-rs18162832",
+      "path": "docs/public/daily/2026-08-21/assets/crossref--10.3390-rs18162832/preview.svg"
+    },
+    {
+      "candidate_id": "openalex--W7202207427",
+      "path": "docs/public/daily/2026-08-21/assets/openalex--W7202207427/preview.png"
+    },
+    {
+      "candidate_id": "openalex--W7202033045",
+      "path": "docs/public/daily/2026-08-21/assets/openalex--W7202033045/preview.png"
+    }
+  ]
+}
