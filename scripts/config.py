@@ -99,6 +99,7 @@ RESEARCH_DIRECTIONS = {
         "underwater acoustic network protocol",
         "underwater MAC protocol",
         "underwater acoustic networking",
+        "underwater acoustic network",
     ],
     "中继通信": [
         "underwater acoustic relay",
@@ -113,6 +114,7 @@ RESEARCH_DIRECTIONS = {
     "水下传感器网络": [
         "underwater sensor network",
         "underwater wireless sensor network",
+        "underwater acoustic sensor network",
         "UWSN",
     ],
     # ============ 水声侦察 ============
@@ -129,6 +131,7 @@ RESEARCH_DIRECTIONS = {
         "underwater acoustic localization",
         "underwater acoustic positioning",
         "acoustic localization underwater",
+        "underwater localization",
     ],
     "基线定位系统": [
         "USBL",
@@ -150,6 +153,8 @@ RESEARCH_DIRECTIONS = {
         "underwater acoustic signal recognition",
         "underwater signal classification",
         "underwater acoustic signal identification",
+        "underwater acoustic target recognition",
+        "underwater target recognition",
     ],
     "特征提取": [
         "underwater acoustic feature extraction",
@@ -315,6 +320,24 @@ MIN_SCORE = 45  # Minimum score threshold (lowered from 50 to 45)
 # time: they waste paper slots and can never produce a real preview image.
 # (10.5281=Zenodo, 10.17632=Mendeley Data, 10.6084=Figshare, 10.7910=Dataverse)
 DATASET_DOI_PREFIXES = ("10.5281/", "10.17632/", "10.6084/", "10.7910/")
+
+# Domain relevance gate for PAPERS. Every candidate (all four sources) must
+# contain at least one of these broad domain terms in title+abstract. This
+# is deliberately wider than the direction keywords: direction matching is
+# phrase-exact and brittle (word order, plurals, synonyms), so it is only
+# used for tagging, never as an admission gate.
+PAPER_DOMAIN_KEYWORDS = [
+    "underwater acoustic", "underwater sound", "ocean acoustic",
+    "marine acoustic", "hydroacoustic", "sonar", "hydrophone",
+    "underwater communication", "underwater channel",
+    "underwater localization", "underwater positioning",
+    "underwater navigation", "underwater sensor network",
+    "underwater target", "underwater noise", "underwater vehicle",
+    "underwater wireless", "underwater optical",
+    "bioacoustic", "marine mammal", "cetacean", "whale", "dolphin",
+    "echolocation", "geoacoustic", "seabed acoustic", "seafloor acoustic",
+    "acoustic tomography", "ocean ambient noise",
+]
 
 # Score weights
 SCORE_WEIGHTS = {

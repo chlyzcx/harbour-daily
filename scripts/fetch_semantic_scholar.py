@@ -6,7 +6,7 @@ from datetime import date, timedelta
 from typing import Optional
 from config import RESEARCH_DIRECTIONS, MAX_AGE_DAYS
 from models import Paper, Source
-from fetch_openalex import match_research_directions, extract_keywords
+from fetch_openalex import match_research_directions, extract_keywords, is_domain_relevant
 
 
 S2_API = "https://api.semanticscholar.org/graph/v1/paper/search"
@@ -66,13 +66,13 @@ def fetch_semantic_scholar_papers(target_date: date, max_results: int = 100) -> 
                 title = item["title"]
                 abstract = item.get("abstract", "")
 
-                # Match research directions
+                # Admission gate: domain relevance (tagging is best-effort)
                 full_text = f"{title} {abstract}"
-                directions = match_research_directions(full_text)
-
-                # Skip if no direction match
-                if not directions:
+                if not is_domain_relevant(full_text):
                     continue
+
+                # Tag with research directions
+                directions = match_research_directions(full_text)
 
                 # Extract keywords
                 keywords = extract_keywords(title, abstract, directions)

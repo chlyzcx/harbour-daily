@@ -18,92 +18,62 @@
     {
       "candidate_id": "openalex--W7203610389",
       "category": "Paper",
-      "rank": 3,
-      "path": "docs/daily/2026-08-21/paper/03-a-frequency-aware-multi-scale-network-with-expert-.md"
+      "rank": 4,
+      "path": "docs/daily/2026-08-21/paper/04-a-frequency-aware-multi-scale-network-with-expert-.md"
     },
     {
       "candidate_id": "openalex--W7203462286",
       "category": "Paper",
-      "rank": 4,
-      "path": "docs/daily/2026-08-21/paper/04-robust-aoa-based-localization-for-distributed-unde.md"
+      "rank": 5,
+      "path": "docs/daily/2026-08-21/paper/05-robust-aoa-based-localization-for-distributed-unde.md"
     },
     {
       "candidate_id": "openalex--W7203636981",
       "category": "Paper",
-      "rank": 5,
-      "path": "docs/daily/2026-08-21/paper/05-automatic-lofar-line-spectrum-extraction-with-hybr.md"
+      "rank": 6,
+      "path": "docs/daily/2026-08-21/paper/06-automatic-lofar-line-spectrum-extraction-with-hybr.md"
     },
     {
       "candidate_id": "openalex--W7203485578",
       "category": "Paper",
-      "rank": 6,
-      "path": "docs/daily/2026-08-21/paper/06-echo--and-image-domain-fusion-for-micro-leak-detec.md"
+      "rank": 7,
+      "path": "docs/daily/2026-08-21/paper/07-echo--and-image-domain-fusion-for-micro-leak-detec.md"
     },
     {
       "candidate_id": "openalex--W7202399338",
       "category": "Paper",
-      "rank": 7,
-      "path": "docs/daily/2026-08-21/paper/07-lightweight-edgefrequency-driven-real-time-detecti.md"
-    },
-    {
-      "candidate_id": "openalex--W7203622079",
-      "category": "Paper",
       "rank": 8,
-      "path": "docs/daily/2026-08-21/paper/08-ltbgtengineering-transformations-of-the-new-york-s.md"
-    },
-    {
-      "candidate_id": "openalex--W4415111113",
-      "category": "Paper",
-      "rank": 9,
-      "path": "docs/daily/2026-08-21/paper/09-functional-multireference-alignment-via-deconvolut.md"
-    },
-    {
-      "candidate_id": "openalex--W7203612083",
-      "category": "Paper",
-      "rank": 10,
-      "path": "docs/daily/2026-08-21/paper/10-3d-printed-meta-matching-layer-for-enhanced-ultras.md"
+      "path": "docs/daily/2026-08-21/paper/08-lightweight-edgefrequency-driven-real-time-detecti.md"
     }
   ],
   "assets": [
     {
       "candidate_id": "arxiv--2608.10533-2",
-      "path": "docs/public/daily/2026-08-21/assets/arxiv--2608.10533-2/preview.png"
+      "path": "docs/public/daily/2026-08-21/assets/arxiv--2608.10533-2"
     },
     {
       "candidate_id": "arxiv--2608.10054-1",
-      "path": "docs/public/daily/2026-08-21/assets/arxiv--2608.10054-1/preview.png"
+      "path": "docs/public/daily/2026-08-21/assets/arxiv--2608.10054-1"
     },
     {
       "candidate_id": "openalex--W7203610389",
-      "path": "docs/public/daily/2026-08-21/assets/openalex--W7203610389/preview.png"
+      "path": "docs/public/daily/2026-08-21/assets/openalex--W7203610389"
     },
     {
       "candidate_id": "openalex--W7203462286",
-      "path": "docs/public/daily/2026-08-21/assets/openalex--W7203462286/preview.png"
+      "path": "docs/public/daily/2026-08-21/assets/openalex--W7203462286"
     },
     {
       "candidate_id": "openalex--W7203636981",
-      "path": "docs/public/daily/2026-08-21/assets/openalex--W7203636981/preview.png"
+      "path": "docs/public/daily/2026-08-21/assets/openalex--W7203636981"
     },
     {
       "candidate_id": "openalex--W7203485578",
-      "path": "docs/public/daily/2026-08-21/assets/openalex--W7203485578/preview.png"
+      "path": "docs/public/daily/2026-08-21/assets/openalex--W7203485578"
     },
     {
       "candidate_id": "openalex--W7202399338",
-      "path": "docs/public/daily/2026-08-21/assets/openalex--W7202399338/preview.png"
-    },
-    {
-      "candidate_id": "openalex--W7203622079",
-      "path": "docs/public/daily/2026-08-21/assets/openalex--W7203622079/preview.png"
-    },
-    {
-      "candidate_id": "openalex--W4415111113",
-      "path": "docs/public/daily/2026-08-21/assets/openalex--W4415111113/preview.png"
-    },
-    {
-      "candidate_id": "openalex--W7203612083",
-      "path": "docs/public/daily/2026-08-21/assets/openalex--W7203612083/preview.png"
+      "path": "docs/public/daily/2026-08-21/assets/openalex--W7202399338"
     }
   ]
 }

@@ -7,7 +7,7 @@ from datetime import date, timedelta
 from typing import Optional
 from config import RESEARCH_DIRECTIONS, ARXIV_API, MAX_AGE_DAYS
 from models import Paper, Source
-from fetch_openalex import match_research_directions, extract_keywords
+from fetch_openalex import match_research_directions, extract_keywords, is_domain_relevant
 
 
 def fetch_arxiv_papers(target_date: date, max_results: int = 50) -> list[Paper]:
@@ -87,8 +87,12 @@ def fetch_arxiv_papers(target_date: date, max_results: int = 50) -> list[Paper]:
             arxiv_url = id_elem.text if id_elem is not None else ""
             arxiv_id = arxiv_url.split("/abs/")[-1] if "/abs/" in arxiv_url else ""
 
-            # Match research directions
+            # Admission gate: domain relevance (tagging is best-effort)
             full_text = f"{title} {abstract}"
+            if not is_domain_relevant(full_text):
+                continue
+
+            # Tag with research directions
             directions = match_research_directions(full_text)
 
             # Extract keywords

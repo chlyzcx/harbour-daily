@@ -13,6 +13,7 @@ from config import (
     MAX_AGE_DAYS,
     SCORE_WEIGHTS,
     DATASET_DOI_PREFIXES,
+    PAPER_DOMAIN_KEYWORDS,
 )
 from models import Paper, Source
 
@@ -36,6 +37,18 @@ def get_journal_cover(journal_name: Optional[str]) -> str:
         return DEFAULT_COVER
     normalized = normalize_journal_name(journal_name)
     return JOURNAL_COVERS.get(normalized, DEFAULT_COVER)
+
+
+def is_domain_relevant(text: str) -> bool:
+    """Broad admission gate for paper candidates (all four sources).
+
+    Deliberately wider than direction matching: a candidate only has to be
+    about underwater acoustics / marine bioacoustics at all. Direction
+    keywords are phrase-exact and brittle, so they are used for tagging
+    only — never for admission.
+    """
+    text_lower = text.lower()
+    return any(kw in text_lower for kw in PAPER_DOMAIN_KEYWORDS)
 
 
 def match_research_directions(text: str) -> list[str]:
@@ -216,8 +229,15 @@ def fetch_openalex_papers(target_date: date, max_results: int = 100) -> list[Pap
             # Open access
             is_oa = work.get("open_access", {}).get("is_oa", False)
 
-            # Match research directions
+            # Admission gate: must be about our domain at all. The umbrella
+            # search query is deliberately broad, so without this gate
+            # off-topic works (LLM benchmarks, audio datasets…) get in
+            # whenever they mention "underwater acoustic" in passing.
             full_text = f"{title} {abstract}"
+            if not is_domain_relevant(full_text):
+                continue
+
+            # Tag with research directions (best-effort; may be empty)
             directions = match_research_directions(full_text)
 
             # Extract keywords
