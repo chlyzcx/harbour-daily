@@ -10,7 +10,7 @@ authors:
   - "Dexian Yan"
   - "Yi Wang"
 research_direction:
-  - "自主水下航行器"
+  - "中继通信"
 journal: "Photonics"
 publisher: "Multidisciplinary Digital Publishing Institute"
 doi: "10.3390/photonics13080784"

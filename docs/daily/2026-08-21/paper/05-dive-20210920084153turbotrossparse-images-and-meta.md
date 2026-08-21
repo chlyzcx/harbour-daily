@@ -8,7 +8,7 @@ authors:
   - "Ocean Perception Group"
   - "Emma J. Curtis"
 research_direction:
-  - "自主水下航行器"
+  - "目标检测"
 journal: "University of Southampton"
 publisher: "University of Southampton"
 doi: "10.5258/smrgrassmap/20210920_01"
