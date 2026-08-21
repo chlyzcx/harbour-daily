@@ -4,6 +4,7 @@ import re
 import requests
 from pathlib import Path
 from typing import Optional
+from urllib.parse import urljoin
 from bs4 import BeautifulSoup
 from pdf2image import convert_from_path
 from models import Paper
@@ -44,9 +45,10 @@ def extract_arxiv_html_image(arxiv_url: str, output_path: Path) -> bool:
             print(f"    No image found in HTML")
             return False
 
-        img_url = img['src']
-        if not img_url.startswith('http'):
-            img_url = f"https://arxiv.org{img_url}"
+        # Resolve the image src against the HTML page URL — src can be an
+        # absolute path ("/html/<id>/pic/x.png") or relative ("<id>/pic/x.png"),
+        # so naive string concatenation mangles the host.
+        img_url = urljoin(html_url, img['src'])
 
         # Download image
         print(f"    Downloading image: {img_url}")
