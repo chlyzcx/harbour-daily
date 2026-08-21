@@ -343,6 +343,10 @@ export default createContentLoader('daily/*/*/*.md', {
         if (items.length > 15) {
           throw new Error(`${date}: a daily archive may contain at most 15 articles`)
         }
+        const paperCount = items.filter((article) => article.category === 'Paper').length
+        if (paperCount > 10) {
+          throw new Error(`${date}: Paper articles may total at most 10`)
+        }
         const newsAndPolicyCount = items.filter(
           (article) => article.category === 'News' || article.category === 'Policy'
         ).length
