@@ -2,7 +2,7 @@
 candidateId: "crossref--10.3390-rs18162832"
 category: "Paper"
 date: "2026-08-21"
-rank: 5
+rank: 4
 title: "Multi-Source Geophysical Data Integration for Underwater Target Detection in Complex Seabed Environments: A Case Study of the Nan’ao I Shipwreck, China"
 authors:
   - "Yonghang Li"
@@ -37,11 +37,11 @@ The search and discovery of underwater shipwreck sites represent the most arduou
 
 ## 关键技术与数据
 
-（详细技术分析待补充）
+集成多源地球物理数据（侧扫声呐、多波束测深、浅地层剖面、磁力仪）对南澳I号古沉船进行探测，针对木质沉船低声阻抗、弱磁异常、浅埋小尺寸目标特点，采用多属性联合解释与异常融合方法，在复杂海底环境中识别目标。
 
 ## 结果与结论
 
-（实验结果与结论待补充）
+多源数据融合有效降低单一方法误判率，成功圈定沉船及周边散落物分布范围，验证了综合地球物理手段在浅埋木质沉船探测中的有效性，为水下考古目标搜索提供了高精度技术流程与案例参考。
 
 ## 来源链接
 

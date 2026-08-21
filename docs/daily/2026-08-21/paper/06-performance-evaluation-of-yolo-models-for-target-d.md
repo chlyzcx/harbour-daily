@@ -2,7 +2,7 @@
 candidateId: "crossref--10.3389-fmars.2026.1883695"
 category: "Paper"
 date: "2026-08-21"
-rank: 7
+rank: 6
 title: "Performance evaluation of YOLO models for target detection from ocean sidescan sonar imagery"
 authors:
   - "Dandan Liu"
@@ -33,11 +33,11 @@ Sidescan sonar images suffer from strong seabed clutter, low gray contrast of un
 
 ## 关键技术与数据
 
-（详细技术分析待补充）
+系统比较YOLOv4、YOLOv6、YOLOv7、YOLOv9、YOLOv13n、YOLO26n六种单阶段检测模型在侧扫声呐目标检测中的性能，构建两个成像特征不同的数据集D1和D2，评估指标包括精度、召回率、mAP、推理速度及嵌入式部署适配性。
 
 ## 结果与结论
 
-（实验结果与结论待补充）
+不同YOLO版本在精度与速度间存在显著权衡，轻量级版本（YOLOv13n、YOLO26n）在嵌入式平台部署优势明显，但精度略低于重型版本；实验表明需根据实际任务需求（实时性vs精度）选择合适模型，为侧扫声呐目标检测模型选型提供参考依据。
 
 ## 来源链接
 

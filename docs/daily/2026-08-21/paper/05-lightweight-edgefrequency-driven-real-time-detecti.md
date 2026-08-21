@@ -2,7 +2,7 @@
 candidateId: "crossref--10.3389-fmars.2026.1797307"
 category: "Paper"
 date: "2026-08-21"
-rank: 6
+rank: 5
 title: "Lightweight Edge–Frequency Driven Real-Time Detection Transformer for side-scan sonar target detection"
 authors:
   - "Feihu Zhang"
@@ -34,11 +34,11 @@ In underwater target detection tasks, side-scan sonar (SSS) is currently the mos
 
 ## 关键技术与数据
 
-（详细技术分析待补充）
+提出轻量级边缘-频率驱动实时检测Transformer（LEF-RT-DETR），针对侧扫声呐图像目标边界模糊、噪声强的问题，引入边缘增强模块与频域特征提取分支，结合RT-DETR架构实现高效特征表达，在嵌入式平台部署。
 
 ## 结果与结论
 
-（实验结果与结论待补充）
+该方法在侧扫声呐目标检测任务中取得优于传统CNN检测器的精度，同时保持实时推理速度与低计算开销，有效缓解声呐图像低对比度与噪声干扰，适用于水下机器人实时目标识别场景。
 
 ## 来源链接
 

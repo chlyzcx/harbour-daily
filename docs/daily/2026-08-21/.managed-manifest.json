@@ -16,46 +16,34 @@
       "path": "docs/daily/2026-08-21/paper/02-training-set-synthesis-for-bioacoustic-denoising-a.md"
     },
     {
-      "candidate_id": "openalex--W7201857758",
-      "category": "Paper",
-      "rank": 3,
-      "path": "docs/daily/2026-08-21/paper/03-physics-informed-hybrid-marine-predator-and-harris.md"
-    },
-    {
       "candidate_id": "crossref--10.21956-openreseurope.26352.r77868",
       "category": "Paper",
-      "rank": 4,
-      "path": "docs/daily/2026-08-21/paper/04-peer-review-report-for-an-open-reproducible-framew.md"
+      "rank": 3,
+      "path": "docs/daily/2026-08-21/paper/03-peer-review-report-for-an-open-reproducible-framew.md"
     },
     {
       "candidate_id": "crossref--10.3390-rs18162832",
       "category": "Paper",
-      "rank": 5,
-      "path": "docs/daily/2026-08-21/paper/05-multi-source-geophysical-data-integration-for-unde.md"
+      "rank": 4,
+      "path": "docs/daily/2026-08-21/paper/04-multi-source-geophysical-data-integration-for-unde.md"
     },
     {
       "candidate_id": "crossref--10.3389-fmars.2026.1797307",
       "category": "Paper",
-      "rank": 6,
-      "path": "docs/daily/2026-08-21/paper/06-lightweight-edgefrequency-driven-real-time-detecti.md"
+      "rank": 5,
+      "path": "docs/daily/2026-08-21/paper/05-lightweight-edgefrequency-driven-real-time-detecti.md"
     },
     {
       "candidate_id": "crossref--10.3389-fmars.2026.1883695",
       "category": "Paper",
+      "rank": 6,
+      "path": "docs/daily/2026-08-21/paper/06-performance-evaluation-of-yolo-models-for-target-d.md"
+    },
+    {
+      "candidate_id": "crossref--10.14445-23488379-ijeee-v13i7p105",
+      "category": "Paper",
       "rank": 7,
-      "path": "docs/daily/2026-08-21/paper/07-performance-evaluation-of-yolo-models-for-target-d.md"
-    },
-    {
-      "candidate_id": "openalex--W7202207427",
-      "category": "Paper",
-      "rank": 8,
-      "path": "docs/daily/2026-08-21/paper/08-physics-informed-learning-for-robust-acoustic-loca.md"
-    },
-    {
-      "candidate_id": "openalex--W7202033045",
-      "category": "Paper",
-      "rank": 9,
-      "path": "docs/daily/2026-08-21/paper/09-development-of-efficient-wavelet-scheme-in-dwt-fft.md"
+      "path": "docs/daily/2026-08-21/paper/07-physics-informed-hybrid-marine-predator-and-harris.md"
     }
   ],
   "assets": [
@@ -66,10 +54,6 @@
     {
       "candidate_id": "arxiv--2608.10054-1",
       "path": "docs/public/daily/2026-08-21/assets/arxiv--2608.10054-1/preview.png"
-    },
-    {
-      "candidate_id": "openalex--W7201857758",
-      "path": "docs/public/daily/2026-08-21/assets/openalex--W7201857758/preview.png"
     },
     {
       "candidate_id": "crossref--10.21956-openreseurope.26352.r77868",
@@ -88,12 +72,8 @@
       "path": "docs/public/daily/2026-08-21/assets/crossref--10.3389-fmars.2026.1883695/preview.svg"
     },
     {
-      "candidate_id": "openalex--W7202207427",
-      "path": "docs/public/daily/2026-08-21/assets/openalex--W7202207427/preview.png"
-    },
-    {
-      "candidate_id": "openalex--W7202033045",
-      "path": "docs/public/daily/2026-08-21/assets/openalex--W7202033045/preview.png"
+      "candidate_id": "crossref--10.14445-23488379-ijeee-v13i7p105",
+      "path": "docs/public/daily/2026-08-21/assets/crossref--10.14445-23488379-ijeee-v13i7p105/preview.svg"
     }
   ]
 }
