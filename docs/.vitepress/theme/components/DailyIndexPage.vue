@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import { computed, onMounted, ref, watch } from 'vue'
 import { withBase } from 'vitepress'
-import type { ArticleCategory, DailyArchive, DailyArticle, ResearchDirection } from '../../data/daily.data'
+import type { ArticleCategory, DailyArchive, DailyArticle, DirectionFacet, ResearchDirection } from '../../data/daily.data'
 
 const props = defineProps<{ archive: DailyArchive }>()
 
@@ -43,10 +43,23 @@ const categoryFacets = computed(() => [
   ...(currentGroup.value?.categories ?? [])
 ])
 
-const directionFacets = computed(() => [
-  { value: 'all' as const, label: '全部', count: currentGroup.value?.articles.length ?? 0 },
-  ...(currentGroup.value?.directions ?? [])
-])
+const directionAllFacet = computed(() => ({
+  value: 'all' as const,
+  label: '全部',
+  count: currentGroup.value?.articles.length ?? 0
+}))
+
+// Directions are displayed grouped under the four major research areas
+// (group label comes from the data loader, in taxonomy order)
+const groupedDirectionFacets = computed(() => {
+  const groups: { label: string; items: DirectionFacet[] }[] = []
+  for (const facet of currentGroup.value?.directions ?? []) {
+    const existing = groups.find((g) => g.label === facet.group)
+    if (existing) existing.items.push(facet)
+    else groups.push({ label: facet.group, items: [facet] })
+  }
+  return groups
+})
 
 const keywordFacets = computed(() => [
   { name: '全部', count: currentGroup.value?.articles.length ?? 0 },
@@ -129,18 +142,34 @@ function imageUrl(article: DailyArticle) {
       </div>
       <div class="facet-row">
         <h2>研究方向</h2>
-        <div class="facet-row__options">
+        <div class="facet-row__options facet-row__options--directions">
           <button
-            v-for="facet in directionFacets"
-            :key="facet.value"
             type="button"
             class="facet"
-            :class="{ 'facet--direction-active': selectedDirection === facet.value }"
-            :aria-pressed="selectedDirection === facet.value"
-            @click="selectedDirection = facet.value"
+            :class="{ 'facet--direction-active': selectedDirection === 'all' }"
+            :aria-pressed="selectedDirection === 'all'"
+            @click="selectedDirection = 'all'"
           >
-            {{ facet.label }} <span>{{ facet.count }}</span>
+            {{ directionAllFacet.label }} <span>{{ directionAllFacet.count }}</span>
           </button>
+          <div
+            v-for="group in groupedDirectionFacets"
+            :key="group.label"
+            class="facet-group"
+          >
+            <span class="facet-group__label">{{ group.label }}</span>
+            <button
+              v-for="facet in group.items"
+              :key="facet.value"
+              type="button"
+              class="facet"
+              :class="{ 'facet--direction-active': selectedDirection === facet.value }"
+              :aria-pressed="selectedDirection === facet.value"
+              @click="selectedDirection = facet.value"
+            >
+              {{ facet.label }} <span>{{ facet.count }}</span>
+            </button>
+          </div>
         </div>
       </div>
       <div class="facet-row">
@@ -437,6 +466,22 @@ function imageUrl(article: DailyArticle) {
   display: flex;
   flex-wrap: wrap;
   gap: 8px;
+}
+
+.facet-group {
+  display: inline-flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px;
+  padding-left: 10px;
+  border-left: 2px solid #303949;
+}
+
+.facet-group__label {
+  color: #7f8a9b;
+  font-size: 12px;
+  font-weight: 600;
+  white-space: nowrap;
 }
 
 .facet {

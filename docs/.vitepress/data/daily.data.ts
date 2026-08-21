@@ -17,6 +17,8 @@ export type ResearchDirection =
   | '时变特性'
   | '多径效应'
   | '多普勒效应'
+  | '海洋声学层析'
+  | '海底声学'
   // 水声通信
   | 'OFDM'
   | '单载波通信'
@@ -28,13 +30,13 @@ export type ResearchDirection =
   | '网络协议'
   | '中继通信'
   | '水声调制解调器'
-  // 水声定位与导航
+  | '水下传感器网络'
+  // 水声侦察
+  | '目标检测'
+  | '目标跟踪'
   | '水声定位'
   | '基线定位系统'
   | '水下导航'
-  // 水声侦察与声呐
-  | '目标检测'
-  | '目标跟踪'
   | '被动定位'
   | '信号识别'
   | '特征提取'
@@ -45,10 +47,6 @@ export type ResearchDirection =
   | '被动声呐'
   | '水声成像'
   | '混响抑制'
-  // 水下无人系统
-  | '自主水下航行器'
-  | '水下传感器网络'
-  | '多平台协同'
   // 海洋生物声学信号处理
   | '鲸豚叫声检测'
   | '鱼类声学'
@@ -58,9 +56,6 @@ export type ResearchDirection =
   | '海洋环境噪声'
   | '被动声学监测'
   | '声学标记跟踪'
-  // 海洋声学环境
-  | '海洋声学层析'
-  | '海底声学'
 
 export interface DailyArticle {
   candidateId: string
@@ -97,6 +92,7 @@ export interface DirectionFacet {
   value: ResearchDirection
   label: string
   count: number
+  group: string
 }
 
 export interface DailyGroup {
@@ -170,19 +166,13 @@ function stringList(value: unknown, field: string, path: string): string[] {
 function directionList(value: unknown, path: string): ResearchDirection[] {
   const validDirections: ResearchDirection[] = [
     // 水声通信信道
-    '声传播建模', '信道建模', '信道测量', '信道估计', '信道均衡', '时变特性', '多径效应', '多普勒效应',
+    '声传播建模', '信道建模', '信道测量', '信道估计', '信道均衡', '时变特性', '多径效应', '多普勒效应', '海洋声学层析', '海底声学',
     // 水声通信
-    'OFDM', '单载波通信', '扩频通信', 'MIMO', '调制解调', '多用户接入', '全双工通信', '网络协议', '中继通信', '水声调制解调器',
-    // 水声定位与导航
-    '水声定位', '基线定位系统', '水下导航',
-    // 水声侦察与声呐
-    '目标检测', '目标跟踪', '被动定位', '信号识别', '特征提取', '阵列处理', '波束形成', '声呐信号处理', '主动声呐', '被动声呐', '水声成像', '混响抑制',
-    // 水下无人系统
-    '自主水下航行器', '水下传感器网络', '多平台协同',
+    'OFDM', '单载波通信', '扩频通信', 'MIMO', '调制解调', '多用户接入', '全双工通信', '网络协议', '中继通信', '水声调制解调器', '水下传感器网络',
+    // 水声侦察
+    '目标检测', '目标跟踪', '水声定位', '基线定位系统', '水下导航', '被动定位', '信号识别', '特征提取', '阵列处理', '波束形成', '声呐信号处理', '主动声呐', '被动声呐', '水声成像', '混响抑制',
     // 海洋生物声学信号处理
-    '鲸豚叫声检测', '鱼类声学', '生物声呐', '海洋哺乳动物声学', '生物声学信号分类', '海洋环境噪声', '被动声学监测', '声学标记跟踪',
-    // 海洋声学环境
-    '海洋声学层析', '海底声学'
+    '鲸豚叫声检测', '鱼类声学', '生物声呐', '海洋哺乳动物声学', '生物声学信号分类', '海洋环境噪声', '被动声学监测', '声学标记跟踪'
   ]
   if (!Array.isArray(value)) {
     throw new Error(`${path}: front matter "research_direction" must be an array`)
@@ -220,60 +210,55 @@ const categoryOptions: ReadonlyArray<{ value: ArticleCategory; label: string }> 
   { value: 'Policy', label: 'Policy-政策' }
 ]
 
-const directionOptions: ReadonlyArray<{ value: ResearchDirection; label: string }> = [
+const directionOptions: ReadonlyArray<{ value: ResearchDirection; label: string; group: string }> = [
   // 水声通信信道
-  { value: '声传播建模', label: '声传播建模' },
-  { value: '信道建模', label: '信道建模' },
-  { value: '信道测量', label: '信道测量' },
-  { value: '信道估计', label: '信道估计' },
-  { value: '信道均衡', label: '信道均衡' },
-  { value: '时变特性', label: '时变特性' },
-  { value: '多径效应', label: '多径效应' },
-  { value: '多普勒效应', label: '多普勒效应' },
+  { value: '声传播建模', label: '声传播建模', group: '水声通信信道' },
+  { value: '信道建模', label: '信道建模', group: '水声通信信道' },
+  { value: '信道测量', label: '信道测量', group: '水声通信信道' },
+  { value: '信道估计', label: '信道估计', group: '水声通信信道' },
+  { value: '信道均衡', label: '信道均衡', group: '水声通信信道' },
+  { value: '时变特性', label: '时变特性', group: '水声通信信道' },
+  { value: '多径效应', label: '多径效应', group: '水声通信信道' },
+  { value: '多普勒效应', label: '多普勒效应', group: '水声通信信道' },
+  { value: '海洋声学层析', label: '海洋声学层析', group: '水声通信信道' },
+  { value: '海底声学', label: '海底声学', group: '水声通信信道' },
   // 水声通信
-  { value: 'OFDM', label: 'OFDM' },
-  { value: '单载波通信', label: '单载波通信' },
-  { value: '扩频通信', label: '扩频通信' },
-  { value: 'MIMO', label: 'MIMO' },
-  { value: '调制解调', label: '调制解调' },
-  { value: '多用户接入', label: '多用户接入' },
-  { value: '全双工通信', label: '全双工通信' },
-  { value: '网络协议', label: '网络协议' },
-  { value: '中继通信', label: '中继通信' },
-  { value: '水声调制解调器', label: '水声调制解调器' },
-  // 水声定位与导航
-  { value: '水声定位', label: '水声定位' },
-  { value: '基线定位系统', label: '基线定位系统' },
-  { value: '水下导航', label: '水下导航' },
-  // 水声侦察与声呐
-  { value: '目标检测', label: '目标检测' },
-  { value: '目标跟踪', label: '目标跟踪' },
-  { value: '被动定位', label: '被动定位' },
-  { value: '信号识别', label: '信号识别' },
-  { value: '特征提取', label: '特征提取' },
-  { value: '阵列处理', label: '阵列处理' },
-  { value: '波束形成', label: '波束形成' },
-  { value: '声呐信号处理', label: '声呐信号处理' },
-  { value: '主动声呐', label: '主动声呐' },
-  { value: '被动声呐', label: '被动声呐' },
-  { value: '水声成像', label: '水声成像' },
-  { value: '混响抑制', label: '混响抑制' },
-  // 水下无人系统
-  { value: '自主水下航行器', label: '自主水下航行器' },
-  { value: '水下传感器网络', label: '水下传感器网络' },
-  { value: '多平台协同', label: '多平台协同' },
+  { value: 'OFDM', label: 'OFDM', group: '水声通信' },
+  { value: '单载波通信', label: '单载波通信', group: '水声通信' },
+  { value: '扩频通信', label: '扩频通信', group: '水声通信' },
+  { value: 'MIMO', label: 'MIMO', group: '水声通信' },
+  { value: '调制解调', label: '调制解调', group: '水声通信' },
+  { value: '多用户接入', label: '多用户接入', group: '水声通信' },
+  { value: '全双工通信', label: '全双工通信', group: '水声通信' },
+  { value: '网络协议', label: '网络协议', group: '水声通信' },
+  { value: '中继通信', label: '中继通信', group: '水声通信' },
+  { value: '水声调制解调器', label: '水声调制解调器', group: '水声通信' },
+  { value: '水下传感器网络', label: '水下传感器网络', group: '水声通信' },
+  // 水声侦察
+  { value: '目标检测', label: '目标检测', group: '水声侦察' },
+  { value: '目标跟踪', label: '目标跟踪', group: '水声侦察' },
+  { value: '水声定位', label: '水声定位', group: '水声侦察' },
+  { value: '基线定位系统', label: '基线定位系统', group: '水声侦察' },
+  { value: '水下导航', label: '水下导航', group: '水声侦察' },
+  { value: '被动定位', label: '被动定位', group: '水声侦察' },
+  { value: '信号识别', label: '信号识别', group: '水声侦察' },
+  { value: '特征提取', label: '特征提取', group: '水声侦察' },
+  { value: '阵列处理', label: '阵列处理', group: '水声侦察' },
+  { value: '波束形成', label: '波束形成', group: '水声侦察' },
+  { value: '声呐信号处理', label: '声呐信号处理', group: '水声侦察' },
+  { value: '主动声呐', label: '主动声呐', group: '水声侦察' },
+  { value: '被动声呐', label: '被动声呐', group: '水声侦察' },
+  { value: '水声成像', label: '水声成像', group: '水声侦察' },
+  { value: '混响抑制', label: '混响抑制', group: '水声侦察' },
   // 海洋生物声学信号处理
-  { value: '鲸豚叫声检测', label: '鲸豚叫声检测' },
-  { value: '鱼类声学', label: '鱼类声学' },
-  { value: '生物声呐', label: '生物声呐' },
-  { value: '海洋哺乳动物声学', label: '海洋哺乳动物声学' },
-  { value: '生物声学信号分类', label: '生物声学信号分类' },
-  { value: '海洋环境噪声', label: '海洋环境噪声' },
-  { value: '被动声学监测', label: '被动声学监测' },
-  { value: '声学标记跟踪', label: '声学标记跟踪' },
-  // 海洋声学环境
-  { value: '海洋声学层析', label: '海洋声学层析' },
-  { value: '海底声学', label: '海底声学' }
+  { value: '鲸豚叫声检测', label: '鲸豚叫声检测', group: '海洋生物声学信号处理' },
+  { value: '鱼类声学', label: '鱼类声学', group: '海洋生物声学信号处理' },
+  { value: '生物声呐', label: '生物声呐', group: '海洋生物声学信号处理' },
+  { value: '海洋哺乳动物声学', label: '海洋哺乳动物声学', group: '海洋生物声学信号处理' },
+  { value: '生物声学信号分类', label: '生物声学信号分类', group: '海洋生物声学信号处理' },
+  { value: '海洋环境噪声', label: '海洋环境噪声', group: '海洋生物声学信号处理' },
+  { value: '被动声学监测', label: '被动声学监测', group: '海洋生物声学信号处理' },
+  { value: '声学标记跟踪', label: '声学标记跟踪', group: '海洋生物声学信号处理' }
 ]
 
 function categoryFacets(items: DailyArticle[]): CategoryFacet[] {
@@ -285,10 +270,11 @@ function categoryFacets(items: DailyArticle[]): CategoryFacet[] {
 }
 
 function directionFacets(items: DailyArticle[]): DirectionFacet[] {
-  return directionOptions.map(({ value, label }) => ({
+  return directionOptions.map(({ value, label, group }) => ({
     value,
     label,
-    count: items.filter((article) => article.research_direction.includes(value)).length
+    count: items.filter((article) => article.research_direction.includes(value)).length,
+    group
   })).filter((facet) => facet.count > 0)
 }
 

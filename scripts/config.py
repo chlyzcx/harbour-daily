@@ -47,6 +47,16 @@ RESEARCH_DIRECTIONS = {
         "doppler shift underwater",
         "underwater acoustic doppler",
     ],
+    "海洋声学层析": [
+        "ocean acoustic tomography",
+        "acoustic tomography ocean",
+    ],
+    "海底声学": [
+        "geoacoustic inversion",
+        "seabed acoustics",
+        "seafloor acoustic properties",
+        "sediment acoustics",
+    ],
     # ============ 水声通信 ============
     "OFDM": [
         "underwater acoustic OFDM",
@@ -100,7 +110,21 @@ RESEARCH_DIRECTIONS = {
         "underwater modem design",
         "acoustic modem underwater",
     ],
-    # ============ 水声定位与导航 ============
+    "水下传感器网络": [
+        "underwater sensor network",
+        "underwater wireless sensor network",
+        "UWSN",
+    ],
+    # ============ 水声侦察 ============
+    "目标检测": [
+        "underwater target detection",
+        "underwater acoustic target detection",
+        "underwater object detection",
+    ],
+    "目标跟踪": [
+        "underwater target tracking",
+        "underwater acoustic target tracking",
+    ],
     "水声定位": [
         "underwater acoustic localization",
         "underwater acoustic positioning",
@@ -116,16 +140,6 @@ RESEARCH_DIRECTIONS = {
         "underwater navigation",
         "Doppler velocity log",
         "INS DVL underwater",
-    ],
-    # ============ 水声侦察与声呐 ============
-    "目标检测": [
-        "underwater target detection",
-        "underwater acoustic target detection",
-        "underwater object detection",
-    ],
-    "目标跟踪": [
-        "underwater target tracking",
-        "underwater acoustic target tracking",
     ],
     "被动定位": [
         "passive underwater localization",
@@ -177,22 +191,6 @@ RESEARCH_DIRECTIONS = {
         "reverberation cancellation underwater",
         "anti-reverberation sonar",
     ],
-    # ============ 水下无人系统 ============
-    "自主水下航行器": [
-        "autonomous underwater vehicle",
-        "unmanned underwater vehicle",
-        "AUV navigation",
-    ],
-    "水下传感器网络": [
-        "underwater sensor network",
-        "underwater wireless sensor network",
-        "UWSN",
-    ],
-    "多平台协同": [
-        "cooperative underwater vehicles",
-        "underwater swarm",
-        "multi-AUV cooperative",
-    ],
     # ============ 海洋生物声学信号处理 ============
     "鲸豚叫声检测": [
         "whale call detection",
@@ -236,17 +234,6 @@ RESEARCH_DIRECTIONS = {
         "acoustic tagging tracking",
         "acoustic transmitter tracking fish",
     ],
-    # ============ 海洋声学环境 ============
-    "海洋声学层析": [
-        "ocean acoustic tomography",
-        "acoustic tomography ocean",
-    ],
-    "海底声学": [
-        "geoacoustic inversion",
-        "seabed acoustics",
-        "seafloor acoustic properties",
-        "sediment acoustics",
-    ],
 }
 
 # Umbrella search terms for OpenAlex — cover every direction group instead of
@@ -258,7 +245,6 @@ OPENALEX_SEARCH_TERMS = [
     "underwater communication",
     "underwater acoustic localization",
     "sonar",
-    "underwater vehicle",
     "marine bioacoustics",
     "ocean acoustic tomography",
 ]
