@@ -1,6 +1,7 @@
 """Generate Chinese analysis using LLM API (Kimi preferred, DeepSeek fallback)."""
 
 import os
+import re
 import time
 import requests
 
@@ -8,13 +9,16 @@ import requests
 KIMI_API = "https://api.moonshot.cn/v1/chat/completions"
 DEEPSEEK_API = "https://api.deepseek.com/v1/chat/completions"
 
-KIMI_API_KEY = os.environ.get("KIMI_API_KEY", "")
-DEEPSEEK_API_KEY = os.environ.get("DEEPSEEK_API_KEY", "")
-KIMI_MODEL = os.environ.get("KIMI_MODEL", "kimi-k2.5")
+# .strip() is essential: API keys pasted into GitHub Secrets often carry a
+# trailing \r\n, which makes the HTTP client reject the Authorization header
+# before the request is ever sent.
+KIMI_API_KEY = os.environ.get("KIMI_API_KEY", "").strip()
+DEEPSEEK_API_KEY = os.environ.get("DEEPSEEK_API_KEY", "").strip()
+KIMI_MODEL = os.environ.get("KIMI_MODEL", "kimi-k2.5").strip()
 
-# Delay between papers. Moonshot free tier is ~3 requests/minute,
-# so 25s keeps us safely under the limit.
-REQUEST_INTERVAL = 25
+# Delay between papers, only used by the per-paper fallback path.
+# Moonshot free tier is ~3 requests/minute, so 25s keeps us safely under it.
+REQUEST_INTERVAL = int(os.environ.get("LLM_REQUEST_INTERVAL", "25"))
 
 PROMPT_TEMPLATE = """请分析以下水声工程领域的学术论文，生成两部分中文内容：
 
@@ -36,6 +40,30 @@ PROMPT_TEMPLATE = """请分析以下水声工程领域的学术论文，生成�
 3. 不要添加任何额外的标记或说明
 """
 
+BATCH_PROMPT_TEMPLATE = """请分析以下水声工程领域的 {n} 篇学术论文，为每篇生成两部分中文内容：
+
+{papers_block}
+
+请严格按以下格式逐篇输出，不要输出任何其它内容：
+
+【论文1】
+【关键技术与数据】
+（分析该论文使用的关键技术、方法、算法、数据集等，100-150字）
+【结果与结论】
+（总结该论文的主要实验结果、性能指标、结论和创新点，100-150字）
+
+【论文2】
+【关键技术与数据】
+……
+【结果与结论】
+……
+
+要求：
+1. 使用专业的水声工程术语
+2. 内容准确、简洁、有条理
+3. 每篇都必须有【论文N】编号，编号与输入顺序一致
+"""
+
 
 def _get_providers() -> list[tuple[str, str, str, str]]:
     """Return available providers as (name, api_url, api_key, model)."""
@@ -55,7 +83,8 @@ def _is_quota_error(body: str) -> bool:
 
 
 def _call_llm(api_url: str, api_key: str, model: str, prompt: str,
-              provider: str, max_retries: int = 3) -> tuple[str, bool]:
+              provider: str, max_retries: int = 3,
+              max_tokens: int = 500) -> tuple[str, bool]:
     """
     Call one LLM provider with retries.
     Returns (content, fatal_error). fatal_error=True means retrying this
@@ -69,7 +98,7 @@ def _call_llm(api_url: str, api_key: str, model: str, prompt: str,
         "model": model,
         "messages": [{"role": "user", "content": prompt}],
         "temperature": 0.3,
-        "max_tokens": 500
+        "max_tokens": max_tokens
     }
 
     for attempt in range(max_retries):
@@ -101,6 +130,12 @@ def _call_llm(api_url: str, api_key: str, model: str, prompt: str,
             result = response.json()
             return result["choices"][0]["message"]["content"], False
 
+        except requests.exceptions.InvalidHeader as e:
+            # Bad header (e.g. whitespace/newline in the API key) — the request
+            # was never sent, retrying is pointless.
+            print(f"    {provider} invalid API key format: {e}")
+            print(f"    -> Check the {provider.upper()} secret for stray spaces/newlines")
+            return "", True
         except requests.RequestException as e:
             if attempt < max_retries - 1:
                 wait_time = (2 ** attempt) * 5
@@ -127,6 +162,55 @@ def _parse_content(content: str) -> tuple[str, str]:
     return content[:200], "（详见原文）"
 
 
+def _parse_batch(content: str, n: int) -> dict[int, tuple[str, str]]:
+    """Parse batched LLM output into {paper_index: (key_tech, results)}."""
+    parsed = {}
+    # Split on 【论文N】 markers; split keeps the captured numbers
+    parts = re.split(r"【\s*论文\s*(\d+)\s*】", content)
+    for i in range(1, len(parts) - 1, 2):
+        idx = int(parts[i]) - 1
+        if 0 <= idx < n:
+            parsed[idx] = _parse_content(parts[i + 1])
+    return parsed
+
+
+def generate_batch_analyses(papers: list) -> dict[int, tuple[str, str]]:
+    """
+    Analyze all papers in ONE LLM request instead of one request per paper.
+    This avoids per-request rate-limit waits entirely, cutting the analysis
+    phase from ~9 requests / several minutes to a single call.
+    Returns {paper_index: (key_tech, results)}; may be partial or empty.
+    """
+    providers = _get_providers()
+    if not providers:
+        return {}
+
+    papers_block = "\n\n".join(
+        f"论文{i}标题：{p.title}\n论文{i}摘要：{p.summary or '（无摘要）'}"
+        for i, p in enumerate(papers, start=1)
+    )
+    prompt = BATCH_PROMPT_TEMPLATE.format(n=len(papers), papers_block=papers_block)
+
+    # 9 papers x ~300 Chinese chars of output needs much more than the
+    # per-paper 500-token cap.
+    batch_max_tokens = max(4096, len(papers) * 500)
+
+    for provider, api_url, api_key, model in providers:
+        content, fatal = _call_llm(api_url, api_key, model, prompt, provider,
+                                   max_tokens=batch_max_tokens)
+        if content:
+            parsed = _parse_batch(content, len(papers))
+            if parsed:
+                print(f"  Batch analysis succeeded via {provider}: "
+                      f"{len(parsed)}/{len(papers)} papers parsed")
+                return parsed
+            print(f"  {provider} batch output could not be parsed, trying next provider")
+        if fatal:
+            continue  # next provider
+
+    return {}
+
+
 def generate_analysis(title: str, abstract: str, max_retries: int = 3) -> tuple[str, str]:
     """
     Generate key_technology and results_conclusion using LLM API.
@@ -150,7 +234,7 @@ def generate_analysis(title: str, abstract: str, max_retries: int = 3) -> tuple[
 
 
 def generate_all_analyses(papers: list) -> None:
-    """Generate analyses for all papers."""
+    """Generate analyses for all papers (batch first, per-paper fallback)."""
     providers = _get_providers()
     if not providers:
         print("Warning: No LLM API key set (KIMI_API_KEY / DEEPSEEK_API_KEY), skipping all analyses")
@@ -159,22 +243,32 @@ def generate_all_analyses(papers: list) -> None:
     provider_names = ", ".join(f"{name}({model})" for name, _, _, model in providers)
     print(f"Generating Chinese analyses for {len(papers)} papers, providers: {provider_names}")
 
-    for i, paper in enumerate(papers, start=1):
-        print(f"  [{i}/{len(papers)}] Analyzing: {paper.title[:50]}...")
+    # Fast path: one batched request for all papers
+    results = generate_batch_analyses(papers)
 
-        key_tech, results = generate_analysis(paper.title, paper.summary)
-
-        if key_tech:
-            paper.key_tech = key_tech
-        if results:
-            paper.results = results
+    # Slow path: per-paper calls for anything the batch missed
+    missing = [i for i in range(len(papers)) if i not in results]
+    for count, i in enumerate(missing, start=1):
+        paper = papers[i]
+        print(f"  [fallback {count}/{len(missing)}] Analyzing: {paper.title[:50]}...")
+        results[i] = generate_analysis(paper.title, paper.summary)
 
         # Delay between requests to stay under rate limits
-        if i < len(papers):
+        if count < len(missing):
             print(f"    Waiting {REQUEST_INTERVAL}s before next request...")
             time.sleep(REQUEST_INTERVAL)
 
-    print("Analysis generation completed!")
+    applied = 0
+    for i, paper in enumerate(papers):
+        key_tech, res = results.get(i, ("", ""))
+        if key_tech:
+            paper.key_tech = key_tech
+        if res:
+            paper.results = res
+        if key_tech or res:
+            applied += 1
+
+    print(f"Analysis generation completed! ({applied}/{len(papers)} papers analyzed)")
 
 
 if __name__ == "__main__":
