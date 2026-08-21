@@ -16,46 +16,64 @@
       "path": "docs/daily/2026-08-21/paper/02-training-set-synthesis-for-bioacoustic-denoising-a.md"
     },
     {
-      "candidate_id": "crossref--10.21956-openreseurope.26352.r77868",
+      "candidate_id": "openalex--W7203724307",
       "category": "Paper",
       "rank": 3,
-      "path": "docs/daily/2026-08-21/paper/03-peer-review-report-for-an-open-reproducible-framew.md"
+      "path": "docs/daily/2026-08-21/paper/03-audio-world-spatial-assistive-navigation.md"
     },
     {
-      "candidate_id": "crossref--10.3390-rs18162832",
+      "candidate_id": "openalex--W7203682825",
       "category": "Paper",
       "rank": 4,
-      "path": "docs/daily/2026-08-21/paper/04-multi-source-geophysical-data-integration-for-unde.md"
+      "path": "docs/daily/2026-08-21/paper/04-dive-20210916152707turbotrosdense-images-and-metad.md"
     },
     {
-      "candidate_id": "news--82f749b04d14",
-      "category": "News",
+      "candidate_id": "openalex--W7203716345",
+      "category": "Paper",
       "rank": 5,
-      "path": "docs/daily/2026-08-21/news/05-comms-and-control.md"
+      "path": "docs/daily/2026-08-21/paper/05-dive-20210920084153turbotrossparse-images-and-meta.md"
     },
     {
-      "candidate_id": "news--9d56c0a878e6",
-      "category": "News",
+      "candidate_id": "openalex--W7203690948",
+      "category": "Paper",
       "rank": 6,
-      "path": "docs/daily/2026-08-21/news/06-nec-to-establish-underwater-acoustic-platform-mode.md"
+      "path": "docs/daily/2026-08-21/paper/06-dive-201808040934042018080414325820180805123456201.md"
     },
     {
-      "candidate_id": "news--a95ea24c1d48",
-      "category": "News",
+      "candidate_id": "openalex--W7203725408",
+      "category": "Paper",
       "rank": 7,
-      "path": "docs/daily/2026-08-21/news/07-lockheed-martin-and-us-navy-demonstrate-ai-powered.md"
+      "path": "docs/daily/2026-08-21/paper/07-dive-20210709085440sparus2posidonia3-images-and-me.md"
     },
     {
-      "candidate_id": "news--8e2ec498fcd9",
-      "category": "News",
+      "candidate_id": "openalex--W7203714711",
+      "category": "Paper",
       "rank": 8,
-      "path": "docs/daily/2026-08-21/news/08-falcon-eye-technology-and-norbit-security-win-unde.md"
+      "path": "docs/daily/2026-08-21/paper/08-performance-analysis-of-a-three-hop-heterogeneous-.md"
     },
     {
-      "candidate_id": "news--0009b39a5d2d",
-      "category": "News",
+      "candidate_id": "openalex--W7203661525",
+      "category": "Paper",
       "rank": 9,
-      "path": "docs/daily/2026-08-21/news/09-缅怀杨士莪院士-院士专家齐聚哈工程-共话水声工程学科高质量发展.md"
+      "path": "docs/daily/2026-08-21/paper/09-dive-20210917092839turbotrosdense-images-and-metad.md"
+    },
+    {
+      "candidate_id": "openalex--W7203660612",
+      "category": "Paper",
+      "rank": 10,
+      "path": "docs/daily/2026-08-21/paper/10-dive-20180803065749ae2000fsx3-images-and-metadata.md"
+    },
+    {
+      "candidate_id": "news--b20a55eaf643",
+      "category": "News",
+      "rank": 11,
+      "path": "docs/daily/2026-08-21/news/11-中国声学学会水声学分会2026年度学术交流会在哈工程举行.md"
+    },
+    {
+      "candidate_id": "news--1cbb44728c06",
+      "category": "News",
+      "rank": 12,
+      "path": "docs/daily/2026-08-21/news/12-中国声学学会水声学分会8月7日召开.md"
     }
   ],
   "assets": [
@@ -68,32 +86,44 @@
       "path": "docs/public/daily/2026-08-21/assets/arxiv--2608.10054-1/preview.png"
     },
     {
-      "candidate_id": "crossref--10.21956-openreseurope.26352.r77868",
-      "path": "docs/public/daily/2026-08-21/assets/crossref--10.21956-openreseurope.26352.r77868/preview.svg"
+      "candidate_id": "openalex--W7203724307",
+      "path": "docs/public/daily/2026-08-21/assets/openalex--W7203724307/preview.svg"
     },
     {
-      "candidate_id": "crossref--10.3390-rs18162832",
-      "path": "docs/public/daily/2026-08-21/assets/crossref--10.3390-rs18162832/preview.svg"
+      "candidate_id": "openalex--W7203682825",
+      "path": "docs/public/daily/2026-08-21/assets/openalex--W7203682825/preview.svg"
     },
     {
-      "candidate_id": "news--82f749b04d14",
-      "path": "docs/public/daily/2026-08-21/assets/news--82f749b04d14/preview.png"
+      "candidate_id": "openalex--W7203716345",
+      "path": "docs/public/daily/2026-08-21/assets/openalex--W7203716345/preview.svg"
     },
     {
-      "candidate_id": "news--9d56c0a878e6",
-      "path": "docs/public/daily/2026-08-21/assets/news--9d56c0a878e6/preview.png"
+      "candidate_id": "openalex--W7203690948",
+      "path": "docs/public/daily/2026-08-21/assets/openalex--W7203690948/preview.svg"
     },
     {
-      "candidate_id": "news--a95ea24c1d48",
-      "path": "docs/public/daily/2026-08-21/assets/news--a95ea24c1d48/preview.png"
+      "candidate_id": "openalex--W7203725408",
+      "path": "docs/public/daily/2026-08-21/assets/openalex--W7203725408/preview.svg"
     },
     {
-      "candidate_id": "news--8e2ec498fcd9",
-      "path": "docs/public/daily/2026-08-21/assets/news--8e2ec498fcd9/preview.png"
+      "candidate_id": "openalex--W7203714711",
+      "path": "docs/public/daily/2026-08-21/assets/openalex--W7203714711/preview.svg"
     },
     {
-      "candidate_id": "news--0009b39a5d2d",
-      "path": "docs/public/daily/2026-08-21/assets/news--0009b39a5d2d/preview.svg"
+      "candidate_id": "openalex--W7203661525",
+      "path": "docs/public/daily/2026-08-21/assets/openalex--W7203661525/preview.svg"
+    },
+    {
+      "candidate_id": "openalex--W7203660612",
+      "path": "docs/public/daily/2026-08-21/assets/openalex--W7203660612/preview.svg"
+    },
+    {
+      "candidate_id": "news--b20a55eaf643",
+      "path": "docs/public/daily/2026-08-21/assets/news--b20a55eaf643/preview.svg"
+    },
+    {
+      "candidate_id": "news--1cbb44728c06",
+      "path": "docs/public/daily/2026-08-21/assets/news--1cbb44728c06/preview.svg"
     }
   ]
 }

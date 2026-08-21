@@ -1,0 +1,72 @@
+<svg width="400" height="300" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#042f2e;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#115e59;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="400" height="300" fill="url(#grad)"/>
+
+  <!-- Grid pattern -->
+  <g opacity="0.1">
+    <line x1="0" y1="75" x2="400" y2="75" stroke="#2dd4bf" stroke-width="1"/>
+    <line x1="0" y1="150" x2="400" y2="150" stroke="#2dd4bf" stroke-width="1"/>
+    <line x1="0" y1="225" x2="400" y2="225" stroke="#2dd4bf" stroke-width="1"/>
+    <line x1="100" y1="0" x2="100" y2="300" stroke="#2dd4bf" stroke-width="1"/>
+    <line x1="200" y1="0" x2="200" y2="300" stroke="#2dd4bf" stroke-width="1"/>
+    <line x1="300" y1="0" x2="300" y2="300" stroke="#2dd4bf" stroke-width="1"/>
+  </g>
+
+  <!-- Waveform decoration (deterministic per title) -->
+  <g>
+  <polyline points="0,223.3 8,219.9 16,215.5 24,211.1 32,207.7 40,206.0 48,205.8 56,206.5 64,207.2 72,206.7 80,204.6 88,200.9 96,196.0 104,191.2 112,187.5 120,185.9 128,186.5 136,189.2 144,192.9 152,196.5 160,199.1 168,200.2 176,199.9 184,198.8 192,198.1 200,198.7 208,201.0 216,205.2 224,210.5 232,215.8 240,220.0 248,222.2 256,222.2 264,220.2 272,217.3 280,214.6 288,212.8 296,212.6 304,213.6 312,215.2 320,216.2 328,215.8 336,213.4 344,209.1 352,203.6 360,198.0 368,193.5 376,190.9 384,190.5 392,191.8 400,193.9" fill="none" stroke="#2dd4bf" stroke-width="1.5" opacity="0.35"/>
+  <polyline points="0,225.7 8,224.0 16,222.2 24,221.8 32,223.6 40,228.0 48,234.1 56,240.8 64,246.5 72,250.1 80,251.1 88,249.6 96,246.8 104,244.1 112,242.7 120,243.2 128,245.7 136,249.3 144,252.6 152,254.2 160,253.2 168,249.6 176,243.9 184,237.5 192,231.9 200,228.1 208,226.7 216,227.4 224,229.0 232,230.2 240,229.9 248,227.3 256,222.7 264,217.1 272,211.8 280,208.2 288,207.2 296,209.1 304,212.9 312,217.6 320,221.6 328,223.8 336,224.0 344,222.4 352,220.2 360,218.9 368,219.5 376,222.7 384,228.1 392,234.8 400,241.2" fill="none" stroke="#2dd4bf" stroke-width="1.5" opacity="0.22"/>
+  <polyline points="0,264.0 8,253.1 16,243.3 24,236.6 32,234.1 40,235.7 48,240.6 56,246.8 64,252.8 72,257.3 80,259.8 88,260.9 96,261.8 104,263.8 112,267.6 120,273.4 128,280.2 136,286.4 144,290.1 152,290.0 160,285.5 168,277.2 176,266.6 184,255.9 192,247.2 200,241.8 208,240.1 216,241.6 224,244.7 232,247.9 240,250.1 248,250.8 256,250.6 264,250.6 272,252.2 280,256.4 288,263.3 296,272.1 304,281.3 312,288.6 320,292.5 328,291.8 336,286.7 344,278.5 352,268.9 360,260.0 368,253.5 376,249.8 384,248.8 392,249.3 400,249.8" fill="none" stroke="#2dd4bf" stroke-width="1.5" opacity="0.13"/>
+  </g>
+
+  <!-- Header -->
+  <text x="20" y="40" font-family="Inter, sans-serif" font-size="14" fill="#2dd4bf" font-weight="600">
+    UWA / 08-21
+  </text>
+
+  <!-- Keyword badge -->
+  <rect x="20" y="60" width="252" height="28" rx="14" fill="#2dd4bf" opacity="0.2"/>
+  <text x="30" y="79" font-family="Inter, sans-serif" font-size="13" fill="#2dd4bf" font-weight="500">
+    autonomous underwater vehicle
+  </text>
+
+  <!-- Title -->
+  <foreignObject x="20" y="110" width="360" height="120">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="
+      font-family: Inter, sans-serif;
+      font-size: 18px;
+      font-weight: 600;
+      color: #e2e8f0;
+      line-height: 1.4;
+      overflow: hidden;
+      display: -webkit-box;
+      -webkit-line-clamp: 4;
+      -webkit-box-orient: vertical;
+    ">
+      Dive 20210916_152707_turbot_ros_dense images and metadata
+    </div>
+  </foreignObject>
+
+  <!-- Author -->
+  <text x="20" y="250" font-family="Inter, sans-serif" font-size="13" fill="#94a3b8">
+     Ocean Perception Group
+  </text>
+
+  <!-- Footer -->
+  <text x="20" y="275" font-family="Inter, sans-serif" font-size="11" fill="#64748b">
+    University of Southampton
+  </text>
+
+  <!-- Score badge -->
+  <circle cx="360" cy="40" r="24" fill="#2dd4bf" opacity="0.2"/>
+  <text x="360" y="46" font-family="Inter, sans-serif" font-size="14" fill="#2dd4bf" font-weight="700" text-anchor="middle">
+    64
+  </text>
+</svg>
