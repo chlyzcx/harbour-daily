@@ -2,7 +2,7 @@
 candidateId: "crossref--10.21956-openreseurope.26352.r77868"
 category: "Paper"
 date: "2026-08-21"
-rank: 3
+rank: 4
 title: "Peer Review Report For: An open reproducible framework for CNN-based cetacean vocalization detection in passive acoustic monitoring [version 1; peer review: 1 approved with reservations]"
 authors: []
 research_direction:
@@ -27,11 +27,11 @@ previewImage: "/daily/2026-08-21/assets/crossref--10.21956-openreseurope.26352.r
 
 ## 关键技术与数据
 
-该文为同行评审报告，针对一篇基于CNN的鲸类叫声自动检测框架（被动声学监测）进行评审，评审意见为“1项批准但有保留”，涉及数据集构建、模型泛化能力、评估指标选择及代码可复现性等关键技术环节。
+该论文为一份同行评审报告，针对一篇关于基于CNN的鲸类叫声检测开源可复现框架的论文进行评审。评审内容涉及框架的模块化设计、数据集划分与标注流程、模型训练与评估标准（如精确率、召回率、F1分数）的合理性，以及代码和数据的可访问性。关键技术评估包括卷积神经网络结构选择、数据增强策略和跨站点泛化能力验证。
 
 ## 结果与结论
 
-评审指出该框架在鲸类叫声检测中具有应用潜力，但需补充跨站点/跨物种泛化验证、明确数据标注标准与模型失败案例，完善开放科学流程，提升结果可信度与可复现性，为后续改进提供方向。
+评审结论为“建议修改后录用”（1项保留意见），主要意见包括：需补充不同环境噪声条件下的鲁棒性对比实验，明确模型对罕见叫声类别的检测性能，并完善文档以增强可复现性。该评审强调了开源框架在被动声学监测中的重要性，指出其潜在应用价值，但需进一步验证模型在多样化真实场景下的稳定性和标准化评估流程。
 
 ## 来源链接
 
