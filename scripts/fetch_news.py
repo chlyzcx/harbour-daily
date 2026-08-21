@@ -25,7 +25,7 @@ from urllib.parse import urljoin
 from config import (
     NEWS_RSS_SOURCES, NEWS_WEBPAGE_SOURCES, NEWS_RELEVANCE_KEYWORDS,
     NEWS_NEGATIVE_KEYWORDS, NEWS_TIER_SCORES, NEWS_MIN_SCORE, NEWS_TARGET,
-    NEWS_MAX_AGE_DAYS, RESEARCH_DIRECTIONS,
+    NEWS_MAX_AGE_DAYS,
 )
 from models import NewsItem
 
@@ -51,16 +51,6 @@ def is_relevant(text: str) -> bool:
     if any(kw in text_lower for kw in NEWS_NEGATIVE_KEYWORDS):
         return False
     return any(kw.lower() in text_lower for kw in NEWS_RELEVANCE_KEYWORDS)
-
-
-def match_directions(text: str) -> list[str]:
-    """Map news text to valid research_direction values (may be empty)."""
-    text_lower = text.lower()
-    matched = []
-    for direction, keywords in RESEARCH_DIRECTIONS.items():
-        if any(kw.lower() in text_lower for kw in keywords):
-            matched.append(direction)
-    return matched[:2]  # keep it focused
 
 
 def score_news(published: Optional[date], tier: str, target_date: date) -> float:
@@ -193,7 +183,6 @@ def fetch_rss_news(target_date: date, seen: set[str]) -> list[NewsItem]:
                 published=entry["published"],
                 snippet=entry["snippet"],
                 score=score,
-                research_directions=match_directions(text),
             ))
             count += 1
         print(f"  {name}: {count} relevant items")
@@ -252,7 +241,6 @@ def fetch_webpage_news(target_date: date, seen: set[str]) -> list[NewsItem]:
                 published=published,
                 snippet="",
                 score=score,
-                research_directions=match_directions(title),
             ))
             count += 1
         print(f"  {name}: {count} relevant items")
