@@ -5,6 +5,7 @@ import re
 import shutil
 import sys
 from datetime import date, timedelta
+from html import unescape
 from pathlib import Path
 
 from config import MIN_SCORE, PAPER_TARGET, NEWS_TARGET
@@ -20,11 +21,13 @@ from generate_analysis import generate_all_analyses, generate_all_news_analyses
 
 
 def clean_text(text: str) -> str:
-    """Strip XML/JATS tags and normalize whitespace in abstract text."""
+    """Strip XML/JATS tags, unescape HTML entities, normalize whitespace."""
     if not text:
         return text
     # Remove XML tags like <jats:p>, <jats:italic>, etc.
     text = re.sub(r"<[^>]+>", " ", text)
+    # Decode HTML entities some sources leave in titles (&lt;b&gt; etc.)
+    text = unescape(text)
     # Normalize whitespace
     text = re.sub(r"\s+", " ", text).strip()
     return text

@@ -18,32 +18,32 @@
     {
       "candidate_id": "openalex--W7203610389",
       "category": "Paper",
-      "rank": 4,
-      "path": "docs/daily/2026-08-21/paper/04-a-frequency-aware-multi-scale-network-with-expert-.md"
+      "rank": 3,
+      "path": "docs/daily/2026-08-21/paper/03-a-frequency-aware-multi-scale-network-with-expert-.md"
     },
     {
       "candidate_id": "openalex--W7203462286",
       "category": "Paper",
-      "rank": 5,
-      "path": "docs/daily/2026-08-21/paper/05-robust-aoa-based-localization-for-distributed-unde.md"
+      "rank": 4,
+      "path": "docs/daily/2026-08-21/paper/04-robust-aoa-based-localization-for-distributed-unde.md"
     },
     {
       "candidate_id": "openalex--W7203636981",
       "category": "Paper",
-      "rank": 6,
-      "path": "docs/daily/2026-08-21/paper/06-automatic-lofar-line-spectrum-extraction-with-hybr.md"
+      "rank": 5,
+      "path": "docs/daily/2026-08-21/paper/05-automatic-lofar-line-spectrum-extraction-with-hybr.md"
     },
     {
       "candidate_id": "openalex--W7203485578",
       "category": "Paper",
-      "rank": 7,
-      "path": "docs/daily/2026-08-21/paper/07-echo--and-image-domain-fusion-for-micro-leak-detec.md"
+      "rank": 6,
+      "path": "docs/daily/2026-08-21/paper/06-echo--and-image-domain-fusion-for-micro-leak-detec.md"
     },
     {
       "candidate_id": "openalex--W7202399338",
       "category": "Paper",
-      "rank": 8,
-      "path": "docs/daily/2026-08-21/paper/08-lightweight-edgefrequency-driven-real-time-detecti.md"
+      "rank": 7,
+      "path": "docs/daily/2026-08-21/paper/07-lightweight-edgefrequency-driven-real-time-detecti.md"
     }
   ],
   "assets": [
