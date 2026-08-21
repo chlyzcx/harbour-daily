@@ -16,34 +16,28 @@
       "path": "docs/daily/2026-08-21/paper/02-training-set-synthesis-for-bioacoustic-denoising-a.md"
     },
     {
-      "candidate_id": "openalex--W7201857758",
+      "candidate_id": "s2--0b8abe046e81470e09b7bb0c649da6736e04bd78",
       "category": "Paper",
       "rank": 3,
-      "path": "docs/daily/2026-08-21/paper/03-physics-informed-hybrid-marine-predator-and-harris.md"
+      "path": "docs/daily/2026-08-21/paper/03-physics-guided-neural-radiance-fields-for-forward-.md"
+    },
+    {
+      "candidate_id": "s2--983a3863d35f4abb070a0c19fd3869e5ed0424c7",
+      "category": "Paper",
+      "rank": 4,
+      "path": "docs/daily/2026-08-21/paper/04-a-fully-complex-valued-underwater-acoustic-signal-.md"
     },
     {
       "candidate_id": "crossref--10.21956-openreseurope.26352.r77868",
       "category": "Paper",
-      "rank": 4,
-      "path": "docs/daily/2026-08-21/paper/04-peer-review-report-for-an-open-reproducible-framew.md"
+      "rank": 5,
+      "path": "docs/daily/2026-08-21/paper/05-peer-review-report-for-an-open-reproducible-framew.md"
     },
     {
       "candidate_id": "crossref--10.3390-rs18162832",
       "category": "Paper",
-      "rank": 5,
-      "path": "docs/daily/2026-08-21/paper/05-multi-source-geophysical-data-integration-for-unde.md"
-    },
-    {
-      "candidate_id": "openalex--W7202207427",
-      "category": "Paper",
       "rank": 6,
-      "path": "docs/daily/2026-08-21/paper/06-physics-informed-learning-for-robust-acoustic-loca.md"
-    },
-    {
-      "candidate_id": "openalex--W7202033045",
-      "category": "Paper",
-      "rank": 7,
-      "path": "docs/daily/2026-08-21/paper/07-development-of-efficient-wavelet-scheme-in-dwt-fft.md"
+      "path": "docs/daily/2026-08-21/paper/06-multi-source-geophysical-data-integration-for-unde.md"
     }
   ],
   "assets": [
@@ -56,8 +50,12 @@
       "path": "docs/public/daily/2026-08-21/assets/arxiv--2608.10054-1/preview.png"
     },
     {
-      "candidate_id": "openalex--W7201857758",
-      "path": "docs/public/daily/2026-08-21/assets/openalex--W7201857758/preview.png"
+      "candidate_id": "s2--0b8abe046e81470e09b7bb0c649da6736e04bd78",
+      "path": "docs/public/daily/2026-08-21/assets/s2--0b8abe046e81470e09b7bb0c649da6736e04bd78/preview.svg"
+    },
+    {
+      "candidate_id": "s2--983a3863d35f4abb070a0c19fd3869e5ed0424c7",
+      "path": "docs/public/daily/2026-08-21/assets/s2--983a3863d35f4abb070a0c19fd3869e5ed0424c7/preview.svg"
     },
     {
       "candidate_id": "crossref--10.21956-openreseurope.26352.r77868",
@@ -66,14 +64,6 @@
     {
       "candidate_id": "crossref--10.3390-rs18162832",
       "path": "docs/public/daily/2026-08-21/assets/crossref--10.3390-rs18162832/preview.svg"
-    },
-    {
-      "candidate_id": "openalex--W7202207427",
-      "path": "docs/public/daily/2026-08-21/assets/openalex--W7202207427/preview.png"
-    },
-    {
-      "candidate_id": "openalex--W7202033045",
-      "path": "docs/public/daily/2026-08-21/assets/openalex--W7202033045/preview.png"
     }
   ]
 }

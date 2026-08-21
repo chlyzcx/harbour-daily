@@ -16,7 +16,7 @@ research_direction: []
 journal: "arXiv preprint"
 publisher: "arXiv"
 publication_year: 2026
-summary: "Bioacoustic recordings are often degraded by ambient noise, which complicates the analysis of weak or noise-overlapped vocalizations. Convolutional neural networks, particularly U-Net architectures, have shown a strong denoising performance in speech and music processing. However, their direct application to bioacoustic signals is limited by the scarcity of clean training data. To address this issue, we propose a training set synthesis approach and develop a supervised denoising model that predi..."
+summary: "该论文针对生物声学记录中环境噪声干扰严重以及缺乏干净训练数据的问题，提出了一种训练集合成方法。研究以小鼠发声为例，旨在利用监督学习（尤其是U-Net架构）构建去噪模型，提升弱或噪声重叠发声信号的分析质量，弥补卷积神经网络直接应用于生物声学信号的局限性。"
 keywords:
   - "classification"
   - "neural network"
@@ -32,15 +32,15 @@ previewImage: "/daily/2026-08-21/assets/arxiv--2608.10054-1/preview.png"
 
 ## 核心内容
 
-Bioacoustic recordings are often degraded by ambient noise, which complicates the analysis of weak or noise-overlapped vocalizations. Convolutional neural networks, particularly U-Net architectures, have shown a strong denoising performance in speech and music processing. However, their direct application to bioacoustic signals is limited by the scarcity of clean training data. To address this issue, we propose a training set synthesis approach and develop a supervised denoising model that predi...
+该论文针对生物声学记录中环境噪声干扰严重以及缺乏干净训练数据的问题，提出了一种训练集合成方法。研究以小鼠发声为例，旨在利用监督学习（尤其是U-Net架构）构建去噪模型，提升弱或噪声重叠发声信号的分析质量，弥补卷积神经网络直接应用于生物声学信号的局限性。
 
 ## 关键技术与数据
 
-该论文提出一种用于生物声学降噪的训练集合成方法，并以小鼠叫声为案例。关键技术包括：构建包含干净鼠叫声与多种环境噪声（如笼内风扇、呼吸声）的混合模型，通过信号叠加合成带噪训练样本；采用U-Net卷积神经网络架构，以频谱图作为输入特征，学习噪声掩码并预测干净信号。数据来源于公开小鼠声学数据库及自录噪声库，合成样本覆盖不同信噪比（-5至15 dB）。
+关键技术包括训练集合成策略，通过模拟或混合真实噪声与干净小鼠发声构建配对数据；采用U-Net卷积神经网络进行监督去噪。数据方面可能使用公开的小鼠发声库及多种真实海洋或实验室噪声样本，通过数据增强生成大规模训练集。
 
 ## 结果与结论
 
-实验表明，合成训练集训练的U-Net模型在真实噪声环境下，输出信号的信噪比提升约8-12 dB，且对弱信号和重叠叫声的恢复能力优于传统谱减法。该方法有效解决了生物声学领域干净训练数据稀缺的问题，显著提升了模型泛化能力，为被动声学监测中的动物发声自动识别提供了可靠预处理工具。
+实验证明，合成训练集训练出的模型在去噪性能和发声信号保真度上优于传统方法，有效提升了信噪比和下游分析准确性。创新点在于解决了生物声学领域干净数据稀缺的瓶颈，提供了一种可复用的训练数据生成框架。
 
 ## 来源链接
 

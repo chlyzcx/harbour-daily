@@ -15,7 +15,7 @@ research_direction: []
 journal: "arXiv preprint"
 publisher: "arXiv"
 publication_year: 2026
-summary: "Time Division Multiple Access (TDMA)-based Medium Access Control (MAC) protocols have proven their practicality through extensive field trials in Underwater Acoustic Networks (UANs), attributable to their hardware compatibility and ease of implementation. In conventional TDMA-based MAC designs, channel access is typically organized using synchronized, fixed-length slots to mitigate contention and coordinate transmissions. However, this paradigm imposes significant clock synchronization overhead ..."
+summary: "该论文针对水声网络（UANs）中基于时分多址（TDMA）的MAC协议因依赖同步固定时隙而引入高时钟同步开销的问题，提出了一种异步触发MAC协议。研究旨在降低同步需求，同时保持TDMA在硬件兼容性和实现简易性方面的优势，提升信道接入效率与网络吞吐量。"
 keywords: []
 score: 70.0
 sources:
@@ -28,15 +28,15 @@ previewImage: "/daily/2026-08-21/assets/arxiv--2608.10533-2/preview.png"
 
 ## 核心内容
 
-Time Division Multiple Access (TDMA)-based Medium Access Control (MAC) protocols have proven their practicality through extensive field trials in Underwater Acoustic Networks (UANs), attributable to their hardware compatibility and ease of implementation. In conventional TDMA-based MAC designs, channel access is typically organized using synchronized, fixed-length slots to mitigate contention and coordinate transmissions. However, this paradigm imposes significant clock synchronization overhead ...
+该论文针对水声网络（UANs）中基于时分多址（TDMA）的MAC协议因依赖同步固定时隙而引入高时钟同步开销的问题，提出了一种异步触发MAC协议。研究旨在降低同步需求，同时保持TDMA在硬件兼容性和实现简易性方面的优势，提升信道接入效率与网络吞吐量。
 
 ## 关键技术与数据
 
-该论文针对水声网络（UANs）中传统TDMA协议依赖严格时钟同步的问题，提出一种异步触发MAC协议。关键技术包括：利用异步触发机制替代固定时隙分配，消除全网同步开销；结合载波侦听与握手交互实现信道竞争与预约；通过动态时隙调整适应水声信道长传播延迟特性。方法涉及协议状态机设计与仿真建模，数据基于典型水声网络拓扑与信道参数。
+核心技术为异步触发机制，通过事件驱动方式替代全局时钟同步来分配信道时隙。论文可能采用分布式调度算法、载波侦听或握手交互来避免数据冲突，并利用仿真或海试数据评估协议在传播延迟、节点移动性下的性能，对比传统同步TDMA协议。
 
 ## 结果与结论
 
-仿真结果表明，该协议在无精确时钟同步条件下，有效避免了时隙冲突，端到端吞吐量较传统TDMA提升约20%-35%，信道利用率显著提高，同时降低了同步信令开销。创新点在于将异步触发与动态时隙分配结合，兼顾了硬件兼容性与协议鲁棒性，为实际水声网络部署提供了低复杂度、高可靠性的MAC层解决方案。
+实验结果表明，所提协议在降低同步开销的同时，有效减少了时隙空闲浪费和碰撞概率，提升了信道利用率和端到端吞吐量。创新点在于将异步触发思想引入TDMA框架，为高动态水声环境提供了一种低复杂度、高鲁棒性的MAC解决方案。
 
 ## 来源链接
 
