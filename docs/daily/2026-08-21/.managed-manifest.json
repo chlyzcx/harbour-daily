@@ -16,34 +16,46 @@
       "path": "docs/daily/2026-08-21/paper/02-training-set-synthesis-for-bioacoustic-denoising-a.md"
     },
     {
-      "candidate_id": "openalex--W7201857758",
-      "category": "Paper",
-      "rank": 3,
-      "path": "docs/daily/2026-08-21/paper/03-physics-informed-hybrid-marine-predator-and-harris.md"
-    },
-    {
       "candidate_id": "crossref--10.21956-openreseurope.26352.r77868",
       "category": "Paper",
-      "rank": 4,
-      "path": "docs/daily/2026-08-21/paper/04-peer-review-report-for-an-open-reproducible-framew.md"
+      "rank": 3,
+      "path": "docs/daily/2026-08-21/paper/03-peer-review-report-for-an-open-reproducible-framew.md"
     },
     {
       "candidate_id": "crossref--10.3390-rs18162832",
       "category": "Paper",
+      "rank": 4,
+      "path": "docs/daily/2026-08-21/paper/04-multi-source-geophysical-data-integration-for-unde.md"
+    },
+    {
+      "candidate_id": "news--82f749b04d14",
+      "category": "News",
       "rank": 5,
-      "path": "docs/daily/2026-08-21/paper/05-multi-source-geophysical-data-integration-for-unde.md"
+      "path": "docs/daily/2026-08-21/news/05-comms-and-control.md"
     },
     {
-      "candidate_id": "openalex--W7202207427",
-      "category": "Paper",
+      "candidate_id": "news--9d56c0a878e6",
+      "category": "News",
       "rank": 6,
-      "path": "docs/daily/2026-08-21/paper/06-physics-informed-learning-for-robust-acoustic-loca.md"
+      "path": "docs/daily/2026-08-21/news/06-nec-to-establish-underwater-acoustic-platform-mode.md"
     },
     {
-      "candidate_id": "openalex--W7202033045",
-      "category": "Paper",
+      "candidate_id": "news--a95ea24c1d48",
+      "category": "News",
       "rank": 7,
-      "path": "docs/daily/2026-08-21/paper/07-development-of-efficient-wavelet-scheme-in-dwt-fft.md"
+      "path": "docs/daily/2026-08-21/news/07-lockheed-martin-and-us-navy-demonstrate-ai-powered.md"
+    },
+    {
+      "candidate_id": "news--8e2ec498fcd9",
+      "category": "News",
+      "rank": 8,
+      "path": "docs/daily/2026-08-21/news/08-falcon-eye-technology-and-norbit-security-win-unde.md"
+    },
+    {
+      "candidate_id": "news--0009b39a5d2d",
+      "category": "News",
+      "rank": 9,
+      "path": "docs/daily/2026-08-21/news/09-缅怀杨士莪院士-院士专家齐聚哈工程-共话水声工程学科高质量发展.md"
     }
   ],
   "assets": [
@@ -56,10 +68,6 @@
       "path": "docs/public/daily/2026-08-21/assets/arxiv--2608.10054-1/preview.png"
     },
     {
-      "candidate_id": "openalex--W7201857758",
-      "path": "docs/public/daily/2026-08-21/assets/openalex--W7201857758/preview.png"
-    },
-    {
       "candidate_id": "crossref--10.21956-openreseurope.26352.r77868",
       "path": "docs/public/daily/2026-08-21/assets/crossref--10.21956-openreseurope.26352.r77868/preview.svg"
     },
@@ -68,12 +76,24 @@
       "path": "docs/public/daily/2026-08-21/assets/crossref--10.3390-rs18162832/preview.svg"
     },
     {
-      "candidate_id": "openalex--W7202207427",
-      "path": "docs/public/daily/2026-08-21/assets/openalex--W7202207427/preview.png"
+      "candidate_id": "news--82f749b04d14",
+      "path": "docs/public/daily/2026-08-21/assets/news--82f749b04d14/preview.png"
     },
     {
-      "candidate_id": "openalex--W7202033045",
-      "path": "docs/public/daily/2026-08-21/assets/openalex--W7202033045/preview.png"
+      "candidate_id": "news--9d56c0a878e6",
+      "path": "docs/public/daily/2026-08-21/assets/news--9d56c0a878e6/preview.png"
+    },
+    {
+      "candidate_id": "news--a95ea24c1d48",
+      "path": "docs/public/daily/2026-08-21/assets/news--a95ea24c1d48/preview.png"
+    },
+    {
+      "candidate_id": "news--8e2ec498fcd9",
+      "path": "docs/public/daily/2026-08-21/assets/news--8e2ec498fcd9/preview.png"
+    },
+    {
+      "candidate_id": "news--0009b39a5d2d",
+      "path": "docs/public/daily/2026-08-21/assets/news--0009b39a5d2d/preview.svg"
     }
   ]
 }
