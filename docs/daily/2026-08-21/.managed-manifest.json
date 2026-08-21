@@ -52,16 +52,16 @@
       "path": "docs/daily/2026-08-21/paper/08-lightweight-edgefrequency-driven-real-time-detecti.md"
     },
     {
-      "candidate_id": "s2--6722bde176ba954ba0a34e7429dc573b0a29b6af",
-      "category": "Paper",
-      "rank": 9,
-      "path": "docs/daily/2026-08-21/paper/09-demonstrating-the-feasibility-of-a-mirror-ocean-ac.md"
-    },
-    {
       "candidate_id": "openalex--W7203663553",
       "category": "Paper",
+      "rank": 9,
+      "path": "docs/daily/2026-08-21/paper/09-pragmatic-task-battery-llm-responses-and-rubric-sc.md"
+    },
+    {
+      "candidate_id": "openalex--W7203722755",
+      "category": "Paper",
       "rank": 10,
-      "path": "docs/daily/2026-08-21/paper/10-pragmatic-task-battery-llm-responses-and-rubric-sc.md"
+      "path": "docs/daily/2026-08-21/paper/10-stratified-waveguide-acoustic-probing-swap-autonom.md"
     }
   ],
   "assets": [
@@ -98,12 +98,12 @@
       "path": "docs/public/daily/2026-08-21/assets/openalex--W7202399338/preview.png"
     },
     {
-      "candidate_id": "s2--6722bde176ba954ba0a34e7429dc573b0a29b6af",
-      "path": "docs/public/daily/2026-08-21/assets/s2--6722bde176ba954ba0a34e7429dc573b0a29b6af/preview.svg"
-    },
-    {
       "candidate_id": "openalex--W7203663553",
       "path": "docs/public/daily/2026-08-21/assets/openalex--W7203663553/preview.svg"
+    },
+    {
+      "candidate_id": "openalex--W7203722755",
+      "path": "docs/public/daily/2026-08-21/assets/openalex--W7203722755/preview.svg"
     }
   ]
 }
