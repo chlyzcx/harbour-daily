@@ -41,13 +41,16 @@ KIMI_MODEL = os.environ.get("KIMI_MODEL", "kimi-k2.5").strip()
 # Moonshot free tier is ~3 requests/minute, so 25s keeps us safely under it.
 REQUEST_INTERVAL = int(os.environ.get("LLM_REQUEST_INTERVAL", "25"))
 
-PROMPT_TEMPLATE = """请分析以下水声工程领域的学术论文，生成两部分中文内容：
+PROMPT_TEMPLATE = """请分析以下水声工程领域的学术论文，生成三部分中文内容（论文标题保持英文，不要翻译）：
 
 论文标题：{title}
 
 论文摘要：{abstract}
 
 请按以下格式输出：
+
+【简介】
+（用中文概括论文的研究背景、目标和主要内容，100-150字）
 
 【关键技术与数据】
 （分析论文使用的关键技术、方法、算法、数据集等，100-150字）
@@ -61,19 +64,23 @@ PROMPT_TEMPLATE = """请分析以下水声工程领域的学术论文，生成�
 3. 不要添加任何额外的标记或说明
 """
 
-BATCH_PROMPT_TEMPLATE = """请分析以下水声工程领域的 {n} 篇学术论文，为每篇生成两部分中文内容：
+BATCH_PROMPT_TEMPLATE = """请分析以下水声工程领域的 {n} 篇学术论文，为每篇生成三部分中文内容（论文标题保持英文，不要翻译）：
 
 {papers_block}
 
 请严格按以下格式逐篇输出，不要输出任何其它内容：
 
 【论文1】
+【简介】
+（用中文概括该论文的研究背景、目标和主要内容，100-150字）
 【关键技术与数据】
 （分析该论文使用的关键技术、方法、算法、数据集等，100-150字）
 【结果与结论】
 （总结该论文的主要实验结果、性能指标、结论和创新点，100-150字）
 
 【论文2】
+【简介】
+……
 【关键技术与数据】
 ……
 【结果与结论】
@@ -180,19 +187,31 @@ def _call_llm(api_url: str, api_key: str, model: str, prompt: str,
     return "", False
 
 
-def _parse_content(content: str) -> tuple[str, str]:
-    """Parse LLM output into (key_tech, results)."""
-    if "【关键技术与数据】" in content and "【结果与结论】" in content:
-        parts = content.split("【结果与结论】")
-        key_tech = parts[0].replace("【关键技术与数据】", "").strip()
-        results = parts[1].strip()
-        return key_tech, results
-    # Fallback: use the whole content as key_tech
-    return content[:200], "（详见原文）"
+def _parse_content(content: str) -> tuple[str, str, str]:
+    """Parse LLM output into (summary_zh, key_tech, results)."""
+    summary_zh, key_tech, results = "", "", ""
+    rest = content
+    has_intro = "【简介】" in rest
+    if has_intro:
+        _, rest = rest.split("【简介】", 1)
+    if "【关键技术与数据】" in rest:
+        before, rest = rest.split("【关键技术与数据】", 1)
+        if has_intro:
+            summary_zh = before
+    if "【结果与结论】" in rest:
+        key_tech, rest = rest.split("【结果与结论】", 1)
+        results = rest
+    else:
+        key_tech = rest
+    summary_zh, key_tech, results = summary_zh.strip(), key_tech.strip(), results.strip()
+    if not key_tech and not results:
+        # Fallback: use the whole content as key_tech
+        return summary_zh, content[:200], "（详见原文）"
+    return summary_zh, key_tech, results
 
 
-def _parse_batch(content: str, n: int) -> dict[int, tuple[str, str]]:
-    """Parse batched LLM output into {paper_index: (key_tech, results)}."""
+def _parse_batch(content: str, n: int) -> dict[int, tuple[str, str, str]]:
+    """Parse batched LLM output into {paper_index: (summary_zh, key_tech, results)}."""
     parsed = {}
     # Split on 【论文N】 markers; split keeps the captured numbers
     parts = re.split(r"【\s*论文\s*(\d+)\s*】", content)
@@ -203,12 +222,12 @@ def _parse_batch(content: str, n: int) -> dict[int, tuple[str, str]]:
     return parsed
 
 
-def generate_batch_analyses(papers: list) -> dict[int, tuple[str, str]]:
+def generate_batch_analyses(papers: list) -> dict[int, tuple[str, str, str]]:
     """
     Analyze all papers in ONE LLM request instead of one request per paper.
     This avoids per-request rate-limit waits entirely, cutting the analysis
     phase from ~9 requests / several minutes to a single call.
-    Returns {paper_index: (key_tech, results)}; may be partial or empty.
+    Returns {paper_index: (summary_zh, key_tech, results)}; may be partial or empty.
     """
     providers = _get_providers()
     if not providers:
@@ -220,9 +239,9 @@ def generate_batch_analyses(papers: list) -> dict[int, tuple[str, str]]:
     )
     prompt = BATCH_PROMPT_TEMPLATE.format(n=len(papers), papers_block=papers_block)
 
-    # 9 papers x ~300 Chinese chars of output needs much more than the
+    # 9 papers x ~450 Chinese chars of output needs much more than the
     # per-paper 500-token cap.
-    batch_max_tokens = max(4096, len(papers) * 500)
+    batch_max_tokens = max(4096, len(papers) * 700)
 
     for provider, api_url, api_key, model in providers:
         content, fatal = _call_llm(api_url, api_key, model, prompt, provider,
@@ -240,26 +259,27 @@ def generate_batch_analyses(papers: list) -> dict[int, tuple[str, str]]:
     return {}
 
 
-def generate_analysis(title: str, abstract: str, max_retries: int = 3) -> tuple[str, str]:
+def generate_analysis(title: str, abstract: str, max_retries: int = 3) -> tuple[str, str, str]:
     """
-    Generate key_technology and results_conclusion using LLM API.
+    Generate Chinese summary, key_technology and results_conclusion via LLM API.
     Tries each configured provider in order (Kimi, then DeepSeek).
-    Returns (key_tech, results) as Chinese text.
+    Returns (summary_zh, key_tech, results) as Chinese text.
     """
     providers = _get_providers()
     if not providers:
         print("Warning: No LLM API key set (KIMI_API_KEY / DEEPSEEK_API_KEY), skipping analysis generation")
-        return "", ""
+        return "", "", ""
 
     prompt = PROMPT_TEMPLATE.format(title=title, abstract=abstract)
 
     for provider, api_url, api_key, model in providers:
-        content, _fatal = _call_llm(api_url, api_key, model, prompt, provider, max_retries)
+        content, _fatal = _call_llm(api_url, api_key, model, prompt, provider, max_retries,
+                                    max_tokens=800)
         if content:
             return _parse_content(content)
         # Any failure on this provider -> try the next one
 
-    return "", ""
+    return "", "", ""
 
 
 def generate_all_analyses(papers: list) -> None:
@@ -292,12 +312,14 @@ def generate_all_analyses(papers: list) -> None:
 
     applied = 0
     for i, paper in enumerate(papers):
-        key_tech, res = results.get(i, ("", ""))
+        summary_zh, key_tech, res = results.get(i, ("", "", ""))
+        if summary_zh:
+            paper.summary_zh = summary_zh
         if key_tech:
             paper.key_tech = key_tech
         if res:
             paper.results = res
-        if key_tech or res:
+        if summary_zh or key_tech or res:
             applied += 1
 
     print(f"Analysis generation completed! ({applied}/{len(papers)} papers analyzed)")
@@ -308,6 +330,7 @@ if __name__ == "__main__":
     title = "An Asynchronous Triggered MAC Protocol for Underwater Acoustic Networks"
     abstract = "Time Division Multiple Access (TDMA)-based Medium Access Control (MAC) protocols have proven their practicality..."
 
-    key_tech, results = generate_analysis(title, abstract)
+    summary_zh, key_tech, results = generate_analysis(title, abstract)
+    print("简介：", summary_zh)
     print("关键技术与数据：", key_tech)
     print("结果与结论：", results)

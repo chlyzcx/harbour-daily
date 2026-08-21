@@ -28,6 +28,7 @@ class Paper:
     publication_year: Optional[int] = None
     publication_date: Optional[date] = None
     preview_image: Optional[str] = None
+    summary_zh: str = ""  # LLM-generated Chinese abstract; preferred over summary
     core_content: str = ""
     key_tech: str = ""
     results: str = ""
@@ -39,7 +40,11 @@ class Paper:
         """Convert paper to Markdown with front matter."""
         # Front matter requires a non-empty summary; fall back to a placeholder
         # when the source (e.g. CrossRef peer review reports) has no abstract.
-        summary = self.summary.strip() or "(No abstract was provided by the source for this item.)"
+        # The Chinese version is preferred for display; the title stays English.
+        summary = self.summary_zh.strip() or self.summary.strip() \
+            or "(No abstract was provided by the source for this item.)"
+        # Keep the YAML double-quoted string valid
+        summary_yaml = summary.replace("\\", "\\\\").replace('"', '\\"')
         lines = [
             "---",
             f'candidateId: "{self.candidate_id}"',
@@ -69,7 +74,7 @@ class Paper:
         if self.publication_year:
             lines.append(f'publication_year: {self.publication_year}')
 
-        lines.append(f'summary: "{summary}"')
+        lines.append(f'summary: "{summary_yaml}"')
 
         lines.append("keywords:")
         for kw in self.keywords:
