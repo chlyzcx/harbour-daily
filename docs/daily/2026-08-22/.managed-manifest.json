@@ -4,64 +4,64 @@
   "display_date": "2026-08-22",
   "articles": [
     {
-      "candidate_id": "openalex--W7203610389",
-      "category": "Paper",
-      "rank": 1,
-      "path": "docs/daily/2026-08-22/paper/01-a-frequency-aware-multi-scale-network-with-expert-.md"
-    },
-    {
-      "candidate_id": "arxiv--2608.10533-2",
-      "category": "Paper",
-      "rank": 2,
-      "path": "docs/daily/2026-08-22/paper/02-an-asynchronous-triggered-mac-protocol-for-underwa.md"
-    },
-    {
-      "candidate_id": "arxiv--2608.10054-1",
-      "category": "Paper",
-      "rank": 3,
-      "path": "docs/daily/2026-08-22/paper/03-training-set-synthesis-for-bioacoustic-denoising-a.md"
-    },
-    {
       "candidate_id": "openalex--W7203821786",
       "category": "Paper",
-      "rank": 4,
-      "path": "docs/daily/2026-08-22/paper/04-multi-source-geophysical-data-integration-for-unde.md"
+      "rank": 1,
+      "path": "docs/daily/2026-08-22/paper/01-multi-source-geophysical-data-integration-for-unde.md"
     },
     {
       "candidate_id": "openalex--W7203714293",
       "category": "Paper",
-      "rank": 5,
-      "path": "docs/daily/2026-08-22/paper/05-fishing-activity-affected-odontocete-cetacean-dist.md"
-    },
-    {
-      "candidate_id": "openalex--W7203636981",
-      "category": "Paper",
-      "rank": 6,
-      "path": "docs/daily/2026-08-22/paper/06-automatic-lofar-line-spectrum-extraction-with-hybr.md"
-    },
-    {
-      "candidate_id": "openalex--W4404432410",
-      "category": "Paper",
-      "rank": 7,
-      "path": "docs/daily/2026-08-22/paper/07-demonet-underwater-acoustic-target-recognition-bas.md"
+      "rank": 2,
+      "path": "docs/daily/2026-08-22/paper/02-fishing-activity-affected-odontocete-cetacean-dist.md"
     },
     {
       "candidate_id": "openalex--W7203827878",
       "category": "Paper",
-      "rank": 8,
-      "path": "docs/daily/2026-08-22/paper/08-development-and-experimental-validation-of-a-compo.md"
+      "rank": 3,
+      "path": "docs/daily/2026-08-22/paper/03-development-and-experimental-validation-of-a-compo.md"
     },
     {
       "candidate_id": "openalex--W7203828065",
       "category": "Paper",
-      "rank": 9,
-      "path": "docs/daily/2026-08-22/paper/09-acoustics-and-anthropogenic-underwater-noise-in-th.md"
+      "rank": 4,
+      "path": "docs/daily/2026-08-22/paper/04-acoustics-and-anthropogenic-underwater-noise-in-th.md"
     },
     {
       "candidate_id": "openalex--W7203840576",
       "category": "Paper",
+      "rank": 5,
+      "path": "docs/daily/2026-08-22/paper/05-an-improved-q-learning-based-aodv-routing-protocol.md"
+    },
+    {
+      "candidate_id": "openalex--W7203619274",
+      "category": "Paper",
+      "rank": 6,
+      "path": "docs/daily/2026-08-22/paper/06-a-time-series-prediction-method-for-ocean-sound-sp.md"
+    },
+    {
+      "candidate_id": "openalex--W7203621674",
+      "category": "Paper",
+      "rank": 7,
+      "path": "docs/daily/2026-08-22/paper/07-ra-sido-robust-and-adaptive-sonarinertialdepth-odo.md"
+    },
+    {
+      "candidate_id": "openalex--W7203528966",
+      "category": "Paper",
+      "rank": 8,
+      "path": "docs/daily/2026-08-22/paper/08-lmod-yolo-a-lightweight-yolo-model-for-marine-orga.md"
+    },
+    {
+      "candidate_id": "crossref--10.7554-elife.112153",
+      "category": "Paper",
+      "rank": 9,
+      "path": "docs/daily/2026-08-22/paper/09-measurement-and-comparison-of-acoustic-space-use-i.md"
+    },
+    {
+      "candidate_id": "crossref--10.3390-rs18162759",
+      "category": "Paper",
       "rank": 10,
-      "path": "docs/daily/2026-08-22/paper/10-an-improved-q-learning-based-aodv-routing-protocol.md"
+      "path": "docs/daily/2026-08-22/paper/10-energy-optimization-based-segmentation-and-extract.md"
     },
     {
       "candidate_id": "news--ffaba93397ba",
@@ -72,32 +72,12 @@
   ],
   "assets": [
     {
-      "candidate_id": "openalex--W7203610389",
-      "path": "docs/public/daily/2026-08-22/assets/openalex--W7203610389/preview.png"
-    },
-    {
-      "candidate_id": "arxiv--2608.10533-2",
-      "path": "docs/public/daily/2026-08-22/assets/arxiv--2608.10533-2/preview.png"
-    },
-    {
-      "candidate_id": "arxiv--2608.10054-1",
-      "path": "docs/public/daily/2026-08-22/assets/arxiv--2608.10054-1/preview.png"
-    },
-    {
       "candidate_id": "openalex--W7203821786",
       "path": "docs/public/daily/2026-08-22/assets/openalex--W7203821786/preview.png"
     },
     {
       "candidate_id": "openalex--W7203714293",
       "path": "docs/public/daily/2026-08-22/assets/openalex--W7203714293/preview.svg"
-    },
-    {
-      "candidate_id": "openalex--W7203636981",
-      "path": "docs/public/daily/2026-08-22/assets/openalex--W7203636981/preview.png"
-    },
-    {
-      "candidate_id": "openalex--W4404432410",
-      "path": "docs/public/daily/2026-08-22/assets/openalex--W4404432410/preview.png"
     },
     {
       "candidate_id": "openalex--W7203827878",
@@ -110,6 +90,26 @@
     {
       "candidate_id": "openalex--W7203840576",
       "path": "docs/public/daily/2026-08-22/assets/openalex--W7203840576/preview.png"
+    },
+    {
+      "candidate_id": "openalex--W7203619274",
+      "path": "docs/public/daily/2026-08-22/assets/openalex--W7203619274/preview.png"
+    },
+    {
+      "candidate_id": "openalex--W7203621674",
+      "path": "docs/public/daily/2026-08-22/assets/openalex--W7203621674/preview.png"
+    },
+    {
+      "candidate_id": "openalex--W7203528966",
+      "path": "docs/public/daily/2026-08-22/assets/openalex--W7203528966/preview.png"
+    },
+    {
+      "candidate_id": "crossref--10.7554-elife.112153",
+      "path": "docs/public/daily/2026-08-22/assets/crossref--10.7554-elife.112153/preview.svg"
+    },
+    {
+      "candidate_id": "crossref--10.3390-rs18162759",
+      "path": "docs/public/daily/2026-08-22/assets/crossref--10.3390-rs18162759/preview.png"
     },
     {
       "candidate_id": "news--ffaba93397ba",
