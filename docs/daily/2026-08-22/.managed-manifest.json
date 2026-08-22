@@ -1,0 +1,119 @@
+{
+  "schema_version": 2,
+  "cycle_id": "daily-2026-08-22",
+  "display_date": "2026-08-22",
+  "articles": [
+    {
+      "candidate_id": "openalex--W7203610389",
+      "category": "Paper",
+      "rank": 1,
+      "path": "docs/daily/2026-08-22/paper/01-a-frequency-aware-multi-scale-network-with-expert-.md"
+    },
+    {
+      "candidate_id": "arxiv--2608.10533-2",
+      "category": "Paper",
+      "rank": 2,
+      "path": "docs/daily/2026-08-22/paper/02-an-asynchronous-triggered-mac-protocol-for-underwa.md"
+    },
+    {
+      "candidate_id": "arxiv--2608.10054-1",
+      "category": "Paper",
+      "rank": 3,
+      "path": "docs/daily/2026-08-22/paper/03-training-set-synthesis-for-bioacoustic-denoising-a.md"
+    },
+    {
+      "candidate_id": "openalex--W7203714293",
+      "category": "Paper",
+      "rank": 4,
+      "path": "docs/daily/2026-08-22/paper/04-fishing-activity-affected-odontocete-cetacean-dist.md"
+    },
+    {
+      "candidate_id": "openalex--W7203636981",
+      "category": "Paper",
+      "rank": 5,
+      "path": "docs/daily/2026-08-22/paper/05-automatic-lofar-line-spectrum-extraction-with-hybr.md"
+    },
+    {
+      "candidate_id": "openalex--W4404432410",
+      "category": "Paper",
+      "rank": 6,
+      "path": "docs/daily/2026-08-22/paper/06-demonet-underwater-acoustic-target-recognition-bas.md"
+    },
+    {
+      "candidate_id": "openalex--W7203828065",
+      "category": "Paper",
+      "rank": 7,
+      "path": "docs/daily/2026-08-22/paper/07-acoustics-and-anthropogenic-underwater-noise-in-th.md"
+    },
+    {
+      "candidate_id": "openalex--W7203840576",
+      "category": "Paper",
+      "rank": 8,
+      "path": "docs/daily/2026-08-22/paper/08-an-improved-q-learning-based-aodv-routing-protocol.md"
+    },
+    {
+      "candidate_id": "openalex--W7203642803",
+      "category": "Paper",
+      "rank": 9,
+      "path": "docs/daily/2026-08-22/paper/09-design-of-an-underwater-acoustic-target-detection-.md"
+    },
+    {
+      "candidate_id": "openalex--W7203600357",
+      "category": "Paper",
+      "rank": 10,
+      "path": "docs/daily/2026-08-22/paper/10-relative-localization-of-a-floating-recovery-targe.md"
+    },
+    {
+      "candidate_id": "news--ffaba93397ba",
+      "category": "News",
+      "rank": 11,
+      "path": "docs/daily/2026-08-22/news/11-handy-helpers-electric-underwater-tools-and-manipu.md"
+    }
+  ],
+  "assets": [
+    {
+      "candidate_id": "openalex--W7203610389",
+      "path": "docs/public/daily/2026-08-22/assets/openalex--W7203610389/preview.png"
+    },
+    {
+      "candidate_id": "arxiv--2608.10533-2",
+      "path": "docs/public/daily/2026-08-22/assets/arxiv--2608.10533-2/preview.png"
+    },
+    {
+      "candidate_id": "arxiv--2608.10054-1",
+      "path": "docs/public/daily/2026-08-22/assets/arxiv--2608.10054-1/preview.png"
+    },
+    {
+      "candidate_id": "openalex--W7203714293",
+      "path": "docs/public/daily/2026-08-22/assets/openalex--W7203714293/preview.svg"
+    },
+    {
+      "candidate_id": "openalex--W7203636981",
+      "path": "docs/public/daily/2026-08-22/assets/openalex--W7203636981/preview.png"
+    },
+    {
+      "candidate_id": "openalex--W4404432410",
+      "path": "docs/public/daily/2026-08-22/assets/openalex--W4404432410/preview.png"
+    },
+    {
+      "candidate_id": "openalex--W7203828065",
+      "path": "docs/public/daily/2026-08-22/assets/openalex--W7203828065/preview.png"
+    },
+    {
+      "candidate_id": "openalex--W7203840576",
+      "path": "docs/public/daily/2026-08-22/assets/openalex--W7203840576/preview.png"
+    },
+    {
+      "candidate_id": "openalex--W7203642803",
+      "path": "docs/public/daily/2026-08-22/assets/openalex--W7203642803/preview.png"
+    },
+    {
+      "candidate_id": "openalex--W7203600357",
+      "path": "docs/public/daily/2026-08-22/assets/openalex--W7203600357/preview.png"
+    },
+    {
+      "candidate_id": "news--ffaba93397ba",
+      "path": "docs/public/daily/2026-08-22/assets/news--ffaba93397ba/preview.png"
+    }
+  ]
+}
