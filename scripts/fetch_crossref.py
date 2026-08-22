@@ -82,6 +82,7 @@ def fetch_crossref_papers(target_date: date, max_results: int = 100) -> list[Pap
 
                 # Sources
                 sources = []
+                doi = None
                 if item.get("DOI"):
                     doi = item["DOI"]
                     sources.append(Source(name="DOI", url=f"https://doi.org/{doi}"))
@@ -115,6 +116,7 @@ def fetch_crossref_papers(target_date: date, max_results: int = 100) -> list[Pap
                     sources=sources,
                     journal=journal or "Unknown",
                     publisher=item.get("publisher", "Unknown"),
+                    doi=doi,
                     publication_year=pub_year,
                     publication_date=pub_date,
                     preview_image=None,

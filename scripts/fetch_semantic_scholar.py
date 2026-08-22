@@ -86,6 +86,7 @@ def fetch_semantic_scholar_papers(target_date: date, max_results: int = 100) -> 
                 external_ids = item.get("externalIds", {})
 
                 # Add DOI link if available
+                doi = None
                 if external_ids.get("DOI"):
                     doi = external_ids["DOI"]
                     sources.append(Source(name="DOI", url=f"https://doi.org/{doi}"))
@@ -121,6 +122,7 @@ def fetch_semantic_scholar_papers(target_date: date, max_results: int = 100) -> 
                     sources=sources,
                     journal=item.get("venue", "Unknown"),
                     publisher="Semantic Scholar",
+                    doi=doi,
                     publication_year=pub_year,
                     publication_date=pub_date,
                     preview_image=None,

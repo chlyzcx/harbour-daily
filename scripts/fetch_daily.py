@@ -8,8 +8,10 @@ from datetime import date, timedelta
 from html import unescape
 from pathlib import Path
 
-from config import MIN_SCORE, PAPER_TARGET, NEWS_TARGET
+from config import MIN_SCORE, PAPER_TARGET, NEWS_TARGET, MAX_AGE_DAYS
 from models import DailySelection, NewsItem, Paper
+
+SEEN_PAPERS_PATH = Path(__file__).parent / "data" / "seen_papers.json"
 from fetch_openalex import fetch_openalex_papers
 from fetch_arxiv import fetch_arxiv_papers
 from fetch_semantic_scholar import fetch_semantic_scholar_papers
@@ -31,6 +33,37 @@ def clean_text(text: str) -> str:
     # Normalize whitespace
     text = re.sub(r"\s+", " ", text).strip()
     return text
+
+
+def _paper_uid(paper: Paper) -> str:
+    """Stable identifier for cross-day dedup: DOI if available, else candidate id."""
+    if paper.doi:
+        return "doi:" + paper.doi.lower()
+    return "id:" + paper.candidate_id
+
+
+def load_seen_papers(target_date: date) -> dict[str, str]:
+    """Load the seen-paper store {uid: date_iso}, pruned to the fetch window.
+
+    Entries older than MAX_AGE_DAYS cannot be re-fetched anyway (every source
+    filters by the same window), so they are dropped to keep the file small.
+    """
+    if not SEEN_PAPERS_PATH.exists():
+        return {}
+    try:
+        data = json.loads(SEEN_PAPERS_PATH.read_text(encoding="utf-8"))
+    except (json.JSONDecodeError, OSError):
+        return {}
+    cutoff = (target_date - timedelta(days=MAX_AGE_DAYS)).isoformat()
+    return {uid: d for uid, d in data.get("papers", {}).items() if d >= cutoff}
+
+
+def save_seen_papers(seen: dict[str, str]) -> None:
+    SEEN_PAPERS_PATH.parent.mkdir(parents=True, exist_ok=True)
+    SEEN_PAPERS_PATH.write_text(
+        json.dumps({"papers": seen}, indent=1, ensure_ascii=False),
+        encoding="utf-8",
+    )
 
 
 def deduplicate_papers(papers: list[Paper]) -> list[Paper]:
@@ -185,13 +218,24 @@ def fetch_daily_papers(target_date: date, project_root: Path) -> DailySelection:
     unique_papers = deduplicate_papers(all_papers)
     print(f"  {len(unique_papers)} unique papers")
 
+    # Cross-day dedup: skip papers already published on a previous day.
+    # Same-day re-runs are exempt (their entries carry today's date) so a
+    # re-run regenerates the same selection instead of erasing it.
+    seen = load_seen_papers(target_date)
+    today_iso = target_date.isoformat()
+    fresh_papers = [p for p in unique_papers
+                    if seen.get(_paper_uid(p)) in (None, today_iso)]
+    skipped = len(unique_papers) - len(fresh_papers)
+    if skipped:
+        print(f"  Skipped {skipped} papers already published on previous days")
+
     # Clean XML/JATS tags from summaries (some sources embed markup)
-    for paper in unique_papers:
+    for paper in fresh_papers:
         paper.summary = clean_text(paper.summary)
         paper.title = clean_text(paper.title)
 
     # Filter by minimum score
-    filtered = [p for p in unique_papers if p.score >= MIN_SCORE]
+    filtered = [p for p in fresh_papers if p.score >= MIN_SCORE]
     print(f"  {len(filtered)} papers above minimum score ({MIN_SCORE})")
 
     # Sort by score descending and assign ranks
@@ -200,6 +244,11 @@ def fetch_daily_papers(target_date: date, project_root: Path) -> DailySelection:
     # Select top N (leave room for news: site limit is 15 articles/day total)
     selected = filtered[:PAPER_TARGET]
     print(f"Selected {len(selected)} papers for {target_date}")
+
+    # Record the selection so later days skip these papers
+    for paper in selected:
+        seen[_paper_uid(paper)] = today_iso
+    save_seen_papers(seen)
 
     # Create selection
     selection = DailySelection(date=target_date.isoformat())

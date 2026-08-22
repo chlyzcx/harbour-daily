@@ -119,7 +119,9 @@ def calculate_score(
             recency_score = 95
         elif days_old <= 7:
             recency_score = 90
-        elif days_old <= 30:
+        elif days_old <= MAX_AGE_DAYS:
+            # Aligned with the fetch window: candidates older than
+            # MAX_AGE_DAYS never reach scoring, so no wider tier is needed.
             recency_score = 70
         else:
             recency_score = 50
