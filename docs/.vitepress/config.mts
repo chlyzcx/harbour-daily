@@ -49,8 +49,8 @@ function splitSearchSections(path: string, html: string): PageSplitSection[] {
 
 export default defineConfig({
   lang: 'zh-CN',
-  title: '水声工程每日精选',
-  titleTemplate: ':title | 水声工程每日精选',
+  title: 'harbour-daily',
+  titleTemplate: ':title | 兴海青年每日精选',
   description: '每日水声工程领域学术论文、高校新闻与政策动态精选',
   base: process.env.VITEPRESS_BASE || '/',
   cleanUrls: true,

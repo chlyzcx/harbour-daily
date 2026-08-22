@@ -96,7 +96,7 @@ function imageUrl(article: DailyArticle) {
   <main class="daily-index">
     <header class="daily-header">
       <div>
-        <h1>水声工程每日精选</h1>
+        <h1>兴海青年每日精选</h1>
       </div>
       <div class="daily-header__edition" aria-label="当前日报信息">
         <details class="date-picker">
