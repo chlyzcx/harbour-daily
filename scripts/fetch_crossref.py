@@ -51,7 +51,7 @@ def fetch_crossref_papers(target_date: date, max_results: int = 100) -> list[Pap
                     continue
 
                 title = item["title"][0] if isinstance(item["title"], list) else item["title"]
-                abstract = item.get("abstract", "")
+                abstract = item.get("abstract") or ""
 
                 # Admission gate: domain relevance (tagging is best-effort)
                 full_text = f"{title} {abstract}"
