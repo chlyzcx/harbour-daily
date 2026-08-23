@@ -2,8 +2,8 @@ name: Daily Paper Fetch
 
 on:
   schedule:
-    # Run daily at 02:00 UTC (10:00 Beijing time)
-    - cron: '0 2 * * *'
+    # Run daily at 00:00 UTC (08:00 Beijing time)
+    - cron: '0 0 * * *'
   workflow_dispatch:
 
 permissions:
