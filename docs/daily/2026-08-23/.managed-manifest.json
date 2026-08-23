@@ -4,106 +4,16 @@
   "display_date": "2026-08-23",
   "articles": [
     {
-      "candidate_id": "openalex--W7203924913",
+      "candidate_id": "crossref--10.1088-1748-3190-ae9d1e",
       "category": "Paper",
       "rank": 1,
-      "path": "docs/daily/2026-08-23/paper/01-small-recreational-vessels-reshape-the-seasonal-co.md"
-    },
-    {
-      "candidate_id": "openalex--W7203945554",
-      "category": "Paper",
-      "rank": 2,
-      "path": "docs/daily/2026-08-23/paper/02-a-computationally-efficient-likelihood-approximati.md"
-    },
-    {
-      "candidate_id": "openalex--W7203824899",
-      "category": "Paper",
-      "rank": 3,
-      "path": "docs/daily/2026-08-23/paper/03-scalable-data-management-techniques-for-large-scal.md"
-    },
-    {
-      "candidate_id": "s2--6722bde176ba954ba0a34e7429dc573b0a29b6af",
-      "category": "Paper",
-      "rank": 4,
-      "path": "docs/daily/2026-08-23/paper/04-demonstrating-the-feasibility-of-a-mirror-ocean-ac.md"
-    },
-    {
-      "candidate_id": "s2--3e008413a54996547afcb33b8e8a567266f6ec14",
-      "category": "Paper",
-      "rank": 5,
-      "path": "docs/daily/2026-08-23/paper/05-effects-of-ocean-fronts-on-underwater-acoustic-pro.md"
-    },
-    {
-      "candidate_id": "openalex--W7203921075",
-      "category": "Paper",
-      "rank": 6,
-      "path": "docs/daily/2026-08-23/paper/06-a-review-of-underwater-robot-technologies-for-inla.md"
-    },
-    {
-      "candidate_id": "openalex--W7203923587",
-      "category": "Paper",
-      "rank": 7,
-      "path": "docs/daily/2026-08-23/paper/07-maned-wolf-optimizer-a-novel-nature-inspired-metah.md"
-    },
-    {
-      "candidate_id": "openalex--W7203894847",
-      "category": "Paper",
-      "rank": 8,
-      "path": "docs/daily/2026-08-23/paper/08-multi-tissue-δ13c-and-δ15n-analysis-reveals-pre-st.md"
-    },
-    {
-      "candidate_id": "openalex--W7203869826",
-      "category": "Paper",
-      "rank": 9,
-      "path": "docs/daily/2026-08-23/paper/09-robust-cross-modal-foundation-model-perception-for.md"
-    },
-    {
-      "candidate_id": "openalex--W7203821052",
-      "category": "Paper",
-      "rank": 10,
-      "path": "docs/daily/2026-08-23/paper/10-controlling-low-frequency-waves-for-marine-vibrato.md"
+      "path": "docs/daily/2026-08-23/paper/01-electrosensing-based-three-dimensional-localizatio.md"
     }
   ],
   "assets": [
     {
-      "candidate_id": "openalex--W7203924913",
-      "path": "docs/public/daily/2026-08-23/assets/openalex--W7203924913/preview.png"
-    },
-    {
-      "candidate_id": "openalex--W7203945554",
-      "path": "docs/public/daily/2026-08-23/assets/openalex--W7203945554/preview.png"
-    },
-    {
-      "candidate_id": "openalex--W7203824899",
-      "path": "docs/public/daily/2026-08-23/assets/openalex--W7203824899/preview.png"
-    },
-    {
-      "candidate_id": "s2--6722bde176ba954ba0a34e7429dc573b0a29b6af",
-      "path": "docs/public/daily/2026-08-23/assets/s2--6722bde176ba954ba0a34e7429dc573b0a29b6af/preview.svg"
-    },
-    {
-      "candidate_id": "s2--3e008413a54996547afcb33b8e8a567266f6ec14",
-      "path": "docs/public/daily/2026-08-23/assets/s2--3e008413a54996547afcb33b8e8a567266f6ec14/preview.svg"
-    },
-    {
-      "candidate_id": "openalex--W7203921075",
-      "path": "docs/public/daily/2026-08-23/assets/openalex--W7203921075/preview.png"
-    },
-    {
-      "candidate_id": "openalex--W7203923587",
-      "path": "docs/public/daily/2026-08-23/assets/openalex--W7203923587/preview.png"
-    },
-    {
-      "candidate_id": "openalex--W7203894847",
-      "path": "docs/public/daily/2026-08-23/assets/openalex--W7203894847/preview.png"
-    },
-    {
-      "candidate_id": "openalex--W7203869826",
-      "path": "docs/public/daily/2026-08-23/assets/openalex--W7203869826/preview.png"
-    },
-    {
-      "candidate_id": "openalex--W7203821052",
-      "path": "docs/public/daily/2026-08-23/assets/openalex--W7203821052/preview.svg"
+      "candidate_id": "crossref--10.1088-1748-3190-ae9d1e",
+      "path": "docs/public/daily/2026-08-23/assets/crossref--10.1088-1748-3190-ae9d1e/preview.svg"
     }
   ]
 }

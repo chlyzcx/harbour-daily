@@ -1,0 +1,72 @@
+<svg width="400" height="300" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#431407;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#9a3412;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="400" height="300" fill="url(#grad)"/>
+
+  <!-- Grid pattern -->
+  <g opacity="0.1">
+    <line x1="0" y1="75" x2="400" y2="75" stroke="#fb923c" stroke-width="1"/>
+    <line x1="0" y1="150" x2="400" y2="150" stroke="#fb923c" stroke-width="1"/>
+    <line x1="0" y1="225" x2="400" y2="225" stroke="#fb923c" stroke-width="1"/>
+    <line x1="100" y1="0" x2="100" y2="300" stroke="#fb923c" stroke-width="1"/>
+    <line x1="200" y1="0" x2="200" y2="300" stroke="#fb923c" stroke-width="1"/>
+    <line x1="300" y1="0" x2="300" y2="300" stroke="#fb923c" stroke-width="1"/>
+  </g>
+
+  <!-- Waveform decoration (deterministic per title) -->
+  <g>
+  <polyline points="0,185.5 8,185.8 16,187.1 24,189.5 32,192.6 40,196.1 48,199.7 56,202.9 64,205.5 72,207.3 80,208.3 88,208.7 96,208.5 104,208.3 112,208.1 120,208.4 128,209.3 136,210.8 144,213.0 152,215.6 160,218.3 168,220.8 176,222.7 184,223.7 192,223.7 200,222.5 208,220.2 216,217.0 224,213.3 232,209.4 240,205.7 248,202.6 256,200.2 264,198.7 272,198.0 280,198.0 288,198.3 296,198.8 304,199.1 312,198.9 320,198.1 328,196.7 336,194.8 344,192.6 352,190.5 360,188.7 368,187.6 376,187.5 384,188.5 392,190.6 400,193.7" fill="none" stroke="#fb923c" stroke-width="1.5" opacity="0.35"/>
+  <polyline points="0,238.1 8,235.2 16,232.6 24,230.3 32,228.3 40,226.5 48,224.8 56,223.2 64,221.6 72,220.1 80,219.1 88,218.6 96,219.0 104,220.4 112,223.0 120,226.8 128,231.6 136,237.0 144,242.5 152,247.6 160,251.6 168,254.1 176,254.5 184,252.8 192,248.9 200,243.2 208,236.2 216,228.6 224,221.2 232,214.8 240,210.0 248,207.4 256,207.2 264,209.4 272,213.7 280,219.6 288,226.5 296,233.5 304,240.0 312,245.4 320,249.2 328,251.1 336,251.2 344,249.7 352,246.9 360,243.2 368,239.2 376,235.2 384,231.5 392,228.5 400,226.1" fill="none" stroke="#fb923c" stroke-width="1.5" opacity="0.22"/>
+  <polyline points="0,250.8 8,258.0 16,266.1 24,274.3 32,281.8 40,287.7 48,291.5 56,292.8 64,291.4 72,287.5 80,281.7 88,274.4 96,266.5 104,258.7 112,251.9 120,246.4 128,242.8 136,241.0 144,240.9 152,242.3 160,244.7 168,247.5 176,250.5 184,253.3 192,255.7 200,257.8 208,259.6 216,261.3 224,263.3 232,265.7 240,268.7 248,272.1 256,275.9 264,279.5 272,282.6 280,284.6 288,285.1 296,283.7 304,280.3 312,275.0 320,268.0 328,260.1 336,251.8 344,244.1 352,237.7 360,233.3 368,231.3 376,232.0 384,235.2 392,240.6 400,247.6" fill="none" stroke="#fb923c" stroke-width="1.5" opacity="0.13"/>
+  </g>
+
+  <!-- Header -->
+  <text x="20" y="40" font-family="Inter, sans-serif" font-size="14" fill="#fb923c" font-weight="600">
+    UWA / 08-23
+  </text>
+
+  <!-- Keyword badge -->
+  <rect x="20" y="60" width="116" height="28" rx="14" fill="#fb923c" opacity="0.2"/>
+  <text x="30" y="79" font-family="Inter, sans-serif" font-size="13" fill="#fb923c" font-weight="500">
+    localization
+  </text>
+
+  <!-- Title -->
+  <foreignObject x="20" y="110" width="360" height="120">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="
+      font-family: Inter, sans-serif;
+      font-size: 18px;
+      font-weight: 600;
+      color: #e2e8f0;
+      line-height: 1.4;
+      overflow: hidden;
+      display: -webkit-box;
+      -webkit-line-clamp: 4;
+      -webkit-box-orient: vertical;
+    ">
+      Electrosensing-Based Three-Dimensional Localization and O...
+    </div>
+  </foreignObject>
+
+  <!-- Author -->
+  <text x="20" y="250" font-family="Inter, sans-serif" font-size="13" fill="#94a3b8">
+    Tansheng Chen
+  </text>
+
+  <!-- Footer -->
+  <text x="20" y="275" font-family="Inter, sans-serif" font-size="11" fill="#64748b">
+    Bioinspiration &amp;amp; Biomimetics
+  </text>
+
+  <!-- Score badge -->
+  <circle cx="360" cy="40" r="24" fill="#fb923c" opacity="0.2"/>
+  <text x="360" y="46" font-family="Inter, sans-serif" font-size="14" fill="#fb923c" font-weight="700" text-anchor="middle">
+    55
+  </text>
+</svg>
