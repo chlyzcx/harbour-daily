@@ -120,6 +120,23 @@ def generate_markdown_files(selection: DailySelection, news_items: list[NewsItem
         if preserved_news:
             print(f"Preserving {len(preserved_news)} news items from an earlier run today")
 
+    # Same-day re-runs can be network-degraded (OpenAlex/arXiv/S2 throttled
+    # on shared CI IPs): a degraded re-run would select fewer papers than the
+    # healthy earlier run and the rewrite would erase the rest. When this run
+    # selected FEWER papers than are already published, keep the published set.
+    preserved_papers: list[tuple[str, str]] = []
+    paper_dir = daily_dir / "paper"
+    if paper_dir.exists():
+        preserved_papers = [
+            (p.name, p.read_text(encoding="utf-8"))
+            for p in sorted(paper_dir.glob("*.md"))
+        ]
+    preserve_papers = bool(preserved_papers) and len(selection.papers) < len(preserved_papers)
+    if preserve_papers:
+        print(f"Re-run selected only {len(selection.papers)} papers but "
+              f"{len(preserved_papers)} are already published; "
+              f"keeping the published set (degraded fetch protection)")
+
     # Clean stale files from previous runs to avoid duplicate ranks
     if daily_dir.exists():
         shutil.rmtree(daily_dir)
@@ -133,10 +150,16 @@ def generate_markdown_files(selection: DailySelection, news_items: list[NewsItem
         filepath.write_text(article.to_markdown(date_str, rank), encoding="utf-8")
         print(f"Generated: {filepath}")
 
-    for rank, paper in enumerate(selection.papers, start=1):
-        write_article(paper, rank)
+    if preserve_papers:
+        paper_dir.mkdir(exist_ok=True)
+        for name, content in preserved_papers:
+            (paper_dir / name).write_text(content, encoding="utf-8")
+            print(f"Preserved: {paper_dir / name}")
+    else:
+        for rank, paper in enumerate(selection.papers, start=1):
+            write_article(paper, rank)
 
-    paper_count = len(selection.papers)
+    paper_count = len(preserved_papers) if preserve_papers else len(selection.papers)
     for i, item in enumerate(news_items, start=1):
         write_article(item, paper_count + i)
 
@@ -147,7 +170,35 @@ def generate_markdown_files(selection: DailySelection, news_items: list[NewsItem
         print(f"Preserved: {news_dir / name}")
 
     # Generate managed-manifest.json (papers + news)
-    manifest = selection.to_manifest()
+    if preserve_papers:
+        # The selection was discarded; rebuild paper entries from the
+        # preserved files' front matter instead of the selection.
+        manifest = {
+            "schema_version": 2,
+            "cycle_id": f"daily-{date_str}",
+            "display_date": date_str,
+            "articles": [],
+            "assets": [],
+        }
+        for name, content in preserved_papers:
+            cid_m = re.search(r'candidateId: "(.+?)"', content)
+            rank_m = re.search(r'rank: (\d+)', content)
+            if not (cid_m and rank_m):
+                continue
+            manifest["articles"].append({
+                "candidate_id": cid_m.group(1),
+                "category": "Paper",
+                "rank": int(rank_m.group(1)),
+                "path": f"docs/daily/{date_str}/paper/{name}",
+            })
+            img_m = re.search(r'previewImage: "(.+?)"', content)
+            if img_m:
+                manifest["assets"].append({
+                    "candidate_id": cid_m.group(1),
+                    "path": f"docs/public{img_m.group(1)}",
+                })
+    else:
+        manifest = selection.to_manifest()
     for i, item in enumerate(news_items, start=1):
         manifest["articles"].append({
             "candidate_id": item.candidate_id,
@@ -184,6 +235,15 @@ def generate_markdown_files(selection: DailySelection, news_items: list[NewsItem
 
     manifest_path.write_text(json.dumps(manifest, indent=2, ensure_ascii=False), encoding="utf-8")
     print(f"Generated: {manifest_path}")
+
+    # Record actually-published papers in the seen store (cross-day dedup).
+    # In preserve mode the new selection was discarded, so it must NOT be
+    # recorded — those papers stay eligible for future days.
+    if not preserve_papers:
+        seen = load_seen_papers(date.fromisoformat(date_str))
+        for paper in selection.papers:
+            seen[_paper_uid(paper)] = date_str
+        save_seen_papers(seen)
 
 
 def fetch_daily_papers(target_date: date, project_root: Path) -> DailySelection:
@@ -244,11 +304,9 @@ def fetch_daily_papers(target_date: date, project_root: Path) -> DailySelection:
     # Select top N (leave room for news: site limit is 15 articles/day total)
     selected = filtered[:PAPER_TARGET]
     print(f"Selected {len(selected)} papers for {target_date}")
-
-    # Record the selection so later days skip these papers
-    for paper in selected:
-        seen[_paper_uid(paper)] = today_iso
-    save_seen_papers(seen)
+    # Note: selected papers are recorded into the seen store only after
+    # generate_markdown_files confirms they were actually written (a
+    # degraded-re-run preserve may discard the selection).
 
     # Create selection
     selection = DailySelection(date=target_date.isoformat())

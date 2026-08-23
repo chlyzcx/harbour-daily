@@ -16,6 +16,7 @@ from config import (
     PAPER_DOMAIN_KEYWORDS,
 )
 from models import Paper, Source
+from http_utils import get_with_retry
 
 
 def normalize_journal_name(name: str) -> str:
@@ -165,7 +166,7 @@ def fetch_openalex_papers(target_date: date, max_results: int = 100) -> list[Pap
     }
 
     try:
-        response = requests.get(OPENALEX_API, params=params, timeout=30)
+        response = get_with_retry(OPENALEX_API, params=params, timeout=30)
         response.raise_for_status()
         data = response.json()
 

@@ -8,6 +8,7 @@ from typing import Optional
 from config import RESEARCH_DIRECTIONS, ARXIV_API, MAX_AGE_DAYS
 from models import Paper, Source
 from fetch_openalex import match_research_directions, extract_keywords, is_domain_relevant
+from http_utils import get_with_retry
 
 
 def fetch_arxiv_papers(target_date: date, max_results: int = 50) -> list[Paper]:
@@ -41,7 +42,7 @@ def fetch_arxiv_papers(target_date: date, max_results: int = 50) -> list[Paper]:
     }
 
     try:
-        response = requests.get(ARXIV_API, params=params, timeout=30)
+        response = get_with_retry(ARXIV_API, params=params, timeout=30)
         response.raise_for_status()
 
         # Parse Atom XML

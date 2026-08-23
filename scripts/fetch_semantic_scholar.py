@@ -7,6 +7,7 @@ from typing import Optional
 from config import RESEARCH_DIRECTIONS, MAX_AGE_DAYS
 from models import Paper, Source
 from fetch_openalex import match_research_directions, extract_keywords, is_domain_relevant
+from http_utils import get_with_retry
 
 
 S2_API = "https://api.semanticscholar.org/graph/v1/paper/search"
@@ -41,7 +42,7 @@ def fetch_semantic_scholar_papers(target_date: date, max_results: int = 100) -> 
             # Add delay to avoid rate limiting (429 errors)
             time.sleep(3)  # Wait 3 seconds between requests
 
-            response = requests.get(S2_API, params=params, timeout=30)
+            response = get_with_retry(S2_API, params=params, timeout=30)
             response.raise_for_status()
             data = response.json()
 

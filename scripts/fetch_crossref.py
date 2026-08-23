@@ -6,6 +6,7 @@ from typing import Optional
 from config import RESEARCH_DIRECTIONS, MAX_AGE_DAYS, DATASET_DOI_PREFIXES
 from models import Paper, Source
 from fetch_openalex import match_research_directions, extract_keywords, is_domain_relevant
+from http_utils import get_with_retry
 
 
 CROSSREF_API = "https://api.crossref.org/works"
@@ -37,7 +38,7 @@ def fetch_crossref_papers(target_date: date, max_results: int = 100) -> list[Pap
         }
 
         try:
-            response = requests.get(CROSSREF_API, params=params, timeout=30)
+            response = get_with_retry(CROSSREF_API, params=params, timeout=30)
             response.raise_for_status()
             data = response.json()
 
