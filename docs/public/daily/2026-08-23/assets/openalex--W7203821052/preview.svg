@@ -1,0 +1,72 @@
+<svg width="400" height="300" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#042f2e;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#115e59;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="400" height="300" fill="url(#grad)"/>
+
+  <!-- Grid pattern -->
+  <g opacity="0.1">
+    <line x1="0" y1="75" x2="400" y2="75" stroke="#2dd4bf" stroke-width="1"/>
+    <line x1="0" y1="150" x2="400" y2="150" stroke="#2dd4bf" stroke-width="1"/>
+    <line x1="0" y1="225" x2="400" y2="225" stroke="#2dd4bf" stroke-width="1"/>
+    <line x1="100" y1="0" x2="100" y2="300" stroke="#2dd4bf" stroke-width="1"/>
+    <line x1="200" y1="0" x2="200" y2="300" stroke="#2dd4bf" stroke-width="1"/>
+    <line x1="300" y1="0" x2="300" y2="300" stroke="#2dd4bf" stroke-width="1"/>
+  </g>
+
+  <!-- Waveform decoration (deterministic per title) -->
+  <g>
+  <polyline points="0,208.6 8,202.7 16,196.8 24,191.7 32,188.1 40,186.5 48,186.9 56,189.2 64,192.6 72,196.7 80,200.6 88,203.8 96,206.1 104,207.4 112,208.1 120,208.6 128,209.4 136,210.7 144,212.8 152,215.3 160,217.9 168,220.0 176,220.9 184,220.1 192,217.5 200,213.1 208,207.6 216,201.5 224,195.8 232,191.2 240,188.3 248,187.4 256,188.4 264,190.9 272,194.2 280,197.6 288,200.7 296,202.9 304,204.3 312,205.1 320,205.7 328,206.6 336,208.1 344,210.5 352,213.5 360,216.8 368,219.8 376,221.8 384,222.2 392,220.7 400,217.3" fill="none" stroke="#2dd4bf" stroke-width="1.5" opacity="0.35"/>
+  <polyline points="0,246.1 8,245.2 16,243.9 24,242.9 32,242.8 40,243.6 48,245.1 56,246.8 64,247.9 72,247.7 80,245.7 88,241.6 96,235.9 104,229.0 112,221.9 120,215.8 128,211.3 136,209.0 144,209.2 152,211.4 160,215.1 168,219.2 176,223.2 184,226.2 192,228.0 200,228.8 208,229.0 216,229.3 224,230.3 232,232.5 240,236.1 248,240.9 256,246.2 264,251.2 272,255.0 280,256.8 288,256.1 296,253.0 304,247.9 312,241.6 320,235.1 328,229.2 336,224.8 344,222.1 352,221.0 360,221.2 368,221.8 376,222.3 384,222.1 392,220.8 400,218.7" fill="none" stroke="#2dd4bf" stroke-width="1.5" opacity="0.22"/>
+  <polyline points="0,240.9 8,236.3 16,233.2 24,232.5 32,234.6 40,239.2 48,245.7 56,253.2 64,260.4 72,266.5 80,270.6 88,272.6 96,272.9 104,272.1 112,271.2 120,271.1 128,272.3 136,275.1 144,279.0 152,283.5 160,287.3 168,289.6 176,289.6 184,286.9 192,281.7 200,274.6 208,266.8 216,259.3 224,253.1 232,249.0 240,247.1 248,247.1 256,248.3 264,249.7 272,250.4 280,249.9 288,247.9 296,244.7 304,241.0 312,237.9 320,236.4 328,237.1 336,240.3 344,246.0 352,253.5 360,261.6 368,269.2 376,275.3 384,279.3 392,280.9 400,280.4" fill="none" stroke="#2dd4bf" stroke-width="1.5" opacity="0.13"/>
+  </g>
+
+  <!-- Header -->
+  <text x="20" y="40" font-family="Inter, sans-serif" font-size="14" fill="#2dd4bf" font-weight="600">
+    UWA / 08-23
+  </text>
+
+  <!-- Keyword badge -->
+  <rect x="20" y="60" width="84" height="28" rx="14" fill="#2dd4bf" opacity="0.2"/>
+  <text x="30" y="79" font-family="Inter, sans-serif" font-size="13" fill="#2dd4bf" font-weight="500">
+    Research
+  </text>
+
+  <!-- Title -->
+  <foreignObject x="20" y="110" width="360" height="120">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="
+      font-family: Inter, sans-serif;
+      font-size: 18px;
+      font-weight: 600;
+      color: #e2e8f0;
+      line-height: 1.4;
+      overflow: hidden;
+      display: -webkit-box;
+      -webkit-line-clamp: 4;
+      -webkit-box-orient: vertical;
+    ">
+      Controlling low frequency waves for marine vibrator syste...
+    </div>
+  </foreignObject>
+
+  <!-- Author -->
+  <text x="20" y="250" font-family="Inter, sans-serif" font-size="13" fill="#94a3b8">
+    Xingguo Huang
+  </text>
+
+  <!-- Footer -->
+  <text x="20" y="275" font-family="Inter, sans-serif" font-size="11" fill="#64748b">
+    Journal of Geophysics and Engineering
+  </text>
+
+  <!-- Score badge -->
+  <circle cx="360" cy="40" r="24" fill="#2dd4bf" opacity="0.2"/>
+  <text x="360" y="46" font-family="Inter, sans-serif" font-size="14" fill="#2dd4bf" font-weight="700" text-anchor="middle">
+    55
+  </text>
+</svg>
