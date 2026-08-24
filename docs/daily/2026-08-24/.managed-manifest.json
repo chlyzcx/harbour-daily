@@ -1,0 +1,109 @@
+{
+  "schema_version": 2,
+  "cycle_id": "daily-2026-08-24",
+  "display_date": "2026-08-24",
+  "articles": [
+    {
+      "candidate_id": "s2--c79b591bd6a3df16f5c3aff3411251cdc25b2baf",
+      "category": "Paper",
+      "rank": 1,
+      "path": "docs/daily/2026-08-24/paper/01-a-causal-framework-for-quantifying-task-driven-sel.md"
+    },
+    {
+      "candidate_id": "s2--e8b54c5a460538c4bdd6acc687a0b47edf61a00f",
+      "category": "Paper",
+      "rank": 2,
+      "path": "docs/daily/2026-08-24/paper/02-an-adaptive-mimo-optical-multi-color-transceiver-f.md"
+    },
+    {
+      "candidate_id": "s2--712696bb4f5b138d333828bc46fb85853d832144",
+      "category": "Paper",
+      "rank": 3,
+      "path": "docs/daily/2026-08-24/paper/03-a-novel-integrated-underwater-communication-and-po.md"
+    },
+    {
+      "candidate_id": "s2--46f5d8ac7ebf4d5622bf0e18745c0ed9b9c5ac30",
+      "category": "Paper",
+      "rank": 4,
+      "path": "docs/daily/2026-08-24/paper/04-marine-mammal-acoustic-species-recognition-via-met.md"
+    },
+    {
+      "candidate_id": "s2--75c05986318d3dc5aab0d40c52d558fa7d4f4119",
+      "category": "Paper",
+      "rank": 5,
+      "path": "docs/daily/2026-08-24/paper/05-training-set-synthesis-for-bioacoustic-denoising-a.md"
+    },
+    {
+      "candidate_id": "openalex--W7203944347",
+      "category": "Paper",
+      "rank": 6,
+      "path": "docs/daily/2026-08-24/paper/06-teach-a-molmo2fish-towards-interactive-fish-tracki.md"
+    },
+    {
+      "candidate_id": "crossref--10.26748-ksoe.2026.031",
+      "category": "Paper",
+      "rank": 7,
+      "path": "docs/daily/2026-08-24/paper/07-robust-underwater-object-detection-and-relative-na.md"
+    },
+    {
+      "candidate_id": "crossref--10.64898-2026.08.08.743555",
+      "category": "Paper",
+      "rank": 8,
+      "path": "docs/daily/2026-08-24/paper/08-bats-decouple-sonar-gaze-from-steering-to-resolve-.md"
+    },
+    {
+      "candidate_id": "crossref--10.26599-etsd.2026.9190036",
+      "category": "Paper",
+      "rank": 9,
+      "path": "docs/daily/2026-08-24/paper/09-ltpgtunderwater-sonar-moving-target-usmt-datasetlt.md"
+    },
+    {
+      "candidate_id": "openalex--W7203998740",
+      "category": "Paper",
+      "rank": 10,
+      "path": "docs/daily/2026-08-24/paper/10-electrosensing-based-three-dimensional-localizatio.md"
+    }
+  ],
+  "assets": [
+    {
+      "candidate_id": "s2--c79b591bd6a3df16f5c3aff3411251cdc25b2baf",
+      "path": "docs/public/daily/2026-08-24/assets/s2--c79b591bd6a3df16f5c3aff3411251cdc25b2baf/preview.png"
+    },
+    {
+      "candidate_id": "s2--e8b54c5a460538c4bdd6acc687a0b47edf61a00f",
+      "path": "docs/public/daily/2026-08-24/assets/s2--e8b54c5a460538c4bdd6acc687a0b47edf61a00f/preview.svg"
+    },
+    {
+      "candidate_id": "s2--712696bb4f5b138d333828bc46fb85853d832144",
+      "path": "docs/public/daily/2026-08-24/assets/s2--712696bb4f5b138d333828bc46fb85853d832144/preview.svg"
+    },
+    {
+      "candidate_id": "s2--46f5d8ac7ebf4d5622bf0e18745c0ed9b9c5ac30",
+      "path": "docs/public/daily/2026-08-24/assets/s2--46f5d8ac7ebf4d5622bf0e18745c0ed9b9c5ac30/preview.svg"
+    },
+    {
+      "candidate_id": "s2--75c05986318d3dc5aab0d40c52d558fa7d4f4119",
+      "path": "docs/public/daily/2026-08-24/assets/s2--75c05986318d3dc5aab0d40c52d558fa7d4f4119/preview.png"
+    },
+    {
+      "candidate_id": "openalex--W7203944347",
+      "path": "docs/public/daily/2026-08-24/assets/openalex--W7203944347/preview.png"
+    },
+    {
+      "candidate_id": "crossref--10.26748-ksoe.2026.031",
+      "path": "docs/public/daily/2026-08-24/assets/crossref--10.26748-ksoe.2026.031/preview.svg"
+    },
+    {
+      "candidate_id": "crossref--10.64898-2026.08.08.743555",
+      "path": "docs/public/daily/2026-08-24/assets/crossref--10.64898-2026.08.08.743555/preview.svg"
+    },
+    {
+      "candidate_id": "crossref--10.26599-etsd.2026.9190036",
+      "path": "docs/public/daily/2026-08-24/assets/crossref--10.26599-etsd.2026.9190036/preview.svg"
+    },
+    {
+      "candidate_id": "openalex--W7203998740",
+      "path": "docs/public/daily/2026-08-24/assets/openalex--W7203998740/preview.svg"
+    }
+  ]
+}
