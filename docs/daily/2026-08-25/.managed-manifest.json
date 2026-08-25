@@ -1,0 +1,59 @@
+{
+  "schema_version": 2,
+  "cycle_id": "daily-2026-08-25",
+  "display_date": "2026-08-25",
+  "articles": [
+    {
+      "candidate_id": "crossref--10.3390-jmse14171561",
+      "category": "Paper",
+      "rank": 1,
+      "path": "docs/daily/2026-08-25/paper/01-efficient-and-interpretable-underwater-acoustic-ta.md"
+    },
+    {
+      "candidate_id": "crossref--10.1038-s41598-026-50329-0",
+      "category": "Paper",
+      "rank": 2,
+      "path": "docs/daily/2026-08-25/paper/02-doped-fiber-amplifiers-assisted-hybrid-uwoc-fiber-.md"
+    },
+    {
+      "candidate_id": "openalex--W7203768053",
+      "category": "Paper",
+      "rank": 3,
+      "path": "docs/daily/2026-08-25/paper/03-study-on-the-mechanical-behavior-of-micro-optical-.md"
+    },
+    {
+      "candidate_id": "news--19f838dc673e",
+      "category": "News",
+      "rank": 4,
+      "path": "docs/daily/2026-08-25/news/04-kongsberg-launches-aegir-subsea-situational-awaren.md"
+    },
+    {
+      "candidate_id": "news--65780e6c8ee0",
+      "category": "News",
+      "rank": 5,
+      "path": "docs/daily/2026-08-25/news/05-australia-lays-keel-for-first-hunter-class-anti-su.md"
+    }
+  ],
+  "assets": [
+    {
+      "candidate_id": "crossref--10.3390-jmse14171561",
+      "path": "docs/public/daily/2026-08-25/assets/crossref--10.3390-jmse14171561/preview.png"
+    },
+    {
+      "candidate_id": "crossref--10.1038-s41598-026-50329-0",
+      "path": "docs/public/daily/2026-08-25/assets/crossref--10.1038-s41598-026-50329-0/preview.svg"
+    },
+    {
+      "candidate_id": "openalex--W7203768053",
+      "path": "docs/public/daily/2026-08-25/assets/openalex--W7203768053/preview.png"
+    },
+    {
+      "candidate_id": "news--19f838dc673e",
+      "path": "docs/public/daily/2026-08-25/assets/news--19f838dc673e/preview.png"
+    },
+    {
+      "candidate_id": "news--65780e6c8ee0",
+      "path": "docs/public/daily/2026-08-25/assets/news--65780e6c8ee0/preview.png"
+    }
+  ]
+}
