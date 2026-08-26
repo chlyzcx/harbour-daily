@@ -1,0 +1,72 @@
+<svg width="400" height="300" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#042f2e;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#115e59;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="400" height="300" fill="url(#grad)"/>
+
+  <!-- Grid pattern -->
+  <g opacity="0.1">
+    <line x1="0" y1="75" x2="400" y2="75" stroke="#2dd4bf" stroke-width="1"/>
+    <line x1="0" y1="150" x2="400" y2="150" stroke="#2dd4bf" stroke-width="1"/>
+    <line x1="0" y1="225" x2="400" y2="225" stroke="#2dd4bf" stroke-width="1"/>
+    <line x1="100" y1="0" x2="100" y2="300" stroke="#2dd4bf" stroke-width="1"/>
+    <line x1="200" y1="0" x2="200" y2="300" stroke="#2dd4bf" stroke-width="1"/>
+    <line x1="300" y1="0" x2="300" y2="300" stroke="#2dd4bf" stroke-width="1"/>
+  </g>
+
+  <!-- Waveform decoration (deterministic per title) -->
+  <g>
+  <polyline points="0,194.6 8,193.7 16,193.5 24,194.2 32,196.0 40,198.8 48,202.5 56,206.9 64,211.5 72,216.0 80,219.7 88,222.2 96,223.2 104,222.4 112,220.0 120,215.9 128,210.7 136,204.8 144,198.8 152,193.5 160,189.3 168,186.6 176,185.8 184,186.8 192,189.6 200,193.6 208,198.6 216,203.9 224,208.9 232,213.3 240,216.5 248,218.5 256,219.1 264,218.5 272,216.9 280,214.6 288,211.9 296,209.2 304,206.6 312,204.3 320,202.4 328,200.9 336,199.6 344,198.6 352,197.6 360,196.8 368,196.1 376,195.6 384,195.5 392,196.0 400,197.1" fill="none" stroke="#2dd4bf" stroke-width="1.5" opacity="0.35"/>
+  <polyline points="0,246.3 8,239.9 16,233.1 24,226.6 32,220.9 40,216.5 48,213.8 56,212.7 64,213.2 72,215.0 80,217.7 88,220.8 96,224.0 104,226.9 112,229.5 120,231.5 128,233.2 136,234.6 144,236.0 152,237.6 160,239.4 168,241.6 176,243.9 184,246.1 192,247.9 200,248.9 208,248.7 216,247.2 224,244.2 232,239.8 240,234.2 248,227.9 256,221.5 264,215.7 272,210.9 280,207.9 288,206.9 296,208.0 304,211.2 312,216.1 320,222.3 328,229.0 336,235.7 344,241.7 352,246.4 360,249.6 368,251.1 376,251.1 384,249.6 392,247.1 400,244.1" fill="none" stroke="#2dd4bf" stroke-width="1.5" opacity="0.22"/>
+  <polyline points="0,261.5 8,262.7 16,264.1 24,266.2 32,269.0 40,272.5 48,276.5 56,280.6 64,284.2 72,286.9 80,288.0 88,287.3 96,284.6 104,279.9 112,273.5 120,265.9 128,257.9 136,250.1 144,243.3 152,238.1 160,234.9 168,233.9 176,234.9 184,237.8 192,241.9 200,246.8 208,251.8 216,256.4 224,260.3 232,263.2 240,265.3 248,266.6 256,267.6 264,268.5 272,269.7 280,271.4 288,273.7 296,276.5 304,279.5 312,282.2 320,284.2 328,285.0 336,284.2 344,281.6 352,277.1 360,270.9 368,263.7 376,255.8 384,248.2 392,241.5 400,236.3" fill="none" stroke="#2dd4bf" stroke-width="1.5" opacity="0.13"/>
+  </g>
+
+  <!-- Header -->
+  <text x="20" y="40" font-family="Inter, sans-serif" font-size="14" fill="#2dd4bf" font-weight="600">
+    UWA / 08-26
+  </text>
+
+  <!-- Keyword badge -->
+  <rect x="20" y="60" width="132" height="28" rx="14" fill="#2dd4bf" opacity="0.2"/>
+  <text x="30" y="79" font-family="Inter, sans-serif" font-size="13" fill="#2dd4bf" font-weight="500">
+    neural network
+  </text>
+
+  <!-- Title -->
+  <foreignObject x="20" y="110" width="360" height="120">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="
+      font-family: Inter, sans-serif;
+      font-size: 18px;
+      font-weight: 600;
+      color: #e2e8f0;
+      line-height: 1.4;
+      overflow: hidden;
+      display: -webkit-box;
+      -webkit-line-clamp: 4;
+      -webkit-box-orient: vertical;
+    ">
+      Modeling and RBFNN-AMSC Tracking Control of a Cable-Drive...
+    </div>
+  </foreignObject>
+
+  <!-- Author -->
+  <text x="20" y="250" font-family="Inter, sans-serif" font-size="13" fill="#94a3b8">
+    Kan Xu
+  </text>
+
+  <!-- Footer -->
+  <text x="20" y="275" font-family="Inter, sans-serif" font-size="11" fill="#64748b">
+    Automation
+  </text>
+
+  <!-- Score badge -->
+  <circle cx="360" cy="40" r="24" fill="#2dd4bf" opacity="0.2"/>
+  <text x="360" y="46" font-family="Inter, sans-serif" font-size="14" fill="#2dd4bf" font-weight="700" text-anchor="middle">
+    55
+  </text>
+</svg>

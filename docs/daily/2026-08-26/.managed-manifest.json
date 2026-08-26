@@ -1,0 +1,129 @@
+{
+  "schema_version": 2,
+  "cycle_id": "daily-2026-08-26",
+  "display_date": "2026-08-26",
+  "articles": [
+    {
+      "candidate_id": "openalex--W7204074201",
+      "category": "Paper",
+      "rank": 1,
+      "path": "docs/daily/2026-08-26/paper/01-underwater-acoustic-signal-recognition-method-join.md"
+    },
+    {
+      "candidate_id": "openalex--W7204138931",
+      "category": "Paper",
+      "rank": 2,
+      "path": "docs/daily/2026-08-26/paper/02-physics-regularized-deep-learning-for-passive-soun.md"
+    },
+    {
+      "candidate_id": "openalex--W7204145722",
+      "category": "Paper",
+      "rank": 3,
+      "path": "docs/daily/2026-08-26/paper/03-amf-music-for-underwater-acoustic-doa-estimation-u.md"
+    },
+    {
+      "candidate_id": "crossref--10.64898-2026.08.24.746702",
+      "category": "Paper",
+      "rank": 4,
+      "path": "docs/daily/2026-08-26/paper/04-absolute-measures-of-time-difference-of-arrival-po.md"
+    },
+    {
+      "candidate_id": "crossref--10.3390-jmse14171571",
+      "category": "Paper",
+      "rank": 5,
+      "path": "docs/daily/2026-08-26/paper/05-robust-endpoint-detection-of-marine-biological-aco.md"
+    },
+    {
+      "candidate_id": "crossref--10.3390-app16178467",
+      "category": "Paper",
+      "rank": 6,
+      "path": "docs/daily/2026-08-26/paper/06-analysis-and-optimization-of-electromagnetic-vibra.md"
+    },
+    {
+      "candidate_id": "crossref--10.31235-osf.io-w59nx_v1",
+      "category": "Paper",
+      "rank": 7,
+      "path": "docs/daily/2026-08-26/paper/07-deleting-the-call-does-not-delete-the-evidence-a-w.md"
+    },
+    {
+      "candidate_id": "crossref--10.3390-automation7050133",
+      "category": "Paper",
+      "rank": 8,
+      "path": "docs/daily/2026-08-26/paper/08-modeling-and-rbfnn-amsc-tracking-control-of-a-cabl.md"
+    },
+    {
+      "candidate_id": "crossref--10.1038-s41598-026-67307-1",
+      "category": "Paper",
+      "rank": 9,
+      "path": "docs/daily/2026-08-26/paper/09-pof-assisted-quantum-dot-fiber-wireless-system-for.md"
+    },
+    {
+      "candidate_id": "crossref--10.3390-s26175376",
+      "category": "Paper",
+      "rank": 10,
+      "path": "docs/daily/2026-08-26/paper/10-single-beam-sonar-motion-deformation-compensation-.md"
+    },
+    {
+      "candidate_id": "news--3627c3e2f5ac",
+      "category": "News",
+      "rank": 11,
+      "path": "docs/daily/2026-08-26/news/11-sonardyne-expands-sprint-nav-into-family-of-naviga.md"
+    },
+    {
+      "candidate_id": "news--52d5484402bc",
+      "category": "News",
+      "rank": 12,
+      "path": "docs/daily/2026-08-26/news/12-ocius-selects-thayermahan-and-thales-australia-thi.md"
+    }
+  ],
+  "assets": [
+    {
+      "candidate_id": "openalex--W7204074201",
+      "path": "docs/public/daily/2026-08-26/assets/openalex--W7204074201/preview.png"
+    },
+    {
+      "candidate_id": "openalex--W7204138931",
+      "path": "docs/public/daily/2026-08-26/assets/openalex--W7204138931/preview.png"
+    },
+    {
+      "candidate_id": "openalex--W7204145722",
+      "path": "docs/public/daily/2026-08-26/assets/openalex--W7204145722/preview.png"
+    },
+    {
+      "candidate_id": "crossref--10.64898-2026.08.24.746702",
+      "path": "docs/public/daily/2026-08-26/assets/crossref--10.64898-2026.08.24.746702/preview.png"
+    },
+    {
+      "candidate_id": "crossref--10.3390-jmse14171571",
+      "path": "docs/public/daily/2026-08-26/assets/crossref--10.3390-jmse14171571/preview.svg"
+    },
+    {
+      "candidate_id": "crossref--10.3390-app16178467",
+      "path": "docs/public/daily/2026-08-26/assets/crossref--10.3390-app16178467/preview.svg"
+    },
+    {
+      "candidate_id": "crossref--10.31235-osf.io-w59nx_v1",
+      "path": "docs/public/daily/2026-08-26/assets/crossref--10.31235-osf.io-w59nx_v1/preview.svg"
+    },
+    {
+      "candidate_id": "crossref--10.3390-automation7050133",
+      "path": "docs/public/daily/2026-08-26/assets/crossref--10.3390-automation7050133/preview.svg"
+    },
+    {
+      "candidate_id": "crossref--10.1038-s41598-026-67307-1",
+      "path": "docs/public/daily/2026-08-26/assets/crossref--10.1038-s41598-026-67307-1/preview.svg"
+    },
+    {
+      "candidate_id": "crossref--10.3390-s26175376",
+      "path": "docs/public/daily/2026-08-26/assets/crossref--10.3390-s26175376/preview.png"
+    },
+    {
+      "candidate_id": "news--3627c3e2f5ac",
+      "path": "docs/public/daily/2026-08-26/assets/news--3627c3e2f5ac/preview.png"
+    },
+    {
+      "candidate_id": "news--52d5484402bc",
+      "path": "docs/public/daily/2026-08-26/assets/news--52d5484402bc/preview.png"
+    }
+  ]
+}
