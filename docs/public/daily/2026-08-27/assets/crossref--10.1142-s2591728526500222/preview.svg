@@ -1,0 +1,72 @@
+<svg width="400" height="300" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#042f2e;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#115e59;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="400" height="300" fill="url(#grad)"/>
+
+  <!-- Grid pattern -->
+  <g opacity="0.1">
+    <line x1="0" y1="75" x2="400" y2="75" stroke="#2dd4bf" stroke-width="1"/>
+    <line x1="0" y1="150" x2="400" y2="150" stroke="#2dd4bf" stroke-width="1"/>
+    <line x1="0" y1="225" x2="400" y2="225" stroke="#2dd4bf" stroke-width="1"/>
+    <line x1="100" y1="0" x2="100" y2="300" stroke="#2dd4bf" stroke-width="1"/>
+    <line x1="200" y1="0" x2="200" y2="300" stroke="#2dd4bf" stroke-width="1"/>
+    <line x1="300" y1="0" x2="300" y2="300" stroke="#2dd4bf" stroke-width="1"/>
+  </g>
+
+  <!-- Waveform decoration (deterministic per title) -->
+  <g>
+  <polyline points="0,196.8 8,197.1 16,196.3 24,194.6 32,192.4 40,191.0 48,191.1 56,193.5 64,198.1 72,204.2 80,210.8 88,216.5 96,220.2 104,221.5 112,220.5 120,218.0 128,215.0 136,212.5 144,211.1 152,210.9 160,211.2 168,211.2 176,210.0 184,207.0 192,202.3 200,196.7 208,191.2 216,187.2 224,185.5 232,186.5 240,189.9 248,194.7 256,199.8 264,204.0 272,206.7 280,207.8 288,208.0 296,208.1 304,208.9 312,211.0 320,214.3 328,218.1 336,221.4 344,223.0 352,222.3 360,219.0 368,213.6 376,207.2 384,201.1 392,196.5 400,193.9" fill="none" stroke="#2dd4bf" stroke-width="1.5" opacity="0.35"/>
+  <polyline points="0,256.0 8,256.1 16,253.1 24,247.4 32,240.3 40,233.5 48,228.1 56,225.1 64,224.3 72,224.9 80,225.6 88,225.3 96,223.2 104,219.4 112,214.8 120,210.8 128,208.6 136,209.3 144,213.2 152,219.5 160,226.9 168,234.0 176,239.2 184,242.1 192,242.6 200,241.7 208,240.6 216,240.6 224,242.3 232,245.5 240,249.5 248,252.8 256,254.2 264,252.7 272,248.1 280,241.3 288,233.6 296,226.5 304,221.4 312,218.9 320,218.8 328,220.1 336,221.6 344,222.1 352,220.9 360,218.1 368,214.8 376,212.2 384,211.6 392,213.8 400,219.0" fill="none" stroke="#2dd4bf" stroke-width="1.5" opacity="0.22"/>
+  <polyline points="0,255.7 8,258.4 16,258.7 24,257.5 32,256.4 40,256.9 48,260.1 56,266.0 64,273.8 72,281.7 80,288.0 88,291.2 96,290.9 104,287.3 112,282.0 120,276.6 128,272.6 136,271.1 144,271.7 152,273.5 160,274.9 168,274.3 176,270.9 184,264.4 192,256.1 200,247.5 208,240.5 216,236.4 224,235.9 232,238.4 240,242.5 248,246.6 256,249.1 264,249.3 272,247.4 280,244.6 288,242.6 296,242.8 304,246.2 312,252.7 320,261.3 328,270.2 336,277.6 344,282.1 352,283.3 360,281.7 368,278.7 376,276.0 384,275.0 392,276.3 400,279.5" fill="none" stroke="#2dd4bf" stroke-width="1.5" opacity="0.13"/>
+  </g>
+
+  <!-- Header -->
+  <text x="20" y="40" font-family="Inter, sans-serif" font-size="14" fill="#2dd4bf" font-weight="600">
+    UWA / 08-27
+  </text>
+
+  <!-- Keyword badge -->
+  <rect x="20" y="60" width="84" height="28" rx="14" fill="#2dd4bf" opacity="0.2"/>
+  <text x="30" y="79" font-family="Inter, sans-serif" font-size="13" fill="#2dd4bf" font-weight="500">
+    Research
+  </text>
+
+  <!-- Title -->
+  <foreignObject x="20" y="110" width="360" height="120">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="
+      font-family: Inter, sans-serif;
+      font-size: 18px;
+      font-weight: 600;
+      color: #e2e8f0;
+      line-height: 1.4;
+      overflow: hidden;
+      display: -webkit-box;
+      -webkit-line-clamp: 4;
+      -webkit-box-orient: vertical;
+    ">
+      A Cluster-Based Modeling Framework for Rapid Acoustic Fie...
+    </div>
+  </foreignObject>
+
+  <!-- Author -->
+  <text x="20" y="250" font-family="Inter, sans-serif" font-size="13" fill="#94a3b8">
+    Xiaoyi Zhou
+  </text>
+
+  <!-- Footer -->
+  <text x="20" y="275" font-family="Inter, sans-serif" font-size="11" fill="#64748b">
+    Journal of Theoretical and Computational Acoustics
+  </text>
+
+  <!-- Score badge -->
+  <circle cx="360" cy="40" r="24" fill="#2dd4bf" opacity="0.2"/>
+  <text x="360" y="46" font-family="Inter, sans-serif" font-size="14" fill="#2dd4bf" font-weight="700" text-anchor="middle">
+    55
+  </text>
+</svg>

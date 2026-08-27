@@ -1,0 +1,119 @@
+{
+  "schema_version": 2,
+  "cycle_id": "daily-2026-08-27",
+  "display_date": "2026-08-27",
+  "articles": [
+    {
+      "candidate_id": "openalex--W7127789300",
+      "category": "Paper",
+      "rank": 1,
+      "path": "docs/daily/2026-08-27/paper/01-do-sea-lions-fall-silent-when-fish-have-something-.md"
+    },
+    {
+      "candidate_id": "openalex--W7204090564",
+      "category": "Paper",
+      "rank": 2,
+      "path": "docs/daily/2026-08-27/paper/02-spin-based-in-sensor-computing-magnetic-tactile-se.md"
+    },
+    {
+      "candidate_id": "openalex--W7204143612",
+      "category": "Paper",
+      "rank": 3,
+      "path": "docs/daily/2026-08-27/paper/03-description-detection-and-classification-of-hawaii.md"
+    },
+    {
+      "candidate_id": "openalex--W7204167684",
+      "category": "Paper",
+      "rank": 4,
+      "path": "docs/daily/2026-08-27/paper/04-benthicdino-physics-informed-self-distillation-for.md"
+    },
+    {
+      "candidate_id": "openalex--W7204191995",
+      "category": "Paper",
+      "rank": 5,
+      "path": "docs/daily/2026-08-27/paper/05-geometry-driven-opti-acoustic-co-registration-and-.md"
+    },
+    {
+      "candidate_id": "crossref--10.1142-s2591728526500222",
+      "category": "Paper",
+      "rank": 6,
+      "path": "docs/daily/2026-08-27/paper/06-a-cluster-based-modeling-framework-for-rapid-acous.md"
+    },
+    {
+      "candidate_id": "crossref--10.3390-jmse14171581",
+      "category": "Paper",
+      "rank": 7,
+      "path": "docs/daily/2026-08-27/paper/07-nonparametric-and-parametric-modeling-of-hydrodyna.md"
+    },
+    {
+      "candidate_id": "crossref--10.1371-journal.pone.0357087",
+      "category": "Paper",
+      "rank": 8,
+      "path": "docs/daily/2026-08-27/paper/08-high-resolution-mapping-of-artificial-reefs-in-sou.md"
+    },
+    {
+      "candidate_id": "crossref--10.3389-fmars.2026.1903053",
+      "category": "Paper",
+      "rank": 9,
+      "path": "docs/daily/2026-08-27/paper/09-isochronal-band-constrained-multipath-structure-ma.md"
+    },
+    {
+      "candidate_id": "crossref--10.1088-2631-8695-ae9f17",
+      "category": "Paper",
+      "rank": 10,
+      "path": "docs/daily/2026-08-27/paper/10-cdds-yoloa-sonar-image-object-detection-method-bas.md"
+    },
+    {
+      "candidate_id": "news--254984baab12",
+      "category": "News",
+      "rank": 11,
+      "path": "docs/daily/2026-08-27/news/11-哈工程与中国科学院声学研究所签署战略合作框架协议.md"
+    }
+  ],
+  "assets": [
+    {
+      "candidate_id": "openalex--W7127789300",
+      "path": "docs/public/daily/2026-08-27/assets/openalex--W7127789300/preview.svg"
+    },
+    {
+      "candidate_id": "openalex--W7204090564",
+      "path": "docs/public/daily/2026-08-27/assets/openalex--W7204090564/preview.png"
+    },
+    {
+      "candidate_id": "openalex--W7204143612",
+      "path": "docs/public/daily/2026-08-27/assets/openalex--W7204143612/preview.svg"
+    },
+    {
+      "candidate_id": "openalex--W7204167684",
+      "path": "docs/public/daily/2026-08-27/assets/openalex--W7204167684/preview.png"
+    },
+    {
+      "candidate_id": "openalex--W7204191995",
+      "path": "docs/public/daily/2026-08-27/assets/openalex--W7204191995/preview.png"
+    },
+    {
+      "candidate_id": "crossref--10.1142-s2591728526500222",
+      "path": "docs/public/daily/2026-08-27/assets/crossref--10.1142-s2591728526500222/preview.svg"
+    },
+    {
+      "candidate_id": "crossref--10.3390-jmse14171581",
+      "path": "docs/public/daily/2026-08-27/assets/crossref--10.3390-jmse14171581/preview.png"
+    },
+    {
+      "candidate_id": "crossref--10.1371-journal.pone.0357087",
+      "path": "docs/public/daily/2026-08-27/assets/crossref--10.1371-journal.pone.0357087/preview.png"
+    },
+    {
+      "candidate_id": "crossref--10.3389-fmars.2026.1903053",
+      "path": "docs/public/daily/2026-08-27/assets/crossref--10.3389-fmars.2026.1903053/preview.png"
+    },
+    {
+      "candidate_id": "crossref--10.1088-2631-8695-ae9f17",
+      "path": "docs/public/daily/2026-08-27/assets/crossref--10.1088-2631-8695-ae9f17/preview.svg"
+    },
+    {
+      "candidate_id": "news--254984baab12",
+      "path": "docs/public/daily/2026-08-27/assets/news--254984baab12/preview.svg"
+    }
+  ]
+}

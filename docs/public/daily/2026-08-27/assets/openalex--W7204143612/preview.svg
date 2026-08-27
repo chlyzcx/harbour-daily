@@ -1,0 +1,72 @@
+<svg width="400" height="300" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#431407;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#9a3412;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="400" height="300" fill="url(#grad)"/>
+
+  <!-- Grid pattern -->
+  <g opacity="0.1">
+    <line x1="0" y1="75" x2="400" y2="75" stroke="#fb923c" stroke-width="1"/>
+    <line x1="0" y1="150" x2="400" y2="150" stroke="#fb923c" stroke-width="1"/>
+    <line x1="0" y1="225" x2="400" y2="225" stroke="#fb923c" stroke-width="1"/>
+    <line x1="100" y1="0" x2="100" y2="300" stroke="#fb923c" stroke-width="1"/>
+    <line x1="200" y1="0" x2="200" y2="300" stroke="#fb923c" stroke-width="1"/>
+    <line x1="300" y1="0" x2="300" y2="300" stroke="#fb923c" stroke-width="1"/>
+  </g>
+
+  <!-- Waveform decoration (deterministic per title) -->
+  <g>
+  <polyline points="0,190.3 8,188.6 16,188.5 24,189.7 32,191.7 40,194.0 48,195.8 56,196.8 64,196.7 72,195.7 80,194.1 88,192.7 96,191.9 104,192.4 112,194.4 120,197.7 128,202.1 136,206.8 144,211.3 152,214.8 160,217.0 168,217.7 176,217.1 184,215.8 192,214.3 200,213.2 208,213.0 216,213.9 224,215.8 232,218.1 240,220.2 248,221.7 256,221.8 264,220.3 272,217.4 280,213.3 288,208.7 296,204.4 304,200.8 312,198.5 320,197.5 328,197.7 336,198.5 344,199.5 352,199.9 360,199.3 368,197.7 376,195.1 384,191.9 392,188.9 400,186.7" fill="none" stroke="#fb923c" stroke-width="1.5" opacity="0.35"/>
+  <polyline points="0,242.6 8,243.3 16,244.3 24,245.1 32,245.1 40,243.6 48,240.5 56,235.5 64,229.1 72,222.0 80,215.4 88,210.2 96,207.3 104,207.4 112,210.5 120,216.2 128,223.6 136,231.5 144,238.9 152,244.8 160,248.5 168,249.9 176,249.3 184,247.2 192,244.5 200,241.7 208,239.4 216,237.8 224,236.5 232,235.3 240,233.6 248,231.1 256,227.4 264,222.9 272,218.1 280,213.8 288,210.9 296,210.1 304,211.9 312,216.4 320,223.2 328,231.3 336,239.6 344,247.0 352,252.3 360,255.0 368,254.8 376,252.1 384,247.5 392,242.1 400,236.6" fill="none" stroke="#fb923c" stroke-width="1.5" opacity="0.22"/>
+  <polyline points="0,234.7 8,240.1 16,247.9 24,257.0 32,266.1 40,274.0 48,279.7 56,282.8 64,283.3 72,281.9 80,279.3 88,276.6 96,274.3 104,273.0 112,272.5 120,272.4 128,272.0 136,270.4 144,267.1 152,262.0 160,255.4 168,247.9 176,240.7 184,235.0 192,231.9 200,232.0 208,235.4 216,241.7 224,249.9 232,258.8 240,267.1 248,273.7 256,278.1 264,280.0 272,280.0 280,278.6 288,276.9 296,275.5 304,274.8 312,275.1 320,275.7 328,276.1 336,275.4 344,272.9 352,268.3 360,261.7 368,253.9 376,245.7 384,238.4 392,233.3 400,231.2" fill="none" stroke="#fb923c" stroke-width="1.5" opacity="0.13"/>
+  </g>
+
+  <!-- Header -->
+  <text x="20" y="40" font-family="Inter, sans-serif" font-size="14" fill="#fb923c" font-weight="600">
+    UWA / 08-27
+  </text>
+
+  <!-- Keyword badge -->
+  <rect x="20" y="60" width="132" height="28" rx="14" fill="#fb923c" opacity="0.2"/>
+  <text x="30" y="79" font-family="Inter, sans-serif" font-size="13" fill="#fb923c" font-weight="500">
+    classification
+  </text>
+
+  <!-- Title -->
+  <foreignObject x="20" y="110" width="360" height="120">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="
+      font-family: Inter, sans-serif;
+      font-size: 18px;
+      font-weight: 600;
+      color: #e2e8f0;
+      line-height: 1.4;
+      overflow: hidden;
+      display: -webkit-box;
+      -webkit-line-clamp: 4;
+      -webkit-box-orient: vertical;
+    ">
+      Description, Detection, and Classification of Hawaiian Mo...
+    </div>
+  </foreignObject>
+
+  <!-- Author -->
+  <text x="20" y="250" font-family="Inter, sans-serif" font-size="13" fill="#94a3b8">
+    Jeppe Have Rasmussen
+  </text>
+
+  <!-- Footer -->
+  <text x="20" y="275" font-family="Inter, sans-serif" font-size="11" fill="#64748b">
+    Marine Mammal Science
+  </text>
+
+  <!-- Score badge -->
+  <circle cx="360" cy="40" r="24" fill="#fb923c" opacity="0.2"/>
+  <text x="360" y="46" font-family="Inter, sans-serif" font-size="14" fill="#fb923c" font-weight="700" text-anchor="middle">
+    56
+  </text>
+</svg>
