@@ -1,0 +1,72 @@
+<svg width="400" height="300" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#431407;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#9a3412;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="400" height="300" fill="url(#grad)"/>
+
+  <!-- Grid pattern -->
+  <g opacity="0.1">
+    <line x1="0" y1="75" x2="400" y2="75" stroke="#fb923c" stroke-width="1"/>
+    <line x1="0" y1="150" x2="400" y2="150" stroke="#fb923c" stroke-width="1"/>
+    <line x1="0" y1="225" x2="400" y2="225" stroke="#fb923c" stroke-width="1"/>
+    <line x1="100" y1="0" x2="100" y2="300" stroke="#fb923c" stroke-width="1"/>
+    <line x1="200" y1="0" x2="200" y2="300" stroke="#fb923c" stroke-width="1"/>
+    <line x1="300" y1="0" x2="300" y2="300" stroke="#fb923c" stroke-width="1"/>
+  </g>
+
+  <!-- Waveform decoration (deterministic per title) -->
+  <g>
+  <polyline points="0,196.6 8,196.9 16,196.9 24,197.0 32,197.4 40,198.7 48,201.1 56,204.7 64,209.3 72,214.2 80,218.8 88,222.2 96,223.9 104,223.2 112,220.4 120,215.5 128,209.5 136,203.0 144,197.2 152,192.7 160,190.0 168,189.3 176,190.4 184,192.7 192,195.6 200,198.6 208,201.1 216,203.0 224,204.3 232,205.4 240,206.5 248,208.1 256,210.4 264,213.1 272,216.1 280,218.7 288,220.3 296,220.4 304,218.6 312,214.9 320,209.5 328,203.2 336,196.9 344,191.5 352,187.7 360,186.1 368,186.8 376,189.5 384,193.7 392,198.6 400,203.5" fill="none" stroke="#fb923c" stroke-width="1.5" opacity="0.35"/>
+  <polyline points="0,252.4 8,247.6 16,240.9 24,233.2 32,225.6 40,219.1 48,214.5 56,212.3 64,212.3 72,214.2 80,217.1 88,220.3 96,223.2 104,225.2 112,226.3 120,227.0 128,227.6 136,228.9 144,231.2 152,234.9 160,239.7 168,245.1 176,250.2 184,254.1 192,256.0 200,255.4 208,252.0 216,246.4 224,239.3 232,231.7 240,224.6 248,219.1 256,215.6 264,214.3 272,214.9 280,216.7 288,219.1 296,221.2 304,222.7 312,223.5 320,223.7 328,223.9 336,224.7 344,226.7 352,230.2 360,235.1 368,241.0 376,247.0 384,252.3 392,255.8 400,256.9" fill="none" stroke="#fb923c" stroke-width="1.5" opacity="0.22"/>
+  <polyline points="0,266.5 8,268.1 16,268.5 24,268.5 32,269.0 40,270.5 48,273.4 56,277.4 64,281.9 72,286.0 80,288.6 88,288.8 96,286.3 104,280.9 112,273.4 120,264.8 128,256.1 136,248.7 144,243.4 152,240.7 160,240.4 168,241.9 176,244.5 184,247.1 192,248.9 200,249.6 208,249.2 216,248.1 224,247.3 232,247.5 240,249.6 248,253.8 256,260.1 264,267.9 272,276.1 280,283.5 288,289.0 296,291.8 304,291.6 312,288.6 320,283.5 328,277.3 336,271.3 344,266.2 352,262.6 360,260.7 368,259.9 376,259.7 384,259.1 392,257.5 400,254.4" fill="none" stroke="#fb923c" stroke-width="1.5" opacity="0.13"/>
+  </g>
+
+  <!-- Header -->
+  <text x="20" y="40" font-family="Inter, sans-serif" font-size="14" fill="#fb923c" font-weight="600">
+    UWA / 08-28
+  </text>
+
+  <!-- Keyword badge -->
+  <rect x="20" y="60" width="116" height="28" rx="14" fill="#fb923c" opacity="0.2"/>
+  <text x="30" y="79" font-family="Inter, sans-serif" font-size="13" fill="#fb923c" font-weight="500">
+    active sonar
+  </text>
+
+  <!-- Title -->
+  <foreignObject x="20" y="110" width="360" height="120">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="
+      font-family: Inter, sans-serif;
+      font-size: 18px;
+      font-weight: 600;
+      color: #e2e8f0;
+      line-height: 1.4;
+      overflow: hidden;
+      display: -webkit-box;
+      -webkit-line-clamp: 4;
+      -webkit-box-orient: vertical;
+    ">
+      Physics-Guided Neural Radiance Fields for Forward-Looking...
+    </div>
+  </foreignObject>
+
+  <!-- Author -->
+  <text x="20" y="250" font-family="Inter, sans-serif" font-size="13" fill="#94a3b8">
+    Cao Huang
+  </text>
+
+  <!-- Footer -->
+  <text x="20" y="275" font-family="Inter, sans-serif" font-size="11" fill="#64748b">
+    IEEE Signal Processing Letters
+  </text>
+
+  <!-- Score badge -->
+  <circle cx="360" cy="40" r="24" fill="#fb923c" opacity="0.2"/>
+  <text x="360" y="46" font-family="Inter, sans-serif" font-size="14" fill="#fb923c" font-weight="700" text-anchor="middle">
+    62
+  </text>
+</svg>

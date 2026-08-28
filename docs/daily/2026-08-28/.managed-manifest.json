@@ -1,0 +1,109 @@
+{
+  "schema_version": 2,
+  "cycle_id": "daily-2026-08-28",
+  "display_date": "2026-08-28",
+  "articles": [
+    {
+      "candidate_id": "s2--0b8abe046e81470e09b7bb0c649da6736e04bd78",
+      "category": "Paper",
+      "rank": 1,
+      "path": "docs/daily/2026-08-28/paper/01-physics-guided-neural-radiance-fields-for-forward-.md"
+    },
+    {
+      "candidate_id": "s2--2dd07b5367edcad19d94f435185b6ee1cc05c51b",
+      "category": "Paper",
+      "rank": 2,
+      "path": "docs/daily/2026-08-28/paper/02-a-direction-aware-structured-inversion-method-for-.md"
+    },
+    {
+      "candidate_id": "s2--501e8a7e7b49534dea1d5f610db136b494ccaf53",
+      "category": "Paper",
+      "rank": 3,
+      "path": "docs/daily/2026-08-28/paper/03-ranging-enhancement-for-underwater-collision-avoid.md"
+    },
+    {
+      "candidate_id": "s2--51526ac66110d9bb1d242e4801a52d5135df9258",
+      "category": "Paper",
+      "rank": 4,
+      "path": "docs/daily/2026-08-28/paper/04-sss-dpm-diffusion-probabilistic-model-for-speckle-.md"
+    },
+    {
+      "candidate_id": "s2--10d29fe609e71e36eb21280fb4fc1451286abc49",
+      "category": "Paper",
+      "rank": 5,
+      "path": "docs/daily/2026-08-28/paper/05-underwater-mine-detection-using-machine-learningba.md"
+    },
+    {
+      "candidate_id": "s2--983a3863d35f4abb070a0c19fd3869e5ed0424c7",
+      "category": "Paper",
+      "rank": 6,
+      "path": "docs/daily/2026-08-28/paper/06-a-fully-complex-valued-underwater-acoustic-signal-.md"
+    },
+    {
+      "candidate_id": "s2--8a09bc1ea125702800cc59552e9349965e1313df",
+      "category": "Paper",
+      "rank": 7,
+      "path": "docs/daily/2026-08-28/paper/07-sonar-based-surface-target-classification-for-mine.md"
+    },
+    {
+      "candidate_id": "openalex--W7127146652",
+      "category": "Paper",
+      "rank": 8,
+      "path": "docs/daily/2026-08-28/paper/08-submerged-hazard-identification-and-processing-usi.md"
+    },
+    {
+      "candidate_id": "openalex--W7204232495",
+      "category": "Paper",
+      "rank": 9,
+      "path": "docs/daily/2026-08-28/paper/09-sonarllm-a-native-sonar--optical-multimodal-large-.md"
+    },
+    {
+      "candidate_id": "openalex--W7204255488",
+      "category": "Paper",
+      "rank": 10,
+      "path": "docs/daily/2026-08-28/paper/10-weakly-supervised-seafloor-segmentation-for-seagra.md"
+    }
+  ],
+  "assets": [
+    {
+      "candidate_id": "s2--0b8abe046e81470e09b7bb0c649da6736e04bd78",
+      "path": "docs/public/daily/2026-08-28/assets/s2--0b8abe046e81470e09b7bb0c649da6736e04bd78/preview.svg"
+    },
+    {
+      "candidate_id": "s2--2dd07b5367edcad19d94f435185b6ee1cc05c51b",
+      "path": "docs/public/daily/2026-08-28/assets/s2--2dd07b5367edcad19d94f435185b6ee1cc05c51b/preview.svg"
+    },
+    {
+      "candidate_id": "s2--501e8a7e7b49534dea1d5f610db136b494ccaf53",
+      "path": "docs/public/daily/2026-08-28/assets/s2--501e8a7e7b49534dea1d5f610db136b494ccaf53/preview.svg"
+    },
+    {
+      "candidate_id": "s2--51526ac66110d9bb1d242e4801a52d5135df9258",
+      "path": "docs/public/daily/2026-08-28/assets/s2--51526ac66110d9bb1d242e4801a52d5135df9258/preview.svg"
+    },
+    {
+      "candidate_id": "s2--10d29fe609e71e36eb21280fb4fc1451286abc49",
+      "path": "docs/public/daily/2026-08-28/assets/s2--10d29fe609e71e36eb21280fb4fc1451286abc49/preview.svg"
+    },
+    {
+      "candidate_id": "s2--983a3863d35f4abb070a0c19fd3869e5ed0424c7",
+      "path": "docs/public/daily/2026-08-28/assets/s2--983a3863d35f4abb070a0c19fd3869e5ed0424c7/preview.svg"
+    },
+    {
+      "candidate_id": "s2--8a09bc1ea125702800cc59552e9349965e1313df",
+      "path": "docs/public/daily/2026-08-28/assets/s2--8a09bc1ea125702800cc59552e9349965e1313df/preview.svg"
+    },
+    {
+      "candidate_id": "openalex--W7127146652",
+      "path": "docs/public/daily/2026-08-28/assets/openalex--W7127146652/preview.png"
+    },
+    {
+      "candidate_id": "openalex--W7204232495",
+      "path": "docs/public/daily/2026-08-28/assets/openalex--W7204232495/preview.png"
+    },
+    {
+      "candidate_id": "openalex--W7204255488",
+      "path": "docs/public/daily/2026-08-28/assets/openalex--W7204255488/preview.png"
+    }
+  ]
+}
