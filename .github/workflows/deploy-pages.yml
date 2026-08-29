@@ -4,6 +4,13 @@ on:
   push:
     branches: [main]
   workflow_dispatch:
+  # Pushes made by the Daily Paper Fetch bot use the default GITHUB_TOKEN,
+  # which does NOT trigger the push event above — so also deploy whenever
+  # the daily fetch completes successfully on main.
+  workflow_run:
+    workflows: ["Daily Paper Fetch"]
+    types: [completed]
+    branches: [main]
 
 permissions:
   contents: read
@@ -16,6 +23,10 @@ concurrency:
 
 jobs:
   build:
+    # Skip when the triggering fetch run failed (push/dispatch always build)
+    if: >-
+      github.event_name != 'workflow_run' ||
+      github.event.workflow_run.conclusion == 'success'
     runs-on: ubuntu-latest
     env:
       VITEPRESS_BASE: /${{ github.event.repository.name }}/
