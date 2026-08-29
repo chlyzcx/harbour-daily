@@ -1,0 +1,59 @@
+{
+  "schema_version": 2,
+  "cycle_id": "daily-2026-08-29",
+  "display_date": "2026-08-29",
+  "articles": [
+    {
+      "candidate_id": "openalex--W7204447816",
+      "category": "Paper",
+      "rank": 1,
+      "path": "docs/daily/2026-08-29/paper/01-rewilding-the-upper-klamath-river-basin-rapid-reco.md"
+    },
+    {
+      "candidate_id": "crossref--10.3390-sym18091443",
+      "category": "Paper",
+      "rank": 2,
+      "path": "docs/daily/2026-08-29/paper/02-modeling-with-symmetry-constraints-and-symmetry-br.md"
+    },
+    {
+      "candidate_id": "crossref--10.3389-fmars.2026.1943631",
+      "category": "Paper",
+      "rank": 3,
+      "path": "docs/daily/2026-08-29/paper/03-range-estimation-of-low-frequency-underwater-acous.md"
+    },
+    {
+      "candidate_id": "crossref--10.1038-s41598-026-68332-w",
+      "category": "Paper",
+      "rank": 4,
+      "path": "docs/daily/2026-08-29/paper/04-detection-of-resonant-knapped-lithics-using-chirp-.md"
+    },
+    {
+      "candidate_id": "openalex--W7204446176",
+      "category": "Paper",
+      "rank": 5,
+      "path": "docs/daily/2026-08-29/paper/05-expert-guided-visual-correction-for-characterizing.md"
+    }
+  ],
+  "assets": [
+    {
+      "candidate_id": "openalex--W7204447816",
+      "path": "docs/public/daily/2026-08-29/assets/openalex--W7204447816/preview.png"
+    },
+    {
+      "candidate_id": "crossref--10.3390-sym18091443",
+      "path": "docs/public/daily/2026-08-29/assets/crossref--10.3390-sym18091443/preview.svg"
+    },
+    {
+      "candidate_id": "crossref--10.3389-fmars.2026.1943631",
+      "path": "docs/public/daily/2026-08-29/assets/crossref--10.3389-fmars.2026.1943631/preview.png"
+    },
+    {
+      "candidate_id": "crossref--10.1038-s41598-026-68332-w",
+      "path": "docs/public/daily/2026-08-29/assets/crossref--10.1038-s41598-026-68332-w/preview.svg"
+    },
+    {
+      "candidate_id": "openalex--W7204446176",
+      "path": "docs/public/daily/2026-08-29/assets/openalex--W7204446176/preview.svg"
+    }
+  ]
+}

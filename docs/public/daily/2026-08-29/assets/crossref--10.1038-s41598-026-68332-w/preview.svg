@@ -1,0 +1,72 @@
+<svg width="400" height="300" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#2e1065;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#5b21b6;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="400" height="300" fill="url(#grad)"/>
+
+  <!-- Grid pattern -->
+  <g opacity="0.1">
+    <line x1="0" y1="75" x2="400" y2="75" stroke="#a78bfa" stroke-width="1"/>
+    <line x1="0" y1="150" x2="400" y2="150" stroke="#a78bfa" stroke-width="1"/>
+    <line x1="0" y1="225" x2="400" y2="225" stroke="#a78bfa" stroke-width="1"/>
+    <line x1="100" y1="0" x2="100" y2="300" stroke="#a78bfa" stroke-width="1"/>
+    <line x1="200" y1="0" x2="200" y2="300" stroke="#a78bfa" stroke-width="1"/>
+    <line x1="300" y1="0" x2="300" y2="300" stroke="#a78bfa" stroke-width="1"/>
+  </g>
+
+  <!-- Waveform decoration (deterministic per title) -->
+  <g>
+  <polyline points="0,216.0 8,211.0 16,205.5 24,200.1 32,195.2 40,191.3 48,188.8 56,187.7 64,188.2 72,189.9 80,192.6 88,195.8 96,199.3 104,202.7 112,205.6 120,208.0 128,209.7 136,210.8 144,211.6 152,212.1 160,212.5 168,213.0 176,213.6 184,214.3 192,214.8 200,215.1 208,214.8 216,213.8 224,211.9 232,209.1 240,205.5 248,201.4 256,197.0 264,192.9 272,189.5 280,187.1 288,186.2 296,186.8 304,189.1 312,192.8 320,197.6 328,203.0 336,208.5 344,213.6 352,217.8 360,220.7 368,222.1 376,222.1 384,220.7 392,218.2 400,215.1" fill="none" stroke="#a78bfa" stroke-width="1.5" opacity="0.35"/>
+  <polyline points="0,236.6 8,237.5 16,238.1 24,238.8 32,239.8 40,241.3 48,243.2 56,245.4 64,247.5 72,249.2 80,250.0 88,249.7 96,248.0 104,244.8 112,240.2 120,234.5 128,228.2 136,222.0 144,216.2 152,211.6 160,208.6 168,207.4 176,208.0 184,210.4 192,214.2 200,218.8 208,223.9 216,228.8 224,233.1 232,236.6 240,239.1 248,240.6 256,241.4 264,241.6 272,241.7 280,241.8 288,242.3 296,243.1 304,244.3 312,245.5 320,246.6 328,247.0 336,246.6 344,244.9 352,241.9 360,237.7 368,232.5 376,226.6 384,220.7 392,215.2 400,210.8" fill="none" stroke="#a78bfa" stroke-width="1.5" opacity="0.22"/>
+  <polyline points="0,246.5 8,240.6 16,235.8 24,232.5 32,231.2 40,232.0 48,234.7 56,239.1 64,244.6 72,250.6 80,256.5 88,261.7 96,266.0 104,268.9 112,270.7 120,271.5 128,271.6 136,271.4 144,271.6 152,272.2 160,273.6 168,275.8 176,278.5 184,281.5 192,284.1 200,285.8 208,286.3 216,285.1 224,282.1 232,277.4 240,271.3 248,264.2 256,256.9 264,249.9 272,243.9 280,239.4 288,236.7 296,235.9 304,236.8 312,239.1 320,242.2 328,245.6 336,248.9 344,251.7 352,253.6 360,254.7 368,255.2 376,255.4 384,255.6 392,256.4 400,258.1" fill="none" stroke="#a78bfa" stroke-width="1.5" opacity="0.13"/>
+  </g>
+
+  <!-- Header -->
+  <text x="20" y="40" font-family="Inter, sans-serif" font-size="14" fill="#a78bfa" font-weight="600">
+    UWA / 08-29
+  </text>
+
+  <!-- Keyword badge -->
+  <rect x="20" y="60" width="92" height="28" rx="14" fill="#a78bfa" opacity="0.2"/>
+  <text x="30" y="79" font-family="Inter, sans-serif" font-size="13" fill="#a78bfa" font-weight="500">
+    detection
+  </text>
+
+  <!-- Title -->
+  <foreignObject x="20" y="110" width="360" height="120">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="
+      font-family: Inter, sans-serif;
+      font-size: 18px;
+      font-weight: 600;
+      color: #e2e8f0;
+      line-height: 1.4;
+      overflow: hidden;
+      display: -webkit-box;
+      -webkit-line-clamp: 4;
+      -webkit-box-orient: vertical;
+    ">
+      Detection of resonant knapped lithics using chirp sonar
+    </div>
+  </foreignObject>
+
+  <!-- Author -->
+  <text x="20" y="250" font-family="Inter, sans-serif" font-size="13" fill="#94a3b8">
+    Margaret A. Morris
+  </text>
+
+  <!-- Footer -->
+  <text x="20" y="275" font-family="Inter, sans-serif" font-size="11" fill="#64748b">
+    Scientific Reports
+  </text>
+
+  <!-- Score badge -->
+  <circle cx="360" cy="40" r="24" fill="#a78bfa" opacity="0.2"/>
+  <text x="360" y="46" font-family="Inter, sans-serif" font-size="14" fill="#a78bfa" font-weight="700" text-anchor="middle">
+    55
+  </text>
+</svg>
