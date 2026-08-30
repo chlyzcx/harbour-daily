@@ -1,0 +1,72 @@
+<svg width="400" height="300" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#2e1065;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#5b21b6;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="400" height="300" fill="url(#grad)"/>
+
+  <!-- Grid pattern -->
+  <g opacity="0.1">
+    <line x1="0" y1="75" x2="400" y2="75" stroke="#a78bfa" stroke-width="1"/>
+    <line x1="0" y1="150" x2="400" y2="150" stroke="#a78bfa" stroke-width="1"/>
+    <line x1="0" y1="225" x2="400" y2="225" stroke="#a78bfa" stroke-width="1"/>
+    <line x1="100" y1="0" x2="100" y2="300" stroke="#a78bfa" stroke-width="1"/>
+    <line x1="200" y1="0" x2="200" y2="300" stroke="#a78bfa" stroke-width="1"/>
+    <line x1="300" y1="0" x2="300" y2="300" stroke="#a78bfa" stroke-width="1"/>
+  </g>
+
+  <!-- Waveform decoration (deterministic per title) -->
+  <g>
+  <polyline points="0,219.7 8,221.7 16,222.0 24,220.1 32,216.3 40,211.5 48,206.6 56,202.9 64,200.9 72,200.7 80,201.7 88,203.0 96,203.4 104,202.3 112,199.5 120,195.4 128,191.0 136,187.5 144,185.8 152,186.2 160,188.6 168,192.1 176,195.6 184,198.1 192,199.1 200,198.5 208,196.9 216,195.4 224,195.1 232,196.6 240,200.0 248,204.9 256,210.1 264,214.6 272,217.5 280,218.3 288,217.3 296,215.3 304,213.5 312,212.7 320,213.6 328,215.9 336,218.9 344,221.7 352,223.2 360,222.6 368,219.9 376,215.6 384,210.8 392,206.6 400,203.9" fill="none" stroke="#a78bfa" stroke-width="1.5" opacity="0.35"/>
+  <polyline points="0,226.5 8,233.6 16,238.9 24,241.8 32,242.6 40,242.2 48,241.8 56,242.4 64,244.0 72,246.4 80,248.4 88,248.8 96,246.6 104,241.4 112,233.8 120,225.0 128,216.8 136,210.8 144,208.2 152,209.2 160,213.2 168,218.9 176,224.6 184,229.3 192,232.3 200,233.7 208,234.3 216,235.3 224,237.5 232,241.2 240,245.9 248,250.6 256,253.7 264,254.0 272,250.9 280,244.5 288,236.0 296,227.0 304,219.3 312,214.2 320,212.4 328,213.4 336,216.3 344,219.8 352,222.7 360,224.4 368,224.9 376,225.1 384,226.1 392,228.8 400,233.5" fill="none" stroke="#a78bfa" stroke-width="1.5" opacity="0.22"/>
+  <polyline points="0,265.8 8,262.6 16,257.0 24,249.4 32,241.4 40,234.9 48,231.5 56,232.3 64,237.2 72,245.0 80,253.9 88,262.1 96,268.0 104,271.1 112,271.8 120,271.4 128,271.2 136,272.6 144,275.8 152,280.3 160,284.9 168,287.7 176,287.3 184,283.1 192,275.3 200,265.3 208,255.1 216,246.7 224,241.4 232,239.7 240,241.1 248,244.2 256,247.3 264,249.3 272,249.4 280,248.2 288,246.9 296,247.0 304,249.7 312,255.6 320,264.1 328,273.8 336,282.8 344,289.1 352,291.6 360,289.9 368,285.0 376,278.3 384,271.8 392,266.8 400,264.1" fill="none" stroke="#a78bfa" stroke-width="1.5" opacity="0.13"/>
+  </g>
+
+  <!-- Header -->
+  <text x="20" y="40" font-family="Inter, sans-serif" font-size="14" fill="#a78bfa" font-weight="600">
+    UWA / 08-30
+  </text>
+
+  <!-- Keyword badge -->
+  <rect x="20" y="60" width="92" height="28" rx="14" fill="#a78bfa" opacity="0.2"/>
+  <text x="30" y="79" font-family="Inter, sans-serif" font-size="13" fill="#a78bfa" font-weight="500">
+    detection
+  </text>
+
+  <!-- Title -->
+  <foreignObject x="20" y="110" width="360" height="120">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="
+      font-family: Inter, sans-serif;
+      font-size: 18px;
+      font-weight: 600;
+      color: #e2e8f0;
+      line-height: 1.4;
+      overflow: hidden;
+      display: -webkit-box;
+      -webkit-line-clamp: 4;
+      -webkit-box-orient: vertical;
+    ">
+      Low Probability of Detection Constrained Covert Underwate...
+    </div>
+  </foreignObject>
+
+  <!-- Author -->
+  <text x="20" y="250" font-family="Inter, sans-serif" font-size="13" fill="#94a3b8">
+    Mohsin Abrar Khan
+  </text>
+
+  <!-- Footer -->
+  <text x="20" y="275" font-family="Inter, sans-serif" font-size="11" fill="#64748b">
+    IEEE Transactions on Communications
+  </text>
+
+  <!-- Score badge -->
+  <circle cx="360" cy="40" r="24" fill="#a78bfa" opacity="0.2"/>
+  <text x="360" y="46" font-family="Inter, sans-serif" font-size="14" fill="#a78bfa" font-weight="700" text-anchor="middle">
+    70
+  </text>
+</svg>

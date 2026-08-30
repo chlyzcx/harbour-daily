@@ -1,0 +1,72 @@
+<svg width="400" height="300" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#052e16;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#166534;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="400" height="300" fill="url(#grad)"/>
+
+  <!-- Grid pattern -->
+  <g opacity="0.1">
+    <line x1="0" y1="75" x2="400" y2="75" stroke="#4ade80" stroke-width="1"/>
+    <line x1="0" y1="150" x2="400" y2="150" stroke="#4ade80" stroke-width="1"/>
+    <line x1="0" y1="225" x2="400" y2="225" stroke="#4ade80" stroke-width="1"/>
+    <line x1="100" y1="0" x2="100" y2="300" stroke="#4ade80" stroke-width="1"/>
+    <line x1="200" y1="0" x2="200" y2="300" stroke="#4ade80" stroke-width="1"/>
+    <line x1="300" y1="0" x2="300" y2="300" stroke="#4ade80" stroke-width="1"/>
+  </g>
+
+  <!-- Waveform decoration (deterministic per title) -->
+  <g>
+  <polyline points="0,219.5 8,220.0 16,218.7 24,216.5 32,214.4 40,213.4 48,213.9 56,215.6 64,217.8 72,219.3 80,219.3 88,217.2 96,213.1 104,207.6 112,202.0 120,197.3 128,194.5 136,193.7 144,194.5 152,196.0 160,197.3 168,197.3 176,195.9 184,193.3 192,190.3 200,188.1 208,187.6 216,189.4 224,193.2 232,198.4 240,203.8 248,208.2 256,211.0 264,211.9 272,211.4 280,210.3 288,209.8 296,210.5 304,212.8 312,216.3 320,220.1 328,223.0 336,224.2 344,223.0 352,219.7 360,215.0 368,210.1 376,206.0 384,203.5 392,202.8 400,203.3" fill="none" stroke="#4ade80" stroke-width="1.5" opacity="0.35"/>
+  <polyline points="0,220.9 8,217.9 16,213.9 24,210.4 32,208.6 40,209.4 48,213.0 56,218.5 64,224.7 72,230.0 80,233.5 88,234.6 96,233.8 104,232.2 112,231.1 120,231.8 128,234.8 136,239.8 144,245.8 152,251.3 160,255.0 168,256.1 176,254.4 184,250.8 192,246.5 200,243.0 208,241.3 216,241.7 224,243.7 232,246.1 240,247.5 248,246.9 256,243.6 264,238.0 272,231.3 280,224.9 288,220.1 296,217.8 304,217.9 312,219.8 320,222.0 328,223.3 336,222.7 344,220.1 352,215.9 360,211.6 368,208.4 376,207.6 384,209.6 392,214.0 400,219.7" fill="none" stroke="#4ade80" stroke-width="1.5" opacity="0.22"/>
+  <polyline points="0,288.0 8,280.1 16,270.3 24,260.6 32,252.9 40,248.1 48,246.5 56,247.0 64,248.2 72,248.9 80,248.3 88,246.5 96,244.5 104,243.6 112,245.3 120,250.4 128,258.6 136,268.8 144,279.1 152,287.2 160,291.5 168,291.3 176,287.0 184,279.9 192,272.0 200,265.0 208,260.0 216,257.4 224,256.4 232,255.8 240,254.3 248,251.2 256,246.6 264,241.6 272,237.6 280,236.3 288,239.0 296,245.6 304,255.4 312,266.5 320,276.7 328,284.1 336,287.6 344,287.0 352,283.4 360,278.4 368,273.5 376,270.1 384,268.3 392,267.6 400,266.8" fill="none" stroke="#4ade80" stroke-width="1.5" opacity="0.13"/>
+  </g>
+
+  <!-- Header -->
+  <text x="20" y="40" font-family="Inter, sans-serif" font-size="14" fill="#4ade80" font-weight="600">
+    UWA / 08-30
+  </text>
+
+  <!-- Keyword badge -->
+  <rect x="20" y="60" width="124" height="28" rx="14" fill="#4ade80" opacity="0.2"/>
+  <text x="30" y="79" font-family="Inter, sans-serif" font-size="13" fill="#4ade80" font-weight="500">
+    deep learning
+  </text>
+
+  <!-- Title -->
+  <foreignObject x="20" y="110" width="360" height="120">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="
+      font-family: Inter, sans-serif;
+      font-size: 18px;
+      font-weight: 600;
+      color: #e2e8f0;
+      line-height: 1.4;
+      overflow: hidden;
+      display: -webkit-box;
+      -webkit-line-clamp: 4;
+      -webkit-box-orient: vertical;
+    ">
+      Cognitive Underwater Acoustic Networking and Target Track...
+    </div>
+  </foreignObject>
+
+  <!-- Author -->
+  <text x="20" y="250" font-family="Inter, sans-serif" font-size="13" fill="#94a3b8">
+    Zhong Yang
+  </text>
+
+  <!-- Footer -->
+  <text x="20" y="275" font-family="Inter, sans-serif" font-size="11" fill="#64748b">
+    IEEE Transactions on Cognitive Communications and Networking
+  </text>
+
+  <!-- Score badge -->
+  <circle cx="360" cy="40" r="24" fill="#4ade80" opacity="0.2"/>
+  <text x="360" y="46" font-family="Inter, sans-serif" font-size="14" fill="#4ade80" font-weight="700" text-anchor="middle">
+    68
+  </text>
+</svg>

@@ -1,0 +1,109 @@
+{
+  "schema_version": 2,
+  "cycle_id": "daily-2026-08-30",
+  "display_date": "2026-08-30",
+  "articles": [
+    {
+      "candidate_id": "s2--a275d1c39c18b41374ad73073dd397de27cdba61",
+      "category": "Paper",
+      "rank": 1,
+      "path": "docs/daily/2026-08-30/paper/01-otfs-based-underwater-acoustic-communication-syste.md"
+    },
+    {
+      "candidate_id": "s2--852d7fc1b22b8445054f45a1cf83561842d7ea1b",
+      "category": "Paper",
+      "rank": 2,
+      "path": "docs/daily/2026-08-30/paper/02-energy-state-sensing-for-robust-mac-protocol-ident.md"
+    },
+    {
+      "candidate_id": "s2--b386600974360ad1c865b27a92537b74062f6536",
+      "category": "Paper",
+      "rank": 3,
+      "path": "docs/daily/2026-08-30/paper/03-low-probability-of-detection-constrained-covert-un.md"
+    },
+    {
+      "candidate_id": "s2--6f27904b9e00a2a22ecd2acadae93160699498d4",
+      "category": "Paper",
+      "rank": 4,
+      "path": "docs/daily/2026-08-30/paper/04-cognitive-underwater-acoustic-networking-and-targe.md"
+    },
+    {
+      "candidate_id": "openalex--W7204573321",
+      "category": "Paper",
+      "rank": 5,
+      "path": "docs/daily/2026-08-30/paper/05-generative-imaging-sonar-forward-depth-estimation-.md"
+    },
+    {
+      "candidate_id": "s2--fd1e48b23ab50e86c4745e34d613f3de02bc0477",
+      "category": "Paper",
+      "rank": 6,
+      "path": "docs/daily/2026-08-30/paper/06-a-spatial-tdma-based-medium-access-control-protoco.md"
+    },
+    {
+      "candidate_id": "s2--f493c48800d5f4ae58f37fa3e851767f04d61c95",
+      "category": "Paper",
+      "rank": 7,
+      "path": "docs/daily/2026-08-30/paper/07-joint-resource-allocation-for-underwater-acoustic-.md"
+    },
+    {
+      "candidate_id": "openalex--W7204466716",
+      "category": "Paper",
+      "rank": 8,
+      "path": "docs/daily/2026-08-30/paper/08-biological-hotspot-at-a-glacier-ocean-boundary-in-.md"
+    },
+    {
+      "candidate_id": "openalex--W7204498721",
+      "category": "Paper",
+      "rank": 9,
+      "path": "docs/daily/2026-08-30/paper/09-the-influence-of-the-engineering-and-geological-co.md"
+    },
+    {
+      "candidate_id": "openalex--W7204446530",
+      "category": "Paper",
+      "rank": 10,
+      "path": "docs/daily/2026-08-30/paper/10-ultralownoise-bluegreenlight-cspbbr-3-photodetecto.md"
+    }
+  ],
+  "assets": [
+    {
+      "candidate_id": "s2--a275d1c39c18b41374ad73073dd397de27cdba61",
+      "path": "docs/public/daily/2026-08-30/assets/s2--a275d1c39c18b41374ad73073dd397de27cdba61/preview.svg"
+    },
+    {
+      "candidate_id": "s2--852d7fc1b22b8445054f45a1cf83561842d7ea1b",
+      "path": "docs/public/daily/2026-08-30/assets/s2--852d7fc1b22b8445054f45a1cf83561842d7ea1b/preview.svg"
+    },
+    {
+      "candidate_id": "s2--b386600974360ad1c865b27a92537b74062f6536",
+      "path": "docs/public/daily/2026-08-30/assets/s2--b386600974360ad1c865b27a92537b74062f6536/preview.svg"
+    },
+    {
+      "candidate_id": "s2--6f27904b9e00a2a22ecd2acadae93160699498d4",
+      "path": "docs/public/daily/2026-08-30/assets/s2--6f27904b9e00a2a22ecd2acadae93160699498d4/preview.svg"
+    },
+    {
+      "candidate_id": "openalex--W7204573321",
+      "path": "docs/public/daily/2026-08-30/assets/openalex--W7204573321/preview.png"
+    },
+    {
+      "candidate_id": "s2--fd1e48b23ab50e86c4745e34d613f3de02bc0477",
+      "path": "docs/public/daily/2026-08-30/assets/s2--fd1e48b23ab50e86c4745e34d613f3de02bc0477/preview.svg"
+    },
+    {
+      "candidate_id": "s2--f493c48800d5f4ae58f37fa3e851767f04d61c95",
+      "path": "docs/public/daily/2026-08-30/assets/s2--f493c48800d5f4ae58f37fa3e851767f04d61c95/preview.svg"
+    },
+    {
+      "candidate_id": "openalex--W7204466716",
+      "path": "docs/public/daily/2026-08-30/assets/openalex--W7204466716/preview.png"
+    },
+    {
+      "candidate_id": "openalex--W7204498721",
+      "path": "docs/public/daily/2026-08-30/assets/openalex--W7204498721/preview.png"
+    },
+    {
+      "candidate_id": "openalex--W7204446530",
+      "path": "docs/public/daily/2026-08-30/assets/openalex--W7204446530/preview.svg"
+    }
+  ]
+}
