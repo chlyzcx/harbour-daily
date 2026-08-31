@@ -10,22 +10,22 @@
       "path": "docs/daily/2026-08-31/paper/01-a-diffwave-inspired-receiver-for-bio-inspired-unde.md"
     },
     {
-      "candidate_id": "s2--0408a3509199d165c8d17a70c62e02bd641ee5ea",
-      "category": "Paper",
-      "rank": 2,
-      "path": "docs/daily/2026-08-31/paper/02-underwater-acoustic-channel-estimation-via-acceler.md"
-    },
-    {
       "candidate_id": "openalex--W7166674288",
       "category": "Paper",
-      "rank": 3,
-      "path": "docs/daily/2026-08-31/paper/03-synchronous-human-dolphin-foraging-increases-fishi.md"
+      "rank": 2,
+      "path": "docs/daily/2026-08-31/paper/02-synchronous-human-dolphin-foraging-increases-fishi.md"
     },
     {
       "candidate_id": "crossref--10.5050-ksnve.2026.36.4.341",
       "category": "Paper",
+      "rank": 3,
+      "path": "docs/daily/2026-08-31/paper/03-a-numerical-analysis-of-the-water-entry-impact-of-.md"
+    },
+    {
+      "candidate_id": "crossref--10.3390-polym18172109",
+      "category": "Paper",
       "rank": 4,
-      "path": "docs/daily/2026-08-31/paper/04-a-numerical-analysis-of-the-water-entry-impact-of-.md"
+      "path": "docs/daily/2026-08-31/paper/04-mass-loaded-metamaterials-based-on-polymer-matrix-.md"
     },
     {
       "candidate_id": "crossref--10.58482-ijeresm.v5i3.6",
@@ -52,16 +52,16 @@
       "path": "docs/public/daily/2026-08-31/assets/openalex--W7204635195/preview.png"
     },
     {
-      "candidate_id": "s2--0408a3509199d165c8d17a70c62e02bd641ee5ea",
-      "path": "docs/public/daily/2026-08-31/assets/s2--0408a3509199d165c8d17a70c62e02bd641ee5ea/preview.svg"
-    },
-    {
       "candidate_id": "openalex--W7166674288",
       "path": "docs/public/daily/2026-08-31/assets/openalex--W7166674288/preview.svg"
     },
     {
       "candidate_id": "crossref--10.5050-ksnve.2026.36.4.341",
       "path": "docs/public/daily/2026-08-31/assets/crossref--10.5050-ksnve.2026.36.4.341/preview.png"
+    },
+    {
+      "candidate_id": "crossref--10.3390-polym18172109",
+      "path": "docs/public/daily/2026-08-31/assets/crossref--10.3390-polym18172109/preview.svg"
     },
     {
       "candidate_id": "crossref--10.58482-ijeresm.v5i3.6",

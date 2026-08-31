@@ -1,0 +1,72 @@
+<svg width="400" height="300" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#042f2e;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#115e59;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="400" height="300" fill="url(#grad)"/>
+
+  <!-- Grid pattern -->
+  <g opacity="0.1">
+    <line x1="0" y1="75" x2="400" y2="75" stroke="#2dd4bf" stroke-width="1"/>
+    <line x1="0" y1="150" x2="400" y2="150" stroke="#2dd4bf" stroke-width="1"/>
+    <line x1="0" y1="225" x2="400" y2="225" stroke="#2dd4bf" stroke-width="1"/>
+    <line x1="100" y1="0" x2="100" y2="300" stroke="#2dd4bf" stroke-width="1"/>
+    <line x1="200" y1="0" x2="200" y2="300" stroke="#2dd4bf" stroke-width="1"/>
+    <line x1="300" y1="0" x2="300" y2="300" stroke="#2dd4bf" stroke-width="1"/>
+  </g>
+
+  <!-- Waveform decoration (deterministic per title) -->
+  <g>
+  <polyline points="0,210.3 8,210.6 16,211.3 24,211.4 32,210.1 40,206.9 48,202.1 56,196.5 64,191.2 72,187.5 80,186.1 88,187.1 96,190.1 104,194.0 112,197.7 120,200.3 128,201.5 136,201.4 144,201.0 152,201.0 160,202.5 168,205.7 176,210.4 184,215.7 192,220.5 200,223.6 208,224.3 216,222.6 224,219.1 232,214.7 240,210.6 248,207.7 256,206.4 264,206.3 272,206.7 280,206.6 288,205.1 296,201.9 304,197.4 312,192.5 320,188.2 328,185.8 336,185.7 344,188.1 352,192.2 360,197.0 368,201.4 376,204.5 384,205.9 392,206.0 400,205.6" fill="none" stroke="#2dd4bf" stroke-width="1.5" opacity="0.35"/>
+  <polyline points="0,225.4 8,232.4 16,239.7 24,245.6 32,249.2 40,250.0 48,248.6 56,246.0 64,243.7 72,242.7 80,243.7 88,246.2 96,249.3 104,251.6 112,251.8 120,249.2 128,244.0 136,237.1 144,229.9 152,223.9 160,220.2 168,219.0 176,219.9 184,221.7 192,223.0 200,222.8 208,220.7 216,217.0 224,212.8 232,209.7 240,208.8 248,210.8 256,215.5 264,222.0 272,228.8 280,234.4 288,238.0 296,239.1 304,238.5 312,237.3 320,236.8 328,238.0 336,241.2 344,246.0 352,251.1 360,255.2 368,257.0 376,255.7 384,251.7 392,246.0 400,239.9" fill="none" stroke="#2dd4bf" stroke-width="1.5" opacity="0.22"/>
+  <polyline points="0,246.7 8,249.3 16,251.6 24,252.0 32,249.9 40,245.5 48,239.9 56,234.9 64,232.0 72,232.4 80,236.2 88,242.4 96,249.4 104,255.5 112,259.3 120,260.4 128,259.3 136,257.2 144,256.0 152,257.1 160,261.0 168,267.4 176,275.2 184,282.4 192,287.5 200,289.4 208,288.0 216,284.3 224,279.8 232,276.2 240,274.9 248,276.0 256,279.1 264,282.6 272,284.8 280,284.3 288,280.6 296,274.1 304,266.0 312,258.2 320,252.3 328,249.3 336,249.3 344,251.2 352,253.5 360,254.5 368,253.2 376,249.3 384,243.5 392,237.5 400,232.9" fill="none" stroke="#2dd4bf" stroke-width="1.5" opacity="0.13"/>
+  </g>
+
+  <!-- Header -->
+  <text x="20" y="40" font-family="Inter, sans-serif" font-size="14" fill="#2dd4bf" font-weight="600">
+    UWA / 08-31
+  </text>
+
+  <!-- Keyword badge -->
+  <rect x="20" y="60" width="84" height="28" rx="14" fill="#2dd4bf" opacity="0.2"/>
+  <text x="30" y="79" font-family="Inter, sans-serif" font-size="13" fill="#2dd4bf" font-weight="500">
+    Research
+  </text>
+
+  <!-- Title -->
+  <foreignObject x="20" y="110" width="360" height="120">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="
+      font-family: Inter, sans-serif;
+      font-size: 18px;
+      font-weight: 600;
+      color: #e2e8f0;
+      line-height: 1.4;
+      overflow: hidden;
+      display: -webkit-box;
+      -webkit-line-clamp: 4;
+      -webkit-box-orient: vertical;
+    ">
+      Mass-Loaded Metamaterials Based on Polymer Matrix with St...
+    </div>
+  </foreignObject>
+
+  <!-- Author -->
+  <text x="20" y="250" font-family="Inter, sans-serif" font-size="13" fill="#94a3b8">
+    Lin Liu
+  </text>
+
+  <!-- Footer -->
+  <text x="20" y="275" font-family="Inter, sans-serif" font-size="11" fill="#64748b">
+    Polymers
+  </text>
+
+  <!-- Score badge -->
+  <circle cx="360" cy="40" r="24" fill="#2dd4bf" opacity="0.2"/>
+  <text x="360" y="46" font-family="Inter, sans-serif" font-size="14" fill="#2dd4bf" font-weight="700" text-anchor="middle">
+    55
+  </text>
+</svg>
