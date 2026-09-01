@@ -1,0 +1,109 @@
+{
+  "schema_version": 2,
+  "cycle_id": "daily-2026-09-01",
+  "display_date": "2026-09-01",
+  "articles": [
+    {
+      "candidate_id": "arxiv--2608.30488-1",
+      "category": "Paper",
+      "rank": 1,
+      "path": "docs/daily/2026-09-01/paper/01-leveraging-bayesian-optimization-for-array-shape-s.md"
+    },
+    {
+      "candidate_id": "s2--fa4a6de6d355d30620f3cbe9543d5afbe665eec7",
+      "category": "Paper",
+      "rank": 2,
+      "path": "docs/daily/2026-09-01/paper/02-two-step-weighted-least-squares-positioning-algori.md"
+    },
+    {
+      "candidate_id": "crossref--10.1016-j.array.2026.101057",
+      "category": "Paper",
+      "rank": 3,
+      "path": "docs/daily/2026-09-01/paper/03-robust-seafloor-reference-point-positioning-for-un.md"
+    },
+    {
+      "candidate_id": "crossref--10.1016-j.isatra.2026.06.033",
+      "category": "Paper",
+      "rank": 4,
+      "path": "docs/daily/2026-09-01/paper/04-discrete-time-distributed-model-predictive-control.md"
+    },
+    {
+      "candidate_id": "crossref--10.1016-j.oceaneng.2026.127523",
+      "category": "Paper",
+      "rank": 5,
+      "path": "docs/daily/2026-09-01/paper/05-wave-height-prediction-for-underwater-vehicles-bas.md"
+    },
+    {
+      "candidate_id": "crossref--10.1016-j.isatra.2026.06.011",
+      "category": "Paper",
+      "rank": 6,
+      "path": "docs/daily/2026-09-01/paper/06-hybrid-control-scheme-of-nonlinear-model-predictio.md"
+    },
+    {
+      "candidate_id": "crossref--10.1109-icip61757.2026.11630378",
+      "category": "Paper",
+      "rank": 7,
+      "path": "docs/daily/2026-09-01/paper/07-physics-informed-self-supervised-despeckling-of-so.md"
+    },
+    {
+      "candidate_id": "crossref--10.1016-j.oceaneng.2026.127479",
+      "category": "Paper",
+      "rank": 8,
+      "path": "docs/daily/2026-09-01/paper/08-bayesian-matrix-decomposition-with-hierarchical-ga.md"
+    },
+    {
+      "candidate_id": "crossref--10.1109-icip61757.2026.11630145",
+      "category": "Paper",
+      "rank": 9,
+      "path": "docs/daily/2026-09-01/paper/09-fourier-soft-in-2d-fs2d-registration-for-forward-l.md"
+    },
+    {
+      "candidate_id": "crossref--10.1016-j.oceaneng.2026.127179",
+      "category": "Paper",
+      "rank": 10,
+      "path": "docs/daily/2026-09-01/paper/10-sonarmamba-a-hybrid-state-space-network-for-object.md"
+    }
+  ],
+  "assets": [
+    {
+      "candidate_id": "arxiv--2608.30488-1",
+      "path": "docs/public/daily/2026-09-01/assets/arxiv--2608.30488-1/preview.png"
+    },
+    {
+      "candidate_id": "s2--fa4a6de6d355d30620f3cbe9543d5afbe665eec7",
+      "path": "docs/public/daily/2026-09-01/assets/s2--fa4a6de6d355d30620f3cbe9543d5afbe665eec7/preview.svg"
+    },
+    {
+      "candidate_id": "crossref--10.1016-j.array.2026.101057",
+      "path": "docs/public/daily/2026-09-01/assets/crossref--10.1016-j.array.2026.101057/preview.png"
+    },
+    {
+      "candidate_id": "crossref--10.1016-j.isatra.2026.06.033",
+      "path": "docs/public/daily/2026-09-01/assets/crossref--10.1016-j.isatra.2026.06.033/preview.png"
+    },
+    {
+      "candidate_id": "crossref--10.1016-j.oceaneng.2026.127523",
+      "path": "docs/public/daily/2026-09-01/assets/crossref--10.1016-j.oceaneng.2026.127523/preview.png"
+    },
+    {
+      "candidate_id": "crossref--10.1016-j.isatra.2026.06.011",
+      "path": "docs/public/daily/2026-09-01/assets/crossref--10.1016-j.isatra.2026.06.011/preview.png"
+    },
+    {
+      "candidate_id": "crossref--10.1109-icip61757.2026.11630378",
+      "path": "docs/public/daily/2026-09-01/assets/crossref--10.1109-icip61757.2026.11630378/preview.svg"
+    },
+    {
+      "candidate_id": "crossref--10.1016-j.oceaneng.2026.127479",
+      "path": "docs/public/daily/2026-09-01/assets/crossref--10.1016-j.oceaneng.2026.127479/preview.png"
+    },
+    {
+      "candidate_id": "crossref--10.1109-icip61757.2026.11630145",
+      "path": "docs/public/daily/2026-09-01/assets/crossref--10.1109-icip61757.2026.11630145/preview.svg"
+    },
+    {
+      "candidate_id": "crossref--10.1016-j.oceaneng.2026.127179",
+      "path": "docs/public/daily/2026-09-01/assets/crossref--10.1016-j.oceaneng.2026.127179/preview.png"
+    }
+  ]
+}
