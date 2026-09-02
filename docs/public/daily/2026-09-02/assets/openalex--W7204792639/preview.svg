@@ -1,0 +1,72 @@
+<svg width="400" height="300" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#042f2e;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#115e59;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="400" height="300" fill="url(#grad)"/>
+
+  <!-- Grid pattern -->
+  <g opacity="0.1">
+    <line x1="0" y1="75" x2="400" y2="75" stroke="#2dd4bf" stroke-width="1"/>
+    <line x1="0" y1="150" x2="400" y2="150" stroke="#2dd4bf" stroke-width="1"/>
+    <line x1="0" y1="225" x2="400" y2="225" stroke="#2dd4bf" stroke-width="1"/>
+    <line x1="100" y1="0" x2="100" y2="300" stroke="#2dd4bf" stroke-width="1"/>
+    <line x1="200" y1="0" x2="200" y2="300" stroke="#2dd4bf" stroke-width="1"/>
+    <line x1="300" y1="0" x2="300" y2="300" stroke="#2dd4bf" stroke-width="1"/>
+  </g>
+
+  <!-- Waveform decoration (deterministic per title) -->
+  <g>
+  <polyline points="0,200.7 8,202.6 16,203.7 24,204.2 32,204.2 40,204.0 48,203.9 56,204.1 64,205.0 72,206.7 80,209.0 88,212.0 96,215.2 104,218.5 112,221.3 120,223.4 128,224.5 136,224.4 144,223.2 152,220.9 160,217.9 168,214.5 176,211.1 184,207.9 192,205.4 200,203.6 208,202.6 216,202.3 224,202.4 232,202.6 240,202.7 248,202.4 256,201.4 264,199.8 272,197.5 280,194.8 288,191.9 296,189.3 304,187.3 312,186.1 320,186.0 328,187.1 336,189.3 344,192.3 352,195.9 360,199.7 368,203.4 376,206.5 384,208.9 392,210.4 400,211.1" fill="none" stroke="#2dd4bf" stroke-width="1.5" opacity="0.35"/>
+  <polyline points="0,240.3 8,234.9 16,228.8 24,222.4 32,216.5 40,211.8 48,208.8 56,207.9 64,209.4 72,213.1 80,218.8 88,225.9 96,233.6 104,241.1 112,247.7 120,252.7 128,255.6 136,256.1 144,254.4 152,250.6 160,245.3 168,239.0 176,232.6 184,226.6 192,221.6 200,218.0 208,215.9 216,215.3 224,216.1 232,218.0 240,220.5 248,223.4 256,226.3 264,229.1 272,231.6 280,233.7 288,235.7 296,237.5 304,239.3 312,241.1 320,242.8 328,244.3 336,245.4 344,245.7 352,245.2 360,243.5 368,240.5 376,236.4 384,231.3 392,225.8 400,220.2" fill="none" stroke="#2dd4bf" stroke-width="1.5" opacity="0.22"/>
+  <polyline points="0,283.4 8,284.4 16,282.6 24,279.3 32,276.2 40,274.5 48,274.6 56,275.8 64,277.0 72,276.5 80,273.2 88,266.8 96,258.0 104,248.3 112,239.7 120,234.0 128,232.3 136,234.7 144,240.2 152,247.0 160,253.4 168,258.0 176,260.4 184,261.1 192,261.2 200,262.3 208,265.4 216,270.8 224,277.7 232,284.8 240,290.1 248,292.1 256,289.9 264,283.8 272,275.1 280,265.6 288,257.3 296,251.5 304,248.8 312,248.6 320,249.6 328,250.4 336,249.7 344,247.2 352,243.6 360,240.1 368,238.4 376,239.9 384,245.1 392,253.6 400,263.8" fill="none" stroke="#2dd4bf" stroke-width="1.5" opacity="0.13"/>
+  </g>
+
+  <!-- Header -->
+  <text x="20" y="40" font-family="Inter, sans-serif" font-size="14" fill="#2dd4bf" font-weight="600">
+    UWA / 09-02
+  </text>
+
+  <!-- Keyword badge -->
+  <rect x="20" y="60" width="84" height="28" rx="14" fill="#2dd4bf" opacity="0.2"/>
+  <text x="30" y="79" font-family="Inter, sans-serif" font-size="13" fill="#2dd4bf" font-weight="500">
+    Research
+  </text>
+
+  <!-- Title -->
+  <foreignObject x="20" y="110" width="360" height="120">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="
+      font-family: Inter, sans-serif;
+      font-size: 18px;
+      font-weight: 600;
+      color: #e2e8f0;
+      line-height: 1.4;
+      overflow: hidden;
+      display: -webkit-box;
+      -webkit-line-clamp: 4;
+      -webkit-box-orient: vertical;
+    ">
+      Eigenfrequencies of an underwater acoustic resonator form...
+    </div>
+  </foreignObject>
+
+  <!-- Author -->
+  <text x="20" y="250" font-family="Inter, sans-serif" font-size="13" fill="#94a3b8">
+    Andrei A. Chernyavskiy
+  </text>
+
+  <!-- Footer -->
+  <text x="20" y="275" font-family="Inter, sans-serif" font-size="11" fill="#64748b">
+    Journal of Theoretical and Computational Acoustics
+  </text>
+
+  <!-- Score badge -->
+  <circle cx="360" cy="40" r="24" fill="#2dd4bf" opacity="0.2"/>
+  <text x="360" y="46" font-family="Inter, sans-serif" font-size="14" fill="#2dd4bf" font-weight="700" text-anchor="middle">
+    56
+  </text>
+</svg>

@@ -1,0 +1,109 @@
+{
+  "schema_version": 2,
+  "cycle_id": "daily-2026-09-02",
+  "display_date": "2026-09-02",
+  "articles": [
+    {
+      "candidate_id": "openalex--W7204792639",
+      "category": "Paper",
+      "rank": 1,
+      "path": "docs/daily/2026-09-02/paper/01-eigenfrequencies-of-an-underwater-acoustic-resonat.md"
+    },
+    {
+      "candidate_id": "openalex--W7204852397",
+      "category": "Paper",
+      "rank": 2,
+      "path": "docs/daily/2026-09-02/paper/02-smartphone-acoustic-sensing-for-contactless-respir.md"
+    },
+    {
+      "candidate_id": "crossref--10.1007-978-981-95-6825-3_30",
+      "category": "Paper",
+      "rank": 3,
+      "path": "docs/daily/2026-09-02/paper/03-underwater-target-location-via-depth-adaptive-unsu.md"
+    },
+    {
+      "candidate_id": "crossref--10.1016-j.imavis.2026.106079",
+      "category": "Paper",
+      "rank": 4,
+      "path": "docs/daily/2026-09-02/paper/04-a-multivariate-calibration-framework-with-global-l.md"
+    },
+    {
+      "candidate_id": "crossref--10.1109-lsens.2026.3716397",
+      "category": "Paper",
+      "rank": 5,
+      "path": "docs/daily/2026-09-02/paper/05-underwater-3-d-gaussian-reconstruction-using-multi.md"
+    },
+    {
+      "candidate_id": "crossref--10.1016-j.sigpro.2026.110583",
+      "category": "Paper",
+      "rank": 6,
+      "path": "docs/daily/2026-09-02/paper/06-trajectory-optimization-for-target-tracking-in-uuv.md"
+    },
+    {
+      "candidate_id": "crossref--10.1016-j.oceaneng.2026.127449",
+      "category": "Paper",
+      "rank": 7,
+      "path": "docs/daily/2026-09-02/paper/07-from-uncertain-sonar-observations-to-reliable-targ.md"
+    },
+    {
+      "candidate_id": "crossref--10.1016-j.jwpe.2026.110455",
+      "category": "Paper",
+      "rank": 8,
+      "path": "docs/daily/2026-09-02/paper/08-spatial-information-preservation-and-semantic-feat.md"
+    },
+    {
+      "candidate_id": "openalex--W7203862780",
+      "category": "Paper",
+      "rank": 9,
+      "path": "docs/daily/2026-09-02/paper/09-air-space-ground-water-engineering-integrated-lida.md"
+    },
+    {
+      "candidate_id": "news--7cf9b119c974",
+      "category": "News",
+      "rank": 10,
+      "path": "docs/daily/2026-09-02/news/10-kongsberg-completes-sonatech-acquisition.md"
+    }
+  ],
+  "assets": [
+    {
+      "candidate_id": "openalex--W7204792639",
+      "path": "docs/public/daily/2026-09-02/assets/openalex--W7204792639/preview.svg"
+    },
+    {
+      "candidate_id": "openalex--W7204852397",
+      "path": "docs/public/daily/2026-09-02/assets/openalex--W7204852397/preview.png"
+    },
+    {
+      "candidate_id": "crossref--10.1007-978-981-95-6825-3_30",
+      "path": "docs/public/daily/2026-09-02/assets/crossref--10.1007-978-981-95-6825-3_30/preview.svg"
+    },
+    {
+      "candidate_id": "crossref--10.1016-j.imavis.2026.106079",
+      "path": "docs/public/daily/2026-09-02/assets/crossref--10.1016-j.imavis.2026.106079/preview.png"
+    },
+    {
+      "candidate_id": "crossref--10.1109-lsens.2026.3716397",
+      "path": "docs/public/daily/2026-09-02/assets/crossref--10.1109-lsens.2026.3716397/preview.svg"
+    },
+    {
+      "candidate_id": "crossref--10.1016-j.sigpro.2026.110583",
+      "path": "docs/public/daily/2026-09-02/assets/crossref--10.1016-j.sigpro.2026.110583/preview.png"
+    },
+    {
+      "candidate_id": "crossref--10.1016-j.oceaneng.2026.127449",
+      "path": "docs/public/daily/2026-09-02/assets/crossref--10.1016-j.oceaneng.2026.127449/preview.png"
+    },
+    {
+      "candidate_id": "crossref--10.1016-j.jwpe.2026.110455",
+      "path": "docs/public/daily/2026-09-02/assets/crossref--10.1016-j.jwpe.2026.110455/preview.png"
+    },
+    {
+      "candidate_id": "openalex--W7203862780",
+      "path": "docs/public/daily/2026-09-02/assets/openalex--W7203862780/preview.svg"
+    },
+    {
+      "candidate_id": "news--7cf9b119c974",
+      "path": "docs/public/daily/2026-09-02/assets/news--7cf9b119c974/preview.png"
+    }
+  ]
+}
