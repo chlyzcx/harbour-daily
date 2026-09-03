@@ -1,0 +1,109 @@
+{
+  "schema_version": 2,
+  "cycle_id": "daily-2026-09-03",
+  "display_date": "2026-09-03",
+  "articles": [
+    {
+      "candidate_id": "openalex--W7204933140",
+      "category": "Paper",
+      "rank": 1,
+      "path": "docs/daily/2026-09-03/paper/01-single-hydrophone-bearing-estimation-for-long-rang.md"
+    },
+    {
+      "candidate_id": "openalex--W7204969071",
+      "category": "Paper",
+      "rank": 2,
+      "path": "docs/daily/2026-09-03/paper/02-a-broadband-interferometric-fiber-optic-hydrophone.md"
+    },
+    {
+      "candidate_id": "openalex--W7204998524",
+      "category": "Paper",
+      "rank": 3,
+      "path": "docs/daily/2026-09-03/paper/03-quality-aware-cooperative-sonar-coverage-planning-.md"
+    },
+    {
+      "candidate_id": "openalex--W7204878612",
+      "category": "Paper",
+      "rank": 4,
+      "path": "docs/daily/2026-09-03/paper/04-development-and-benchmark-validation-of-pubchat-fo.md"
+    },
+    {
+      "candidate_id": "openalex--W7204877459",
+      "category": "Paper",
+      "rank": 5,
+      "path": "docs/daily/2026-09-03/paper/05-uuv-swarm-threat-assessment-via-dbn-tracking-vieta.md"
+    },
+    {
+      "candidate_id": "openalex--W7204923835",
+      "category": "Paper",
+      "rank": 6,
+      "path": "docs/daily/2026-09-03/paper/06-virtual-sensing-of-ocean-currents-and-hydrodynamic.md"
+    },
+    {
+      "candidate_id": "openalex--W7204960511",
+      "category": "Paper",
+      "rank": 7,
+      "path": "docs/daily/2026-09-03/paper/07-statistical-analysis-of-sea-ice-ridges-in-the-fram.md"
+    },
+    {
+      "candidate_id": "openalex--W7204769957",
+      "category": "Paper",
+      "rank": 8,
+      "path": "docs/daily/2026-09-03/paper/08-selfpowered-nbte-2-mos-2-photodetectors-with-highs.md"
+    },
+    {
+      "candidate_id": "crossref--10.26599-air.2026.9150010",
+      "category": "Paper",
+      "rank": 9,
+      "path": "docs/daily/2026-09-03/paper/09-underwater-small-object-detection-a-survey.md"
+    },
+    {
+      "candidate_id": "crossref--10.1093-najfmt-vqag064",
+      "category": "Paper",
+      "rank": 10,
+      "path": "docs/daily/2026-09-03/paper/10-influence-of-live-imaging-sonar-on-black-bass-catc.md"
+    }
+  ],
+  "assets": [
+    {
+      "candidate_id": "openalex--W7204933140",
+      "path": "docs/public/daily/2026-09-03/assets/openalex--W7204933140/preview.svg"
+    },
+    {
+      "candidate_id": "openalex--W7204969071",
+      "path": "docs/public/daily/2026-09-03/assets/openalex--W7204969071/preview.png"
+    },
+    {
+      "candidate_id": "openalex--W7204998524",
+      "path": "docs/public/daily/2026-09-03/assets/openalex--W7204998524/preview.png"
+    },
+    {
+      "candidate_id": "openalex--W7204878612",
+      "path": "docs/public/daily/2026-09-03/assets/openalex--W7204878612/preview.png"
+    },
+    {
+      "candidate_id": "openalex--W7204877459",
+      "path": "docs/public/daily/2026-09-03/assets/openalex--W7204877459/preview.png"
+    },
+    {
+      "candidate_id": "openalex--W7204923835",
+      "path": "docs/public/daily/2026-09-03/assets/openalex--W7204923835/preview.png"
+    },
+    {
+      "candidate_id": "openalex--W7204960511",
+      "path": "docs/public/daily/2026-09-03/assets/openalex--W7204960511/preview.png"
+    },
+    {
+      "candidate_id": "openalex--W7204769957",
+      "path": "docs/public/daily/2026-09-03/assets/openalex--W7204769957/preview.svg"
+    },
+    {
+      "candidate_id": "crossref--10.26599-air.2026.9150010",
+      "path": "docs/public/daily/2026-09-03/assets/crossref--10.26599-air.2026.9150010/preview.svg"
+    },
+    {
+      "candidate_id": "crossref--10.1093-najfmt-vqag064",
+      "path": "docs/public/daily/2026-09-03/assets/crossref--10.1093-najfmt-vqag064/preview.svg"
+    }
+  ]
+}

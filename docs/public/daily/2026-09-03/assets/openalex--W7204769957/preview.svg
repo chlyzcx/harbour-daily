@@ -1,0 +1,72 @@
+<svg width="400" height="300" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#2e1065;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#5b21b6;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="400" height="300" fill="url(#grad)"/>
+
+  <!-- Grid pattern -->
+  <g opacity="0.1">
+    <line x1="0" y1="75" x2="400" y2="75" stroke="#a78bfa" stroke-width="1"/>
+    <line x1="0" y1="150" x2="400" y2="150" stroke="#a78bfa" stroke-width="1"/>
+    <line x1="0" y1="225" x2="400" y2="225" stroke="#a78bfa" stroke-width="1"/>
+    <line x1="100" y1="0" x2="100" y2="300" stroke="#a78bfa" stroke-width="1"/>
+    <line x1="200" y1="0" x2="200" y2="300" stroke="#a78bfa" stroke-width="1"/>
+    <line x1="300" y1="0" x2="300" y2="300" stroke="#a78bfa" stroke-width="1"/>
+  </g>
+
+  <!-- Waveform decoration (deterministic per title) -->
+  <g>
+  <polyline points="0,196.7 8,197.5 16,196.8 24,195.3 32,194.0 40,193.8 48,195.5 56,199.2 64,204.4 72,210.1 80,215.1 88,218.4 96,219.6 104,218.8 112,216.9 120,214.8 128,213.5 136,213.7 144,215.2 152,217.5 160,219.4 168,220.0 176,218.6 184,215.0 192,209.9 200,204.2 208,199.2 216,195.7 224,194.3 232,194.6 240,196.0 248,197.4 256,197.7 264,196.6 272,194.2 280,191.1 288,188.4 296,187.2 304,188.2 312,191.4 320,196.2 328,201.6 336,206.5 344,209.8 352,211.2 360,211.0 368,210.1 376,209.3 384,209.7 392,211.7 400,215.0" fill="none" stroke="#a78bfa" stroke-width="1.5" opacity="0.35"/>
+  <polyline points="0,250.1 8,246.7 16,241.1 24,234.5 32,228.2 40,223.7 48,221.6 56,221.8 64,223.5 72,225.3 80,226.0 88,224.6 96,221.1 104,216.2 112,211.4 120,207.9 128,206.9 136,208.7 144,212.8 152,218.1 160,223.1 168,226.6 176,227.9 184,227.3 192,225.5 200,224.1 208,224.3 216,226.8 224,231.6 232,237.9 240,244.4 248,249.5 256,252.3 264,252.3 272,250.1 280,246.9 288,244.1 296,242.8 304,243.6 312,246.1 320,249.4 328,252.1 336,252.9 344,251.0 352,246.5 360,240.4 368,233.9 376,228.5 384,225.3 392,224.5 400,225.5" fill="none" stroke="#a78bfa" stroke-width="1.5" opacity="0.22"/>
+  <polyline points="0,271.3 8,274.2 16,274.8 24,274.3 32,274.0 40,275.0 48,277.3 56,280.2 64,282.5 72,282.4 80,279.0 88,272.0 96,262.2 104,251.4 112,241.8 120,235.2 128,232.9 136,234.9 144,240.3 152,247.3 160,254.2 168,259.5 176,262.7 184,264.1 192,264.9 200,266.4 208,269.4 216,274.3 224,280.2 232,285.7 240,288.9 248,288.6 256,283.9 264,275.5 272,264.9 280,254.0 288,245.1 296,239.6 304,238.0 312,239.9 320,243.7 328,247.9 336,251.2 344,252.9 352,253.3 360,253.6 368,255.1 376,258.9 384,265.2 392,273.4 400,281.9" fill="none" stroke="#a78bfa" stroke-width="1.5" opacity="0.13"/>
+  </g>
+
+  <!-- Header -->
+  <text x="20" y="40" font-family="Inter, sans-serif" font-size="14" fill="#a78bfa" font-weight="600">
+    UWA / 09-03
+  </text>
+
+  <!-- Keyword badge -->
+  <rect x="20" y="60" width="92" height="28" rx="14" fill="#a78bfa" opacity="0.2"/>
+  <text x="30" y="79" font-family="Inter, sans-serif" font-size="13" fill="#a78bfa" font-weight="500">
+    detection
+  </text>
+
+  <!-- Title -->
+  <foreignObject x="20" y="110" width="360" height="120">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="
+      font-family: Inter, sans-serif;
+      font-size: 18px;
+      font-weight: 600;
+      color: #e2e8f0;
+      line-height: 1.4;
+      overflow: hidden;
+      display: -webkit-box;
+      -webkit-line-clamp: 4;
+      -webkit-box-orient: vertical;
+    ">
+      Self‐Powered NbTe 2 /MoS 2 Photodetectors With High‐Sensi...
+    </div>
+  </foreignObject>
+
+  <!-- Author -->
+  <text x="20" y="250" font-family="Inter, sans-serif" font-size="13" fill="#94a3b8">
+    Jingyu Zhang
+  </text>
+
+  <!-- Footer -->
+  <text x="20" y="275" font-family="Inter, sans-serif" font-size="11" fill="#64748b">
+    Advanced Optical Materials
+  </text>
+
+  <!-- Score badge -->
+  <circle cx="360" cy="40" r="24" fill="#a78bfa" opacity="0.2"/>
+  <text x="360" y="46" font-family="Inter, sans-serif" font-size="14" fill="#a78bfa" font-weight="700" text-anchor="middle">
+    56
+  </text>
+</svg>
