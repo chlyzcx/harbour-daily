@@ -1,0 +1,109 @@
+{
+  "schema_version": 2,
+  "cycle_id": "daily-2026-09-04",
+  "display_date": "2026-09-04",
+  "articles": [
+    {
+      "candidate_id": "arxiv--2609.03207-1",
+      "category": "Paper",
+      "rank": 1,
+      "path": "docs/daily/2026-09-04/paper/01-underwater-acoustic-channel-library.md"
+    },
+    {
+      "candidate_id": "openalex--W7205708423",
+      "category": "Paper",
+      "rank": 2,
+      "path": "docs/daily/2026-09-04/paper/02-a-smart-and-fast-fuzzy-based-trust-management-sche.md"
+    },
+    {
+      "candidate_id": "openalex--W7205709391",
+      "category": "Paper",
+      "rank": 3,
+      "path": "docs/daily/2026-09-04/paper/03-seafloor-morphology-and-inner-shelf-benthic-habita.md"
+    },
+    {
+      "candidate_id": "openalex--W7206189632",
+      "category": "Paper",
+      "rank": 4,
+      "path": "docs/daily/2026-09-04/paper/04-using-llms-to-elicit-security-requirements-for-ser.md"
+    },
+    {
+      "candidate_id": "crossref--10.3390-s26175591",
+      "category": "Paper",
+      "rank": 5,
+      "path": "docs/daily/2026-09-04/paper/05-a-variational-bayesian-constrained-ekf-for-sonar-b.md"
+    },
+    {
+      "candidate_id": "crossref--10.3390-act15090475",
+      "category": "Paper",
+      "rank": 6,
+      "path": "docs/daily/2026-09-04/paper/06-underwater-gravity-matching-navigation-algorithm-b.md"
+    },
+    {
+      "candidate_id": "crossref--10.1016-j.softx.2026.102994",
+      "category": "Paper",
+      "rank": 7,
+      "path": "docs/daily/2026-09-04/paper/07-echoverse-sonar-lab-open-source-multimodal-sonar-s.md"
+    },
+    {
+      "candidate_id": "openalex--W7204918710",
+      "category": "Paper",
+      "rank": 8,
+      "path": "docs/daily/2026-09-04/paper/08-low-frequency-broadband-magnetostrictive-piezoelec.md"
+    },
+    {
+      "candidate_id": "openalex--W7204992279",
+      "category": "Paper",
+      "rank": 9,
+      "path": "docs/daily/2026-09-04/paper/09-long-term-variability-of-temperature-and-ph-in-the.md"
+    },
+    {
+      "candidate_id": "openalex--W7204994568",
+      "category": "Paper",
+      "rank": 10,
+      "path": "docs/daily/2026-09-04/paper/10-underwater-sound-absorption-using-rubber-enhanced-.md"
+    }
+  ],
+  "assets": [
+    {
+      "candidate_id": "arxiv--2609.03207-1",
+      "path": "docs/public/daily/2026-09-04/assets/arxiv--2609.03207-1/preview.png"
+    },
+    {
+      "candidate_id": "openalex--W7205708423",
+      "path": "docs/public/daily/2026-09-04/assets/openalex--W7205708423/preview.png"
+    },
+    {
+      "candidate_id": "openalex--W7205709391",
+      "path": "docs/public/daily/2026-09-04/assets/openalex--W7205709391/preview.png"
+    },
+    {
+      "candidate_id": "openalex--W7206189632",
+      "path": "docs/public/daily/2026-09-04/assets/openalex--W7206189632/preview.png"
+    },
+    {
+      "candidate_id": "crossref--10.3390-s26175591",
+      "path": "docs/public/daily/2026-09-04/assets/crossref--10.3390-s26175591/preview.png"
+    },
+    {
+      "candidate_id": "crossref--10.3390-act15090475",
+      "path": "docs/public/daily/2026-09-04/assets/crossref--10.3390-act15090475/preview.svg"
+    },
+    {
+      "candidate_id": "crossref--10.1016-j.softx.2026.102994",
+      "path": "docs/public/daily/2026-09-04/assets/crossref--10.1016-j.softx.2026.102994/preview.png"
+    },
+    {
+      "candidate_id": "openalex--W7204918710",
+      "path": "docs/public/daily/2026-09-04/assets/openalex--W7204918710/preview.svg"
+    },
+    {
+      "candidate_id": "openalex--W7204992279",
+      "path": "docs/public/daily/2026-09-04/assets/openalex--W7204992279/preview.png"
+    },
+    {
+      "candidate_id": "openalex--W7204994568",
+      "path": "docs/public/daily/2026-09-04/assets/openalex--W7204994568/preview.png"
+    }
+  ]
+}
