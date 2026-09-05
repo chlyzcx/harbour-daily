@@ -1,0 +1,72 @@
+<svg width="400" height="300" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#042f2e;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#115e59;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="400" height="300" fill="url(#grad)"/>
+
+  <!-- Grid pattern -->
+  <g opacity="0.1">
+    <line x1="0" y1="75" x2="400" y2="75" stroke="#2dd4bf" stroke-width="1"/>
+    <line x1="0" y1="150" x2="400" y2="150" stroke="#2dd4bf" stroke-width="1"/>
+    <line x1="0" y1="225" x2="400" y2="225" stroke="#2dd4bf" stroke-width="1"/>
+    <line x1="100" y1="0" x2="100" y2="300" stroke="#2dd4bf" stroke-width="1"/>
+    <line x1="200" y1="0" x2="200" y2="300" stroke="#2dd4bf" stroke-width="1"/>
+    <line x1="300" y1="0" x2="300" y2="300" stroke="#2dd4bf" stroke-width="1"/>
+  </g>
+
+  <!-- Waveform decoration (deterministic per title) -->
+  <g>
+  <polyline points="0,219.7 8,217.5 16,215.2 24,213.6 32,213.0 40,213.4 48,214.6 56,216.2 64,217.4 72,217.7 80,216.6 88,214.0 96,210.2 104,205.6 112,200.9 120,196.7 128,193.7 136,192.2 144,192.1 152,193.0 160,194.6 168,196.0 176,196.9 184,196.7 192,195.4 200,193.4 208,191.2 216,189.3 224,188.4 232,188.9 240,191.0 248,194.5 256,198.9 264,203.5 272,207.6 280,210.8 288,212.5 296,213.0 304,212.5 312,211.5 320,210.6 328,210.5 336,211.4 344,213.4 352,216.3 360,219.3 368,222.0 376,223.7 384,223.9 392,222.5 400,219.6" fill="none" stroke="#2dd4bf" stroke-width="1.5" opacity="0.35"/>
+  <polyline points="0,214.8 8,213.9 16,214.9 24,218.2 32,223.7 40,230.9 48,238.9 56,246.5 64,252.5 72,256.2 80,256.8 88,254.5 96,249.7 104,243.3 112,236.3 120,229.8 128,224.6 136,221.1 144,219.4 152,219.1 160,219.7 168,220.6 176,221.3 184,221.5 192,221.5 200,221.5 208,222.2 216,224.1 224,227.4 232,232.3 240,238.4 248,244.8 256,250.5 264,254.7 272,256.4 280,255.2 288,251.0 296,244.5 304,236.6 312,228.4 320,221.1 328,215.6 336,212.6 344,212.0 352,213.7 360,216.7 368,220.5 376,224.2 384,227.2 392,229.5 400,231.1" fill="none" stroke="#2dd4bf" stroke-width="1.5" opacity="0.22"/>
+  <polyline points="0,269.4 8,261.0 16,253.9 24,248.8 32,246.0 40,245.3 48,246.0 56,247.3 64,248.4 72,248.8 80,248.4 88,247.3 96,246.5 104,246.5 112,248.3 120,252.3 128,258.4 136,266.2 144,274.7 152,282.6 160,288.8 168,292.3 176,292.4 184,289.2 192,283.4 200,275.8 208,267.7 216,260.4 224,254.7 232,251.0 240,249.2 248,248.9 256,249.3 264,249.6 272,249.2 280,247.9 288,246.0 296,244.1 304,243.0 312,243.5 320,246.3 328,251.7 336,259.1 344,267.9 352,276.8 360,284.5 368,289.9 376,292.2 384,291.2 392,287.2 400,281.0" fill="none" stroke="#2dd4bf" stroke-width="1.5" opacity="0.13"/>
+  </g>
+
+  <!-- Header -->
+  <text x="20" y="40" font-family="Inter, sans-serif" font-size="14" fill="#2dd4bf" font-weight="600">
+    UWA / 09-05
+  </text>
+
+  <!-- Keyword badge -->
+  <rect x="20" y="60" width="84" height="28" rx="14" fill="#2dd4bf" opacity="0.2"/>
+  <text x="30" y="79" font-family="Inter, sans-serif" font-size="13" fill="#2dd4bf" font-weight="500">
+    Research
+  </text>
+
+  <!-- Title -->
+  <foreignObject x="20" y="110" width="360" height="120">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="
+      font-family: Inter, sans-serif;
+      font-size: 18px;
+      font-weight: 600;
+      color: #e2e8f0;
+      line-height: 1.4;
+      overflow: hidden;
+      display: -webkit-box;
+      -webkit-line-clamp: 4;
+      -webkit-box-orient: vertical;
+    ">
+      Adaptive energy-efficient routing and congestion control ...
+    </div>
+  </foreignObject>
+
+  <!-- Author -->
+  <text x="20" y="250" font-family="Inter, sans-serif" font-size="13" fill="#94a3b8">
+    Raju Singh
+  </text>
+
+  <!-- Footer -->
+  <text x="20" y="275" font-family="Inter, sans-serif" font-size="11" fill="#64748b">
+    Journal of Ocean Engineering and Marine Energy
+  </text>
+
+  <!-- Score badge -->
+  <circle cx="360" cy="40" r="24" fill="#2dd4bf" opacity="0.2"/>
+  <text x="360" y="46" font-family="Inter, sans-serif" font-size="14" fill="#2dd4bf" font-weight="700" text-anchor="middle">
+    55
+  </text>
+</svg>

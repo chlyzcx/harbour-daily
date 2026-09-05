@@ -1,0 +1,89 @@
+{
+  "schema_version": 2,
+  "cycle_id": "daily-2026-09-05",
+  "display_date": "2026-09-05",
+  "articles": [
+    {
+      "candidate_id": "openalex--W7207592315",
+      "category": "Paper",
+      "rank": 1,
+      "path": "docs/daily/2026-09-05/paper/01-extraction-of-underwater-acoustic-multipath-relati.md"
+    },
+    {
+      "candidate_id": "openalex--W7165890829",
+      "category": "Paper",
+      "rank": 2,
+      "path": "docs/daily/2026-09-05/paper/02-a-finite-window-misspecified-cramérrao-bound-under.md"
+    },
+    {
+      "candidate_id": "openalex--W7207653516",
+      "category": "Paper",
+      "rank": 3,
+      "path": "docs/daily/2026-09-05/paper/03-a-physics-informed-and-data-driven-framework-for-a.md"
+    },
+    {
+      "candidate_id": "openalex--W7155529907",
+      "category": "Paper",
+      "rank": 4,
+      "path": "docs/daily/2026-09-05/paper/04-direction-aware-detection-transformer-for-maritime.md"
+    },
+    {
+      "candidate_id": "openalex--W7170076002",
+      "category": "Paper",
+      "rank": 5,
+      "path": "docs/daily/2026-09-05/paper/05-two-birds-with-one-stone-simple-pyrrole-polymeriza.md"
+    },
+    {
+      "candidate_id": "openalex--W7206156946",
+      "category": "Paper",
+      "rank": 6,
+      "path": "docs/daily/2026-09-05/paper/06-phys-mamba-physics-informed-selective-state-space-.md"
+    },
+    {
+      "candidate_id": "openalex--W7207820755",
+      "category": "Paper",
+      "rank": 7,
+      "path": "docs/daily/2026-09-05/paper/07-ev-aluation-of-the-effectiveness-of-the-combined-d.md"
+    },
+    {
+      "candidate_id": "crossref--10.1007-s40722-026-00543-9",
+      "category": "Paper",
+      "rank": 8,
+      "path": "docs/daily/2026-09-05/paper/08-adaptive-energy-efficient-routing-and-congestion-c.md"
+    }
+  ],
+  "assets": [
+    {
+      "candidate_id": "openalex--W7207592315",
+      "path": "docs/public/daily/2026-09-05/assets/openalex--W7207592315/preview.png"
+    },
+    {
+      "candidate_id": "openalex--W7165890829",
+      "path": "docs/public/daily/2026-09-05/assets/openalex--W7165890829/preview.png"
+    },
+    {
+      "candidate_id": "openalex--W7207653516",
+      "path": "docs/public/daily/2026-09-05/assets/openalex--W7207653516/preview.png"
+    },
+    {
+      "candidate_id": "openalex--W7155529907",
+      "path": "docs/public/daily/2026-09-05/assets/openalex--W7155529907/preview.png"
+    },
+    {
+      "candidate_id": "openalex--W7170076002",
+      "path": "docs/public/daily/2026-09-05/assets/openalex--W7170076002/preview.png"
+    },
+    {
+      "candidate_id": "openalex--W7206156946",
+      "path": "docs/public/daily/2026-09-05/assets/openalex--W7206156946/preview.png"
+    },
+    {
+      "candidate_id": "openalex--W7207820755",
+      "path": "docs/public/daily/2026-09-05/assets/openalex--W7207820755/preview.png"
+    },
+    {
+      "candidate_id": "crossref--10.1007-s40722-026-00543-9",
+      "path": "docs/public/daily/2026-09-05/assets/crossref--10.1007-s40722-026-00543-9/preview.svg"
+    }
+  ]
+}
