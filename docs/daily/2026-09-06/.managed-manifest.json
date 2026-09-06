@@ -1,0 +1,39 @@
+{
+  "schema_version": 2,
+  "cycle_id": "daily-2026-09-06",
+  "display_date": "2026-09-06",
+  "articles": [
+    {
+      "candidate_id": "openalex--W7208712989",
+      "category": "Paper",
+      "rank": 1,
+      "path": "docs/daily/2026-09-06/paper/01-cges-mac-cluster-based-greedy-embedding-mac-schedu.md"
+    },
+    {
+      "candidate_id": "openalex--W7208750398",
+      "category": "Paper",
+      "rank": 2,
+      "path": "docs/daily/2026-09-06/paper/02-sustainable-and-scalable-development-of-highly-pie.md"
+    },
+    {
+      "candidate_id": "news--b046fb5c41bc",
+      "category": "News",
+      "rank": 3,
+      "path": "docs/daily/2026-09-06/news/03-顶刊发表哈工程船舶学院团队揭示高温蒸汽超空泡新机制助力水下减阻.md"
+    }
+  ],
+  "assets": [
+    {
+      "candidate_id": "openalex--W7208712989",
+      "path": "docs/public/daily/2026-09-06/assets/openalex--W7208712989/preview.png"
+    },
+    {
+      "candidate_id": "openalex--W7208750398",
+      "path": "docs/public/daily/2026-09-06/assets/openalex--W7208750398/preview.svg"
+    },
+    {
+      "candidate_id": "news--b046fb5c41bc",
+      "path": "docs/public/daily/2026-09-06/assets/news--b046fb5c41bc/preview.svg"
+    }
+  ]
+}
