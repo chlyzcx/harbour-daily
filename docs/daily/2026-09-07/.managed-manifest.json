@@ -1,0 +1,29 @@
+{
+  "schema_version": 2,
+  "cycle_id": "daily-2026-09-07",
+  "display_date": "2026-09-07",
+  "articles": [
+    {
+      "candidate_id": "s2--6722bde176ba954ba0a34e7429dc573b0a29b6af",
+      "category": "Paper",
+      "rank": 1,
+      "path": "docs/daily/2026-09-07/paper/01-demonstrating-the-feasibility-of-a-mirror-ocean-ac.md"
+    },
+    {
+      "candidate_id": "crossref--10.22541-authorea.15008356-v1",
+      "category": "Paper",
+      "rank": 2,
+      "path": "docs/daily/2026-09-07/paper/02-passive-acoustic-monitoring-reveals-that-interspec.md"
+    }
+  ],
+  "assets": [
+    {
+      "candidate_id": "s2--6722bde176ba954ba0a34e7429dc573b0a29b6af",
+      "path": "docs/public/daily/2026-09-07/assets/s2--6722bde176ba954ba0a34e7429dc573b0a29b6af/preview.svg"
+    },
+    {
+      "candidate_id": "crossref--10.22541-authorea.15008356-v1",
+      "path": "docs/public/daily/2026-09-07/assets/crossref--10.22541-authorea.15008356-v1/preview.svg"
+    }
+  ]
+}
