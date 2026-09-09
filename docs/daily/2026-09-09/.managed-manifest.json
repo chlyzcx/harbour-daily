@@ -1,0 +1,119 @@
+{
+  "schema_version": 2,
+  "cycle_id": "daily-2026-09-09",
+  "display_date": "2026-09-09",
+  "articles": [
+    {
+      "candidate_id": "openalex--W7211871770",
+      "category": "Paper",
+      "rank": 1,
+      "path": "docs/daily/2026-09-09/paper/01-two-stage-stochastic-programming-for-resource-allo.md"
+    },
+    {
+      "candidate_id": "openalex--W7210269787",
+      "category": "Paper",
+      "rank": 2,
+      "path": "docs/daily/2026-09-09/paper/02-robust-underwater-localization-with-sound-speed-st.md"
+    },
+    {
+      "candidate_id": "arxiv--2609.07399-1",
+      "category": "Paper",
+      "rank": 3,
+      "path": "docs/daily/2026-09-09/paper/03-open-set-vessel-re-identification-from-underwater-.md"
+    },
+    {
+      "candidate_id": "arxiv--2609.07171-1",
+      "category": "Paper",
+      "rank": 4,
+      "path": "docs/daily/2026-09-09/paper/04-boundary-induced-medium-mapping-enables-air-equiva.md"
+    },
+    {
+      "candidate_id": "openalex--W7211889508",
+      "category": "Paper",
+      "rank": 5,
+      "path": "docs/daily/2026-09-09/paper/05-chilean-dolphins--cephalorhynchus-eutropia--produc.md"
+    },
+    {
+      "candidate_id": "openalex--W7211898404",
+      "category": "Paper",
+      "rank": 6,
+      "path": "docs/daily/2026-09-09/paper/06-observation-of-fishing-operation-and-distributiona.md"
+    },
+    {
+      "candidate_id": "openalex--W7211895862",
+      "category": "Paper",
+      "rank": 7,
+      "path": "docs/daily/2026-09-09/paper/07-a-predator-a-multibeam-echosounder-point-cloud-reg.md"
+    },
+    {
+      "candidate_id": "crossref--10.4028-p-y2tda1",
+      "category": "Paper",
+      "rank": 8,
+      "path": "docs/daily/2026-09-09/paper/08-sensor-based-hard-switching-collision-avoidance-st.md"
+    },
+    {
+      "candidate_id": "crossref--10.1117-12.3124124",
+      "category": "Paper",
+      "rank": 9,
+      "path": "docs/daily/2026-09-09/paper/09-feasibility-analysis-of-fuel-cell-application-in-u.md"
+    },
+    {
+      "candidate_id": "crossref--10.21203-rs.3.rs-10739827-v1",
+      "category": "Paper",
+      "rank": 10,
+      "path": "docs/daily/2026-09-09/paper/10-the-influence-of-the-slenderness-coefficient-on-ur.md"
+    },
+    {
+      "candidate_id": "news--653241fae144",
+      "category": "News",
+      "rank": 11,
+      "path": "docs/daily/2026-09-09/news/11-underwater-drone-captured-by-iran-matches-american.md"
+    }
+  ],
+  "assets": [
+    {
+      "candidate_id": "openalex--W7211871770",
+      "path": "docs/public/daily/2026-09-09/assets/openalex--W7211871770/preview.png"
+    },
+    {
+      "candidate_id": "openalex--W7210269787",
+      "path": "docs/public/daily/2026-09-09/assets/openalex--W7210269787/preview.png"
+    },
+    {
+      "candidate_id": "arxiv--2609.07399-1",
+      "path": "docs/public/daily/2026-09-09/assets/arxiv--2609.07399-1/preview.png"
+    },
+    {
+      "candidate_id": "arxiv--2609.07171-1",
+      "path": "docs/public/daily/2026-09-09/assets/arxiv--2609.07171-1/preview.png"
+    },
+    {
+      "candidate_id": "openalex--W7211889508",
+      "path": "docs/public/daily/2026-09-09/assets/openalex--W7211889508/preview.svg"
+    },
+    {
+      "candidate_id": "openalex--W7211898404",
+      "path": "docs/public/daily/2026-09-09/assets/openalex--W7211898404/preview.svg"
+    },
+    {
+      "candidate_id": "openalex--W7211895862",
+      "path": "docs/public/daily/2026-09-09/assets/openalex--W7211895862/preview.png"
+    },
+    {
+      "candidate_id": "crossref--10.4028-p-y2tda1",
+      "path": "docs/public/daily/2026-09-09/assets/crossref--10.4028-p-y2tda1/preview.png"
+    },
+    {
+      "candidate_id": "crossref--10.1117-12.3124124",
+      "path": "docs/public/daily/2026-09-09/assets/crossref--10.1117-12.3124124/preview.svg"
+    },
+    {
+      "candidate_id": "crossref--10.21203-rs.3.rs-10739827-v1",
+      "path": "docs/public/daily/2026-09-09/assets/crossref--10.21203-rs.3.rs-10739827-v1/preview.svg"
+    },
+    {
+      "candidate_id": "news--653241fae144",
+      "path": "docs/public/daily/2026-09-09/assets/news--653241fae144/preview.png"
+    }
+  ]
+}
