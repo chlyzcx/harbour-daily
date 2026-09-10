@@ -1,0 +1,109 @@
+{
+  "schema_version": 2,
+  "cycle_id": "daily-2026-09-10",
+  "display_date": "2026-09-10",
+  "articles": [
+    {
+      "candidate_id": "openalex--W7211941235",
+      "category": "Paper",
+      "rank": 1,
+      "path": "docs/daily/2026-09-10/paper/01-active-sonar-based-perception-and-wall-following-f.md"
+    },
+    {
+      "candidate_id": "openalex--W7211880011",
+      "category": "Paper",
+      "rank": 2,
+      "path": "docs/daily/2026-09-10/paper/02-wah--i--optimising-microphone-array-geometry-for-c.md"
+    },
+    {
+      "candidate_id": "openalex--W7211977022",
+      "category": "Paper",
+      "rank": 3,
+      "path": "docs/daily/2026-09-10/paper/03-real-time-underwater-acoustic-target-detection-wit.md"
+    },
+    {
+      "candidate_id": "openalex--W7211947001",
+      "category": "Paper",
+      "rank": 4,
+      "path": "docs/daily/2026-09-10/paper/04-a-receiver-guided-generative-semantic-communicatio.md"
+    },
+    {
+      "candidate_id": "openalex--W7211943045",
+      "category": "Paper",
+      "rank": 5,
+      "path": "docs/daily/2026-09-10/paper/05-sonar-signals-holographic-processing-in-a-shallow-.md"
+    },
+    {
+      "candidate_id": "openalex--W7211947899",
+      "category": "Paper",
+      "rank": 6,
+      "path": "docs/daily/2026-09-10/paper/06-vector-scalar-receiver-of-broadband-noise-signals-.md"
+    },
+    {
+      "candidate_id": "openalex--W7211911263",
+      "category": "Paper",
+      "rank": 7,
+      "path": "docs/daily/2026-09-10/paper/07-seismic-activity-temporarily-reshapes-fin-whale-fo.md"
+    },
+    {
+      "candidate_id": "crossref--10.21203-rs.3.rs-10603209-v1",
+      "category": "Paper",
+      "rank": 8,
+      "path": "docs/daily/2026-09-10/paper/08-article-title-acoustic-masking-of-blue-whale-calls.md"
+    },
+    {
+      "candidate_id": "crossref--10.1364-ao.610203",
+      "category": "Paper",
+      "rank": 9,
+      "path": "docs/daily/2026-09-10/paper/09-effective-multiplicative-noise-suppression-for-und.md"
+    },
+    {
+      "candidate_id": "crossref--10.37875-chartdatum.v12i1.400",
+      "category": "Paper",
+      "rank": 10,
+      "path": "docs/daily/2026-09-10/paper/10-kuantifikasi-dasar-laut-berdasarkan-nilai-backscat.md"
+    }
+  ],
+  "assets": [
+    {
+      "candidate_id": "openalex--W7211941235",
+      "path": "docs/public/daily/2026-09-10/assets/openalex--W7211941235/preview.png"
+    },
+    {
+      "candidate_id": "openalex--W7211880011",
+      "path": "docs/public/daily/2026-09-10/assets/openalex--W7211880011/preview.svg"
+    },
+    {
+      "candidate_id": "openalex--W7211977022",
+      "path": "docs/public/daily/2026-09-10/assets/openalex--W7211977022/preview.svg"
+    },
+    {
+      "candidate_id": "openalex--W7211947001",
+      "path": "docs/public/daily/2026-09-10/assets/openalex--W7211947001/preview.png"
+    },
+    {
+      "candidate_id": "openalex--W7211943045",
+      "path": "docs/public/daily/2026-09-10/assets/openalex--W7211943045/preview.svg"
+    },
+    {
+      "candidate_id": "openalex--W7211947899",
+      "path": "docs/public/daily/2026-09-10/assets/openalex--W7211947899/preview.svg"
+    },
+    {
+      "candidate_id": "openalex--W7211911263",
+      "path": "docs/public/daily/2026-09-10/assets/openalex--W7211911263/preview.png"
+    },
+    {
+      "candidate_id": "crossref--10.21203-rs.3.rs-10603209-v1",
+      "path": "docs/public/daily/2026-09-10/assets/crossref--10.21203-rs.3.rs-10603209-v1/preview.svg"
+    },
+    {
+      "candidate_id": "crossref--10.1364-ao.610203",
+      "path": "docs/public/daily/2026-09-10/assets/crossref--10.1364-ao.610203/preview.svg"
+    },
+    {
+      "candidate_id": "crossref--10.37875-chartdatum.v12i1.400",
+      "path": "docs/public/daily/2026-09-10/assets/crossref--10.37875-chartdatum.v12i1.400/preview.svg"
+    }
+  ]
+}

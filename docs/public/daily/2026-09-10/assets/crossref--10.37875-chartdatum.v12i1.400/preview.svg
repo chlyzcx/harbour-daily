@@ -1,0 +1,72 @@
+<svg width="400" height="300" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#042f2e;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#115e59;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="400" height="300" fill="url(#grad)"/>
+
+  <!-- Grid pattern -->
+  <g opacity="0.1">
+    <line x1="0" y1="75" x2="400" y2="75" stroke="#2dd4bf" stroke-width="1"/>
+    <line x1="0" y1="150" x2="400" y2="150" stroke="#2dd4bf" stroke-width="1"/>
+    <line x1="0" y1="225" x2="400" y2="225" stroke="#2dd4bf" stroke-width="1"/>
+    <line x1="100" y1="0" x2="100" y2="300" stroke="#2dd4bf" stroke-width="1"/>
+    <line x1="200" y1="0" x2="200" y2="300" stroke="#2dd4bf" stroke-width="1"/>
+    <line x1="300" y1="0" x2="300" y2="300" stroke="#2dd4bf" stroke-width="1"/>
+  </g>
+
+  <!-- Waveform decoration (deterministic per title) -->
+  <g>
+  <polyline points="0,224.3 8,223.5 16,221.0 24,217.2 32,212.8 40,208.3 48,204.6 56,202.0 64,200.6 72,200.3 80,200.7 88,201.0 96,200.9 104,199.8 112,197.8 120,194.9 128,191.7 136,188.8 144,186.8 152,186.4 160,187.7 168,190.6 176,194.8 184,199.6 192,204.2 200,208.1 208,210.8 216,212.2 224,212.4 232,211.9 240,211.3 248,211.1 256,211.7 264,213.4 272,215.8 280,218.5 288,220.9 296,222.4 304,222.3 312,220.6 320,217.3 328,212.9 336,207.8 344,203.0 352,199.0 360,196.3 368,195.1 376,195.1 384,195.8 392,196.8 400,197.4" fill="none" stroke="#2dd4bf" stroke-width="1.5" opacity="0.35"/>
+  <polyline points="0,227.2 8,227.9 16,227.5 24,226.4 32,225.6 40,225.7 48,227.3 56,230.6 64,235.4 72,241.0 80,246.5 88,251.2 96,254.3 104,255.3 112,254.3 120,251.8 128,248.4 136,245.1 144,242.5 152,241.1 160,241.2 168,242.3 176,244.0 184,245.2 192,245.4 200,243.9 208,240.6 216,235.7 224,229.8 232,223.8 240,218.5 248,214.8 256,212.9 264,213.0 272,214.6 280,217.0 288,219.3 296,220.8 304,221.1 312,220.1 320,218.0 328,215.5 336,213.5 344,212.7 352,213.6 360,216.5 368,221.2 376,227.0 384,233.0 392,238.4 400,242.5" fill="none" stroke="#2dd4bf" stroke-width="1.5" opacity="0.22"/>
+  <polyline points="0,270.6 8,262.6 16,254.0 24,245.8 32,238.8 40,233.9 48,231.6 56,232.2 64,235.8 72,242.0 80,250.1 88,259.2 96,268.5 104,276.9 112,283.6 120,288.0 128,289.8 136,288.8 144,285.5 152,280.3 160,273.9 168,267.1 176,260.5 184,254.7 192,250.2 200,247.2 208,245.6 216,245.4 224,246.1 232,247.6 240,249.6 248,251.7 256,253.8 264,256.0 272,258.2 280,260.7 288,263.5 296,266.7 304,270.2 312,273.8 320,277.3 328,280.2 336,282.0 344,282.4 352,281.1 360,277.8 368,272.7 376,266.0 384,258.4 392,250.5 400,243.2" fill="none" stroke="#2dd4bf" stroke-width="1.5" opacity="0.13"/>
+  </g>
+
+  <!-- Header -->
+  <text x="20" y="40" font-family="Inter, sans-serif" font-size="14" fill="#2dd4bf" font-weight="600">
+    UWA / 09-10
+  </text>
+
+  <!-- Keyword badge -->
+  <rect x="20" y="60" width="84" height="28" rx="14" fill="#2dd4bf" opacity="0.2"/>
+  <text x="30" y="79" font-family="Inter, sans-serif" font-size="13" fill="#2dd4bf" font-weight="500">
+    Research
+  </text>
+
+  <!-- Title -->
+  <foreignObject x="20" y="110" width="360" height="120">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="
+      font-family: Inter, sans-serif;
+      font-size: 18px;
+      font-weight: 600;
+      color: #e2e8f0;
+      line-height: 1.4;
+      overflow: hidden;
+      display: -webkit-box;
+      -webkit-line-clamp: 4;
+      -webkit-box-orient: vertical;
+    ">
+      Kuantifikasi Dasar Laut Berdasarkan Nilai Backscatter Mul...
+    </div>
+  </foreignObject>
+
+  <!-- Author -->
+  <text x="20" y="250" font-family="Inter, sans-serif" font-size="13" fill="#94a3b8">
+    Hendra Hendra
+  </text>
+
+  <!-- Footer -->
+  <text x="20" y="275" font-family="Inter, sans-serif" font-size="11" fill="#64748b">
+    Jurnal Chart Datum
+  </text>
+
+  <!-- Score badge -->
+  <circle cx="360" cy="40" r="24" fill="#2dd4bf" opacity="0.2"/>
+  <text x="360" y="46" font-family="Inter, sans-serif" font-size="14" fill="#2dd4bf" font-weight="700" text-anchor="middle">
+    55
+  </text>
+</svg>
