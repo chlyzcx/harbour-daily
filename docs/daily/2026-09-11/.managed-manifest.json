@@ -1,0 +1,109 @@
+{
+  "schema_version": 2,
+  "cycle_id": "daily-2026-09-11",
+  "display_date": "2026-09-11",
+  "articles": [
+    {
+      "candidate_id": "openalex--W7207666569",
+      "category": "Paper",
+      "rank": 1,
+      "path": "docs/daily/2026-09-11/paper/01-vtuad-an-ais-auto-labeled-vessel-type-underwater-a.md"
+    },
+    {
+      "candidate_id": "arxiv--2609.10826-1",
+      "category": "Paper",
+      "rank": 2,
+      "path": "docs/daily/2026-09-11/paper/02-processing-and-classifying-bird-songs-using-wavele.md"
+    },
+    {
+      "candidate_id": "openalex--W7212034263",
+      "category": "Paper",
+      "rank": 3,
+      "path": "docs/daily/2026-09-11/paper/03-energy-efficient-and-reliable-routing-in-underwate.md"
+    },
+    {
+      "candidate_id": "openalex--W7211928280",
+      "category": "Paper",
+      "rank": 4,
+      "path": "docs/daily/2026-09-11/paper/04-an-unmanned-underwater-vehicle-for-long-distance-w.md"
+    },
+    {
+      "candidate_id": "crossref--10.21203-rs.3.rs-10589678-v1",
+      "category": "Paper",
+      "rank": 5,
+      "path": "docs/daily/2026-09-11/paper/05-distributed-acoustic-sensing-reveals-temporal-occu.md"
+    },
+    {
+      "candidate_id": "crossref--10.1088-2631-8695-aea5e7",
+      "category": "Paper",
+      "rank": 6,
+      "path": "docs/daily/2026-09-11/paper/06-algorithm-and-analysis-of-double-set-online-founta.md"
+    },
+    {
+      "candidate_id": "crossref--10.3390-technologies14090573",
+      "category": "Paper",
+      "rank": 7,
+      "path": "docs/daily/2026-09-11/paper/07-acoustic-aware-bda-ql-a-hybrid-binary-dragonfly-an.md"
+    },
+    {
+      "candidate_id": "crossref--10.22541-essoar.15008648-v1",
+      "category": "Paper",
+      "rank": 8,
+      "path": "docs/daily/2026-09-11/paper/08-riptideremix-a-toolboxfor-musical-synthesis-ofmari.md"
+    },
+    {
+      "candidate_id": "crossref--10.1038-s41598-026-65909-3",
+      "category": "Paper",
+      "rank": 9,
+      "path": "docs/daily/2026-09-11/paper/09-a-thermophone-based-fm-sonar-for-airborne-ultrason.md"
+    },
+    {
+      "candidate_id": "crossref--10.17725-rensit.2026.18.473",
+      "category": "Paper",
+      "rank": 10,
+      "path": "docs/daily/2026-09-11/paper/10-vector-scalar-receiver-of-broadband-noise-signals-.md"
+    }
+  ],
+  "assets": [
+    {
+      "candidate_id": "openalex--W7207666569",
+      "path": "docs/public/daily/2026-09-11/assets/openalex--W7207666569/preview.svg"
+    },
+    {
+      "candidate_id": "arxiv--2609.10826-1",
+      "path": "docs/public/daily/2026-09-11/assets/arxiv--2609.10826-1/preview.png"
+    },
+    {
+      "candidate_id": "openalex--W7212034263",
+      "path": "docs/public/daily/2026-09-11/assets/openalex--W7212034263/preview.svg"
+    },
+    {
+      "candidate_id": "openalex--W7211928280",
+      "path": "docs/public/daily/2026-09-11/assets/openalex--W7211928280/preview.png"
+    },
+    {
+      "candidate_id": "crossref--10.21203-rs.3.rs-10589678-v1",
+      "path": "docs/public/daily/2026-09-11/assets/crossref--10.21203-rs.3.rs-10589678-v1/preview.svg"
+    },
+    {
+      "candidate_id": "crossref--10.1088-2631-8695-aea5e7",
+      "path": "docs/public/daily/2026-09-11/assets/crossref--10.1088-2631-8695-aea5e7/preview.svg"
+    },
+    {
+      "candidate_id": "crossref--10.3390-technologies14090573",
+      "path": "docs/public/daily/2026-09-11/assets/crossref--10.3390-technologies14090573/preview.png"
+    },
+    {
+      "candidate_id": "crossref--10.22541-essoar.15008648-v1",
+      "path": "docs/public/daily/2026-09-11/assets/crossref--10.22541-essoar.15008648-v1/preview.svg"
+    },
+    {
+      "candidate_id": "crossref--10.1038-s41598-026-65909-3",
+      "path": "docs/public/daily/2026-09-11/assets/crossref--10.1038-s41598-026-65909-3/preview.png"
+    },
+    {
+      "candidate_id": "crossref--10.17725-rensit.2026.18.473",
+      "path": "docs/public/daily/2026-09-11/assets/crossref--10.17725-rensit.2026.18.473/preview.svg"
+    }
+  ]
+}
