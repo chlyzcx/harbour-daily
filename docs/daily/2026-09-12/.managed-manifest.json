@@ -1,0 +1,119 @@
+{
+  "schema_version": 2,
+  "cycle_id": "daily-2026-09-12",
+  "display_date": "2026-09-12",
+  "articles": [
+    {
+      "candidate_id": "openalex--W7212110244",
+      "category": "Paper",
+      "rank": 1,
+      "path": "docs/daily/2026-09-12/paper/01-message-dissemination-method-with-lightweight-lear.md"
+    },
+    {
+      "candidate_id": "s2--46f5d8ac7ebf4d5622bf0e18745c0ed9b9c5ac30",
+      "category": "Paper",
+      "rank": 2,
+      "path": "docs/daily/2026-09-12/paper/02-marine-mammal-acoustic-species-recognition-via-met.md"
+    },
+    {
+      "candidate_id": "openalex--W7212137082",
+      "category": "Paper",
+      "rank": 3,
+      "path": "docs/daily/2026-09-12/paper/03-improvement-of-chaotic-maps-for-k-nn-classificatio.md"
+    },
+    {
+      "candidate_id": "openalex--W7212168822",
+      "category": "Paper",
+      "rank": 4,
+      "path": "docs/daily/2026-09-12/paper/04-application-of-artificial-intelligence-in-aquacult.md"
+    },
+    {
+      "candidate_id": "openalex--W7212174274",
+      "category": "Paper",
+      "rank": 5,
+      "path": "docs/daily/2026-09-12/paper/05-an-event-based-camera-enabled-underwater-optical-i.md"
+    },
+    {
+      "candidate_id": "crossref--10.1002-adom.71765",
+      "category": "Paper",
+      "rank": 6,
+      "path": "docs/daily/2026-09-12/paper/06-overcoming-high-bit-error-rate-with-wavelength-bip.md"
+    },
+    {
+      "candidate_id": "crossref--10.1063-10.0046648",
+      "category": "Paper",
+      "rank": 7,
+      "path": "docs/daily/2026-09-12/paper/07-certain-electric-cruise-ships-create-a-different-t.md"
+    },
+    {
+      "candidate_id": "crossref--10.1364-oe.610358",
+      "category": "Paper",
+      "rank": 8,
+      "path": "docs/daily/2026-09-12/paper/08-gated-joint-source-channel-coding-for-turbulence-r.md"
+    },
+    {
+      "candidate_id": "crossref--10.3390-w18182266",
+      "category": "Paper",
+      "rank": 9,
+      "path": "docs/daily/2026-09-12/paper/09-generation-and-propagation-mechanisms-of-leak-indu.md"
+    },
+    {
+      "candidate_id": "crossref--10.17725-j.rensit.2026.18.459",
+      "category": "Paper",
+      "rank": 10,
+      "path": "docs/daily/2026-09-12/paper/10-sonar-signals-holographic-processing-in-a-shallow-.md"
+    },
+    {
+      "candidate_id": "news--4e931ee97bb0",
+      "category": "News",
+      "rank": 11,
+      "path": "docs/daily/2026-09-12/news/11-ultra-maritime-unveils-complete-suite-of-productio.md"
+    }
+  ],
+  "assets": [
+    {
+      "candidate_id": "openalex--W7212110244",
+      "path": "docs/public/daily/2026-09-12/assets/openalex--W7212110244/preview.svg"
+    },
+    {
+      "candidate_id": "s2--46f5d8ac7ebf4d5622bf0e18745c0ed9b9c5ac30",
+      "path": "docs/public/daily/2026-09-12/assets/s2--46f5d8ac7ebf4d5622bf0e18745c0ed9b9c5ac30/preview.svg"
+    },
+    {
+      "candidate_id": "openalex--W7212137082",
+      "path": "docs/public/daily/2026-09-12/assets/openalex--W7212137082/preview.svg"
+    },
+    {
+      "candidate_id": "openalex--W7212168822",
+      "path": "docs/public/daily/2026-09-12/assets/openalex--W7212168822/preview.png"
+    },
+    {
+      "candidate_id": "openalex--W7212174274",
+      "path": "docs/public/daily/2026-09-12/assets/openalex--W7212174274/preview.png"
+    },
+    {
+      "candidate_id": "crossref--10.1002-adom.71765",
+      "path": "docs/public/daily/2026-09-12/assets/crossref--10.1002-adom.71765/preview.svg"
+    },
+    {
+      "candidate_id": "crossref--10.1063-10.0046648",
+      "path": "docs/public/daily/2026-09-12/assets/crossref--10.1063-10.0046648/preview.svg"
+    },
+    {
+      "candidate_id": "crossref--10.1364-oe.610358",
+      "path": "docs/public/daily/2026-09-12/assets/crossref--10.1364-oe.610358/preview.svg"
+    },
+    {
+      "candidate_id": "crossref--10.3390-w18182266",
+      "path": "docs/public/daily/2026-09-12/assets/crossref--10.3390-w18182266/preview.svg"
+    },
+    {
+      "candidate_id": "crossref--10.17725-j.rensit.2026.18.459",
+      "path": "docs/public/daily/2026-09-12/assets/crossref--10.17725-j.rensit.2026.18.459/preview.png"
+    },
+    {
+      "candidate_id": "news--4e931ee97bb0",
+      "path": "docs/public/daily/2026-09-12/assets/news--4e931ee97bb0/preview.png"
+    }
+  ]
+}
