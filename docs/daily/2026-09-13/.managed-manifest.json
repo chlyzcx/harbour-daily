@@ -1,0 +1,79 @@
+{
+  "schema_version": 2,
+  "cycle_id": "daily-2026-09-13",
+  "display_date": "2026-09-13",
+  "articles": [
+    {
+      "candidate_id": "crossref--10.1002-lpor.71882",
+      "category": "Paper",
+      "rank": 1,
+      "path": "docs/daily/2026-09-13/paper/01-highperformance-535nm-green-laser-diode-enabling-f.md"
+    },
+    {
+      "candidate_id": "crossref--10.1007-s00500-025-10833-3",
+      "category": "Paper",
+      "rank": 2,
+      "path": "docs/daily/2026-09-13/paper/02-beacon-node-based-secure-energy-efficient-cluster-.md"
+    },
+    {
+      "candidate_id": "crossref--10.1142-s2591728526500246",
+      "category": "Paper",
+      "rank": 3,
+      "path": "docs/daily/2026-09-13/paper/03-multi-lag-amplitude-normalized-correlation-for-dop.md"
+    },
+    {
+      "candidate_id": "crossref--10.1007-s11042-026-21816-3",
+      "category": "Paper",
+      "rank": 4,
+      "path": "docs/daily/2026-09-13/paper/04-shufflenet-msaa-a-lightweight-multi-scale-adaptive.md"
+    },
+    {
+      "candidate_id": "crossref--10.1007-978-981-92-3994-8_7",
+      "category": "Paper",
+      "rank": 5,
+      "path": "docs/daily/2026-09-13/paper/05-sonaryolo-ma-an-efficient-model-for-small-object-d.md"
+    },
+    {
+      "candidate_id": "crossref--10.1016-j.joes.2026.09.001",
+      "category": "Paper",
+      "rank": 6,
+      "path": "docs/daily/2026-09-13/paper/06-towards-real-time-side-scan-sonar-image-segmentati.md"
+    },
+    {
+      "candidate_id": "crossref--10.1088-2631-8695-ae9f17",
+      "category": "Paper",
+      "rank": 7,
+      "path": "docs/daily/2026-09-13/paper/07-cdds-yolo-a-sonar-image-object-detection-method-ba.md"
+    }
+  ],
+  "assets": [
+    {
+      "candidate_id": "crossref--10.1002-lpor.71882",
+      "path": "docs/public/daily/2026-09-13/assets/crossref--10.1002-lpor.71882/preview.svg"
+    },
+    {
+      "candidate_id": "crossref--10.1007-s00500-025-10833-3",
+      "path": "docs/public/daily/2026-09-13/assets/crossref--10.1007-s00500-025-10833-3/preview.svg"
+    },
+    {
+      "candidate_id": "crossref--10.1142-s2591728526500246",
+      "path": "docs/public/daily/2026-09-13/assets/crossref--10.1142-s2591728526500246/preview.svg"
+    },
+    {
+      "candidate_id": "crossref--10.1007-s11042-026-21816-3",
+      "path": "docs/public/daily/2026-09-13/assets/crossref--10.1007-s11042-026-21816-3/preview.png"
+    },
+    {
+      "candidate_id": "crossref--10.1007-978-981-92-3994-8_7",
+      "path": "docs/public/daily/2026-09-13/assets/crossref--10.1007-978-981-92-3994-8_7/preview.svg"
+    },
+    {
+      "candidate_id": "crossref--10.1016-j.joes.2026.09.001",
+      "path": "docs/public/daily/2026-09-13/assets/crossref--10.1016-j.joes.2026.09.001/preview.png"
+    },
+    {
+      "candidate_id": "crossref--10.1088-2631-8695-ae9f17",
+      "path": "docs/public/daily/2026-09-13/assets/crossref--10.1088-2631-8695-ae9f17/preview.svg"
+    }
+  ]
+}
