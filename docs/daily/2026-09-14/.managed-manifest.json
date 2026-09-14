@@ -1,0 +1,79 @@
+{
+  "schema_version": 2,
+  "cycle_id": "daily-2026-09-14",
+  "display_date": "2026-09-14",
+  "articles": [
+    {
+      "candidate_id": "openalex--W7212379104",
+      "category": "Paper",
+      "rank": 1,
+      "path": "docs/daily/2026-09-14/paper/01-compass-vit-compressed-multi-view-pairwise-aligned.md"
+    },
+    {
+      "candidate_id": "openalex--W7212386324",
+      "category": "Paper",
+      "rank": 2,
+      "path": "docs/daily/2026-09-14/paper/02-scene-aware-robust-fusion-of-side-ranging-and-forw.md"
+    },
+    {
+      "candidate_id": "openalex--W7212263820",
+      "category": "Paper",
+      "rank": 3,
+      "path": "docs/daily/2026-09-14/paper/03-performance-of-an-unmanned-sailboat-towing-a-sonar.md"
+    },
+    {
+      "candidate_id": "openalex--W7212255378",
+      "category": "Paper",
+      "rank": 4,
+      "path": "docs/daily/2026-09-14/paper/04-feeling-the-noise-behavioural-responses-in-ascidia.md"
+    },
+    {
+      "candidate_id": "crossref--10.1111-mms.70264",
+      "category": "Paper",
+      "rank": 5,
+      "path": "docs/daily/2026-09-14/paper/05-using-the-vaquitas-acoustic-behavior-to-strengthen.md"
+    },
+    {
+      "candidate_id": "crossref--10.64898-2026.09.08.747031",
+      "category": "Paper",
+      "rank": 6,
+      "path": "docs/daily/2026-09-14/paper/06-calibrating-classifiers-across-covariates-hierarch.md"
+    },
+    {
+      "candidate_id": "crossref--10.20944-preprints202609.0919.v1",
+      "category": "Paper",
+      "rank": 7,
+      "path": "docs/daily/2026-09-14/paper/07-when-underwater-acoustic-recognition-fails-across-.md"
+    }
+  ],
+  "assets": [
+    {
+      "candidate_id": "openalex--W7212379104",
+      "path": "docs/public/daily/2026-09-14/assets/openalex--W7212379104/preview.png"
+    },
+    {
+      "candidate_id": "openalex--W7212386324",
+      "path": "docs/public/daily/2026-09-14/assets/openalex--W7212386324/preview.png"
+    },
+    {
+      "candidate_id": "openalex--W7212263820",
+      "path": "docs/public/daily/2026-09-14/assets/openalex--W7212263820/preview.png"
+    },
+    {
+      "candidate_id": "openalex--W7212255378",
+      "path": "docs/public/daily/2026-09-14/assets/openalex--W7212255378/preview.png"
+    },
+    {
+      "candidate_id": "crossref--10.1111-mms.70264",
+      "path": "docs/public/daily/2026-09-14/assets/crossref--10.1111-mms.70264/preview.svg"
+    },
+    {
+      "candidate_id": "crossref--10.64898-2026.09.08.747031",
+      "path": "docs/public/daily/2026-09-14/assets/crossref--10.64898-2026.09.08.747031/preview.svg"
+    },
+    {
+      "candidate_id": "crossref--10.20944-preprints202609.0919.v1",
+      "path": "docs/public/daily/2026-09-14/assets/crossref--10.20944-preprints202609.0919.v1/preview.svg"
+    }
+  ]
+}
