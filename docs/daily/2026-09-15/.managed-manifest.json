@@ -1,0 +1,89 @@
+{
+  "schema_version": 2,
+  "cycle_id": "daily-2026-09-15",
+  "display_date": "2026-09-15",
+  "articles": [
+    {
+      "candidate_id": "openalex--W7212195279",
+      "category": "Paper",
+      "rank": 1,
+      "path": "docs/daily/2026-09-15/paper/01-swelling-resistant-gels-with-high-temperature-tole.md"
+    },
+    {
+      "candidate_id": "openalex--W7212271100",
+      "category": "Paper",
+      "rank": 2,
+      "path": "docs/daily/2026-09-15/paper/02-autonomous-navigation-and-active-perception-with-c.md"
+    },
+    {
+      "candidate_id": "crossref--10.1578-am.52.5.2026.392",
+      "category": "Paper",
+      "rank": 3,
+      "path": "docs/daily/2026-09-15/paper/03-sailing-for-science-beaked-whale-acoustic-detectio.md"
+    },
+    {
+      "candidate_id": "crossref--10.32942-x26h45",
+      "category": "Paper",
+      "rank": 4,
+      "path": "docs/daily/2026-09-15/paper/04-acoustic-vector-sensing-of-blue-and-fin-whale-habi.md"
+    },
+    {
+      "candidate_id": "crossref--10.1007-s42235-026-01001-w",
+      "category": "Paper",
+      "rank": 5,
+      "path": "docs/daily/2026-09-15/paper/05-simulation-analysis-of-underwater-doa-estimation-f.md"
+    },
+    {
+      "candidate_id": "crossref--10.20944-preprints202609.0999.v1",
+      "category": "Paper",
+      "rank": 6,
+      "path": "docs/daily/2026-09-15/paper/06-self-supervised-pretraining-for-underwater-acousti.md"
+    },
+    {
+      "candidate_id": "crossref--10.1007-s10499-026-02666-0",
+      "category": "Paper",
+      "rank": 7,
+      "path": "docs/daily/2026-09-15/paper/07-ehds-yolo-a-lightweight-side-scan-sonar-object-det.md"
+    },
+    {
+      "candidate_id": "news--c5f917dab1cc",
+      "category": "News",
+      "rank": 8,
+      "path": "docs/daily/2026-09-15/news/08-robosys-voyager-ai-integrated-into-farsounder-forw.md"
+    }
+  ],
+  "assets": [
+    {
+      "candidate_id": "openalex--W7212195279",
+      "path": "docs/public/daily/2026-09-15/assets/openalex--W7212195279/preview.png"
+    },
+    {
+      "candidate_id": "openalex--W7212271100",
+      "path": "docs/public/daily/2026-09-15/assets/openalex--W7212271100/preview.png"
+    },
+    {
+      "candidate_id": "crossref--10.1578-am.52.5.2026.392",
+      "path": "docs/public/daily/2026-09-15/assets/crossref--10.1578-am.52.5.2026.392/preview.svg"
+    },
+    {
+      "candidate_id": "crossref--10.32942-x26h45",
+      "path": "docs/public/daily/2026-09-15/assets/crossref--10.32942-x26h45/preview.svg"
+    },
+    {
+      "candidate_id": "crossref--10.1007-s42235-026-01001-w",
+      "path": "docs/public/daily/2026-09-15/assets/crossref--10.1007-s42235-026-01001-w/preview.png"
+    },
+    {
+      "candidate_id": "crossref--10.20944-preprints202609.0999.v1",
+      "path": "docs/public/daily/2026-09-15/assets/crossref--10.20944-preprints202609.0999.v1/preview.svg"
+    },
+    {
+      "candidate_id": "crossref--10.1007-s10499-026-02666-0",
+      "path": "docs/public/daily/2026-09-15/assets/crossref--10.1007-s10499-026-02666-0/preview.png"
+    },
+    {
+      "candidate_id": "news--c5f917dab1cc",
+      "path": "docs/public/daily/2026-09-15/assets/news--c5f917dab1cc/preview.png"
+    }
+  ]
+}
