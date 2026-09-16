@@ -1,0 +1,119 @@
+{
+  "schema_version": 2,
+  "cycle_id": "daily-2026-09-16",
+  "display_date": "2026-09-16",
+  "articles": [
+    {
+      "candidate_id": "openalex--W7212424414",
+      "category": "Paper",
+      "rank": 1,
+      "path": "docs/daily/2026-09-16/paper/01-detection-guided-beamforming-for-efficient-bat-loc.md"
+    },
+    {
+      "candidate_id": "arxiv--2609.16796-1",
+      "category": "Paper",
+      "rank": 2,
+      "path": "docs/daily/2026-09-16/paper/02-time-warping-estimation-via-stationarity-based-lea.md"
+    },
+    {
+      "candidate_id": "arxiv--2609.15255-1",
+      "category": "Paper",
+      "rank": 3,
+      "path": "docs/daily/2026-09-16/paper/03-biodcase-active-learning-for-bioacoustics.md"
+    },
+    {
+      "candidate_id": "arxiv--2609.15221-1",
+      "category": "Paper",
+      "rank": 4,
+      "path": "docs/daily/2026-09-16/paper/04-mast-label-efficient-robust-and-generalizable-soun.md"
+    },
+    {
+      "candidate_id": "arxiv--2609.14022-1",
+      "category": "Paper",
+      "rank": 5,
+      "path": "docs/daily/2026-09-16/paper/05-towards-a-connected-heterogeneous-all-medium-integ.md"
+    },
+    {
+      "candidate_id": "arxiv--2609.13659-1",
+      "category": "Paper",
+      "rank": 6,
+      "path": "docs/daily/2026-09-16/paper/06-uniqueship-mitigating-data-leakage-in-acoustic-shi.md"
+    },
+    {
+      "candidate_id": "arxiv--2609.13281-1",
+      "category": "Paper",
+      "rank": 7,
+      "path": "docs/daily/2026-09-16/paper/07-large-scale-bioacoustic-detection-using-semantic-s.md"
+    },
+    {
+      "candidate_id": "openalex--W7212783524",
+      "category": "Paper",
+      "rank": 8,
+      "path": "docs/daily/2026-09-16/paper/08-split-step-padé-sine-method-for-wide-angle-parabol.md"
+    },
+    {
+      "candidate_id": "openalex--W7212670385",
+      "category": "Paper",
+      "rank": 9,
+      "path": "docs/daily/2026-09-16/paper/09-two-dimensional-spreading-in-timefrequency-domain-.md"
+    },
+    {
+      "candidate_id": "openalex--W7213212353",
+      "category": "Paper",
+      "rank": 10,
+      "path": "docs/daily/2026-09-16/paper/10-image-based-multi-domain-feature-extraction-for-io.md"
+    },
+    {
+      "candidate_id": "news--63405a275f99",
+      "category": "News",
+      "rank": 11,
+      "path": "docs/daily/2026-09-16/news/11-ocean-science-consulting-release-second-edition-of.md"
+    }
+  ],
+  "assets": [
+    {
+      "candidate_id": "openalex--W7212424414",
+      "path": "docs/public/daily/2026-09-16/assets/openalex--W7212424414/preview.svg"
+    },
+    {
+      "candidate_id": "arxiv--2609.16796-1",
+      "path": "docs/public/daily/2026-09-16/assets/arxiv--2609.16796-1/preview.png"
+    },
+    {
+      "candidate_id": "arxiv--2609.15255-1",
+      "path": "docs/public/daily/2026-09-16/assets/arxiv--2609.15255-1/preview.png"
+    },
+    {
+      "candidate_id": "arxiv--2609.15221-1",
+      "path": "docs/public/daily/2026-09-16/assets/arxiv--2609.15221-1/preview.png"
+    },
+    {
+      "candidate_id": "arxiv--2609.14022-1",
+      "path": "docs/public/daily/2026-09-16/assets/arxiv--2609.14022-1/preview.png"
+    },
+    {
+      "candidate_id": "arxiv--2609.13659-1",
+      "path": "docs/public/daily/2026-09-16/assets/arxiv--2609.13659-1/preview.png"
+    },
+    {
+      "candidate_id": "arxiv--2609.13281-1",
+      "path": "docs/public/daily/2026-09-16/assets/arxiv--2609.13281-1/preview.png"
+    },
+    {
+      "candidate_id": "openalex--W7212783524",
+      "path": "docs/public/daily/2026-09-16/assets/openalex--W7212783524/preview.svg"
+    },
+    {
+      "candidate_id": "openalex--W7212670385",
+      "path": "docs/public/daily/2026-09-16/assets/openalex--W7212670385/preview.png"
+    },
+    {
+      "candidate_id": "openalex--W7213212353",
+      "path": "docs/public/daily/2026-09-16/assets/openalex--W7213212353/preview.svg"
+    },
+    {
+      "candidate_id": "news--63405a275f99",
+      "path": "docs/public/daily/2026-09-16/assets/news--63405a275f99/preview.png"
+    }
+  ]
+}
