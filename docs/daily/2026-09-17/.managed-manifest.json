@@ -1,0 +1,109 @@
+{
+  "schema_version": 2,
+  "cycle_id": "daily-2026-09-17",
+  "display_date": "2026-09-17",
+  "articles": [
+    {
+      "candidate_id": "arxiv--2609.18666-1",
+      "category": "Paper",
+      "rank": 1,
+      "path": "docs/daily/2026-09-17/paper/01-impact-of-a-css-quantum-error-correction-code-in-u.md"
+    },
+    {
+      "candidate_id": "openalex--W7213261363",
+      "category": "Paper",
+      "rank": 2,
+      "path": "docs/daily/2026-09-17/paper/02-an-active-sonar-signal-detection-algorithm-based-o.md"
+    },
+    {
+      "candidate_id": "openalex--W7213326293",
+      "category": "Paper",
+      "rank": 3,
+      "path": "docs/daily/2026-09-17/paper/03-curve-target-extraction-from-synthetic-aperture-so.md"
+    },
+    {
+      "candidate_id": "s2--2dd07b5367edcad19d94f435185b6ee1cc05c51b",
+      "category": "Paper",
+      "rank": 4,
+      "path": "docs/daily/2026-09-17/paper/04-a-direction-aware-structured-inversion-method-for-.md"
+    },
+    {
+      "candidate_id": "openalex--W7213235209",
+      "category": "Paper",
+      "rank": 5,
+      "path": "docs/daily/2026-09-17/paper/05-unsupervised-domain-adaptation-for-cross-water-und.md"
+    },
+    {
+      "candidate_id": "openalex--W7213294314",
+      "category": "Paper",
+      "rank": 6,
+      "path": "docs/daily/2026-09-17/paper/06-open-set-recognition-for-underwater-acoustic-targe.md"
+    },
+    {
+      "candidate_id": "openalex--W7213306341",
+      "category": "Paper",
+      "rank": 7,
+      "path": "docs/daily/2026-09-17/paper/07-source-free-domain-adaptation-for-underwater-acous.md"
+    },
+    {
+      "candidate_id": "openalex--W7213352864",
+      "category": "Paper",
+      "rank": 8,
+      "path": "docs/daily/2026-09-17/paper/08-lsd-detr-a-lightweight-transformer-based-detector-.md"
+    },
+    {
+      "candidate_id": "s2--0b8abe046e81470e09b7bb0c649da6736e04bd78",
+      "category": "Paper",
+      "rank": 9,
+      "path": "docs/daily/2026-09-17/paper/09-physics-guided-neural-radiance-fields-for-forward-.md"
+    },
+    {
+      "candidate_id": "s2--712696bb4f5b138d333828bc46fb85853d832144",
+      "category": "Paper",
+      "rank": 10,
+      "path": "docs/daily/2026-09-17/paper/10-a-novel-integrated-underwater-communication-and-po.md"
+    }
+  ],
+  "assets": [
+    {
+      "candidate_id": "arxiv--2609.18666-1",
+      "path": "docs/public/daily/2026-09-17/assets/arxiv--2609.18666-1/preview.png"
+    },
+    {
+      "candidate_id": "openalex--W7213261363",
+      "path": "docs/public/daily/2026-09-17/assets/openalex--W7213261363/preview.png"
+    },
+    {
+      "candidate_id": "openalex--W7213326293",
+      "path": "docs/public/daily/2026-09-17/assets/openalex--W7213326293/preview.svg"
+    },
+    {
+      "candidate_id": "s2--2dd07b5367edcad19d94f435185b6ee1cc05c51b",
+      "path": "docs/public/daily/2026-09-17/assets/s2--2dd07b5367edcad19d94f435185b6ee1cc05c51b/preview.svg"
+    },
+    {
+      "candidate_id": "openalex--W7213235209",
+      "path": "docs/public/daily/2026-09-17/assets/openalex--W7213235209/preview.svg"
+    },
+    {
+      "candidate_id": "openalex--W7213294314",
+      "path": "docs/public/daily/2026-09-17/assets/openalex--W7213294314/preview.svg"
+    },
+    {
+      "candidate_id": "openalex--W7213306341",
+      "path": "docs/public/daily/2026-09-17/assets/openalex--W7213306341/preview.svg"
+    },
+    {
+      "candidate_id": "openalex--W7213352864",
+      "path": "docs/public/daily/2026-09-17/assets/openalex--W7213352864/preview.svg"
+    },
+    {
+      "candidate_id": "s2--0b8abe046e81470e09b7bb0c649da6736e04bd78",
+      "path": "docs/public/daily/2026-09-17/assets/s2--0b8abe046e81470e09b7bb0c649da6736e04bd78/preview.svg"
+    },
+    {
+      "candidate_id": "s2--712696bb4f5b138d333828bc46fb85853d832144",
+      "path": "docs/public/daily/2026-09-17/assets/s2--712696bb4f5b138d333828bc46fb85853d832144/preview.svg"
+    }
+  ]
+}

@@ -1,0 +1,72 @@
+<svg width="400" height="300" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#2e1065;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#5b21b6;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="400" height="300" fill="url(#grad)"/>
+
+  <!-- Grid pattern -->
+  <g opacity="0.1">
+    <line x1="0" y1="75" x2="400" y2="75" stroke="#a78bfa" stroke-width="1"/>
+    <line x1="0" y1="150" x2="400" y2="150" stroke="#a78bfa" stroke-width="1"/>
+    <line x1="0" y1="225" x2="400" y2="225" stroke="#a78bfa" stroke-width="1"/>
+    <line x1="100" y1="0" x2="100" y2="300" stroke="#a78bfa" stroke-width="1"/>
+    <line x1="200" y1="0" x2="200" y2="300" stroke="#a78bfa" stroke-width="1"/>
+    <line x1="300" y1="0" x2="300" y2="300" stroke="#a78bfa" stroke-width="1"/>
+  </g>
+
+  <!-- Waveform decoration (deterministic per title) -->
+  <g>
+  <polyline points="0,218.1 8,218.9 16,217.9 24,214.9 32,210.2 40,205.0 48,200.3 56,197.1 64,195.8 72,196.3 80,197.8 88,199.2 96,199.6 104,198.3 112,195.5 120,191.8 128,188.2 136,185.9 144,185.7 152,187.6 160,191.2 168,195.5 176,199.4 184,201.9 192,202.7 200,202.0 208,200.7 216,199.8 224,200.2 232,202.5 240,206.5 248,211.4 256,216.3 264,219.9 272,221.6 280,221.1 288,219.1 296,216.4 304,214.3 312,213.4 320,214.1 328,216.1 336,218.6 344,220.3 352,220.5 360,218.5 368,214.7 376,209.7 384,204.6 392,200.7 400,198.5" fill="none" stroke="#a78bfa" stroke-width="1.5" opacity="0.35"/>
+  <polyline points="0,234.4 8,241.2 16,245.5 24,246.9 32,246.3 40,244.6 48,243.2 56,242.7 64,243.3 72,244.4 80,244.8 88,243.5 96,239.7 104,233.5 112,225.5 120,217.5 128,210.9 136,207.4 144,207.6 152,211.2 160,217.4 168,224.5 176,231.0 184,235.7 192,238.3 200,239.2 208,239.3 216,239.8 224,241.5 232,244.3 240,247.7 248,250.5 256,251.4 264,249.4 272,244.1 280,236.3 288,227.3 296,218.9 304,212.7 312,209.7 320,210.3 328,213.6 336,218.3 344,223.1 352,226.8 360,229.0 368,230.0 376,230.7 384,232.1 392,235.1 400,239.8" fill="none" stroke="#a78bfa" stroke-width="1.5" opacity="0.22"/>
+  <polyline points="0,258.6 8,255.3 16,249.9 24,243.3 32,237.2 40,233.3 48,233.0 56,236.9 64,244.4 72,253.9 80,263.5 88,271.4 96,276.2 104,278.0 112,277.3 120,275.8 128,274.7 136,275.2 144,277.5 152,280.6 160,283.1 168,283.5 176,280.7 184,274.2 192,265.0 200,254.7 208,245.3 216,238.6 224,235.7 232,236.6 240,240.3 248,245.2 256,249.7 264,252.5 272,253.4 280,253.1 288,253.0 296,254.3 304,258.3 312,265.0 320,273.4 328,282.1 336,289.0 344,292.5 352,291.8 360,287.1 368,279.8 376,271.6 384,264.3 392,259.4 400,256.9" fill="none" stroke="#a78bfa" stroke-width="1.5" opacity="0.13"/>
+  </g>
+
+  <!-- Header -->
+  <text x="20" y="40" font-family="Inter, sans-serif" font-size="14" fill="#a78bfa" font-weight="600">
+    UWA / 09-17
+  </text>
+
+  <!-- Keyword badge -->
+  <rect x="20" y="60" width="324" height="28" rx="14" fill="#a78bfa" opacity="0.2"/>
+  <text x="30" y="79" font-family="Inter, sans-serif" font-size="13" fill="#a78bfa" font-weight="500">
+    underwater acoustic target recognition
+  </text>
+
+  <!-- Title -->
+  <foreignObject x="20" y="110" width="360" height="120">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="
+      font-family: Inter, sans-serif;
+      font-size: 18px;
+      font-weight: 600;
+      color: #e2e8f0;
+      line-height: 1.4;
+      overflow: hidden;
+      display: -webkit-box;
+      -webkit-line-clamp: 4;
+      -webkit-box-orient: vertical;
+    ">
+      Open-Set Recognition for Underwater Acoustic Target Recog...
+    </div>
+  </foreignObject>
+
+  <!-- Author -->
+  <text x="20" y="250" font-family="Inter, sans-serif" font-size="13" fill="#94a3b8">
+    Hao Yuan
+  </text>
+
+  <!-- Footer -->
+  <text x="20" y="275" font-family="Inter, sans-serif" font-size="11" fill="#64748b">
+    Preprints.org
+  </text>
+
+  <!-- Score badge -->
+  <circle cx="360" cy="40" r="24" fill="#a78bfa" opacity="0.2"/>
+  <text x="360" y="46" font-family="Inter, sans-serif" font-size="14" fill="#a78bfa" font-weight="700" text-anchor="middle">
+    64
+  </text>
+</svg>
