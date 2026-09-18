@@ -1,0 +1,72 @@
+<svg width="400" height="300" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#042f2e;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#115e59;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="400" height="300" fill="url(#grad)"/>
+
+  <!-- Grid pattern -->
+  <g opacity="0.1">
+    <line x1="0" y1="75" x2="400" y2="75" stroke="#2dd4bf" stroke-width="1"/>
+    <line x1="0" y1="150" x2="400" y2="150" stroke="#2dd4bf" stroke-width="1"/>
+    <line x1="0" y1="225" x2="400" y2="225" stroke="#2dd4bf" stroke-width="1"/>
+    <line x1="100" y1="0" x2="100" y2="300" stroke="#2dd4bf" stroke-width="1"/>
+    <line x1="200" y1="0" x2="200" y2="300" stroke="#2dd4bf" stroke-width="1"/>
+    <line x1="300" y1="0" x2="300" y2="300" stroke="#2dd4bf" stroke-width="1"/>
+  </g>
+
+  <!-- Waveform decoration (deterministic per title) -->
+  <g>
+  <polyline points="0,198.1 8,203.0 16,207.0 24,209.2 32,209.6 40,208.6 48,207.3 56,206.7 64,207.6 72,210.3 80,214.2 88,218.6 96,222.2 104,224.2 112,224.0 120,221.8 128,218.3 136,214.7 144,212.0 152,210.8 160,211.3 168,212.7 176,214.2 184,214.7 192,213.5 200,210.3 208,205.5 216,200.3 224,195.6 232,192.6 240,191.6 248,192.4 256,194.3 264,196.2 272,197.2 280,196.6 288,194.4 296,191.4 304,188.6 312,187.0 320,187.3 328,189.8 336,194.0 344,198.8 352,203.2 360,206.1 368,207.2 376,206.8 384,205.6 392,204.6 400,204.9" fill="none" stroke="#2dd4bf" stroke-width="1.5" opacity="0.35"/>
+  <polyline points="0,231.3 8,229.6 16,227.2 24,224.0 32,220.2 40,216.4 48,213.3 56,211.8 64,212.5 72,215.8 80,221.5 88,228.9 96,237.2 104,245.0 112,251.4 120,255.3 128,256.3 136,254.4 144,250.1 152,244.3 160,238.0 168,232.1 176,227.4 184,224.2 192,222.4 200,221.8 208,221.7 216,221.6 224,221.2 232,220.4 240,219.4 248,218.8 256,219.1 264,221.0 272,224.7 280,230.1 288,236.8 296,243.8 304,250.2 312,254.9 320,257.0 328,256.0 336,252.2 344,246.0 352,238.3 360,230.4 368,223.4 376,218.0 384,215.0 392,214.1 400,215.2" fill="none" stroke="#2dd4bf" stroke-width="1.5" opacity="0.22"/>
+  <polyline points="0,283.9 8,289.6 16,292.2 24,291.5 32,287.7 40,281.6 48,274.4 56,267.2 64,261.0 72,256.5 80,253.8 88,252.6 96,252.3 104,252.0 112,251.1 120,249.3 128,246.6 136,243.6 144,241.1 152,240.0 160,241.2 168,245.0 176,251.4 184,259.8 192,269.1 200,278.0 208,285.3 216,289.9 224,291.3 232,289.5 240,285.2 248,279.2 256,272.7 264,266.7 272,262.1 280,259.0 288,257.3 296,256.4 304,255.6 312,254.3 320,251.9 328,248.4 336,244.4 344,240.6 352,237.9 360,237.4 368,239.7 376,244.8 384,252.4 392,261.5 400,271.0" fill="none" stroke="#2dd4bf" stroke-width="1.5" opacity="0.13"/>
+  </g>
+
+  <!-- Header -->
+  <text x="20" y="40" font-family="Inter, sans-serif" font-size="14" fill="#2dd4bf" font-weight="600">
+    UWA / 09-18
+  </text>
+
+  <!-- Keyword badge -->
+  <rect x="20" y="60" width="84" height="28" rx="14" fill="#2dd4bf" opacity="0.2"/>
+  <text x="30" y="79" font-family="Inter, sans-serif" font-size="13" fill="#2dd4bf" font-weight="500">
+    Research
+  </text>
+
+  <!-- Title -->
+  <foreignObject x="20" y="110" width="360" height="120">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="
+      font-family: Inter, sans-serif;
+      font-size: 18px;
+      font-weight: 600;
+      color: #e2e8f0;
+      line-height: 1.4;
+      overflow: hidden;
+      display: -webkit-box;
+      -webkit-line-clamp: 4;
+      -webkit-box-orient: vertical;
+    ">
+      Severe Thrombocytopenia Associated With Glucagon‐Like‐1 R...
+    </div>
+  </foreignObject>
+
+  <!-- Author -->
+  <text x="20" y="250" font-family="Inter, sans-serif" font-size="13" fill="#94a3b8">
+    Charles L. Bennett
+  </text>
+
+  <!-- Footer -->
+  <text x="20" y="275" font-family="Inter, sans-serif" font-size="11" fill="#64748b">
+    Diabetes Obesity and Metabolism
+  </text>
+
+  <!-- Score badge -->
+  <circle cx="360" cy="40" r="24" fill="#2dd4bf" opacity="0.2"/>
+  <text x="360" y="46" font-family="Inter, sans-serif" font-size="14" fill="#2dd4bf" font-weight="700" text-anchor="middle">
+    56
+  </text>
+</svg>

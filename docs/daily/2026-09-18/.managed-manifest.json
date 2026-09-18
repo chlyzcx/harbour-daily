@@ -1,0 +1,129 @@
+{
+  "schema_version": 2,
+  "cycle_id": "daily-2026-09-18",
+  "display_date": "2026-09-18",
+  "articles": [
+    {
+      "candidate_id": "openalex--W7213468487",
+      "category": "Paper",
+      "rank": 1,
+      "path": "docs/daily/2026-09-18/paper/01-lightweight-sonar-target-detection-based-on-dual-d.md"
+    },
+    {
+      "candidate_id": "openalex--W7213413595",
+      "category": "Paper",
+      "rank": 2,
+      "path": "docs/daily/2026-09-18/paper/02-underwater-crack-detection-method-for-bridges-base.md"
+    },
+    {
+      "candidate_id": "openalex--W7213231303",
+      "category": "Paper",
+      "rank": 3,
+      "path": "docs/daily/2026-09-18/paper/03-acute-and-cumulative-cortisol-responses-to-impulsi.md"
+    },
+    {
+      "candidate_id": "openalex--W7213302413",
+      "category": "Paper",
+      "rank": 4,
+      "path": "docs/daily/2026-09-18/paper/04-precise-bearing-estimation-for-weak-targets-with-a.md"
+    },
+    {
+      "candidate_id": "openalex--W7213447719",
+      "category": "Paper",
+      "rank": 5,
+      "path": "docs/daily/2026-09-18/paper/05-severe-thrombocytopenia-associated-with-glucagonli.md"
+    },
+    {
+      "candidate_id": "crossref--10.1364-prj.592449",
+      "category": "Paper",
+      "rank": 6,
+      "path": "docs/daily/2026-09-18/paper/06-model-free-autoencoder-for-adaptive-optimization-i.md"
+    },
+    {
+      "candidate_id": "crossref--10.1364-ol.610039",
+      "category": "Paper",
+      "rank": 7,
+      "path": "docs/daily/2026-09-18/paper/07-energy-efficient-underwater-wireless-optical-seman.md"
+    },
+    {
+      "candidate_id": "crossref--10.1201-9781042018222-79",
+      "category": "Paper",
+      "rank": 8,
+      "path": "docs/daily/2026-09-18/paper/08-comparative-review-of-opportunistic-routing-protoc.md"
+    },
+    {
+      "candidate_id": "crossref--10.3390-pr14182959",
+      "category": "Paper",
+      "rank": 9,
+      "path": "docs/daily/2026-09-18/paper/09-auxiliary-power-prediction-for-underwater-vehicles.md"
+    },
+    {
+      "candidate_id": "crossref--10.68302-std2026.vol1.191",
+      "category": "Paper",
+      "rank": 10,
+      "path": "docs/daily/2026-09-18/paper/10-organizing-and-conducting-underwater-search-and-re.md"
+    },
+    {
+      "candidate_id": "news--75a1fcc1e476",
+      "category": "News",
+      "rank": 11,
+      "path": "docs/daily/2026-09-18/news/11-teledyne-marine-demonstrates-uuv-capabilities-at-r.md"
+    },
+    {
+      "candidate_id": "news--a83387276dbb",
+      "category": "News",
+      "rank": 12,
+      "path": "docs/daily/2026-09-18/news/12-us-navy-expands-hammerhead-anti-submarine-mine-pro.md"
+    }
+  ],
+  "assets": [
+    {
+      "candidate_id": "openalex--W7213468487",
+      "path": "docs/public/daily/2026-09-18/assets/openalex--W7213468487/preview.png"
+    },
+    {
+      "candidate_id": "openalex--W7213413595",
+      "path": "docs/public/daily/2026-09-18/assets/openalex--W7213413595/preview.png"
+    },
+    {
+      "candidate_id": "openalex--W7213231303",
+      "path": "docs/public/daily/2026-09-18/assets/openalex--W7213231303/preview.png"
+    },
+    {
+      "candidate_id": "openalex--W7213302413",
+      "path": "docs/public/daily/2026-09-18/assets/openalex--W7213302413/preview.png"
+    },
+    {
+      "candidate_id": "openalex--W7213447719",
+      "path": "docs/public/daily/2026-09-18/assets/openalex--W7213447719/preview.svg"
+    },
+    {
+      "candidate_id": "crossref--10.1364-prj.592449",
+      "path": "docs/public/daily/2026-09-18/assets/crossref--10.1364-prj.592449/preview.svg"
+    },
+    {
+      "candidate_id": "crossref--10.1364-ol.610039",
+      "path": "docs/public/daily/2026-09-18/assets/crossref--10.1364-ol.610039/preview.svg"
+    },
+    {
+      "candidate_id": "crossref--10.1201-9781042018222-79",
+      "path": "docs/public/daily/2026-09-18/assets/crossref--10.1201-9781042018222-79/preview.svg"
+    },
+    {
+      "candidate_id": "crossref--10.3390-pr14182959",
+      "path": "docs/public/daily/2026-09-18/assets/crossref--10.3390-pr14182959/preview.svg"
+    },
+    {
+      "candidate_id": "crossref--10.68302-std2026.vol1.191",
+      "path": "docs/public/daily/2026-09-18/assets/crossref--10.68302-std2026.vol1.191/preview.svg"
+    },
+    {
+      "candidate_id": "news--75a1fcc1e476",
+      "path": "docs/public/daily/2026-09-18/assets/news--75a1fcc1e476/preview.png"
+    },
+    {
+      "candidate_id": "news--a83387276dbb",
+      "path": "docs/public/daily/2026-09-18/assets/news--a83387276dbb/preview.png"
+    }
+  ]
+}

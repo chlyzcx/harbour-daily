@@ -1,0 +1,72 @@
+<svg width="400" height="300" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#052e16;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#166534;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="400" height="300" fill="url(#grad)"/>
+
+  <!-- Grid pattern -->
+  <g opacity="0.1">
+    <line x1="0" y1="75" x2="400" y2="75" stroke="#4ade80" stroke-width="1"/>
+    <line x1="0" y1="150" x2="400" y2="150" stroke="#4ade80" stroke-width="1"/>
+    <line x1="0" y1="225" x2="400" y2="225" stroke="#4ade80" stroke-width="1"/>
+    <line x1="100" y1="0" x2="100" y2="300" stroke="#4ade80" stroke-width="1"/>
+    <line x1="200" y1="0" x2="200" y2="300" stroke="#4ade80" stroke-width="1"/>
+    <line x1="300" y1="0" x2="300" y2="300" stroke="#4ade80" stroke-width="1"/>
+  </g>
+
+  <!-- Waveform decoration (deterministic per title) -->
+  <g>
+  <polyline points="0,211.6 8,207.9 16,205.9 24,205.6 32,206.6 40,207.8 48,208.3 56,207.2 64,204.3 72,199.9 80,195.0 88,190.7 96,188.0 104,187.4 112,188.8 120,191.5 128,194.3 136,196.4 144,196.9 152,195.9 160,193.8 168,191.8 176,190.8 184,191.6 192,194.5 200,199.1 208,204.3 216,209.0 224,212.4 232,213.7 240,213.4 248,211.9 256,210.5 264,210.2 272,211.4 280,214.2 288,217.9 296,221.5 304,224.0 312,224.4 320,222.7 328,219.2 336,215.0 344,211.1 352,208.5 360,207.6 368,208.3 376,209.6 384,210.6 392,210.3 400,208.1" fill="none" stroke="#4ade80" stroke-width="1.5" opacity="0.35"/>
+  <polyline points="0,225.1 8,228.4 16,233.9 24,240.9 32,248.2 40,254.0 48,257.0 56,256.2 64,251.9 72,244.9 80,236.9 88,229.5 96,224.0 104,221.0 112,220.2 120,220.8 128,221.5 136,221.4 144,220.2 152,218.2 160,216.5 168,216.2 176,218.4 184,223.5 192,231.0 200,239.7 208,247.8 216,253.7 224,256.2 232,255.1 240,250.9 248,244.9 256,238.8 264,233.8 272,230.5 280,229.0 288,228.3 296,227.6 304,225.7 312,222.4 320,218.1 328,213.8 336,210.9 344,210.7 352,213.8 360,220.2 368,228.7 376,237.7 384,245.5 392,250.6 400,252.5" fill="none" stroke="#4ade80" stroke-width="1.5" opacity="0.22"/>
+  <polyline points="0,241.0 8,236.8 16,236.4 24,239.2 32,243.7 40,248.2 48,251.4 56,252.6 64,252.4 72,252.0 80,252.7 88,255.8 96,261.8 104,270.0 112,279.0 120,286.8 128,291.7 136,292.5 144,289.1 152,282.6 160,274.7 168,267.1 176,261.5 184,258.4 192,257.4 200,257.4 208,256.9 216,254.8 224,250.6 232,244.8 240,239.0 248,234.7 256,233.7 264,236.6 272,243.4 280,252.8 288,262.8 296,271.5 304,277.5 312,280.1 320,279.8 328,277.9 336,275.9 344,275.2 352,276.1 360,278.4 368,280.8 376,281.7 384,279.7 392,274.3 400,265.9" fill="none" stroke="#4ade80" stroke-width="1.5" opacity="0.13"/>
+  </g>
+
+  <!-- Header -->
+  <text x="20" y="40" font-family="Inter, sans-serif" font-size="14" fill="#4ade80" font-weight="600">
+    UWA / 09-18
+  </text>
+
+  <!-- Keyword badge -->
+  <rect x="20" y="60" width="124" height="28" rx="14" fill="#4ade80" opacity="0.2"/>
+  <text x="30" y="79" font-family="Inter, sans-serif" font-size="13" fill="#4ade80" font-weight="500">
+    deep learning
+  </text>
+
+  <!-- Title -->
+  <foreignObject x="20" y="110" width="360" height="120">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="
+      font-family: Inter, sans-serif;
+      font-size: 18px;
+      font-weight: 600;
+      color: #e2e8f0;
+      line-height: 1.4;
+      overflow: hidden;
+      display: -webkit-box;
+      -webkit-line-clamp: 4;
+      -webkit-box-orient: vertical;
+    ">
+      Model-free autoencoder for adaptive optimization in turbu...
+    </div>
+  </foreignObject>
+
+  <!-- Author -->
+  <text x="20" y="250" font-family="Inter, sans-serif" font-size="13" fill="#94a3b8">
+    Qiarong Xiao
+  </text>
+
+  <!-- Footer -->
+  <text x="20" y="275" font-family="Inter, sans-serif" font-size="11" fill="#64748b">
+    Photonics Research
+  </text>
+
+  <!-- Score badge -->
+  <circle cx="360" cy="40" r="24" fill="#4ade80" opacity="0.2"/>
+  <text x="360" y="46" font-family="Inter, sans-serif" font-size="14" fill="#4ade80" font-weight="700" text-anchor="middle">
+    55
+  </text>
+</svg>

@@ -1,0 +1,72 @@
+<svg width="400" height="300" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#431407;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#9a3412;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="400" height="300" fill="url(#grad)"/>
+
+  <!-- Grid pattern -->
+  <g opacity="0.1">
+    <line x1="0" y1="75" x2="400" y2="75" stroke="#fb923c" stroke-width="1"/>
+    <line x1="0" y1="150" x2="400" y2="150" stroke="#fb923c" stroke-width="1"/>
+    <line x1="0" y1="225" x2="400" y2="225" stroke="#fb923c" stroke-width="1"/>
+    <line x1="100" y1="0" x2="100" y2="300" stroke="#fb923c" stroke-width="1"/>
+    <line x1="200" y1="0" x2="200" y2="300" stroke="#fb923c" stroke-width="1"/>
+    <line x1="300" y1="0" x2="300" y2="300" stroke="#fb923c" stroke-width="1"/>
+  </g>
+
+  <!-- Waveform decoration (deterministic per title) -->
+  <g>
+  <polyline points="0,198.9 8,202.4 16,207.0 24,212.2 32,217.1 40,221.1 48,223.6 56,224.2 64,222.9 72,220.1 80,216.2 88,212.2 96,208.6 104,205.8 112,204.1 120,203.3 128,203.1 136,203.0 144,202.3 152,200.8 160,198.3 168,195.2 176,191.8 184,188.9 192,187.1 200,186.9 208,188.6 216,192.0 224,196.8 232,202.3 240,207.6 248,212.1 256,215.2 264,216.8 272,217.0 280,216.2 288,215.0 296,213.9 304,213.4 312,213.6 320,214.5 328,215.6 336,216.3 344,216.2 352,214.7 360,211.7 368,207.4 376,202.2 384,196.8 392,192.0 400,188.4" fill="none" stroke="#fb923c" stroke-width="1.5" opacity="0.35"/>
+  <polyline points="0,214.1 8,213.5 16,214.6 24,216.7 32,219.0 40,220.7 48,221.3 56,220.8 64,219.4 72,217.7 80,216.5 88,216.5 96,218.3 104,222.0 112,227.4 120,233.8 128,240.4 136,246.2 144,250.4 152,252.6 160,252.6 168,251.0 176,248.3 184,245.4 192,243.1 200,241.8 208,241.7 216,242.5 224,243.8 232,244.6 240,244.2 248,242.2 256,238.4 264,233.0 272,226.7 280,220.3 288,214.8 296,211.0 304,209.3 312,209.8 320,212.1 328,215.4 336,218.9 344,221.9 352,223.8 360,224.4 368,224.1 376,223.3 384,222.8 392,223.3 400,225.4" fill="none" stroke="#fb923c" stroke-width="1.5" opacity="0.22"/>
+  <polyline points="0,276.1 8,279.8 16,284.0 24,287.8 32,290.0 40,290.1 48,287.6 56,282.9 64,276.5 72,269.5 80,263.1 88,258.0 96,254.9 104,253.8 112,254.3 120,255.6 128,256.7 136,256.7 144,255.0 152,251.5 160,246.6 168,241.2 176,236.2 184,232.6 192,231.3 200,232.6 208,236.2 216,241.6 224,247.7 232,253.4 240,257.9 248,260.6 256,261.4 264,260.8 272,259.7 280,258.9 288,259.4 296,261.7 304,266.0 312,271.7 320,278.3 328,284.4 336,289.2 344,291.7 352,291.7 360,289.3 368,285.2 376,280.3 384,275.7 392,272.2 400,270.4" fill="none" stroke="#fb923c" stroke-width="1.5" opacity="0.13"/>
+  </g>
+
+  <!-- Header -->
+  <text x="20" y="40" font-family="Inter, sans-serif" font-size="14" fill="#fb923c" font-weight="600">
+    UWA / 09-18
+  </text>
+
+  <!-- Keyword badge -->
+  <rect x="20" y="60" width="220" height="28" rx="14" fill="#fb923c" opacity="0.2"/>
+  <text x="30" y="79" font-family="Inter, sans-serif" font-size="13" fill="#fb923c" font-weight="500">
+    underwater sensor network
+  </text>
+
+  <!-- Title -->
+  <foreignObject x="20" y="110" width="360" height="120">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="
+      font-family: Inter, sans-serif;
+      font-size: 18px;
+      font-weight: 600;
+      color: #e2e8f0;
+      line-height: 1.4;
+      overflow: hidden;
+      display: -webkit-box;
+      -webkit-line-clamp: 4;
+      -webkit-box-orient: vertical;
+    ">
+      Comparative Review of Opportunistic Routing Protocols for...
+    </div>
+  </foreignObject>
+
+  <!-- Author -->
+  <text x="20" y="250" font-family="Inter, sans-serif" font-size="13" fill="#94a3b8">
+    Anshul Sharma
+  </text>
+
+  <!-- Footer -->
+  <text x="20" y="275" font-family="Inter, sans-serif" font-size="11" fill="#64748b">
+    Computing, Communication, and Sustainable Energy Technologies
+  </text>
+
+  <!-- Score badge -->
+  <circle cx="360" cy="40" r="24" fill="#fb923c" opacity="0.2"/>
+  <text x="360" y="46" font-family="Inter, sans-serif" font-size="14" fill="#fb923c" font-weight="700" text-anchor="middle">
+    55
+  </text>
+</svg>
