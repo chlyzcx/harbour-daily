@@ -1,0 +1,72 @@
+<svg width="400" height="300" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0f172a;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#1e3a8a;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="400" height="300" fill="url(#grad)"/>
+
+  <!-- Grid pattern -->
+  <g opacity="0.1">
+    <line x1="0" y1="75" x2="400" y2="75" stroke="#60a5fa" stroke-width="1"/>
+    <line x1="0" y1="150" x2="400" y2="150" stroke="#60a5fa" stroke-width="1"/>
+    <line x1="0" y1="225" x2="400" y2="225" stroke="#60a5fa" stroke-width="1"/>
+    <line x1="100" y1="0" x2="100" y2="300" stroke="#60a5fa" stroke-width="1"/>
+    <line x1="200" y1="0" x2="200" y2="300" stroke="#60a5fa" stroke-width="1"/>
+    <line x1="300" y1="0" x2="300" y2="300" stroke="#60a5fa" stroke-width="1"/>
+  </g>
+
+  <!-- Waveform decoration (deterministic per title) -->
+  <g>
+  <polyline points="0,220.7 8,216.7 16,211.1 24,204.7 32,198.3 40,192.9 48,189.2 56,187.6 64,188.1 72,190.4 80,193.9 88,197.8 96,201.6 104,204.7 112,206.9 120,208.3 128,209.3 136,210.1 144,211.1 152,212.6 160,214.4 168,216.3 176,217.8 184,218.3 192,217.3 200,214.7 208,210.3 216,204.8 224,198.7 232,193.0 240,188.5 248,185.9 256,185.6 264,187.7 272,191.7 280,197.0 288,202.6 296,207.8 304,211.9 312,214.6 320,215.8 328,215.9 336,215.1 344,214.1 352,213.2 360,212.7 368,212.4 376,212.2 384,211.5 392,210.0 400,207.4" fill="none" stroke="#60a5fa" stroke-width="1.5" opacity="0.35"/>
+  <polyline points="0,236.3 8,238.4 16,239.3 24,239.6 32,239.9 40,240.8 48,242.5 56,244.8 64,247.4 72,249.4 80,250.3 88,249.2 96,245.9 104,240.5 112,233.6 120,225.9 128,218.6 136,212.8 144,209.2 152,208.2 160,209.7 168,213.4 176,218.3 184,223.5 192,228.2 200,231.8 208,234.2 216,235.5 224,236.2 232,236.9 240,238.2 248,240.3 256,243.3 264,246.7 272,249.9 280,252.0 288,252.3 296,250.3 304,246.0 312,239.6 320,232.1 328,224.3 336,217.5 344,212.4 352,209.8 360,209.7 368,211.9 376,215.6 384,220.0 392,224.2 400,227.7" fill="none" stroke="#60a5fa" stroke-width="1.5" opacity="0.22"/>
+  <polyline points="0,256.6 8,249.4 16,242.2 24,236.1 32,232.2 40,231.2 48,233.3 56,238.1 64,244.7 72,252.0 80,259.0 88,264.6 96,268.3 104,270.2 112,270.7 120,270.5 128,270.6 136,271.5 144,273.7 152,277.1 160,281.2 168,284.9 176,287.4 184,287.7 192,285.3 200,280.2 208,272.8 216,264.1 224,255.4 232,247.8 240,242.2 248,239.2 256,238.8 264,240.5 272,243.4 280,246.5 288,249.0 296,250.3 304,250.5 312,249.9 320,249.3 328,249.5 336,251.3 344,255.2 352,261.1 360,268.5 368,276.4 376,283.7 384,289.3 392,292.2 400,292.0" fill="none" stroke="#60a5fa" stroke-width="1.5" opacity="0.13"/>
+  </g>
+
+  <!-- Header -->
+  <text x="20" y="40" font-family="Inter, sans-serif" font-size="14" fill="#60a5fa" font-weight="600">
+    UWA / 09-19
+  </text>
+
+  <!-- Keyword badge -->
+  <rect x="20" y="60" width="92" height="28" rx="14" fill="#60a5fa" opacity="0.2"/>
+  <text x="30" y="79" font-family="Inter, sans-serif" font-size="13" fill="#60a5fa" font-weight="500">
+    detection
+  </text>
+
+  <!-- Title -->
+  <foreignObject x="20" y="110" width="360" height="120">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="
+      font-family: Inter, sans-serif;
+      font-size: 18px;
+      font-weight: 600;
+      color: #e2e8f0;
+      line-height: 1.4;
+      overflow: hidden;
+      display: -webkit-box;
+      -webkit-line-clamp: 4;
+      -webkit-box-orient: vertical;
+    ">
+      Adaptive Space-Frequency Basis Selection Methods for Sign...
+    </div>
+  </foreignObject>
+
+  <!-- Author -->
+  <text x="20" y="250" font-family="Inter, sans-serif" font-size="13" fill="#94a3b8">
+    Tao Tang
+  </text>
+
+  <!-- Footer -->
+  <text x="20" y="275" font-family="Inter, sans-serif" font-size="11" fill="#64748b">
+    IEEE Transactions on Instrumentation and Measurement
+  </text>
+
+  <!-- Score badge -->
+  <circle cx="360" cy="40" r="24" fill="#60a5fa" opacity="0.2"/>
+  <text x="360" y="46" font-family="Inter, sans-serif" font-size="14" fill="#60a5fa" font-weight="700" text-anchor="middle">
+    60
+  </text>
+</svg>

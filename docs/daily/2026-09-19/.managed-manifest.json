@@ -1,0 +1,119 @@
+{
+  "schema_version": 2,
+  "cycle_id": "daily-2026-09-19",
+  "display_date": "2026-09-19",
+  "articles": [
+    {
+      "candidate_id": "openalex--W7213544396",
+      "category": "Paper",
+      "rank": 1,
+      "path": "docs/daily/2026-09-19/paper/01-a-preconditioned-krylov-iterative-solver-for-the-s.md"
+    },
+    {
+      "candidate_id": "s2--10d29fe609e71e36eb21280fb4fc1451286abc49",
+      "category": "Paper",
+      "rank": 2,
+      "path": "docs/daily/2026-09-19/paper/02-underwater-mine-detection-using-machine-learningba.md"
+    },
+    {
+      "candidate_id": "s2--983a3863d35f4abb070a0c19fd3869e5ed0424c7",
+      "category": "Paper",
+      "rank": 3,
+      "path": "docs/daily/2026-09-19/paper/03-a-fully-complex-valued-underwater-acoustic-signal-.md"
+    },
+    {
+      "candidate_id": "s2--3c48b6cb4ed9f46b83ceb9fddda41e6cf2072078",
+      "category": "Paper",
+      "rank": 4,
+      "path": "docs/daily/2026-09-19/paper/04-adaptive-space-frequency-basis-selection-methods-f.md"
+    },
+    {
+      "candidate_id": "s2--8a09bc1ea125702800cc59552e9349965e1313df",
+      "category": "Paper",
+      "rank": 5,
+      "path": "docs/daily/2026-09-19/paper/05-sonar-based-surface-target-classification-for-mine.md"
+    },
+    {
+      "candidate_id": "s2--95a92adab6df9768e953697e67b8c11b57e9b045",
+      "category": "Paper",
+      "rank": 6,
+      "path": "docs/daily/2026-09-19/paper/06-a-task-aware-compression-framework-for-efficient-t.md"
+    },
+    {
+      "candidate_id": "crossref--10.1201-9781003674870-13",
+      "category": "Paper",
+      "rank": 7,
+      "path": "docs/daily/2026-09-19/paper/07-federated-learning-in-underwater-sensor-networks.md"
+    },
+    {
+      "candidate_id": "crossref--10.1038-s41597-026-08254-4",
+      "category": "Paper",
+      "rank": 8,
+      "path": "docs/daily/2026-09-19/paper/08-ucod-a-near-field-benthic-organism-dataset-for-und.md"
+    },
+    {
+      "candidate_id": "crossref--10.22541-essoar.15009076-v1",
+      "category": "Paper",
+      "rank": 9,
+      "path": "docs/daily/2026-09-19/paper/09-designing-for-the-environment-a-scaling-framework-.md"
+    },
+    {
+      "candidate_id": "crossref--10.62036-isd.2026.89",
+      "category": "Paper",
+      "rank": 10,
+      "path": "docs/daily/2026-09-19/paper/10-protocol-for-detecting-synthetic-artifacts-a-case-.md"
+    },
+    {
+      "candidate_id": "news--a3f572768151",
+      "category": "News",
+      "rank": 11,
+      "path": "docs/daily/2026-09-19/news/11-wassp-multibeam-celebrates-20-years.md"
+    }
+  ],
+  "assets": [
+    {
+      "candidate_id": "openalex--W7213544396",
+      "path": "docs/public/daily/2026-09-19/assets/openalex--W7213544396/preview.svg"
+    },
+    {
+      "candidate_id": "s2--10d29fe609e71e36eb21280fb4fc1451286abc49",
+      "path": "docs/public/daily/2026-09-19/assets/s2--10d29fe609e71e36eb21280fb4fc1451286abc49/preview.svg"
+    },
+    {
+      "candidate_id": "s2--983a3863d35f4abb070a0c19fd3869e5ed0424c7",
+      "path": "docs/public/daily/2026-09-19/assets/s2--983a3863d35f4abb070a0c19fd3869e5ed0424c7/preview.svg"
+    },
+    {
+      "candidate_id": "s2--3c48b6cb4ed9f46b83ceb9fddda41e6cf2072078",
+      "path": "docs/public/daily/2026-09-19/assets/s2--3c48b6cb4ed9f46b83ceb9fddda41e6cf2072078/preview.svg"
+    },
+    {
+      "candidate_id": "s2--8a09bc1ea125702800cc59552e9349965e1313df",
+      "path": "docs/public/daily/2026-09-19/assets/s2--8a09bc1ea125702800cc59552e9349965e1313df/preview.svg"
+    },
+    {
+      "candidate_id": "s2--95a92adab6df9768e953697e67b8c11b57e9b045",
+      "path": "docs/public/daily/2026-09-19/assets/s2--95a92adab6df9768e953697e67b8c11b57e9b045/preview.svg"
+    },
+    {
+      "candidate_id": "crossref--10.1201-9781003674870-13",
+      "path": "docs/public/daily/2026-09-19/assets/crossref--10.1201-9781003674870-13/preview.svg"
+    },
+    {
+      "candidate_id": "crossref--10.1038-s41597-026-08254-4",
+      "path": "docs/public/daily/2026-09-19/assets/crossref--10.1038-s41597-026-08254-4/preview.svg"
+    },
+    {
+      "candidate_id": "crossref--10.22541-essoar.15009076-v1",
+      "path": "docs/public/daily/2026-09-19/assets/crossref--10.22541-essoar.15009076-v1/preview.svg"
+    },
+    {
+      "candidate_id": "crossref--10.62036-isd.2026.89",
+      "path": "docs/public/daily/2026-09-19/assets/crossref--10.62036-isd.2026.89/preview.svg"
+    },
+    {
+      "candidate_id": "news--a3f572768151",
+      "path": "docs/public/daily/2026-09-19/assets/news--a3f572768151/preview.png"
+    }
+  ]
+}
