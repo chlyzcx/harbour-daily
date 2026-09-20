@@ -1,0 +1,39 @@
+{
+  "schema_version": 2,
+  "cycle_id": "daily-2026-09-20",
+  "display_date": "2026-09-20",
+  "articles": [
+    {
+      "candidate_id": "crossref--10.1177-09596518261477964",
+      "category": "Paper",
+      "rank": 1,
+      "path": "docs/daily/2026-09-20/paper/01-sliding-mode-control-for-trajectory-tracking-of-au.md"
+    },
+    {
+      "candidate_id": "crossref--10.1007-s00343-026-5283-5",
+      "category": "Paper",
+      "rank": 2,
+      "path": "docs/daily/2026-09-20/paper/02-acoustic-properties-and-their-frequency-dependence.md"
+    },
+    {
+      "candidate_id": "crossref--10.1080-00207721.2026.2734868",
+      "category": "Paper",
+      "rank": 3,
+      "path": "docs/daily/2026-09-20/paper/03-distributed-adaptive-safety-critical-coverage-cont.md"
+    }
+  ],
+  "assets": [
+    {
+      "candidate_id": "crossref--10.1177-09596518261477964",
+      "path": "docs/public/daily/2026-09-20/assets/crossref--10.1177-09596518261477964/preview.svg"
+    },
+    {
+      "candidate_id": "crossref--10.1007-s00343-026-5283-5",
+      "path": "docs/public/daily/2026-09-20/assets/crossref--10.1007-s00343-026-5283-5/preview.png"
+    },
+    {
+      "candidate_id": "crossref--10.1080-00207721.2026.2734868",
+      "path": "docs/public/daily/2026-09-20/assets/crossref--10.1080-00207721.2026.2734868/preview.svg"
+    }
+  ]
+}
