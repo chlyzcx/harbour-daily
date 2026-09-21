@@ -1,0 +1,89 @@
+{
+  "schema_version": 2,
+  "cycle_id": "daily-2026-09-21",
+  "display_date": "2026-09-21",
+  "articles": [
+    {
+      "candidate_id": "arxiv--2609.21061-1",
+      "category": "Paper",
+      "rank": 1,
+      "path": "docs/daily/2026-09-21/paper/01-lora-enhanced-contrastive-learning-with-sas-vision.md"
+    },
+    {
+      "candidate_id": "s2--e8b54c5a460538c4bdd6acc687a0b47edf61a00f",
+      "category": "Paper",
+      "rank": 2,
+      "path": "docs/daily/2026-09-21/paper/02-an-adaptive-mimo-optical-multi-color-transceiver-f.md"
+    },
+    {
+      "candidate_id": "openalex--W7213642548",
+      "category": "Paper",
+      "rank": 3,
+      "path": "docs/daily/2026-09-21/paper/03-lw-sync-a-low-complexity-event-driven-offset-corre.md"
+    },
+    {
+      "candidate_id": "crossref--10.20944-preprints202609.1744.v1",
+      "category": "Paper",
+      "rank": 4,
+      "path": "docs/daily/2026-09-21/paper/04-general-purpose-audio-foundation-models-improve-ze.md"
+    },
+    {
+      "candidate_id": "crossref--10.20944-preprints202609.1683.v1",
+      "category": "Paper",
+      "rank": 5,
+      "path": "docs/daily/2026-09-21/paper/05-open-world-source-free-adaptation-for-underwater-a.md"
+    },
+    {
+      "candidate_id": "crossref--10.20944-preprints202609.0617.v2",
+      "category": "Paper",
+      "rank": 6,
+      "path": "docs/daily/2026-09-21/paper/06-vtuad-an-ais-auto-labeled-vessel-type-underwater-a.md"
+    },
+    {
+      "candidate_id": "crossref--10.20944-preprints202609.1125.v2",
+      "category": "Paper",
+      "rank": 7,
+      "path": "docs/daily/2026-09-21/paper/07-confidence-inversion-in-open-set-underwater-acoust.md"
+    },
+    {
+      "candidate_id": "crossref--10.20944-preprints202609.0449.v2",
+      "category": "Paper",
+      "rank": 8,
+      "path": "docs/daily/2026-09-21/paper/08-benchmarking-real-time-detr-detectors-for-multibea.md"
+    }
+  ],
+  "assets": [
+    {
+      "candidate_id": "arxiv--2609.21061-1",
+      "path": "docs/public/daily/2026-09-21/assets/arxiv--2609.21061-1/preview.png"
+    },
+    {
+      "candidate_id": "s2--e8b54c5a460538c4bdd6acc687a0b47edf61a00f",
+      "path": "docs/public/daily/2026-09-21/assets/s2--e8b54c5a460538c4bdd6acc687a0b47edf61a00f/preview.svg"
+    },
+    {
+      "candidate_id": "openalex--W7213642548",
+      "path": "docs/public/daily/2026-09-21/assets/openalex--W7213642548/preview.png"
+    },
+    {
+      "candidate_id": "crossref--10.20944-preprints202609.1744.v1",
+      "path": "docs/public/daily/2026-09-21/assets/crossref--10.20944-preprints202609.1744.v1/preview.svg"
+    },
+    {
+      "candidate_id": "crossref--10.20944-preprints202609.1683.v1",
+      "path": "docs/public/daily/2026-09-21/assets/crossref--10.20944-preprints202609.1683.v1/preview.svg"
+    },
+    {
+      "candidate_id": "crossref--10.20944-preprints202609.0617.v2",
+      "path": "docs/public/daily/2026-09-21/assets/crossref--10.20944-preprints202609.0617.v2/preview.svg"
+    },
+    {
+      "candidate_id": "crossref--10.20944-preprints202609.1125.v2",
+      "path": "docs/public/daily/2026-09-21/assets/crossref--10.20944-preprints202609.1125.v2/preview.svg"
+    },
+    {
+      "candidate_id": "crossref--10.20944-preprints202609.0449.v2",
+      "path": "docs/public/daily/2026-09-21/assets/crossref--10.20944-preprints202609.0449.v2/preview.svg"
+    }
+  ]
+}
