@@ -1,0 +1,59 @@
+{
+  "schema_version": 2,
+  "cycle_id": "daily-2026-09-22",
+  "display_date": "2026-09-22",
+  "articles": [
+    {
+      "candidate_id": "crossref--10.1134-s0015462826605942",
+      "category": "Paper",
+      "rank": 1,
+      "path": "docs/daily/2026-09-22/paper/01-cfd-based-investigation-of-the-drag-reduction-char.md"
+    },
+    {
+      "candidate_id": "crossref--10.20944-preprints202609.1126.v2",
+      "category": "Paper",
+      "rank": 2,
+      "path": "docs/daily/2026-09-22/paper/02-source-free-domain-adaptation-for-underwater-acous.md"
+    },
+    {
+      "candidate_id": "crossref--10.20944-preprints202609.0999.v2",
+      "category": "Paper",
+      "rank": 3,
+      "path": "docs/daily/2026-09-22/paper/03-evaluating-in-corpus-simclr-pretraining-for-underw.md"
+    },
+    {
+      "candidate_id": "crossref--10.3390-jmse14181762",
+      "category": "Paper",
+      "rank": 4,
+      "path": "docs/daily/2026-09-22/paper/04-path-planning-algorithms-for-auvs-under-ocean-curr.md"
+    },
+    {
+      "candidate_id": "crossref--10.3390-jmse14181733",
+      "category": "Paper",
+      "rank": 5,
+      "path": "docs/daily/2026-09-22/paper/05-risk-aware-hybrid-decision-making-combining-reinfo.md"
+    }
+  ],
+  "assets": [
+    {
+      "candidate_id": "crossref--10.1134-s0015462826605942",
+      "path": "docs/public/daily/2026-09-22/assets/crossref--10.1134-s0015462826605942/preview.png"
+    },
+    {
+      "candidate_id": "crossref--10.20944-preprints202609.1126.v2",
+      "path": "docs/public/daily/2026-09-22/assets/crossref--10.20944-preprints202609.1126.v2/preview.svg"
+    },
+    {
+      "candidate_id": "crossref--10.20944-preprints202609.0999.v2",
+      "path": "docs/public/daily/2026-09-22/assets/crossref--10.20944-preprints202609.0999.v2/preview.svg"
+    },
+    {
+      "candidate_id": "crossref--10.3390-jmse14181762",
+      "path": "docs/public/daily/2026-09-22/assets/crossref--10.3390-jmse14181762/preview.png"
+    },
+    {
+      "candidate_id": "crossref--10.3390-jmse14181733",
+      "path": "docs/public/daily/2026-09-22/assets/crossref--10.3390-jmse14181733/preview.png"
+    }
+  ]
+}
