@@ -1,0 +1,119 @@
+{
+  "schema_version": 2,
+  "cycle_id": "daily-2026-09-23",
+  "display_date": "2026-09-23",
+  "articles": [
+    {
+      "candidate_id": "openalex--W7213896152",
+      "category": "Paper",
+      "rank": 1,
+      "path": "docs/daily/2026-09-23/paper/01-dpcdet-dual-path-downsampling-and-cross-attention-.md"
+    },
+    {
+      "candidate_id": "openalex--W7213758874",
+      "category": "Paper",
+      "rank": 2,
+      "path": "docs/daily/2026-09-23/paper/02-impulsive-consensus-of-multi-auv-systems-under-ran.md"
+    },
+    {
+      "candidate_id": "arxiv--2609.25657-1",
+      "category": "Paper",
+      "rank": 3,
+      "path": "docs/daily/2026-09-23/paper/03-targeted-review-for-ai-assisted-biodiversity-surve.md"
+    },
+    {
+      "candidate_id": "openalex--W7213984046",
+      "category": "Paper",
+      "rank": 4,
+      "path": "docs/daily/2026-09-23/paper/04-task-driven-joint-denoising-and-super-resolution-o.md"
+    },
+    {
+      "candidate_id": "openalex--W7213925535",
+      "category": "Paper",
+      "rank": 5,
+      "path": "docs/daily/2026-09-23/paper/05-sast-sdnet-an-automated-framework-for-adaptive-enh.md"
+    },
+    {
+      "candidate_id": "openalex--W7213954669",
+      "category": "Paper",
+      "rank": 6,
+      "path": "docs/daily/2026-09-23/paper/06-gaussian-process-fusion-of-icesat-2-and-smossmap-d.md"
+    },
+    {
+      "candidate_id": "openalex--W7213880019",
+      "category": "Paper",
+      "rank": 7,
+      "path": "docs/daily/2026-09-23/paper/07-leverage-based-effective-subspace-configuration-of.md"
+    },
+    {
+      "candidate_id": "openalex--W7213499409",
+      "category": "Paper",
+      "rank": 8,
+      "path": "docs/daily/2026-09-23/paper/08-application-of-deep-learning-to-estimate-blue-and-.md"
+    },
+    {
+      "candidate_id": "crossref--10.1038-s41597-026-08345-2",
+      "category": "Paper",
+      "rank": 9,
+      "path": "docs/daily/2026-09-23/paper/09-srad-a-multibeam-acoustic-dataset-for-submerged-re.md"
+    },
+    {
+      "candidate_id": "crossref--10.21203-rs.3.rs-11096024-v1",
+      "category": "Paper",
+      "rank": 10,
+      "path": "docs/daily/2026-09-23/paper/10-pretraining-beyond-birds-multi-taxa-acoustic-repre.md"
+    },
+    {
+      "candidate_id": "news--17c5bd5de704",
+      "category": "News",
+      "rank": 11,
+      "path": "docs/daily/2026-09-23/news/11-bayraktar-tb3-drops-sonobuoys-from-tcg-anadolu-in-.md"
+    }
+  ],
+  "assets": [
+    {
+      "candidate_id": "openalex--W7213896152",
+      "path": "docs/public/daily/2026-09-23/assets/openalex--W7213896152/preview.png"
+    },
+    {
+      "candidate_id": "openalex--W7213758874",
+      "path": "docs/public/daily/2026-09-23/assets/openalex--W7213758874/preview.png"
+    },
+    {
+      "candidate_id": "arxiv--2609.25657-1",
+      "path": "docs/public/daily/2026-09-23/assets/arxiv--2609.25657-1/preview.png"
+    },
+    {
+      "candidate_id": "openalex--W7213984046",
+      "path": "docs/public/daily/2026-09-23/assets/openalex--W7213984046/preview.png"
+    },
+    {
+      "candidate_id": "openalex--W7213925535",
+      "path": "docs/public/daily/2026-09-23/assets/openalex--W7213925535/preview.png"
+    },
+    {
+      "candidate_id": "openalex--W7213954669",
+      "path": "docs/public/daily/2026-09-23/assets/openalex--W7213954669/preview.png"
+    },
+    {
+      "candidate_id": "openalex--W7213880019",
+      "path": "docs/public/daily/2026-09-23/assets/openalex--W7213880019/preview.png"
+    },
+    {
+      "candidate_id": "openalex--W7213499409",
+      "path": "docs/public/daily/2026-09-23/assets/openalex--W7213499409/preview.png"
+    },
+    {
+      "candidate_id": "crossref--10.1038-s41597-026-08345-2",
+      "path": "docs/public/daily/2026-09-23/assets/crossref--10.1038-s41597-026-08345-2/preview.svg"
+    },
+    {
+      "candidate_id": "crossref--10.21203-rs.3.rs-11096024-v1",
+      "path": "docs/public/daily/2026-09-23/assets/crossref--10.21203-rs.3.rs-11096024-v1/preview.svg"
+    },
+    {
+      "candidate_id": "news--17c5bd5de704",
+      "path": "docs/public/daily/2026-09-23/assets/news--17c5bd5de704/preview.png"
+    }
+  ]
+}
