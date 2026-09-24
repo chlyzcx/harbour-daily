@@ -1,0 +1,72 @@
+<svg width="400" height="300" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#042f2e;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#115e59;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="400" height="300" fill="url(#grad)"/>
+
+  <!-- Grid pattern -->
+  <g opacity="0.1">
+    <line x1="0" y1="75" x2="400" y2="75" stroke="#2dd4bf" stroke-width="1"/>
+    <line x1="0" y1="150" x2="400" y2="150" stroke="#2dd4bf" stroke-width="1"/>
+    <line x1="0" y1="225" x2="400" y2="225" stroke="#2dd4bf" stroke-width="1"/>
+    <line x1="100" y1="0" x2="100" y2="300" stroke="#2dd4bf" stroke-width="1"/>
+    <line x1="200" y1="0" x2="200" y2="300" stroke="#2dd4bf" stroke-width="1"/>
+    <line x1="300" y1="0" x2="300" y2="300" stroke="#2dd4bf" stroke-width="1"/>
+  </g>
+
+  <!-- Waveform decoration (deterministic per title) -->
+  <g>
+  <polyline points="0,209.3 8,209.5 16,209.8 24,210.0 32,209.5 40,208.4 48,206.5 56,203.7 64,200.4 72,196.7 80,193.1 88,189.8 96,187.4 104,186.0 112,185.7 120,186.6 128,188.4 136,191.0 144,194.0 152,196.9 160,199.6 168,201.7 176,203.1 184,203.8 192,203.9 200,203.7 208,203.6 216,203.7 224,204.3 232,205.7 240,207.8 248,210.5 256,213.7 264,217.1 272,220.1 280,222.6 288,224.2 296,224.6 304,223.8 312,222.0 320,219.3 328,216.1 336,212.6 344,209.4 352,206.6 360,204.5 368,203.3 376,202.7 384,202.6 392,202.9 400,203.0" fill="none" stroke="#2dd4bf" stroke-width="1.5" opacity="0.35"/>
+  <polyline points="0,231.9 8,239.4 16,246.4 24,252.0 32,255.7 40,257.1 48,256.0 56,252.6 64,247.4 72,240.8 80,233.7 88,226.7 96,220.7 104,216.0 112,213.2 120,212.2 128,213.0 136,215.4 144,218.9 152,222.9 160,227.2 168,231.2 176,234.6 184,237.4 192,239.5 200,240.9 208,241.8 216,242.4 224,242.7 232,242.9 240,242.8 248,242.4 256,241.5 264,240.0 272,237.7 280,234.6 288,230.8 296,226.4 304,221.9 312,217.6 320,214.2 328,212.1 336,211.6 344,213.1 352,216.5 360,221.7 368,228.2 376,235.3 384,242.5 392,248.9 400,253.8" fill="none" stroke="#2dd4bf" stroke-width="1.5" opacity="0.22"/>
+  <polyline points="0,246.0 8,246.3 16,247.1 24,248.2 32,249.2 40,250.1 48,250.9 56,251.7 64,252.8 72,254.4 80,256.9 88,260.3 96,264.7 104,269.8 112,275.2 120,280.4 128,284.9 136,287.9 144,289.0 152,287.9 160,284.5 168,278.8 176,271.5 184,263.1 192,254.4 200,246.3 208,239.5 216,234.8 224,232.5 232,232.8 240,235.4 248,240.1 256,246.2 264,253.0 272,259.8 280,266.0 288,271.0 296,274.7 304,277.0 312,278.0 320,277.9 328,277.2 336,276.1 344,275.0 352,274.1 360,273.3 368,272.5 376,271.6 384,270.1 392,267.9 400,264.7" fill="none" stroke="#2dd4bf" stroke-width="1.5" opacity="0.13"/>
+  </g>
+
+  <!-- Header -->
+  <text x="20" y="40" font-family="Inter, sans-serif" font-size="14" fill="#2dd4bf" font-weight="600">
+    UWA / 09-24
+  </text>
+
+  <!-- Keyword badge -->
+  <rect x="20" y="60" width="84" height="28" rx="14" fill="#2dd4bf" opacity="0.2"/>
+  <text x="30" y="79" font-family="Inter, sans-serif" font-size="13" fill="#2dd4bf" font-weight="500">
+    Research
+  </text>
+
+  <!-- Title -->
+  <foreignObject x="20" y="110" width="360" height="120">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="
+      font-family: Inter, sans-serif;
+      font-size: 18px;
+      font-weight: 600;
+      color: #e2e8f0;
+      line-height: 1.4;
+      overflow: hidden;
+      display: -webkit-box;
+      -webkit-line-clamp: 4;
+      -webkit-box-orient: vertical;
+    ">
+      Bioacoustics Intelligence
+    </div>
+  </foreignObject>
+
+  <!-- Author -->
+  <text x="20" y="250" font-family="Inter, sans-serif" font-size="13" fill="#94a3b8">
+    S. B. Nandini
+  </text>
+
+  <!-- Footer -->
+  <text x="20" y="275" font-family="Inter, sans-serif" font-size="11" fill="#64748b">
+    Eco‐Acoustic Intelligence
+  </text>
+
+  <!-- Score badge -->
+  <circle cx="360" cy="40" r="24" fill="#2dd4bf" opacity="0.2"/>
+  <text x="360" y="46" font-family="Inter, sans-serif" font-size="14" fill="#2dd4bf" font-weight="700" text-anchor="middle">
+    55
+  </text>
+</svg>

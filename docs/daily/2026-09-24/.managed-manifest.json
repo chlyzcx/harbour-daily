@@ -1,0 +1,69 @@
+{
+  "schema_version": 2,
+  "cycle_id": "daily-2026-09-24",
+  "display_date": "2026-09-24",
+  "articles": [
+    {
+      "candidate_id": "openalex--W7214034750",
+      "category": "Paper",
+      "rank": 1,
+      "path": "docs/daily/2026-09-24/paper/01-odometry-aided-real-time-mapping-for-underwater-ro.md"
+    },
+    {
+      "candidate_id": "openalex--W7214061498",
+      "category": "Paper",
+      "rank": 2,
+      "path": "docs/daily/2026-09-24/paper/02-design-and-implementation-of-an-acoustic-detection.md"
+    },
+    {
+      "candidate_id": "crossref--10.20944-preprints202609.1744.v2",
+      "category": "Paper",
+      "rank": 3,
+      "path": "docs/daily/2026-09-24/paper/03-frozen-general-purpose-audio-foundation-models-for.md"
+    },
+    {
+      "candidate_id": "crossref--10.1002-9781394403547.ch21",
+      "category": "Paper",
+      "rank": 4,
+      "path": "docs/daily/2026-09-24/paper/04-bioacoustics-intelligence.md"
+    },
+    {
+      "candidate_id": "crossref--10.1088-1748-3190-ae9d1e",
+      "category": "Paper",
+      "rank": 5,
+      "path": "docs/daily/2026-09-24/paper/05-electrosensing-based-three-dimensional-localizatio.md"
+    },
+    {
+      "candidate_id": "news--ef844aec6370",
+      "category": "News",
+      "rank": 6,
+      "path": "docs/daily/2026-09-24/news/06-voyant-demonstrates-software-defined-approach-to-s.md"
+    }
+  ],
+  "assets": [
+    {
+      "candidate_id": "openalex--W7214034750",
+      "path": "docs/public/daily/2026-09-24/assets/openalex--W7214034750/preview.png"
+    },
+    {
+      "candidate_id": "openalex--W7214061498",
+      "path": "docs/public/daily/2026-09-24/assets/openalex--W7214061498/preview.png"
+    },
+    {
+      "candidate_id": "crossref--10.20944-preprints202609.1744.v2",
+      "path": "docs/public/daily/2026-09-24/assets/crossref--10.20944-preprints202609.1744.v2/preview.svg"
+    },
+    {
+      "candidate_id": "crossref--10.1002-9781394403547.ch21",
+      "path": "docs/public/daily/2026-09-24/assets/crossref--10.1002-9781394403547.ch21/preview.svg"
+    },
+    {
+      "candidate_id": "crossref--10.1088-1748-3190-ae9d1e",
+      "path": "docs/public/daily/2026-09-24/assets/crossref--10.1088-1748-3190-ae9d1e/preview.svg"
+    },
+    {
+      "candidate_id": "news--ef844aec6370",
+      "path": "docs/public/daily/2026-09-24/assets/news--ef844aec6370/preview.png"
+    }
+  ]
+}
