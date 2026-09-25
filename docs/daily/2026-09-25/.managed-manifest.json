@@ -1,0 +1,109 @@
+{
+  "schema_version": 2,
+  "cycle_id": "daily-2026-09-25",
+  "display_date": "2026-09-25",
+  "articles": [
+    {
+      "candidate_id": "s2--a275d1c39c18b41374ad73073dd397de27cdba61",
+      "category": "Paper",
+      "rank": 1,
+      "path": "docs/daily/2026-09-25/paper/01-otfs-based-underwater-acoustic-communication-syste.md"
+    },
+    {
+      "candidate_id": "s2--852d7fc1b22b8445054f45a1cf83561842d7ea1b",
+      "category": "Paper",
+      "rank": 2,
+      "path": "docs/daily/2026-09-25/paper/02-energy-state-sensing-for-robust-mac-protocol-ident.md"
+    },
+    {
+      "candidate_id": "openalex--W7214117958",
+      "category": "Paper",
+      "rank": 3,
+      "path": "docs/daily/2026-09-25/paper/03-a-remote-sensing-oriented-control-method-for-isoli.md"
+    },
+    {
+      "candidate_id": "arxiv--2609.29467-1",
+      "category": "Paper",
+      "rank": 4,
+      "path": "docs/daily/2026-09-25/paper/04-hierarchical-edge-computing-in-sagsin-multi-layer-.md"
+    },
+    {
+      "candidate_id": "arxiv--2609.29179-1",
+      "category": "Paper",
+      "rank": 5,
+      "path": "docs/daily/2026-09-25/paper/05-towards-deployable-underwater-vessel-classificatio.md"
+    },
+    {
+      "candidate_id": "arxiv--2609.29128-1",
+      "category": "Paper",
+      "rank": 6,
+      "path": "docs/daily/2026-09-25/paper/06-bio-inspired-efficient-cyclostationary-analysis-in.md"
+    },
+    {
+      "candidate_id": "s2--b386600974360ad1c865b27a92537b74062f6536",
+      "category": "Paper",
+      "rank": 7,
+      "path": "docs/daily/2026-09-25/paper/07-low-probability-of-detection-constrained-covert-un.md"
+    },
+    {
+      "candidate_id": "s2--6f27904b9e00a2a22ecd2acadae93160699498d4",
+      "category": "Paper",
+      "rank": 8,
+      "path": "docs/daily/2026-09-25/paper/08-cognitive-underwater-acoustic-networking-and-targe.md"
+    },
+    {
+      "candidate_id": "s2--fa4a6de6d355d30620f3cbe9543d5afbe665eec7",
+      "category": "Paper",
+      "rank": 9,
+      "path": "docs/daily/2026-09-25/paper/09-two-step-weighted-least-squares-positioning-algori.md"
+    },
+    {
+      "candidate_id": "openalex--W7214087059",
+      "category": "Paper",
+      "rank": 10,
+      "path": "docs/daily/2026-09-25/paper/10-cross-water-acoustic-domain-adaptation-is-directio.md"
+    }
+  ],
+  "assets": [
+    {
+      "candidate_id": "s2--a275d1c39c18b41374ad73073dd397de27cdba61",
+      "path": "docs/public/daily/2026-09-25/assets/s2--a275d1c39c18b41374ad73073dd397de27cdba61/preview.svg"
+    },
+    {
+      "candidate_id": "s2--852d7fc1b22b8445054f45a1cf83561842d7ea1b",
+      "path": "docs/public/daily/2026-09-25/assets/s2--852d7fc1b22b8445054f45a1cf83561842d7ea1b/preview.svg"
+    },
+    {
+      "candidate_id": "openalex--W7214117958",
+      "path": "docs/public/daily/2026-09-25/assets/openalex--W7214117958/preview.png"
+    },
+    {
+      "candidate_id": "arxiv--2609.29467-1",
+      "path": "docs/public/daily/2026-09-25/assets/arxiv--2609.29467-1/preview.png"
+    },
+    {
+      "candidate_id": "arxiv--2609.29179-1",
+      "path": "docs/public/daily/2026-09-25/assets/arxiv--2609.29179-1/preview.png"
+    },
+    {
+      "candidate_id": "arxiv--2609.29128-1",
+      "path": "docs/public/daily/2026-09-25/assets/arxiv--2609.29128-1/preview.png"
+    },
+    {
+      "candidate_id": "s2--b386600974360ad1c865b27a92537b74062f6536",
+      "path": "docs/public/daily/2026-09-25/assets/s2--b386600974360ad1c865b27a92537b74062f6536/preview.svg"
+    },
+    {
+      "candidate_id": "s2--6f27904b9e00a2a22ecd2acadae93160699498d4",
+      "path": "docs/public/daily/2026-09-25/assets/s2--6f27904b9e00a2a22ecd2acadae93160699498d4/preview.svg"
+    },
+    {
+      "candidate_id": "s2--fa4a6de6d355d30620f3cbe9543d5afbe665eec7",
+      "path": "docs/public/daily/2026-09-25/assets/s2--fa4a6de6d355d30620f3cbe9543d5afbe665eec7/preview.svg"
+    },
+    {
+      "candidate_id": "openalex--W7214087059",
+      "path": "docs/public/daily/2026-09-25/assets/openalex--W7214087059/preview.svg"
+    }
+  ]
+}
