@@ -1,0 +1,109 @@
+{
+  "schema_version": 2,
+  "cycle_id": "daily-2026-09-26",
+  "display_date": "2026-09-26",
+  "articles": [
+    {
+      "candidate_id": "s2--4dd289bc57c7f439e9d8d5dfd9473542cc9b3e02",
+      "category": "Paper",
+      "rank": 1,
+      "path": "docs/daily/2026-09-26/paper/01-comparison-of-description-methods-of-the-parametri.md"
+    },
+    {
+      "candidate_id": "openalex--W7214151357",
+      "category": "Paper",
+      "rank": 2,
+      "path": "docs/daily/2026-09-26/paper/02-morphology-invariance-driven-transfer-between-sona.md"
+    },
+    {
+      "candidate_id": "openalex--W7214157132",
+      "category": "Paper",
+      "rank": 3,
+      "path": "docs/daily/2026-09-26/paper/03-seasonal-fish-passage-patterns-through-an-estuarin.md"
+    },
+    {
+      "candidate_id": "openalex--W7214061760",
+      "category": "Paper",
+      "rank": 4,
+      "path": "docs/daily/2026-09-26/paper/04-a-decision-analysis-framework-for-geospatial-sonar.md"
+    },
+    {
+      "candidate_id": "openalex--W7214069402",
+      "category": "Paper",
+      "rank": 5,
+      "path": "docs/daily/2026-09-26/paper/05-multi-directional-control-of-a-bio-inspired-robot-.md"
+    },
+    {
+      "candidate_id": "openalex--W7214102930",
+      "category": "Paper",
+      "rank": 6,
+      "path": "docs/daily/2026-09-26/paper/06-pattern-aware-task-assignment-and-depth-based-deco.md"
+    },
+    {
+      "candidate_id": "crossref--10.3390-s26196088",
+      "category": "Paper",
+      "rank": 7,
+      "path": "docs/daily/2026-09-26/paper/07-a-high-voltage-short-burst-electroacoustic-measure.md"
+    },
+    {
+      "candidate_id": "openalex--W7214212819",
+      "category": "Paper",
+      "rank": 8,
+      "path": "docs/daily/2026-09-26/paper/08-beyond-feature-importance-investigating-predictive.md"
+    },
+    {
+      "candidate_id": "news--8dddc758af6e",
+      "category": "News",
+      "rank": 9,
+      "path": "docs/daily/2026-09-26/news/09-us-navy-establishes-raswdc-to-accelerate-unmanned-.md"
+    },
+    {
+      "candidate_id": "news--15363e898a14",
+      "category": "News",
+      "rank": 10,
+      "path": "docs/daily/2026-09-26/news/10-worlds-first-acoustic-picket-line-at-repmus26.md"
+    }
+  ],
+  "assets": [
+    {
+      "candidate_id": "s2--4dd289bc57c7f439e9d8d5dfd9473542cc9b3e02",
+      "path": "docs/public/daily/2026-09-26/assets/s2--4dd289bc57c7f439e9d8d5dfd9473542cc9b3e02/preview.png"
+    },
+    {
+      "candidate_id": "openalex--W7214151357",
+      "path": "docs/public/daily/2026-09-26/assets/openalex--W7214151357/preview.png"
+    },
+    {
+      "candidate_id": "openalex--W7214157132",
+      "path": "docs/public/daily/2026-09-26/assets/openalex--W7214157132/preview.svg"
+    },
+    {
+      "candidate_id": "openalex--W7214061760",
+      "path": "docs/public/daily/2026-09-26/assets/openalex--W7214061760/preview.png"
+    },
+    {
+      "candidate_id": "openalex--W7214069402",
+      "path": "docs/public/daily/2026-09-26/assets/openalex--W7214069402/preview.png"
+    },
+    {
+      "candidate_id": "openalex--W7214102930",
+      "path": "docs/public/daily/2026-09-26/assets/openalex--W7214102930/preview.svg"
+    },
+    {
+      "candidate_id": "crossref--10.3390-s26196088",
+      "path": "docs/public/daily/2026-09-26/assets/crossref--10.3390-s26196088/preview.svg"
+    },
+    {
+      "candidate_id": "openalex--W7214212819",
+      "path": "docs/public/daily/2026-09-26/assets/openalex--W7214212819/preview.svg"
+    },
+    {
+      "candidate_id": "news--8dddc758af6e",
+      "path": "docs/public/daily/2026-09-26/assets/news--8dddc758af6e/preview.png"
+    },
+    {
+      "candidate_id": "news--15363e898a14",
+      "path": "docs/public/daily/2026-09-26/assets/news--15363e898a14/preview.png"
+    }
+  ]
+}
