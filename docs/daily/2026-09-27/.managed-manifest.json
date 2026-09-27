@@ -1,0 +1,79 @@
+{
+  "schema_version": 2,
+  "cycle_id": "daily-2026-09-27",
+  "display_date": "2026-09-27",
+  "articles": [
+    {
+      "candidate_id": "openalex--W7214339732",
+      "category": "Paper",
+      "rank": 1,
+      "path": "docs/daily/2026-09-27/paper/01-low-rank-acoustic-variation-adapters-with-spectro-.md"
+    },
+    {
+      "candidate_id": "s2--6722bde176ba954ba0a34e7429dc573b0a29b6af",
+      "category": "Paper",
+      "rank": 2,
+      "path": "docs/daily/2026-09-27/paper/02-demonstrating-the-feasibility-of-a-mirror-ocean-ac.md"
+    },
+    {
+      "candidate_id": "openalex--W7214305218",
+      "category": "Paper",
+      "rank": 3,
+      "path": "docs/daily/2026-09-27/paper/03-aquellas-pequeñas-cosas-en-la-producción-de-evento.md"
+    },
+    {
+      "candidate_id": "crossref--10.1117-1.oe.65.9.098103",
+      "category": "Paper",
+      "rank": 4,
+      "path": "docs/daily/2026-09-27/paper/04-suppressing-oam-mode-crosstalk-in-underwater-optic.md"
+    },
+    {
+      "candidate_id": "crossref--10.1186-s12917-026-05954-2",
+      "category": "Paper",
+      "rank": 5,
+      "path": "docs/daily/2026-09-27/paper/05-first-record-of-oschmarinella-macrorchis-brachycla.md"
+    },
+    {
+      "candidate_id": "openalex--W611607865",
+      "category": "Paper",
+      "rank": 6,
+      "path": "docs/daily/2026-09-27/paper/06-how-important-are-herring-to-humpback-whales-the-r.md"
+    },
+    {
+      "candidate_id": "news--b391506ee7e8",
+      "category": "News",
+      "rank": 7,
+      "path": "docs/daily/2026-09-27/news/07-dutch-aswf-frigate-program-faces-further-delays-as.md"
+    }
+  ],
+  "assets": [
+    {
+      "candidate_id": "openalex--W7214339732",
+      "path": "docs/public/daily/2026-09-27/assets/openalex--W7214339732/preview.png"
+    },
+    {
+      "candidate_id": "s2--6722bde176ba954ba0a34e7429dc573b0a29b6af",
+      "path": "docs/public/daily/2026-09-27/assets/s2--6722bde176ba954ba0a34e7429dc573b0a29b6af/preview.svg"
+    },
+    {
+      "candidate_id": "openalex--W7214305218",
+      "path": "docs/public/daily/2026-09-27/assets/openalex--W7214305218/preview.svg"
+    },
+    {
+      "candidate_id": "crossref--10.1117-1.oe.65.9.098103",
+      "path": "docs/public/daily/2026-09-27/assets/crossref--10.1117-1.oe.65.9.098103/preview.svg"
+    },
+    {
+      "candidate_id": "crossref--10.1186-s12917-026-05954-2",
+      "path": "docs/public/daily/2026-09-27/assets/crossref--10.1186-s12917-026-05954-2/preview.png"
+    },
+    {
+      "candidate_id": "openalex--W611607865",
+      "path": "docs/public/daily/2026-09-27/assets/openalex--W611607865/preview.svg"
+    },
+    {
+      "candidate_id": "news--b391506ee7e8",
+      "path": "docs/public/daily/2026-09-27/assets/news--b391506ee7e8/preview.png"
+    }
+  ]
+}
