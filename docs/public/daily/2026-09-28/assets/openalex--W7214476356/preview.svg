@@ -1,0 +1,72 @@
+<svg width="400" height="300" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#431407;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#9a3412;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="400" height="300" fill="url(#grad)"/>
+
+  <!-- Grid pattern -->
+  <g opacity="0.1">
+    <line x1="0" y1="75" x2="400" y2="75" stroke="#fb923c" stroke-width="1"/>
+    <line x1="0" y1="150" x2="400" y2="150" stroke="#fb923c" stroke-width="1"/>
+    <line x1="0" y1="225" x2="400" y2="225" stroke="#fb923c" stroke-width="1"/>
+    <line x1="100" y1="0" x2="100" y2="300" stroke="#fb923c" stroke-width="1"/>
+    <line x1="200" y1="0" x2="200" y2="300" stroke="#fb923c" stroke-width="1"/>
+    <line x1="300" y1="0" x2="300" y2="300" stroke="#fb923c" stroke-width="1"/>
+  </g>
+
+  <!-- Waveform decoration (deterministic per title) -->
+  <g>
+  <polyline points="0,212.3 8,212.1 16,210.5 24,207.1 32,202.2 40,196.3 48,190.8 56,186.8 64,185.4 72,186.9 80,191.1 88,196.8 96,202.8 104,208.0 112,211.5 120,213.1 128,213.3 136,212.9 144,212.8 152,213.4 160,214.9 168,216.7 176,218.0 184,217.6 192,215.1 200,210.3 208,204.0 216,197.1 224,191.2 232,187.4 240,186.4 248,188.1 256,191.8 264,196.4 272,200.8 280,204.0 288,205.9 296,206.7 304,207.2 312,208.2 320,210.2 328,213.4 336,217.1 344,220.4 352,222.2 360,221.5 368,218.2 376,212.5 384,205.6 392,198.8 400,193.4" fill="none" stroke="#fb923c" stroke-width="1.5" opacity="0.35"/>
+  <polyline points="0,236.1 8,243.8 16,249.3 24,251.8 32,251.3 40,248.8 48,245.5 56,242.6 64,241.2 72,241.1 80,241.8 88,242.1 96,240.9 104,237.4 112,231.5 120,224.1 128,216.6 136,210.6 144,207.5 152,207.8 160,211.2 168,216.7 176,222.9 184,228.2 192,231.7 200,233.4 208,233.7 216,233.9 224,235.0 232,237.8 240,242.2 248,247.6 256,252.5 264,255.6 272,255.6 280,252.2 288,246.0 296,238.1 304,230.3 312,224.0 320,220.1 328,218.8 336,219.4 344,220.7 352,221.6 360,221.1 368,219.3 376,216.7 384,214.7 392,214.5 400,217.0" fill="none" stroke="#fb923c" stroke-width="1.5" opacity="0.22"/>
+  <polyline points="0,250.8 8,251.4 16,250.0 24,246.5 32,241.8 40,237.5 48,235.2 56,236.3 64,241.1 72,248.9 80,258.3 88,267.3 96,274.2 104,278.0 112,278.8 120,277.4 128,275.4 136,274.3 144,275.2 152,278.0 160,281.9 168,285.4 176,286.7 184,284.8 192,279.3 200,270.9 208,261.3 216,252.3 224,245.7 232,242.5 240,242.4 248,244.4 256,247.1 264,248.7 272,248.5 280,246.3 288,243.1 296,240.4 304,239.9 312,242.6 320,248.8 328,257.5 336,267.2 344,275.9 352,282.0 360,284.6 368,283.9 376,281.1 384,277.8 392,275.5 400,275.2" fill="none" stroke="#fb923c" stroke-width="1.5" opacity="0.13"/>
+  </g>
+
+  <!-- Header -->
+  <text x="20" y="40" font-family="Inter, sans-serif" font-size="14" fill="#fb923c" font-weight="600">
+    UWA / 09-28
+  </text>
+
+  <!-- Keyword badge -->
+  <rect x="20" y="60" width="132" height="28" rx="14" fill="#fb923c" opacity="0.2"/>
+  <text x="30" y="79" font-family="Inter, sans-serif" font-size="13" fill="#fb923c" font-weight="500">
+    classification
+  </text>
+
+  <!-- Title -->
+  <foreignObject x="20" y="110" width="360" height="120">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="
+      font-family: Inter, sans-serif;
+      font-size: 18px;
+      font-weight: 600;
+      color: #e2e8f0;
+      line-height: 1.4;
+      overflow: hidden;
+      display: -webkit-box;
+      -webkit-line-clamp: 4;
+      -webkit-box-orient: vertical;
+    ">
+      WT-DETR: A Lightweight Model for Defect Detection in Buri...
+    </div>
+  </foreignObject>
+
+  <!-- Author -->
+  <text x="20" y="250" font-family="Inter, sans-serif" font-size="13" fill="#94a3b8">
+    Ziang Zheng
+  </text>
+
+  <!-- Footer -->
+  <text x="20" y="275" font-family="Inter, sans-serif" font-size="11" fill="#64748b">
+    Journal of Pipeline Systems Engineering and Practice
+  </text>
+
+  <!-- Score badge -->
+  <circle cx="360" cy="40" r="24" fill="#fb923c" opacity="0.2"/>
+  <text x="360" y="46" font-family="Inter, sans-serif" font-size="14" fill="#fb923c" font-weight="700" text-anchor="middle">
+    51
+  </text>
+</svg>

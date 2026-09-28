@@ -1,0 +1,59 @@
+{
+  "schema_version": 2,
+  "cycle_id": "daily-2026-09-28",
+  "display_date": "2026-09-28",
+  "articles": [
+    {
+      "candidate_id": "openalex--W7214439520",
+      "category": "Paper",
+      "rank": 1,
+      "path": "docs/daily/2026-09-28/paper/01-3d-autonomous-dynamic-path-planning-for-uuvs-based.md"
+    },
+    {
+      "candidate_id": "openalex--W7214451490",
+      "category": "Paper",
+      "rank": 2,
+      "path": "docs/daily/2026-09-28/paper/02-robust-adaptive-wideband-beamforming-for-passive-a.md"
+    },
+    {
+      "candidate_id": "s2--fd1e48b23ab50e86c4745e34d613f3de02bc0477",
+      "category": "Paper",
+      "rank": 3,
+      "path": "docs/daily/2026-09-28/paper/03-a-spatial-tdma-based-medium-access-control-protoco.md"
+    },
+    {
+      "candidate_id": "crossref--10.1007-s10921-026-01432-9",
+      "category": "Paper",
+      "rank": 4,
+      "path": "docs/daily/2026-09-28/paper/04-comparative-study-of-non-destructive-techniques-fo.md"
+    },
+    {
+      "candidate_id": "openalex--W7214476356",
+      "category": "Paper",
+      "rank": 5,
+      "path": "docs/daily/2026-09-28/paper/05-wt-detr-a-lightweight-model-for-defect-detection-i.md"
+    }
+  ],
+  "assets": [
+    {
+      "candidate_id": "openalex--W7214439520",
+      "path": "docs/public/daily/2026-09-28/assets/openalex--W7214439520/preview.png"
+    },
+    {
+      "candidate_id": "openalex--W7214451490",
+      "path": "docs/public/daily/2026-09-28/assets/openalex--W7214451490/preview.png"
+    },
+    {
+      "candidate_id": "s2--fd1e48b23ab50e86c4745e34d613f3de02bc0477",
+      "path": "docs/public/daily/2026-09-28/assets/s2--fd1e48b23ab50e86c4745e34d613f3de02bc0477/preview.svg"
+    },
+    {
+      "candidate_id": "crossref--10.1007-s10921-026-01432-9",
+      "path": "docs/public/daily/2026-09-28/assets/crossref--10.1007-s10921-026-01432-9/preview.png"
+    },
+    {
+      "candidate_id": "openalex--W7214476356",
+      "path": "docs/public/daily/2026-09-28/assets/openalex--W7214476356/preview.svg"
+    }
+  ]
+}
