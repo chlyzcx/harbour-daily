@@ -1,0 +1,119 @@
+{
+  "schema_version": 2,
+  "cycle_id": "daily-2026-09-29",
+  "display_date": "2026-09-29",
+  "articles": [
+    {
+      "candidate_id": "arxiv--2609.34839-1",
+      "category": "Paper",
+      "rank": 1,
+      "path": "docs/daily/2026-09-29/paper/01-openwhistle-a-large-scale-longitudinal-dataset-and.md"
+    },
+    {
+      "candidate_id": "openalex--W7214529111",
+      "category": "Paper",
+      "rank": 2,
+      "path": "docs/daily/2026-09-29/paper/02-acoustic-recognition-of-tilapia-feeding-intensity-.md"
+    },
+    {
+      "candidate_id": "openalex--W7214336794",
+      "category": "Paper",
+      "rank": 3,
+      "path": "docs/daily/2026-09-29/paper/03-eavesdropping-on-whales-hydrophones-noise-and-asym.md"
+    },
+    {
+      "candidate_id": "crossref--10.36956-sms.v8i3.105762",
+      "category": "Paper",
+      "rank": 4,
+      "path": "docs/daily/2026-09-29/paper/04-intelligent-underwater-quantum-communications-a-re.md"
+    },
+    {
+      "candidate_id": "crossref--10.1007-s11276-026-04233-0",
+      "category": "Paper",
+      "rank": 5,
+      "path": "docs/daily/2026-09-29/paper/05-oleer-optimized-layer-based-and-energy-efficient-r.md"
+    },
+    {
+      "candidate_id": "crossref--10.1515-joc-2026-0286",
+      "category": "Paper",
+      "rank": 6,
+      "path": "docs/daily/2026-09-29/paper/06-mode-division-multiplexing-using-laguerregaussian-.md"
+    },
+    {
+      "candidate_id": "crossref--10.1038-s41598-026-72013-z",
+      "category": "Paper",
+      "rank": 7,
+      "path": "docs/daily/2026-09-29/paper/07-ddsf-unet-dual-domain-spatialfrequency-learning-fo.md"
+    },
+    {
+      "candidate_id": "crossref--10.1093-9780191998317.003.0011",
+      "category": "Paper",
+      "rank": 8,
+      "path": "docs/daily/2026-09-29/paper/08-communicating-with-ai-wittgensteins-lion-and-the-p.md"
+    },
+    {
+      "candidate_id": "crossref--10.3390-jmse14191796",
+      "category": "Paper",
+      "rank": 9,
+      "path": "docs/daily/2026-09-29/paper/09-high-accuracy-3d-reconstruction-of-underwater-obje.md"
+    },
+    {
+      "candidate_id": "news--e096480b9d0e",
+      "category": "News",
+      "rank": 10,
+      "path": "docs/daily/2026-09-29/news/10-fugro-completes-ultra-deepwater-survey-for-petrona.md"
+    },
+    {
+      "candidate_id": "news--92496daf9987",
+      "category": "News",
+      "rank": 11,
+      "path": "docs/daily/2026-09-29/news/11-fugro-performs-ultra-deepwater-auv-survey-off-east.md"
+    }
+  ],
+  "assets": [
+    {
+      "candidate_id": "arxiv--2609.34839-1",
+      "path": "docs/public/daily/2026-09-29/assets/arxiv--2609.34839-1/preview.png"
+    },
+    {
+      "candidate_id": "openalex--W7214529111",
+      "path": "docs/public/daily/2026-09-29/assets/openalex--W7214529111/preview.png"
+    },
+    {
+      "candidate_id": "openalex--W7214336794",
+      "path": "docs/public/daily/2026-09-29/assets/openalex--W7214336794/preview.svg"
+    },
+    {
+      "candidate_id": "crossref--10.36956-sms.v8i3.105762",
+      "path": "docs/public/daily/2026-09-29/assets/crossref--10.36956-sms.v8i3.105762/preview.svg"
+    },
+    {
+      "candidate_id": "crossref--10.1007-s11276-026-04233-0",
+      "path": "docs/public/daily/2026-09-29/assets/crossref--10.1007-s11276-026-04233-0/preview.png"
+    },
+    {
+      "candidate_id": "crossref--10.1515-joc-2026-0286",
+      "path": "docs/public/daily/2026-09-29/assets/crossref--10.1515-joc-2026-0286/preview.svg"
+    },
+    {
+      "candidate_id": "crossref--10.1038-s41598-026-72013-z",
+      "path": "docs/public/daily/2026-09-29/assets/crossref--10.1038-s41598-026-72013-z/preview.svg"
+    },
+    {
+      "candidate_id": "crossref--10.1093-9780191998317.003.0011",
+      "path": "docs/public/daily/2026-09-29/assets/crossref--10.1093-9780191998317.003.0011/preview.svg"
+    },
+    {
+      "candidate_id": "crossref--10.3390-jmse14191796",
+      "path": "docs/public/daily/2026-09-29/assets/crossref--10.3390-jmse14191796/preview.png"
+    },
+    {
+      "candidate_id": "news--e096480b9d0e",
+      "path": "docs/public/daily/2026-09-29/assets/news--e096480b9d0e/preview.png"
+    },
+    {
+      "candidate_id": "news--92496daf9987",
+      "path": "docs/public/daily/2026-09-29/assets/news--92496daf9987/preview.png"
+    }
+  ]
+}
