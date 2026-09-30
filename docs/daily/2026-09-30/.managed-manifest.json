@@ -1,0 +1,89 @@
+{
+  "schema_version": 2,
+  "cycle_id": "daily-2026-09-30",
+  "display_date": "2026-09-30",
+  "articles": [
+    {
+      "candidate_id": "arxiv--2609.37910-1",
+      "category": "Paper",
+      "rank": 1,
+      "path": "docs/daily/2026-09-30/paper/01-2-dimensional-spectral-gating-for-denoising-bioaco.md"
+    },
+    {
+      "candidate_id": "arxiv--2609.37540-1",
+      "category": "Paper",
+      "rank": 2,
+      "path": "docs/daily/2026-09-30/paper/02-rate-agnostic-bioacoustics-heterogeneous-multi-tax.md"
+    },
+    {
+      "candidate_id": "arxiv--2609.37518-1",
+      "category": "Paper",
+      "rank": 3,
+      "path": "docs/daily/2026-09-30/paper/03-bad-taming-the-bioacoustic-data-deluge-with-a-bat-.md"
+    },
+    {
+      "candidate_id": "arxiv--2609.35863-1",
+      "category": "Paper",
+      "rank": 4,
+      "path": "docs/daily/2026-09-30/paper/04-beyond-discrimination-calibrated-geoprior-fusion-f.md"
+    },
+    {
+      "candidate_id": "s2--79282ad1abf3bf49c236c86f079f7cc450c699d5",
+      "category": "Paper",
+      "rank": 5,
+      "path": "docs/daily/2026-09-30/paper/05-feddcr-federated-decoupled-consistent-representati.md"
+    },
+    {
+      "candidate_id": "crossref--10.30574-wjarr.2026.31.3.2449",
+      "category": "Paper",
+      "rank": 6,
+      "path": "docs/daily/2026-09-30/paper/06-anthropogenic-underwater-sound-and-its-effects-on-.md"
+    },
+    {
+      "candidate_id": "crossref--10.1088-1361-651x-aeadb7",
+      "category": "Paper",
+      "rank": 7,
+      "path": "docs/daily/2026-09-30/paper/07-numerical-modeling-of-laser-induced-acoustic-waves.md"
+    },
+    {
+      "candidate_id": "crossref--10.3390-app16199651",
+      "category": "Paper",
+      "rank": 8,
+      "path": "docs/daily/2026-09-30/paper/08-a-novel-bit-level-correlation-doppler-estimation-f.md"
+    }
+  ],
+  "assets": [
+    {
+      "candidate_id": "arxiv--2609.37910-1",
+      "path": "docs/public/daily/2026-09-30/assets/arxiv--2609.37910-1/preview.png"
+    },
+    {
+      "candidate_id": "arxiv--2609.37540-1",
+      "path": "docs/public/daily/2026-09-30/assets/arxiv--2609.37540-1/preview.png"
+    },
+    {
+      "candidate_id": "arxiv--2609.37518-1",
+      "path": "docs/public/daily/2026-09-30/assets/arxiv--2609.37518-1/preview.png"
+    },
+    {
+      "candidate_id": "arxiv--2609.35863-1",
+      "path": "docs/public/daily/2026-09-30/assets/arxiv--2609.35863-1/preview.png"
+    },
+    {
+      "candidate_id": "s2--79282ad1abf3bf49c236c86f079f7cc450c699d5",
+      "path": "docs/public/daily/2026-09-30/assets/s2--79282ad1abf3bf49c236c86f079f7cc450c699d5/preview.svg"
+    },
+    {
+      "candidate_id": "crossref--10.30574-wjarr.2026.31.3.2449",
+      "path": "docs/public/daily/2026-09-30/assets/crossref--10.30574-wjarr.2026.31.3.2449/preview.png"
+    },
+    {
+      "candidate_id": "crossref--10.1088-1361-651x-aeadb7",
+      "path": "docs/public/daily/2026-09-30/assets/crossref--10.1088-1361-651x-aeadb7/preview.svg"
+    },
+    {
+      "candidate_id": "crossref--10.3390-app16199651",
+      "path": "docs/public/daily/2026-09-30/assets/crossref--10.3390-app16199651/preview.svg"
+    }
+  ]
+}
