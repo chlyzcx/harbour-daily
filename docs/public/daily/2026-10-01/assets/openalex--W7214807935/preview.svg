@@ -1,0 +1,72 @@
+<svg width="400" height="300" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#042f2e;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#115e59;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="400" height="300" fill="url(#grad)"/>
+
+  <!-- Grid pattern -->
+  <g opacity="0.1">
+    <line x1="0" y1="75" x2="400" y2="75" stroke="#2dd4bf" stroke-width="1"/>
+    <line x1="0" y1="150" x2="400" y2="150" stroke="#2dd4bf" stroke-width="1"/>
+    <line x1="0" y1="225" x2="400" y2="225" stroke="#2dd4bf" stroke-width="1"/>
+    <line x1="100" y1="0" x2="100" y2="300" stroke="#2dd4bf" stroke-width="1"/>
+    <line x1="200" y1="0" x2="200" y2="300" stroke="#2dd4bf" stroke-width="1"/>
+    <line x1="300" y1="0" x2="300" y2="300" stroke="#2dd4bf" stroke-width="1"/>
+  </g>
+
+  <!-- Waveform decoration (deterministic per title) -->
+  <g>
+  <polyline points="0,213.7 8,212.7 16,212.6 24,213.2 32,214.2 40,214.8 48,214.7 56,213.2 64,210.3 72,206.2 80,201.3 88,196.3 96,192.0 104,188.9 112,187.5 120,187.7 128,189.3 136,191.9 144,194.6 152,197.0 160,198.5 168,199.0 176,198.8 184,198.2 192,197.7 200,198.1 208,199.6 216,202.5 224,206.5 232,211.2 240,216.0 248,220.0 256,222.7 264,223.7 272,223.0 280,220.9 288,217.9 296,214.6 304,211.8 312,209.8 320,208.9 328,208.9 336,209.2 344,209.5 352,209.1 360,207.6 368,204.8 376,201.0 384,196.5 392,192.1 400,188.5" fill="none" stroke="#2dd4bf" stroke-width="1.5" opacity="0.35"/>
+  <polyline points="0,212.8 8,215.3 16,219.7 24,225.3 32,231.3 40,236.9 48,241.3 56,243.9 64,244.8 72,244.1 80,242.7 88,241.3 96,240.6 104,241.2 112,243.1 120,246.2 128,249.8 136,253.0 144,255.2 152,255.5 160,253.8 168,250.1 176,245.1 184,239.5 192,234.2 200,230.0 208,227.3 216,226.3 224,226.6 232,227.6 240,228.5 248,228.5 256,227.1 264,224.3 272,220.3 280,215.7 288,211.4 296,208.2 304,206.9 312,207.6 320,210.3 328,214.5 336,219.3 344,223.9 352,227.6 360,229.8 368,230.6 376,230.1 384,229.2 392,228.5 400,228.8" fill="none" stroke="#2dd4bf" stroke-width="1.5" opacity="0.22"/>
+  <polyline points="0,254.3 8,250.2 16,248.1 24,247.6 32,248.0 40,248.6 48,248.8 56,248.5 64,248.0 72,247.7 80,248.4 88,250.7 96,255.1 104,261.4 112,269.1 120,277.3 128,284.7 136,290.0 144,292.2 152,290.8 160,285.8 168,277.9 176,268.4 184,258.5 192,249.7 200,243.1 208,239.4 216,238.7 224,240.4 232,243.8 240,247.9 248,251.8 256,255.0 264,257.4 272,259.1 280,260.8 288,262.9 296,266.0 304,270.2 312,275.2 320,280.4 328,284.8 336,287.4 344,287.3 352,283.9 360,277.5 368,268.7 376,258.6 384,248.7 392,240.4 400,234.9" fill="none" stroke="#2dd4bf" stroke-width="1.5" opacity="0.13"/>
+  </g>
+
+  <!-- Header -->
+  <text x="20" y="40" font-family="Inter, sans-serif" font-size="14" fill="#2dd4bf" font-weight="600">
+    UWA / 10-01
+  </text>
+
+  <!-- Keyword badge -->
+  <rect x="20" y="60" width="84" height="28" rx="14" fill="#2dd4bf" opacity="0.2"/>
+  <text x="30" y="79" font-family="Inter, sans-serif" font-size="13" fill="#2dd4bf" font-weight="500">
+    Research
+  </text>
+
+  <!-- Title -->
+  <foreignObject x="20" y="110" width="360" height="120">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="
+      font-family: Inter, sans-serif;
+      font-size: 18px;
+      font-weight: 600;
+      color: #e2e8f0;
+      line-height: 1.4;
+      overflow: hidden;
+      display: -webkit-box;
+      -webkit-line-clamp: 4;
+      -webkit-box-orient: vertical;
+    ">
+      Confidence-Driven Adaptive Beacon Control for Time Synchr...
+    </div>
+  </foreignObject>
+
+  <!-- Author -->
+  <text x="20" y="250" font-family="Inter, sans-serif" font-size="13" fill="#94a3b8">
+    Sahib Bahadar
+  </text>
+
+  <!-- Footer -->
+  <text x="20" y="275" font-family="Inter, sans-serif" font-size="11" fill="#64748b">
+    Research Square
+  </text>
+
+  <!-- Score badge -->
+  <circle cx="360" cy="40" r="24" fill="#2dd4bf" opacity="0.2"/>
+  <text x="360" y="46" font-family="Inter, sans-serif" font-size="14" fill="#2dd4bf" font-weight="700" text-anchor="middle">
+    56
+  </text>
+</svg>

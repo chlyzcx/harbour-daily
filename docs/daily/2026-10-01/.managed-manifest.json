@@ -1,0 +1,129 @@
+{
+  "schema_version": 2,
+  "cycle_id": "daily-2026-10-01",
+  "display_date": "2026-10-01",
+  "articles": [
+    {
+      "candidate_id": "openalex--W7214716911",
+      "category": "Paper",
+      "rank": 1,
+      "path": "docs/daily/2026-10-01/paper/01-ocean-acoustic-field-prediction-method-based-on-du.md"
+    },
+    {
+      "candidate_id": "arxiv--2609.37540-2",
+      "category": "Paper",
+      "rank": 2,
+      "path": "docs/daily/2026-10-01/paper/02-rate-agnostic-bioacoustics-heterogeneous-multi-tax.md"
+    },
+    {
+      "candidate_id": "arxiv--2609.37518-2",
+      "category": "Paper",
+      "rank": 3,
+      "path": "docs/daily/2026-10-01/paper/03-bad-taming-the-bioacoustic-data-deluge-with-a-bat-.md"
+    },
+    {
+      "candidate_id": "openalex--W7202328780",
+      "category": "Paper",
+      "rank": 4,
+      "path": "docs/daily/2026-10-01/paper/04-the-more-the-merrier--the-effects-of-data-volume-a.md"
+    },
+    {
+      "candidate_id": "openalex--W7214795214",
+      "category": "Paper",
+      "rank": 5,
+      "path": "docs/daily/2026-10-01/paper/05-a-framework-for-inversion-and-assimilation-of-deep.md"
+    },
+    {
+      "candidate_id": "openalex--W7214724147",
+      "category": "Paper",
+      "rank": 6,
+      "path": "docs/daily/2026-10-01/paper/06-active-acoustic-remote-sensing-of-ocean-sound-spee.md"
+    },
+    {
+      "candidate_id": "openalex--W7214777157",
+      "category": "Paper",
+      "rank": 7,
+      "path": "docs/daily/2026-10-01/paper/07-active-acoustic-tomography-methods-for-underwater-.md"
+    },
+    {
+      "candidate_id": "openalex--W7214709312",
+      "category": "Paper",
+      "rank": 8,
+      "path": "docs/daily/2026-10-01/paper/08-a-multi-path-loss-model-using-hybrid-gooseneck-bar.md"
+    },
+    {
+      "candidate_id": "openalex--W7214760709",
+      "category": "Paper",
+      "rank": 9,
+      "path": "docs/daily/2026-10-01/paper/09-feasibility-of-estimating-salmon-abundance-in-the-.md"
+    },
+    {
+      "candidate_id": "openalex--W7214807935",
+      "category": "Paper",
+      "rank": 10,
+      "path": "docs/daily/2026-10-01/paper/10-confidence-driven-adaptive-beacon-control-for-time.md"
+    },
+    {
+      "candidate_id": "news--7e0409d6991c",
+      "category": "News",
+      "rank": 11,
+      "path": "docs/daily/2026-10-01/news/11-kongsberg-maritime-to-deliver-auv-hangar-docking-s.md"
+    },
+    {
+      "candidate_id": "news--7d729cce7166",
+      "category": "News",
+      "rank": 12,
+      "path": "docs/daily/2026-10-01/news/12-historic-first-as-royal-navy-launches-torpedo-from.md"
+    }
+  ],
+  "assets": [
+    {
+      "candidate_id": "openalex--W7214716911",
+      "path": "docs/public/daily/2026-10-01/assets/openalex--W7214716911/preview.png"
+    },
+    {
+      "candidate_id": "arxiv--2609.37540-2",
+      "path": "docs/public/daily/2026-10-01/assets/arxiv--2609.37540-2/preview.png"
+    },
+    {
+      "candidate_id": "arxiv--2609.37518-2",
+      "path": "docs/public/daily/2026-10-01/assets/arxiv--2609.37518-2/preview.png"
+    },
+    {
+      "candidate_id": "openalex--W7202328780",
+      "path": "docs/public/daily/2026-10-01/assets/openalex--W7202328780/preview.png"
+    },
+    {
+      "candidate_id": "openalex--W7214795214",
+      "path": "docs/public/daily/2026-10-01/assets/openalex--W7214795214/preview.png"
+    },
+    {
+      "candidate_id": "openalex--W7214724147",
+      "path": "docs/public/daily/2026-10-01/assets/openalex--W7214724147/preview.png"
+    },
+    {
+      "candidate_id": "openalex--W7214777157",
+      "path": "docs/public/daily/2026-10-01/assets/openalex--W7214777157/preview.png"
+    },
+    {
+      "candidate_id": "openalex--W7214709312",
+      "path": "docs/public/daily/2026-10-01/assets/openalex--W7214709312/preview.svg"
+    },
+    {
+      "candidate_id": "openalex--W7214760709",
+      "path": "docs/public/daily/2026-10-01/assets/openalex--W7214760709/preview.svg"
+    },
+    {
+      "candidate_id": "openalex--W7214807935",
+      "path": "docs/public/daily/2026-10-01/assets/openalex--W7214807935/preview.svg"
+    },
+    {
+      "candidate_id": "news--7e0409d6991c",
+      "path": "docs/public/daily/2026-10-01/assets/news--7e0409d6991c/preview.png"
+    },
+    {
+      "candidate_id": "news--7d729cce7166",
+      "path": "docs/public/daily/2026-10-01/assets/news--7d729cce7166/preview.png"
+    }
+  ]
+}

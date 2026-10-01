@@ -1,0 +1,72 @@
+<svg width="400" height="300" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#042f2e;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#115e59;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="400" height="300" fill="url(#grad)"/>
+
+  <!-- Grid pattern -->
+  <g opacity="0.1">
+    <line x1="0" y1="75" x2="400" y2="75" stroke="#2dd4bf" stroke-width="1"/>
+    <line x1="0" y1="150" x2="400" y2="150" stroke="#2dd4bf" stroke-width="1"/>
+    <line x1="0" y1="225" x2="400" y2="225" stroke="#2dd4bf" stroke-width="1"/>
+    <line x1="100" y1="0" x2="100" y2="300" stroke="#2dd4bf" stroke-width="1"/>
+    <line x1="200" y1="0" x2="200" y2="300" stroke="#2dd4bf" stroke-width="1"/>
+    <line x1="300" y1="0" x2="300" y2="300" stroke="#2dd4bf" stroke-width="1"/>
+  </g>
+
+  <!-- Waveform decoration (deterministic per title) -->
+  <g>
+  <polyline points="0,218.0 8,221.7 16,224.0 24,224.2 32,222.3 40,218.5 48,213.4 56,207.7 64,202.4 72,197.9 80,195.0 88,193.5 96,193.4 104,194.2 112,195.3 120,196.3 128,196.8 136,196.8 144,196.4 152,196.2 160,196.5 168,197.9 176,200.6 184,204.6 192,209.5 200,214.7 208,219.5 216,222.9 224,224.5 232,224.0 240,221.4 248,217.2 256,212.1 264,206.8 272,202.1 280,198.6 288,196.4 296,195.6 304,195.7 312,196.2 320,196.6 328,196.6 336,196.1 344,195.2 352,194.3 360,193.9 368,194.6 376,196.7 384,200.3 392,205.2 400,210.7" fill="none" stroke="#2dd4bf" stroke-width="1.5" opacity="0.35"/>
+  <polyline points="0,217.3 8,221.2 16,224.5 24,226.7 32,227.8 40,228.1 48,228.2 56,228.8 64,230.5 72,233.7 80,238.1 88,243.5 96,248.9 104,253.4 112,256.3 120,256.9 128,255.0 136,250.8 144,245.0 152,238.6 160,232.4 168,227.4 176,223.9 184,222.1 192,221.8 200,222.2 208,222.7 216,222.7 224,221.7 232,219.7 240,217.2 248,214.7 256,213.0 264,213.0 272,215.0 280,219.2 288,225.2 296,232.3 304,239.4 312,245.7 320,250.3 328,252.7 336,252.9 344,251.1 352,248.2 360,245.0 368,242.1 376,240.2 384,239.3 392,239.2 400,239.4" fill="none" stroke="#2dd4bf" stroke-width="1.5" opacity="0.22"/>
+  <polyline points="0,281.5 8,280.7 16,277.6 24,272.2 32,265.0 40,256.9 48,249.1 56,242.7 64,238.4 72,236.8 80,237.5 88,240.1 96,243.5 104,246.8 112,249.2 120,250.1 128,249.6 136,248.3 144,246.8 152,246.3 160,247.4 168,250.7 176,256.2 184,263.4 192,271.3 200,278.8 208,284.8 216,288.5 224,289.6 232,288.1 240,284.8 248,280.6 256,276.5 264,273.4 272,271.8 280,271.6 288,272.4 296,273.4 304,273.6 312,272.2 320,268.8 328,263.4 336,256.4 344,248.8 352,241.8 360,236.3 368,233.2 376,232.9 384,235.1 392,239.2 400,244.1" fill="none" stroke="#2dd4bf" stroke-width="1.5" opacity="0.13"/>
+  </g>
+
+  <!-- Header -->
+  <text x="20" y="40" font-family="Inter, sans-serif" font-size="14" fill="#2dd4bf" font-weight="600">
+    UWA / 10-01
+  </text>
+
+  <!-- Keyword badge -->
+  <rect x="20" y="60" width="84" height="28" rx="14" fill="#2dd4bf" opacity="0.2"/>
+  <text x="30" y="79" font-family="Inter, sans-serif" font-size="13" fill="#2dd4bf" font-weight="500">
+    Research
+  </text>
+
+  <!-- Title -->
+  <foreignObject x="20" y="110" width="360" height="120">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="
+      font-family: Inter, sans-serif;
+      font-size: 18px;
+      font-weight: 600;
+      color: #e2e8f0;
+      line-height: 1.4;
+      overflow: hidden;
+      display: -webkit-box;
+      -webkit-line-clamp: 4;
+      -webkit-box-orient: vertical;
+    ">
+      Feasibility of Estimating Salmon Abundance in the Koyukuk...
+    </div>
+  </foreignObject>
+
+  <!-- Author -->
+  <text x="20" y="250" font-family="Inter, sans-serif" font-size="13" fill="#94a3b8">
+    Shane Ransbury
+  </text>
+
+  <!-- Footer -->
+  <text x="20" y="275" font-family="Inter, sans-serif" font-size="11" fill="#64748b">
+    
+  </text>
+
+  <!-- Score badge -->
+  <circle cx="360" cy="40" r="24" fill="#2dd4bf" opacity="0.2"/>
+  <text x="360" y="46" font-family="Inter, sans-serif" font-size="14" fill="#2dd4bf" font-weight="700" text-anchor="middle">
+    56
+  </text>
+</svg>
