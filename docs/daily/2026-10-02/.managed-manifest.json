@@ -1,0 +1,109 @@
+{
+  "schema_version": 2,
+  "cycle_id": "daily-2026-10-02",
+  "display_date": "2026-10-02",
+  "articles": [
+    {
+      "candidate_id": "openalex--W7214713685",
+      "category": "Paper",
+      "rank": 1,
+      "path": "docs/daily/2026-10-02/paper/01-a-legendre-spectral-collocation-method-based-parab.md"
+    },
+    {
+      "candidate_id": "openalex--W7214893803",
+      "category": "Paper",
+      "rank": 2,
+      "path": "docs/daily/2026-10-02/paper/02-investigating-multi-modal-detection-for-unmanned-m.md"
+    },
+    {
+      "candidate_id": "openalex--W7214912438",
+      "category": "Paper",
+      "rank": 3,
+      "path": "docs/daily/2026-10-02/paper/03-measurement-interval-dynamically-iterated-kalman-f.md"
+    },
+    {
+      "candidate_id": "openalex--W7214910208",
+      "category": "Paper",
+      "rank": 4,
+      "path": "docs/daily/2026-10-02/paper/04-aquaflicker--visible-flicker-for-motion-resilient-.md"
+    },
+    {
+      "candidate_id": "openalex--W7214971458",
+      "category": "Paper",
+      "rank": 5,
+      "path": "docs/daily/2026-10-02/paper/05-evaluating-the-relationship-between-cold-water-cor.md"
+    },
+    {
+      "candidate_id": "openalex--W7214597455",
+      "category": "Paper",
+      "rank": 6,
+      "path": "docs/daily/2026-10-02/paper/06-broadband-underwater-acoustic-regulation-composite.md"
+    },
+    {
+      "candidate_id": "openalex--W7214608435",
+      "category": "Paper",
+      "rank": 7,
+      "path": "docs/daily/2026-10-02/paper/07-a-cm-gapso-optimization-framework-for-cooperative-.md"
+    },
+    {
+      "candidate_id": "openalex--W7214626273",
+      "category": "Paper",
+      "rank": 8,
+      "path": "docs/daily/2026-10-02/paper/08-digital-archiving-status-and-utilization-strategie.md"
+    },
+    {
+      "candidate_id": "openalex--W7214640894",
+      "category": "Paper",
+      "rank": 9,
+      "path": "docs/daily/2026-10-02/paper/09-adaptive-early-exit-lightweight-unfolding-for-spar.md"
+    },
+    {
+      "candidate_id": "crossref--10.1071-wr25072",
+      "category": "Paper",
+      "rank": 10,
+      "path": "docs/daily/2026-10-02/paper/10-through-the-camera-lens-a-window-into-the-underwat.md"
+    }
+  ],
+  "assets": [
+    {
+      "candidate_id": "openalex--W7214713685",
+      "path": "docs/public/daily/2026-10-02/assets/openalex--W7214713685/preview.png"
+    },
+    {
+      "candidate_id": "openalex--W7214893803",
+      "path": "docs/public/daily/2026-10-02/assets/openalex--W7214893803/preview.png"
+    },
+    {
+      "candidate_id": "openalex--W7214912438",
+      "path": "docs/public/daily/2026-10-02/assets/openalex--W7214912438/preview.svg"
+    },
+    {
+      "candidate_id": "openalex--W7214910208",
+      "path": "docs/public/daily/2026-10-02/assets/openalex--W7214910208/preview.svg"
+    },
+    {
+      "candidate_id": "openalex--W7214971458",
+      "path": "docs/public/daily/2026-10-02/assets/openalex--W7214971458/preview.svg"
+    },
+    {
+      "candidate_id": "openalex--W7214597455",
+      "path": "docs/public/daily/2026-10-02/assets/openalex--W7214597455/preview.svg"
+    },
+    {
+      "candidate_id": "openalex--W7214608435",
+      "path": "docs/public/daily/2026-10-02/assets/openalex--W7214608435/preview.png"
+    },
+    {
+      "candidate_id": "openalex--W7214626273",
+      "path": "docs/public/daily/2026-10-02/assets/openalex--W7214626273/preview.png"
+    },
+    {
+      "candidate_id": "openalex--W7214640894",
+      "path": "docs/public/daily/2026-10-02/assets/openalex--W7214640894/preview.png"
+    },
+    {
+      "candidate_id": "crossref--10.1071-wr25072",
+      "path": "docs/public/daily/2026-10-02/assets/crossref--10.1071-wr25072/preview.svg"
+    }
+  ]
+}
