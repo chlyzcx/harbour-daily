@@ -1,0 +1,109 @@
+{
+  "schema_version": 2,
+  "cycle_id": "daily-2026-10-03",
+  "display_date": "2026-10-03",
+  "articles": [
+    {
+      "candidate_id": "openalex--W7215052542",
+      "category": "Paper",
+      "rank": 1,
+      "path": "docs/daily/2026-10-03/paper/01-real-time-detr-detection-benchmark-and-domain-shif.md"
+    },
+    {
+      "candidate_id": "openalex--W7215054615",
+      "category": "Paper",
+      "rank": 2,
+      "path": "docs/daily/2026-10-03/paper/02-cross-archive-generalization-in-passive-underwater.md"
+    },
+    {
+      "candidate_id": "openalex--W7215058351",
+      "category": "Paper",
+      "rank": 3,
+      "path": "docs/daily/2026-10-03/paper/03-picg-u-robust-underwater-mbes-point-cloud-registra.md"
+    },
+    {
+      "candidate_id": "openalex--W7215044165",
+      "category": "Paper",
+      "rank": 4,
+      "path": "docs/daily/2026-10-03/paper/04-evaluation-of-in-corpus-simclr-pretraining-for-und.md"
+    },
+    {
+      "candidate_id": "openalex--W7215033457",
+      "category": "Paper",
+      "rank": 5,
+      "path": "docs/daily/2026-10-03/paper/05-cross-water-acoustic-domain-adaptation-is-directio.md"
+    },
+    {
+      "candidate_id": "openalex--W7215078307",
+      "category": "Paper",
+      "rank": 6,
+      "path": "docs/daily/2026-10-03/paper/06-batslam-20-sequence-verified-sonar-place-recogniti.md"
+    },
+    {
+      "candidate_id": "openalex--W7215098578",
+      "category": "Paper",
+      "rank": 7,
+      "path": "docs/daily/2026-10-03/paper/07-open-world-source-free-domain-adaptation-for-under.md"
+    },
+    {
+      "candidate_id": "openalex--W7215116743",
+      "category": "Paper",
+      "rank": 8,
+      "path": "docs/daily/2026-10-03/paper/08-zero-target-label-cross-water-transfer-of-frozen-g.md"
+    },
+    {
+      "candidate_id": "openalex--W7215077764",
+      "category": "Paper",
+      "rank": 9,
+      "path": "docs/daily/2026-10-03/paper/09-determination-of-geographically-isolated-wetland-b.md"
+    },
+    {
+      "candidate_id": "openalex--W7215032250",
+      "category": "Paper",
+      "rank": 10,
+      "path": "docs/daily/2026-10-03/paper/10-non-invasive-inspection-of-water-canals-using-dron.md"
+    }
+  ],
+  "assets": [
+    {
+      "candidate_id": "openalex--W7215052542",
+      "path": "docs/public/daily/2026-10-03/assets/openalex--W7215052542/preview.svg"
+    },
+    {
+      "candidate_id": "openalex--W7215054615",
+      "path": "docs/public/daily/2026-10-03/assets/openalex--W7215054615/preview.svg"
+    },
+    {
+      "candidate_id": "openalex--W7215058351",
+      "path": "docs/public/daily/2026-10-03/assets/openalex--W7215058351/preview.png"
+    },
+    {
+      "candidate_id": "openalex--W7215044165",
+      "path": "docs/public/daily/2026-10-03/assets/openalex--W7215044165/preview.svg"
+    },
+    {
+      "candidate_id": "openalex--W7215033457",
+      "path": "docs/public/daily/2026-10-03/assets/openalex--W7215033457/preview.svg"
+    },
+    {
+      "candidate_id": "openalex--W7215078307",
+      "path": "docs/public/daily/2026-10-03/assets/openalex--W7215078307/preview.png"
+    },
+    {
+      "candidate_id": "openalex--W7215098578",
+      "path": "docs/public/daily/2026-10-03/assets/openalex--W7215098578/preview.svg"
+    },
+    {
+      "candidate_id": "openalex--W7215116743",
+      "path": "docs/public/daily/2026-10-03/assets/openalex--W7215116743/preview.svg"
+    },
+    {
+      "candidate_id": "openalex--W7215077764",
+      "path": "docs/public/daily/2026-10-03/assets/openalex--W7215077764/preview.png"
+    },
+    {
+      "candidate_id": "openalex--W7215032250",
+      "path": "docs/public/daily/2026-10-03/assets/openalex--W7215032250/preview.png"
+    }
+  ]
+}
