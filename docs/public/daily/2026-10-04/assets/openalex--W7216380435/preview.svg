@@ -1,0 +1,72 @@
+<svg width="400" height="300" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#431407;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#9a3412;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="400" height="300" fill="url(#grad)"/>
+
+  <!-- Grid pattern -->
+  <g opacity="0.1">
+    <line x1="0" y1="75" x2="400" y2="75" stroke="#fb923c" stroke-width="1"/>
+    <line x1="0" y1="150" x2="400" y2="150" stroke="#fb923c" stroke-width="1"/>
+    <line x1="0" y1="225" x2="400" y2="225" stroke="#fb923c" stroke-width="1"/>
+    <line x1="100" y1="0" x2="100" y2="300" stroke="#fb923c" stroke-width="1"/>
+    <line x1="200" y1="0" x2="200" y2="300" stroke="#fb923c" stroke-width="1"/>
+    <line x1="300" y1="0" x2="300" y2="300" stroke="#fb923c" stroke-width="1"/>
+  </g>
+
+  <!-- Waveform decoration (deterministic per title) -->
+  <g>
+  <polyline points="0,195.2 8,197.1 16,197.9 24,197.7 32,197.1 40,197.1 48,198.5 56,201.8 64,206.8 72,212.7 80,218.4 88,222.5 96,224.3 104,223.3 112,220.1 120,215.6 128,210.9 136,207.1 144,204.8 152,203.9 160,203.8 168,203.5 176,202.3 184,199.7 192,195.9 200,191.7 208,188.1 216,186.4 224,187.1 232,190.4 240,195.7 248,201.9 256,207.8 264,212.2 272,214.6 280,215.1 288,214.4 296,213.4 304,213.1 312,213.8 320,215.5 328,217.5 336,218.8 344,218.4 352,215.8 360,211.0 368,204.8 376,198.3 384,192.7 392,189.2 400,188.2" fill="none" stroke="#fb923c" stroke-width="1.5" opacity="0.35"/>
+  <polyline points="0,251.9 8,249.6 16,244.4 24,237.2 32,229.3 40,222.3 48,217.5 56,215.5 64,216.0 72,217.9 80,220.1 88,221.2 96,220.7 104,218.7 112,216.1 120,214.3 128,214.4 136,217.4 144,223.0 152,230.5 160,238.4 168,245.1 176,249.4 184,250.8 192,249.7 200,247.2 208,244.5 216,242.8 224,242.8 232,244.3 240,246.3 248,247.6 256,246.8 264,243.4 272,237.4 280,229.8 288,222.1 296,215.8 304,212.1 312,211.3 320,213.1 328,216.3 336,219.6 344,221.8 352,222.2 360,221.2 368,219.7 376,219.0 384,220.2 392,224.0 400,230.2" fill="none" stroke="#fb923c" stroke-width="1.5" opacity="0.22"/>
+  <polyline points="0,267.6 8,270.5 16,270.7 24,269.3 32,268.1 40,268.3 48,271.0 56,276.0 64,282.3 72,288.1 80,291.8 88,292.2 96,288.9 104,282.7 112,275.2 120,268.2 128,263.2 136,260.8 144,260.8 152,262.0 160,262.8 168,261.8 176,258.1 184,251.9 192,244.5 200,237.6 208,232.8 216,231.5 224,233.7 232,238.8 240,245.2 248,251.1 256,255.1 264,256.6 272,256.0 280,254.5 288,253.8 296,255.2 304,259.6 312,266.5 320,274.8 328,282.7 336,288.3 344,290.6 352,289.3 360,285.4 368,280.2 376,275.7 384,273.0 392,272.7 400,274.3" fill="none" stroke="#fb923c" stroke-width="1.5" opacity="0.13"/>
+  </g>
+
+  <!-- Header -->
+  <text x="20" y="40" font-family="Inter, sans-serif" font-size="14" fill="#fb923c" font-weight="600">
+    UWA / 10-04
+  </text>
+
+  <!-- Keyword badge -->
+  <rect x="20" y="60" width="180" height="28" rx="14" fill="#fb923c" opacity="0.2"/>
+  <text x="30" y="79" font-family="Inter, sans-serif" font-size="13" fill="#fb923c" font-weight="500">
+    Doppler velocity log
+  </text>
+
+  <!-- Title -->
+  <foreignObject x="20" y="110" width="360" height="120">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="
+      font-family: Inter, sans-serif;
+      font-size: 18px;
+      font-weight: 600;
+      color: #e2e8f0;
+      line-height: 1.4;
+      overflow: hidden;
+      display: -webkit-box;
+      -webkit-line-clamp: 4;
+      -webkit-box-orient: vertical;
+    ">
+      Standardized benthic imaging with small, modular ROVs: an...
+    </div>
+  </foreignObject>
+
+  <!-- Author -->
+  <text x="20" y="250" font-family="Inter, sans-serif" font-size="13" fill="#94a3b8">
+    Zachary H. Randell
+  </text>
+
+  <!-- Footer -->
+  <text x="20" y="275" font-family="Inter, sans-serif" font-size="11" fill="#64748b">
+    bioRxiv (Cold Spring Harbor Laboratory)
+  </text>
+
+  <!-- Score badge -->
+  <circle cx="360" cy="40" r="24" fill="#fb923c" opacity="0.2"/>
+  <text x="360" y="46" font-family="Inter, sans-serif" font-size="14" fill="#fb923c" font-weight="700" text-anchor="middle">
+    72
+  </text>
+</svg>

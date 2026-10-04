@@ -1,0 +1,109 @@
+{
+  "schema_version": 2,
+  "cycle_id": "daily-2026-10-04",
+  "display_date": "2026-10-04",
+  "articles": [
+    {
+      "candidate_id": "openalex--W7216380435",
+      "category": "Paper",
+      "rank": 1,
+      "path": "docs/daily/2026-10-04/paper/01-standardized-benthic-imaging-with-small-modular-ro.md"
+    },
+    {
+      "candidate_id": "openalex--W7216072693",
+      "category": "Paper",
+      "rank": 2,
+      "path": "docs/daily/2026-10-04/paper/02-discovery-and-promotion-of-unknown-sounds-into-ope.md"
+    },
+    {
+      "candidate_id": "openalex--W7216128482",
+      "category": "Paper",
+      "rank": 3,
+      "path": "docs/daily/2026-10-04/paper/03-sonarvoxnet-diver-detection-in-3d-bounding-box-usi.md"
+    },
+    {
+      "candidate_id": "openalex--W7215925330",
+      "category": "Paper",
+      "rank": 4,
+      "path": "docs/daily/2026-10-04/paper/04-in-situ-assessment-of-a-single-underwater-acoustic.md"
+    },
+    {
+      "candidate_id": "openalex--W7216148286",
+      "category": "Paper",
+      "rank": 5,
+      "path": "docs/daily/2026-10-04/paper/05-hardware-intrinsic-secure-optical-communication-vi.md"
+    },
+    {
+      "candidate_id": "openalex--W7216505816",
+      "category": "Paper",
+      "rank": 6,
+      "path": "docs/daily/2026-10-04/paper/06-design-and-open-water-validation-of-an-autonomous-.md"
+    },
+    {
+      "candidate_id": "crossref--10.22541-essoar.15008648-v2",
+      "category": "Paper",
+      "rank": 7,
+      "path": "docs/daily/2026-10-04/paper/07-riptideremix-a-toolboxfor-musical-synthesis-ofmari.md"
+    },
+    {
+      "candidate_id": "crossref--10.1109-jiot.2026.3718043",
+      "category": "Paper",
+      "rank": 8,
+      "path": "docs/daily/2026-10-04/paper/08-two-stage-blue-for-high-accuracy-and-robust-toa--a.md"
+    },
+    {
+      "candidate_id": "crossref--10.1016-j.dsp.2026.106353",
+      "category": "Paper",
+      "rank": 9,
+      "path": "docs/daily/2026-10-04/paper/09-flow-noise-reduction-in-towed-sonar-arrays-using-s.md"
+    },
+    {
+      "candidate_id": "crossref--10.1016-j.knosys.2026.116704",
+      "category": "Paper",
+      "rank": 10,
+      "path": "docs/daily/2026-10-04/paper/10-sonardenet-incorporating-prior-driven-knowledge-an.md"
+    }
+  ],
+  "assets": [
+    {
+      "candidate_id": "openalex--W7216380435",
+      "path": "docs/public/daily/2026-10-04/assets/openalex--W7216380435/preview.svg"
+    },
+    {
+      "candidate_id": "openalex--W7216072693",
+      "path": "docs/public/daily/2026-10-04/assets/openalex--W7216072693/preview.png"
+    },
+    {
+      "candidate_id": "openalex--W7216128482",
+      "path": "docs/public/daily/2026-10-04/assets/openalex--W7216128482/preview.png"
+    },
+    {
+      "candidate_id": "openalex--W7215925330",
+      "path": "docs/public/daily/2026-10-04/assets/openalex--W7215925330/preview.svg"
+    },
+    {
+      "candidate_id": "openalex--W7216148286",
+      "path": "docs/public/daily/2026-10-04/assets/openalex--W7216148286/preview.png"
+    },
+    {
+      "candidate_id": "openalex--W7216505816",
+      "path": "docs/public/daily/2026-10-04/assets/openalex--W7216505816/preview.png"
+    },
+    {
+      "candidate_id": "crossref--10.22541-essoar.15008648-v2",
+      "path": "docs/public/daily/2026-10-04/assets/crossref--10.22541-essoar.15008648-v2/preview.svg"
+    },
+    {
+      "candidate_id": "crossref--10.1109-jiot.2026.3718043",
+      "path": "docs/public/daily/2026-10-04/assets/crossref--10.1109-jiot.2026.3718043/preview.svg"
+    },
+    {
+      "candidate_id": "crossref--10.1016-j.dsp.2026.106353",
+      "path": "docs/public/daily/2026-10-04/assets/crossref--10.1016-j.dsp.2026.106353/preview.png"
+    },
+    {
+      "candidate_id": "crossref--10.1016-j.knosys.2026.116704",
+      "path": "docs/public/daily/2026-10-04/assets/crossref--10.1016-j.knosys.2026.116704/preview.png"
+    }
+  ]
+}
