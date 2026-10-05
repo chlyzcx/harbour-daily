@@ -1,0 +1,109 @@
+{
+  "schema_version": 2,
+  "cycle_id": "daily-2026-10-05",
+  "display_date": "2026-10-05",
+  "articles": [
+    {
+      "candidate_id": "crossref--10.1016-j.oceaneng.2026.127912",
+      "category": "Paper",
+      "rank": 1,
+      "path": "docs/daily/2026-10-05/paper/01-quality-aware-cooperative-sonar-coverage-planning-.md"
+    },
+    {
+      "candidate_id": "crossref--10.1016-j.oceaneng.2026.127969",
+      "category": "Paper",
+      "rank": 2,
+      "path": "docs/daily/2026-10-05/paper/02-lightweight-sonar-target-detection-based-on-dual-d.md"
+    },
+    {
+      "candidate_id": "crossref--10.1016-j.oceaneng.2026.127967",
+      "category": "Paper",
+      "rank": 3,
+      "path": "docs/daily/2026-10-05/paper/03-a-physics-informed-and-data-driven-framework-for-a.md"
+    },
+    {
+      "candidate_id": "crossref--10.1016-j.optlaseng.2026.109879",
+      "category": "Paper",
+      "rank": 4,
+      "path": "docs/daily/2026-10-05/paper/04-an-rgb-sonar-fusion-framework-for-underwater-depth.md"
+    },
+    {
+      "candidate_id": "crossref--10.1016-j.ins.2026.123672",
+      "category": "Paper",
+      "rank": 5,
+      "path": "docs/daily/2026-10-05/paper/05-multi-target-tracking-employing-star-shaped-line-a.md"
+    },
+    {
+      "candidate_id": "crossref--10.1016-j.autcon.2026.107133",
+      "category": "Paper",
+      "rank": 6,
+      "path": "docs/daily/2026-10-05/paper/06-label-free-defect-detection-of-underwater-piles-fr.md"
+    },
+    {
+      "candidate_id": "crossref--10.1016-j.neucom.2026.134143",
+      "category": "Paper",
+      "rank": 7,
+      "path": "docs/daily/2026-10-05/paper/07-multi-channel-input-augmentation-for-sonar-imageba.md"
+    },
+    {
+      "candidate_id": "crossref--10.1016-j.oceaneng.2026.128215",
+      "category": "Paper",
+      "rank": 8,
+      "path": "docs/daily/2026-10-05/paper/08-underwater-crack-detection-method-for-bridges-base.md"
+    },
+    {
+      "candidate_id": "crossref--10.1016-j.oceaneng.2026.127255",
+      "category": "Paper",
+      "rank": 9,
+      "path": "docs/daily/2026-10-05/paper/09-msfanet-collaborative-attention-and-similarity-fit.md"
+    },
+    {
+      "candidate_id": "crossref--10.1016-j.oceaneng.2026.127679",
+      "category": "Paper",
+      "rank": 10,
+      "path": "docs/daily/2026-10-05/paper/10-generative-imaging-sonar-forward-depth-estimation-.md"
+    }
+  ],
+  "assets": [
+    {
+      "candidate_id": "crossref--10.1016-j.oceaneng.2026.127912",
+      "path": "docs/public/daily/2026-10-05/assets/crossref--10.1016-j.oceaneng.2026.127912/preview.png"
+    },
+    {
+      "candidate_id": "crossref--10.1016-j.oceaneng.2026.127969",
+      "path": "docs/public/daily/2026-10-05/assets/crossref--10.1016-j.oceaneng.2026.127969/preview.png"
+    },
+    {
+      "candidate_id": "crossref--10.1016-j.oceaneng.2026.127967",
+      "path": "docs/public/daily/2026-10-05/assets/crossref--10.1016-j.oceaneng.2026.127967/preview.png"
+    },
+    {
+      "candidate_id": "crossref--10.1016-j.optlaseng.2026.109879",
+      "path": "docs/public/daily/2026-10-05/assets/crossref--10.1016-j.optlaseng.2026.109879/preview.png"
+    },
+    {
+      "candidate_id": "crossref--10.1016-j.ins.2026.123672",
+      "path": "docs/public/daily/2026-10-05/assets/crossref--10.1016-j.ins.2026.123672/preview.png"
+    },
+    {
+      "candidate_id": "crossref--10.1016-j.autcon.2026.107133",
+      "path": "docs/public/daily/2026-10-05/assets/crossref--10.1016-j.autcon.2026.107133/preview.png"
+    },
+    {
+      "candidate_id": "crossref--10.1016-j.neucom.2026.134143",
+      "path": "docs/public/daily/2026-10-05/assets/crossref--10.1016-j.neucom.2026.134143/preview.png"
+    },
+    {
+      "candidate_id": "crossref--10.1016-j.oceaneng.2026.128215",
+      "path": "docs/public/daily/2026-10-05/assets/crossref--10.1016-j.oceaneng.2026.128215/preview.png"
+    },
+    {
+      "candidate_id": "crossref--10.1016-j.oceaneng.2026.127255",
+      "path": "docs/public/daily/2026-10-05/assets/crossref--10.1016-j.oceaneng.2026.127255/preview.png"
+    },
+    {
+      "candidate_id": "crossref--10.1016-j.oceaneng.2026.127679",
+      "path": "docs/public/daily/2026-10-05/assets/crossref--10.1016-j.oceaneng.2026.127679/preview.png"
+    }
+  ]
+}
