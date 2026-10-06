@@ -1,0 +1,109 @@
+{
+  "schema_version": 2,
+  "cycle_id": "daily-2026-10-06",
+  "display_date": "2026-10-06",
+  "articles": [
+    {
+      "candidate_id": "openalex--W7218906095",
+      "category": "Paper",
+      "rank": 1,
+      "path": "docs/daily/2026-10-06/paper/01-dynamic-memory-periodic-event-triggered-distribute.md"
+    },
+    {
+      "candidate_id": "crossref--10.1007-978-3-032-31170-2_26",
+      "category": "Paper",
+      "rank": 2,
+      "path": "docs/daily/2026-10-06/paper/02-a-comparative-analysis-on-clustering-protocols-in-.md"
+    },
+    {
+      "candidate_id": "crossref--10.5419-bjpg2026-0010",
+      "category": "Paper",
+      "rank": 3,
+      "path": "docs/daily/2026-10-06/paper/03-semantically-aware-neural-network-image-compressio.md"
+    },
+    {
+      "candidate_id": "crossref--10.1364-ol.610039",
+      "category": "Paper",
+      "rank": 4,
+      "path": "docs/daily/2026-10-06/paper/04-energy-efficient-underwater-wireless-optical-seman.md"
+    },
+    {
+      "candidate_id": "crossref--10.1021-acsami.6c11185",
+      "category": "Paper",
+      "rank": 5,
+      "path": "docs/daily/2026-10-06/paper/05-dynamic-supramolecular-hydrophobic-ionogels-with-u.md"
+    },
+    {
+      "candidate_id": "crossref--10.1186-s12872-026-06711-x",
+      "category": "Paper",
+      "rank": 6,
+      "path": "docs/daily/2026-10-06/paper/06-correction-discriminating-established-cardiovascul.md"
+    },
+    {
+      "candidate_id": "crossref--10.1007-s44196-026-01624-1",
+      "category": "Paper",
+      "rank": 7,
+      "path": "docs/daily/2026-10-06/paper/07-multifactorial-evolutionary-algorithm-based-on-pop.md"
+    },
+    {
+      "candidate_id": "crossref--10.1121-10.0046812",
+      "category": "Paper",
+      "rank": 8,
+      "path": "docs/daily/2026-10-06/paper/08-a-study-on-quality-architecture-and-performance-re.md"
+    },
+    {
+      "candidate_id": "crossref--10.1016-j.oceaneng.2026.127963",
+      "category": "Paper",
+      "rank": 9,
+      "path": "docs/daily/2026-10-06/paper/09-performance-of-an-unmanned-sailboat-towing-a-sonar.md"
+    },
+    {
+      "candidate_id": "crossref--10.22761-gd.2026.0049",
+      "category": "Paper",
+      "rank": 10,
+      "path": "docs/daily/2026-10-06/paper/10-se-obb-structure-aware-object-shadow-annotation-fo.md"
+    }
+  ],
+  "assets": [
+    {
+      "candidate_id": "openalex--W7218906095",
+      "path": "docs/public/daily/2026-10-06/assets/openalex--W7218906095/preview.svg"
+    },
+    {
+      "candidate_id": "crossref--10.1007-978-3-032-31170-2_26",
+      "path": "docs/public/daily/2026-10-06/assets/crossref--10.1007-978-3-032-31170-2_26/preview.svg"
+    },
+    {
+      "candidate_id": "crossref--10.5419-bjpg2026-0010",
+      "path": "docs/public/daily/2026-10-06/assets/crossref--10.5419-bjpg2026-0010/preview.svg"
+    },
+    {
+      "candidate_id": "crossref--10.1364-ol.610039",
+      "path": "docs/public/daily/2026-10-06/assets/crossref--10.1364-ol.610039/preview.svg"
+    },
+    {
+      "candidate_id": "crossref--10.1021-acsami.6c11185",
+      "path": "docs/public/daily/2026-10-06/assets/crossref--10.1021-acsami.6c11185/preview.svg"
+    },
+    {
+      "candidate_id": "crossref--10.1186-s12872-026-06711-x",
+      "path": "docs/public/daily/2026-10-06/assets/crossref--10.1186-s12872-026-06711-x/preview.png"
+    },
+    {
+      "candidate_id": "crossref--10.1007-s44196-026-01624-1",
+      "path": "docs/public/daily/2026-10-06/assets/crossref--10.1007-s44196-026-01624-1/preview.png"
+    },
+    {
+      "candidate_id": "crossref--10.1121-10.0046812",
+      "path": "docs/public/daily/2026-10-06/assets/crossref--10.1121-10.0046812/preview.svg"
+    },
+    {
+      "candidate_id": "crossref--10.1016-j.oceaneng.2026.127963",
+      "path": "docs/public/daily/2026-10-06/assets/crossref--10.1016-j.oceaneng.2026.127963/preview.png"
+    },
+    {
+      "candidate_id": "crossref--10.22761-gd.2026.0049",
+      "path": "docs/public/daily/2026-10-06/assets/crossref--10.22761-gd.2026.0049/preview.png"
+    }
+  ]
+}

@@ -1,0 +1,72 @@
+<svg width="400" height="300" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#042f2e;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#115e59;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="400" height="300" fill="url(#grad)"/>
+
+  <!-- Grid pattern -->
+  <g opacity="0.1">
+    <line x1="0" y1="75" x2="400" y2="75" stroke="#2dd4bf" stroke-width="1"/>
+    <line x1="0" y1="150" x2="400" y2="150" stroke="#2dd4bf" stroke-width="1"/>
+    <line x1="0" y1="225" x2="400" y2="225" stroke="#2dd4bf" stroke-width="1"/>
+    <line x1="100" y1="0" x2="100" y2="300" stroke="#2dd4bf" stroke-width="1"/>
+    <line x1="200" y1="0" x2="200" y2="300" stroke="#2dd4bf" stroke-width="1"/>
+    <line x1="300" y1="0" x2="300" y2="300" stroke="#2dd4bf" stroke-width="1"/>
+  </g>
+
+  <!-- Waveform decoration (deterministic per title) -->
+  <g>
+  <polyline points="0,194.2 8,198.8 16,203.4 24,207.7 32,211.4 40,214.1 48,215.8 56,216.5 64,216.4 72,215.6 80,214.6 88,213.4 96,212.3 104,211.3 112,210.5 120,209.7 128,208.7 136,207.5 144,205.8 152,203.6 160,200.9 168,197.9 176,194.9 184,192.1 192,189.9 200,188.8 208,188.9 216,190.4 224,193.3 232,197.4 240,202.4 248,207.8 256,213.1 264,217.9 272,221.5 280,223.7 288,224.2 296,223.2 304,220.6 312,216.9 320,212.5 328,207.8 336,203.4 344,199.5 352,196.5 360,194.6 368,193.6 376,193.5 384,194.1 392,195.1 400,196.3" fill="none" stroke="#2dd4bf" stroke-width="1.5" opacity="0.35"/>
+  <polyline points="0,238.2 8,237.0 16,234.9 24,232.0 32,228.2 40,223.9 48,219.3 56,214.9 64,211.3 72,208.9 80,208.1 88,209.1 96,211.9 104,216.3 112,222.0 120,228.3 128,234.8 136,240.8 144,245.7 152,249.3 160,251.3 168,251.8 176,250.9 184,248.9 192,246.3 200,243.6 208,240.9 216,238.7 224,237.1 232,235.9 240,235.0 248,234.2 256,233.1 264,231.5 272,229.3 280,226.3 288,222.8 296,219.0 304,215.4 312,212.3 320,210.3 328,209.7 336,210.8 344,213.6 352,218.0 360,223.6 368,230.1 376,236.6 384,242.8 392,247.9 400,251.6" fill="none" stroke="#2dd4bf" stroke-width="1.5" opacity="0.22"/>
+  <polyline points="0,277.6 8,283.1 16,287.0 24,289.0 32,289.2 40,287.6 48,284.7 56,281.0 64,277.1 72,273.5 80,270.5 88,268.3 96,267.0 104,266.4 112,266.1 120,265.7 128,264.8 136,263.0 144,260.1 152,256.2 160,251.4 168,246.2 176,241.1 184,236.7 192,233.5 200,232.0 208,232.5 216,235.0 224,239.4 232,245.2 240,251.8 248,258.7 256,265.1 264,270.6 272,274.7 280,277.3 288,278.5 296,278.5 304,277.7 312,276.6 320,275.6 328,275.1 336,275.3 344,276.2 352,277.6 360,279.1 368,280.3 376,280.8 384,279.9 392,277.6 400,273.7" fill="none" stroke="#2dd4bf" stroke-width="1.5" opacity="0.13"/>
+  </g>
+
+  <!-- Header -->
+  <text x="20" y="40" font-family="Inter, sans-serif" font-size="14" fill="#2dd4bf" font-weight="600">
+    UWA / 10-06
+  </text>
+
+  <!-- Keyword badge -->
+  <rect x="20" y="60" width="132" height="28" rx="14" fill="#2dd4bf" opacity="0.2"/>
+  <text x="30" y="79" font-family="Inter, sans-serif" font-size="13" fill="#2dd4bf" font-weight="500">
+    neural network
+  </text>
+
+  <!-- Title -->
+  <foreignObject x="20" y="110" width="360" height="120">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="
+      font-family: Inter, sans-serif;
+      font-size: 18px;
+      font-weight: 600;
+      color: #e2e8f0;
+      line-height: 1.4;
+      overflow: hidden;
+      display: -webkit-box;
+      -webkit-line-clamp: 4;
+      -webkit-box-orient: vertical;
+    ">
+      SEMANTICALLY AWARE NEURAL NETWORK IMAGE COMPRESSION FOR U...
+    </div>
+  </foreignObject>
+
+  <!-- Author -->
+  <text x="20" y="250" font-family="Inter, sans-serif" font-size="13" fill="#94a3b8">
+    D. D. Paula
+  </text>
+
+  <!-- Footer -->
+  <text x="20" y="275" font-family="Inter, sans-serif" font-size="11" fill="#64748b">
+    Brazilian Journal of Petroleum and Gas
+  </text>
+
+  <!-- Score badge -->
+  <circle cx="360" cy="40" r="24" fill="#2dd4bf" opacity="0.2"/>
+  <text x="360" y="46" font-family="Inter, sans-serif" font-size="14" fill="#2dd4bf" font-weight="700" text-anchor="middle">
+    55
+  </text>
+</svg>
