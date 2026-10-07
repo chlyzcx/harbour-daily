@@ -1,0 +1,72 @@
+<svg width="400" height="300" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#052e16;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#166534;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="400" height="300" fill="url(#grad)"/>
+
+  <!-- Grid pattern -->
+  <g opacity="0.1">
+    <line x1="0" y1="75" x2="400" y2="75" stroke="#4ade80" stroke-width="1"/>
+    <line x1="0" y1="150" x2="400" y2="150" stroke="#4ade80" stroke-width="1"/>
+    <line x1="0" y1="225" x2="400" y2="225" stroke="#4ade80" stroke-width="1"/>
+    <line x1="100" y1="0" x2="100" y2="300" stroke="#4ade80" stroke-width="1"/>
+    <line x1="200" y1="0" x2="200" y2="300" stroke="#4ade80" stroke-width="1"/>
+    <line x1="300" y1="0" x2="300" y2="300" stroke="#4ade80" stroke-width="1"/>
+  </g>
+
+  <!-- Waveform decoration (deterministic per title) -->
+  <g>
+  <polyline points="0,193.9 8,190.2 16,187.5 24,186.2 32,186.4 40,188.3 48,191.6 56,196.2 64,201.5 72,207.0 80,212.2 88,216.7 96,219.9 104,221.7 112,222.1 120,221.0 128,218.9 136,215.9 144,212.5 152,209.2 160,206.1 168,203.4 176,201.4 184,200.0 192,199.1 200,198.4 208,197.9 216,197.4 224,196.7 232,196.0 240,195.3 248,194.8 256,194.7 264,195.3 272,196.7 280,199.1 288,202.3 296,206.2 304,210.6 312,214.9 320,218.9 328,221.9 336,223.6 344,223.8 352,222.4 360,219.4 368,215.2 376,210.0 384,204.5 392,199.1 400,194.4" fill="none" stroke="#4ade80" stroke-width="1.5" opacity="0.35"/>
+  <polyline points="0,248.5 8,245.0 16,241.5 24,238.3 32,235.6 40,233.5 48,232.1 56,231.1 64,230.2 72,229.2 80,227.8 88,225.9 96,223.4 104,220.5 112,217.5 120,214.7 128,212.5 136,211.5 144,211.9 152,213.9 160,217.5 168,222.5 176,228.5 184,235.0 192,241.5 200,247.1 208,251.6 216,254.5 224,255.5 232,254.8 240,252.6 248,249.1 256,244.9 264,240.6 272,236.4 280,232.9 288,230.1 296,228.2 304,227.0 312,226.2 320,225.6 328,224.9 336,223.9 344,222.4 352,220.5 360,218.4 368,216.4 376,214.8 384,214.1 392,214.6 400,216.6" fill="none" stroke="#4ade80" stroke-width="1.5" opacity="0.22"/>
+  <polyline points="0,242.4 8,242.7 16,244.5 24,247.9 32,252.9 40,259.1 48,266.1 56,273.2 64,279.8 72,285.2 80,289.0 88,290.8 96,290.7 104,288.7 112,285.4 120,281.1 128,276.4 136,272.0 144,268.2 152,265.4 160,263.5 168,262.4 176,261.9 184,261.5 192,260.9 200,259.5 208,257.3 216,254.0 224,250.0 232,245.5 240,241.0 248,237.1 256,234.3 264,233.1 272,233.9 280,236.6 288,241.2 296,247.2 304,254.1 312,261.2 320,268.0 328,273.7 336,278.0 344,280.8 352,281.9 360,281.7 368,280.5 376,278.7 384,277.0 392,275.6 400,274.9" fill="none" stroke="#4ade80" stroke-width="1.5" opacity="0.13"/>
+  </g>
+
+  <!-- Header -->
+  <text x="20" y="40" font-family="Inter, sans-serif" font-size="14" fill="#4ade80" font-weight="600">
+    UWA / 10-07
+  </text>
+
+  <!-- Keyword badge -->
+  <rect x="20" y="60" width="268" height="28" rx="14" fill="#4ade80" opacity="0.2"/>
+  <text x="30" y="79" font-family="Inter, sans-serif" font-size="13" fill="#4ade80" font-weight="500">
+    cetacean vocalization detection
+  </text>
+
+  <!-- Title -->
+  <foreignObject x="20" y="110" width="360" height="120">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="
+      font-family: Inter, sans-serif;
+      font-size: 18px;
+      font-weight: 600;
+      color: #e2e8f0;
+      line-height: 1.4;
+      overflow: hidden;
+      display: -webkit-box;
+      -webkit-line-clamp: 4;
+      -webkit-box-orient: vertical;
+    ">
+      An open reproducible framework for CNN-based cetacean voc...
+    </div>
+  </foreignObject>
+
+  <!-- Author -->
+  <text x="20" y="250" font-family="Inter, sans-serif" font-size="13" fill="#94a3b8">
+    Rocco De Marco
+  </text>
+
+  <!-- Footer -->
+  <text x="20" y="275" font-family="Inter, sans-serif" font-size="11" fill="#64748b">
+    Open Research Europe
+  </text>
+
+  <!-- Score badge -->
+  <circle cx="360" cy="40" r="24" fill="#4ade80" opacity="0.2"/>
+  <text x="360" y="46" font-family="Inter, sans-serif" font-size="14" fill="#4ade80" font-weight="700" text-anchor="middle">
+    55
+  </text>
+</svg>

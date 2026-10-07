@@ -1,0 +1,109 @@
+{
+  "schema_version": 2,
+  "cycle_id": "daily-2026-10-07",
+  "display_date": "2026-10-07",
+  "articles": [
+    {
+      "candidate_id": "arxiv--2610.07107-1",
+      "category": "Paper",
+      "rank": 1,
+      "path": "docs/daily/2026-10-07/paper/01-neural-representations-natural-connections-what-tr.md"
+    },
+    {
+      "candidate_id": "openalex--W7220399210",
+      "category": "Paper",
+      "rank": 2,
+      "path": "docs/daily/2026-10-07/paper/02-a-segmented-bayesian-method-for-parameter-calibrat.md"
+    },
+    {
+      "candidate_id": "openalex--W7155158216",
+      "category": "Paper",
+      "rank": 3,
+      "path": "docs/daily/2026-10-07/paper/03-virtual-boundary-integral-neural-network-for-three.md"
+    },
+    {
+      "candidate_id": "openalex--W7220387781",
+      "category": "Paper",
+      "rank": 4,
+      "path": "docs/daily/2026-10-07/paper/04-underwater-topographic-mapping-using-a-fusion-of-a.md"
+    },
+    {
+      "candidate_id": "openalex--W7220444407",
+      "category": "Paper",
+      "rank": 5,
+      "path": "docs/daily/2026-10-07/paper/05-real-time-sonar-simulation-for-uuvs-using-rasteriz.md"
+    },
+    {
+      "candidate_id": "openalex--W7220443487",
+      "category": "Paper",
+      "rank": 6,
+      "path": "docs/daily/2026-10-07/paper/06-a-dhrlstm-prediction-model-and-its-application-in-.md"
+    },
+    {
+      "candidate_id": "crossref--10.1002-lom3.70099",
+      "category": "Paper",
+      "rank": 7,
+      "path": "docs/daily/2026-10-07/paper/07-a-pythonbased-modeling-package-for-underwater-acou.md"
+    },
+    {
+      "candidate_id": "crossref--10.12688-openreseurope.24335.2",
+      "category": "Paper",
+      "rank": 8,
+      "path": "docs/daily/2026-10-07/paper/08-an-open-reproducible-framework-for-cnn-based-cetac.md"
+    },
+    {
+      "candidate_id": "crossref--10.35848-1347-4065-aea7a8",
+      "category": "Paper",
+      "rank": 9,
+      "path": "docs/daily/2026-10-07/paper/09-underwater-sound-emitting-dot-uwsed-transducers-an.md"
+    },
+    {
+      "candidate_id": "crossref--10.1201-9781003635185-6",
+      "category": "Paper",
+      "rank": 10,
+      "path": "docs/daily/2026-10-07/paper/10-reliability-assessment-of-autonomous-underwater-ve.md"
+    }
+  ],
+  "assets": [
+    {
+      "candidate_id": "arxiv--2610.07107-1",
+      "path": "docs/public/daily/2026-10-07/assets/arxiv--2610.07107-1/preview.png"
+    },
+    {
+      "candidate_id": "openalex--W7220399210",
+      "path": "docs/public/daily/2026-10-07/assets/openalex--W7220399210/preview.png"
+    },
+    {
+      "candidate_id": "openalex--W7155158216",
+      "path": "docs/public/daily/2026-10-07/assets/openalex--W7155158216/preview.png"
+    },
+    {
+      "candidate_id": "openalex--W7220387781",
+      "path": "docs/public/daily/2026-10-07/assets/openalex--W7220387781/preview.png"
+    },
+    {
+      "candidate_id": "openalex--W7220444407",
+      "path": "docs/public/daily/2026-10-07/assets/openalex--W7220444407/preview.png"
+    },
+    {
+      "candidate_id": "openalex--W7220443487",
+      "path": "docs/public/daily/2026-10-07/assets/openalex--W7220443487/preview.png"
+    },
+    {
+      "candidate_id": "crossref--10.1002-lom3.70099",
+      "path": "docs/public/daily/2026-10-07/assets/crossref--10.1002-lom3.70099/preview.svg"
+    },
+    {
+      "candidate_id": "crossref--10.12688-openreseurope.24335.2",
+      "path": "docs/public/daily/2026-10-07/assets/crossref--10.12688-openreseurope.24335.2/preview.svg"
+    },
+    {
+      "candidate_id": "crossref--10.35848-1347-4065-aea7a8",
+      "path": "docs/public/daily/2026-10-07/assets/crossref--10.35848-1347-4065-aea7a8/preview.svg"
+    },
+    {
+      "candidate_id": "crossref--10.1201-9781003635185-6",
+      "path": "docs/public/daily/2026-10-07/assets/crossref--10.1201-9781003635185-6/preview.svg"
+    }
+  ]
+}
