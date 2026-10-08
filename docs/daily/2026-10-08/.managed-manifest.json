@@ -1,0 +1,109 @@
+{
+  "schema_version": 2,
+  "cycle_id": "daily-2026-10-08",
+  "display_date": "2026-10-08",
+  "articles": [
+    {
+      "candidate_id": "arxiv--2610.09737-1",
+      "category": "Paper",
+      "rank": 1,
+      "path": "docs/daily/2026-10-08/paper/01-a-strength-monotonic-law-for-domain-alignment-in-f.md"
+    },
+    {
+      "candidate_id": "s2--e8b54c5a460538c4bdd6acc687a0b47edf61a00f",
+      "category": "Paper",
+      "rank": 2,
+      "path": "docs/daily/2026-10-08/paper/02-an-adaptive-mimo-optical-multi-color-transceiver-f.md"
+    },
+    {
+      "candidate_id": "s2--712696bb4f5b138d333828bc46fb85853d832144",
+      "category": "Paper",
+      "rank": 3,
+      "path": "docs/daily/2026-10-08/paper/03-a-novel-integrated-underwater-communication-and-po.md"
+    },
+    {
+      "candidate_id": "openalex--W7220685581",
+      "category": "Paper",
+      "rank": 4,
+      "path": "docs/daily/2026-10-08/paper/04-global-transportation-impacts-on-wildlife-mortalit.md"
+    },
+    {
+      "candidate_id": "openalex--W7220444457",
+      "category": "Paper",
+      "rank": 5,
+      "path": "docs/daily/2026-10-08/paper/05-multiauv-cooperative-slam-with-depth-and-intensity.md"
+    },
+    {
+      "candidate_id": "crossref--10.14445-23488379-ijeee-v13i9p114",
+      "category": "Paper",
+      "rank": 6,
+      "path": "docs/daily/2026-10-08/paper/06-disaster-severity-weighted-gcn-lstm-routing-framew.md"
+    },
+    {
+      "candidate_id": "crossref--10.26599-frict.2026.9441265",
+      "category": "Paper",
+      "rank": 7,
+      "path": "docs/daily/2026-10-08/paper/07-fabrication-of-hierarchical-pillar-structured-supe.md"
+    },
+    {
+      "candidate_id": "crossref--10.3389-fphy.2026.1920493",
+      "category": "Paper",
+      "rank": 8,
+      "path": "docs/daily/2026-10-08/paper/08-multidirectional-acoustic-wave-transmission-via-ar.md"
+    },
+    {
+      "candidate_id": "crossref--10.33012-2026.20644",
+      "category": "Paper",
+      "rank": 9,
+      "path": "docs/daily/2026-10-08/paper/09-uuv-nav-the-new-asi-project-for-the-localization-o.md"
+    },
+    {
+      "candidate_id": "crossref--10.1080-00295450.2026.2672883",
+      "category": "Paper",
+      "rank": 10,
+      "path": "docs/daily/2026-10-08/paper/10-void-avoidance-in-underwater-acoustic-sensor-netwo.md"
+    }
+  ],
+  "assets": [
+    {
+      "candidate_id": "arxiv--2610.09737-1",
+      "path": "docs/public/daily/2026-10-08/assets/arxiv--2610.09737-1/preview.png"
+    },
+    {
+      "candidate_id": "s2--e8b54c5a460538c4bdd6acc687a0b47edf61a00f",
+      "path": "docs/public/daily/2026-10-08/assets/s2--e8b54c5a460538c4bdd6acc687a0b47edf61a00f/preview.svg"
+    },
+    {
+      "candidate_id": "s2--712696bb4f5b138d333828bc46fb85853d832144",
+      "path": "docs/public/daily/2026-10-08/assets/s2--712696bb4f5b138d333828bc46fb85853d832144/preview.svg"
+    },
+    {
+      "candidate_id": "openalex--W7220685581",
+      "path": "docs/public/daily/2026-10-08/assets/openalex--W7220685581/preview.svg"
+    },
+    {
+      "candidate_id": "openalex--W7220444457",
+      "path": "docs/public/daily/2026-10-08/assets/openalex--W7220444457/preview.svg"
+    },
+    {
+      "candidate_id": "crossref--10.14445-23488379-ijeee-v13i9p114",
+      "path": "docs/public/daily/2026-10-08/assets/crossref--10.14445-23488379-ijeee-v13i9p114/preview.svg"
+    },
+    {
+      "candidate_id": "crossref--10.26599-frict.2026.9441265",
+      "path": "docs/public/daily/2026-10-08/assets/crossref--10.26599-frict.2026.9441265/preview.svg"
+    },
+    {
+      "candidate_id": "crossref--10.3389-fphy.2026.1920493",
+      "path": "docs/public/daily/2026-10-08/assets/crossref--10.3389-fphy.2026.1920493/preview.png"
+    },
+    {
+      "candidate_id": "crossref--10.33012-2026.20644",
+      "path": "docs/public/daily/2026-10-08/assets/crossref--10.33012-2026.20644/preview.svg"
+    },
+    {
+      "candidate_id": "crossref--10.1080-00295450.2026.2672883",
+      "path": "docs/public/daily/2026-10-08/assets/crossref--10.1080-00295450.2026.2672883/preview.svg"
+    }
+  ]
+}

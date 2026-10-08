@@ -1,0 +1,72 @@
+<svg width="400" height="300" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#042f2e;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#115e59;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="400" height="300" fill="url(#grad)"/>
+
+  <!-- Grid pattern -->
+  <g opacity="0.1">
+    <line x1="0" y1="75" x2="400" y2="75" stroke="#2dd4bf" stroke-width="1"/>
+    <line x1="0" y1="150" x2="400" y2="150" stroke="#2dd4bf" stroke-width="1"/>
+    <line x1="0" y1="225" x2="400" y2="225" stroke="#2dd4bf" stroke-width="1"/>
+    <line x1="100" y1="0" x2="100" y2="300" stroke="#2dd4bf" stroke-width="1"/>
+    <line x1="200" y1="0" x2="200" y2="300" stroke="#2dd4bf" stroke-width="1"/>
+    <line x1="300" y1="0" x2="300" y2="300" stroke="#2dd4bf" stroke-width="1"/>
+  </g>
+
+  <!-- Waveform decoration (deterministic per title) -->
+  <g>
+  <polyline points="0,187.6 8,187.5 16,189.5 24,193.3 32,198.6 40,204.6 48,210.5 56,215.5 64,218.9 72,220.5 80,220.4 88,218.8 96,216.5 104,213.9 112,211.7 120,210.1 128,209.2 136,208.7 144,208.1 152,207.1 160,205.3 168,202.4 176,198.7 184,194.5 192,190.6 200,187.7 208,186.4 216,187.0 224,189.7 232,194.2 240,199.8 248,205.8 256,211.2 264,215.4 272,218.0 280,218.9 288,218.4 296,216.9 304,215.0 312,213.3 320,212.1 328,211.5 336,211.2 344,211.1 352,210.4 360,208.8 368,206.0 376,202.2 384,197.7 392,193.0 400,189.0" fill="none" stroke="#2dd4bf" stroke-width="1.5" opacity="0.35"/>
+  <polyline points="0,235.6 8,231.5 16,228.9 24,227.7 32,227.4 40,227.3 48,226.8 56,225.4 64,222.9 72,219.5 80,215.6 88,212.1 96,209.9 104,209.7 112,211.8 120,216.1 128,222.2 136,229.3 144,236.3 152,242.3 160,246.6 168,248.9 176,249.2 184,248.0 192,246.0 200,244.1 208,242.8 216,242.4 224,242.9 232,243.9 240,244.7 248,244.5 256,242.8 264,239.3 272,234.0 280,227.6 288,220.8 296,214.7 304,210.1 312,207.8 320,207.9 328,210.3 336,214.4 344,219.3 352,224.1 360,228.2 368,230.9 376,232.4 384,233.0 392,233.2 400,233.7" fill="none" stroke="#2dd4bf" stroke-width="1.5" opacity="0.22"/>
+  <polyline points="0,255.5 8,259.7 16,265.7 24,272.9 32,280.1 40,286.3 48,290.5 56,292.0 64,290.8 72,287.3 80,282.2 88,276.8 96,271.8 104,268.3 112,266.3 120,265.9 128,266.3 136,266.7 144,266.2 152,264.1 160,260.2 168,254.5 176,247.8 184,241.1 192,235.6 200,232.1 208,231.4 216,233.3 224,237.6 232,243.4 240,249.6 248,255.2 256,259.3 264,261.6 272,262.4 280,262.1 288,261.7 296,262.1 304,263.9 312,267.6 320,272.7 328,278.8 336,284.8 344,289.7 352,292.4 360,292.4 368,289.6 376,284.6 384,278.1 392,271.3 400,265.2" fill="none" stroke="#2dd4bf" stroke-width="1.5" opacity="0.13"/>
+  </g>
+
+  <!-- Header -->
+  <text x="20" y="40" font-family="Inter, sans-serif" font-size="14" fill="#2dd4bf" font-weight="600">
+    UWA / 10-08
+  </text>
+
+  <!-- Keyword badge -->
+  <rect x="20" y="60" width="84" height="28" rx="14" fill="#2dd4bf" opacity="0.2"/>
+  <text x="30" y="79" font-family="Inter, sans-serif" font-size="13" fill="#2dd4bf" font-weight="500">
+    Research
+  </text>
+
+  <!-- Title -->
+  <foreignObject x="20" y="110" width="360" height="120">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="
+      font-family: Inter, sans-serif;
+      font-size: 18px;
+      font-weight: 600;
+      color: #e2e8f0;
+      line-height: 1.4;
+      overflow: hidden;
+      display: -webkit-box;
+      -webkit-line-clamp: 4;
+      -webkit-box-orient: vertical;
+    ">
+      Fabrication of hierarchical pillar-structured superhydrop...
+    </div>
+  </foreignObject>
+
+  <!-- Author -->
+  <text x="20" y="250" font-family="Inter, sans-serif" font-size="13" fill="#94a3b8">
+    Bin Zhao
+  </text>
+
+  <!-- Footer -->
+  <text x="20" y="275" font-family="Inter, sans-serif" font-size="11" fill="#64748b">
+    Friction
+  </text>
+
+  <!-- Score badge -->
+  <circle cx="360" cy="40" r="24" fill="#2dd4bf" opacity="0.2"/>
+  <text x="360" y="46" font-family="Inter, sans-serif" font-size="14" fill="#2dd4bf" font-weight="700" text-anchor="middle">
+    55
+  </text>
+</svg>

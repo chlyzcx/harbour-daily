@@ -1,0 +1,72 @@
+<svg width="400" height="300" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#042f2e;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#115e59;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="400" height="300" fill="url(#grad)"/>
+
+  <!-- Grid pattern -->
+  <g opacity="0.1">
+    <line x1="0" y1="75" x2="400" y2="75" stroke="#2dd4bf" stroke-width="1"/>
+    <line x1="0" y1="150" x2="400" y2="150" stroke="#2dd4bf" stroke-width="1"/>
+    <line x1="0" y1="225" x2="400" y2="225" stroke="#2dd4bf" stroke-width="1"/>
+    <line x1="100" y1="0" x2="100" y2="300" stroke="#2dd4bf" stroke-width="1"/>
+    <line x1="200" y1="0" x2="200" y2="300" stroke="#2dd4bf" stroke-width="1"/>
+    <line x1="300" y1="0" x2="300" y2="300" stroke="#2dd4bf" stroke-width="1"/>
+  </g>
+
+  <!-- Waveform decoration (deterministic per title) -->
+  <g>
+  <polyline points="0,197.4 8,199.9 16,202.0 24,203.7 32,204.8 40,205.6 48,206.3 56,207.1 64,208.1 72,209.6 80,211.5 88,213.7 96,216.1 104,218.3 112,220.0 120,220.9 128,220.7 136,219.3 144,216.5 152,212.7 160,208.1 168,203.0 176,198.0 184,193.5 192,190.0 200,187.7 208,186.7 216,187.2 224,188.9 232,191.5 240,194.7 248,198.1 256,201.3 264,204.1 272,206.3 280,207.8 288,208.8 296,209.4 304,209.9 312,210.5 320,211.2 328,212.4 336,213.8 344,215.5 352,217.1 360,218.3 368,218.9 376,218.6 384,217.2 392,214.6 400,211.0" fill="none" stroke="#2dd4bf" stroke-width="1.5" opacity="0.35"/>
+  <polyline points="0,245.4 8,242.7 16,238.6 24,233.6 32,228.0 40,222.2 48,216.9 56,212.5 64,209.5 72,208.0 80,208.2 88,209.9 96,212.8 104,216.5 112,220.4 120,224.3 128,227.5 136,230.1 144,231.7 152,232.7 160,233.2 168,233.5 176,233.9 184,234.9 192,236.6 200,239.0 208,242.1 216,245.7 224,249.2 232,252.2 240,254.4 248,255.2 256,254.6 264,252.3 272,248.5 280,243.5 288,237.8 296,231.9 304,226.4 312,221.6 320,218.0 328,215.8 336,214.9 344,215.2 352,216.3 360,217.8 368,219.5 376,220.8 384,221.6 392,221.9 400,221.6" fill="none" stroke="#2dd4bf" stroke-width="1.5" opacity="0.22"/>
+  <polyline points="0,277.7 8,279.9 16,280.6 24,280.1 32,278.8 40,277.2 48,275.8 56,275.0 64,275.1 72,276.2 80,278.0 88,280.2 96,282.5 104,284.2 112,284.8 120,284.0 128,281.6 136,277.6 144,272.2 152,265.9 160,259.3 168,252.9 176,247.3 184,243.0 192,240.3 200,239.3 208,239.7 216,241.2 224,243.4 232,245.7 240,247.6 248,248.8 256,249.0 264,248.4 272,247.1 280,245.5 288,244.1 296,243.4 304,243.9 312,245.7 320,249.2 328,254.0 336,260.0 344,266.5 352,273.0 360,278.8 368,283.5 376,286.7 384,288.1 392,287.9 400,286.2" fill="none" stroke="#2dd4bf" stroke-width="1.5" opacity="0.13"/>
+  </g>
+
+  <!-- Header -->
+  <text x="20" y="40" font-family="Inter, sans-serif" font-size="14" fill="#2dd4bf" font-weight="600">
+    UWA / 10-08
+  </text>
+
+  <!-- Keyword badge -->
+  <rect x="20" y="60" width="84" height="28" rx="14" fill="#2dd4bf" opacity="0.2"/>
+  <text x="30" y="79" font-family="Inter, sans-serif" font-size="13" fill="#2dd4bf" font-weight="500">
+    Research
+  </text>
+
+  <!-- Title -->
+  <foreignObject x="20" y="110" width="360" height="120">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="
+      font-family: Inter, sans-serif;
+      font-size: 18px;
+      font-weight: 600;
+      color: #e2e8f0;
+      line-height: 1.4;
+      overflow: hidden;
+      display: -webkit-box;
+      -webkit-line-clamp: 4;
+      -webkit-box-orient: vertical;
+    ">
+      Global transportation impacts on wildlife mortality and e...
+    </div>
+  </foreignObject>
+
+  <!-- Author -->
+  <text x="20" y="250" font-family="Inter, sans-serif" font-size="13" fill="#94a3b8">
+    David Luther
+  </text>
+
+  <!-- Footer -->
+  <text x="20" y="275" font-family="Inter, sans-serif" font-size="11" fill="#64748b">
+    Conservation Biology
+  </text>
+
+  <!-- Score badge -->
+  <circle cx="360" cy="40" r="24" fill="#2dd4bf" opacity="0.2"/>
+  <text x="360" y="46" font-family="Inter, sans-serif" font-size="14" fill="#2dd4bf" font-weight="700" text-anchor="middle">
+    56
+  </text>
+</svg>

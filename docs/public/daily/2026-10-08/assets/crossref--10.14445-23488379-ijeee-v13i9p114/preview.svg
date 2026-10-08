@@ -1,0 +1,72 @@
+<svg width="400" height="300" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#431407;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#9a3412;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="400" height="300" fill="url(#grad)"/>
+
+  <!-- Grid pattern -->
+  <g opacity="0.1">
+    <line x1="0" y1="75" x2="400" y2="75" stroke="#fb923c" stroke-width="1"/>
+    <line x1="0" y1="150" x2="400" y2="150" stroke="#fb923c" stroke-width="1"/>
+    <line x1="0" y1="225" x2="400" y2="225" stroke="#fb923c" stroke-width="1"/>
+    <line x1="100" y1="0" x2="100" y2="300" stroke="#fb923c" stroke-width="1"/>
+    <line x1="200" y1="0" x2="200" y2="300" stroke="#fb923c" stroke-width="1"/>
+    <line x1="300" y1="0" x2="300" y2="300" stroke="#fb923c" stroke-width="1"/>
+  </g>
+
+  <!-- Waveform decoration (deterministic per title) -->
+  <g>
+  <polyline points="0,197.8 8,197.1 16,197.1 24,197.3 32,197.6 40,197.6 48,197.2 56,196.4 64,195.1 72,193.7 80,192.2 88,191.2 96,190.8 104,191.4 112,193.1 120,195.8 128,199.5 136,203.8 144,208.4 152,212.9 160,216.9 168,220.0 176,221.9 184,222.6 192,222.1 200,220.6 208,218.4 216,215.9 224,213.4 232,211.2 240,209.4 248,208.3 256,207.6 264,207.3 272,207.1 280,206.7 288,205.9 296,204.5 304,202.5 312,199.7 320,196.6 328,193.3 336,190.3 344,187.8 352,186.3 360,186.0 368,187.0 376,189.2 384,192.4 392,196.4 400,200.8" fill="none" stroke="#fb923c" stroke-width="1.5" opacity="0.35"/>
+  <polyline points="0,242.2 8,246.3 16,250.3 24,253.7 32,256.1 40,257.1 48,256.6 56,254.7 64,251.5 72,247.4 80,242.9 88,238.4 96,234.5 104,231.3 112,229.2 120,228.0 128,227.7 136,227.9 144,228.2 152,228.3 160,227.8 168,226.5 176,224.3 184,221.4 192,217.9 200,214.4 208,211.2 216,208.9 224,207.7 232,208.0 240,209.7 248,212.8 256,217.0 264,221.8 272,226.8 280,231.4 288,235.3 296,238.2 304,240.0 312,240.7 320,240.6 328,240.1 336,239.5 344,239.3 352,239.7 360,240.9 368,242.9 376,245.5 384,248.4 392,251.2 400,253.4" fill="none" stroke="#fb923c" stroke-width="1.5" opacity="0.22"/>
+  <polyline points="0,237.7 8,242.1 16,247.9 24,254.3 32,260.7 40,266.5 48,271.2 56,274.6 64,276.6 72,277.5 80,277.3 88,276.4 96,275.1 104,273.6 112,271.9 120,270.1 128,268.1 136,265.8 144,263.0 152,259.6 160,255.8 168,251.7 176,247.7 184,244.1 192,241.5 200,240.4 208,241.0 216,243.7 224,248.4 232,254.8 240,262.5 248,270.7 256,278.5 264,285.2 272,289.9 280,292.0 288,291.2 296,287.5 304,281.3 312,273.1 320,263.9 328,254.5 336,246.0 344,239.2 352,234.8 360,233.1 368,234.3 376,237.9 384,243.5 392,250.5 400,257.9" fill="none" stroke="#fb923c" stroke-width="1.5" opacity="0.13"/>
+  </g>
+
+  <!-- Header -->
+  <text x="20" y="40" font-family="Inter, sans-serif" font-size="14" fill="#fb923c" font-weight="600">
+    UWA / 10-08
+  </text>
+
+  <!-- Keyword badge -->
+  <rect x="20" y="60" width="52" height="28" rx="14" fill="#fb923c" opacity="0.2"/>
+  <text x="30" y="79" font-family="Inter, sans-serif" font-size="13" fill="#fb923c" font-weight="500">
+    UWSN
+  </text>
+
+  <!-- Title -->
+  <foreignObject x="20" y="110" width="360" height="120">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="
+      font-family: Inter, sans-serif;
+      font-size: 18px;
+      font-weight: 600;
+      color: #e2e8f0;
+      line-height: 1.4;
+      overflow: hidden;
+      display: -webkit-box;
+      -webkit-line-clamp: 4;
+      -webkit-box-orient: vertical;
+    ">
+      Disaster Severity Weighted GCN-LSTM Routing Framework in ...
+    </div>
+  </foreignObject>
+
+  <!-- Author -->
+  <text x="20" y="250" font-family="Inter, sans-serif" font-size="13" fill="#94a3b8">
+    Ritu Bhardwaj
+  </text>
+
+  <!-- Footer -->
+  <text x="20" y="275" font-family="Inter, sans-serif" font-size="11" fill="#64748b">
+    International Journal of Electrical and Electronics Engineering
+  </text>
+
+  <!-- Score badge -->
+  <circle cx="360" cy="40" r="24" fill="#fb923c" opacity="0.2"/>
+  <text x="360" y="46" font-family="Inter, sans-serif" font-size="14" fill="#fb923c" font-weight="700" text-anchor="middle">
+    55
+  </text>
+</svg>
