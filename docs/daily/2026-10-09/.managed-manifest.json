@@ -1,0 +1,109 @@
+{
+  "schema_version": 2,
+  "cycle_id": "daily-2026-10-09",
+  "display_date": "2026-10-09",
+  "articles": [
+    {
+      "candidate_id": "openalex--W7220839552",
+      "category": "Paper",
+      "rank": 1,
+      "path": "docs/daily/2026-10-09/paper/01-low-cost-single-beam-sonar-localization-in-auvs-sy.md"
+    },
+    {
+      "candidate_id": "openalex--W7220830531",
+      "category": "Paper",
+      "rank": 2,
+      "path": "docs/daily/2026-10-09/paper/02-propagation-physics-guided-channel-augmentation-an.md"
+    },
+    {
+      "candidate_id": "openalex--W7220833167",
+      "category": "Paper",
+      "rank": 3,
+      "path": "docs/daily/2026-10-09/paper/03-physics-constrained-diffusion-based-data-augmentat.md"
+    },
+    {
+      "candidate_id": "openalex--W7220857626",
+      "category": "Paper",
+      "rank": 4,
+      "path": "docs/daily/2026-10-09/paper/04-recursive-krsl-based-low-complexity-adaptive-turbo.md"
+    },
+    {
+      "candidate_id": "arxiv--2610.10877-1",
+      "category": "Paper",
+      "rank": 5,
+      "path": "docs/daily/2026-10-09/paper/05-robust-prediction-of-internal-wave-affected-multi-.md"
+    },
+    {
+      "candidate_id": "arxiv--2610.10663-1",
+      "category": "Paper",
+      "rank": 6,
+      "path": "docs/daily/2026-10-09/paper/06-beans-next-and-roots-broadening-audio-language-cap.md"
+    },
+    {
+      "candidate_id": "openalex--W7220847454",
+      "category": "Paper",
+      "rank": 7,
+      "path": "docs/daily/2026-10-09/paper/07-performance-analysis-of-dual-hop-rffsouwocuac-link.md"
+    },
+    {
+      "candidate_id": "openalex--W7220854926",
+      "category": "Paper",
+      "rank": 8,
+      "path": "docs/daily/2026-10-09/paper/08-segmenting-submarine-boulders-with-random-forest-a.md"
+    },
+    {
+      "candidate_id": "crossref--10.1002-lpor.72021",
+      "category": "Paper",
+      "rank": 9,
+      "path": "docs/daily/2026-10-09/paper/09-waterresistant-polymer-films-of-cyanemitting-cspbb.md"
+    },
+    {
+      "candidate_id": "crossref--10.3390-jmse14191864",
+      "category": "Paper",
+      "rank": 10,
+      "path": "docs/daily/2026-10-09/paper/10-bayesian-optimization-based-bit-correlation-dopple.md"
+    }
+  ],
+  "assets": [
+    {
+      "candidate_id": "openalex--W7220839552",
+      "path": "docs/public/daily/2026-10-09/assets/openalex--W7220839552/preview.png"
+    },
+    {
+      "candidate_id": "openalex--W7220830531",
+      "path": "docs/public/daily/2026-10-09/assets/openalex--W7220830531/preview.png"
+    },
+    {
+      "candidate_id": "openalex--W7220833167",
+      "path": "docs/public/daily/2026-10-09/assets/openalex--W7220833167/preview.png"
+    },
+    {
+      "candidate_id": "openalex--W7220857626",
+      "path": "docs/public/daily/2026-10-09/assets/openalex--W7220857626/preview.png"
+    },
+    {
+      "candidate_id": "arxiv--2610.10877-1",
+      "path": "docs/public/daily/2026-10-09/assets/arxiv--2610.10877-1/preview.png"
+    },
+    {
+      "candidate_id": "arxiv--2610.10663-1",
+      "path": "docs/public/daily/2026-10-09/assets/arxiv--2610.10663-1/preview.png"
+    },
+    {
+      "candidate_id": "openalex--W7220847454",
+      "path": "docs/public/daily/2026-10-09/assets/openalex--W7220847454/preview.svg"
+    },
+    {
+      "candidate_id": "openalex--W7220854926",
+      "path": "docs/public/daily/2026-10-09/assets/openalex--W7220854926/preview.png"
+    },
+    {
+      "candidate_id": "crossref--10.1002-lpor.72021",
+      "path": "docs/public/daily/2026-10-09/assets/crossref--10.1002-lpor.72021/preview.svg"
+    },
+    {
+      "candidate_id": "crossref--10.3390-jmse14191864",
+      "path": "docs/public/daily/2026-10-09/assets/crossref--10.3390-jmse14191864/preview.svg"
+    }
+  ]
+}
