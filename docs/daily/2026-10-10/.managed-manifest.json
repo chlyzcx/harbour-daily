@@ -1,0 +1,129 @@
+{
+  "schema_version": 2,
+  "cycle_id": "daily-2026-10-10",
+  "display_date": "2026-10-10",
+  "articles": [
+    {
+      "candidate_id": "openalex--W7221019283",
+      "category": "Paper",
+      "rank": 1,
+      "path": "docs/daily/2026-10-10/paper/01-sim-to-real-uuv-navigation-in-confined-waters-via-.md"
+    },
+    {
+      "candidate_id": "openalex--W7220947756",
+      "category": "Paper",
+      "rank": 2,
+      "path": "docs/daily/2026-10-10/paper/02-deep-auditory-feature-learning-and-adaptive-cluste.md"
+    },
+    {
+      "candidate_id": "openalex--W7221033250",
+      "category": "Paper",
+      "rank": 3,
+      "path": "docs/daily/2026-10-10/paper/03-implementation-and-testing-of-an-underwater-wirele.md"
+    },
+    {
+      "candidate_id": "openalex--W7221047600",
+      "category": "Paper",
+      "rank": 4,
+      "path": "docs/daily/2026-10-10/paper/04-self-supervised-deconvolution-of-in-air-sonar-imag.md"
+    },
+    {
+      "candidate_id": "openalex--W7220898314",
+      "category": "Paper",
+      "rank": 5,
+      "path": "docs/daily/2026-10-10/paper/05-surge-sonar-fused-reconstruction-and-localization-.md"
+    },
+    {
+      "candidate_id": "openalex--W7221034213",
+      "category": "Paper",
+      "rank": 6,
+      "path": "docs/daily/2026-10-10/paper/06-aerobuoy-a-drone-deployable-3d-printed-autonomous-.md"
+    },
+    {
+      "candidate_id": "crossref--10.3390-jmse14201876",
+      "category": "Paper",
+      "rank": 7,
+      "path": "docs/daily/2026-10-10/paper/07-structure-acoustic-coupling-analysis-of-underwater.md"
+    },
+    {
+      "candidate_id": "crossref--10.1364-oe.613570",
+      "category": "Paper",
+      "rank": 8,
+      "path": "docs/daily/2026-10-10/paper/08-a-real-time-beaconless-mems-mirror-based-beam-stee.md"
+    },
+    {
+      "candidate_id": "crossref--10.3390-rs18203459",
+      "category": "Paper",
+      "rank": 9,
+      "path": "docs/daily/2026-10-10/paper/09-object-detection-in-small-sample-underwater-sonar-.md"
+    },
+    {
+      "candidate_id": "crossref--10.55041-ijcope.v2i10.050",
+      "category": "Paper",
+      "rank": 10,
+      "path": "docs/daily/2026-10-10/paper/10-mechanical-design-and-system-integration-of-a-reco.md"
+    },
+    {
+      "candidate_id": "news--0e4b7fecc587",
+      "category": "News",
+      "rank": 11,
+      "path": "docs/daily/2026-10-10/news/11-subnero-acoustic-modems-supported-in-oceanscan-mst.md"
+    },
+    {
+      "candidate_id": "news--ad34286458c2",
+      "category": "News",
+      "rank": 12,
+      "path": "docs/daily/2026-10-10/news/12-exail-introduces-neptis-uncrewed-maritime-surveill.md"
+    }
+  ],
+  "assets": [
+    {
+      "candidate_id": "openalex--W7221019283",
+      "path": "docs/public/daily/2026-10-10/assets/openalex--W7221019283/preview.png"
+    },
+    {
+      "candidate_id": "openalex--W7220947756",
+      "path": "docs/public/daily/2026-10-10/assets/openalex--W7220947756/preview.png"
+    },
+    {
+      "candidate_id": "openalex--W7221033250",
+      "path": "docs/public/daily/2026-10-10/assets/openalex--W7221033250/preview.svg"
+    },
+    {
+      "candidate_id": "openalex--W7221047600",
+      "path": "docs/public/daily/2026-10-10/assets/openalex--W7221047600/preview.png"
+    },
+    {
+      "candidate_id": "openalex--W7220898314",
+      "path": "docs/public/daily/2026-10-10/assets/openalex--W7220898314/preview.png"
+    },
+    {
+      "candidate_id": "openalex--W7221034213",
+      "path": "docs/public/daily/2026-10-10/assets/openalex--W7221034213/preview.png"
+    },
+    {
+      "candidate_id": "crossref--10.3390-jmse14201876",
+      "path": "docs/public/daily/2026-10-10/assets/crossref--10.3390-jmse14201876/preview.png"
+    },
+    {
+      "candidate_id": "crossref--10.1364-oe.613570",
+      "path": "docs/public/daily/2026-10-10/assets/crossref--10.1364-oe.613570/preview.svg"
+    },
+    {
+      "candidate_id": "crossref--10.3390-rs18203459",
+      "path": "docs/public/daily/2026-10-10/assets/crossref--10.3390-rs18203459/preview.svg"
+    },
+    {
+      "candidate_id": "crossref--10.55041-ijcope.v2i10.050",
+      "path": "docs/public/daily/2026-10-10/assets/crossref--10.55041-ijcope.v2i10.050/preview.svg"
+    },
+    {
+      "candidate_id": "news--0e4b7fecc587",
+      "path": "docs/public/daily/2026-10-10/assets/news--0e4b7fecc587/preview.png"
+    },
+    {
+      "candidate_id": "news--ad34286458c2",
+      "path": "docs/public/daily/2026-10-10/assets/news--ad34286458c2/preview.png"
+    }
+  ]
+}
