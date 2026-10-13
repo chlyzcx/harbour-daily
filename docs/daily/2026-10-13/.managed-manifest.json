@@ -1,0 +1,109 @@
+{
+  "schema_version": 2,
+  "cycle_id": "daily-2026-10-13",
+  "display_date": "2026-10-13",
+  "articles": [
+    {
+      "candidate_id": "openalex--W7221462478",
+      "category": "Paper",
+      "rank": 1,
+      "path": "docs/daily/2026-10-13/paper/01-a-qmix-driven-routing-protocol-for-dynamic-underwa.md"
+    },
+    {
+      "candidate_id": "s2--6722bde176ba954ba0a34e7429dc573b0a29b6af",
+      "category": "Paper",
+      "rank": 2,
+      "path": "docs/daily/2026-10-13/paper/02-demonstrating-the-feasibility-of-a-mirror-ocean-ac.md"
+    },
+    {
+      "candidate_id": "openalex--W7221354670",
+      "category": "Paper",
+      "rank": 3,
+      "path": "docs/daily/2026-10-13/paper/03-multispectral-representation-of-distributed-acoust.md"
+    },
+    {
+      "candidate_id": "openalex--W7220922953",
+      "category": "Paper",
+      "rank": 4,
+      "path": "docs/daily/2026-10-13/paper/04-design-and-development-of-a-secure-devsecops-toolc.md"
+    },
+    {
+      "candidate_id": "openalex--W7220959914",
+      "category": "Paper",
+      "rank": 5,
+      "path": "docs/daily/2026-10-13/paper/05-a-review-of-direction-of-arrival-estimation-based-.md"
+    },
+    {
+      "candidate_id": "openalex--W7221129065",
+      "category": "Paper",
+      "rank": 6,
+      "path": "docs/daily/2026-10-13/paper/06-exteroceptive-sensors-for-autonomous-navigation-ve.md"
+    },
+    {
+      "candidate_id": "openalex--W7221161524",
+      "category": "Paper",
+      "rank": 7,
+      "path": "docs/daily/2026-10-13/paper/07-integrated-multi-sonar-inspection-of-offshore-wind.md"
+    },
+    {
+      "candidate_id": "crossref--10.3390-photonics13100956",
+      "category": "Paper",
+      "rank": 8,
+      "path": "docs/daily/2026-10-13/paper/08-pilot-efficient-channel-estimation-with-fortitran-.md"
+    },
+    {
+      "candidate_id": "crossref--10.1038-s41598-026-68812-z",
+      "category": "Paper",
+      "rank": 9,
+      "path": "docs/daily/2026-10-13/paper/09-a-dual-input-coarse-to-fine-residual-correction-ne.md"
+    },
+    {
+      "candidate_id": "crossref--10.1109-lsens.2026.3730033",
+      "category": "Paper",
+      "rank": 10,
+      "path": "docs/daily/2026-10-13/paper/10-despeckling-based-augmentation-for-noise-aware-son.md"
+    }
+  ],
+  "assets": [
+    {
+      "candidate_id": "openalex--W7221462478",
+      "path": "docs/public/daily/2026-10-13/assets/openalex--W7221462478/preview.png"
+    },
+    {
+      "candidate_id": "s2--6722bde176ba954ba0a34e7429dc573b0a29b6af",
+      "path": "docs/public/daily/2026-10-13/assets/s2--6722bde176ba954ba0a34e7429dc573b0a29b6af/preview.svg"
+    },
+    {
+      "candidate_id": "openalex--W7221354670",
+      "path": "docs/public/daily/2026-10-13/assets/openalex--W7221354670/preview.png"
+    },
+    {
+      "candidate_id": "openalex--W7220922953",
+      "path": "docs/public/daily/2026-10-13/assets/openalex--W7220922953/preview.png"
+    },
+    {
+      "candidate_id": "openalex--W7220959914",
+      "path": "docs/public/daily/2026-10-13/assets/openalex--W7220959914/preview.png"
+    },
+    {
+      "candidate_id": "openalex--W7221129065",
+      "path": "docs/public/daily/2026-10-13/assets/openalex--W7221129065/preview.svg"
+    },
+    {
+      "candidate_id": "openalex--W7221161524",
+      "path": "docs/public/daily/2026-10-13/assets/openalex--W7221161524/preview.svg"
+    },
+    {
+      "candidate_id": "crossref--10.3390-photonics13100956",
+      "path": "docs/public/daily/2026-10-13/assets/crossref--10.3390-photonics13100956/preview.svg"
+    },
+    {
+      "candidate_id": "crossref--10.1038-s41598-026-68812-z",
+      "path": "docs/public/daily/2026-10-13/assets/crossref--10.1038-s41598-026-68812-z/preview.png"
+    },
+    {
+      "candidate_id": "crossref--10.1109-lsens.2026.3730033",
+      "path": "docs/public/daily/2026-10-13/assets/crossref--10.1109-lsens.2026.3730033/preview.svg"
+    }
+  ]
+}
