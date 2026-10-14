@@ -1,0 +1,109 @@
+{
+  "schema_version": 2,
+  "cycle_id": "daily-2026-10-14",
+  "display_date": "2026-10-14",
+  "articles": [
+    {
+      "candidate_id": "openalex--W7221478236",
+      "category": "Paper",
+      "rank": 1,
+      "path": "docs/daily/2026-10-14/paper/01-experimental-characterization-of-depth-dependent-a.md"
+    },
+    {
+      "candidate_id": "openalex--W7221514739",
+      "category": "Paper",
+      "rank": 2,
+      "path": "docs/daily/2026-10-14/paper/02-raca-mac-a-routing-aware-and-collision-avoidance-m.md"
+    },
+    {
+      "candidate_id": "s2--b92fe1f4f59f95c29a93ff0f57a52e82ddf9b6db",
+      "category": "Paper",
+      "rank": 3,
+      "path": "docs/daily/2026-10-14/paper/03-pa-hydroprenet-multi-task-spectral-enhancement-and.md"
+    },
+    {
+      "candidate_id": "s2--f51ad5e7a98790993008bcbc6e785a4cd64a5834",
+      "category": "Paper",
+      "rank": 4,
+      "path": "docs/daily/2026-10-14/paper/04-bioacoustic-raw-audio-transformer-effectively-and-.md"
+    },
+    {
+      "candidate_id": "openalex--W7221511767",
+      "category": "Paper",
+      "rank": 5,
+      "path": "docs/daily/2026-10-14/paper/05-cross-domain-few-shot-underwater-acoustic-target-r.md"
+    },
+    {
+      "candidate_id": "openalex--W7221515178",
+      "category": "Paper",
+      "rank": 6,
+      "path": "docs/daily/2026-10-14/paper/06-ai-enabled-autonomous-area-keeping-for-underwater-.md"
+    },
+    {
+      "candidate_id": "openalex--W7221527728",
+      "category": "Paper",
+      "rank": 7,
+      "path": "docs/daily/2026-10-14/paper/07-quantifying-deep-ocean-methane-along-the-central-c.md"
+    },
+    {
+      "candidate_id": "openalex--W7221576393",
+      "category": "Paper",
+      "rank": 8,
+      "path": "docs/daily/2026-10-14/paper/08-demodulation-method-for-underwater-acoustic-waves-.md"
+    },
+    {
+      "candidate_id": "openalex--W7125184206",
+      "category": "Paper",
+      "rank": 9,
+      "path": "docs/daily/2026-10-14/paper/09-semantic-communication-for-the-internet-of-underwa.md"
+    },
+    {
+      "candidate_id": "openalex--W7221544704",
+      "category": "Paper",
+      "rank": 10,
+      "path": "docs/daily/2026-10-14/paper/10-role-guided-risk-aware-attention-for-multi-auv-tar.md"
+    }
+  ],
+  "assets": [
+    {
+      "candidate_id": "openalex--W7221478236",
+      "path": "docs/public/daily/2026-10-14/assets/openalex--W7221478236/preview.png"
+    },
+    {
+      "candidate_id": "openalex--W7221514739",
+      "path": "docs/public/daily/2026-10-14/assets/openalex--W7221514739/preview.svg"
+    },
+    {
+      "candidate_id": "s2--b92fe1f4f59f95c29a93ff0f57a52e82ddf9b6db",
+      "path": "docs/public/daily/2026-10-14/assets/s2--b92fe1f4f59f95c29a93ff0f57a52e82ddf9b6db/preview.svg"
+    },
+    {
+      "candidate_id": "s2--f51ad5e7a98790993008bcbc6e785a4cd64a5834",
+      "path": "docs/public/daily/2026-10-14/assets/s2--f51ad5e7a98790993008bcbc6e785a4cd64a5834/preview.png"
+    },
+    {
+      "candidate_id": "openalex--W7221511767",
+      "path": "docs/public/daily/2026-10-14/assets/openalex--W7221511767/preview.svg"
+    },
+    {
+      "candidate_id": "openalex--W7221515178",
+      "path": "docs/public/daily/2026-10-14/assets/openalex--W7221515178/preview.png"
+    },
+    {
+      "candidate_id": "openalex--W7221527728",
+      "path": "docs/public/daily/2026-10-14/assets/openalex--W7221527728/preview.svg"
+    },
+    {
+      "candidate_id": "openalex--W7221576393",
+      "path": "docs/public/daily/2026-10-14/assets/openalex--W7221576393/preview.png"
+    },
+    {
+      "candidate_id": "openalex--W7125184206",
+      "path": "docs/public/daily/2026-10-14/assets/openalex--W7125184206/preview.png"
+    },
+    {
+      "candidate_id": "openalex--W7221544704",
+      "path": "docs/public/daily/2026-10-14/assets/openalex--W7221544704/preview.svg"
+    }
+  ]
+}

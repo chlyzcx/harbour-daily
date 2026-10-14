@@ -1,0 +1,72 @@
+<svg width="400" height="300" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#2e1065;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#5b21b6;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="400" height="300" fill="url(#grad)"/>
+
+  <!-- Grid pattern -->
+  <g opacity="0.1">
+    <line x1="0" y1="75" x2="400" y2="75" stroke="#a78bfa" stroke-width="1"/>
+    <line x1="0" y1="150" x2="400" y2="150" stroke="#a78bfa" stroke-width="1"/>
+    <line x1="0" y1="225" x2="400" y2="225" stroke="#a78bfa" stroke-width="1"/>
+    <line x1="100" y1="0" x2="100" y2="300" stroke="#a78bfa" stroke-width="1"/>
+    <line x1="200" y1="0" x2="200" y2="300" stroke="#a78bfa" stroke-width="1"/>
+    <line x1="300" y1="0" x2="300" y2="300" stroke="#a78bfa" stroke-width="1"/>
+  </g>
+
+  <!-- Waveform decoration (deterministic per title) -->
+  <g>
+  <polyline points="0,193.6 8,194.8 16,196.6 24,197.9 32,198.0 40,196.4 48,193.4 56,190.0 64,187.2 72,186.0 80,187.0 88,190.0 96,194.3 104,198.9 112,202.5 120,204.6 128,204.9 136,204.0 144,202.8 152,202.3 160,203.4 168,206.3 176,210.6 184,215.5 192,219.7 200,222.4 208,222.9 216,221.4 224,218.6 232,215.7 240,213.6 248,212.9 256,213.9 264,215.9 272,217.9 280,218.8 288,217.9 296,215.0 304,210.4 312,205.1 320,200.4 328,197.1 336,195.7 344,196.1 352,197.6 360,199.0 368,199.5 376,198.3 384,195.6 392,191.9 400,188.4" fill="none" stroke="#a78bfa" stroke-width="1.5" opacity="0.35"/>
+  <polyline points="0,245.4 8,250.5 16,254.0 24,254.8 32,252.0 40,245.9 48,237.6 56,228.6 64,220.8 72,215.5 80,213.3 88,213.9 96,216.5 104,219.6 112,222.2 120,223.5 128,223.8 136,223.8 144,224.7 152,227.3 160,232.1 168,238.8 176,246.1 184,252.5 192,256.4 200,256.8 208,253.5 216,247.2 224,239.3 232,231.5 240,225.3 248,221.5 256,220.1 264,220.4 272,221.2 280,221.5 288,220.7 296,219.0 304,217.1 312,216.2 320,217.6 328,221.8 336,228.6 344,237.1 352,245.5 360,252.2 368,255.9 376,255.8 384,252.5 392,246.9 400,240.6" fill="none" stroke="#a78bfa" stroke-width="1.5" opacity="0.22"/>
+  <polyline points="0,239.5 8,247.1 16,254.5 24,260.4 32,263.8 40,265.1 48,265.2 56,265.7 64,267.6 72,271.8 80,277.6 88,283.9 96,288.9 104,291.0 112,289.0 120,283.1 128,274.3 136,264.3 144,255.3 152,248.7 160,245.4 168,245.1 176,246.6 184,248.3 192,249.0 200,248.0 208,245.5 216,242.7 224,241.2 232,242.4 240,247.1 248,255.0 256,265.0 264,275.1 272,283.3 280,288.0 288,288.9 296,286.2 304,281.4 312,276.3 320,272.2 328,270.0 336,269.6 344,269.8 352,269.4 360,266.9 368,261.8 376,254.2 384,245.6 392,237.8 400,232.6" fill="none" stroke="#a78bfa" stroke-width="1.5" opacity="0.13"/>
+  </g>
+
+  <!-- Header -->
+  <text x="20" y="40" font-family="Inter, sans-serif" font-size="14" fill="#a78bfa" font-weight="600">
+    UWA / 10-14
+  </text>
+
+  <!-- Keyword badge -->
+  <rect x="20" y="60" width="92" height="28" rx="14" fill="#a78bfa" opacity="0.2"/>
+  <text x="30" y="79" font-family="Inter, sans-serif" font-size="13" fill="#a78bfa" font-weight="500">
+    detection
+  </text>
+
+  <!-- Title -->
+  <foreignObject x="20" y="110" width="360" height="120">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="
+      font-family: Inter, sans-serif;
+      font-size: 18px;
+      font-weight: 600;
+      color: #e2e8f0;
+      line-height: 1.4;
+      overflow: hidden;
+      display: -webkit-box;
+      -webkit-line-clamp: 4;
+      -webkit-box-orient: vertical;
+    ">
+      Quantifying Deep Ocean Methane Along the Central Chilean ...
+    </div>
+  </foreignObject>
+
+  <!-- Author -->
+  <text x="20" y="250" font-family="Inter, sans-serif" font-size="13" fill="#94a3b8">
+    Scott T. Wieman
+  </text>
+
+  <!-- Footer -->
+  <text x="20" y="275" font-family="Inter, sans-serif" font-size="11" fill="#64748b">
+    Geophysical Research Letters
+  </text>
+
+  <!-- Score badge -->
+  <circle cx="360" cy="40" r="24" fill="#a78bfa" opacity="0.2"/>
+  <text x="360" y="46" font-family="Inter, sans-serif" font-size="14" fill="#a78bfa" font-weight="700" text-anchor="middle">
+    56
+  </text>
+</svg>
