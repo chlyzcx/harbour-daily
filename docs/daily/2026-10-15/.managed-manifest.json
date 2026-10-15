@@ -1,0 +1,109 @@
+{
+  "schema_version": 2,
+  "cycle_id": "daily-2026-10-15",
+  "display_date": "2026-10-15",
+  "articles": [
+    {
+      "candidate_id": "arxiv--2610.19722-1",
+      "category": "Paper",
+      "rank": 1,
+      "path": "docs/daily/2026-10-15/paper/01-oncship-a-large-scale-underwater-acoustic-corpus-f.md"
+    },
+    {
+      "candidate_id": "arxiv--2610.16942-1",
+      "category": "Paper",
+      "rank": 2,
+      "path": "docs/daily/2026-10-15/paper/02-ua-bench-benchmarking-large-audio-language-models-.md"
+    },
+    {
+      "candidate_id": "arxiv--2610.16628-1",
+      "category": "Paper",
+      "rank": 3,
+      "path": "docs/daily/2026-10-15/paper/03-prb-wm-physics-regularized-beta-world-models-for-p.md"
+    },
+    {
+      "candidate_id": "arxiv--2610.16382-1",
+      "category": "Paper",
+      "rank": 4,
+      "path": "docs/daily/2026-10-15/paper/04-behavior-conditioned-animal-vocalization-generatio.md"
+    },
+    {
+      "candidate_id": "openalex--W7221622485",
+      "category": "Paper",
+      "rank": 5,
+      "path": "docs/daily/2026-10-15/paper/05-fmfnet-frequency-aware-multi-scale-attention-with-.md"
+    },
+    {
+      "candidate_id": "openalex--W7221604707",
+      "category": "Paper",
+      "rank": 6,
+      "path": "docs/daily/2026-10-15/paper/06-contextaware-reconstruction-for-dvl-outlier-detect.md"
+    },
+    {
+      "candidate_id": "openalex--W7221635720",
+      "category": "Paper",
+      "rank": 7,
+      "path": "docs/daily/2026-10-15/paper/07-dominant-source-identification-in-the-propagation-.md"
+    },
+    {
+      "candidate_id": "openalex--W7221599064",
+      "category": "Paper",
+      "rank": 8,
+      "path": "docs/daily/2026-10-15/paper/08-comparative-evaluation-of-deep-object-detection-ar.md"
+    },
+    {
+      "candidate_id": "openalex--W7221134555",
+      "category": "Paper",
+      "rank": 9,
+      "path": "docs/daily/2026-10-15/paper/09-a-physics-prior-guided-algorithm-for-detecting-sur.md"
+    },
+    {
+      "candidate_id": "crossref--10.1093-9780198979616.003.0028",
+      "category": "Paper",
+      "rank": 10,
+      "path": "docs/daily/2026-10-15/paper/10-acoustic-waste-at-sea.md"
+    }
+  ],
+  "assets": [
+    {
+      "candidate_id": "arxiv--2610.19722-1",
+      "path": "docs/public/daily/2026-10-15/assets/arxiv--2610.19722-1/preview.png"
+    },
+    {
+      "candidate_id": "arxiv--2610.16942-1",
+      "path": "docs/public/daily/2026-10-15/assets/arxiv--2610.16942-1/preview.png"
+    },
+    {
+      "candidate_id": "arxiv--2610.16628-1",
+      "path": "docs/public/daily/2026-10-15/assets/arxiv--2610.16628-1/preview.png"
+    },
+    {
+      "candidate_id": "arxiv--2610.16382-1",
+      "path": "docs/public/daily/2026-10-15/assets/arxiv--2610.16382-1/preview.png"
+    },
+    {
+      "candidate_id": "openalex--W7221622485",
+      "path": "docs/public/daily/2026-10-15/assets/openalex--W7221622485/preview.png"
+    },
+    {
+      "candidate_id": "openalex--W7221604707",
+      "path": "docs/public/daily/2026-10-15/assets/openalex--W7221604707/preview.svg"
+    },
+    {
+      "candidate_id": "openalex--W7221635720",
+      "path": "docs/public/daily/2026-10-15/assets/openalex--W7221635720/preview.svg"
+    },
+    {
+      "candidate_id": "openalex--W7221599064",
+      "path": "docs/public/daily/2026-10-15/assets/openalex--W7221599064/preview.svg"
+    },
+    {
+      "candidate_id": "openalex--W7221134555",
+      "path": "docs/public/daily/2026-10-15/assets/openalex--W7221134555/preview.png"
+    },
+    {
+      "candidate_id": "crossref--10.1093-9780198979616.003.0028",
+      "path": "docs/public/daily/2026-10-15/assets/crossref--10.1093-9780198979616.003.0028/preview.svg"
+    }
+  ]
+}
