@@ -1,0 +1,89 @@
+{
+  "schema_version": 2,
+  "cycle_id": "daily-2026-10-17",
+  "display_date": "2026-10-17",
+  "articles": [
+    {
+      "candidate_id": "openalex--W7221900667",
+      "category": "Paper",
+      "rank": 1,
+      "path": "docs/daily/2026-10-17/paper/01-structural-optimization-and-adaptive-demodulation-.md"
+    },
+    {
+      "candidate_id": "openalex--W7222342511",
+      "category": "Paper",
+      "rank": 2,
+      "path": "docs/daily/2026-10-17/paper/02-using-active-acoustics-from-an-underwater-glider-t.md"
+    },
+    {
+      "candidate_id": "openalex--W7222266325",
+      "category": "Paper",
+      "rank": 3,
+      "path": "docs/daily/2026-10-17/paper/03-current-state-of-bioacoustics-research-of-vocal-re.md"
+    },
+    {
+      "candidate_id": "openalex--W7222336190",
+      "category": "Paper",
+      "rank": 4,
+      "path": "docs/daily/2026-10-17/paper/04-oncship-a-large-scale-underwater-acoustic-corpus-f.md"
+    },
+    {
+      "candidate_id": "crossref--10.3390-jmse14201931",
+      "category": "Paper",
+      "rank": 5,
+      "path": "docs/daily/2026-10-17/paper/05-automated-detection-of-pacific-cod-gadus-macroceph.md"
+    },
+    {
+      "candidate_id": "crossref--10.3390-s26206576",
+      "category": "Paper",
+      "rank": 6,
+      "path": "docs/daily/2026-10-17/paper/06-underwater-relative-pose-estimation-and-tracking-b.md"
+    },
+    {
+      "candidate_id": "crossref--10.1117-12.3135012",
+      "category": "Paper",
+      "rank": 7,
+      "path": "docs/daily/2026-10-17/paper/07-an-underwater-optical-communication-receiving-syst.md"
+    },
+    {
+      "candidate_id": "crossref--10.3390-rs18203557",
+      "category": "Paper",
+      "rank": 8,
+      "path": "docs/daily/2026-10-17/paper/08-improving-open-set-recognition-in-long-tailed-unde.md"
+    }
+  ],
+  "assets": [
+    {
+      "candidate_id": "openalex--W7221900667",
+      "path": "docs/public/daily/2026-10-17/assets/openalex--W7221900667/preview.png"
+    },
+    {
+      "candidate_id": "openalex--W7222342511",
+      "path": "docs/public/daily/2026-10-17/assets/openalex--W7222342511/preview.png"
+    },
+    {
+      "candidate_id": "openalex--W7222266325",
+      "path": "docs/public/daily/2026-10-17/assets/openalex--W7222266325/preview.svg"
+    },
+    {
+      "candidate_id": "openalex--W7222336190",
+      "path": "docs/public/daily/2026-10-17/assets/openalex--W7222336190/preview.png"
+    },
+    {
+      "candidate_id": "crossref--10.3390-jmse14201931",
+      "path": "docs/public/daily/2026-10-17/assets/crossref--10.3390-jmse14201931/preview.png"
+    },
+    {
+      "candidate_id": "crossref--10.3390-s26206576",
+      "path": "docs/public/daily/2026-10-17/assets/crossref--10.3390-s26206576/preview.svg"
+    },
+    {
+      "candidate_id": "crossref--10.1117-12.3135012",
+      "path": "docs/public/daily/2026-10-17/assets/crossref--10.1117-12.3135012/preview.svg"
+    },
+    {
+      "candidate_id": "crossref--10.3390-rs18203557",
+      "path": "docs/public/daily/2026-10-17/assets/crossref--10.3390-rs18203557/preview.svg"
+    }
+  ]
+}
