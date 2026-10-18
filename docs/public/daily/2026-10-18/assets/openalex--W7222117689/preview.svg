@@ -1,0 +1,72 @@
+<svg width="400" height="300" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#042f2e;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#115e59;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="400" height="300" fill="url(#grad)"/>
+
+  <!-- Grid pattern -->
+  <g opacity="0.1">
+    <line x1="0" y1="75" x2="400" y2="75" stroke="#2dd4bf" stroke-width="1"/>
+    <line x1="0" y1="150" x2="400" y2="150" stroke="#2dd4bf" stroke-width="1"/>
+    <line x1="0" y1="225" x2="400" y2="225" stroke="#2dd4bf" stroke-width="1"/>
+    <line x1="100" y1="0" x2="100" y2="300" stroke="#2dd4bf" stroke-width="1"/>
+    <line x1="200" y1="0" x2="200" y2="300" stroke="#2dd4bf" stroke-width="1"/>
+    <line x1="300" y1="0" x2="300" y2="300" stroke="#2dd4bf" stroke-width="1"/>
+  </g>
+
+  <!-- Waveform decoration (deterministic per title) -->
+  <g>
+  <polyline points="0,213.2 8,217.4 16,220.5 24,222.3 32,222.8 40,221.9 48,220.0 56,217.3 64,214.2 72,211.1 80,208.3 88,206.0 96,204.2 104,203.0 112,202.2 120,201.6 128,201.0 136,200.1 144,198.9 152,197.3 160,195.5 168,193.5 176,191.8 184,190.6 192,190.2 200,190.9 208,192.8 216,195.8 224,199.9 232,204.6 240,209.6 248,214.4 256,218.6 264,221.7 272,223.5 280,223.8 288,222.8 296,220.6 304,217.4 312,213.8 320,210.1 328,206.6 336,203.7 344,201.4 352,199.9 360,199.1 368,198.6 376,198.4 384,198.1 392,197.6 400,196.9" fill="none" stroke="#2dd4bf" stroke-width="1.5" opacity="0.35"/>
+  <polyline points="0,221.7 8,221.8 16,221.4 24,220.3 32,218.8 40,217.2 48,215.8 56,215.0 64,215.1 72,216.6 80,219.3 88,223.4 96,228.6 104,234.3 112,240.2 120,245.7 128,250.2 136,253.4 144,255.0 152,255.1 160,253.7 168,251.1 176,247.8 184,244.2 192,240.8 200,238.0 208,235.8 216,234.4 224,233.7 232,233.3 240,233.0 248,232.4 256,231.1 264,229.1 272,226.3 280,222.8 288,218.8 296,214.9 304,211.5 312,209.1 320,208.0 328,208.4 336,210.6 344,214.2 352,219.0 360,224.5 368,230.3 376,235.7 384,240.4 392,244.0 400,246.2" fill="none" stroke="#2dd4bf" stroke-width="1.5" opacity="0.22"/>
+  <polyline points="0,291.7 8,291.6 16,289.6 24,286.0 32,281.0 40,275.2 48,269.1 56,263.5 64,258.7 72,255.1 80,252.9 88,251.9 96,251.9 104,252.5 112,253.2 120,253.4 128,252.9 136,251.5 144,249.0 152,245.8 160,242.2 168,238.7 176,235.9 184,234.2 192,234.1 200,235.8 208,239.2 216,244.1 224,250.0 232,256.4 240,262.6 248,268.2 256,272.6 264,275.5 272,277.1 280,277.3 288,276.6 296,275.5 304,274.4 312,273.8 320,274.0 328,275.2 336,277.3 344,279.9 352,282.7 360,285.2 368,286.9 376,287.1 384,285.8 392,282.8 400,278.2" fill="none" stroke="#2dd4bf" stroke-width="1.5" opacity="0.13"/>
+  </g>
+
+  <!-- Header -->
+  <text x="20" y="40" font-family="Inter, sans-serif" font-size="14" fill="#2dd4bf" font-weight="600">
+    UWA / 10-18
+  </text>
+
+  <!-- Keyword badge -->
+  <rect x="20" y="60" width="84" height="28" rx="14" fill="#2dd4bf" opacity="0.2"/>
+  <text x="30" y="79" font-family="Inter, sans-serif" font-size="13" fill="#2dd4bf" font-weight="500">
+    Research
+  </text>
+
+  <!-- Title -->
+  <foreignObject x="20" y="110" width="360" height="120">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="
+      font-family: Inter, sans-serif;
+      font-size: 18px;
+      font-weight: 600;
+      color: #e2e8f0;
+      line-height: 1.4;
+      overflow: hidden;
+      display: -webkit-box;
+      -webkit-line-clamp: 4;
+      -webkit-box-orient: vertical;
+    ">
+      Escalating competition in changing seas: baleen whales ex...
+    </div>
+  </foreignObject>
+
+  <!-- Author -->
+  <text x="20" y="250" font-family="Inter, sans-serif" font-size="13" fill="#94a3b8">
+    Eve Jourdain
+  </text>
+
+  <!-- Footer -->
+  <text x="20" y="275" font-family="Inter, sans-serif" font-size="11" fill="#64748b">
+    Philosophical Transactions of the Royal Society B Biological Sciences
+  </text>
+
+  <!-- Score badge -->
+  <circle cx="360" cy="40" r="24" fill="#2dd4bf" opacity="0.2"/>
+  <text x="360" y="46" font-family="Inter, sans-serif" font-size="14" fill="#2dd4bf" font-weight="700" text-anchor="middle">
+    51
+  </text>
+</svg>

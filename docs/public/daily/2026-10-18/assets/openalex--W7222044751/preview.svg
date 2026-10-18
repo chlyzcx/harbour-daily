@@ -1,0 +1,72 @@
+<svg width="400" height="300" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#042f2e;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#115e59;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="400" height="300" fill="url(#grad)"/>
+
+  <!-- Grid pattern -->
+  <g opacity="0.1">
+    <line x1="0" y1="75" x2="400" y2="75" stroke="#2dd4bf" stroke-width="1"/>
+    <line x1="0" y1="150" x2="400" y2="150" stroke="#2dd4bf" stroke-width="1"/>
+    <line x1="0" y1="225" x2="400" y2="225" stroke="#2dd4bf" stroke-width="1"/>
+    <line x1="100" y1="0" x2="100" y2="300" stroke="#2dd4bf" stroke-width="1"/>
+    <line x1="200" y1="0" x2="200" y2="300" stroke="#2dd4bf" stroke-width="1"/>
+    <line x1="300" y1="0" x2="300" y2="300" stroke="#2dd4bf" stroke-width="1"/>
+  </g>
+
+  <!-- Waveform decoration (deterministic per title) -->
+  <g>
+  <polyline points="0,198.3 8,203.4 16,207.8 24,211.1 32,213.1 40,213.9 48,214.0 56,213.7 64,213.4 72,213.5 80,213.8 88,214.2 96,214.1 104,213.3 112,211.2 120,207.9 128,203.3 136,198.2 144,193.1 152,188.8 160,186.3 168,185.9 176,187.8 184,191.9 192,197.5 200,203.7 208,209.8 216,214.8 224,218.2 232,219.7 240,219.4 248,217.8 256,215.4 264,212.9 272,210.6 280,208.8 288,207.5 296,206.5 304,205.4 312,203.8 320,201.4 328,198.4 336,195.1 344,191.9 352,189.5 360,188.6 368,189.5 376,192.6 384,197.4 392,203.5 400,210.0" fill="none" stroke="#2dd4bf" stroke-width="1.5" opacity="0.35"/>
+  <polyline points="0,238.2 8,235.6 16,231.5 24,226.2 32,220.2 40,214.4 48,209.9 56,207.5 64,207.6 72,210.5 80,215.7 88,222.5 96,229.8 104,236.7 112,242.2 120,245.7 128,247.3 136,247.2 144,246.0 152,244.4 160,243.0 168,242.3 176,242.3 184,242.7 192,242.9 200,242.3 208,240.3 216,236.6 224,231.3 232,224.9 240,218.4 248,212.5 256,208.5 264,206.8 272,208.0 280,211.7 288,217.4 296,224.2 304,231.0 312,236.9 320,241.2 328,243.7 336,244.6 344,244.3 352,243.5 360,242.9 368,242.8 376,243.5 384,244.5 392,245.6 400,245.8" fill="none" stroke="#2dd4bf" stroke-width="1.5" opacity="0.22"/>
+  <polyline points="0,283.1 8,287.3 16,288.6 24,287.4 32,284.1 40,279.9 48,275.7 56,272.3 64,270.2 72,269.4 80,269.3 88,269.3 96,268.4 104,266.0 112,261.8 120,255.9 128,248.9 136,241.9 144,236.0 152,232.2 160,231.3 168,233.5 176,238.3 184,245.1 192,252.6 200,259.8 208,265.6 216,269.6 224,271.6 232,272.0 240,271.7 248,271.6 256,272.2 264,274.1 272,277.1 280,280.9 288,284.4 296,286.7 304,286.9 312,284.5 320,279.4 328,272.0 336,263.3 344,254.6 352,246.9 360,241.3 368,238.3 376,238.0 384,239.8 392,242.9 400,246.3" fill="none" stroke="#2dd4bf" stroke-width="1.5" opacity="0.13"/>
+  </g>
+
+  <!-- Header -->
+  <text x="20" y="40" font-family="Inter, sans-serif" font-size="14" fill="#2dd4bf" font-weight="600">
+    UWA / 10-18
+  </text>
+
+  <!-- Keyword badge -->
+  <rect x="20" y="60" width="84" height="28" rx="14" fill="#2dd4bf" opacity="0.2"/>
+  <text x="30" y="79" font-family="Inter, sans-serif" font-size="13" fill="#2dd4bf" font-weight="500">
+    Research
+  </text>
+
+  <!-- Title -->
+  <foreignObject x="20" y="110" width="360" height="120">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="
+      font-family: Inter, sans-serif;
+      font-size: 18px;
+      font-weight: 600;
+      color: #e2e8f0;
+      line-height: 1.4;
+      overflow: hidden;
+      display: -webkit-box;
+      -webkit-line-clamp: 4;
+      -webkit-box-orient: vertical;
+    ">
+      Multi-predatory feeding aggregations in the Norwegian Sea...
+    </div>
+  </foreignObject>
+
+  <!-- Author -->
+  <text x="20" y="250" font-family="Inter, sans-serif" font-size="13" fill="#94a3b8">
+    Leif Nøttestad
+  </text>
+
+  <!-- Footer -->
+  <text x="20" y="275" font-family="Inter, sans-serif" font-size="11" fill="#64748b">
+    Philosophical Transactions of the Royal Society B Biological Sciences
+  </text>
+
+  <!-- Score badge -->
+  <circle cx="360" cy="40" r="24" fill="#2dd4bf" opacity="0.2"/>
+  <text x="360" y="46" font-family="Inter, sans-serif" font-size="14" fill="#2dd4bf" font-weight="700" text-anchor="middle">
+    49
+  </text>
+</svg>

@@ -1,0 +1,119 @@
+{
+  "schema_version": 2,
+  "cycle_id": "daily-2026-10-18",
+  "display_date": "2026-10-18",
+  "articles": [
+    {
+      "candidate_id": "openalex--W7222722296",
+      "category": "Paper",
+      "rank": 1,
+      "path": "docs/daily/2026-10-18/paper/01-face-uie-a-frequency-aware-cnn-transformer-framewo.md"
+    },
+    {
+      "candidate_id": "openalex--W7222427388",
+      "category": "Paper",
+      "rank": 2,
+      "path": "docs/daily/2026-10-18/paper/02-from-signals-to-evidence-interpretable-underwater-.md"
+    },
+    {
+      "candidate_id": "s2--353de87a0469139b4b9b0d47583394a2ce5468b0",
+      "category": "Paper",
+      "rank": 3,
+      "path": "docs/daily/2026-10-18/paper/03-a-framework-for-inversion-and-assimilation-of-deep.md"
+    },
+    {
+      "candidate_id": "s2--acd7b3bcaf12c0bf0a54bd2a1b5bae84f2ae9a9f",
+      "category": "Paper",
+      "rank": 4,
+      "path": "docs/daily/2026-10-18/paper/04-ocean-acoustic-field-prediction-method-based-on-du.md"
+    },
+    {
+      "candidate_id": "s2--79282ad1abf3bf49c236c86f079f7cc450c699d5",
+      "category": "Paper",
+      "rank": 5,
+      "path": "docs/daily/2026-10-18/paper/05-feddcr-federated-decoupled-consistent-representati.md"
+    },
+    {
+      "candidate_id": "openalex--W7222526813",
+      "category": "Paper",
+      "rank": 6,
+      "path": "docs/daily/2026-10-18/paper/06-design-hydrodynamic-modelling-and-closed-loop-cont.md"
+    },
+    {
+      "candidate_id": "openalex--W7222672734",
+      "category": "Paper",
+      "rank": 7,
+      "path": "docs/daily/2026-10-18/paper/07-data-labeling-with-local-and-global-consistency-us.md"
+    },
+    {
+      "candidate_id": "openalex--W7222117689",
+      "category": "Paper",
+      "rank": 8,
+      "path": "docs/daily/2026-10-18/paper/08-escalating-competition-in-changing-seas-baleen-wha.md"
+    },
+    {
+      "candidate_id": "openalex--W7222175513",
+      "category": "Paper",
+      "rank": 9,
+      "path": "docs/daily/2026-10-18/paper/09-how-volant-seabirds-benefit-from-sub-surface-preda.md"
+    },
+    {
+      "candidate_id": "openalex--W7222044751",
+      "category": "Paper",
+      "rank": 10,
+      "path": "docs/daily/2026-10-18/paper/10-multi-predatory-feeding-aggregations-in-the-norweg.md"
+    },
+    {
+      "candidate_id": "news--22a5ade4af93",
+      "category": "News",
+      "rank": 11,
+      "path": "docs/daily/2026-10-18/news/11-saab-fmv-and-the-swedish-armed-forces-launch-luuv.md"
+    }
+  ],
+  "assets": [
+    {
+      "candidate_id": "openalex--W7222722296",
+      "path": "docs/public/daily/2026-10-18/assets/openalex--W7222722296/preview.png"
+    },
+    {
+      "candidate_id": "openalex--W7222427388",
+      "path": "docs/public/daily/2026-10-18/assets/openalex--W7222427388/preview.png"
+    },
+    {
+      "candidate_id": "s2--353de87a0469139b4b9b0d47583394a2ce5468b0",
+      "path": "docs/public/daily/2026-10-18/assets/s2--353de87a0469139b4b9b0d47583394a2ce5468b0/preview.png"
+    },
+    {
+      "candidate_id": "s2--acd7b3bcaf12c0bf0a54bd2a1b5bae84f2ae9a9f",
+      "path": "docs/public/daily/2026-10-18/assets/s2--acd7b3bcaf12c0bf0a54bd2a1b5bae84f2ae9a9f/preview.png"
+    },
+    {
+      "candidate_id": "s2--79282ad1abf3bf49c236c86f079f7cc450c699d5",
+      "path": "docs/public/daily/2026-10-18/assets/s2--79282ad1abf3bf49c236c86f079f7cc450c699d5/preview.svg"
+    },
+    {
+      "candidate_id": "openalex--W7222526813",
+      "path": "docs/public/daily/2026-10-18/assets/openalex--W7222526813/preview.png"
+    },
+    {
+      "candidate_id": "openalex--W7222672734",
+      "path": "docs/public/daily/2026-10-18/assets/openalex--W7222672734/preview.svg"
+    },
+    {
+      "candidate_id": "openalex--W7222117689",
+      "path": "docs/public/daily/2026-10-18/assets/openalex--W7222117689/preview.svg"
+    },
+    {
+      "candidate_id": "openalex--W7222175513",
+      "path": "docs/public/daily/2026-10-18/assets/openalex--W7222175513/preview.svg"
+    },
+    {
+      "candidate_id": "openalex--W7222044751",
+      "path": "docs/public/daily/2026-10-18/assets/openalex--W7222044751/preview.svg"
+    },
+    {
+      "candidate_id": "news--22a5ade4af93",
+      "path": "docs/public/daily/2026-10-18/assets/news--22a5ade4af93/preview.png"
+    }
+  ]
+}

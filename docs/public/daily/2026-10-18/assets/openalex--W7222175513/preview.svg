@@ -1,0 +1,72 @@
+<svg width="400" height="300" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#2e1065;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#5b21b6;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="400" height="300" fill="url(#grad)"/>
+
+  <!-- Grid pattern -->
+  <g opacity="0.1">
+    <line x1="0" y1="75" x2="400" y2="75" stroke="#a78bfa" stroke-width="1"/>
+    <line x1="0" y1="150" x2="400" y2="150" stroke="#a78bfa" stroke-width="1"/>
+    <line x1="0" y1="225" x2="400" y2="225" stroke="#a78bfa" stroke-width="1"/>
+    <line x1="100" y1="0" x2="100" y2="300" stroke="#a78bfa" stroke-width="1"/>
+    <line x1="200" y1="0" x2="200" y2="300" stroke="#a78bfa" stroke-width="1"/>
+    <line x1="300" y1="0" x2="300" y2="300" stroke="#a78bfa" stroke-width="1"/>
+  </g>
+
+  <!-- Waveform decoration (deterministic per title) -->
+  <g>
+  <polyline points="0,224.6 8,223.9 16,222.0 24,219.4 32,216.2 40,212.9 48,209.7 56,207.1 64,205.1 72,204.0 80,203.5 88,203.5 96,203.7 104,203.8 112,203.6 120,202.7 128,201.1 136,198.9 144,196.2 152,193.2 160,190.3 168,187.9 176,186.2 184,185.7 192,186.2 200,188.0 208,190.6 216,194.0 224,197.7 232,201.3 240,204.6 248,207.1 256,208.9 264,209.8 272,210.1 280,209.9 288,209.5 296,209.3 304,209.6 312,210.4 320,211.9 328,213.9 336,216.4 344,218.9 352,221.1 360,222.7 368,223.4 376,223.0 384,221.4 392,218.9 400,215.5" fill="none" stroke="#a78bfa" stroke-width="1.5" opacity="0.35"/>
+  <polyline points="0,224.8 8,226.8 16,228.8 24,230.7 32,232.8 40,235.1 48,237.5 56,240.2 64,242.8 72,245.2 80,247.0 88,247.9 96,247.7 104,245.9 112,242.7 120,238.2 128,232.5 136,226.3 144,220.2 152,214.7 160,210.6 168,208.4 176,208.4 184,210.7 192,215.2 200,221.4 208,228.8 216,236.5 224,243.8 232,249.9 240,254.2 248,256.2 256,255.9 264,253.3 272,248.8 280,243.0 288,236.6 296,230.1 304,224.4 312,219.7 320,216.6 328,215.1 336,215.1 344,216.4 352,218.7 360,221.6 368,224.7 376,227.7 384,230.5 392,232.9 400,235.0" fill="none" stroke="#a78bfa" stroke-width="1.5" opacity="0.22"/>
+  <polyline points="0,273.0 8,265.0 16,256.5 24,248.2 32,240.9 40,235.5 48,232.3 56,231.8 64,233.8 72,238.1 80,244.1 88,251.2 96,258.5 104,265.5 112,271.4 120,275.9 128,278.8 136,280.1 144,280.0 152,279.0 160,277.4 168,275.5 176,273.7 184,272.1 192,270.7 200,269.4 208,267.9 216,266.1 224,263.5 232,260.2 240,256.1 248,251.5 256,246.8 264,242.3 272,238.8 280,236.8 288,236.6 296,238.6 304,242.9 312,249.1 320,256.7 328,265.2 336,273.7 344,281.3 352,287.3 360,291.1 368,292.3 376,291.0 384,287.3 392,281.6 400,274.8" fill="none" stroke="#a78bfa" stroke-width="1.5" opacity="0.13"/>
+  </g>
+
+  <!-- Header -->
+  <text x="20" y="40" font-family="Inter, sans-serif" font-size="14" fill="#a78bfa" font-weight="600">
+    UWA / 10-18
+  </text>
+
+  <!-- Keyword badge -->
+  <rect x="20" y="60" width="92" height="28" rx="14" fill="#a78bfa" opacity="0.2"/>
+  <text x="30" y="79" font-family="Inter, sans-serif" font-size="13" fill="#a78bfa" font-weight="500">
+    detection
+  </text>
+
+  <!-- Title -->
+  <foreignObject x="20" y="110" width="360" height="120">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="
+      font-family: Inter, sans-serif;
+      font-size: 18px;
+      font-weight: 600;
+      color: #e2e8f0;
+      line-height: 1.4;
+      overflow: hidden;
+      display: -webkit-box;
+      -webkit-line-clamp: 4;
+      -webkit-box-orient: vertical;
+    ">
+      How volant seabirds benefit from sub-surface predators du...
+    </div>
+  </foreignObject>
+
+  <!-- Author -->
+  <text x="20" y="250" font-family="Inter, sans-serif" font-size="13" fill="#94a3b8">
+    Max Licht
+  </text>
+
+  <!-- Footer -->
+  <text x="20" y="275" font-family="Inter, sans-serif" font-size="11" fill="#64748b">
+    Philosophical Transactions of the Royal Society B Biological Sciences
+  </text>
+
+  <!-- Score badge -->
+  <circle cx="360" cy="40" r="24" fill="#a78bfa" opacity="0.2"/>
+  <text x="360" y="46" font-family="Inter, sans-serif" font-size="14" fill="#a78bfa" font-weight="700" text-anchor="middle">
+    50
+  </text>
+</svg>
