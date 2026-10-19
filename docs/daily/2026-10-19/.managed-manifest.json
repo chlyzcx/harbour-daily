@@ -1,0 +1,39 @@
+{
+  "schema_version": 2,
+  "cycle_id": "daily-2026-10-19",
+  "display_date": "2026-10-19",
+  "articles": [
+    {
+      "candidate_id": "crossref--10.1515-joc-2026-0422",
+      "category": "Paper",
+      "rank": 1,
+      "path": "docs/daily/2026-10-19/paper/01-performance-assessment-of-laguerregaussian-oam-mod.md"
+    },
+    {
+      "candidate_id": "openalex--W7221749955",
+      "category": "Paper",
+      "rank": 2,
+      "path": "docs/daily/2026-10-19/paper/02-uddpg-net-energy--and-fairness-aware-deep-reinforc.md"
+    },
+    {
+      "candidate_id": "news--aba0ac0a6650",
+      "category": "News",
+      "rank": 3,
+      "path": "docs/daily/2026-10-19/news/03-second-possible-chinese-uuv-mothership-appears-in-.md"
+    }
+  ],
+  "assets": [
+    {
+      "candidate_id": "crossref--10.1515-joc-2026-0422",
+      "path": "docs/public/daily/2026-10-19/assets/crossref--10.1515-joc-2026-0422/preview.svg"
+    },
+    {
+      "candidate_id": "openalex--W7221749955",
+      "path": "docs/public/daily/2026-10-19/assets/openalex--W7221749955/preview.png"
+    },
+    {
+      "candidate_id": "news--aba0ac0a6650",
+      "path": "docs/public/daily/2026-10-19/assets/news--aba0ac0a6650/preview.png"
+    }
+  ]
+}
