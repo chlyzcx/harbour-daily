@@ -1,0 +1,59 @@
+{
+  "schema_version": 2,
+  "cycle_id": "daily-2026-10-20",
+  "display_date": "2026-10-20",
+  "articles": [
+    {
+      "candidate_id": "openalex--W7222893407",
+      "category": "Paper",
+      "rank": 1,
+      "path": "docs/daily/2026-10-20/paper/01-vb-uref-uncertainty-aware-recursive-evidence-fusio.md"
+    },
+    {
+      "candidate_id": "openalex--W7222821502",
+      "category": "Paper",
+      "rank": 2,
+      "path": "docs/daily/2026-10-20/paper/02-finding-a-dead-sperm-whale-physeter-microcephalus-.md"
+    },
+    {
+      "candidate_id": "crossref--10.1007-s00170-026-19368-9",
+      "category": "Paper",
+      "rank": 3,
+      "path": "docs/daily/2026-10-20/paper/03-mechanical-design-and-optimization-of-an-underwate.md"
+    },
+    {
+      "candidate_id": "crossref--10.3389-fmars.2026.1947106",
+      "category": "Paper",
+      "rank": 4,
+      "path": "docs/daily/2026-10-20/paper/04-a-joint-matching-method-for-underwater-target-loca.md"
+    },
+    {
+      "candidate_id": "news--c53459a7a6f7",
+      "category": "News",
+      "rank": 5,
+      "path": "docs/daily/2026-10-20/news/05-australia-advances-undersea-warfare-capabilities.md"
+    }
+  ],
+  "assets": [
+    {
+      "candidate_id": "openalex--W7222893407",
+      "path": "docs/public/daily/2026-10-20/assets/openalex--W7222893407/preview.png"
+    },
+    {
+      "candidate_id": "openalex--W7222821502",
+      "path": "docs/public/daily/2026-10-20/assets/openalex--W7222821502/preview.png"
+    },
+    {
+      "candidate_id": "crossref--10.1007-s00170-026-19368-9",
+      "path": "docs/public/daily/2026-10-20/assets/crossref--10.1007-s00170-026-19368-9/preview.png"
+    },
+    {
+      "candidate_id": "crossref--10.3389-fmars.2026.1947106",
+      "path": "docs/public/daily/2026-10-20/assets/crossref--10.3389-fmars.2026.1947106/preview.png"
+    },
+    {
+      "candidate_id": "news--c53459a7a6f7",
+      "path": "docs/public/daily/2026-10-20/assets/news--c53459a7a6f7/preview.png"
+    }
+  ]
+}
