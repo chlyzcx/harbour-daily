@@ -1,0 +1,109 @@
+{
+  "schema_version": 2,
+  "cycle_id": "daily-2026-10-21",
+  "display_date": "2026-10-21",
+  "articles": [
+    {
+      "candidate_id": "openalex--W7222940468",
+      "category": "Paper",
+      "rank": 1,
+      "path": "docs/daily/2026-10-21/paper/01-travel-time-constrained-subset-selection-for-sound.md"
+    },
+    {
+      "candidate_id": "openalex--W7222979060",
+      "category": "Paper",
+      "rank": 2,
+      "path": "docs/daily/2026-10-21/paper/02-a-sparse-modal-representation-for-dolphin-echoloca.md"
+    },
+    {
+      "candidate_id": "openalex--W7222940169",
+      "category": "Paper",
+      "rank": 3,
+      "path": "docs/daily/2026-10-21/paper/03-a-paired-rgb-sonar-dataset-for-fish-monitoring-wit.md"
+    },
+    {
+      "candidate_id": "openalex--W7161011889",
+      "category": "Paper",
+      "rank": 4,
+      "path": "docs/daily/2026-10-21/paper/04-on-microlocal-artifacts-arising-in-tomography-mode.md"
+    },
+    {
+      "candidate_id": "openalex--W7222915182",
+      "category": "Paper",
+      "rank": 5,
+      "path": "docs/daily/2026-10-21/paper/05-an-evaluation-of-approaches-for-parallelism-and-gp.md"
+    },
+    {
+      "candidate_id": "openalex--W7222631841",
+      "category": "Paper",
+      "rank": 6,
+      "path": "docs/daily/2026-10-21/paper/06-square-lattice-pentamode-metamaterial-for-acoustic.md"
+    },
+    {
+      "candidate_id": "openalex--W7222914850",
+      "category": "Paper",
+      "rank": 7,
+      "path": "docs/daily/2026-10-21/paper/07-cfc26-building-evaluations-for-deployment-in-sonar.md"
+    },
+    {
+      "candidate_id": "openalex--W7222922600",
+      "category": "Paper",
+      "rank": 8,
+      "path": "docs/daily/2026-10-21/paper/08-rtisslam-3d-full-6-dof-slam-with-an-in-air-3d-imag.md"
+    },
+    {
+      "candidate_id": "crossref--10.1201-9781003649519-9",
+      "category": "Paper",
+      "rank": 9,
+      "path": "docs/daily/2026-10-21/paper/09-laser-based-underwater-wireless-optical-communicat.md"
+    },
+    {
+      "candidate_id": "crossref--10.3897-geostudies.3.e204386",
+      "category": "Paper",
+      "rank": 10,
+      "path": "docs/daily/2026-10-21/paper/10-preliminary-results-and-geological-interpretations.md"
+    }
+  ],
+  "assets": [
+    {
+      "candidate_id": "openalex--W7222940468",
+      "path": "docs/public/daily/2026-10-21/assets/openalex--W7222940468/preview.png"
+    },
+    {
+      "candidate_id": "openalex--W7222979060",
+      "path": "docs/public/daily/2026-10-21/assets/openalex--W7222979060/preview.png"
+    },
+    {
+      "candidate_id": "openalex--W7222940169",
+      "path": "docs/public/daily/2026-10-21/assets/openalex--W7222940169/preview.png"
+    },
+    {
+      "candidate_id": "openalex--W7161011889",
+      "path": "docs/public/daily/2026-10-21/assets/openalex--W7161011889/preview.png"
+    },
+    {
+      "candidate_id": "openalex--W7222915182",
+      "path": "docs/public/daily/2026-10-21/assets/openalex--W7222915182/preview.svg"
+    },
+    {
+      "candidate_id": "openalex--W7222631841",
+      "path": "docs/public/daily/2026-10-21/assets/openalex--W7222631841/preview.png"
+    },
+    {
+      "candidate_id": "openalex--W7222914850",
+      "path": "docs/public/daily/2026-10-21/assets/openalex--W7222914850/preview.png"
+    },
+    {
+      "candidate_id": "openalex--W7222922600",
+      "path": "docs/public/daily/2026-10-21/assets/openalex--W7222922600/preview.png"
+    },
+    {
+      "candidate_id": "crossref--10.1201-9781003649519-9",
+      "path": "docs/public/daily/2026-10-21/assets/crossref--10.1201-9781003649519-9/preview.svg"
+    },
+    {
+      "candidate_id": "crossref--10.3897-geostudies.3.e204386",
+      "path": "docs/public/daily/2026-10-21/assets/crossref--10.3897-geostudies.3.e204386/preview.svg"
+    }
+  ]
+}
