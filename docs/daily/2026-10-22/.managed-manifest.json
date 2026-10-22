@@ -1,0 +1,99 @@
+{
+  "schema_version": 2,
+  "cycle_id": "daily-2026-10-22",
+  "display_date": "2026-10-22",
+  "articles": [
+    {
+      "candidate_id": "openalex--W7222977319",
+      "category": "Paper",
+      "rank": 1,
+      "path": "docs/daily/2026-10-22/paper/01-inverting-sound-speed-temperature-and-current-velo.md"
+    },
+    {
+      "candidate_id": "openalex--W7223079181",
+      "category": "Paper",
+      "rank": 2,
+      "path": "docs/daily/2026-10-22/paper/02-protocoles-danalyse-et-de-quantification-de-la-fon.md"
+    },
+    {
+      "candidate_id": "openalex--W7223043989",
+      "category": "Paper",
+      "rank": 3,
+      "path": "docs/daily/2026-10-22/paper/03-unraveling-ocean-sound-speed-through-a-high-resolu.md"
+    },
+    {
+      "candidate_id": "openalex--W7223055489",
+      "category": "Paper",
+      "rank": 4,
+      "path": "docs/daily/2026-10-22/paper/04-normalizing-flow-for-neural-enhanced-track-before-.md"
+    },
+    {
+      "candidate_id": "crossref--10.1038-s41598-026-77136-x",
+      "category": "Paper",
+      "rank": 5,
+      "path": "docs/daily/2026-10-22/paper/05-multi-criteria-prioritized-reinforcement-learning-.md"
+    },
+    {
+      "candidate_id": "crossref--10.1364-ao.616747",
+      "category": "Paper",
+      "rank": 6,
+      "path": "docs/daily/2026-10-22/paper/06-a-multi-user-underwater-wireless-optical-communica.md"
+    },
+    {
+      "candidate_id": "crossref--10.21926-rpse.2604022",
+      "category": "Paper",
+      "rank": 7,
+      "path": "docs/daily/2026-10-22/paper/07-recent-developments-in-intrusion-detection-for-the.md"
+    },
+    {
+      "candidate_id": "crossref--10.3390-inventions11050111",
+      "category": "Paper",
+      "rank": 8,
+      "path": "docs/daily/2026-10-22/paper/08-research-progress-on-hydrophone-elements-and-their.md"
+    },
+    {
+      "candidate_id": "news--74bf8c34e748",
+      "category": "News",
+      "rank": 9,
+      "path": "docs/daily/2026-10-22/news/09-marine-mammal-classifier-app-wins-canadian-edition.md"
+    }
+  ],
+  "assets": [
+    {
+      "candidate_id": "openalex--W7222977319",
+      "path": "docs/public/daily/2026-10-22/assets/openalex--W7222977319/preview.png"
+    },
+    {
+      "candidate_id": "openalex--W7223079181",
+      "path": "docs/public/daily/2026-10-22/assets/openalex--W7223079181/preview.svg"
+    },
+    {
+      "candidate_id": "openalex--W7223043989",
+      "path": "docs/public/daily/2026-10-22/assets/openalex--W7223043989/preview.png"
+    },
+    {
+      "candidate_id": "openalex--W7223055489",
+      "path": "docs/public/daily/2026-10-22/assets/openalex--W7223055489/preview.png"
+    },
+    {
+      "candidate_id": "crossref--10.1038-s41598-026-77136-x",
+      "path": "docs/public/daily/2026-10-22/assets/crossref--10.1038-s41598-026-77136-x/preview.svg"
+    },
+    {
+      "candidate_id": "crossref--10.1364-ao.616747",
+      "path": "docs/public/daily/2026-10-22/assets/crossref--10.1364-ao.616747/preview.svg"
+    },
+    {
+      "candidate_id": "crossref--10.21926-rpse.2604022",
+      "path": "docs/public/daily/2026-10-22/assets/crossref--10.21926-rpse.2604022/preview.svg"
+    },
+    {
+      "candidate_id": "crossref--10.3390-inventions11050111",
+      "path": "docs/public/daily/2026-10-22/assets/crossref--10.3390-inventions11050111/preview.png"
+    },
+    {
+      "candidate_id": "news--74bf8c34e748",
+      "path": "docs/public/daily/2026-10-22/assets/news--74bf8c34e748/preview.png"
+    }
+  ]
+}
