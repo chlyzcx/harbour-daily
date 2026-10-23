@@ -1,0 +1,119 @@
+{
+  "schema_version": 2,
+  "cycle_id": "daily-2026-10-23",
+  "display_date": "2026-10-23",
+  "articles": [
+    {
+      "candidate_id": "openalex--W7223146185",
+      "category": "Paper",
+      "rank": 1,
+      "path": "docs/daily/2026-10-23/paper/01-spatiotemporal-variation-of-ocean-sound-speed-anom.md"
+    },
+    {
+      "candidate_id": "openalex--W7223083922",
+      "category": "Paper",
+      "rank": 2,
+      "path": "docs/daily/2026-10-23/paper/02-a-sample-augmentation-method-for-simulated-mine-li.md"
+    },
+    {
+      "candidate_id": "arxiv--2610.31346-1",
+      "category": "Paper",
+      "rank": 3,
+      "path": "docs/daily/2026-10-23/paper/03-from-signals-to-evidence-interpretable-underwater-.md"
+    },
+    {
+      "candidate_id": "arxiv--2610.29572-1",
+      "category": "Paper",
+      "rank": 4,
+      "path": "docs/daily/2026-10-23/paper/04-a-perch-out-of-water-few-shot-detection-of-brydes-.md"
+    },
+    {
+      "candidate_id": "openalex--W7222541674",
+      "category": "Paper",
+      "rank": 5,
+      "path": "docs/daily/2026-10-23/paper/05-underwater-target-detection-and-localization-based.md"
+    },
+    {
+      "candidate_id": "openalex--W7223125032",
+      "category": "Paper",
+      "rank": 6,
+      "path": "docs/daily/2026-10-23/paper/06-a-high-sensitivity-and-low-noise-fiber-optic-efpi-.md"
+    },
+    {
+      "candidate_id": "openalex--W7223129163",
+      "category": "Paper",
+      "rank": 7,
+      "path": "docs/daily/2026-10-23/paper/07-parallel-coupled-straight-tube-helmholtz-resonator.md"
+    },
+    {
+      "candidate_id": "openalex--W7223152892",
+      "category": "Paper",
+      "rank": 8,
+      "path": "docs/daily/2026-10-23/paper/08-robust-and-accurate-doppler-factor-estimation-for-.md"
+    },
+    {
+      "candidate_id": "crossref--10.1117-12.3130496",
+      "category": "Paper",
+      "rank": 9,
+      "path": "docs/daily/2026-10-23/paper/09-posterior-covariance-analysis-under-varying-survey.md"
+    },
+    {
+      "candidate_id": "crossref--10.26599-air.2026.9150016",
+      "category": "Paper",
+      "rank": 10,
+      "path": "docs/daily/2026-10-23/paper/10-underwater-monocular-depth-estimation-a-survey-of-.md"
+    },
+    {
+      "candidate_id": "news--7ae11372887b",
+      "category": "News",
+      "rank": 11,
+      "path": "docs/daily/2026-10-23/news/11-future-german-f128-frigates-to-receive-msi-ds-seah.md"
+    }
+  ],
+  "assets": [
+    {
+      "candidate_id": "openalex--W7223146185",
+      "path": "docs/public/daily/2026-10-23/assets/openalex--W7223146185/preview.png"
+    },
+    {
+      "candidate_id": "openalex--W7223083922",
+      "path": "docs/public/daily/2026-10-23/assets/openalex--W7223083922/preview.png"
+    },
+    {
+      "candidate_id": "arxiv--2610.31346-1",
+      "path": "docs/public/daily/2026-10-23/assets/arxiv--2610.31346-1/preview.png"
+    },
+    {
+      "candidate_id": "arxiv--2610.29572-1",
+      "path": "docs/public/daily/2026-10-23/assets/arxiv--2610.29572-1/preview.png"
+    },
+    {
+      "candidate_id": "openalex--W7222541674",
+      "path": "docs/public/daily/2026-10-23/assets/openalex--W7222541674/preview.png"
+    },
+    {
+      "candidate_id": "openalex--W7223125032",
+      "path": "docs/public/daily/2026-10-23/assets/openalex--W7223125032/preview.png"
+    },
+    {
+      "candidate_id": "openalex--W7223129163",
+      "path": "docs/public/daily/2026-10-23/assets/openalex--W7223129163/preview.svg"
+    },
+    {
+      "candidate_id": "openalex--W7223152892",
+      "path": "docs/public/daily/2026-10-23/assets/openalex--W7223152892/preview.svg"
+    },
+    {
+      "candidate_id": "crossref--10.1117-12.3130496",
+      "path": "docs/public/daily/2026-10-23/assets/crossref--10.1117-12.3130496/preview.svg"
+    },
+    {
+      "candidate_id": "crossref--10.26599-air.2026.9150016",
+      "path": "docs/public/daily/2026-10-23/assets/crossref--10.26599-air.2026.9150016/preview.svg"
+    },
+    {
+      "candidate_id": "news--7ae11372887b",
+      "path": "docs/public/daily/2026-10-23/assets/news--7ae11372887b/preview.png"
+    }
+  ]
+}
