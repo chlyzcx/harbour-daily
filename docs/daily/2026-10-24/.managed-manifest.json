@@ -1,0 +1,89 @@
+{
+  "schema_version": 2,
+  "cycle_id": "daily-2026-10-24",
+  "display_date": "2026-10-24",
+  "articles": [
+    {
+      "candidate_id": "openalex--W7223182899",
+      "category": "Paper",
+      "rank": 1,
+      "path": "docs/daily/2026-10-24/paper/01-a-wavelet-kernel-design-for-the-detection-of-sperm.md"
+    },
+    {
+      "candidate_id": "openalex--W7223237862",
+      "category": "Paper",
+      "rank": 2,
+      "path": "docs/daily/2026-10-24/paper/02-always-on-ultra-low-power-neuromorphic-pipeline-fo.md"
+    },
+    {
+      "candidate_id": "openalex--W7223183228",
+      "category": "Paper",
+      "rank": 3,
+      "path": "docs/daily/2026-10-24/paper/03-reef-soundscape-response-to-a-severe-convective-st.md"
+    },
+    {
+      "candidate_id": "openalex--W7223199926",
+      "category": "Paper",
+      "rank": 4,
+      "path": "docs/daily/2026-10-24/paper/04-robust-recognition-of-acoustic-orbital-angular-mom.md"
+    },
+    {
+      "candidate_id": "openalex--W4416553458",
+      "category": "Paper",
+      "rank": 5,
+      "path": "docs/daily/2026-10-24/paper/05-narrow-linewidth-piezoelectrically-tunable-photoni.md"
+    },
+    {
+      "candidate_id": "openalex--W7223039795",
+      "category": "Paper",
+      "rank": 6,
+      "path": "docs/daily/2026-10-24/paper/06-noise-adaptive-belief-propagation-track-before-det.md"
+    },
+    {
+      "candidate_id": "openalex--W7222966169",
+      "category": "Paper",
+      "rank": 7,
+      "path": "docs/daily/2026-10-24/paper/07-broadband-underwater-acoustic-absorption-performan.md"
+    },
+    {
+      "candidate_id": "news--100665f54b90",
+      "category": "News",
+      "rank": 8,
+      "path": "docs/daily/2026-10-24/news/08-follow-the-money.md"
+    }
+  ],
+  "assets": [
+    {
+      "candidate_id": "openalex--W7223182899",
+      "path": "docs/public/daily/2026-10-24/assets/openalex--W7223182899/preview.png"
+    },
+    {
+      "candidate_id": "openalex--W7223237862",
+      "path": "docs/public/daily/2026-10-24/assets/openalex--W7223237862/preview.svg"
+    },
+    {
+      "candidate_id": "openalex--W7223183228",
+      "path": "docs/public/daily/2026-10-24/assets/openalex--W7223183228/preview.png"
+    },
+    {
+      "candidate_id": "openalex--W7223199926",
+      "path": "docs/public/daily/2026-10-24/assets/openalex--W7223199926/preview.svg"
+    },
+    {
+      "candidate_id": "openalex--W4416553458",
+      "path": "docs/public/daily/2026-10-24/assets/openalex--W4416553458/preview.png"
+    },
+    {
+      "candidate_id": "openalex--W7223039795",
+      "path": "docs/public/daily/2026-10-24/assets/openalex--W7223039795/preview.png"
+    },
+    {
+      "candidate_id": "openalex--W7222966169",
+      "path": "docs/public/daily/2026-10-24/assets/openalex--W7222966169/preview.png"
+    },
+    {
+      "candidate_id": "news--100665f54b90",
+      "path": "docs/public/daily/2026-10-24/assets/news--100665f54b90/preview.png"
+    }
+  ]
+}
