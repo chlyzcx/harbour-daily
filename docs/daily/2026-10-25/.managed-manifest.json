@@ -1,0 +1,109 @@
+{
+  "schema_version": 2,
+  "cycle_id": "daily-2026-10-25",
+  "display_date": "2026-10-25",
+  "articles": [
+    {
+      "candidate_id": "openalex--W7223382467",
+      "category": "Paper",
+      "rank": 1,
+      "path": "docs/daily/2026-10-25/paper/01-a-cost-aware-minority-class-evaluation-of-adversar.md"
+    },
+    {
+      "candidate_id": "openalex--W7204776756",
+      "category": "Paper",
+      "rank": 2,
+      "path": "docs/daily/2026-10-25/paper/02-mother-japanese-house-bats-show-stronger-heart-rat.md"
+    },
+    {
+      "candidate_id": "openalex--W7223314931",
+      "category": "Paper",
+      "rank": 3,
+      "path": "docs/daily/2026-10-25/paper/03-observations-of-fish-behavior-in-the-vicinity-of-a.md"
+    },
+    {
+      "candidate_id": "openalex--W7223321632",
+      "category": "Paper",
+      "rank": 4,
+      "path": "docs/daily/2026-10-25/paper/04-ai-bias-in-special-education.md"
+    },
+    {
+      "candidate_id": "openalex--W7223345651",
+      "category": "Paper",
+      "rank": 5,
+      "path": "docs/daily/2026-10-25/paper/05-understanding-size-bias-in-electrofishing-samples-.md"
+    },
+    {
+      "candidate_id": "openalex--W7223348540",
+      "category": "Paper",
+      "rank": 6,
+      "path": "docs/daily/2026-10-25/paper/06-computational-model-of-multi-source-data-fusion-fo.md"
+    },
+    {
+      "candidate_id": "openalex--W7223241681",
+      "category": "Paper",
+      "rank": 7,
+      "path": "docs/daily/2026-10-25/paper/07-superimposed-multi-frequency-fsk-for-laser-generat.md"
+    },
+    {
+      "candidate_id": "openalex--W7223320271",
+      "category": "Paper",
+      "rank": 8,
+      "path": "docs/daily/2026-10-25/paper/08-from-signals-to-evidence-interpretable-underwater-.md"
+    },
+    {
+      "candidate_id": "openalex--W7223333821",
+      "category": "Paper",
+      "rank": 9,
+      "path": "docs/daily/2026-10-25/paper/09-self-supervised-multibeam-sonar-restoration-via-co.md"
+    },
+    {
+      "candidate_id": "openalex--W7223361755",
+      "category": "Paper",
+      "rank": 10,
+      "path": "docs/daily/2026-10-25/paper/10-data-void-exploits-in-web-searching-llms.md"
+    }
+  ],
+  "assets": [
+    {
+      "candidate_id": "openalex--W7223382467",
+      "path": "docs/public/daily/2026-10-25/assets/openalex--W7223382467/preview.png"
+    },
+    {
+      "candidate_id": "openalex--W7204776756",
+      "path": "docs/public/daily/2026-10-25/assets/openalex--W7204776756/preview.png"
+    },
+    {
+      "candidate_id": "openalex--W7223314931",
+      "path": "docs/public/daily/2026-10-25/assets/openalex--W7223314931/preview.svg"
+    },
+    {
+      "candidate_id": "openalex--W7223321632",
+      "path": "docs/public/daily/2026-10-25/assets/openalex--W7223321632/preview.png"
+    },
+    {
+      "candidate_id": "openalex--W7223345651",
+      "path": "docs/public/daily/2026-10-25/assets/openalex--W7223345651/preview.svg"
+    },
+    {
+      "candidate_id": "openalex--W7223348540",
+      "path": "docs/public/daily/2026-10-25/assets/openalex--W7223348540/preview.png"
+    },
+    {
+      "candidate_id": "openalex--W7223241681",
+      "path": "docs/public/daily/2026-10-25/assets/openalex--W7223241681/preview.svg"
+    },
+    {
+      "candidate_id": "openalex--W7223320271",
+      "path": "docs/public/daily/2026-10-25/assets/openalex--W7223320271/preview.png"
+    },
+    {
+      "candidate_id": "openalex--W7223333821",
+      "path": "docs/public/daily/2026-10-25/assets/openalex--W7223333821/preview.png"
+    },
+    {
+      "candidate_id": "openalex--W7223361755",
+      "path": "docs/public/daily/2026-10-25/assets/openalex--W7223361755/preview.png"
+    }
+  ]
+}
