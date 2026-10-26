@@ -1,0 +1,109 @@
+{
+  "schema_version": 2,
+  "cycle_id": "daily-2026-10-26",
+  "display_date": "2026-10-26",
+  "articles": [
+    {
+      "candidate_id": "openalex--W7223460167",
+      "category": "Paper",
+      "rank": 1,
+      "path": "docs/daily/2026-10-26/paper/01-diagnosing-packet-reliability-limits-in-a-surface-.md"
+    },
+    {
+      "candidate_id": "s2--2dd07b5367edcad19d94f435185b6ee1cc05c51b",
+      "category": "Paper",
+      "rank": 2,
+      "path": "docs/daily/2026-10-26/paper/02-a-direction-aware-structured-inversion-method-for-.md"
+    },
+    {
+      "candidate_id": "openalex--W7223465789",
+      "category": "Paper",
+      "rank": 3,
+      "path": "docs/daily/2026-10-26/paper/03-geometry-guided-controllable-target-inpainting-for.md"
+    },
+    {
+      "candidate_id": "s2--10d29fe609e71e36eb21280fb4fc1451286abc49",
+      "category": "Paper",
+      "rank": 4,
+      "path": "docs/daily/2026-10-26/paper/04-underwater-mine-detection-using-machine-learningba.md"
+    },
+    {
+      "candidate_id": "s2--983a3863d35f4abb070a0c19fd3869e5ed0424c7",
+      "category": "Paper",
+      "rank": 5,
+      "path": "docs/daily/2026-10-26/paper/05-a-fully-complex-valued-underwater-acoustic-signal-.md"
+    },
+    {
+      "candidate_id": "s2--4dd289bc57c7f439e9d8d5dfd9473542cc9b3e02",
+      "category": "Paper",
+      "rank": 6,
+      "path": "docs/daily/2026-10-26/paper/06-comparison-of-description-methods-of-the-parametri.md"
+    },
+    {
+      "candidate_id": "s2--3c48b6cb4ed9f46b83ceb9fddda41e6cf2072078",
+      "category": "Paper",
+      "rank": 7,
+      "path": "docs/daily/2026-10-26/paper/07-adaptive-space-frequency-basis-selection-methods-f.md"
+    },
+    {
+      "candidate_id": "s2--8a09bc1ea125702800cc59552e9349965e1313df",
+      "category": "Paper",
+      "rank": 8,
+      "path": "docs/daily/2026-10-26/paper/08-sonar-based-surface-target-classification-for-mine.md"
+    },
+    {
+      "candidate_id": "openalex--W7128062991",
+      "category": "Paper",
+      "rank": 9,
+      "path": "docs/daily/2026-10-26/paper/09-photonic-neuromorphic-processing-with-coupled-spik.md"
+    },
+    {
+      "candidate_id": "openalex--W7223465167",
+      "category": "Paper",
+      "rank": 10,
+      "path": "docs/daily/2026-10-26/paper/10-a-review-of-submarine-landslides-in-the-ischia-isl.md"
+    }
+  ],
+  "assets": [
+    {
+      "candidate_id": "openalex--W7223460167",
+      "path": "docs/public/daily/2026-10-26/assets/openalex--W7223460167/preview.png"
+    },
+    {
+      "candidate_id": "s2--2dd07b5367edcad19d94f435185b6ee1cc05c51b",
+      "path": "docs/public/daily/2026-10-26/assets/s2--2dd07b5367edcad19d94f435185b6ee1cc05c51b/preview.svg"
+    },
+    {
+      "candidate_id": "openalex--W7223465789",
+      "path": "docs/public/daily/2026-10-26/assets/openalex--W7223465789/preview.png"
+    },
+    {
+      "candidate_id": "s2--10d29fe609e71e36eb21280fb4fc1451286abc49",
+      "path": "docs/public/daily/2026-10-26/assets/s2--10d29fe609e71e36eb21280fb4fc1451286abc49/preview.png"
+    },
+    {
+      "candidate_id": "s2--983a3863d35f4abb070a0c19fd3869e5ed0424c7",
+      "path": "docs/public/daily/2026-10-26/assets/s2--983a3863d35f4abb070a0c19fd3869e5ed0424c7/preview.svg"
+    },
+    {
+      "candidate_id": "s2--4dd289bc57c7f439e9d8d5dfd9473542cc9b3e02",
+      "path": "docs/public/daily/2026-10-26/assets/s2--4dd289bc57c7f439e9d8d5dfd9473542cc9b3e02/preview.png"
+    },
+    {
+      "candidate_id": "s2--3c48b6cb4ed9f46b83ceb9fddda41e6cf2072078",
+      "path": "docs/public/daily/2026-10-26/assets/s2--3c48b6cb4ed9f46b83ceb9fddda41e6cf2072078/preview.svg"
+    },
+    {
+      "candidate_id": "s2--8a09bc1ea125702800cc59552e9349965e1313df",
+      "path": "docs/public/daily/2026-10-26/assets/s2--8a09bc1ea125702800cc59552e9349965e1313df/preview.svg"
+    },
+    {
+      "candidate_id": "openalex--W7128062991",
+      "path": "docs/public/daily/2026-10-26/assets/openalex--W7128062991/preview.png"
+    },
+    {
+      "candidate_id": "openalex--W7223465167",
+      "path": "docs/public/daily/2026-10-26/assets/openalex--W7223465167/preview.png"
+    }
+  ]
+}
