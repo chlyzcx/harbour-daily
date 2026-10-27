@@ -1,0 +1,119 @@
+{
+  "schema_version": 2,
+  "cycle_id": "daily-2026-10-27",
+  "display_date": "2026-10-27",
+  "articles": [
+    {
+      "candidate_id": "arxiv--2610.33080-1",
+      "category": "Paper",
+      "rank": 1,
+      "path": "docs/daily/2026-10-27/paper/01-marineset-large-scale-underwater-acoustic-data-cur.md"
+    },
+    {
+      "candidate_id": "arxiv--2610.33068-1",
+      "category": "Paper",
+      "rank": 2,
+      "path": "docs/daily/2026-10-27/paper/02-do-bioacoustic-foundation-models-hear-through-the-.md"
+    },
+    {
+      "candidate_id": "openalex--W7223303288",
+      "category": "Paper",
+      "rank": 3,
+      "path": "docs/daily/2026-10-27/paper/03-bats-could-learn-three-dimensional-echolocation-us.md"
+    },
+    {
+      "candidate_id": "openalex--W7223363502",
+      "category": "Paper",
+      "rank": 4,
+      "path": "docs/daily/2026-10-27/paper/04-can-an-array-of-magnetometers-replace-a-dvl---a-cr.md"
+    },
+    {
+      "candidate_id": "openalex--W7219837670",
+      "category": "Paper",
+      "rank": 5,
+      "path": "docs/daily/2026-10-27/paper/05-boundary-element-method-for-underwater-acoustic-pr.md"
+    },
+    {
+      "candidate_id": "openalex--W7223315525",
+      "category": "Paper",
+      "rank": 6,
+      "path": "docs/daily/2026-10-27/paper/06-deep-learning-for-denoising-3d-sonar-point-clouds-.md"
+    },
+    {
+      "candidate_id": "crossref--10.1017-s026357472610407x",
+      "category": "Paper",
+      "rank": 7,
+      "path": "docs/daily/2026-10-27/paper/07-a-scheduled-value-reweighting-network-for-reinforc.md"
+    },
+    {
+      "candidate_id": "crossref--10.3390-engproc2026163001",
+      "category": "Paper",
+      "rank": 8,
+      "path": "docs/daily/2026-10-27/paper/08-energy-aware-fuzzy-clustering-and-multi-hop-relay-.md"
+    },
+    {
+      "candidate_id": "crossref--10.1088-1361-651x-aeadb7",
+      "category": "Paper",
+      "rank": 9,
+      "path": "docs/daily/2026-10-27/paper/09-numerical-modeling-of-laser-induced-acoustic-waves.md"
+    },
+    {
+      "candidate_id": "crossref--10.1021-acsphotonics.6c01626",
+      "category": "Paper",
+      "rank": 10,
+      "path": "docs/daily/2026-10-27/paper/10-331-nm-wide-tuning-high-power-blue-green-semicondu.md"
+    },
+    {
+      "candidate_id": "news--918b546a59aa",
+      "category": "News",
+      "rank": 11,
+      "path": "docs/daily/2026-10-27/news/11-exail-unveils-marins-m1-compact-ins-for-smaller-na.md"
+    }
+  ],
+  "assets": [
+    {
+      "candidate_id": "arxiv--2610.33080-1",
+      "path": "docs/public/daily/2026-10-27/assets/arxiv--2610.33080-1/preview.png"
+    },
+    {
+      "candidate_id": "arxiv--2610.33068-1",
+      "path": "docs/public/daily/2026-10-27/assets/arxiv--2610.33068-1/preview.png"
+    },
+    {
+      "candidate_id": "openalex--W7223303288",
+      "path": "docs/public/daily/2026-10-27/assets/openalex--W7223303288/preview.png"
+    },
+    {
+      "candidate_id": "openalex--W7223363502",
+      "path": "docs/public/daily/2026-10-27/assets/openalex--W7223363502/preview.png"
+    },
+    {
+      "candidate_id": "openalex--W7219837670",
+      "path": "docs/public/daily/2026-10-27/assets/openalex--W7219837670/preview.png"
+    },
+    {
+      "candidate_id": "openalex--W7223315525",
+      "path": "docs/public/daily/2026-10-27/assets/openalex--W7223315525/preview.png"
+    },
+    {
+      "candidate_id": "crossref--10.1017-s026357472610407x",
+      "path": "docs/public/daily/2026-10-27/assets/crossref--10.1017-s026357472610407x/preview.png"
+    },
+    {
+      "candidate_id": "crossref--10.3390-engproc2026163001",
+      "path": "docs/public/daily/2026-10-27/assets/crossref--10.3390-engproc2026163001/preview.svg"
+    },
+    {
+      "candidate_id": "crossref--10.1088-1361-651x-aeadb7",
+      "path": "docs/public/daily/2026-10-27/assets/crossref--10.1088-1361-651x-aeadb7/preview.svg"
+    },
+    {
+      "candidate_id": "crossref--10.1021-acsphotonics.6c01626",
+      "path": "docs/public/daily/2026-10-27/assets/crossref--10.1021-acsphotonics.6c01626/preview.svg"
+    },
+    {
+      "candidate_id": "news--918b546a59aa",
+      "path": "docs/public/daily/2026-10-27/assets/news--918b546a59aa/preview.png"
+    }
+  ]
+}
