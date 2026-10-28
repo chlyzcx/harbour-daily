@@ -1,0 +1,109 @@
+{
+  "schema_version": 2,
+  "cycle_id": "daily-2026-10-28",
+  "display_date": "2026-10-28",
+  "articles": [
+    {
+      "candidate_id": "openalex--W7223691104",
+      "category": "Paper",
+      "rank": 1,
+      "path": "docs/daily/2026-10-28/paper/01-equivalent-underwater-acoustic-source-reconstructi.md"
+    },
+    {
+      "candidate_id": "openalex--W7223670514",
+      "category": "Paper",
+      "rank": 2,
+      "path": "docs/daily/2026-10-28/paper/02-design-and-feasibility-assessment-of-a-passive-und.md"
+    },
+    {
+      "candidate_id": "openalex--W7223664235",
+      "category": "Paper",
+      "rank": 3,
+      "path": "docs/daily/2026-10-28/paper/03-quality-understandability-and-actionability-of-lar.md"
+    },
+    {
+      "candidate_id": "openalex--W7223703488",
+      "category": "Paper",
+      "rank": 4,
+      "path": "docs/daily/2026-10-28/paper/04-environment-adaptive-acousticoptical-sensing-for-f.md"
+    },
+    {
+      "candidate_id": "openalex--W7223559594",
+      "category": "Paper",
+      "rank": 5,
+      "path": "docs/daily/2026-10-28/paper/05-underwater-sounds-produced-by-fish-a-biological-an.md"
+    },
+    {
+      "candidate_id": "openalex--W7213585139",
+      "category": "Paper",
+      "rank": 6,
+      "path": "docs/daily/2026-10-28/paper/06-a-seafloor-dataset-for-bahía-almirante-panama-sing.md"
+    },
+    {
+      "candidate_id": "openalex--W7223574478",
+      "category": "Paper",
+      "rank": 7,
+      "path": "docs/daily/2026-10-28/paper/07-water-filled-acoustic-impedance-tubes-and-two-laye.md"
+    },
+    {
+      "candidate_id": "crossref--10.3390-app162110637",
+      "category": "Paper",
+      "rank": 8,
+      "path": "docs/daily/2026-10-28/paper/08-long-range-underwater-acoustic-communication-perfo.md"
+    },
+    {
+      "candidate_id": "crossref--10.1177-09266801261503889",
+      "category": "Paper",
+      "rank": 9,
+      "path": "docs/daily/2026-10-28/paper/09-development-of-an-energy-efficient-data-aggregatio.md"
+    },
+    {
+      "candidate_id": "crossref--10.1038-s41598-026-76549-y",
+      "category": "Paper",
+      "rank": 10,
+      "path": "docs/daily/2026-10-28/paper/10-performance-analysis-of-underwater-wireless-optica.md"
+    }
+  ],
+  "assets": [
+    {
+      "candidate_id": "openalex--W7223691104",
+      "path": "docs/public/daily/2026-10-28/assets/openalex--W7223691104/preview.png"
+    },
+    {
+      "candidate_id": "openalex--W7223670514",
+      "path": "docs/public/daily/2026-10-28/assets/openalex--W7223670514/preview.png"
+    },
+    {
+      "candidate_id": "openalex--W7223664235",
+      "path": "docs/public/daily/2026-10-28/assets/openalex--W7223664235/preview.png"
+    },
+    {
+      "candidate_id": "openalex--W7223703488",
+      "path": "docs/public/daily/2026-10-28/assets/openalex--W7223703488/preview.svg"
+    },
+    {
+      "candidate_id": "openalex--W7223559594",
+      "path": "docs/public/daily/2026-10-28/assets/openalex--W7223559594/preview.svg"
+    },
+    {
+      "candidate_id": "openalex--W7213585139",
+      "path": "docs/public/daily/2026-10-28/assets/openalex--W7213585139/preview.png"
+    },
+    {
+      "candidate_id": "openalex--W7223574478",
+      "path": "docs/public/daily/2026-10-28/assets/openalex--W7223574478/preview.svg"
+    },
+    {
+      "candidate_id": "crossref--10.3390-app162110637",
+      "path": "docs/public/daily/2026-10-28/assets/crossref--10.3390-app162110637/preview.svg"
+    },
+    {
+      "candidate_id": "crossref--10.1177-09266801261503889",
+      "path": "docs/public/daily/2026-10-28/assets/crossref--10.1177-09266801261503889/preview.svg"
+    },
+    {
+      "candidate_id": "crossref--10.1038-s41598-026-76549-y",
+      "path": "docs/public/daily/2026-10-28/assets/crossref--10.1038-s41598-026-76549-y/preview.svg"
+    }
+  ]
+}

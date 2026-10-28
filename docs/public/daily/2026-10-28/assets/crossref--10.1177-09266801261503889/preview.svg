@@ -1,0 +1,72 @@
+<svg width="400" height="300" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#431407;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#9a3412;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="400" height="300" fill="url(#grad)"/>
+
+  <!-- Grid pattern -->
+  <g opacity="0.1">
+    <line x1="0" y1="75" x2="400" y2="75" stroke="#fb923c" stroke-width="1"/>
+    <line x1="0" y1="150" x2="400" y2="150" stroke="#fb923c" stroke-width="1"/>
+    <line x1="0" y1="225" x2="400" y2="225" stroke="#fb923c" stroke-width="1"/>
+    <line x1="100" y1="0" x2="100" y2="300" stroke="#fb923c" stroke-width="1"/>
+    <line x1="200" y1="0" x2="200" y2="300" stroke="#fb923c" stroke-width="1"/>
+    <line x1="300" y1="0" x2="300" y2="300" stroke="#fb923c" stroke-width="1"/>
+  </g>
+
+  <!-- Waveform decoration (deterministic per title) -->
+  <g>
+  <polyline points="0,208.1 8,208.0 16,207.6 24,207.8 32,209.3 40,212.4 48,216.4 56,220.4 64,223.3 72,224.1 80,222.5 88,218.6 96,213.3 104,207.9 112,203.4 120,200.6 128,199.5 136,199.7 144,200.3 152,200.3 160,199.0 168,196.3 176,192.7 184,189.2 192,186.9 200,186.8 208,189.1 216,193.5 224,199.1 232,204.7 240,209.2 248,212.0 256,212.8 264,212.4 272,211.5 280,211.3 288,212.3 296,214.7 304,217.8 312,220.7 320,222.4 328,221.9 336,219.0 344,214.2 352,208.3 360,202.5 368,198.1 376,195.6 384,195.0 392,195.8 400,196.9" fill="none" stroke="#fb923c" stroke-width="1.5" opacity="0.35"/>
+  <polyline points="0,224.0 8,217.5 16,211.8 24,208.3 32,207.8 40,210.0 48,214.2 56,218.9 64,222.7 72,224.8 80,225.0 88,223.8 96,222.4 104,222.3 112,224.3 120,228.8 128,235.1 136,242.2 144,248.5 152,252.6 160,253.9 168,252.5 176,249.3 184,245.7 192,243.0 200,242.0 208,242.9 216,244.9 224,246.9 232,247.4 240,245.4 248,240.9 256,234.3 264,226.9 272,220.4 280,215.8 288,214.0 296,214.7 304,217.0 312,219.6 320,221.1 328,220.9 336,218.8 344,215.8 352,213.1 360,212.0 368,213.5 376,217.8 384,224.3 392,231.5 400,238.1" fill="none" stroke="#fb923c" stroke-width="1.5" opacity="0.22"/>
+  <polyline points="0,284.3 8,279.8 16,276.2 24,274.8 32,275.9 40,279.0 48,282.4 56,284.6 64,284.1 72,280.3 80,273.7 88,265.6 96,257.8 104,251.9 112,249.0 120,249.0 128,250.9 136,253.3 144,254.3 152,253.0 160,249.1 168,243.4 176,237.4 184,232.9 192,231.3 200,233.1 208,237.9 216,244.4 224,250.7 232,255.3 240,257.3 248,256.8 256,254.8 264,253.0 272,252.8 280,255.5 288,261.1 296,268.6 304,276.6 312,283.1 320,286.8 328,287.3 336,284.8 344,280.9 352,277.3 360,275.3 368,275.9 376,278.7 384,282.6 392,286.0 400,287.3" fill="none" stroke="#fb923c" stroke-width="1.5" opacity="0.13"/>
+  </g>
+
+  <!-- Header -->
+  <text x="20" y="40" font-family="Inter, sans-serif" font-size="14" fill="#fb923c" font-weight="600">
+    UWA / 10-28
+  </text>
+
+  <!-- Keyword badge -->
+  <rect x="20" y="60" width="52" height="28" rx="14" fill="#fb923c" opacity="0.2"/>
+  <text x="30" y="79" font-family="Inter, sans-serif" font-size="13" fill="#fb923c" font-weight="500">
+    UWSN
+  </text>
+
+  <!-- Title -->
+  <foreignObject x="20" y="110" width="360" height="120">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="
+      font-family: Inter, sans-serif;
+      font-size: 18px;
+      font-weight: 600;
+      color: #e2e8f0;
+      line-height: 1.4;
+      overflow: hidden;
+      display: -webkit-box;
+      -webkit-line-clamp: 4;
+      -webkit-box-orient: vertical;
+    ">
+      Development of an energy efficient data aggregation techn...
+    </div>
+  </foreignObject>
+
+  <!-- Author -->
+  <text x="20" y="250" font-family="Inter, sans-serif" font-size="13" fill="#94a3b8">
+    Sunil K Nagpal
+  </text>
+
+  <!-- Footer -->
+  <text x="20" y="275" font-family="Inter, sans-serif" font-size="11" fill="#64748b">
+    Journal of High Speed Networks
+  </text>
+
+  <!-- Score badge -->
+  <circle cx="360" cy="40" r="24" fill="#fb923c" opacity="0.2"/>
+  <text x="360" y="46" font-family="Inter, sans-serif" font-size="14" fill="#fb923c" font-weight="700" text-anchor="middle">
+    55
+  </text>
+</svg>
