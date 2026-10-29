@@ -1,0 +1,119 @@
+{
+  "schema_version": 2,
+  "cycle_id": "daily-2026-10-29",
+  "display_date": "2026-10-29",
+  "articles": [
+    {
+      "candidate_id": "openalex--W7223978117",
+      "category": "Paper",
+      "rank": 1,
+      "path": "docs/daily/2026-10-29/paper/01-adaptive-papr-reduction-using-tone-reservation-and.md"
+    },
+    {
+      "candidate_id": "openalex--W7223894481",
+      "category": "Paper",
+      "rank": 2,
+      "path": "docs/daily/2026-10-29/paper/02-ontology-supported-global-path-planning-and-real-t.md"
+    },
+    {
+      "candidate_id": "openalex--W7223812005",
+      "category": "Paper",
+      "rank": 3,
+      "path": "docs/daily/2026-10-29/paper/03-groundtruther-a-statistical-approach-to-accounting.md"
+    },
+    {
+      "candidate_id": "openalex--W7223999758",
+      "category": "Paper",
+      "rank": 4,
+      "path": "docs/daily/2026-10-29/paper/04-revealing-imaging-characteristics-of-thermal-wakes.md"
+    },
+    {
+      "candidate_id": "crossref--10.1515-joc-2026-0423",
+      "category": "Paper",
+      "rank": 5,
+      "path": "docs/daily/2026-10-29/paper/05-multiscale-context-aided-neural-detection-for-unde.md"
+    },
+    {
+      "candidate_id": "crossref--10.3390-molecules31213896",
+      "category": "Paper",
+      "rank": 6,
+      "path": "docs/daily/2026-10-29/paper/06-a-durable-hierarchical-znoepoxy-superhydrophobic-c.md"
+    },
+    {
+      "candidate_id": "crossref--10.1088-2631-8695-aeb50c",
+      "category": "Paper",
+      "rank": 7,
+      "path": "docs/daily/2026-10-29/paper/07-a-potential-game-based-self-organizing-underwater-.md"
+    },
+    {
+      "candidate_id": "crossref--10.1002-advs.78325",
+      "category": "Paper",
+      "rank": 8,
+      "path": "docs/daily/2026-10-29/paper/08-an-environmental-stable-ionogelbased-smart-glove-s.md"
+    },
+    {
+      "candidate_id": "crossref--10.3390-jmse14212022",
+      "category": "Paper",
+      "rank": 9,
+      "path": "docs/daily/2026-10-29/paper/09-evaluating-dataset-aware-masked-supervision-for-jo.md"
+    },
+    {
+      "candidate_id": "openalex--W7223563642",
+      "category": "Paper",
+      "rank": 10,
+      "path": "docs/daily/2026-10-29/paper/10-sequential-channel-estimation-and-data-detection-m.md"
+    },
+    {
+      "candidate_id": "news--4b6aaac41be0",
+      "category": "News",
+      "rank": 11,
+      "path": "docs/daily/2026-10-29/news/11-水声科普进千班青岛科普实践中心正式启动.md"
+    }
+  ],
+  "assets": [
+    {
+      "candidate_id": "openalex--W7223978117",
+      "path": "docs/public/daily/2026-10-29/assets/openalex--W7223978117/preview.svg"
+    },
+    {
+      "candidate_id": "openalex--W7223894481",
+      "path": "docs/public/daily/2026-10-29/assets/openalex--W7223894481/preview.svg"
+    },
+    {
+      "candidate_id": "openalex--W7223812005",
+      "path": "docs/public/daily/2026-10-29/assets/openalex--W7223812005/preview.svg"
+    },
+    {
+      "candidate_id": "openalex--W7223999758",
+      "path": "docs/public/daily/2026-10-29/assets/openalex--W7223999758/preview.png"
+    },
+    {
+      "candidate_id": "crossref--10.1515-joc-2026-0423",
+      "path": "docs/public/daily/2026-10-29/assets/crossref--10.1515-joc-2026-0423/preview.svg"
+    },
+    {
+      "candidate_id": "crossref--10.3390-molecules31213896",
+      "path": "docs/public/daily/2026-10-29/assets/crossref--10.3390-molecules31213896/preview.svg"
+    },
+    {
+      "candidate_id": "crossref--10.1088-2631-8695-aeb50c",
+      "path": "docs/public/daily/2026-10-29/assets/crossref--10.1088-2631-8695-aeb50c/preview.svg"
+    },
+    {
+      "candidate_id": "crossref--10.1002-advs.78325",
+      "path": "docs/public/daily/2026-10-29/assets/crossref--10.1002-advs.78325/preview.svg"
+    },
+    {
+      "candidate_id": "crossref--10.3390-jmse14212022",
+      "path": "docs/public/daily/2026-10-29/assets/crossref--10.3390-jmse14212022/preview.png"
+    },
+    {
+      "candidate_id": "openalex--W7223563642",
+      "path": "docs/public/daily/2026-10-29/assets/openalex--W7223563642/preview.png"
+    },
+    {
+      "candidate_id": "news--4b6aaac41be0",
+      "path": "docs/public/daily/2026-10-29/assets/news--4b6aaac41be0/preview.svg"
+    }
+  ]
+}
