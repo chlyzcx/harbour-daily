@@ -1,0 +1,149 @@
+{
+  "schema_version": 2,
+  "cycle_id": "daily-2026-10-31",
+  "display_date": "2026-10-31",
+  "articles": [
+    {
+      "candidate_id": "openalex--W7224607143",
+      "category": "Paper",
+      "rank": 1,
+      "path": "docs/daily/2026-10-31/paper/01-coverage-and-connectivity-aware-node-deployment-us.md"
+    },
+    {
+      "candidate_id": "openalex--W7116092847",
+      "category": "Paper",
+      "rank": 2,
+      "path": "docs/daily/2026-10-31/paper/02-improving-underwater-acoustic-classification-throu.md"
+    },
+    {
+      "candidate_id": "openalex--W7224131476",
+      "category": "Paper",
+      "rank": 3,
+      "path": "docs/daily/2026-10-31/paper/03-dual-stream-graph-memory-networks-with-meta-learni.md"
+    },
+    {
+      "candidate_id": "openalex--W7223667248",
+      "category": "Paper",
+      "rank": 4,
+      "path": "docs/daily/2026-10-31/paper/04-mobility-aware-and-multipath-resilient-node-locali.md"
+    },
+    {
+      "candidate_id": "openalex--W7224137929",
+      "category": "Paper",
+      "rank": 5,
+      "path": "docs/daily/2026-10-31/paper/05-conditional-diffusion-generation-of-dvl-and-inerti.md"
+    },
+    {
+      "candidate_id": "openalex--W7223571652",
+      "category": "Paper",
+      "rank": 6,
+      "path": "docs/daily/2026-10-31/paper/06-elastic-net-regularized-low-rank-sparse-deconvolut.md"
+    },
+    {
+      "candidate_id": "openalex--W7224184965",
+      "category": "Paper",
+      "rank": 7,
+      "path": "docs/daily/2026-10-31/paper/07-ground-truthing-hydrographically-identified-wreck-.md"
+    },
+    {
+      "candidate_id": "openalex--W7224580512",
+      "category": "Paper",
+      "rank": 8,
+      "path": "docs/daily/2026-10-31/paper/08-diabench-a-benchmarking-framework-to-evaluate-the-.md"
+    },
+    {
+      "candidate_id": "openalex--W7224096430",
+      "category": "Paper",
+      "rank": 9,
+      "path": "docs/daily/2026-10-31/paper/09-investigating-the-spatial-distribution-of-a-marine.md"
+    },
+    {
+      "candidate_id": "openalex--W7224114955",
+      "category": "Paper",
+      "rank": 10,
+      "path": "docs/daily/2026-10-31/paper/10-a-review-of-spatial-parameter-estimation-technique.md"
+    },
+    {
+      "candidate_id": "news--4419a2a61c7c",
+      "category": "News",
+      "rank": 11,
+      "path": "docs/daily/2026-10-31/news/11-teledyne-marine-launches-portable-variant-of-seaba.md"
+    },
+    {
+      "candidate_id": "news--b1d7057cd880",
+      "category": "News",
+      "rank": 12,
+      "path": "docs/daily/2026-10-31/news/12-kongsberg-secures-us-government-contract-for-under.md"
+    },
+    {
+      "candidate_id": "news--e64a3ef65a56",
+      "category": "News",
+      "rank": 13,
+      "path": "docs/daily/2026-10-31/news/13-french-navy-and-dga-evaluate-exail-drix-o-16-usv-i.md"
+    },
+    {
+      "candidate_id": "news--53293fad648e",
+      "category": "News",
+      "rank": 14,
+      "path": "docs/daily/2026-10-31/news/14-datum-lüfer-reconnaissance--attack-uuv-showcased-i.md"
+    }
+  ],
+  "assets": [
+    {
+      "candidate_id": "openalex--W7224607143",
+      "path": "docs/public/daily/2026-10-31/assets/openalex--W7224607143/preview.png"
+    },
+    {
+      "candidate_id": "openalex--W7116092847",
+      "path": "docs/public/daily/2026-10-31/assets/openalex--W7116092847/preview.png"
+    },
+    {
+      "candidate_id": "openalex--W7224131476",
+      "path": "docs/public/daily/2026-10-31/assets/openalex--W7224131476/preview.png"
+    },
+    {
+      "candidate_id": "openalex--W7223667248",
+      "path": "docs/public/daily/2026-10-31/assets/openalex--W7223667248/preview.png"
+    },
+    {
+      "candidate_id": "openalex--W7224137929",
+      "path": "docs/public/daily/2026-10-31/assets/openalex--W7224137929/preview.png"
+    },
+    {
+      "candidate_id": "openalex--W7223571652",
+      "path": "docs/public/daily/2026-10-31/assets/openalex--W7223571652/preview.png"
+    },
+    {
+      "candidate_id": "openalex--W7224184965",
+      "path": "docs/public/daily/2026-10-31/assets/openalex--W7224184965/preview.svg"
+    },
+    {
+      "candidate_id": "openalex--W7224580512",
+      "path": "docs/public/daily/2026-10-31/assets/openalex--W7224580512/preview.svg"
+    },
+    {
+      "candidate_id": "openalex--W7224096430",
+      "path": "docs/public/daily/2026-10-31/assets/openalex--W7224096430/preview.png"
+    },
+    {
+      "candidate_id": "openalex--W7224114955",
+      "path": "docs/public/daily/2026-10-31/assets/openalex--W7224114955/preview.svg"
+    },
+    {
+      "candidate_id": "news--4419a2a61c7c",
+      "path": "docs/public/daily/2026-10-31/assets/news--4419a2a61c7c/preview.png"
+    },
+    {
+      "candidate_id": "news--b1d7057cd880",
+      "path": "docs/public/daily/2026-10-31/assets/news--b1d7057cd880/preview.png"
+    },
+    {
+      "candidate_id": "news--e64a3ef65a56",
+      "path": "docs/public/daily/2026-10-31/assets/news--e64a3ef65a56/preview.png"
+    },
+    {
+      "candidate_id": "news--53293fad648e",
+      "path": "docs/public/daily/2026-10-31/assets/news--53293fad648e/preview.png"
+    }
+  ]
+}
