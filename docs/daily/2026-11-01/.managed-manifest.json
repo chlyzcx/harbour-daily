@@ -1,0 +1,109 @@
+{
+  "schema_version": 2,
+  "cycle_id": "daily-2026-11-01",
+  "display_date": "2026-11-01",
+  "articles": [
+    {
+      "candidate_id": "openalex--W7224919307",
+      "category": "Paper",
+      "rank": 1,
+      "path": "docs/daily/2026-11-01/paper/01-sonar2dgs-differentiable-2d-gaussian-splatting-for.md"
+    },
+    {
+      "candidate_id": "openalex--W7224874054",
+      "category": "Paper",
+      "rank": 2,
+      "path": "docs/daily/2026-11-01/paper/02-underwater-acoustic-signal-enhancement-for-the-fib.md"
+    },
+    {
+      "candidate_id": "openalex--W7224818677",
+      "category": "Paper",
+      "rank": 3,
+      "path": "docs/daily/2026-11-01/paper/03-confidence-inversion-in-open-set-underwater-acoust.md"
+    },
+    {
+      "candidate_id": "s2--6722bde176ba954ba0a34e7429dc573b0a29b6af",
+      "category": "Paper",
+      "rank": 4,
+      "path": "docs/daily/2026-11-01/paper/04-demonstrating-the-feasibility-of-a-mirror-ocean-ac.md"
+    },
+    {
+      "candidate_id": "openalex--W7224810069",
+      "category": "Paper",
+      "rank": 5,
+      "path": "docs/daily/2026-11-01/paper/05-exploring-qos-metrics-in-sdn-based-iout-a-comparat.md"
+    },
+    {
+      "candidate_id": "openalex--W7224749276",
+      "category": "Paper",
+      "rank": 6,
+      "path": "docs/daily/2026-11-01/paper/06-lightweight-underwater-acoustic-vessel-classificat.md"
+    },
+    {
+      "candidate_id": "openalex--W7224762780",
+      "category": "Paper",
+      "rank": 7,
+      "path": "docs/daily/2026-11-01/paper/07-sensing-fast-and-distant-targets-in-overspread-cha.md"
+    },
+    {
+      "candidate_id": "openalex--W7224133539",
+      "category": "Paper",
+      "rank": 8,
+      "path": "docs/daily/2026-11-01/paper/08-sound-speed-inversion-and-lfm-layer-drift-discrimi.md"
+    },
+    {
+      "candidate_id": "openalex--W7224436027",
+      "category": "Paper",
+      "rank": 9,
+      "path": "docs/daily/2026-11-01/paper/09-level-4-autonomous-ship-situational-awareness-syst.md"
+    },
+    {
+      "candidate_id": "openalex--W7224844184",
+      "category": "Paper",
+      "rank": 10,
+      "path": "docs/daily/2026-11-01/paper/10-universal-short-time-fourier-transform-data-adapti.md"
+    }
+  ],
+  "assets": [
+    {
+      "candidate_id": "openalex--W7224919307",
+      "path": "docs/public/daily/2026-11-01/assets/openalex--W7224919307/preview.png"
+    },
+    {
+      "candidate_id": "openalex--W7224874054",
+      "path": "docs/public/daily/2026-11-01/assets/openalex--W7224874054/preview.png"
+    },
+    {
+      "candidate_id": "openalex--W7224818677",
+      "path": "docs/public/daily/2026-11-01/assets/openalex--W7224818677/preview.svg"
+    },
+    {
+      "candidate_id": "s2--6722bde176ba954ba0a34e7429dc573b0a29b6af",
+      "path": "docs/public/daily/2026-11-01/assets/s2--6722bde176ba954ba0a34e7429dc573b0a29b6af/preview.svg"
+    },
+    {
+      "candidate_id": "openalex--W7224810069",
+      "path": "docs/public/daily/2026-11-01/assets/openalex--W7224810069/preview.png"
+    },
+    {
+      "candidate_id": "openalex--W7224749276",
+      "path": "docs/public/daily/2026-11-01/assets/openalex--W7224749276/preview.png"
+    },
+    {
+      "candidate_id": "openalex--W7224762780",
+      "path": "docs/public/daily/2026-11-01/assets/openalex--W7224762780/preview.png"
+    },
+    {
+      "candidate_id": "openalex--W7224133539",
+      "path": "docs/public/daily/2026-11-01/assets/openalex--W7224133539/preview.png"
+    },
+    {
+      "candidate_id": "openalex--W7224436027",
+      "path": "docs/public/daily/2026-11-01/assets/openalex--W7224436027/preview.svg"
+    },
+    {
+      "candidate_id": "openalex--W7224844184",
+      "path": "docs/public/daily/2026-11-01/assets/openalex--W7224844184/preview.png"
+    }
+  ]
+}
