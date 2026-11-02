@@ -1,0 +1,109 @@
+{
+  "schema_version": 2,
+  "cycle_id": "daily-2026-11-02",
+  "display_date": "2026-11-02",
+  "articles": [
+    {
+      "candidate_id": "openalex--W7225002408",
+      "category": "Paper",
+      "rank": 1,
+      "path": "docs/daily/2026-11-02/paper/01-a-responsivity-theory-of-call-timing-patterns-in-b.md"
+    },
+    {
+      "candidate_id": "openalex--W7224785285",
+      "category": "Paper",
+      "rank": 2,
+      "path": "docs/daily/2026-11-02/paper/02-underwater-acoustic-direction-recognition-based-on.md"
+    },
+    {
+      "candidate_id": "openalex--W7224873691",
+      "category": "Paper",
+      "rank": 3,
+      "path": "docs/daily/2026-11-02/paper/03-a-robust-auvs-wireless-power-transfer-system-based.md"
+    },
+    {
+      "candidate_id": "openalex--W7224897031",
+      "category": "Paper",
+      "rank": 4,
+      "path": "docs/daily/2026-11-02/paper/04-improved-segnext-algorithm-for-semantic-segmentati.md"
+    },
+    {
+      "candidate_id": "openalex--W7224950153",
+      "category": "Paper",
+      "rank": 5,
+      "path": "docs/daily/2026-11-02/paper/05-assessing-selectivity-and-bycatch-of-endangered-th.md"
+    },
+    {
+      "candidate_id": "crossref--10.1016-j.ast.2026.112374",
+      "category": "Paper",
+      "rank": 6,
+      "path": "docs/daily/2026-11-02/paper/06-water-exit-dynamics-modelling-of-a-disc-shaped-mul.md"
+    },
+    {
+      "candidate_id": "crossref--10.1016-j.oceaneng.2026.128514",
+      "category": "Paper",
+      "rank": 7,
+      "path": "docs/daily/2026-11-02/paper/07-numerical-simulation-on-the-effects-of-water-holes.md"
+    },
+    {
+      "candidate_id": "crossref--10.2118-235356-ms",
+      "category": "Paper",
+      "rank": 8,
+      "path": "docs/daily/2026-11-02/paper/08-mirror-migration-technique-using-shot-domain-kirch.md"
+    },
+    {
+      "candidate_id": "crossref--10.1016-j.oceaneng.2026.128493",
+      "category": "Paper",
+      "rank": 9,
+      "path": "docs/daily/2026-11-02/paper/09-fmfnet-frequency-aware-multi-scale-attention-with-.md"
+    },
+    {
+      "candidate_id": "crossref--10.1016-j.jacc.2026.09.138",
+      "category": "Paper",
+      "rank": 10,
+      "path": "docs/daily/2026-11-02/paper/10-tct-86-shockwave-balloon-or-atherectomy-with-rotab.md"
+    }
+  ],
+  "assets": [
+    {
+      "candidate_id": "openalex--W7225002408",
+      "path": "docs/public/daily/2026-11-02/assets/openalex--W7225002408/preview.png"
+    },
+    {
+      "candidate_id": "openalex--W7224785285",
+      "path": "docs/public/daily/2026-11-02/assets/openalex--W7224785285/preview.svg"
+    },
+    {
+      "candidate_id": "openalex--W7224873691",
+      "path": "docs/public/daily/2026-11-02/assets/openalex--W7224873691/preview.png"
+    },
+    {
+      "candidate_id": "openalex--W7224897031",
+      "path": "docs/public/daily/2026-11-02/assets/openalex--W7224897031/preview.svg"
+    },
+    {
+      "candidate_id": "openalex--W7224950153",
+      "path": "docs/public/daily/2026-11-02/assets/openalex--W7224950153/preview.svg"
+    },
+    {
+      "candidate_id": "crossref--10.1016-j.ast.2026.112374",
+      "path": "docs/public/daily/2026-11-02/assets/crossref--10.1016-j.ast.2026.112374/preview.png"
+    },
+    {
+      "candidate_id": "crossref--10.1016-j.oceaneng.2026.128514",
+      "path": "docs/public/daily/2026-11-02/assets/crossref--10.1016-j.oceaneng.2026.128514/preview.png"
+    },
+    {
+      "candidate_id": "crossref--10.2118-235356-ms",
+      "path": "docs/public/daily/2026-11-02/assets/crossref--10.2118-235356-ms/preview.svg"
+    },
+    {
+      "candidate_id": "crossref--10.1016-j.oceaneng.2026.128493",
+      "path": "docs/public/daily/2026-11-02/assets/crossref--10.1016-j.oceaneng.2026.128493/preview.png"
+    },
+    {
+      "candidate_id": "crossref--10.1016-j.jacc.2026.09.138",
+      "path": "docs/public/daily/2026-11-02/assets/crossref--10.1016-j.jacc.2026.09.138/preview.svg"
+    }
+  ]
+}

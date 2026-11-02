@@ -1,0 +1,72 @@
+<svg width="400" height="300" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#2e1065;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#5b21b6;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="400" height="300" fill="url(#grad)"/>
+
+  <!-- Grid pattern -->
+  <g opacity="0.1">
+    <line x1="0" y1="75" x2="400" y2="75" stroke="#a78bfa" stroke-width="1"/>
+    <line x1="0" y1="150" x2="400" y2="150" stroke="#a78bfa" stroke-width="1"/>
+    <line x1="0" y1="225" x2="400" y2="225" stroke="#a78bfa" stroke-width="1"/>
+    <line x1="100" y1="0" x2="100" y2="300" stroke="#a78bfa" stroke-width="1"/>
+    <line x1="200" y1="0" x2="200" y2="300" stroke="#a78bfa" stroke-width="1"/>
+    <line x1="300" y1="0" x2="300" y2="300" stroke="#a78bfa" stroke-width="1"/>
+  </g>
+
+  <!-- Waveform decoration (deterministic per title) -->
+  <g>
+  <polyline points="0,214.5 8,211.8 16,209.7 24,208.2 32,207.4 40,207.2 48,207.3 56,207.6 64,207.6 72,207.1 80,205.9 88,203.9 96,201.2 104,198.0 112,194.6 120,191.2 128,188.4 136,186.4 144,185.5 152,185.7 160,187.1 168,189.4 176,192.4 184,195.7 192,198.9 200,201.7 208,203.9 216,205.3 224,206.1 232,206.2 240,206.1 248,205.9 256,206.0 264,206.6 272,207.9 280,209.9 288,212.5 296,215.5 304,218.5 312,221.2 320,223.2 328,224.3 336,224.2 344,223.0 352,220.7 360,217.6 368,214.0 376,210.3 384,206.9 392,204.1 400,202.0" fill="none" stroke="#a78bfa" stroke-width="1.5" opacity="0.35"/>
+  <polyline points="0,219.2 8,222.6 16,227.2 24,232.8 32,238.8 40,244.7 48,249.9 56,253.6 64,255.5 72,255.1 80,252.4 88,247.7 96,241.3 104,233.8 112,226.1 120,218.9 128,213.1 136,209.1 144,207.5 152,208.2 160,211.1 168,216.0 176,222.0 184,228.7 192,235.2 200,241.0 208,245.5 216,248.4 224,249.7 232,249.4 240,247.7 248,245.1 256,241.9 264,238.5 272,235.2 280,232.3 288,229.8 296,227.8 304,226.0 312,224.5 320,223.1 328,221.8 336,220.6 344,219.8 352,219.4 360,219.7 368,220.9 376,223.2 384,226.6 392,231.0 400,236.0" fill="none" stroke="#a78bfa" stroke-width="1.5" opacity="0.22"/>
+  <polyline points="0,247.8 8,242.3 16,238.8 24,237.5 32,238.2 40,240.5 48,244.0 56,248.2 64,252.5 72,256.5 80,260.0 88,262.8 96,264.9 104,266.7 112,268.2 120,269.9 128,271.7 136,273.9 144,276.3 152,278.6 160,280.5 168,281.5 176,281.3 184,279.5 192,275.9 200,270.7 208,264.2 216,256.7 224,249.1 232,242.1 240,236.4 248,232.7 256,231.4 264,232.8 272,236.7 280,242.7 288,250.3 296,258.6 304,267.0 312,274.4 320,280.4 328,284.4 336,286.4 344,286.2 352,284.3 360,281.0 368,276.9 376,272.6 384,268.5 392,264.9 400,261.9" fill="none" stroke="#a78bfa" stroke-width="1.5" opacity="0.13"/>
+  </g>
+
+  <!-- Header -->
+  <text x="20" y="40" font-family="Inter, sans-serif" font-size="14" fill="#a78bfa" font-weight="600">
+    UWA / 11-02
+  </text>
+
+  <!-- Keyword badge -->
+  <rect x="20" y="60" width="92" height="28" rx="14" fill="#a78bfa" opacity="0.2"/>
+  <text x="30" y="79" font-family="Inter, sans-serif" font-size="13" fill="#a78bfa" font-weight="500">
+    detection
+  </text>
+
+  <!-- Title -->
+  <foreignObject x="20" y="110" width="360" height="120">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="
+      font-family: Inter, sans-serif;
+      font-size: 18px;
+      font-weight: 600;
+      color: #e2e8f0;
+      line-height: 1.4;
+      overflow: hidden;
+      display: -webkit-box;
+      -webkit-line-clamp: 4;
+      -webkit-box-orient: vertical;
+    ">
+      Mirror Migration Technique Using Shot Domain Kirchhoff In...
+    </div>
+  </foreignObject>
+
+  <!-- Author -->
+  <text x="20" y="250" font-family="Inter, sans-serif" font-size="13" fill="#94a3b8">
+    Zhang Xingyan
+  </text>
+
+  <!-- Footer -->
+  <text x="20" y="275" font-family="Inter, sans-serif" font-size="11" fill="#64748b">
+    ADIPEC
+  </text>
+
+  <!-- Score badge -->
+  <circle cx="360" cy="40" r="24" fill="#a78bfa" opacity="0.2"/>
+  <text x="360" y="46" font-family="Inter, sans-serif" font-size="14" fill="#a78bfa" font-weight="700" text-anchor="middle">
+    55
+  </text>
+</svg>
