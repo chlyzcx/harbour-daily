@@ -1,0 +1,119 @@
+{
+  "schema_version": 2,
+  "cycle_id": "daily-2026-11-03",
+  "display_date": "2026-11-03",
+  "articles": [
+    {
+      "candidate_id": "openalex--W7225043882",
+      "category": "Paper",
+      "rank": 1,
+      "path": "docs/daily/2026-11-03/paper/01-acoustic-radiation-of-a-flow-excited-circular-cyli.md"
+    },
+    {
+      "candidate_id": "openalex--W7225054904",
+      "category": "Paper",
+      "rank": 2,
+      "path": "docs/daily/2026-11-03/paper/02-bathymetry-estimations-using-self-adaptive-physics.md"
+    },
+    {
+      "candidate_id": "openalex--W7225061154",
+      "category": "Paper",
+      "rank": 3,
+      "path": "docs/daily/2026-11-03/paper/03-ultra-low-frequency-acoustic-dual-resonance-system.md"
+    },
+    {
+      "candidate_id": "openalex--W7224995868",
+      "category": "Paper",
+      "rank": 4,
+      "path": "docs/daily/2026-11-03/paper/04-multi-disciplinary-constraints-on-the-onset-and-ea.md"
+    },
+    {
+      "candidate_id": "openalex--W7154826895",
+      "category": "Paper",
+      "rank": 5,
+      "path": "docs/daily/2026-11-03/paper/05-experimental-and-field-study-of-the-physical-chara.md"
+    },
+    {
+      "candidate_id": "crossref--10.3390-jmse14212046",
+      "category": "Paper",
+      "rank": 6,
+      "path": "docs/daily/2026-11-03/paper/06-demonstration-of-a-real-time-multi-rate-adaptive-d.md"
+    },
+    {
+      "candidate_id": "crossref--10.1364-ao.613119",
+      "category": "Paper",
+      "rank": 7,
+      "path": "docs/daily/2026-11-03/paper/07-multiple-scattering-polarization-preservation-and-.md"
+    },
+    {
+      "candidate_id": "crossref--10.1016-j.oceaneng.2026.128494",
+      "category": "Paper",
+      "rank": 8,
+      "path": "docs/daily/2026-11-03/paper/08-low-cost-single-beam-sonar-localization-in-auvs-sy.md"
+    },
+    {
+      "candidate_id": "crossref--10.1016-j.patcog.2026.113746",
+      "category": "Paper",
+      "rank": 9,
+      "path": "docs/daily/2026-11-03/paper/09-a-novel-sonar-image-instance-segmentation-algorith.md"
+    },
+    {
+      "candidate_id": "crossref--10.1016-j.oceaneng.2026.128492",
+      "category": "Paper",
+      "rank": 10,
+      "path": "docs/daily/2026-11-03/paper/10-sim-to-real-uuv-navigation-in-confined-waters-via-.md"
+    },
+    {
+      "candidate_id": "news--1774eb234ed2",
+      "category": "News",
+      "rank": 11,
+      "path": "docs/daily/2026-11-03/news/11-utec-sonardyne-tackle-gnss-disruption-in-middle-ea.md"
+    }
+  ],
+  "assets": [
+    {
+      "candidate_id": "openalex--W7225043882",
+      "path": "docs/public/daily/2026-11-03/assets/openalex--W7225043882/preview.png"
+    },
+    {
+      "candidate_id": "openalex--W7225054904",
+      "path": "docs/public/daily/2026-11-03/assets/openalex--W7225054904/preview.png"
+    },
+    {
+      "candidate_id": "openalex--W7225061154",
+      "path": "docs/public/daily/2026-11-03/assets/openalex--W7225061154/preview.png"
+    },
+    {
+      "candidate_id": "openalex--W7224995868",
+      "path": "docs/public/daily/2026-11-03/assets/openalex--W7224995868/preview.png"
+    },
+    {
+      "candidate_id": "openalex--W7154826895",
+      "path": "docs/public/daily/2026-11-03/assets/openalex--W7154826895/preview.png"
+    },
+    {
+      "candidate_id": "crossref--10.3390-jmse14212046",
+      "path": "docs/public/daily/2026-11-03/assets/crossref--10.3390-jmse14212046/preview.png"
+    },
+    {
+      "candidate_id": "crossref--10.1364-ao.613119",
+      "path": "docs/public/daily/2026-11-03/assets/crossref--10.1364-ao.613119/preview.svg"
+    },
+    {
+      "candidate_id": "crossref--10.1016-j.oceaneng.2026.128494",
+      "path": "docs/public/daily/2026-11-03/assets/crossref--10.1016-j.oceaneng.2026.128494/preview.png"
+    },
+    {
+      "candidate_id": "crossref--10.1016-j.patcog.2026.113746",
+      "path": "docs/public/daily/2026-11-03/assets/crossref--10.1016-j.patcog.2026.113746/preview.png"
+    },
+    {
+      "candidate_id": "crossref--10.1016-j.oceaneng.2026.128492",
+      "path": "docs/public/daily/2026-11-03/assets/crossref--10.1016-j.oceaneng.2026.128492/preview.png"
+    },
+    {
+      "candidate_id": "news--1774eb234ed2",
+      "path": "docs/public/daily/2026-11-03/assets/news--1774eb234ed2/preview.png"
+    }
+  ]
+}
