@@ -1,0 +1,119 @@
+{
+  "schema_version": 2,
+  "cycle_id": "daily-2026-11-04",
+  "display_date": "2026-11-04",
+  "articles": [
+    {
+      "candidate_id": "arxiv--2611.01680-1",
+      "category": "Paper",
+      "rank": 1,
+      "path": "docs/daily/2026-11-04/paper/01-wave-physics-as-representation-tensor-structured-n.md"
+    },
+    {
+      "candidate_id": "arxiv--2610.39110-2",
+      "category": "Paper",
+      "rank": 2,
+      "path": "docs/daily/2026-11-04/paper/02-sensing-fast-and-distant-targets-in-fractional-ove.md"
+    },
+    {
+      "candidate_id": "openalex--W7225084669",
+      "category": "Paper",
+      "rank": 3,
+      "path": "docs/daily/2026-11-04/paper/03-a-unified-semi-analytical-framework-for-vibro-acou.md"
+    },
+    {
+      "candidate_id": "openalex--W7225099482",
+      "category": "Paper",
+      "rank": 4,
+      "path": "docs/daily/2026-11-04/paper/04-a-dual-adaptive-polynomial-chaos-chebyshev-spectra.md"
+    },
+    {
+      "candidate_id": "openalex--W7225104775",
+      "category": "Paper",
+      "rank": 5,
+      "path": "docs/daily/2026-11-04/paper/05-sparse-input-dfe-with-delay-spread-independent-com.md"
+    },
+    {
+      "candidate_id": "openalex--W7225111579",
+      "category": "Paper",
+      "rank": 6,
+      "path": "docs/daily/2026-11-04/paper/06-stmh-xception-sequential-multi-head-residual-learn.md"
+    },
+    {
+      "candidate_id": "openalex--W7225064804",
+      "category": "Paper",
+      "rank": 7,
+      "path": "docs/daily/2026-11-04/paper/07-experimental-and-theoretical-investigation-of-the-.md"
+    },
+    {
+      "candidate_id": "crossref--10.1364-ao.614984",
+      "category": "Paper",
+      "rank": 8,
+      "path": "docs/daily/2026-11-04/paper/08-real-time-underwater-optical-image-restoration-usi.md"
+    },
+    {
+      "candidate_id": "crossref--10.3390-jmse14212068",
+      "category": "Paper",
+      "rank": 9,
+      "path": "docs/daily/2026-11-04/paper/09-geometry-constrained-joint-multipath-exploitation-.md"
+    },
+    {
+      "candidate_id": "crossref--10.1038-s41598-026-76850-w",
+      "category": "Paper",
+      "rank": 10,
+      "path": "docs/daily/2026-11-04/paper/10-performance-analysis-of-dual-irs-assisted-noma-for.md"
+    },
+    {
+      "candidate_id": "news--953cfbcf8888",
+      "category": "News",
+      "rank": 11,
+      "path": "docs/daily/2026-11-04/news/11-kongsberg-launches-two-new-sonars-expands-ai-partn.md"
+    }
+  ],
+  "assets": [
+    {
+      "candidate_id": "arxiv--2611.01680-1",
+      "path": "docs/public/daily/2026-11-04/assets/arxiv--2611.01680-1/preview.png"
+    },
+    {
+      "candidate_id": "arxiv--2610.39110-2",
+      "path": "docs/public/daily/2026-11-04/assets/arxiv--2610.39110-2/preview.png"
+    },
+    {
+      "candidate_id": "openalex--W7225084669",
+      "path": "docs/public/daily/2026-11-04/assets/openalex--W7225084669/preview.png"
+    },
+    {
+      "candidate_id": "openalex--W7225099482",
+      "path": "docs/public/daily/2026-11-04/assets/openalex--W7225099482/preview.png"
+    },
+    {
+      "candidate_id": "openalex--W7225104775",
+      "path": "docs/public/daily/2026-11-04/assets/openalex--W7225104775/preview.png"
+    },
+    {
+      "candidate_id": "openalex--W7225111579",
+      "path": "docs/public/daily/2026-11-04/assets/openalex--W7225111579/preview.png"
+    },
+    {
+      "candidate_id": "openalex--W7225064804",
+      "path": "docs/public/daily/2026-11-04/assets/openalex--W7225064804/preview.png"
+    },
+    {
+      "candidate_id": "crossref--10.1364-ao.614984",
+      "path": "docs/public/daily/2026-11-04/assets/crossref--10.1364-ao.614984/preview.svg"
+    },
+    {
+      "candidate_id": "crossref--10.3390-jmse14212068",
+      "path": "docs/public/daily/2026-11-04/assets/crossref--10.3390-jmse14212068/preview.svg"
+    },
+    {
+      "candidate_id": "crossref--10.1038-s41598-026-76850-w",
+      "path": "docs/public/daily/2026-11-04/assets/crossref--10.1038-s41598-026-76850-w/preview.svg"
+    },
+    {
+      "candidate_id": "news--953cfbcf8888",
+      "path": "docs/public/daily/2026-11-04/assets/news--953cfbcf8888/preview.png"
+    }
+  ]
+}
