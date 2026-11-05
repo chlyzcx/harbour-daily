@@ -1,0 +1,109 @@
+{
+  "schema_version": 2,
+  "cycle_id": "daily-2026-11-05",
+  "display_date": "2026-11-05",
+  "articles": [
+    {
+      "candidate_id": "arxiv--2611.06725-1",
+      "category": "Paper",
+      "rank": 1,
+      "path": "docs/daily/2026-11-05/paper/01-drowning-in-noise-on-signal-saliency-in-self-super.md"
+    },
+    {
+      "candidate_id": "arxiv--2611.06205-1",
+      "category": "Paper",
+      "rank": 2,
+      "path": "docs/daily/2026-11-05/paper/02-cross-modal-semantic-successive-refinement-for-gen.md"
+    },
+    {
+      "candidate_id": "arxiv--2611.01680-2",
+      "category": "Paper",
+      "rank": 3,
+      "path": "docs/daily/2026-11-05/paper/03-wave-physics-as-representation-tensor-structured-n.md"
+    },
+    {
+      "candidate_id": "crossref--10.3390-s26216972",
+      "category": "Paper",
+      "rank": 4,
+      "path": "docs/daily/2026-11-05/paper/04-mg-alloy-matching-layers-for-broadband-pzt-5hepoxy.md"
+    },
+    {
+      "candidate_id": "crossref--10.3390-jmse14212078",
+      "category": "Paper",
+      "rank": 5,
+      "path": "docs/daily/2026-11-05/paper/05-simulation-of-a-method-for-detecting-and-determini.md"
+    },
+    {
+      "candidate_id": "crossref--10.3390-jimaging12110552",
+      "category": "Paper",
+      "rank": 6,
+      "path": "docs/daily/2026-11-05/paper/06-conditional-gans-for-fl-sonar-to-optical-image-tra.md"
+    },
+    {
+      "candidate_id": "crossref--10.1117-12.3136053",
+      "category": "Paper",
+      "rank": 7,
+      "path": "docs/daily/2026-11-05/paper/07-a-cross-dataset-evaluation-and-preliminary-diagnos.md"
+    },
+    {
+      "candidate_id": "crossref--10.1016-j.apor.2026.105276",
+      "category": "Paper",
+      "rank": 8,
+      "path": "docs/daily/2026-11-05/paper/08-real-time-sonar-simulation-for-uuvs-using-rasteriz.md"
+    },
+    {
+      "candidate_id": "crossref--10.1016-j.dsp.2026.106452",
+      "category": "Paper",
+      "rank": 9,
+      "path": "docs/daily/2026-11-05/paper/09-interactive-multi-branch-fusion-network-with-guida.md"
+    },
+    {
+      "candidate_id": "crossref--10.1016-j.engappai.2026.116338",
+      "category": "Paper",
+      "rank": 10,
+      "path": "docs/daily/2026-11-05/paper/10-morphology-invariance-driven-transfer-between-sona.md"
+    }
+  ],
+  "assets": [
+    {
+      "candidate_id": "arxiv--2611.06725-1",
+      "path": "docs/public/daily/2026-11-05/assets/arxiv--2611.06725-1/preview.png"
+    },
+    {
+      "candidate_id": "arxiv--2611.06205-1",
+      "path": "docs/public/daily/2026-11-05/assets/arxiv--2611.06205-1/preview.png"
+    },
+    {
+      "candidate_id": "arxiv--2611.01680-2",
+      "path": "docs/public/daily/2026-11-05/assets/arxiv--2611.01680-2/preview.png"
+    },
+    {
+      "candidate_id": "crossref--10.3390-s26216972",
+      "path": "docs/public/daily/2026-11-05/assets/crossref--10.3390-s26216972/preview.png"
+    },
+    {
+      "candidate_id": "crossref--10.3390-jmse14212078",
+      "path": "docs/public/daily/2026-11-05/assets/crossref--10.3390-jmse14212078/preview.png"
+    },
+    {
+      "candidate_id": "crossref--10.3390-jimaging12110552",
+      "path": "docs/public/daily/2026-11-05/assets/crossref--10.3390-jimaging12110552/preview.png"
+    },
+    {
+      "candidate_id": "crossref--10.1117-12.3136053",
+      "path": "docs/public/daily/2026-11-05/assets/crossref--10.1117-12.3136053/preview.svg"
+    },
+    {
+      "candidate_id": "crossref--10.1016-j.apor.2026.105276",
+      "path": "docs/public/daily/2026-11-05/assets/crossref--10.1016-j.apor.2026.105276/preview.png"
+    },
+    {
+      "candidate_id": "crossref--10.1016-j.dsp.2026.106452",
+      "path": "docs/public/daily/2026-11-05/assets/crossref--10.1016-j.dsp.2026.106452/preview.png"
+    },
+    {
+      "candidate_id": "crossref--10.1016-j.engappai.2026.116338",
+      "path": "docs/public/daily/2026-11-05/assets/crossref--10.1016-j.engappai.2026.116338/preview.png"
+    }
+  ]
+}
