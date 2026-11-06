@@ -1,0 +1,129 @@
+{
+  "schema_version": 2,
+  "cycle_id": "daily-2026-11-06",
+  "display_date": "2026-11-06",
+  "articles": [
+    {
+      "candidate_id": "openalex--W7225150100",
+      "category": "Paper",
+      "rank": 1,
+      "path": "docs/daily/2026-11-06/paper/01-physics-aware-dynamic-low-rank-sparse-decompositio.md"
+    },
+    {
+      "candidate_id": "openalex--W7225166045",
+      "category": "Paper",
+      "rank": 2,
+      "path": "docs/daily/2026-11-06/paper/02-heterogeneous-fusion-of-spectrogram-and-waveform-w.md"
+    },
+    {
+      "candidate_id": "openalex--W7225167768",
+      "category": "Paper",
+      "rank": 3,
+      "path": "docs/daily/2026-11-06/paper/03-the-repeated-evolution-of-anti-bat-bioacoustics-in.md"
+    },
+    {
+      "candidate_id": "openalex--W7225165575",
+      "category": "Paper",
+      "rank": 4,
+      "path": "docs/daily/2026-11-06/paper/04-drl-based-adaptive-routing-for-energy-efficient-an.md"
+    },
+    {
+      "candidate_id": "openalex--W7225231956",
+      "category": "Paper",
+      "rank": 5,
+      "path": "docs/daily/2026-11-06/paper/05-enhanced-hybrid-underwater-target-tracking-a-virtu.md"
+    },
+    {
+      "candidate_id": "openalex--W7225239249",
+      "category": "Paper",
+      "rank": 6,
+      "path": "docs/daily/2026-11-06/paper/06-dinâmica-sedimentar-e-morfologia-da-plataforma-con.md"
+    },
+    {
+      "candidate_id": "openalex--W7225265784",
+      "category": "Paper",
+      "rank": 7,
+      "path": "docs/daily/2026-11-06/paper/07-grounded-ontogenic-retrieval-improves-accuracy-and.md"
+    },
+    {
+      "candidate_id": "openalex--W7225274851",
+      "category": "Paper",
+      "rank": 8,
+      "path": "docs/daily/2026-11-06/paper/08-economia-azul-e-turismo-náutico-tecnologias-de-map.md"
+    },
+    {
+      "candidate_id": "openalex--W7225168084",
+      "category": "Paper",
+      "rank": 9,
+      "path": "docs/daily/2026-11-06/paper/09-smart-robotic-inspection-of-levees-and-culverts-a-.md"
+    },
+    {
+      "candidate_id": "openalex--W7225194064",
+      "category": "Paper",
+      "rank": 10,
+      "path": "docs/daily/2026-11-06/paper/10-assessing-the-impact-of-ai-coding-agents-on-securi.md"
+    },
+    {
+      "candidate_id": "news--bc51c5c7836a",
+      "category": "News",
+      "rank": 11,
+      "path": "docs/daily/2026-11-06/news/11-rtsys-group-strengthens-its-presence-in-canada-wit.md"
+    },
+    {
+      "candidate_id": "news--7ddc262d54f1",
+      "category": "News",
+      "rank": 12,
+      "path": "docs/daily/2026-11-06/news/12-schottel-unveils-new-thruster-for-submarines-and-u.md"
+    }
+  ],
+  "assets": [
+    {
+      "candidate_id": "openalex--W7225150100",
+      "path": "docs/public/daily/2026-11-06/assets/openalex--W7225150100/preview.png"
+    },
+    {
+      "candidate_id": "openalex--W7225166045",
+      "path": "docs/public/daily/2026-11-06/assets/openalex--W7225166045/preview.png"
+    },
+    {
+      "candidate_id": "openalex--W7225167768",
+      "path": "docs/public/daily/2026-11-06/assets/openalex--W7225167768/preview.svg"
+    },
+    {
+      "candidate_id": "openalex--W7225165575",
+      "path": "docs/public/daily/2026-11-06/assets/openalex--W7225165575/preview.png"
+    },
+    {
+      "candidate_id": "openalex--W7225231956",
+      "path": "docs/public/daily/2026-11-06/assets/openalex--W7225231956/preview.svg"
+    },
+    {
+      "candidate_id": "openalex--W7225239249",
+      "path": "docs/public/daily/2026-11-06/assets/openalex--W7225239249/preview.svg"
+    },
+    {
+      "candidate_id": "openalex--W7225265784",
+      "path": "docs/public/daily/2026-11-06/assets/openalex--W7225265784/preview.svg"
+    },
+    {
+      "candidate_id": "openalex--W7225274851",
+      "path": "docs/public/daily/2026-11-06/assets/openalex--W7225274851/preview.svg"
+    },
+    {
+      "candidate_id": "openalex--W7225168084",
+      "path": "docs/public/daily/2026-11-06/assets/openalex--W7225168084/preview.png"
+    },
+    {
+      "candidate_id": "openalex--W7225194064",
+      "path": "docs/public/daily/2026-11-06/assets/openalex--W7225194064/preview.png"
+    },
+    {
+      "candidate_id": "news--bc51c5c7836a",
+      "path": "docs/public/daily/2026-11-06/assets/news--bc51c5c7836a/preview.svg"
+    },
+    {
+      "candidate_id": "news--7ddc262d54f1",
+      "path": "docs/public/daily/2026-11-06/assets/news--7ddc262d54f1/preview.png"
+    }
+  ]
+}

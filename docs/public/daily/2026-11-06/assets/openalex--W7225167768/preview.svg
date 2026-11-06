@@ -1,0 +1,72 @@
+<svg width="400" height="300" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#2e1065;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#5b21b6;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="400" height="300" fill="url(#grad)"/>
+
+  <!-- Grid pattern -->
+  <g opacity="0.1">
+    <line x1="0" y1="75" x2="400" y2="75" stroke="#a78bfa" stroke-width="1"/>
+    <line x1="0" y1="150" x2="400" y2="150" stroke="#a78bfa" stroke-width="1"/>
+    <line x1="0" y1="225" x2="400" y2="225" stroke="#a78bfa" stroke-width="1"/>
+    <line x1="100" y1="0" x2="100" y2="300" stroke="#a78bfa" stroke-width="1"/>
+    <line x1="200" y1="0" x2="200" y2="300" stroke="#a78bfa" stroke-width="1"/>
+    <line x1="300" y1="0" x2="300" y2="300" stroke="#a78bfa" stroke-width="1"/>
+  </g>
+
+  <!-- Waveform decoration (deterministic per title) -->
+  <g>
+  <polyline points="0,186.7 8,188.0 16,190.5 24,194.0 32,198.0 40,202.1 48,205.8 56,209.0 64,211.3 72,212.9 80,213.7 88,214.0 96,213.9 104,213.7 112,213.4 120,213.3 128,213.1 136,213.0 144,212.6 152,211.9 160,210.5 168,208.5 176,205.7 184,202.4 192,198.6 200,194.9 208,191.4 216,188.8 224,187.3 232,187.3 240,188.7 248,191.7 256,196.0 264,201.1 272,206.6 280,212.1 288,216.8 296,220.5 304,222.7 312,223.4 320,222.5 328,220.3 336,217.0 344,213.1 352,209.0 360,205.1 368,201.8 376,199.2 384,197.4 392,196.4 400,196.0" fill="none" stroke="#a78bfa" stroke-width="1.5" opacity="0.35"/>
+  <polyline points="0,243.5 8,244.0 16,244.2 24,243.8 32,242.4 40,239.9 48,236.3 56,231.7 64,226.3 72,220.8 80,215.6 88,211.2 96,208.2 104,206.9 112,207.5 120,210.0 128,214.1 136,219.4 144,225.3 152,231.4 160,236.9 168,241.6 176,245.0 184,247.0 192,247.8 200,247.4 208,246.4 216,245.0 224,243.5 232,242.3 240,241.5 248,241.1 256,240.9 264,240.6 272,240.0 280,238.7 288,236.6 296,233.5 304,229.5 312,224.9 320,220.0 328,215.3 336,211.4 344,208.7 352,207.6 360,208.3 368,210.9 376,215.1 384,220.6 392,226.9 400,233.3" fill="none" stroke="#a78bfa" stroke-width="1.5" opacity="0.22"/>
+  <polyline points="0,250.3 8,257.5 16,264.7 24,271.3 32,276.9 40,280.9 48,283.2 56,283.9 64,283.1 72,281.4 80,279.2 88,277.1 96,275.3 104,274.2 112,273.8 120,274.1 128,274.6 136,275.0 144,274.8 152,273.6 160,271.2 168,267.3 176,262.2 184,256.2 192,249.7 200,243.5 208,238.0 216,233.9 224,231.7 232,231.5 240,233.3 248,236.9 256,241.8 264,247.5 272,253.3 280,258.7 288,263.2 296,266.6 304,268.7 312,269.8 320,270.2 328,270.2 336,270.3 344,271.0 352,272.4 360,274.6 368,277.4 376,280.5 384,283.6 392,285.9 400,287.1" fill="none" stroke="#a78bfa" stroke-width="1.5" opacity="0.13"/>
+  </g>
+
+  <!-- Header -->
+  <text x="20" y="40" font-family="Inter, sans-serif" font-size="14" fill="#a78bfa" font-weight="600">
+    UWA / 11-06
+  </text>
+
+  <!-- Keyword badge -->
+  <rect x="20" y="60" width="116" height="28" rx="14" fill="#a78bfa" opacity="0.2"/>
+  <text x="30" y="79" font-family="Inter, sans-serif" font-size="13" fill="#a78bfa" font-weight="500">
+    echolocation
+  </text>
+
+  <!-- Title -->
+  <foreignObject x="20" y="110" width="360" height="120">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="
+      font-family: Inter, sans-serif;
+      font-size: 18px;
+      font-weight: 600;
+      color: #e2e8f0;
+      line-height: 1.4;
+      overflow: hidden;
+      display: -webkit-box;
+      -webkit-line-clamp: 4;
+      -webkit-box-orient: vertical;
+    ">
+      The repeated evolution of anti-bat bioacoustics in hawkmoths
+    </div>
+  </foreignObject>
+
+  <!-- Author -->
+  <text x="20" y="250" font-family="Inter, sans-serif" font-size="13" fill="#94a3b8">
+    Paul Masonick
+  </text>
+
+  <!-- Footer -->
+  <text x="20" y="275" font-family="Inter, sans-serif" font-size="11" fill="#64748b">
+    Proceedings of the Royal Society B Biological Sciences
+  </text>
+
+  <!-- Score badge -->
+  <circle cx="360" cy="40" r="24" fill="#a78bfa" opacity="0.2"/>
+  <text x="360" y="46" font-family="Inter, sans-serif" font-size="14" fill="#a78bfa" font-weight="700" text-anchor="middle">
+    64
+  </text>
+</svg>
