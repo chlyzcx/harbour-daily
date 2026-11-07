@@ -1,0 +1,119 @@
+{
+  "schema_version": 2,
+  "cycle_id": "daily-2026-11-07",
+  "display_date": "2026-11-07",
+  "articles": [
+    {
+      "candidate_id": "openalex--W7225296036",
+      "category": "Paper",
+      "rank": 1,
+      "path": "docs/daily/2026-11-07/paper/01-prescribed-underwater-sound-spectrum-reproduction-.md"
+    },
+    {
+      "candidate_id": "openalex--W7225335954",
+      "category": "Paper",
+      "rank": 2,
+      "path": "docs/daily/2026-11-07/paper/02-mitigating-trajectory-fragmentation-in-sonar-fish-.md"
+    },
+    {
+      "candidate_id": "s2--d7592d06c9ea24a31759981ed4727be2d61c8aed",
+      "category": "Paper",
+      "rank": 3,
+      "path": "docs/daily/2026-11-07/paper/03-research-of-bioacoustic-characteristics-in-the-sou.md"
+    },
+    {
+      "candidate_id": "openalex--W7225321030",
+      "category": "Paper",
+      "rank": 4,
+      "path": "docs/daily/2026-11-07/paper/04-reconciling-arctic-sea-ice-roughness-across-four-o.md"
+    },
+    {
+      "candidate_id": "openalex--W7225337134",
+      "category": "Paper",
+      "rank": 5,
+      "path": "docs/daily/2026-11-07/paper/05-a-systematic-benchmark-of-object-detectors-for-sma.md"
+    },
+    {
+      "candidate_id": "openalex--W7225322868",
+      "category": "Paper",
+      "rank": 6,
+      "path": "docs/daily/2026-11-07/paper/06-robust-tracking-of-multi-station-underwater-maneuv.md"
+    },
+    {
+      "candidate_id": "openalex--W7225338073",
+      "category": "Paper",
+      "rank": 7,
+      "path": "docs/daily/2026-11-07/paper/07-cross-modal-semantic-successive-refinement-for-gen.md"
+    },
+    {
+      "candidate_id": "openalex--W7225077584",
+      "category": "Paper",
+      "rank": 8,
+      "path": "docs/daily/2026-11-07/paper/08-aquaguard-ai-assisted-underwater-marine-debris-det.md"
+    },
+    {
+      "candidate_id": "crossref--10.1186-s13638-026-02701-x",
+      "category": "Paper",
+      "rank": 9,
+      "path": "docs/daily/2026-11-07/paper/09-retraction-note-energy-efficient-artificial-fish-s.md"
+    },
+    {
+      "candidate_id": "crossref--10.3390-jmse14212102",
+      "category": "Paper",
+      "rank": 10,
+      "path": "docs/daily/2026-11-07/paper/10-k-nn-adaptive-iplfpmbm-underwater-multi-target-tra.md"
+    },
+    {
+      "candidate_id": "news--d28633019b21",
+      "category": "News",
+      "rank": 11,
+      "path": "docs/daily/2026-11-07/news/11-kongsberg-expands-aegir-ssa-sonar-family-alongside.md"
+    }
+  ],
+  "assets": [
+    {
+      "candidate_id": "openalex--W7225296036",
+      "path": "docs/public/daily/2026-11-07/assets/openalex--W7225296036/preview.png"
+    },
+    {
+      "candidate_id": "openalex--W7225335954",
+      "path": "docs/public/daily/2026-11-07/assets/openalex--W7225335954/preview.png"
+    },
+    {
+      "candidate_id": "s2--d7592d06c9ea24a31759981ed4727be2d61c8aed",
+      "path": "docs/public/daily/2026-11-07/assets/s2--d7592d06c9ea24a31759981ed4727be2d61c8aed/preview.png"
+    },
+    {
+      "candidate_id": "openalex--W7225321030",
+      "path": "docs/public/daily/2026-11-07/assets/openalex--W7225321030/preview.png"
+    },
+    {
+      "candidate_id": "openalex--W7225337134",
+      "path": "docs/public/daily/2026-11-07/assets/openalex--W7225337134/preview.png"
+    },
+    {
+      "candidate_id": "openalex--W7225322868",
+      "path": "docs/public/daily/2026-11-07/assets/openalex--W7225322868/preview.svg"
+    },
+    {
+      "candidate_id": "openalex--W7225338073",
+      "path": "docs/public/daily/2026-11-07/assets/openalex--W7225338073/preview.png"
+    },
+    {
+      "candidate_id": "openalex--W7225077584",
+      "path": "docs/public/daily/2026-11-07/assets/openalex--W7225077584/preview.png"
+    },
+    {
+      "candidate_id": "crossref--10.1186-s13638-026-02701-x",
+      "path": "docs/public/daily/2026-11-07/assets/crossref--10.1186-s13638-026-02701-x/preview.png"
+    },
+    {
+      "candidate_id": "crossref--10.3390-jmse14212102",
+      "path": "docs/public/daily/2026-11-07/assets/crossref--10.3390-jmse14212102/preview.png"
+    },
+    {
+      "candidate_id": "news--d28633019b21",
+      "path": "docs/public/daily/2026-11-07/assets/news--d28633019b21/preview.png"
+    }
+  ]
+}
