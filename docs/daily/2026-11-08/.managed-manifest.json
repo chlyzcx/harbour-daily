@@ -1,0 +1,109 @@
+{
+  "schema_version": 2,
+  "cycle_id": "daily-2026-11-08",
+  "display_date": "2026-11-08",
+  "articles": [
+    {
+      "candidate_id": "openalex--W7167051030",
+      "category": "Paper",
+      "rank": 1,
+      "path": "docs/daily/2026-11-08/paper/01-satellite-remote-sensing-driven-framework-for-thre.md"
+    },
+    {
+      "candidate_id": "openalex--W7225340070",
+      "category": "Paper",
+      "rank": 2,
+      "path": "docs/daily/2026-11-08/paper/02-mechanicallygated-stochastic-resonance-for-allopti.md"
+    },
+    {
+      "candidate_id": "openalex--W7225395466",
+      "category": "Paper",
+      "rank": 3,
+      "path": "docs/daily/2026-11-08/paper/03-evaluating-silver-carp-behaviors-with-adaptive-res.md"
+    },
+    {
+      "candidate_id": "openalex--W7225293861",
+      "category": "Paper",
+      "rank": 4,
+      "path": "docs/daily/2026-11-08/paper/04-lightweight-underwater-acoustic-metasurface-with-w.md"
+    },
+    {
+      "candidate_id": "openalex--W7225314781",
+      "category": "Paper",
+      "rank": 5,
+      "path": "docs/daily/2026-11-08/paper/05-implementación-de-prácticas-devsecops-con-intelige.md"
+    },
+    {
+      "candidate_id": "openalex--W7225311535",
+      "category": "Paper",
+      "rank": 6,
+      "path": "docs/daily/2026-11-08/paper/06-whalesonic-recordings-of-cetacean-vocal-behaviour-.md"
+    },
+    {
+      "candidate_id": "crossref--10.1007-s11802-026-6397-2",
+      "category": "Paper",
+      "rank": 7,
+      "path": "docs/daily/2026-11-08/paper/07-noise-suppression-model-for-underwater-acoustic-ta.md"
+    },
+    {
+      "candidate_id": "crossref--10.1364-oe.614921",
+      "category": "Paper",
+      "rank": 8,
+      "path": "docs/daily/2026-11-08/paper/08-underwater-optical-signal-detection-in-degraded-en.md"
+    },
+    {
+      "candidate_id": "crossref--10.21203-rs.3.rs-11114690-v1",
+      "category": "Paper",
+      "rank": 9,
+      "path": "docs/daily/2026-11-08/paper/09-dcadnt-dynamic-topology-adaptive-data-collection-s.md"
+    },
+    {
+      "candidate_id": "crossref--10.31223-x5h23w",
+      "category": "Paper",
+      "rank": 10,
+      "path": "docs/daily/2026-11-08/paper/10-source-representation-and-earthquake-ocean-couplin.md"
+    }
+  ],
+  "assets": [
+    {
+      "candidate_id": "openalex--W7167051030",
+      "path": "docs/public/daily/2026-11-08/assets/openalex--W7167051030/preview.png"
+    },
+    {
+      "candidate_id": "openalex--W7225340070",
+      "path": "docs/public/daily/2026-11-08/assets/openalex--W7225340070/preview.svg"
+    },
+    {
+      "candidate_id": "openalex--W7225395466",
+      "path": "docs/public/daily/2026-11-08/assets/openalex--W7225395466/preview.svg"
+    },
+    {
+      "candidate_id": "openalex--W7225293861",
+      "path": "docs/public/daily/2026-11-08/assets/openalex--W7225293861/preview.svg"
+    },
+    {
+      "candidate_id": "openalex--W7225314781",
+      "path": "docs/public/daily/2026-11-08/assets/openalex--W7225314781/preview.svg"
+    },
+    {
+      "candidate_id": "openalex--W7225311535",
+      "path": "docs/public/daily/2026-11-08/assets/openalex--W7225311535/preview.png"
+    },
+    {
+      "candidate_id": "crossref--10.1007-s11802-026-6397-2",
+      "path": "docs/public/daily/2026-11-08/assets/crossref--10.1007-s11802-026-6397-2/preview.png"
+    },
+    {
+      "candidate_id": "crossref--10.1364-oe.614921",
+      "path": "docs/public/daily/2026-11-08/assets/crossref--10.1364-oe.614921/preview.svg"
+    },
+    {
+      "candidate_id": "crossref--10.21203-rs.3.rs-11114690-v1",
+      "path": "docs/public/daily/2026-11-08/assets/crossref--10.21203-rs.3.rs-11114690-v1/preview.svg"
+    },
+    {
+      "candidate_id": "crossref--10.31223-x5h23w",
+      "path": "docs/public/daily/2026-11-08/assets/crossref--10.31223-x5h23w/preview.svg"
+    }
+  ]
+}

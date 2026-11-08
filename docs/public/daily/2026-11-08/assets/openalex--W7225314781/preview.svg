@@ -1,0 +1,72 @@
+<svg width="400" height="300" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#042f2e;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#115e59;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="400" height="300" fill="url(#grad)"/>
+
+  <!-- Grid pattern -->
+  <g opacity="0.1">
+    <line x1="0" y1="75" x2="400" y2="75" stroke="#2dd4bf" stroke-width="1"/>
+    <line x1="0" y1="150" x2="400" y2="150" stroke="#2dd4bf" stroke-width="1"/>
+    <line x1="0" y1="225" x2="400" y2="225" stroke="#2dd4bf" stroke-width="1"/>
+    <line x1="100" y1="0" x2="100" y2="300" stroke="#2dd4bf" stroke-width="1"/>
+    <line x1="200" y1="0" x2="200" y2="300" stroke="#2dd4bf" stroke-width="1"/>
+    <line x1="300" y1="0" x2="300" y2="300" stroke="#2dd4bf" stroke-width="1"/>
+  </g>
+
+  <!-- Waveform decoration (deterministic per title) -->
+  <g>
+  <polyline points="0,217.6 8,213.7 16,208.5 24,202.5 32,196.7 40,191.7 48,188.3 56,186.9 64,187.5 72,189.8 80,193.2 88,197.0 96,200.5 104,203.3 112,205.1 120,206.2 128,206.8 136,207.5 144,208.5 152,210.3 160,212.9 168,215.8 176,218.7 184,220.8 192,221.6 200,220.6 208,217.7 216,213.1 224,207.4 232,201.3 240,195.7 248,191.3 256,188.8 264,188.1 272,189.2 280,191.6 288,194.7 296,197.7 304,200.3 312,202.1 320,203.2 328,203.8 336,204.5 344,205.6 352,207.5 360,210.3 368,213.8 376,217.4 384,220.5 392,222.5 400,222.7" fill="none" stroke="#2dd4bf" stroke-width="1.5" opacity="0.35"/>
+  <polyline points="0,241.8 8,243.5 16,243.7 24,243.0 32,242.2 40,242.0 48,242.7 56,244.3 64,246.5 72,248.7 80,250.0 88,249.7 96,247.4 104,243.1 112,237.0 120,229.9 128,222.8 136,216.7 144,212.3 152,210.3 160,210.5 168,212.6 176,215.8 184,219.4 192,222.6 200,224.8 208,226.0 216,226.3 224,226.2 232,226.6 240,227.9 248,230.7 256,235.0 264,240.4 272,246.2 280,251.5 288,255.4 296,257.1 304,256.4 312,253.2 320,248.2 328,242.1 336,236.0 344,230.7 352,226.8 360,224.5 368,223.6 376,223.7 384,224.0 392,223.8 400,222.8" fill="none" stroke="#2dd4bf" stroke-width="1.5" opacity="0.22"/>
+  <polyline points="0,252.4 8,246.7 16,240.8 24,235.7 32,232.3 40,231.5 48,233.5 56,238.0 64,244.3 72,251.3 80,257.9 88,263.2 96,266.6 104,268.1 112,268.2 120,267.6 128,267.3 136,268.0 144,270.3 152,274.2 160,279.1 168,284.3 176,288.7 184,291.3 192,291.3 200,288.6 208,283.4 216,276.6 224,269.1 232,262.1 240,256.5 248,253.0 256,251.4 264,251.5 272,252.4 280,253.1 288,252.9 296,251.2 304,248.1 312,243.8 320,239.4 328,235.8 336,234.0 344,234.7 352,238.1 360,243.8 368,251.2 376,259.0 384,266.3 392,271.9 400,275.5" fill="none" stroke="#2dd4bf" stroke-width="1.5" opacity="0.13"/>
+  </g>
+
+  <!-- Header -->
+  <text x="20" y="40" font-family="Inter, sans-serif" font-size="14" fill="#2dd4bf" font-weight="600">
+    UWA / 11-08
+  </text>
+
+  <!-- Keyword badge -->
+  <rect x="20" y="60" width="84" height="28" rx="14" fill="#2dd4bf" opacity="0.2"/>
+  <text x="30" y="79" font-family="Inter, sans-serif" font-size="13" fill="#2dd4bf" font-weight="500">
+    Research
+  </text>
+
+  <!-- Title -->
+  <foreignObject x="20" y="110" width="360" height="120">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="
+      font-family: Inter, sans-serif;
+      font-size: 18px;
+      font-weight: 600;
+      color: #e2e8f0;
+      line-height: 1.4;
+      overflow: hidden;
+      display: -webkit-box;
+      -webkit-line-clamp: 4;
+      -webkit-box-orient: vertical;
+    ">
+      Implementación de prácticas DevSecOps con inteligencia ar...
+    </div>
+  </foreignObject>
+
+  <!-- Author -->
+  <text x="20" y="250" font-family="Inter, sans-serif" font-size="13" fill="#94a3b8">
+    Fernando Sierra-Liñan
+  </text>
+
+  <!-- Footer -->
+  <text x="20" y="275" font-family="Inter, sans-serif" font-size="11" fill="#64748b">
+    Ingeniare. Revista chilena de ingeniería
+  </text>
+
+  <!-- Score badge -->
+  <circle cx="360" cy="40" r="24" fill="#2dd4bf" opacity="0.2"/>
+  <text x="360" y="46" font-family="Inter, sans-serif" font-size="14" fill="#2dd4bf" font-weight="700" text-anchor="middle">
+    56
+  </text>
+</svg>
