@@ -1,0 +1,119 @@
+{
+  "schema_version": 2,
+  "cycle_id": "daily-2026-11-09",
+  "display_date": "2026-11-09",
+  "articles": [
+    {
+      "candidate_id": "s2--79282ad1abf3bf49c236c86f079f7cc450c699d5",
+      "category": "Paper",
+      "rank": 1,
+      "path": "docs/daily/2026-11-09/paper/01-feddcr-federated-decoupled-consistent-representati.md"
+    },
+    {
+      "candidate_id": "s2--a95498c3734d86ad5fae950b30fe82d19f4638ff",
+      "category": "Paper",
+      "rank": 2,
+      "path": "docs/daily/2026-11-09/paper/02-three-dimensional-simulation-of-doppler-signatures.md"
+    },
+    {
+      "candidate_id": "openalex--W7225396874",
+      "category": "Paper",
+      "rank": 3,
+      "path": "docs/daily/2026-11-09/paper/03-underwater-wireless-information-transmission-enabl.md"
+    },
+    {
+      "candidate_id": "openalex--W7225411754",
+      "category": "Paper",
+      "rank": 4,
+      "path": "docs/daily/2026-11-09/paper/04-model-consistent-iterated-least-squares-initializa.md"
+    },
+    {
+      "candidate_id": "crossref--10.1088-1361-6501-aeb27f",
+      "category": "Paper",
+      "rank": 5,
+      "path": "docs/daily/2026-11-09/paper/05-acoustics-yolo-a-multiscale-feature-fusion-based-m.md"
+    },
+    {
+      "candidate_id": "crossref--10.1016-j.oceaneng.2026.128755",
+      "category": "Paper",
+      "rank": 6,
+      "path": "docs/daily/2026-11-09/paper/06-a-cost-aware-minority-class-evaluation-of-adversar.md"
+    },
+    {
+      "candidate_id": "crossref--10.1016-j.physd.2026.135337",
+      "category": "Paper",
+      "rank": 7,
+      "path": "docs/daily/2026-11-09/paper/07-acoustic-phase-distortion-induced-by-sound-speed-p.md"
+    },
+    {
+      "candidate_id": "crossref--10.1016-j.oceaneng.2026.128257",
+      "category": "Paper",
+      "rank": 8,
+      "path": "docs/daily/2026-11-09/paper/08-sast-sdnet-an-automated-framework-for-adaptive-enh.md"
+    },
+    {
+      "candidate_id": "crossref--10.1016-j.jacc.2026.09.139",
+      "category": "Paper",
+      "rank": 9,
+      "path": "docs/daily/2026-11-09/paper/09-tct-87-physiological-outcomes-after-rotablation-an.md"
+    },
+    {
+      "candidate_id": "crossref--10.1016-j.engappai.2026.116304",
+      "category": "Paper",
+      "rank": 10,
+      "path": "docs/daily/2026-11-09/paper/10-task-driven-joint-denoising-and-super-resolution-o.md"
+    },
+    {
+      "candidate_id": "news--418bc9bdf0ed",
+      "category": "News",
+      "rank": 11,
+      "path": "docs/daily/2026-11-09/news/11-naval-group-to-build-ucuv-underwater-combat-drone-.md"
+    }
+  ],
+  "assets": [
+    {
+      "candidate_id": "s2--79282ad1abf3bf49c236c86f079f7cc450c699d5",
+      "path": "docs/public/daily/2026-11-09/assets/s2--79282ad1abf3bf49c236c86f079f7cc450c699d5/preview.svg"
+    },
+    {
+      "candidate_id": "s2--a95498c3734d86ad5fae950b30fe82d19f4638ff",
+      "path": "docs/public/daily/2026-11-09/assets/s2--a95498c3734d86ad5fae950b30fe82d19f4638ff/preview.svg"
+    },
+    {
+      "candidate_id": "openalex--W7225396874",
+      "path": "docs/public/daily/2026-11-09/assets/openalex--W7225396874/preview.svg"
+    },
+    {
+      "candidate_id": "openalex--W7225411754",
+      "path": "docs/public/daily/2026-11-09/assets/openalex--W7225411754/preview.png"
+    },
+    {
+      "candidate_id": "crossref--10.1088-1361-6501-aeb27f",
+      "path": "docs/public/daily/2026-11-09/assets/crossref--10.1088-1361-6501-aeb27f/preview.svg"
+    },
+    {
+      "candidate_id": "crossref--10.1016-j.oceaneng.2026.128755",
+      "path": "docs/public/daily/2026-11-09/assets/crossref--10.1016-j.oceaneng.2026.128755/preview.png"
+    },
+    {
+      "candidate_id": "crossref--10.1016-j.physd.2026.135337",
+      "path": "docs/public/daily/2026-11-09/assets/crossref--10.1016-j.physd.2026.135337/preview.png"
+    },
+    {
+      "candidate_id": "crossref--10.1016-j.oceaneng.2026.128257",
+      "path": "docs/public/daily/2026-11-09/assets/crossref--10.1016-j.oceaneng.2026.128257/preview.png"
+    },
+    {
+      "candidate_id": "crossref--10.1016-j.jacc.2026.09.139",
+      "path": "docs/public/daily/2026-11-09/assets/crossref--10.1016-j.jacc.2026.09.139/preview.svg"
+    },
+    {
+      "candidate_id": "crossref--10.1016-j.engappai.2026.116304",
+      "path": "docs/public/daily/2026-11-09/assets/crossref--10.1016-j.engappai.2026.116304/preview.png"
+    },
+    {
+      "candidate_id": "news--418bc9bdf0ed",
+      "path": "docs/public/daily/2026-11-09/assets/news--418bc9bdf0ed/preview.png"
+    }
+  ]
+}
