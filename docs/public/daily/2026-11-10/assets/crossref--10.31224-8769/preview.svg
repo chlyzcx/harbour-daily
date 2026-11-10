@@ -1,0 +1,72 @@
+<svg width="400" height="300" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#042f2e;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#115e59;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="400" height="300" fill="url(#grad)"/>
+
+  <!-- Grid pattern -->
+  <g opacity="0.1">
+    <line x1="0" y1="75" x2="400" y2="75" stroke="#2dd4bf" stroke-width="1"/>
+    <line x1="0" y1="150" x2="400" y2="150" stroke="#2dd4bf" stroke-width="1"/>
+    <line x1="0" y1="225" x2="400" y2="225" stroke="#2dd4bf" stroke-width="1"/>
+    <line x1="100" y1="0" x2="100" y2="300" stroke="#2dd4bf" stroke-width="1"/>
+    <line x1="200" y1="0" x2="200" y2="300" stroke="#2dd4bf" stroke-width="1"/>
+    <line x1="300" y1="0" x2="300" y2="300" stroke="#2dd4bf" stroke-width="1"/>
+  </g>
+
+  <!-- Waveform decoration (deterministic per title) -->
+  <g>
+  <polyline points="0,215.7 8,218.1 16,219.7 24,219.8 32,218.1 40,214.5 48,209.3 56,203.2 64,196.9 72,191.4 80,187.6 88,185.9 96,186.5 104,189.2 112,193.5 120,198.6 128,203.7 136,208.1 144,211.3 152,213.2 160,214.0 168,214.0 176,213.7 184,213.4 192,213.5 200,213.8 208,214.2 216,214.1 224,213.2 232,211.0 240,207.6 248,203.0 256,197.8 264,192.7 272,188.6 280,186.2 288,185.9 296,188.0 304,192.2 312,197.9 320,204.2 328,210.2 336,215.1 344,218.4 352,219.7 360,219.4 368,217.7 376,215.2 384,212.7 392,210.4 400,208.7" fill="none" stroke="#2dd4bf" stroke-width="1.5" opacity="0.35"/>
+  <polyline points="0,215.0 8,220.6 16,226.9 24,233.1 32,238.7 40,243.2 48,246.3 56,248.0 64,248.4 72,247.6 80,246.0 88,244.0 96,242.0 104,240.0 112,238.3 120,236.9 128,235.5 136,234.2 144,232.5 152,230.4 160,227.7 168,224.6 176,221.2 184,217.9 192,215.0 200,212.9 208,212.2 216,213.1 224,215.6 232,219.9 240,225.5 248,232.0 256,238.9 264,245.4 272,250.9 280,254.9 288,256.9 296,256.7 304,254.5 312,250.4 320,245.0 328,238.8 336,232.5 344,226.7 352,221.9 360,218.4 368,216.3 376,215.6 384,216.1 392,217.5 400,219.4" fill="none" stroke="#2dd4bf" stroke-width="1.5" opacity="0.22"/>
+  <polyline points="0,268.2 8,267.1 16,265.4 24,262.8 32,259.3 40,254.8 48,249.8 56,244.6 64,239.8 72,236.0 80,233.9 88,233.7 96,235.6 104,239.8 112,245.8 120,253.1 128,261.0 136,268.9 144,276.0 152,281.6 160,285.5 168,287.3 176,287.2 184,285.4 192,282.4 200,278.7 208,274.8 216,271.2 224,268.2 232,266.0 240,264.4 248,263.2 256,262.1 264,260.8 272,258.9 280,256.3 288,252.9 296,249.0 304,244.8 312,240.9 320,237.8 328,236.0 336,236.0 344,238.0 352,242.1 360,248.0 368,255.2 376,263.2 384,271.1 392,278.3 400,284.1" fill="none" stroke="#2dd4bf" stroke-width="1.5" opacity="0.13"/>
+  </g>
+
+  <!-- Header -->
+  <text x="20" y="40" font-family="Inter, sans-serif" font-size="14" fill="#2dd4bf" font-weight="600">
+    UWA / 11-10
+  </text>
+
+  <!-- Keyword badge -->
+  <rect x="20" y="60" width="84" height="28" rx="14" fill="#2dd4bf" opacity="0.2"/>
+  <text x="30" y="79" font-family="Inter, sans-serif" font-size="13" fill="#2dd4bf" font-weight="500">
+    Research
+  </text>
+
+  <!-- Title -->
+  <foreignObject x="20" y="110" width="360" height="120">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="
+      font-family: Inter, sans-serif;
+      font-size: 18px;
+      font-weight: 600;
+      color: #e2e8f0;
+      line-height: 1.4;
+      overflow: hidden;
+      display: -webkit-box;
+      -webkit-line-clamp: 4;
+      -webkit-box-orient: vertical;
+    ">
+      Experimental Investigation of Leading-Edge Tubercled Hydr...
+    </div>
+  </foreignObject>
+
+  <!-- Author -->
+  <text x="20" y="250" font-family="Inter, sans-serif" font-size="13" fill="#94a3b8">
+    Chengyi Zhou
+  </text>
+
+  <!-- Footer -->
+  <text x="20" y="275" font-family="Inter, sans-serif" font-size="11" fill="#64748b">
+    Unknown
+  </text>
+
+  <!-- Score badge -->
+  <circle cx="360" cy="40" r="24" fill="#2dd4bf" opacity="0.2"/>
+  <text x="360" y="46" font-family="Inter, sans-serif" font-size="14" fill="#2dd4bf" font-weight="700" text-anchor="middle">
+    55
+  </text>
+</svg>

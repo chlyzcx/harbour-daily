@@ -1,0 +1,129 @@
+{
+  "schema_version": 2,
+  "cycle_id": "daily-2026-11-10",
+  "display_date": "2026-11-10",
+  "articles": [
+    {
+      "candidate_id": "arxiv--2611.12278-1",
+      "category": "Paper",
+      "rank": 1,
+      "path": "docs/daily/2026-11-10/paper/01-probabilistic-wavefield-decomposition-from-array-c.md"
+    },
+    {
+      "candidate_id": "arxiv--2611.11491-1",
+      "category": "Paper",
+      "rank": 2,
+      "path": "docs/daily/2026-11-10/paper/02-callcleaner-lightweight-bioacoustic-denoising-from.md"
+    },
+    {
+      "candidate_id": "openalex--W7225602237",
+      "category": "Paper",
+      "rank": 3,
+      "path": "docs/daily/2026-11-10/paper/03-acquisition-and-analysis-of-commercial-sonar-signa.md"
+    },
+    {
+      "candidate_id": "openalex--W7225300911",
+      "category": "Paper",
+      "rank": 4,
+      "path": "docs/daily/2026-11-10/paper/04-mobility-aware-mobile-edge-computing-for-energy-ba.md"
+    },
+    {
+      "candidate_id": "openalex--W7225310684",
+      "category": "Paper",
+      "rank": 5,
+      "path": "docs/daily/2026-11-10/paper/05-active-sonar-echo-detection-in-strong-reverberatio.md"
+    },
+    {
+      "candidate_id": "crossref--10.24072-pcjournal.832",
+      "category": "Paper",
+      "rank": 6,
+      "path": "docs/daily/2026-11-10/paper/06-tools-for-the-computation-of-acoustic-parameters-o.md"
+    },
+    {
+      "candidate_id": "crossref--10.1111-2041-210x.70437",
+      "category": "Paper",
+      "rank": 7,
+      "path": "docs/daily/2026-11-10/paper/07-distributed-acoustic-sensing-for-marine-mammal-mon.md"
+    },
+    {
+      "candidate_id": "crossref--10.31224-8769",
+      "category": "Paper",
+      "rank": 8,
+      "path": "docs/daily/2026-11-10/paper/08-experimental-investigation-of-leading-edge-tubercl.md"
+    },
+    {
+      "candidate_id": "crossref--10.1007-s11277-026-12261-4",
+      "category": "Paper",
+      "rank": 9,
+      "path": "docs/daily/2026-11-10/paper/09-ai-driven-adaptive-underwater-acoustic-communicati.md"
+    },
+    {
+      "candidate_id": "crossref--10.53941-ijndi.2026.100025",
+      "category": "Paper",
+      "rank": 10,
+      "path": "docs/daily/2026-11-10/paper/10-a-q-learning-based-energy-efficient-multi-flow-two.md"
+    },
+    {
+      "candidate_id": "news--5128573a856a",
+      "category": "News",
+      "rank": 11,
+      "path": "docs/daily/2026-11-10/news/11-general-atomics-ranger-uuv-to-support-large-payloa.md"
+    },
+    {
+      "candidate_id": "news--fd93880f5d1e",
+      "category": "News",
+      "rank": 12,
+      "path": "docs/daily/2026-11-10/news/12-seaber-unveils-raven-compact-auv-for-mine-warfare-.md"
+    }
+  ],
+  "assets": [
+    {
+      "candidate_id": "arxiv--2611.12278-1",
+      "path": "docs/public/daily/2026-11-10/assets/arxiv--2611.12278-1/preview.png"
+    },
+    {
+      "candidate_id": "arxiv--2611.11491-1",
+      "path": "docs/public/daily/2026-11-10/assets/arxiv--2611.11491-1/preview.png"
+    },
+    {
+      "candidate_id": "openalex--W7225602237",
+      "path": "docs/public/daily/2026-11-10/assets/openalex--W7225602237/preview.png"
+    },
+    {
+      "candidate_id": "openalex--W7225300911",
+      "path": "docs/public/daily/2026-11-10/assets/openalex--W7225300911/preview.png"
+    },
+    {
+      "candidate_id": "openalex--W7225310684",
+      "path": "docs/public/daily/2026-11-10/assets/openalex--W7225310684/preview.png"
+    },
+    {
+      "candidate_id": "crossref--10.24072-pcjournal.832",
+      "path": "docs/public/daily/2026-11-10/assets/crossref--10.24072-pcjournal.832/preview.svg"
+    },
+    {
+      "candidate_id": "crossref--10.1111-2041-210x.70437",
+      "path": "docs/public/daily/2026-11-10/assets/crossref--10.1111-2041-210x.70437/preview.svg"
+    },
+    {
+      "candidate_id": "crossref--10.31224-8769",
+      "path": "docs/public/daily/2026-11-10/assets/crossref--10.31224-8769/preview.svg"
+    },
+    {
+      "candidate_id": "crossref--10.1007-s11277-026-12261-4",
+      "path": "docs/public/daily/2026-11-10/assets/crossref--10.1007-s11277-026-12261-4/preview.png"
+    },
+    {
+      "candidate_id": "crossref--10.53941-ijndi.2026.100025",
+      "path": "docs/public/daily/2026-11-10/assets/crossref--10.53941-ijndi.2026.100025/preview.png"
+    },
+    {
+      "candidate_id": "news--5128573a856a",
+      "path": "docs/public/daily/2026-11-10/assets/news--5128573a856a/preview.png"
+    },
+    {
+      "candidate_id": "news--fd93880f5d1e",
+      "path": "docs/public/daily/2026-11-10/assets/news--fd93880f5d1e/preview.png"
+    }
+  ]
+}
