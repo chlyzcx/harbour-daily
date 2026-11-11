@@ -1,0 +1,72 @@
+<svg width="400" height="300" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#2e1065;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#5b21b6;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="400" height="300" fill="url(#grad)"/>
+
+  <!-- Grid pattern -->
+  <g opacity="0.1">
+    <line x1="0" y1="75" x2="400" y2="75" stroke="#a78bfa" stroke-width="1"/>
+    <line x1="0" y1="150" x2="400" y2="150" stroke="#a78bfa" stroke-width="1"/>
+    <line x1="0" y1="225" x2="400" y2="225" stroke="#a78bfa" stroke-width="1"/>
+    <line x1="100" y1="0" x2="100" y2="300" stroke="#a78bfa" stroke-width="1"/>
+    <line x1="200" y1="0" x2="200" y2="300" stroke="#a78bfa" stroke-width="1"/>
+    <line x1="300" y1="0" x2="300" y2="300" stroke="#a78bfa" stroke-width="1"/>
+  </g>
+
+  <!-- Waveform decoration (deterministic per title) -->
+  <g>
+  <polyline points="0,202.0 8,208.7 16,214.1 24,217.3 32,218.3 40,217.4 48,215.6 56,213.8 64,212.8 72,212.6 80,213.0 88,213.0 96,211.9 104,209.0 112,204.4 120,198.5 128,192.6 136,187.9 144,185.5 152,186.1 160,189.4 168,194.6 176,200.6 184,206.0 192,209.9 200,212.0 208,212.6 216,212.4 224,212.3 232,213.0 240,214.5 248,216.6 256,218.3 264,218.6 272,216.8 280,212.6 288,206.6 296,199.7 304,193.3 312,188.7 320,186.7 328,187.5 336,190.6 344,194.9 352,199.1 360,202.6 368,204.7 376,205.6 384,206.2 392,207.0 400,209.0" fill="none" stroke="#a78bfa" stroke-width="1.5" opacity="0.35"/>
+  <polyline points="0,228.1 8,227.1 16,225.2 24,222.4 32,218.9 40,215.4 48,212.5 56,211.2 64,212.0 72,215.2 80,220.7 88,227.8 96,235.6 104,243.1 112,249.1 120,252.9 128,254.2 136,253.1 144,250.2 152,246.2 160,241.9 168,238.2 176,235.4 184,233.7 192,232.7 200,231.9 208,230.7 216,228.7 224,225.6 232,221.5 240,217.1 248,213.0 256,210.2 264,209.5 272,211.2 280,215.5 288,221.8 296,229.4 304,237.1 312,244.0 320,249.1 328,251.9 336,252.3 344,250.7 352,247.8 360,244.4 368,241.3 376,238.8 384,237.3 392,236.4 400,235.8" fill="none" stroke="#a78bfa" stroke-width="1.5" opacity="0.22"/>
+  <polyline points="0,287.8 8,291.7 16,292.6 24,290.5 32,285.8 40,279.5 48,272.6 56,266.3 64,261.3 72,258.1 80,256.6 88,256.2 96,256.2 104,255.6 112,253.9 120,250.8 128,246.6 136,241.9 144,237.7 152,235.1 160,234.8 168,237.4 176,242.7 184,250.2 192,258.9 200,267.4 208,274.8 216,280.0 224,282.7 232,283.1 240,281.6 248,279.2 256,276.8 264,275.1 272,274.7 280,275.3 288,276.5 296,277.4 304,277.2 312,275.1 320,270.7 328,264.3 336,256.5 344,248.2 352,240.7 360,235.2 368,232.4 376,232.6 384,235.5 392,240.5 400,246.5" fill="none" stroke="#a78bfa" stroke-width="1.5" opacity="0.13"/>
+  </g>
+
+  <!-- Header -->
+  <text x="20" y="40" font-family="Inter, sans-serif" font-size="14" fill="#a78bfa" font-weight="600">
+    UWA / 11-11
+  </text>
+
+  <!-- Keyword badge -->
+  <rect x="20" y="60" width="92" height="28" rx="14" fill="#a78bfa" opacity="0.2"/>
+  <text x="30" y="79" font-family="Inter, sans-serif" font-size="13" fill="#a78bfa" font-weight="500">
+    detection
+  </text>
+
+  <!-- Title -->
+  <foreignObject x="20" y="110" width="360" height="120">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="
+      font-family: Inter, sans-serif;
+      font-size: 18px;
+      font-weight: 600;
+      color: #e2e8f0;
+      line-height: 1.4;
+      overflow: hidden;
+      display: -webkit-box;
+      -webkit-line-clamp: 4;
+      -webkit-box-orient: vertical;
+    ">
+      DEATH’S WHISPERER: An AI-Guided Aquatic Robotic System fo...
+    </div>
+  </foreignObject>
+
+  <!-- Author -->
+  <text x="20" y="250" font-family="Inter, sans-serif" font-size="13" fill="#94a3b8">
+    Michael James Arnold
+  </text>
+
+  <!-- Footer -->
+  <text x="20" y="275" font-family="Inter, sans-serif" font-size="11" fill="#64748b">
+    Open Science Framework
+  </text>
+
+  <!-- Score badge -->
+  <circle cx="360" cy="40" r="24" fill="#a78bfa" opacity="0.2"/>
+  <text x="360" y="46" font-family="Inter, sans-serif" font-size="14" fill="#a78bfa" font-weight="700" text-anchor="middle">
+    56
+  </text>
+</svg>

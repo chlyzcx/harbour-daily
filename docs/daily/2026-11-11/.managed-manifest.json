@@ -1,0 +1,129 @@
+{
+  "schema_version": 2,
+  "cycle_id": "daily-2026-11-11",
+  "display_date": "2026-11-11",
+  "articles": [
+    {
+      "candidate_id": "arxiv--2611.13699-1",
+      "category": "Paper",
+      "rank": 1,
+      "path": "docs/daily/2026-11-11/paper/01-residual-closed-loop-sage-brent-estimation-for-unk.md"
+    },
+    {
+      "candidate_id": "arxiv--2611.13019-1",
+      "category": "Paper",
+      "rank": 2,
+      "path": "docs/daily/2026-11-11/paper/02-two-tier-task-offloading-for-satellite-assisted-ma.md"
+    },
+    {
+      "candidate_id": "openalex--W7225609730",
+      "category": "Paper",
+      "rank": 3,
+      "path": "docs/daily/2026-11-11/paper/03-mechanical-response-and-deformation-characteristic.md"
+    },
+    {
+      "candidate_id": "openalex--W7225661941",
+      "category": "Paper",
+      "rank": 4,
+      "path": "docs/daily/2026-11-11/paper/04-deaths-whisperer-an-ai-guided-aquatic-robotic-syst.md"
+    },
+    {
+      "candidate_id": "openalex--W7225610196",
+      "category": "Paper",
+      "rank": 5,
+      "path": "docs/daily/2026-11-11/paper/05-shipwreck-segmentation-in-side-scan-sonar-imagery-.md"
+    },
+    {
+      "candidate_id": "crossref--10.1117-12.3116739",
+      "category": "Paper",
+      "rank": 6,
+      "path": "docs/daily/2026-11-11/paper/06-understanding-the-role-of-ballistic-and-scattered-.md"
+    },
+    {
+      "candidate_id": "crossref--10.1007-s00773-026-01164-5",
+      "category": "Paper",
+      "rank": 7,
+      "path": "docs/daily/2026-11-11/paper/07-research-on-flow-field-distribution-and-propeller-.md"
+    },
+    {
+      "candidate_id": "crossref--10.1364-ao.616747",
+      "category": "Paper",
+      "rank": 8,
+      "path": "docs/daily/2026-11-11/paper/08-multi-user-underwater-wireless-optical-communicati.md"
+    },
+    {
+      "candidate_id": "crossref--10.22541-authorea.15011934-v1",
+      "category": "Paper",
+      "rank": 9,
+      "path": "docs/daily/2026-11-11/paper/09-shifts-in-call-type-and-acoustic-structure-across-.md"
+    },
+    {
+      "candidate_id": "crossref--10.1093-fshmag-vuag075",
+      "category": "Paper",
+      "rank": 10,
+      "path": "docs/daily/2026-11-11/paper/10-technology-live-sonar-and-mobile-lead-and-skill-as.md"
+    },
+    {
+      "candidate_id": "news--c8a3d90580b0",
+      "category": "News",
+      "rank": 11,
+      "path": "docs/daily/2026-11-11/news/11-sonardyne-begins-seabed-monitoring-for-offshore-cc.md"
+    },
+    {
+      "candidate_id": "news--2d3aec3aa0d9",
+      "category": "News",
+      "rank": 12,
+      "path": "docs/daily/2026-11-11/news/12-thales-and-kongsberg-team-up-to-offer-asw-capabili.md"
+    }
+  ],
+  "assets": [
+    {
+      "candidate_id": "arxiv--2611.13699-1",
+      "path": "docs/public/daily/2026-11-11/assets/arxiv--2611.13699-1/preview.png"
+    },
+    {
+      "candidate_id": "arxiv--2611.13019-1",
+      "path": "docs/public/daily/2026-11-11/assets/arxiv--2611.13019-1/preview.png"
+    },
+    {
+      "candidate_id": "openalex--W7225609730",
+      "path": "docs/public/daily/2026-11-11/assets/openalex--W7225609730/preview.png"
+    },
+    {
+      "candidate_id": "openalex--W7225661941",
+      "path": "docs/public/daily/2026-11-11/assets/openalex--W7225661941/preview.svg"
+    },
+    {
+      "candidate_id": "openalex--W7225610196",
+      "path": "docs/public/daily/2026-11-11/assets/openalex--W7225610196/preview.svg"
+    },
+    {
+      "candidate_id": "crossref--10.1117-12.3116739",
+      "path": "docs/public/daily/2026-11-11/assets/crossref--10.1117-12.3116739/preview.svg"
+    },
+    {
+      "candidate_id": "crossref--10.1007-s00773-026-01164-5",
+      "path": "docs/public/daily/2026-11-11/assets/crossref--10.1007-s00773-026-01164-5/preview.svg"
+    },
+    {
+      "candidate_id": "crossref--10.1364-ao.616747",
+      "path": "docs/public/daily/2026-11-11/assets/crossref--10.1364-ao.616747/preview.svg"
+    },
+    {
+      "candidate_id": "crossref--10.22541-authorea.15011934-v1",
+      "path": "docs/public/daily/2026-11-11/assets/crossref--10.22541-authorea.15011934-v1/preview.svg"
+    },
+    {
+      "candidate_id": "crossref--10.1093-fshmag-vuag075",
+      "path": "docs/public/daily/2026-11-11/assets/crossref--10.1093-fshmag-vuag075/preview.svg"
+    },
+    {
+      "candidate_id": "news--c8a3d90580b0",
+      "path": "docs/public/daily/2026-11-11/assets/news--c8a3d90580b0/preview.png"
+    },
+    {
+      "candidate_id": "news--2d3aec3aa0d9",
+      "path": "docs/public/daily/2026-11-11/assets/news--2d3aec3aa0d9/preview.png"
+    }
+  ]
+}

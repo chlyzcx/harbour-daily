@@ -1,0 +1,72 @@
+<svg width="400" height="300" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#042f2e;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#115e59;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="400" height="300" fill="url(#grad)"/>
+
+  <!-- Grid pattern -->
+  <g opacity="0.1">
+    <line x1="0" y1="75" x2="400" y2="75" stroke="#2dd4bf" stroke-width="1"/>
+    <line x1="0" y1="150" x2="400" y2="150" stroke="#2dd4bf" stroke-width="1"/>
+    <line x1="0" y1="225" x2="400" y2="225" stroke="#2dd4bf" stroke-width="1"/>
+    <line x1="100" y1="0" x2="100" y2="300" stroke="#2dd4bf" stroke-width="1"/>
+    <line x1="200" y1="0" x2="200" y2="300" stroke="#2dd4bf" stroke-width="1"/>
+    <line x1="300" y1="0" x2="300" y2="300" stroke="#2dd4bf" stroke-width="1"/>
+  </g>
+
+  <!-- Waveform decoration (deterministic per title) -->
+  <g>
+  <polyline points="0,188.5 8,190.0 16,192.5 24,195.5 32,198.3 40,200.5 48,202.0 56,202.8 64,203.4 72,204.2 80,205.6 88,207.8 96,211.0 104,214.7 112,218.4 120,221.3 128,223.0 136,222.7 144,220.4 152,216.3 160,210.9 168,204.8 176,199.1 184,194.4 192,191.3 200,190.0 208,190.3 216,191.9 224,194.2 232,196.4 240,198.3 248,199.5 256,200.1 264,200.5 272,201.0 280,202.2 288,204.4 296,207.7 304,211.7 312,216.1 320,220.1 328,222.9 336,224.0 344,223.0 352,219.9 360,215.3 368,209.6 376,203.8 384,198.6 392,194.7 400,192.4" fill="none" stroke="#2dd4bf" stroke-width="1.5" opacity="0.35"/>
+  <polyline points="0,246.5 8,248.6 16,249.9 24,249.6 32,247.3 40,243.0 48,236.9 56,229.8 64,222.7 72,216.6 80,212.3 88,210.2 96,210.4 104,212.5 112,215.8 120,219.4 128,222.6 136,224.9 144,226.1 152,226.4 160,226.4 168,226.7 176,228.1 184,230.8 192,235.1 200,240.4 208,246.2 216,251.5 224,255.4 232,257.1 240,256.4 248,253.2 256,248.2 264,242.1 272,236.0 280,230.6 288,226.6 296,224.3 304,223.4 312,223.5 320,223.9 328,223.8 336,222.8 344,220.7 352,217.9 360,215.0 368,212.6 376,211.7 384,212.7 392,216.0 400,221.3" fill="none" stroke="#2dd4bf" stroke-width="1.5" opacity="0.22"/>
+  <polyline points="0,248.3 8,256.0 16,263.1 24,268.8 32,272.4 40,274.0 48,273.8 56,272.9 64,271.9 72,271.9 80,273.3 88,276.2 96,280.2 104,284.3 112,287.7 120,289.4 128,288.5 136,285.1 144,279.2 152,271.8 160,263.8 168,256.5 176,250.8 184,247.2 192,245.9 200,246.3 208,247.8 216,249.3 224,249.9 232,249.3 240,247.1 248,244.0 256,240.6 264,237.9 272,237.0 280,238.4 288,242.4 296,248.7 304,256.4 312,264.6 320,271.9 328,277.5 336,280.9 344,281.9 352,280.9 360,278.9 368,276.8 376,275.4 384,275.3 392,276.6 400,279.0" fill="none" stroke="#2dd4bf" stroke-width="1.5" opacity="0.13"/>
+  </g>
+
+  <!-- Header -->
+  <text x="20" y="40" font-family="Inter, sans-serif" font-size="14" fill="#2dd4bf" font-weight="600">
+    UWA / 11-11
+  </text>
+
+  <!-- Keyword badge -->
+  <rect x="20" y="60" width="84" height="28" rx="14" fill="#2dd4bf" opacity="0.2"/>
+  <text x="30" y="79" font-family="Inter, sans-serif" font-size="13" fill="#2dd4bf" font-weight="500">
+    Research
+  </text>
+
+  <!-- Title -->
+  <foreignObject x="20" y="110" width="360" height="120">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="
+      font-family: Inter, sans-serif;
+      font-size: 18px;
+      font-weight: 600;
+      color: #e2e8f0;
+      line-height: 1.4;
+      overflow: hidden;
+      display: -webkit-box;
+      -webkit-line-clamp: 4;
+      -webkit-box-orient: vertical;
+    ">
+      Understanding the role of ballistic and scattered photons...
+    </div>
+  </foreignObject>
+
+  <!-- Author -->
+  <text x="20" y="250" font-family="Inter, sans-serif" font-size="13" fill="#94a3b8">
+    Johanna R. de Wolf
+  </text>
+
+  <!-- Footer -->
+  <text x="20" y="275" font-family="Inter, sans-serif" font-size="11" fill="#64748b">
+    Environmental Effects on Light Propagation and Adaptive Systems IX
+  </text>
+
+  <!-- Score badge -->
+  <circle cx="360" cy="40" r="24" fill="#2dd4bf" opacity="0.2"/>
+  <text x="360" y="46" font-family="Inter, sans-serif" font-size="14" fill="#2dd4bf" font-weight="700" text-anchor="middle">
+    55
+  </text>
+</svg>
