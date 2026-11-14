@@ -1,0 +1,109 @@
+{
+  "schema_version": 2,
+  "cycle_id": "daily-2026-11-14",
+  "display_date": "2026-11-14",
+  "articles": [
+    {
+      "candidate_id": "arxiv--2611.16884-1",
+      "category": "Paper",
+      "rank": 1,
+      "path": "docs/daily/2026-11-14/paper/01-collision-resilient-all-to-all-broadcast-schedulin.md"
+    },
+    {
+      "candidate_id": "openalex--W7225861549",
+      "category": "Paper",
+      "rank": 2,
+      "path": "docs/daily/2026-11-14/paper/02-state-dependent-coverage-optimization-for-lost-aut.md"
+    },
+    {
+      "candidate_id": "openalex--W7225899943",
+      "category": "Paper",
+      "rank": 3,
+      "path": "docs/daily/2026-11-14/paper/03-auv-target-perception-in-forward-looking-sonar-ima.md"
+    },
+    {
+      "candidate_id": "openalex--W7225812483",
+      "category": "Paper",
+      "rank": 4,
+      "path": "docs/daily/2026-11-14/paper/04-paranasal-recesses-and-rostral-airspace-volume-cov.md"
+    },
+    {
+      "candidate_id": "openalex--W7225907978",
+      "category": "Paper",
+      "rank": 5,
+      "path": "docs/daily/2026-11-14/paper/05-a-confounder-aware-pre-training-quality-control-wo.md"
+    },
+    {
+      "candidate_id": "openalex--W7225910048",
+      "category": "Paper",
+      "rank": 6,
+      "path": "docs/daily/2026-11-14/paper/06-multimodal-deep-learning-framework-for-detection-a.md"
+    },
+    {
+      "candidate_id": "openalex--W7225788663",
+      "category": "Paper",
+      "rank": 7,
+      "path": "docs/daily/2026-11-14/paper/07-menace-of-underwater-threats-in-arabian-sea-respon.md"
+    },
+    {
+      "candidate_id": "openalex--W7225810432",
+      "category": "Paper",
+      "rank": 8,
+      "path": "docs/daily/2026-11-14/paper/08-hybrid-ledld-underwater-optical-wireless-communica.md"
+    },
+    {
+      "candidate_id": "crossref--10.1002-lpor.72222",
+      "category": "Paper",
+      "rank": 9,
+      "path": "docs/daily/2026-11-14/paper/09-res-2-gese-heterojunction-reconfigurable-optoelect.md"
+    },
+    {
+      "candidate_id": "crossref--10.22541-essoar.15012185-v1",
+      "category": "Paper",
+      "rank": 10,
+      "path": "docs/daily/2026-11-14/paper/10-privacy-failure-in-split-audio-visual-separation-f.md"
+    }
+  ],
+  "assets": [
+    {
+      "candidate_id": "arxiv--2611.16884-1",
+      "path": "docs/public/daily/2026-11-14/assets/arxiv--2611.16884-1/preview.png"
+    },
+    {
+      "candidate_id": "openalex--W7225861549",
+      "path": "docs/public/daily/2026-11-14/assets/openalex--W7225861549/preview.png"
+    },
+    {
+      "candidate_id": "openalex--W7225899943",
+      "path": "docs/public/daily/2026-11-14/assets/openalex--W7225899943/preview.svg"
+    },
+    {
+      "candidate_id": "openalex--W7225812483",
+      "path": "docs/public/daily/2026-11-14/assets/openalex--W7225812483/preview.svg"
+    },
+    {
+      "candidate_id": "openalex--W7225907978",
+      "path": "docs/public/daily/2026-11-14/assets/openalex--W7225907978/preview.png"
+    },
+    {
+      "candidate_id": "openalex--W7225910048",
+      "path": "docs/public/daily/2026-11-14/assets/openalex--W7225910048/preview.svg"
+    },
+    {
+      "candidate_id": "openalex--W7225788663",
+      "path": "docs/public/daily/2026-11-14/assets/openalex--W7225788663/preview.png"
+    },
+    {
+      "candidate_id": "openalex--W7225810432",
+      "path": "docs/public/daily/2026-11-14/assets/openalex--W7225810432/preview.png"
+    },
+    {
+      "candidate_id": "crossref--10.1002-lpor.72222",
+      "path": "docs/public/daily/2026-11-14/assets/crossref--10.1002-lpor.72222/preview.svg"
+    },
+    {
+      "candidate_id": "crossref--10.22541-essoar.15012185-v1",
+      "path": "docs/public/daily/2026-11-14/assets/crossref--10.22541-essoar.15012185-v1/preview.svg"
+    }
+  ]
+}

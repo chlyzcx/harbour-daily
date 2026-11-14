@@ -1,0 +1,72 @@
+<svg width="400" height="300" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#042f2e;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#115e59;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="400" height="300" fill="url(#grad)"/>
+
+  <!-- Grid pattern -->
+  <g opacity="0.1">
+    <line x1="0" y1="75" x2="400" y2="75" stroke="#2dd4bf" stroke-width="1"/>
+    <line x1="0" y1="150" x2="400" y2="150" stroke="#2dd4bf" stroke-width="1"/>
+    <line x1="0" y1="225" x2="400" y2="225" stroke="#2dd4bf" stroke-width="1"/>
+    <line x1="100" y1="0" x2="100" y2="300" stroke="#2dd4bf" stroke-width="1"/>
+    <line x1="200" y1="0" x2="200" y2="300" stroke="#2dd4bf" stroke-width="1"/>
+    <line x1="300" y1="0" x2="300" y2="300" stroke="#2dd4bf" stroke-width="1"/>
+  </g>
+
+  <!-- Waveform decoration (deterministic per title) -->
+  <g>
+  <polyline points="0,203.4 8,203.6 16,203.7 24,204.8 32,207.3 40,211.3 48,216.0 56,220.5 64,223.6 72,224.2 80,222.2 88,217.9 96,212.2 104,206.4 112,201.5 120,198.5 128,197.3 136,197.4 144,197.9 152,198.0 160,197.0 168,194.9 176,192.3 184,190.1 192,189.4 200,191.0 208,194.9 216,200.7 224,207.3 232,213.4 240,217.9 248,220.1 256,219.9 264,218.1 272,215.6 280,213.5 288,212.3 296,212.3 304,212.9 312,213.3 320,212.5 328,209.9 336,205.4 344,199.7 352,193.7 360,188.9 368,186.1 376,186.1 384,188.5 392,192.6 400,197.3" fill="none" stroke="#2dd4bf" stroke-width="1.5" opacity="0.35"/>
+  <polyline points="0,228.5 8,220.9 16,214.4 24,210.2 32,209.1 40,210.8 48,214.6 56,218.9 64,222.4 72,224.4 80,224.6 88,223.7 96,223.0 104,223.7 112,226.6 120,231.9 128,238.8 136,246.1 144,252.1 152,255.5 160,255.8 168,253.2 176,248.8 184,243.8 192,239.8 200,237.5 208,237.0 216,237.6 224,238.0 232,237.1 240,234.1 248,228.8 256,222.1 264,215.3 272,210.0 280,207.3 288,207.9 296,211.3 304,216.5 312,222.0 320,226.4 328,229.0 336,229.7 344,229.3 352,229.0 360,230.0 368,233.1 376,238.2 384,244.6 392,250.8 400,255.4" fill="none" stroke="#2dd4bf" stroke-width="1.5" opacity="0.22"/>
+  <polyline points="0,281.0 8,277.8 16,275.5 24,275.3 32,277.4 40,281.0 48,284.5 56,286.4 64,285.2 72,280.6 80,273.2 88,264.3 96,256.0 104,249.7 112,246.5 120,246.3 128,248.1 136,250.2 144,251.2 152,249.9 160,246.4 168,241.5 176,236.7 184,233.9 192,234.2 200,238.2 208,245.0 216,253.4 224,261.3 232,267.2 240,270.3 248,270.7 256,269.4 264,268.0 272,268.2 280,270.7 288,275.6 296,281.8 304,287.8 312,291.7 320,292.3 328,289.3 336,283.3 344,275.8 352,268.7 360,263.5 368,260.9 376,260.8 384,262.0 392,262.9 400,262.0" fill="none" stroke="#2dd4bf" stroke-width="1.5" opacity="0.13"/>
+  </g>
+
+  <!-- Header -->
+  <text x="20" y="40" font-family="Inter, sans-serif" font-size="14" fill="#2dd4bf" font-weight="600">
+    UWA / 11-14
+  </text>
+
+  <!-- Keyword badge -->
+  <rect x="20" y="60" width="84" height="28" rx="14" fill="#2dd4bf" opacity="0.2"/>
+  <text x="30" y="79" font-family="Inter, sans-serif" font-size="13" fill="#2dd4bf" font-weight="500">
+    Research
+  </text>
+
+  <!-- Title -->
+  <foreignObject x="20" y="110" width="360" height="120">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="
+      font-family: Inter, sans-serif;
+      font-size: 18px;
+      font-weight: 600;
+      color: #e2e8f0;
+      line-height: 1.4;
+      overflow: hidden;
+      display: -webkit-box;
+      -webkit-line-clamp: 4;
+      -webkit-box-orient: vertical;
+    ">
+      ReS 2 /GeSe Heterojunction Reconfigurable Optoelectronic ...
+    </div>
+  </foreignObject>
+
+  <!-- Author -->
+  <text x="20" y="250" font-family="Inter, sans-serif" font-size="13" fill="#94a3b8">
+    Pengfei Li
+  </text>
+
+  <!-- Footer -->
+  <text x="20" y="275" font-family="Inter, sans-serif" font-size="11" fill="#64748b">
+    Laser &amp;amp; Photonics Reviews
+  </text>
+
+  <!-- Score badge -->
+  <circle cx="360" cy="40" r="24" fill="#2dd4bf" opacity="0.2"/>
+  <text x="360" y="46" font-family="Inter, sans-serif" font-size="14" fill="#2dd4bf" font-weight="700" text-anchor="middle">
+    55
+  </text>
+</svg>
