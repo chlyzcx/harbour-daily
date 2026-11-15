@@ -1,0 +1,109 @@
+{
+  "schema_version": 2,
+  "cycle_id": "daily-2026-11-15",
+  "display_date": "2026-11-15",
+  "articles": [
+    {
+      "candidate_id": "openalex--W7225891954",
+      "category": "Paper",
+      "rank": 1,
+      "path": "docs/daily/2026-11-15/paper/01-methodology-for-click-and-short-duration-pulses-re.md"
+    },
+    {
+      "candidate_id": "openalex--W7225997697",
+      "category": "Paper",
+      "rank": 2,
+      "path": "docs/daily/2026-11-15/paper/02-extrepso-an-energy-estimator-based-on-machine-lear.md"
+    },
+    {
+      "candidate_id": "openalex--W7226035157",
+      "category": "Paper",
+      "rank": 3,
+      "path": "docs/daily/2026-11-15/paper/03-collision-resilient-all-to-all-broadcast-schedulin.md"
+    },
+    {
+      "candidate_id": "s2--1ca116d734fc6d68e39509ec3c97d5da27e0ba0c",
+      "category": "Paper",
+      "rank": 4,
+      "path": "docs/daily/2026-11-15/paper/04-a-mdbd-adaptive-molecular-diffusion-based-deployme.md"
+    },
+    {
+      "candidate_id": "s2--712696bb4f5b138d333828bc46fb85853d832144",
+      "category": "Paper",
+      "rank": 5,
+      "path": "docs/daily/2026-11-15/paper/05-a-novel-integrated-underwater-communication-and-po.md"
+    },
+    {
+      "candidate_id": "s2--e8b54c5a460538c4bdd6acc687a0b47edf61a00f",
+      "category": "Paper",
+      "rank": 6,
+      "path": "docs/daily/2026-11-15/paper/06-an-adaptive-mimo-optical-multi-color-transceiver-f.md"
+    },
+    {
+      "candidate_id": "openalex--W7226014269",
+      "category": "Paper",
+      "rank": 7,
+      "path": "docs/daily/2026-11-15/paper/07-provenance-audited-resampling-of-underwater-acoust.md"
+    },
+    {
+      "candidate_id": "openalex--W7226035282",
+      "category": "Paper",
+      "rank": 8,
+      "path": "docs/daily/2026-11-15/paper/08-implementasi-smart-detector-ikan-berbasis-ramah-li.md"
+    },
+    {
+      "candidate_id": "openalex--W7225890709",
+      "category": "Paper",
+      "rank": 9,
+      "path": "docs/daily/2026-11-15/paper/09-a-systematic-review-of-quantum-machine-learning-al.md"
+    },
+    {
+      "candidate_id": "openalex--W7225919388",
+      "category": "Paper",
+      "rank": 10,
+      "path": "docs/daily/2026-11-15/paper/10-mathematical-modeling-of-detection-probability-in-.md"
+    }
+  ],
+  "assets": [
+    {
+      "candidate_id": "openalex--W7225891954",
+      "path": "docs/public/daily/2026-11-15/assets/openalex--W7225891954/preview.png"
+    },
+    {
+      "candidate_id": "openalex--W7225997697",
+      "path": "docs/public/daily/2026-11-15/assets/openalex--W7225997697/preview.svg"
+    },
+    {
+      "candidate_id": "openalex--W7226035157",
+      "path": "docs/public/daily/2026-11-15/assets/openalex--W7226035157/preview.png"
+    },
+    {
+      "candidate_id": "s2--1ca116d734fc6d68e39509ec3c97d5da27e0ba0c",
+      "path": "docs/public/daily/2026-11-15/assets/s2--1ca116d734fc6d68e39509ec3c97d5da27e0ba0c/preview.svg"
+    },
+    {
+      "candidate_id": "s2--712696bb4f5b138d333828bc46fb85853d832144",
+      "path": "docs/public/daily/2026-11-15/assets/s2--712696bb4f5b138d333828bc46fb85853d832144/preview.svg"
+    },
+    {
+      "candidate_id": "s2--e8b54c5a460538c4bdd6acc687a0b47edf61a00f",
+      "path": "docs/public/daily/2026-11-15/assets/s2--e8b54c5a460538c4bdd6acc687a0b47edf61a00f/preview.svg"
+    },
+    {
+      "candidate_id": "openalex--W7226014269",
+      "path": "docs/public/daily/2026-11-15/assets/openalex--W7226014269/preview.png"
+    },
+    {
+      "candidate_id": "openalex--W7226035282",
+      "path": "docs/public/daily/2026-11-15/assets/openalex--W7226035282/preview.svg"
+    },
+    {
+      "candidate_id": "openalex--W7225890709",
+      "path": "docs/public/daily/2026-11-15/assets/openalex--W7225890709/preview.png"
+    },
+    {
+      "candidate_id": "openalex--W7225919388",
+      "path": "docs/public/daily/2026-11-15/assets/openalex--W7225919388/preview.png"
+    }
+  ]
+}
