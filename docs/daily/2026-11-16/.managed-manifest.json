@@ -1,0 +1,89 @@
+{
+  "schema_version": 2,
+  "cycle_id": "daily-2026-11-16",
+  "display_date": "2026-11-16",
+  "articles": [
+    {
+      "candidate_id": "openalex--W7230894566",
+      "category": "Paper",
+      "rank": 1,
+      "path": "docs/daily/2026-11-16/paper/01-a-comparative-study-on-the-estimation-methods-of-d.md"
+    },
+    {
+      "candidate_id": "crossref--10.1007-978-3-032-44237-6_19",
+      "category": "Paper",
+      "rank": 2,
+      "path": "docs/daily/2026-11-16/paper/02-optical-vs-acoustic-depth-estimation-for-underwate.md"
+    },
+    {
+      "candidate_id": "crossref--10.1007-s12596-026-03388-5",
+      "category": "Paper",
+      "rank": 3,
+      "path": "docs/daily/2026-11-16/paper/03-a-spectral-efficient-underwater-optical-transmissi.md"
+    },
+    {
+      "candidate_id": "crossref--10.1038-s41598-026-80812-7",
+      "category": "Paper",
+      "rank": 4,
+      "path": "docs/daily/2026-11-16/paper/04-integrating-uav-assisted-blow-sampling-and-photo-i.md"
+    },
+    {
+      "candidate_id": "crossref--10.1117-12.3132878",
+      "category": "Paper",
+      "rank": 5,
+      "path": "docs/daily/2026-11-16/paper/05-research-on-key-technologies-for-manufacturing-dua.md"
+    },
+    {
+      "candidate_id": "crossref--10.1080-15569527.2026.2760907",
+      "category": "Paper",
+      "rank": 6,
+      "path": "docs/daily/2026-11-16/paper/06-can-large-language-models-provide-reliable-informa.md"
+    },
+    {
+      "candidate_id": "crossref--10.1007-s11760-026-05829-x",
+      "category": "Paper",
+      "rank": 7,
+      "path": "docs/daily/2026-11-16/paper/07-underwater-sonar-image-classification-using-pseudo.md"
+    },
+    {
+      "candidate_id": "openalex--W7232010463",
+      "category": "Paper",
+      "rank": 8,
+      "path": "docs/daily/2026-11-16/paper/08-bathyboard-a-surfboard-based-platform-for-measurin.md"
+    }
+  ],
+  "assets": [
+    {
+      "candidate_id": "openalex--W7230894566",
+      "path": "docs/public/daily/2026-11-16/assets/openalex--W7230894566/preview.svg"
+    },
+    {
+      "candidate_id": "crossref--10.1007-978-3-032-44237-6_19",
+      "path": "docs/public/daily/2026-11-16/assets/crossref--10.1007-978-3-032-44237-6_19/preview.svg"
+    },
+    {
+      "candidate_id": "crossref--10.1007-s12596-026-03388-5",
+      "path": "docs/public/daily/2026-11-16/assets/crossref--10.1007-s12596-026-03388-5/preview.png"
+    },
+    {
+      "candidate_id": "crossref--10.1038-s41598-026-80812-7",
+      "path": "docs/public/daily/2026-11-16/assets/crossref--10.1038-s41598-026-80812-7/preview.svg"
+    },
+    {
+      "candidate_id": "crossref--10.1117-12.3132878",
+      "path": "docs/public/daily/2026-11-16/assets/crossref--10.1117-12.3132878/preview.svg"
+    },
+    {
+      "candidate_id": "crossref--10.1080-15569527.2026.2760907",
+      "path": "docs/public/daily/2026-11-16/assets/crossref--10.1080-15569527.2026.2760907/preview.svg"
+    },
+    {
+      "candidate_id": "crossref--10.1007-s11760-026-05829-x",
+      "path": "docs/public/daily/2026-11-16/assets/crossref--10.1007-s11760-026-05829-x/preview.png"
+    },
+    {
+      "candidate_id": "openalex--W7232010463",
+      "path": "docs/public/daily/2026-11-16/assets/openalex--W7232010463/preview.svg"
+    }
+  ]
+}

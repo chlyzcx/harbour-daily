@@ -1,0 +1,72 @@
+<svg width="400" height="300" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#2e1065;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#5b21b6;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="400" height="300" fill="url(#grad)"/>
+
+  <!-- Grid pattern -->
+  <g opacity="0.1">
+    <line x1="0" y1="75" x2="400" y2="75" stroke="#a78bfa" stroke-width="1"/>
+    <line x1="0" y1="150" x2="400" y2="150" stroke="#a78bfa" stroke-width="1"/>
+    <line x1="0" y1="225" x2="400" y2="225" stroke="#a78bfa" stroke-width="1"/>
+    <line x1="100" y1="0" x2="100" y2="300" stroke="#a78bfa" stroke-width="1"/>
+    <line x1="200" y1="0" x2="200" y2="300" stroke="#a78bfa" stroke-width="1"/>
+    <line x1="300" y1="0" x2="300" y2="300" stroke="#a78bfa" stroke-width="1"/>
+  </g>
+
+  <!-- Waveform decoration (deterministic per title) -->
+  <g>
+  <polyline points="0,214.5 8,218.5 16,221.6 24,223.1 32,223.1 40,221.7 48,219.3 56,216.5 64,214.0 72,212.3 80,211.7 88,212.1 96,213.2 104,214.4 112,215.0 120,214.5 128,212.7 136,209.5 144,205.2 152,200.5 160,196.1 168,192.5 176,190.3 184,189.7 192,190.4 200,192.0 208,194.0 216,195.7 224,196.6 232,196.4 240,195.2 248,193.5 256,191.7 264,190.5 272,190.5 280,192.0 288,195.0 296,199.1 304,203.8 312,208.4 320,212.2 328,214.7 336,215.9 344,215.7 352,214.6 360,213.3 368,212.4 376,212.3 384,213.3 392,215.3 400,217.8" fill="none" stroke="#a78bfa" stroke-width="1.5" opacity="0.35"/>
+  <polyline points="0,217.4 8,219.8 16,222.2 24,224.1 32,225.4 40,226.4 48,227.6 56,229.4 64,232.2 72,236.2 80,241.0 88,246.1 96,250.7 104,253.7 112,254.5 120,252.5 128,247.9 136,241.0 144,232.8 152,224.5 160,217.2 168,212.0 176,209.4 184,209.7 192,212.4 200,216.8 208,222.0 216,227.1 224,231.4 232,234.6 240,236.7 248,237.9 256,238.8 264,239.9 272,241.5 280,243.6 288,245.9 296,247.8 304,248.7 312,247.8 320,244.7 328,239.6 336,232.8 344,225.1 352,217.6 360,211.5 368,207.7 376,206.9 384,209.1 392,213.9 400,220.6" fill="none" stroke="#a78bfa" stroke-width="1.5" opacity="0.22"/>
+  <polyline points="0,287.4 8,286.7 16,283.1 24,276.7 32,268.2 40,258.7 48,249.5 56,241.9 64,236.8 72,234.9 80,235.9 88,239.2 96,244.1 104,249.3 112,254.0 120,257.5 128,259.8 136,261.1 144,262.0 152,263.3 160,265.7 168,269.4 176,274.2 184,279.6 192,284.7 200,288.3 208,289.6 216,287.8 224,283.0 232,275.5 240,266.4 248,256.9 256,248.3 264,241.7 272,238.0 280,237.1 288,238.7 296,242.1 304,246.3 312,250.3 320,253.4 328,255.4 336,256.5 344,257.2 352,258.4 360,260.7 368,264.4 376,269.6 384,275.8 392,282.1 400,287.4" fill="none" stroke="#a78bfa" stroke-width="1.5" opacity="0.13"/>
+  </g>
+
+  <!-- Header -->
+  <text x="20" y="40" font-family="Inter, sans-serif" font-size="14" fill="#a78bfa" font-weight="600">
+    UWA / 11-16
+  </text>
+
+  <!-- Keyword badge -->
+  <rect x="20" y="60" width="92" height="28" rx="14" fill="#a78bfa" opacity="0.2"/>
+  <text x="30" y="79" font-family="Inter, sans-serif" font-size="13" fill="#a78bfa" font-weight="500">
+    detection
+  </text>
+
+  <!-- Title -->
+  <foreignObject x="20" y="110" width="360" height="120">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="
+      font-family: Inter, sans-serif;
+      font-size: 18px;
+      font-weight: 600;
+      color: #e2e8f0;
+      line-height: 1.4;
+      overflow: hidden;
+      display: -webkit-box;
+      -webkit-line-clamp: 4;
+      -webkit-box-orient: vertical;
+    ">
+      BathyBoard: A Surfboard-Based Platform for Measuring Surf...
+    </div>
+  </foreignObject>
+
+  <!-- Author -->
+  <text x="20" y="250" font-family="Inter, sans-serif" font-size="13" fill="#94a3b8">
+    Kanoa Pick
+  </text>
+
+  <!-- Footer -->
+  <text x="20" y="275" font-family="Inter, sans-serif" font-size="11" fill="#64748b">
+    Journal of Surveying Engineering
+  </text>
+
+  <!-- Score badge -->
+  <circle cx="360" cy="40" r="24" fill="#a78bfa" opacity="0.2"/>
+  <text x="360" y="46" font-family="Inter, sans-serif" font-size="14" fill="#a78bfa" font-weight="700" text-anchor="middle">
+    51
+  </text>
+</svg>
