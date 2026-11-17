@@ -1,0 +1,79 @@
+{
+  "schema_version": 2,
+  "cycle_id": "daily-2026-11-17",
+  "display_date": "2026-11-17",
+  "articles": [
+    {
+      "candidate_id": "openalex--W7233546208",
+      "category": "Paper",
+      "rank": 1,
+      "path": "docs/daily/2026-11-17/paper/01-direction-adaptive-expert-decomposition-via-struct.md"
+    },
+    {
+      "candidate_id": "openalex--W7227759034",
+      "category": "Paper",
+      "rank": 2,
+      "path": "docs/daily/2026-11-17/paper/02-a-decade-of-multi-site-acoustic-monitoring-reveals.md"
+    },
+    {
+      "candidate_id": "crossref--10.1007-s42286-026-00156-7",
+      "category": "Paper",
+      "rank": 3,
+      "path": "docs/daily/2026-11-17/paper/03-acoustic-signature-based-methodology-for-classifyi.md"
+    },
+    {
+      "candidate_id": "crossref--10.3390-rs18223927",
+      "category": "Paper",
+      "rank": 4,
+      "path": "docs/daily/2026-11-17/paper/04-experimental-study-of-spectral-radiometric-correct.md"
+    },
+    {
+      "candidate_id": "crossref--10.1002-lpor.72237",
+      "category": "Paper",
+      "rank": 5,
+      "path": "docs/daily/2026-11-17/paper/05-ecofriendly-cs-3-mnbr-5-glassceramics-with-superio.md"
+    },
+    {
+      "candidate_id": "crossref--10.1002-fee.70085",
+      "category": "Paper",
+      "rank": 6,
+      "path": "docs/daily/2026-11-17/paper/06-historical-and-potential-future-importance-of-mari.md"
+    },
+    {
+      "candidate_id": "news--ebd6137ebb5a",
+      "category": "News",
+      "rank": 7,
+      "path": "docs/daily/2026-11-17/news/07-us-navy-orders-82-additional-lionfish-uuvs-from-hi.md"
+    }
+  ],
+  "assets": [
+    {
+      "candidate_id": "openalex--W7233546208",
+      "path": "docs/public/daily/2026-11-17/assets/openalex--W7233546208/preview.png"
+    },
+    {
+      "candidate_id": "openalex--W7227759034",
+      "path": "docs/public/daily/2026-11-17/assets/openalex--W7227759034/preview.png"
+    },
+    {
+      "candidate_id": "crossref--10.1007-s42286-026-00156-7",
+      "path": "docs/public/daily/2026-11-17/assets/crossref--10.1007-s42286-026-00156-7/preview.png"
+    },
+    {
+      "candidate_id": "crossref--10.3390-rs18223927",
+      "path": "docs/public/daily/2026-11-17/assets/crossref--10.3390-rs18223927/preview.png"
+    },
+    {
+      "candidate_id": "crossref--10.1002-lpor.72237",
+      "path": "docs/public/daily/2026-11-17/assets/crossref--10.1002-lpor.72237/preview.svg"
+    },
+    {
+      "candidate_id": "crossref--10.1002-fee.70085",
+      "path": "docs/public/daily/2026-11-17/assets/crossref--10.1002-fee.70085/preview.svg"
+    },
+    {
+      "candidate_id": "news--ebd6137ebb5a",
+      "path": "docs/public/daily/2026-11-17/assets/news--ebd6137ebb5a/preview.svg"
+    }
+  ]
+}

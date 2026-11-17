@@ -1,0 +1,72 @@
+<svg width="400" height="300" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#042f2e;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#115e59;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="400" height="300" fill="url(#grad)"/>
+
+  <!-- Grid pattern -->
+  <g opacity="0.1">
+    <line x1="0" y1="75" x2="400" y2="75" stroke="#2dd4bf" stroke-width="1"/>
+    <line x1="0" y1="150" x2="400" y2="150" stroke="#2dd4bf" stroke-width="1"/>
+    <line x1="0" y1="225" x2="400" y2="225" stroke="#2dd4bf" stroke-width="1"/>
+    <line x1="100" y1="0" x2="100" y2="300" stroke="#2dd4bf" stroke-width="1"/>
+    <line x1="200" y1="0" x2="200" y2="300" stroke="#2dd4bf" stroke-width="1"/>
+    <line x1="300" y1="0" x2="300" y2="300" stroke="#2dd4bf" stroke-width="1"/>
+  </g>
+
+  <!-- Waveform decoration (deterministic per title) -->
+  <g>
+  <polyline points="0,218.1 8,213.8 16,210.0 24,207.4 32,206.2 40,206.0 48,205.8 56,204.9 64,202.6 72,198.8 80,194.2 88,189.7 96,186.6 104,185.8 112,187.7 120,191.9 128,197.6 136,203.6 144,208.6 152,211.8 160,213.1 168,213.1 176,212.4 184,212.2 192,213.0 200,214.9 208,217.4 216,219.5 224,220.3 232,218.9 240,215.1 248,209.4 256,202.8 264,196.6 272,192.0 280,189.7 288,189.7 296,191.5 304,194.1 312,196.4 320,197.8 328,198.0 336,197.5 344,197.1 352,197.9 360,200.3 368,204.6 376,210.2 384,216.1 392,221.0 400,223.9" fill="none" stroke="#2dd4bf" stroke-width="1.5" opacity="0.35"/>
+  <polyline points="0,218.8 8,218.8 16,221.1 24,226.0 32,233.0 40,240.8 48,247.7 56,252.4 64,254.1 72,252.9 80,249.7 88,245.8 96,242.5 104,240.7 112,240.7 120,241.7 128,242.7 136,242.2 144,239.6 152,234.4 160,227.5 168,220.0 176,213.6 184,209.5 192,208.6 200,210.6 208,214.6 216,219.1 224,223.0 232,225.1 240,225.5 248,224.8 256,224.2 264,224.9 272,227.8 280,233.0 288,239.8 296,246.9 304,252.7 312,256.0 320,256.1 328,253.3 336,248.5 344,243.4 352,239.1 360,236.6 368,235.9 376,236.4 384,236.8 392,235.9 400,232.9" fill="none" stroke="#2dd4bf" stroke-width="1.5" opacity="0.22"/>
+  <polyline points="0,254.9 8,248.2 16,244.6 24,244.1 32,245.9 40,248.4 48,250.0 56,249.5 64,246.8 72,242.4 80,237.9 88,235.0 96,235.2 104,238.9 112,245.6 120,254.0 128,262.3 136,268.8 144,272.4 152,273.1 160,271.8 168,270.2 176,269.7 184,271.5 192,275.7 200,281.4 208,287.2 216,291.1 224,291.9 232,289.1 240,283.1 248,275.5 256,267.9 264,262.1 272,258.9 280,258.4 288,259.4 296,260.5 304,260.2 312,257.3 320,251.9 328,245.0 336,238.1 344,233.1 352,231.2 360,233.1 368,238.0 376,244.6 384,251.1 392,256.0 400,258.3" fill="none" stroke="#2dd4bf" stroke-width="1.5" opacity="0.13"/>
+  </g>
+
+  <!-- Header -->
+  <text x="20" y="40" font-family="Inter, sans-serif" font-size="14" fill="#2dd4bf" font-weight="600">
+    UWA / 11-17
+  </text>
+
+  <!-- Keyword badge -->
+  <rect x="20" y="60" width="84" height="28" rx="14" fill="#2dd4bf" opacity="0.2"/>
+  <text x="30" y="79" font-family="Inter, sans-serif" font-size="13" fill="#2dd4bf" font-weight="500">
+    Research
+  </text>
+
+  <!-- Title -->
+  <foreignObject x="20" y="110" width="360" height="120">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="
+      font-family: Inter, sans-serif;
+      font-size: 18px;
+      font-weight: 600;
+      color: #e2e8f0;
+      line-height: 1.4;
+      overflow: hidden;
+      display: -webkit-box;
+      -webkit-line-clamp: 4;
+      -webkit-box-orient: vertical;
+    ">
+      Historical and potential future importance of marine mega...
+    </div>
+  </foreignObject>
+
+  <!-- Author -->
+  <text x="20" y="250" font-family="Inter, sans-serif" font-size="13" fill="#94a3b8">
+    Francis D Gerraty
+  </text>
+
+  <!-- Footer -->
+  <text x="20" y="275" font-family="Inter, sans-serif" font-size="11" fill="#64748b">
+    Frontiers in Ecology and the Environment
+  </text>
+
+  <!-- Score badge -->
+  <circle cx="360" cy="40" r="24" fill="#2dd4bf" opacity="0.2"/>
+  <text x="360" y="46" font-family="Inter, sans-serif" font-size="14" fill="#2dd4bf" font-weight="700" text-anchor="middle">
+    55
+  </text>
+</svg>
