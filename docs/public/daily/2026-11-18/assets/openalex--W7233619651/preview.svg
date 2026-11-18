@@ -1,0 +1,72 @@
+<svg width="400" height="300" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#042f2e;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#115e59;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="400" height="300" fill="url(#grad)"/>
+
+  <!-- Grid pattern -->
+  <g opacity="0.1">
+    <line x1="0" y1="75" x2="400" y2="75" stroke="#2dd4bf" stroke-width="1"/>
+    <line x1="0" y1="150" x2="400" y2="150" stroke="#2dd4bf" stroke-width="1"/>
+    <line x1="0" y1="225" x2="400" y2="225" stroke="#2dd4bf" stroke-width="1"/>
+    <line x1="100" y1="0" x2="100" y2="300" stroke="#2dd4bf" stroke-width="1"/>
+    <line x1="200" y1="0" x2="200" y2="300" stroke="#2dd4bf" stroke-width="1"/>
+    <line x1="300" y1="0" x2="300" y2="300" stroke="#2dd4bf" stroke-width="1"/>
+  </g>
+
+  <!-- Waveform decoration (deterministic per title) -->
+  <g>
+  <polyline points="0,200.3 8,199.0 16,197.7 24,197.5 32,199.1 40,202.6 48,207.4 56,212.6 64,216.9 72,219.5 80,220.1 88,218.8 96,216.5 104,214.4 112,213.3 120,213.9 128,215.8 136,218.6 144,221.0 152,222.1 160,221.1 168,218.1 176,213.5 184,208.5 192,204.2 200,201.4 208,200.5 216,201.1 224,202.4 232,203.3 240,202.9 248,200.8 256,197.2 264,192.8 272,188.8 280,186.2 288,185.7 296,187.4 304,190.5 312,194.2 320,197.3 328,198.9 336,198.9 344,197.7 352,196.1 360,195.1 368,195.8 376,198.4 384,202.8 392,208.0 400,212.9" fill="none" stroke="#2dd4bf" stroke-width="1.5" opacity="0.35"/>
+  <polyline points="0,232.6 8,224.3 16,216.8 24,211.2 32,208.2 40,208.2 48,210.9 56,215.7 64,221.7 72,227.9 80,233.3 88,237.4 96,240.1 104,241.4 112,241.9 120,242.0 128,242.3 136,243.1 144,244.1 152,245.2 160,245.6 168,244.9 176,242.4 184,238.1 192,232.1 200,225.1 208,218.0 216,212.0 224,208.1 232,206.9 240,208.8 248,213.5 256,220.3 264,228.1 272,235.8 280,242.3 288,246.9 296,249.2 304,249.4 312,247.9 320,245.5 328,242.8 336,240.5 344,238.7 352,237.5 360,236.4 368,234.9 376,232.7 384,229.3 392,225.0 400,220.1" fill="none" stroke="#2dd4bf" stroke-width="1.5" opacity="0.22"/>
+  <polyline points="0,277.5 8,276.6 16,275.6 24,275.2 32,275.6 40,276.8 48,278.1 56,278.7 64,277.9 72,274.9 80,269.7 88,262.4 96,254.0 104,245.4 112,238.1 120,233.2 128,231.3 136,232.9 144,237.4 152,244.2 160,251.9 168,259.5 176,265.9 184,270.4 192,273.0 200,274.0 208,273.9 216,273.8 224,274.1 232,275.3 240,277.3 248,279.7 256,281.5 264,282.0 272,280.3 280,276.1 288,269.5 296,261.1 304,252.0 312,243.4 320,236.7 328,232.8 336,232.1 344,234.7 352,239.8 360,246.5 368,253.5 376,259.9 384,264.7 392,267.9 400,269.6" fill="none" stroke="#2dd4bf" stroke-width="1.5" opacity="0.13"/>
+  </g>
+
+  <!-- Header -->
+  <text x="20" y="40" font-family="Inter, sans-serif" font-size="14" fill="#2dd4bf" font-weight="600">
+    UWA / 11-18
+  </text>
+
+  <!-- Keyword badge -->
+  <rect x="20" y="60" width="84" height="28" rx="14" fill="#2dd4bf" opacity="0.2"/>
+  <text x="30" y="79" font-family="Inter, sans-serif" font-size="13" fill="#2dd4bf" font-weight="500">
+    Research
+  </text>
+
+  <!-- Title -->
+  <foreignObject x="20" y="110" width="360" height="120">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="
+      font-family: Inter, sans-serif;
+      font-size: 18px;
+      font-weight: 600;
+      color: #e2e8f0;
+      line-height: 1.4;
+      overflow: hidden;
+      display: -webkit-box;
+      -webkit-line-clamp: 4;
+      -webkit-box-orient: vertical;
+    ">
+      Tanatopolítica discursiva presidencial: arqueogenealogia ...
+    </div>
+  </foreignObject>
+
+  <!-- Author -->
+  <text x="20" y="250" font-family="Inter, sans-serif" font-size="13" fill="#94a3b8">
+    Adriano Menino de Macêdo Jú...
+  </text>
+
+  <!-- Footer -->
+  <text x="20" y="275" font-family="Inter, sans-serif" font-size="11" fill="#64748b">
+    Revista Falange Miúda
+  </text>
+
+  <!-- Score badge -->
+  <circle cx="360" cy="40" r="24" fill="#2dd4bf" opacity="0.2"/>
+  <text x="360" y="46" font-family="Inter, sans-serif" font-size="14" fill="#2dd4bf" font-weight="700" text-anchor="middle">
+    56
+  </text>
+</svg>

@@ -1,0 +1,119 @@
+{
+  "schema_version": 2,
+  "cycle_id": "daily-2026-11-18",
+  "display_date": "2026-11-18",
+  "articles": [
+    {
+      "candidate_id": "openalex--W7234603680",
+      "category": "Paper",
+      "rank": 1,
+      "path": "docs/daily/2026-11-18/paper/01-point-based-individual-fish-counting-in-sonar-imag.md"
+    },
+    {
+      "candidate_id": "openalex--W7233575367",
+      "category": "Paper",
+      "rank": 2,
+      "path": "docs/daily/2026-11-18/paper/02-hsf-ppo-proximal-policy-optimization-with-heteroge.md"
+    },
+    {
+      "candidate_id": "openalex--W7233619651",
+      "category": "Paper",
+      "rank": 3,
+      "path": "docs/daily/2026-11-18/paper/03-tanatopolítica-discursiva-presidencial-arqueogenea.md"
+    },
+    {
+      "candidate_id": "openalex--W7234326959",
+      "category": "Paper",
+      "rank": 4,
+      "path": "docs/daily/2026-11-18/paper/04-in-situ-monitoring-and-predictive-modeling-of-harm.md"
+    },
+    {
+      "candidate_id": "openalex--W7225889396",
+      "category": "Paper",
+      "rank": 5,
+      "path": "docs/daily/2026-11-18/paper/05-seasonal-evolution-of-sea-ice-thickness-in-western.md"
+    },
+    {
+      "candidate_id": "crossref--10.1142-s0218625x26501246",
+      "category": "Paper",
+      "rank": 6,
+      "path": "docs/daily/2026-11-18/paper/06-nanoporous-metamaterial-composites-for-enhanced-un.md"
+    },
+    {
+      "candidate_id": "crossref--10.1117-12.3119077",
+      "category": "Paper",
+      "rank": 7,
+      "path": "docs/daily/2026-11-18/paper/07-design-and-implementation-of-a-vertical-underwater.md"
+    },
+    {
+      "candidate_id": "crossref--10.1007-978-3-032-36101-1_83",
+      "category": "Paper",
+      "rank": 8,
+      "path": "docs/daily/2026-11-18/paper/08-assessing-the-underwater-acoustic-footprint-of-a-p.md"
+    },
+    {
+      "candidate_id": "crossref--10.1117-12.3134230",
+      "category": "Paper",
+      "rank": 9,
+      "path": "docs/daily/2026-11-18/paper/09-a-dop-guided-image-fusion-algorithm-for-underwater.md"
+    },
+    {
+      "candidate_id": "crossref--10.1201-9781003625926-6",
+      "category": "Paper",
+      "rank": 10,
+      "path": "docs/daily/2026-11-18/paper/10-chype-signal-detection-in-high-doppler-sonar.md"
+    },
+    {
+      "candidate_id": "news--48331810e8b8",
+      "category": "News",
+      "rank": 11,
+      "path": "docs/daily/2026-11-18/news/11-wassp-launches-finfls-forward-looking-multibeam-so.md"
+    }
+  ],
+  "assets": [
+    {
+      "candidate_id": "openalex--W7234603680",
+      "path": "docs/public/daily/2026-11-18/assets/openalex--W7234603680/preview.png"
+    },
+    {
+      "candidate_id": "openalex--W7233575367",
+      "path": "docs/public/daily/2026-11-18/assets/openalex--W7233575367/preview.png"
+    },
+    {
+      "candidate_id": "openalex--W7233619651",
+      "path": "docs/public/daily/2026-11-18/assets/openalex--W7233619651/preview.svg"
+    },
+    {
+      "candidate_id": "openalex--W7234326959",
+      "path": "docs/public/daily/2026-11-18/assets/openalex--W7234326959/preview.png"
+    },
+    {
+      "candidate_id": "openalex--W7225889396",
+      "path": "docs/public/daily/2026-11-18/assets/openalex--W7225889396/preview.png"
+    },
+    {
+      "candidate_id": "crossref--10.1142-s0218625x26501246",
+      "path": "docs/public/daily/2026-11-18/assets/crossref--10.1142-s0218625x26501246/preview.svg"
+    },
+    {
+      "candidate_id": "crossref--10.1117-12.3119077",
+      "path": "docs/public/daily/2026-11-18/assets/crossref--10.1117-12.3119077/preview.svg"
+    },
+    {
+      "candidate_id": "crossref--10.1007-978-3-032-36101-1_83",
+      "path": "docs/public/daily/2026-11-18/assets/crossref--10.1007-978-3-032-36101-1_83/preview.svg"
+    },
+    {
+      "candidate_id": "crossref--10.1117-12.3134230",
+      "path": "docs/public/daily/2026-11-18/assets/crossref--10.1117-12.3134230/preview.svg"
+    },
+    {
+      "candidate_id": "crossref--10.1201-9781003625926-6",
+      "path": "docs/public/daily/2026-11-18/assets/crossref--10.1201-9781003625926-6/preview.svg"
+    },
+    {
+      "candidate_id": "news--48331810e8b8",
+      "path": "docs/public/daily/2026-11-18/assets/news--48331810e8b8/preview.png"
+    }
+  ]
+}
