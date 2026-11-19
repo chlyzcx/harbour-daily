@@ -1,0 +1,109 @@
+{
+  "schema_version": 2,
+  "cycle_id": "daily-2026-11-19",
+  "display_date": "2026-11-19",
+  "articles": [
+    {
+      "candidate_id": "s2--a275d1c39c18b41374ad73073dd397de27cdba61",
+      "category": "Paper",
+      "rank": 1,
+      "path": "docs/daily/2026-11-19/paper/01-otfs-based-underwater-acoustic-communication-syste.md"
+    },
+    {
+      "candidate_id": "s2--852d7fc1b22b8445054f45a1cf83561842d7ea1b",
+      "category": "Paper",
+      "rank": 2,
+      "path": "docs/daily/2026-11-19/paper/02-energy-state-sensing-for-robust-mac-protocol-ident.md"
+    },
+    {
+      "candidate_id": "s2--6f27904b9e00a2a22ecd2acadae93160699498d4",
+      "category": "Paper",
+      "rank": 3,
+      "path": "docs/daily/2026-11-19/paper/03-cognitive-underwater-acoustic-networking-and-targe.md"
+    },
+    {
+      "candidate_id": "s2--fa4a6de6d355d30620f3cbe9543d5afbe665eec7",
+      "category": "Paper",
+      "rank": 4,
+      "path": "docs/daily/2026-11-19/paper/04-two-step-weighted-least-squares-positioning-algori.md"
+    },
+    {
+      "candidate_id": "s2--b386600974360ad1c865b27a92537b74062f6536",
+      "category": "Paper",
+      "rank": 5,
+      "path": "docs/daily/2026-11-19/paper/05-low-probability-of-detection-constrained-covert-un.md"
+    },
+    {
+      "candidate_id": "openalex--W7235061689",
+      "category": "Paper",
+      "rank": 6,
+      "path": "docs/daily/2026-11-19/paper/06-msnrnet-multichannel-self-noise-reduction-with-spa.md"
+    },
+    {
+      "candidate_id": "openalex--W7160632485",
+      "category": "Paper",
+      "rank": 7,
+      "path": "docs/daily/2026-11-19/paper/07-presence-of-novel-mitochondrial-haplotypes-in-indi.md"
+    },
+    {
+      "candidate_id": "openalex--W7235114290",
+      "category": "Paper",
+      "rank": 8,
+      "path": "docs/daily/2026-11-19/paper/08-fear-of-the-light-a-pilot-observational-study-of-g.md"
+    },
+    {
+      "candidate_id": "openalex--W7235435784",
+      "category": "Paper",
+      "rank": 9,
+      "path": "docs/daily/2026-11-19/paper/09-rr-dcd-a-recursive-residual-dcd-based-low-complexi.md"
+    },
+    {
+      "candidate_id": "openalex--W7235067351",
+      "category": "Paper",
+      "rank": 10,
+      "path": "docs/daily/2026-11-19/paper/10-m-cross-a-multisensor-simulation-dataset-for-slam-.md"
+    }
+  ],
+  "assets": [
+    {
+      "candidate_id": "s2--a275d1c39c18b41374ad73073dd397de27cdba61",
+      "path": "docs/public/daily/2026-11-19/assets/s2--a275d1c39c18b41374ad73073dd397de27cdba61/preview.svg"
+    },
+    {
+      "candidate_id": "s2--852d7fc1b22b8445054f45a1cf83561842d7ea1b",
+      "path": "docs/public/daily/2026-11-19/assets/s2--852d7fc1b22b8445054f45a1cf83561842d7ea1b/preview.svg"
+    },
+    {
+      "candidate_id": "s2--6f27904b9e00a2a22ecd2acadae93160699498d4",
+      "path": "docs/public/daily/2026-11-19/assets/s2--6f27904b9e00a2a22ecd2acadae93160699498d4/preview.png"
+    },
+    {
+      "candidate_id": "s2--fa4a6de6d355d30620f3cbe9543d5afbe665eec7",
+      "path": "docs/public/daily/2026-11-19/assets/s2--fa4a6de6d355d30620f3cbe9543d5afbe665eec7/preview.svg"
+    },
+    {
+      "candidate_id": "s2--b386600974360ad1c865b27a92537b74062f6536",
+      "path": "docs/public/daily/2026-11-19/assets/s2--b386600974360ad1c865b27a92537b74062f6536/preview.svg"
+    },
+    {
+      "candidate_id": "openalex--W7235061689",
+      "path": "docs/public/daily/2026-11-19/assets/openalex--W7235061689/preview.png"
+    },
+    {
+      "candidate_id": "openalex--W7160632485",
+      "path": "docs/public/daily/2026-11-19/assets/openalex--W7160632485/preview.png"
+    },
+    {
+      "candidate_id": "openalex--W7235114290",
+      "path": "docs/public/daily/2026-11-19/assets/openalex--W7235114290/preview.png"
+    },
+    {
+      "candidate_id": "openalex--W7235435784",
+      "path": "docs/public/daily/2026-11-19/assets/openalex--W7235435784/preview.png"
+    },
+    {
+      "candidate_id": "openalex--W7235067351",
+      "path": "docs/public/daily/2026-11-19/assets/openalex--W7235067351/preview.png"
+    }
+  ]
+}
