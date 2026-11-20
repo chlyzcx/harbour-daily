@@ -1,0 +1,99 @@
+{
+  "schema_version": 2,
+  "cycle_id": "daily-2026-11-20",
+  "display_date": "2026-11-20",
+  "articles": [
+    {
+      "candidate_id": "openalex--W7234555737",
+      "category": "Paper",
+      "rank": 1,
+      "path": "docs/daily/2026-11-20/paper/01-geoacoustic-inversion-method-for-inland-waterways-.md"
+    },
+    {
+      "candidate_id": "openalex--W7236149970",
+      "category": "Paper",
+      "rank": 2,
+      "path": "docs/daily/2026-11-20/paper/02-depth-estimation-of-multi-highlight-targets-in-dee.md"
+    },
+    {
+      "candidate_id": "openalex--W7235103085",
+      "category": "Paper",
+      "rank": 3,
+      "path": "docs/daily/2026-11-20/paper/03-a-practical-classifier-for-biomimetic-underwater-c.md"
+    },
+    {
+      "candidate_id": "openalex--W7235556969",
+      "category": "Paper",
+      "rank": 4,
+      "path": "docs/daily/2026-11-20/paper/04-developing-partial-characterization-factors-for-sh.md"
+    },
+    {
+      "candidate_id": "crossref--10.1007-978-3-032-45367-9_43",
+      "category": "Paper",
+      "rank": 5,
+      "path": "docs/daily/2026-11-20/paper/05-metaheuristic-based-collision-free-path-planning-f.md"
+    },
+    {
+      "candidate_id": "crossref--10.3390-technologies14110769",
+      "category": "Paper",
+      "rank": 6,
+      "path": "docs/daily/2026-11-20/paper/06-sca-net-structurecontext-aggregation-with-multi-sc.md"
+    },
+    {
+      "candidate_id": "crossref--10.3390-biomimetics11110844",
+      "category": "Paper",
+      "rank": 7,
+      "path": "docs/daily/2026-11-20/paper/07-a-labeled-random-finite-set-filtering-for-distribu.md"
+    },
+    {
+      "candidate_id": "crossref--10.1364-ao.614984",
+      "category": "Paper",
+      "rank": 8,
+      "path": "docs/daily/2026-11-20/paper/08-real-time-underwater-optical-image-restoration-usi.md"
+    },
+    {
+      "candidate_id": "crossref--10.21203-rs.3.rs-11540344-v1",
+      "category": "Paper",
+      "rank": 9,
+      "path": "docs/daily/2026-11-20/paper/09-pilot-residual-driven-adaptive-robust-fusion-of-in.md"
+    }
+  ],
+  "assets": [
+    {
+      "candidate_id": "openalex--W7234555737",
+      "path": "docs/public/daily/2026-11-20/assets/openalex--W7234555737/preview.png"
+    },
+    {
+      "candidate_id": "openalex--W7236149970",
+      "path": "docs/public/daily/2026-11-20/assets/openalex--W7236149970/preview.png"
+    },
+    {
+      "candidate_id": "openalex--W7235103085",
+      "path": "docs/public/daily/2026-11-20/assets/openalex--W7235103085/preview.png"
+    },
+    {
+      "candidate_id": "openalex--W7235556969",
+      "path": "docs/public/daily/2026-11-20/assets/openalex--W7235556969/preview.svg"
+    },
+    {
+      "candidate_id": "crossref--10.1007-978-3-032-45367-9_43",
+      "path": "docs/public/daily/2026-11-20/assets/crossref--10.1007-978-3-032-45367-9_43/preview.svg"
+    },
+    {
+      "candidate_id": "crossref--10.3390-technologies14110769",
+      "path": "docs/public/daily/2026-11-20/assets/crossref--10.3390-technologies14110769/preview.png"
+    },
+    {
+      "candidate_id": "crossref--10.3390-biomimetics11110844",
+      "path": "docs/public/daily/2026-11-20/assets/crossref--10.3390-biomimetics11110844/preview.png"
+    },
+    {
+      "candidate_id": "crossref--10.1364-ao.614984",
+      "path": "docs/public/daily/2026-11-20/assets/crossref--10.1364-ao.614984/preview.svg"
+    },
+    {
+      "candidate_id": "crossref--10.21203-rs.3.rs-11540344-v1",
+      "path": "docs/public/daily/2026-11-20/assets/crossref--10.21203-rs.3.rs-11540344-v1/preview.svg"
+    }
+  ]
+}
