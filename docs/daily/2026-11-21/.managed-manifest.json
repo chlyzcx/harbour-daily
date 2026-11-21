@@ -1,0 +1,89 @@
+{
+  "schema_version": 2,
+  "cycle_id": "daily-2026-11-21",
+  "display_date": "2026-11-21",
+  "articles": [
+    {
+      "candidate_id": "openalex--W7236848018",
+      "category": "Paper",
+      "rank": 1,
+      "path": "docs/daily/2026-11-21/paper/01-constraint-driven-design-of-hybrid-gaussian-window.md"
+    },
+    {
+      "candidate_id": "openalex--W7236823871",
+      "category": "Paper",
+      "rank": 2,
+      "path": "docs/daily/2026-11-21/paper/02-transient-changes-in-calling-behavior-of-north-atl.md"
+    },
+    {
+      "candidate_id": "openalex--W7235877962",
+      "category": "Paper",
+      "rank": 3,
+      "path": "docs/daily/2026-11-21/paper/03-worth-another-look-constrained-world-model-plannin.md"
+    },
+    {
+      "candidate_id": "openalex--W7236167596",
+      "category": "Paper",
+      "rank": 4,
+      "path": "docs/daily/2026-11-21/paper/04-minimizing-information-age-and-sensor-energy-in-oc.md"
+    },
+    {
+      "candidate_id": "crossref--10.3390-app162211525",
+      "category": "Paper",
+      "rank": 5,
+      "path": "docs/daily/2026-11-21/paper/05-implementation-and-testing-of-an-underwater-wirele.md"
+    },
+    {
+      "candidate_id": "openalex--W7236654505",
+      "category": "Paper",
+      "rank": 6,
+      "path": "docs/daily/2026-11-21/paper/06-ai-based-smart-sonar-surveillance-system-using-iot.md"
+    },
+    {
+      "candidate_id": "openalex--W7233854383",
+      "category": "Paper",
+      "rank": 7,
+      "path": "docs/daily/2026-11-21/paper/07-vessel-noise-pollution-offsets-marine-mammal-energ.md"
+    },
+    {
+      "candidate_id": "news--074a41b37150",
+      "category": "News",
+      "rank": 8,
+      "path": "docs/daily/2026-11-21/news/08-强国强军-为国听海-哈工程党委副书记校长殷敬伟为钱学森学院深海水声班新生讲授大国海洋重器.md"
+    }
+  ],
+  "assets": [
+    {
+      "candidate_id": "openalex--W7236848018",
+      "path": "docs/public/daily/2026-11-21/assets/openalex--W7236848018/preview.png"
+    },
+    {
+      "candidate_id": "openalex--W7236823871",
+      "path": "docs/public/daily/2026-11-21/assets/openalex--W7236823871/preview.svg"
+    },
+    {
+      "candidate_id": "openalex--W7235877962",
+      "path": "docs/public/daily/2026-11-21/assets/openalex--W7235877962/preview.png"
+    },
+    {
+      "candidate_id": "openalex--W7236167596",
+      "path": "docs/public/daily/2026-11-21/assets/openalex--W7236167596/preview.png"
+    },
+    {
+      "candidate_id": "crossref--10.3390-app162211525",
+      "path": "docs/public/daily/2026-11-21/assets/crossref--10.3390-app162211525/preview.svg"
+    },
+    {
+      "candidate_id": "openalex--W7236654505",
+      "path": "docs/public/daily/2026-11-21/assets/openalex--W7236654505/preview.svg"
+    },
+    {
+      "candidate_id": "openalex--W7233854383",
+      "path": "docs/public/daily/2026-11-21/assets/openalex--W7233854383/preview.png"
+    },
+    {
+      "candidate_id": "news--074a41b37150",
+      "path": "docs/public/daily/2026-11-21/assets/news--074a41b37150/preview.svg"
+    }
+  ]
+}

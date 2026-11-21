@@ -1,0 +1,72 @@
+<svg width="400" height="300" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#042f2e;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#115e59;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="400" height="300" fill="url(#grad)"/>
+
+  <!-- Grid pattern -->
+  <g opacity="0.1">
+    <line x1="0" y1="75" x2="400" y2="75" stroke="#2dd4bf" stroke-width="1"/>
+    <line x1="0" y1="150" x2="400" y2="150" stroke="#2dd4bf" stroke-width="1"/>
+    <line x1="0" y1="225" x2="400" y2="225" stroke="#2dd4bf" stroke-width="1"/>
+    <line x1="100" y1="0" x2="100" y2="300" stroke="#2dd4bf" stroke-width="1"/>
+    <line x1="200" y1="0" x2="200" y2="300" stroke="#2dd4bf" stroke-width="1"/>
+    <line x1="300" y1="0" x2="300" y2="300" stroke="#2dd4bf" stroke-width="1"/>
+  </g>
+
+  <!-- Waveform decoration (deterministic per title) -->
+  <g>
+  <polyline points="0,209.1 8,207.3 16,205.0 24,202.3 32,199.3 40,196.3 48,193.6 56,191.5 64,190.4 72,190.5 80,192.0 88,194.9 96,198.9 104,203.9 112,209.3 120,214.6 128,219.2 136,222.5 144,224.2 152,224.1 160,222.1 168,218.4 176,213.4 184,207.6 192,201.7 200,196.2 208,191.7 216,188.6 224,187.3 232,187.6 240,189.5 248,192.7 256,196.8 264,201.2 272,205.5 280,209.3 288,212.4 296,214.5 304,215.6 312,215.8 320,215.4 328,214.4 336,213.1 344,211.7 352,210.2 360,208.8 368,207.3 376,205.8 384,204.1 392,202.1 400,200.0" fill="none" stroke="#2dd4bf" stroke-width="1.5" opacity="0.35"/>
+  <polyline points="0,244.8 8,250.3 16,254.1 24,256.0 32,255.8 40,253.6 48,249.8 56,244.9 64,239.4 72,233.9 80,229.0 88,224.9 96,222.0 104,220.1 112,219.3 120,219.3 128,219.8 136,220.6 144,221.3 152,221.9 160,222.5 168,223.0 176,223.7 184,224.9 192,226.8 200,229.4 208,232.9 216,237.0 224,241.6 232,246.0 240,250.0 248,252.9 256,254.3 264,253.9 272,251.5 280,247.3 288,241.6 296,234.9 304,227.7 312,220.9 320,215.1 328,210.7 336,208.3 344,208.0 352,209.6 360,213.0 368,217.7 376,223.1 384,228.6 392,233.8 400,238.1" fill="none" stroke="#2dd4bf" stroke-width="1.5" opacity="0.22"/>
+  <polyline points="0,248.4 8,248.8 16,248.7 24,248.3 32,247.5 40,246.8 48,246.5 56,247.0 64,248.7 72,251.8 80,256.4 88,262.1 96,268.7 104,275.6 112,282.0 120,287.4 128,291.1 136,292.7 144,292.0 152,288.9 160,284.0 168,277.5 176,270.3 184,263.0 192,256.3 200,250.7 208,246.6 216,244.1 224,243.2 232,243.6 240,244.8 248,246.4 256,248.0 264,249.3 272,250.1 280,250.5 288,250.7 296,250.9 304,251.7 312,253.2 320,255.9 328,259.7 336,264.7 344,270.5 352,276.6 360,282.4 368,287.3 376,290.6 384,292.0 392,291.1 400,287.9" fill="none" stroke="#2dd4bf" stroke-width="1.5" opacity="0.13"/>
+  </g>
+
+  <!-- Header -->
+  <text x="20" y="40" font-family="Inter, sans-serif" font-size="14" fill="#2dd4bf" font-weight="600">
+    UWA / 11-21
+  </text>
+
+  <!-- Keyword badge -->
+  <rect x="20" y="60" width="84" height="28" rx="14" fill="#2dd4bf" opacity="0.2"/>
+  <text x="30" y="79" font-family="Inter, sans-serif" font-size="13" fill="#2dd4bf" font-weight="500">
+    Research
+  </text>
+
+  <!-- Title -->
+  <foreignObject x="20" y="110" width="360" height="120">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="
+      font-family: Inter, sans-serif;
+      font-size: 18px;
+      font-weight: 600;
+      color: #e2e8f0;
+      line-height: 1.4;
+      overflow: hidden;
+      display: -webkit-box;
+      -webkit-line-clamp: 4;
+      -webkit-box-orient: vertical;
+    ">
+      哈工程校长殷敬伟为深海水声班新生讲授大国海洋重器
+    </div>
+  </foreignObject>
+
+  <!-- Author -->
+  <text x="20" y="250" font-family="Inter, sans-serif" font-size="13" fill="#94a3b8">
+    哈尔滨工程大学新闻网
+  </text>
+
+  <!-- Footer -->
+  <text x="20" y="275" font-family="Inter, sans-serif" font-size="11" fill="#64748b">
+    哈尔滨工程大学新闻网
+  </text>
+
+  <!-- Score badge -->
+  <circle cx="360" cy="40" r="24" fill="#2dd4bf" opacity="0.2"/>
+  <text x="360" y="46" font-family="Inter, sans-serif" font-size="14" fill="#2dd4bf" font-weight="700" text-anchor="middle">
+    70
+  </text>
+</svg>
