@@ -1,0 +1,109 @@
+{
+  "schema_version": 2,
+  "cycle_id": "daily-2026-11-22",
+  "display_date": "2026-11-22",
+  "articles": [
+    {
+      "candidate_id": "openalex--W7236998347",
+      "category": "Paper",
+      "rank": 1,
+      "path": "docs/daily/2026-11-22/paper/01-autonomous-remotely-operated-vehicle-based-pipelin.md"
+    },
+    {
+      "candidate_id": "s2--6722bde176ba954ba0a34e7429dc573b0a29b6af",
+      "category": "Paper",
+      "rank": 2,
+      "path": "docs/daily/2026-11-22/paper/02-demonstrating-the-feasibility-of-a-mirror-ocean-ac.md"
+    },
+    {
+      "candidate_id": "openalex--W7236648874",
+      "category": "Paper",
+      "rank": 3,
+      "path": "docs/daily/2026-11-22/paper/03-deep-water-choruses-originate-from-slope-associate.md"
+    },
+    {
+      "candidate_id": "openalex--W7236810671",
+      "category": "Paper",
+      "rank": 4,
+      "path": "docs/daily/2026-11-22/paper/04-low-frequency-detection-and-classification-lfdcs-2.md"
+    },
+    {
+      "candidate_id": "openalex--W7237059392",
+      "category": "Paper",
+      "rank": 5,
+      "path": "docs/daily/2026-11-22/paper/05-blind-tests-of-a-simple-body-model-of-submarine-ta.md"
+    },
+    {
+      "candidate_id": "openalex--W7237104004",
+      "category": "Paper",
+      "rank": 6,
+      "path": "docs/daily/2026-11-22/paper/06-blockjack-cross-tenant-redirection-fault-attacks-o.md"
+    },
+    {
+      "candidate_id": "openalex--W7237134134",
+      "category": "Paper",
+      "rank": 7,
+      "path": "docs/daily/2026-11-22/paper/07-laser-induced-acoustics-for-air-to-underwater-comm.md"
+    },
+    {
+      "candidate_id": "openalex--W7237174717",
+      "category": "Paper",
+      "rank": 8,
+      "path": "docs/daily/2026-11-22/paper/08-channel-robust-open-set-recognition-of-underwater-.md"
+    },
+    {
+      "candidate_id": "crossref--10.1007-s12596-026-03368-9",
+      "category": "Paper",
+      "rank": 9,
+      "path": "docs/daily/2026-11-22/paper/09-optimizing-ocdma-and-ofdm-for-underwater-optical-c.md"
+    },
+    {
+      "candidate_id": "crossref--10.62411-jcta.18056",
+      "category": "Paper",
+      "rank": 10,
+      "path": "docs/daily/2026-11-22/paper/10-ds-tsnet-depth-aware-spectral-compensation-and-tur.md"
+    }
+  ],
+  "assets": [
+    {
+      "candidate_id": "openalex--W7236998347",
+      "path": "docs/public/daily/2026-11-22/assets/openalex--W7236998347/preview.png"
+    },
+    {
+      "candidate_id": "s2--6722bde176ba954ba0a34e7429dc573b0a29b6af",
+      "path": "docs/public/daily/2026-11-22/assets/s2--6722bde176ba954ba0a34e7429dc573b0a29b6af/preview.svg"
+    },
+    {
+      "candidate_id": "openalex--W7236648874",
+      "path": "docs/public/daily/2026-11-22/assets/openalex--W7236648874/preview.png"
+    },
+    {
+      "candidate_id": "openalex--W7236810671",
+      "path": "docs/public/daily/2026-11-22/assets/openalex--W7236810671/preview.png"
+    },
+    {
+      "candidate_id": "openalex--W7237059392",
+      "path": "docs/public/daily/2026-11-22/assets/openalex--W7237059392/preview.png"
+    },
+    {
+      "candidate_id": "openalex--W7237104004",
+      "path": "docs/public/daily/2026-11-22/assets/openalex--W7237104004/preview.png"
+    },
+    {
+      "candidate_id": "openalex--W7237134134",
+      "path": "docs/public/daily/2026-11-22/assets/openalex--W7237134134/preview.svg"
+    },
+    {
+      "candidate_id": "openalex--W7237174717",
+      "path": "docs/public/daily/2026-11-22/assets/openalex--W7237174717/preview.png"
+    },
+    {
+      "candidate_id": "crossref--10.1007-s12596-026-03368-9",
+      "path": "docs/public/daily/2026-11-22/assets/crossref--10.1007-s12596-026-03368-9/preview.png"
+    },
+    {
+      "candidate_id": "crossref--10.62411-jcta.18056",
+      "path": "docs/public/daily/2026-11-22/assets/crossref--10.62411-jcta.18056/preview.svg"
+    }
+  ]
+}
