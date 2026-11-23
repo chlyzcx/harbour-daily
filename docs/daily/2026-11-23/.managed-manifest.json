@@ -1,0 +1,89 @@
+{
+  "schema_version": 2,
+  "cycle_id": "daily-2026-11-23",
+  "display_date": "2026-11-23",
+  "articles": [
+    {
+      "candidate_id": "openalex--W7202175379",
+      "category": "Paper",
+      "rank": 1,
+      "path": "docs/daily/2026-11-23/paper/01-coupling-fourier-neural-operators-with-finite-elem.md"
+    },
+    {
+      "candidate_id": "openalex--W7237337774",
+      "category": "Paper",
+      "rank": 2,
+      "path": "docs/daily/2026-11-23/paper/02-single-point-underwater-acoustic-transmission-loss.md"
+    },
+    {
+      "candidate_id": "openalex--W7237366714",
+      "category": "Paper",
+      "rank": 3,
+      "path": "docs/daily/2026-11-23/paper/03-performance-evaluation-of-space-and-underwater-rob.md"
+    },
+    {
+      "candidate_id": "openalex--W7237269948",
+      "category": "Paper",
+      "rank": 4,
+      "path": "docs/daily/2026-11-23/paper/04-average-received-intensity-of-a-super-lorentz-beam.md"
+    },
+    {
+      "candidate_id": "crossref--10.1088-1361-6560-aebfe3",
+      "category": "Paper",
+      "rank": 5,
+      "path": "docs/daily/2026-11-23/paper/05-experimental-validation-of-skull-acoustic-modellin.md"
+    },
+    {
+      "candidate_id": "crossref--10.1515-joc-2026-0512",
+      "category": "Paper",
+      "rank": 6,
+      "path": "docs/daily/2026-11-23/paper/06-dual-polarization-nrz-based-underwater-optical-wir.md"
+    },
+    {
+      "candidate_id": "openalex--W7237053405",
+      "category": "Paper",
+      "rank": 7,
+      "path": "docs/daily/2026-11-23/paper/07-statistics-guided-two-stage-long-tailed-sonar-imag.md"
+    },
+    {
+      "candidate_id": "openalex--W7237209746",
+      "category": "Paper",
+      "rank": 8,
+      "path": "docs/daily/2026-11-23/paper/08-liquid-crystal-display-equipment-development-for-b.md"
+    }
+  ],
+  "assets": [
+    {
+      "candidate_id": "openalex--W7202175379",
+      "path": "docs/public/daily/2026-11-23/assets/openalex--W7202175379/preview.png"
+    },
+    {
+      "candidate_id": "openalex--W7237337774",
+      "path": "docs/public/daily/2026-11-23/assets/openalex--W7237337774/preview.png"
+    },
+    {
+      "candidate_id": "openalex--W7237366714",
+      "path": "docs/public/daily/2026-11-23/assets/openalex--W7237366714/preview.png"
+    },
+    {
+      "candidate_id": "openalex--W7237269948",
+      "path": "docs/public/daily/2026-11-23/assets/openalex--W7237269948/preview.png"
+    },
+    {
+      "candidate_id": "crossref--10.1088-1361-6560-aebfe3",
+      "path": "docs/public/daily/2026-11-23/assets/crossref--10.1088-1361-6560-aebfe3/preview.png"
+    },
+    {
+      "candidate_id": "crossref--10.1515-joc-2026-0512",
+      "path": "docs/public/daily/2026-11-23/assets/crossref--10.1515-joc-2026-0512/preview.svg"
+    },
+    {
+      "candidate_id": "openalex--W7237053405",
+      "path": "docs/public/daily/2026-11-23/assets/openalex--W7237053405/preview.png"
+    },
+    {
+      "candidate_id": "openalex--W7237209746",
+      "path": "docs/public/daily/2026-11-23/assets/openalex--W7237209746/preview.png"
+    }
+  ]
+}
