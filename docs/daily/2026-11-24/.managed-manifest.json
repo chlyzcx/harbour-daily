@@ -1,0 +1,49 @@
+{
+  "schema_version": 2,
+  "cycle_id": "daily-2026-11-24",
+  "display_date": "2026-11-24",
+  "articles": [
+    {
+      "candidate_id": "crossref--10.1007-978-3-032-45236-8_31",
+      "category": "Paper",
+      "rank": 1,
+      "path": "docs/daily/2026-11-24/paper/01-adapting-diffusion-based-lidar-scene-completion-to.md"
+    },
+    {
+      "candidate_id": "crossref--10.3390-s26237404",
+      "category": "Paper",
+      "rank": 2,
+      "path": "docs/daily/2026-11-24/paper/02-umdd-an-underwater-multimodal-diver-dataset-for-ma.md"
+    },
+    {
+      "candidate_id": "crossref--10.1007-s11804-026-00906-6",
+      "category": "Paper",
+      "rank": 3,
+      "path": "docs/daily/2026-11-24/paper/03-exploring-semi-sparsity-of-adaptive-decision-feedb.md"
+    },
+    {
+      "candidate_id": "crossref--10.3389-focsu.2026.1843919",
+      "category": "Paper",
+      "rank": 4,
+      "path": "docs/daily/2026-11-24/paper/04-wild-calanoid-copepods-are-more-sensitive-to-chron.md"
+    }
+  ],
+  "assets": [
+    {
+      "candidate_id": "crossref--10.1007-978-3-032-45236-8_31",
+      "path": "docs/public/daily/2026-11-24/assets/crossref--10.1007-978-3-032-45236-8_31/preview.svg"
+    },
+    {
+      "candidate_id": "crossref--10.3390-s26237404",
+      "path": "docs/public/daily/2026-11-24/assets/crossref--10.3390-s26237404/preview.svg"
+    },
+    {
+      "candidate_id": "crossref--10.1007-s11804-026-00906-6",
+      "path": "docs/public/daily/2026-11-24/assets/crossref--10.1007-s11804-026-00906-6/preview.png"
+    },
+    {
+      "candidate_id": "crossref--10.3389-focsu.2026.1843919",
+      "path": "docs/public/daily/2026-11-24/assets/crossref--10.3389-focsu.2026.1843919/preview.png"
+    }
+  ]
+}
