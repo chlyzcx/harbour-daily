@@ -1,0 +1,99 @@
+{
+  "schema_version": 2,
+  "cycle_id": "daily-2026-11-25",
+  "display_date": "2026-11-25",
+  "articles": [
+    {
+      "candidate_id": "openalex--W7220994543",
+      "category": "Paper",
+      "rank": 1,
+      "path": "docs/daily/2026-11-25/paper/01-transformer-based-multimodal-perception-for-autono.md"
+    },
+    {
+      "candidate_id": "openalex--W7238724183",
+      "category": "Paper",
+      "rank": 2,
+      "path": "docs/daily/2026-11-25/paper/02-brina-bottom-referenced-inertial-navigation-with-a.md"
+    },
+    {
+      "candidate_id": "openalex--W7238766879",
+      "category": "Paper",
+      "rank": 3,
+      "path": "docs/daily/2026-11-25/paper/03-five-years-of-icesat-2-supraglacial-lake-depths-im.md"
+    },
+    {
+      "candidate_id": "crossref--10.1364-oe.619035",
+      "category": "Paper",
+      "rank": 4,
+      "path": "docs/daily/2026-11-25/paper/04-real-time-integrated-spectrum-tunable-underwater-i.md"
+    },
+    {
+      "candidate_id": "crossref--10.1002-aisy.70641",
+      "category": "Paper",
+      "rank": 5,
+      "path": "docs/daily/2026-11-25/paper/05-wavelengthdivision-optical-control-of-multiple-act.md"
+    },
+    {
+      "candidate_id": "crossref--10.1038-s41377-026-02421-3",
+      "category": "Paper",
+      "rank": 6,
+      "path": "docs/daily/2026-11-25/paper/06-ultrafast-perovskite-superlattice-antennas-for-wid.md"
+    },
+    {
+      "candidate_id": "openalex--W7237099822",
+      "category": "Paper",
+      "rank": 7,
+      "path": "docs/daily/2026-11-25/paper/07-characteristics-of-the-multi-stage-suspension-syst.md"
+    },
+    {
+      "candidate_id": "openalex--W7235996786",
+      "category": "Paper",
+      "rank": 8,
+      "path": "docs/daily/2026-11-25/paper/08-research-on-sonar-image-small-target-detection-alg.md"
+    },
+    {
+      "candidate_id": "news--fc3d0b9c1994",
+      "category": "News",
+      "rank": 9,
+      "path": "docs/daily/2026-11-25/news/09-uk-awards-hii-142-million-contract-for-royal-navy-.md"
+    }
+  ],
+  "assets": [
+    {
+      "candidate_id": "openalex--W7220994543",
+      "path": "docs/public/daily/2026-11-25/assets/openalex--W7220994543/preview.png"
+    },
+    {
+      "candidate_id": "openalex--W7238724183",
+      "path": "docs/public/daily/2026-11-25/assets/openalex--W7238724183/preview.png"
+    },
+    {
+      "candidate_id": "openalex--W7238766879",
+      "path": "docs/public/daily/2026-11-25/assets/openalex--W7238766879/preview.svg"
+    },
+    {
+      "candidate_id": "crossref--10.1364-oe.619035",
+      "path": "docs/public/daily/2026-11-25/assets/crossref--10.1364-oe.619035/preview.svg"
+    },
+    {
+      "candidate_id": "crossref--10.1002-aisy.70641",
+      "path": "docs/public/daily/2026-11-25/assets/crossref--10.1002-aisy.70641/preview.svg"
+    },
+    {
+      "candidate_id": "crossref--10.1038-s41377-026-02421-3",
+      "path": "docs/public/daily/2026-11-25/assets/crossref--10.1038-s41377-026-02421-3/preview.png"
+    },
+    {
+      "candidate_id": "openalex--W7237099822",
+      "path": "docs/public/daily/2026-11-25/assets/openalex--W7237099822/preview.png"
+    },
+    {
+      "candidate_id": "openalex--W7235996786",
+      "path": "docs/public/daily/2026-11-25/assets/openalex--W7235996786/preview.png"
+    },
+    {
+      "candidate_id": "news--fc3d0b9c1994",
+      "path": "docs/public/daily/2026-11-25/assets/news--fc3d0b9c1994/preview.png"
+    }
+  ]
+}
