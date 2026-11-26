@@ -1,0 +1,99 @@
+{
+  "schema_version": 2,
+  "cycle_id": "daily-2026-11-26",
+  "display_date": "2026-11-26",
+  "articles": [
+    {
+      "candidate_id": "arxiv--2611.33587-1",
+      "category": "Paper",
+      "rank": 1,
+      "path": "docs/daily/2026-11-26/paper/01-geometry-time-graph-attention-for-3-d-toa-localiza.md"
+    },
+    {
+      "candidate_id": "openalex--W7239376659",
+      "category": "Paper",
+      "rank": 2,
+      "path": "docs/daily/2026-11-26/paper/02-identity-in-a-flexible-signal-echolocation-calls-o.md"
+    },
+    {
+      "candidate_id": "openalex--W7239440459",
+      "category": "Paper",
+      "rank": 3,
+      "path": "docs/daily/2026-11-26/paper/03-low-complexity-matching-pursuit-channel-estimation.md"
+    },
+    {
+      "candidate_id": "crossref--10.1088-1402-4896-aebbfa",
+      "category": "Paper",
+      "rank": 4,
+      "path": "docs/daily/2026-11-26/paper/04-underwater-acoustic-direction-recognition-based-on.md"
+    },
+    {
+      "candidate_id": "crossref--10.1364-oe.614921",
+      "category": "Paper",
+      "rank": 5,
+      "path": "docs/daily/2026-11-26/paper/05-underwater-optical-signal-detection-in-a-degraded-.md"
+    },
+    {
+      "candidate_id": "crossref--10.1007-s44295-026-00118-2",
+      "category": "Paper",
+      "rank": 6,
+      "path": "docs/daily/2026-11-26/paper/06-improving-the-transmission-performance-of-low-snr-.md"
+    },
+    {
+      "candidate_id": "crossref--10.1007-s42452-026-09922-1",
+      "category": "Paper",
+      "rank": 7,
+      "path": "docs/daily/2026-11-26/paper/07-energy-efficient-cluster-based-routing-for-lifetim.md"
+    },
+    {
+      "candidate_id": "crossref--10.21203-rs.3.rs-11591922-v1",
+      "category": "Paper",
+      "rank": 8,
+      "path": "docs/daily/2026-11-26/paper/08-frame-level-llr-calibration-and-risk-controlled-bl.md"
+    },
+    {
+      "candidate_id": "crossref--10.1007-s12369-026-01459-y",
+      "category": "Paper",
+      "rank": 9,
+      "path": "docs/daily/2026-11-26/paper/09-sonar-semantic-object-navigation-with-aggregated-r.md"
+    }
+  ],
+  "assets": [
+    {
+      "candidate_id": "arxiv--2611.33587-1",
+      "path": "docs/public/daily/2026-11-26/assets/arxiv--2611.33587-1/preview.png"
+    },
+    {
+      "candidate_id": "openalex--W7239376659",
+      "path": "docs/public/daily/2026-11-26/assets/openalex--W7239376659/preview.png"
+    },
+    {
+      "candidate_id": "openalex--W7239440459",
+      "path": "docs/public/daily/2026-11-26/assets/openalex--W7239440459/preview.svg"
+    },
+    {
+      "candidate_id": "crossref--10.1088-1402-4896-aebbfa",
+      "path": "docs/public/daily/2026-11-26/assets/crossref--10.1088-1402-4896-aebbfa/preview.svg"
+    },
+    {
+      "candidate_id": "crossref--10.1364-oe.614921",
+      "path": "docs/public/daily/2026-11-26/assets/crossref--10.1364-oe.614921/preview.svg"
+    },
+    {
+      "candidate_id": "crossref--10.1007-s44295-026-00118-2",
+      "path": "docs/public/daily/2026-11-26/assets/crossref--10.1007-s44295-026-00118-2/preview.png"
+    },
+    {
+      "candidate_id": "crossref--10.1007-s42452-026-09922-1",
+      "path": "docs/public/daily/2026-11-26/assets/crossref--10.1007-s42452-026-09922-1/preview.png"
+    },
+    {
+      "candidate_id": "crossref--10.21203-rs.3.rs-11591922-v1",
+      "path": "docs/public/daily/2026-11-26/assets/crossref--10.21203-rs.3.rs-11591922-v1/preview.svg"
+    },
+    {
+      "candidate_id": "crossref--10.1007-s12369-026-01459-y",
+      "path": "docs/public/daily/2026-11-26/assets/crossref--10.1007-s12369-026-01459-y/preview.png"
+    }
+  ]
+}
