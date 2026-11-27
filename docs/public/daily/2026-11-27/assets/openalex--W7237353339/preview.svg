@@ -1,0 +1,72 @@
+<svg width="400" height="300" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#042f2e;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#115e59;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="400" height="300" fill="url(#grad)"/>
+
+  <!-- Grid pattern -->
+  <g opacity="0.1">
+    <line x1="0" y1="75" x2="400" y2="75" stroke="#2dd4bf" stroke-width="1"/>
+    <line x1="0" y1="150" x2="400" y2="150" stroke="#2dd4bf" stroke-width="1"/>
+    <line x1="0" y1="225" x2="400" y2="225" stroke="#2dd4bf" stroke-width="1"/>
+    <line x1="100" y1="0" x2="100" y2="300" stroke="#2dd4bf" stroke-width="1"/>
+    <line x1="200" y1="0" x2="200" y2="300" stroke="#2dd4bf" stroke-width="1"/>
+    <line x1="300" y1="0" x2="300" y2="300" stroke="#2dd4bf" stroke-width="1"/>
+  </g>
+
+  <!-- Waveform decoration (deterministic per title) -->
+  <g>
+  <polyline points="0,210.1 8,210.4 16,210.9 24,211.1 32,210.4 40,208.4 48,205.1 56,200.9 64,196.2 72,191.7 80,188.3 88,186.3 96,186.1 104,187.5 112,190.2 120,193.6 128,197.0 136,199.7 144,201.5 152,202.2 160,202.1 168,201.8 176,201.7 184,202.5 192,204.4 200,207.4 208,211.5 216,215.8 224,219.9 232,222.9 240,224.4 248,224.1 256,222.2 264,219.0 272,215.2 280,211.4 288,208.3 296,206.2 304,205.2 312,205.1 320,205.4 328,205.5 336,204.8 344,203.1 352,200.3 360,196.6 368,192.6 376,189.0 384,186.5 392,185.4 400,186.2" fill="none" stroke="#2dd4bf" stroke-width="1.5" opacity="0.35"/>
+  <polyline points="0,227.8 8,233.8 16,239.8 24,244.9 32,248.5 40,250.1 48,249.9 56,248.3 64,246.0 72,244.0 80,242.8 88,243.0 96,244.4 104,246.8 112,249.5 120,251.6 128,252.3 136,251.1 144,248.0 152,243.2 160,237.4 168,231.5 176,226.2 184,222.4 192,220.3 200,220.0 208,220.9 216,222.4 224,223.5 232,223.8 240,222.6 248,220.1 256,216.7 264,213.0 272,209.9 280,208.3 288,208.5 296,210.8 304,214.9 312,220.2 320,225.7 328,230.7 336,234.4 344,236.4 352,236.9 360,236.3 368,235.3 376,234.7 384,235.2 392,237.1 400,240.5" fill="none" stroke="#2dd4bf" stroke-width="1.5" opacity="0.22"/>
+  <polyline points="0,246.7 8,246.8 16,247.7 24,248.5 32,249.0 40,248.9 48,248.7 56,248.9 64,250.3 72,253.3 80,258.4 88,265.1 96,272.9 104,280.7 112,287.1 120,291.1 128,291.8 136,288.7 144,282.4 152,273.6 160,263.6 168,253.9 176,245.9 184,240.4 192,238.0 200,238.4 208,241.2 216,245.3 224,249.8 232,253.9 240,257.1 248,259.3 256,261.1 264,262.8 272,265.1 280,268.3 288,272.6 296,277.4 304,282.1 312,285.6 320,287.0 328,285.5 336,280.9 344,273.4 352,263.9 360,253.8 368,244.5 376,237.2 384,233.1 392,232.7 400,235.6" fill="none" stroke="#2dd4bf" stroke-width="1.5" opacity="0.13"/>
+  </g>
+
+  <!-- Header -->
+  <text x="20" y="40" font-family="Inter, sans-serif" font-size="14" fill="#2dd4bf" font-weight="600">
+    UWA / 11-27
+  </text>
+
+  <!-- Keyword badge -->
+  <rect x="20" y="60" width="84" height="28" rx="14" fill="#2dd4bf" opacity="0.2"/>
+  <text x="30" y="79" font-family="Inter, sans-serif" font-size="13" fill="#2dd4bf" font-weight="500">
+    Research
+  </text>
+
+  <!-- Title -->
+  <foreignObject x="20" y="110" width="360" height="120">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="
+      font-family: Inter, sans-serif;
+      font-size: 18px;
+      font-weight: 600;
+      color: #e2e8f0;
+      line-height: 1.4;
+      overflow: hidden;
+      display: -webkit-box;
+      -webkit-line-clamp: 4;
+      -webkit-box-orient: vertical;
+    ">
+      CetaSpiroX12: An ultrasonic spirometer to investigate res...
+    </div>
+  </foreignObject>
+
+  <!-- Author -->
+  <text x="20" y="250" font-family="Inter, sans-serif" font-size="13" fill="#94a3b8">
+    Elmar Ottiger
+  </text>
+
+  <!-- Footer -->
+  <text x="20" y="275" font-family="Inter, sans-serif" font-size="11" fill="#64748b">
+    Experimental Physiology
+  </text>
+
+  <!-- Score badge -->
+  <circle cx="360" cy="40" r="24" fill="#2dd4bf" opacity="0.2"/>
+  <text x="360" y="46" font-family="Inter, sans-serif" font-size="14" fill="#2dd4bf" font-weight="700" text-anchor="middle">
+    55
+  </text>
+</svg>

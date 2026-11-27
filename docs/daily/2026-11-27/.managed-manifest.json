@@ -1,0 +1,129 @@
+{
+  "schema_version": 2,
+  "cycle_id": "daily-2026-11-27",
+  "display_date": "2026-11-27",
+  "articles": [
+    {
+      "candidate_id": "openalex--W7239779648",
+      "category": "Paper",
+      "rank": 1,
+      "path": "docs/daily/2026-11-27/paper/01-joint-rank-and-component-wise-optimization-of-the-.md"
+    },
+    {
+      "candidate_id": "openalex--W7239817895",
+      "category": "Paper",
+      "rank": 2,
+      "path": "docs/daily/2026-11-27/paper/02-a-gradient-skeleton-acoustic-composite-wedge-for-p.md"
+    },
+    {
+      "candidate_id": "openalex--W7239803440",
+      "category": "Paper",
+      "rank": 3,
+      "path": "docs/daily/2026-11-27/paper/03-community-based-bathymetric-mapping-supports-arcti.md"
+    },
+    {
+      "candidate_id": "openalex--W7239867238",
+      "category": "Paper",
+      "rank": 4,
+      "path": "docs/daily/2026-11-27/paper/04-neural-implicit-representation-for-bathymetry-esti.md"
+    },
+    {
+      "candidate_id": "openalex--W7237353339",
+      "category": "Paper",
+      "rank": 5,
+      "path": "docs/daily/2026-11-27/paper/05-cetaspirox12-an-ultrasonic-spirometer-to-investiga.md"
+    },
+    {
+      "candidate_id": "crossref--10.1007-978-981-92-8128-2_7",
+      "category": "Paper",
+      "rank": 6,
+      "path": "docs/daily/2026-11-27/paper/06-information-aware-dynamic-sample-scheduling-for-ef.md"
+    },
+    {
+      "candidate_id": "crossref--10.3390-app162311755",
+      "category": "Paper",
+      "rank": 7,
+      "path": "docs/daily/2026-11-27/paper/07-prescribed-performance-trajectory-tracking-control.md"
+    },
+    {
+      "candidate_id": "crossref--10.3389-fmars.2026.2018441",
+      "category": "Paper",
+      "rank": 8,
+      "path": "docs/daily/2026-11-27/paper/08-search-methods-for-underwater-targets-a-critical-r.md"
+    },
+    {
+      "candidate_id": "crossref--10.1007-s00343-026-5436-6",
+      "category": "Paper",
+      "rank": 9,
+      "path": "docs/daily/2026-11-27/paper/09-rao-test-for-passive-sonar-target-detection-with-v.md"
+    },
+    {
+      "candidate_id": "crossref--10.1007-978-981-92-8128-2_36",
+      "category": "Paper",
+      "rank": 10,
+      "path": "docs/daily/2026-11-27/paper/10-shadowsense-physics-informed-neural-networks-for-s.md"
+    },
+    {
+      "candidate_id": "news--5433b82d234d",
+      "category": "News",
+      "rank": 11,
+      "path": "docs/daily/2026-11-27/news/11-french-startup-arsenals-unveils-modular-auv-design.md"
+    },
+    {
+      "candidate_id": "news--f978175c2e5e",
+      "category": "News",
+      "rank": 12,
+      "path": "docs/daily/2026-11-27/news/12-euronaval-2026-euroatlas-and-evologics-move-greysh.md"
+    }
+  ],
+  "assets": [
+    {
+      "candidate_id": "openalex--W7239779648",
+      "path": "docs/public/daily/2026-11-27/assets/openalex--W7239779648/preview.png"
+    },
+    {
+      "candidate_id": "openalex--W7239817895",
+      "path": "docs/public/daily/2026-11-27/assets/openalex--W7239817895/preview.png"
+    },
+    {
+      "candidate_id": "openalex--W7239803440",
+      "path": "docs/public/daily/2026-11-27/assets/openalex--W7239803440/preview.png"
+    },
+    {
+      "candidate_id": "openalex--W7239867238",
+      "path": "docs/public/daily/2026-11-27/assets/openalex--W7239867238/preview.png"
+    },
+    {
+      "candidate_id": "openalex--W7237353339",
+      "path": "docs/public/daily/2026-11-27/assets/openalex--W7237353339/preview.svg"
+    },
+    {
+      "candidate_id": "crossref--10.1007-978-981-92-8128-2_7",
+      "path": "docs/public/daily/2026-11-27/assets/crossref--10.1007-978-981-92-8128-2_7/preview.svg"
+    },
+    {
+      "candidate_id": "crossref--10.3390-app162311755",
+      "path": "docs/public/daily/2026-11-27/assets/crossref--10.3390-app162311755/preview.svg"
+    },
+    {
+      "candidate_id": "crossref--10.3389-fmars.2026.2018441",
+      "path": "docs/public/daily/2026-11-27/assets/crossref--10.3389-fmars.2026.2018441/preview.png"
+    },
+    {
+      "candidate_id": "crossref--10.1007-s00343-026-5436-6",
+      "path": "docs/public/daily/2026-11-27/assets/crossref--10.1007-s00343-026-5436-6/preview.png"
+    },
+    {
+      "candidate_id": "crossref--10.1007-978-981-92-8128-2_36",
+      "path": "docs/public/daily/2026-11-27/assets/crossref--10.1007-978-981-92-8128-2_36/preview.svg"
+    },
+    {
+      "candidate_id": "news--5433b82d234d",
+      "path": "docs/public/daily/2026-11-27/assets/news--5433b82d234d/preview.png"
+    },
+    {
+      "candidate_id": "news--f978175c2e5e",
+      "path": "docs/public/daily/2026-11-27/assets/news--f978175c2e5e/preview.png"
+    }
+  ]
+}
