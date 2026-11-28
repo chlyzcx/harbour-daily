@@ -1,0 +1,109 @@
+{
+  "schema_version": 2,
+  "cycle_id": "daily-2026-11-28",
+  "display_date": "2026-11-28",
+  "articles": [
+    {
+      "candidate_id": "openalex--W7240043958",
+      "category": "Paper",
+      "rank": 1,
+      "path": "docs/daily/2026-11-28/paper/01-geometry-time-graph-attention-for-3-d-toa-localiza.md"
+    },
+    {
+      "candidate_id": "s2--983a3863d35f4abb070a0c19fd3869e5ed0424c7",
+      "category": "Paper",
+      "rank": 2,
+      "path": "docs/daily/2026-11-28/paper/02-a-fully-complex-valued-underwater-acoustic-signal-.md"
+    },
+    {
+      "candidate_id": "s2--10d29fe609e71e36eb21280fb4fc1451286abc49",
+      "category": "Paper",
+      "rank": 3,
+      "path": "docs/daily/2026-11-28/paper/03-underwater-mine-detection-using-machine-learningba.md"
+    },
+    {
+      "candidate_id": "s2--4dd289bc57c7f439e9d8d5dfd9473542cc9b3e02",
+      "category": "Paper",
+      "rank": 4,
+      "path": "docs/daily/2026-11-28/paper/04-comparison-of-description-methods-of-the-parametri.md"
+    },
+    {
+      "candidate_id": "s2--3c48b6cb4ed9f46b83ceb9fddda41e6cf2072078",
+      "category": "Paper",
+      "rank": 5,
+      "path": "docs/daily/2026-11-28/paper/05-adaptive-space-frequency-basis-selection-methods-f.md"
+    },
+    {
+      "candidate_id": "openalex--W7240029210",
+      "category": "Paper",
+      "rank": 6,
+      "path": "docs/daily/2026-11-28/paper/06-full-ocean-depth-underwater-gliders-as-communicati.md"
+    },
+    {
+      "candidate_id": "openalex--W7240105913",
+      "category": "Paper",
+      "rank": 7,
+      "path": "docs/daily/2026-11-28/paper/07-fish-behavior-and-physical-forces-at-an-innovative.md"
+    },
+    {
+      "candidate_id": "openalex--W7239807691",
+      "category": "Paper",
+      "rank": 8,
+      "path": "docs/daily/2026-11-28/paper/08-hierarchical-disturbance-rejection-heading-control.md"
+    },
+    {
+      "candidate_id": "openalex--W7240083866",
+      "category": "Paper",
+      "rank": 9,
+      "path": "docs/daily/2026-11-28/paper/09-geocam-self-supervised-sonar-optical-representatio.md"
+    },
+    {
+      "candidate_id": "openalex--W7239404735",
+      "category": "Paper",
+      "rank": 10,
+      "path": "docs/daily/2026-11-28/paper/10-xr-as-stage-more-than-human-worlding-in-extended-r.md"
+    }
+  ],
+  "assets": [
+    {
+      "candidate_id": "openalex--W7240043958",
+      "path": "docs/public/daily/2026-11-28/assets/openalex--W7240043958/preview.png"
+    },
+    {
+      "candidate_id": "s2--983a3863d35f4abb070a0c19fd3869e5ed0424c7",
+      "path": "docs/public/daily/2026-11-28/assets/s2--983a3863d35f4abb070a0c19fd3869e5ed0424c7/preview.svg"
+    },
+    {
+      "candidate_id": "s2--10d29fe609e71e36eb21280fb4fc1451286abc49",
+      "path": "docs/public/daily/2026-11-28/assets/s2--10d29fe609e71e36eb21280fb4fc1451286abc49/preview.svg"
+    },
+    {
+      "candidate_id": "s2--4dd289bc57c7f439e9d8d5dfd9473542cc9b3e02",
+      "path": "docs/public/daily/2026-11-28/assets/s2--4dd289bc57c7f439e9d8d5dfd9473542cc9b3e02/preview.png"
+    },
+    {
+      "candidate_id": "s2--3c48b6cb4ed9f46b83ceb9fddda41e6cf2072078",
+      "path": "docs/public/daily/2026-11-28/assets/s2--3c48b6cb4ed9f46b83ceb9fddda41e6cf2072078/preview.svg"
+    },
+    {
+      "candidate_id": "openalex--W7240029210",
+      "path": "docs/public/daily/2026-11-28/assets/openalex--W7240029210/preview.svg"
+    },
+    {
+      "candidate_id": "openalex--W7240105913",
+      "path": "docs/public/daily/2026-11-28/assets/openalex--W7240105913/preview.png"
+    },
+    {
+      "candidate_id": "openalex--W7239807691",
+      "path": "docs/public/daily/2026-11-28/assets/openalex--W7239807691/preview.svg"
+    },
+    {
+      "candidate_id": "openalex--W7240083866",
+      "path": "docs/public/daily/2026-11-28/assets/openalex--W7240083866/preview.png"
+    },
+    {
+      "candidate_id": "openalex--W7239404735",
+      "path": "docs/public/daily/2026-11-28/assets/openalex--W7239404735/preview.png"
+    }
+  ]
+}
